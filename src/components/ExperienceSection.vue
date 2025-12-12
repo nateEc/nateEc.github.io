@@ -16,7 +16,7 @@ const experiencesEn = [
       'Optimized data processing and storage architecture to support front-end and real-time data query requirements',
       'Optimized <strong>Ollama</strong> model services to enhance monitoring and debugging, designed multi-agent scheduling and parallel processing (ainvoke), reducing average response time by <strong>70%</strong>',
       'Independently developed a complete evaluation and training pipeline, integrating voice parsing and root cause analysis, with a <strong>40%</strong> improvement in model accuracy',
-      'Developed multiple <strong>HK12D</strong> base models (image description, emotion analysis) and post-training optimization methods, achieving intelligent emotion recognition and support for multilingual scenarios'
+      'Developed multiple <strong>K12</strong> base models (image description, emotion analysis) and post-training optimization methods, achieving intelligent emotion recognition and support for multilingual scenarios'
     ],
     icon: 'briefcase'
   },

@@ -6,9 +6,9 @@ const activeSection = ref('home')
 const navItems = [
   { id: 'home', label: 'Home', icon: 'home' },
   { id: 'about', label: 'About', icon: 'user' },
+  { id: 'experience', label: 'Experience', icon: 'clock' },
   { id: 'skills', label: 'Skills', icon: 'code' },
   { id: 'portfolio', label: 'Portfolio', icon: 'briefcase' },
-  { id: 'experience', label: 'Experience', icon: 'clock' },
   { id: 'contact', label: 'Contact', icon: 'mail' }
 ]
 
