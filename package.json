@@ -1,5 +1,6 @@
 {
   "name": "portfolio-vue",
+  "homepage": "https://nateec.github.io/",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -11,9 +12,12 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "type-check": "vue-tsc --build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3"
