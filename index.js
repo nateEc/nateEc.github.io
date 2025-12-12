@@ -144,8 +144,8 @@ var s1 = document.querySelector(".intro");
 var h1 = document.querySelector(".header");
 
 function change() {
-    setTimeout(changed, 4000);
-    setTimeout(visi, 5000);
+    setTimeout(changed, 2000);
+    setTimeout(visi, 3000);
 }
 
 function changed() {
