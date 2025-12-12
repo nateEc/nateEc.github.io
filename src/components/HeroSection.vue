@@ -31,6 +31,7 @@ onMounted(() => {
 
 function typeText() {
   const currentPhrase = phrases.value[phraseIndex]
+  if (!currentPhrase) return
   
   if (isDeleting) {
     typedText.value = currentPhrase.substring(0, charIndex - 1)
