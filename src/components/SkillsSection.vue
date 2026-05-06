@@ -4,6 +4,21 @@ import { useLanguage } from '../composables/useLanguage'
 
 const { currentLanguage } = useLanguage()
 
+type LocalizedText = {
+  en: string
+  zh: string
+}
+
+type Skill = {
+  name: string | LocalizedText
+  icon: string
+}
+
+type SkillCategory = {
+  title: LocalizedText
+  skills: Skill[]
+}
+
 const sectionTitle = computed(() => {
   if (currentLanguage.value === 'zh') {
     return { highlight: '我的', main: '技能' }
@@ -11,88 +26,117 @@ const sectionTitle = computed(() => {
   return { highlight: 'My', main: 'Skills' }
 })
 
-const categoryTitles = computed(() => {
-  if (currentLanguage.value === 'zh') {
-    return {
-      programming: '编程语言',
-      frontend: '前端工具',
-      backend: '后端工具与开发工具'
-    }
+const skillCategories: SkillCategory[] = [
+  {
+    title: { en: 'AI & Machine Learning', zh: '人工智能与机器学习' },
+    skills: [
+      { name: 'MCP', icon: '/images/skills/mcp.png' },
+      { name: 'RAG', icon: '/images/skills/rag.png' },
+      { name: 'Agents', icon: '/images/skills/agents.png' },
+      { name: 'Function Calling', icon: '/images/skills/function-calling.png' },
+      { name: { en: 'LLM App Development', zh: '大语言模型应用开发' }, icon: '/images/skills/llm-apps.png' },
+      { name: { en: 'Speech Recognition', zh: '语音识别' }, icon: '/images/skills/speech-recognition.png' },
+      { name: { en: 'Text-to-Speech', zh: '语音合成' }, icon: '/images/skills/text-to-speech.png' },
+      { name: 'Ollama', icon: '/images/skills/ollama.png' },
+      { name: { en: 'Pronunciation Assessment', zh: '发音测评算法' }, icon: '/images/skills/pronunciation-scoring.png' },
+      { name: { en: 'NLP Engineering', zh: 'NLP工程化' }, icon: '/images/skills/nlp-engineering.png' },
+      { name: { en: 'Model Deployment & Load Testing', zh: '模型部署与压测' }, icon: '/images/skills/model-deployment.png' }
+    ]
+  },
+  {
+    title: { en: 'Programming Languages', zh: '编程语言' },
+    skills: [
+      { name: 'Python', icon: '/images/icons8-python.svg' },
+      { name: 'Java', icon: '/images/icons8-java.svg' },
+      { name: 'JavaScript', icon: '/images/javascript.svg' },
+      { name: 'TypeScript', icon: '/images/skills/typescript.png' },
+      { name: 'C', icon: '/images/icons8-c-programming-48.png' },
+      { name: 'Assembly', icon: '/images/ass.png' },
+      { name: 'SML', icon: '/images/sml.png' },
+      { name: 'Bash', icon: '/images/bash.svg' },
+      { name: 'SQL', icon: '/images/skills/sql.png' }
+    ]
+  },
+  {
+    title: { en: 'Backend Development', zh: '后端开发' },
+    skills: [
+      { name: 'FastAPI', icon: '/images/skills/fastapi.png' },
+      { name: 'Node.js', icon: '/images/node.svg' },
+      { name: 'Express.js', icon: '/images/expressjs-icon.svg' },
+      { name: 'tRPC', icon: '/images/skills/trpc.png' },
+      { name: 'Prisma', icon: '/images/skills/prisma.png' },
+      { name: { en: 'RESTful API Development', zh: 'RESTful API开发' }, icon: '/images/skills/rest-api.png' },
+      { name: { en: 'High Concurrency & Async', zh: '高并发与异步编程' }, icon: '/images/skills/async-concurrency.png' },
+      { name: { en: 'Load Balancing', zh: '负载均衡' }, icon: '/images/skills/load-balancing.png' },
+      { name: 'JMeter', icon: '/images/skills/jmeter.png' }
+    ]
+  },
+  {
+    title: { en: 'Frontend, Full Stack & Databases', zh: '前端、全栈与数据库' },
+    skills: [
+      { name: 'React.js', icon: '/images/react.svg' },
+      { name: 'Bootstrap', icon: '/images/bootstrap.svg' },
+      { name: 'Passport.js', icon: '/images/passportjs.png' },
+      { name: 'PostgreSQL', icon: '/images/skills/postgresql.png' },
+      { name: 'MongoDB', icon: '/images/mongodb-icon.svg' },
+      { name: 'SQLite', icon: '/images/skills/sqlite.png' }
+    ]
+  },
+  {
+    title: { en: 'Cloud & DevOps', zh: '云与DevOps' },
+    skills: [
+      { name: 'Docker', icon: '/images/skills/docker.png' },
+      { name: 'Nginx', icon: '/images/skills/nginx.png' },
+      { name: 'Git', icon: '/images/icons8-git.svg' },
+      { name: 'Jira', icon: '/images/skills/jira.png' },
+      { name: 'Postman', icon: '/images/postman-icon-svgrepo-com.svg' },
+      { name: 'GNU/Linux', icon: '/images/skills/gnu-linux.png' },
+      { name: { en: 'Environment Configuration', zh: '环境配置' }, icon: '/images/skills/environment-config.png' },
+      { name: 'CI/CD', icon: '/images/skills/cicd.png' }
+    ]
+  },
+  {
+    title: { en: 'Development Tools & Other', zh: '开发工具与其他' },
+    skills: [
+      { name: 'Cursor', icon: '/images/skills/cursor.png' },
+      { name: 'Windsurf', icon: '/images/skills/windsurf.png' },
+      { name: 'Gemini-CLI', icon: '/images/skills/gemini-cli.png' },
+      { name: 'Xcode', icon: '/images/skills/xcode.png' },
+      { name: 'LaTeX', icon: '/images/latex-svgrepo-com.svg' },
+      { name: 'JSON/XML', icon: '/images/skills/json-xml.png' },
+      { name: 'Microsoft Office', icon: '/images/skills/microsoft-office.png' },
+      { name: 'Figma', icon: '/images/skills/figma.png' }
+    ]
   }
-  return {
-    programming: 'Programming Languages',
-    frontend: 'Front-end Tools',
-    backend: 'Backend Tools & Dev Tools'
-  }
+]
+
+const localizedSkillCategories = computed(() => {
+  return skillCategories.map((category) => ({
+    title: currentLanguage.value === 'zh' ? category.title.zh : category.title.en,
+    skills: category.skills
+  }))
 })
 
-const programmingLanguages = [
-  { name: 'Java', icon: '/images/icons8-java.svg' },
-  { name: 'Python', icon: '/images/icons8-python.svg' },
-  { name: 'C', icon: '/images/icons8-c-programming-48.png' },
-  { name: 'Javascript', icon: '/images/javascript.svg' },
-  { name: 'Assembly', icon: '/images/ass.png' },
-  { name: 'SML', icon: '/images/sml.png' },
-  { name: 'Bash', icon: '/images/bash.svg' }
-]
-
-const frontendTools = [
-  { name: 'HTML', icon: '/images/html.svg' },
-  { name: 'CSS', icon: '/images/css.svg' },
-  { name: 'JavaScript', icon: '/images/javascript.svg' },
-  { name: 'Bootstrap', icon: '/images/bootstrap.svg' },
-  { name: 'jQuery', icon: '/images/jquery.svg' },
-  { name: 'React.js', icon: '/images/react.svg' }
-]
-
-const backendTools = [
-  { name: 'Git', icon: '/images/icons8-git.svg' },
-  { name: 'Github', icon: 'github' },
-  { name: 'Node.js', icon: '/images/node.svg' },
-  { name: 'Express.js', icon: '/images/expressjs-icon.svg' },
-  { name: 'MongoDB', icon: '/images/mongodb-icon.svg' },
-  { name: 'Chrome Dev', icon: '/images/Google_Chrome_icon_(February_2022).svg.png' },
-  { name: 'Postman', icon: '/images/postman-icon-svgrepo-com.svg' },
-  { name: 'LaTeX', icon: '/images/latex-svgrepo-com.svg' },
-  { name: 'Passport.js', icon: '/images/passportjs.png' }
-]
+const skillName = (skill: Skill) => {
+  if (typeof skill.name === 'string') {
+    return skill.name
+  }
+  return currentLanguage.value === 'zh' ? skill.name.zh : skill.name.en
+}
 </script>
 
 <template>
   <section id="skills" class="skills-section">
     <div class="container">
       <h2 class="section-title"><span>{{ sectionTitle.highlight }}</span> {{ sectionTitle.main }}</h2>
-      
+
       <div class="skills-grid">
-        <div class="skill-category">
-          <h3>{{ categoryTitles.programming }}</h3>
+        <div v-for="category in localizedSkillCategories" :key="category.title" class="skill-category">
+          <h3>{{ category.title }}</h3>
           <div class="skills-list">
-            <div v-for="skill in programmingLanguages" :key="skill.name" class="skill-item">
-              <img :src="skill.icon" :alt="skill.name" />
-              <span>{{ skill.name }}</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>{{ categoryTitles.frontend }}</h3>
-          <div class="skills-list">
-            <div v-for="skill in frontendTools" :key="skill.name" class="skill-item">
-              <img :src="skill.icon" :alt="skill.name" />
-              <span>{{ skill.name }}</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>{{ categoryTitles.backend }}</h3>
-          <div class="skills-list">
-            <div v-for="skill in backendTools" :key="skill.name" class="skill-item">
-              <img v-if="skill.icon !== 'github'" :src="skill.icon" :alt="skill.name" />
-              <svg v-else width="32" height="32" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-              </svg>
-              <span>{{ skill.name }}</span>
+            <div v-for="skill in category.skills" :key="skillName(skill)" class="skill-item">
+              <img :src="skill.icon" :alt="skillName(skill)" />
+              <span>{{ skillName(skill) }}</span>
             </div>
           </div>
         </div>
@@ -127,7 +171,7 @@ const backendTools = [
 .skills-grid {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3.5rem;
 }
 
 .skill-category h3 {
@@ -140,15 +184,17 @@ const backendTools = [
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 128px;
   gap: 0.75rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
   transition: all 0.3s ease;
@@ -159,39 +205,41 @@ const backendTools = [
   transform: translateY(-4px);
 }
 
-.skill-item img,
-.skill-item svg {
+.skill-item img {
   width: 48px;
   height: 48px;
   object-fit: contain;
 }
 
 .skill-item span {
+  max-width: 100%;
   font-size: 0.875rem;
+  line-height: 1.35;
   text-align: center;
   color: var(--secondary-color);
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 768px) {
   .skills-section {
     padding: 4rem 1rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .skills-list {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 1rem;
   }
-  
+
   .skill-item {
+    min-height: 112px;
     padding: 1rem;
   }
-  
-  .skill-item img,
-  .skill-item svg {
+
+  .skill-item img {
     width: 36px;
     height: 36px;
   }
