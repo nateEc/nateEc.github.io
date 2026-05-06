@@ -17,7 +17,7 @@ const phrasesZh = [
 ]
 
 const phrases = computed(() => currentLanguage.value === 'zh' ? phrasesZh : phrasesEn)
-const resumeLink = computed(() => currentLanguage.value === 'zh' ? '/单玉昆resume.pdf' : '/Resume.pdf')
+const resumeLink = computed(() => currentLanguage.value === 'zh' ? '/单玉昆resume2.pdf' : '/Resume.pdf')
 const cvButtonText = computed(() => currentLanguage.value === 'zh' ? '查看简历' : 'View CV')
 let phraseIndex = 0
 let charIndex = 0
