@@ -107,9 +107,7 @@ body {
 
 @media (max-width: 768px) {
   .clock {
-    bottom: 1rem;
-    left: 1rem;
-    font-size: 0.75rem;
+    display: none;
   }
 }
 </style>

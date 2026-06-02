@@ -141,21 +141,6 @@ onUnmounted(() => {
 
 @media (max-width: 768px) {
   .navigation {
-    right: 1rem;
-    gap: 0.75rem;
-  }
-  
-  .nav-button {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .nav-button svg {
-    width: 16px;
-    height: 16px;
-  }
-  
-  .nav-label {
     display: none;
   }
 }
