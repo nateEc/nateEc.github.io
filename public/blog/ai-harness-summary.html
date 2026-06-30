@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Harness 维度摘要 · 场景偏向分析</title>
+<style>
+  :root{
+    --paper:#f4f0e6;        /* ivory */
+    --paper2:#ece6d6;
+    --ink:#1c1a15;          /* near-black warm */
+    --ink2:#3a362c;
+    --muted:#6b6453;
+    --line:#cabf a6;
+    --line:#c9bfa6;
+    --gold:#9a7b35;         /* bronze gold */
+    --gold2:#bd9a4a;
+    --teal:#1f4a45;         /* deep forest-teal */
+    --teal2:#2f6b62;
+    --crimson:#7a2f29;
+    --card:#fbf8f0;
+    --shadow:0 1px 0 rgba(0,0,0,.04), 0 18px 40px -28px rgba(28,26,21,.5);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:
+      radial-gradient(1100px 520px at 12% -8%, rgba(154,123,53,.10), transparent),
+      radial-gradient(900px 480px at 95% 2%, rgba(31,74,69,.10), transparent),
+      var(--paper);
+    color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Songti SC","Source Han Serif SC",serif;
+    line-height:1.78;font-size:16.5px;
+    -webkit-font-smoothing:antialiased}
+  .mono,code{font-family:"SF Mono",ui-monospace,"DejaVu Sans Mono",Menlo,Consolas,monospace;
+    font-size:.86em;letter-spacing:.01em}
+  code{background:#efe9da;border:1px solid #ddd3bb;border-radius:5px;padding:1px 6px;color:#5a4a22}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 26px 110px}
+  header.hero{padding:74px 26px 40px;border-bottom:2px solid var(--ink)}
+  .hero-inner{max-width:1060px;margin:0 auto}
+  .eyebrow{font-family:"SF Mono",ui-monospace,monospace;letter-spacing:.42em;
+    text-transform:uppercase;font-size:11px;color:var(--gold);font-weight:600}
+  h1{font-size:39px;line-height:1.2;margin:16px 0 10px;font-weight:600;letter-spacing:.01em}
+  h1 em{font-style:italic;color:var(--teal)}
+  .dek{color:var(--ink2);font-size:17px;max-width:760px;font-style:italic}
+  .rule-row{display:flex;align-items:center;gap:16px;margin-top:24px;color:var(--muted);
+    font-family:"SF Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase}
+  .rule-row .ln{flex:1;height:1px;background:var(--line)}
+  h2{font-size:13px;font-family:"SF Mono",monospace;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--teal);margin:64px 0 4px;font-weight:600}
+  h2 .no{color:var(--gold);margin-right:12px}
+  .h2title{font-family:inherit;font-size:27px;letter-spacing:.01em;text-transform:none;
+    color:var(--ink);font-weight:600;margin:2px 0 14px;line-height:1.25}
+  h3{font-size:19px;font-weight:600;margin:26px 0 6px;color:var(--ink)}
+  p{margin:11px 0;color:var(--ink2)}
+  .lead{font-size:18px;color:var(--ink)}
+  a{color:var(--teal);text-underline-offset:3px}
+  strong{color:var(--ink);font-weight:600}
+  .em-gold{color:var(--gold);font-weight:600}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:4px;
+    padding:24px 26px;margin:20px 0;box-shadow:var(--shadow)}
+  .panel.flush{padding:18px 22px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:800px){.grid2,.grid3{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:18px 20px;box-shadow:var(--shadow)}
+  .card .lbl{font-family:"SF Mono",monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+  .card h4{margin:6px 0 6px;font-size:17px;font-weight:600}
+  .card p{margin:6px 0;font-size:14.5px}
+  ul,ol{margin:10px 0 10px 2px;padding-left:22px}
+  li{margin:6px 0;color:var(--ink2)}
+  blockquote{margin:16px 0;padding:14px 20px;border-left:3px solid var(--gold);
+    background:#f6f1e4;color:var(--ink2);font-style:italic;border-radius:0 4px 4px 0}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px}
+  th,td{border-bottom:1px solid var(--line);padding:11px 12px;text-align:left;vertical-align:top}
+  thead th{border-bottom:2px solid var(--ink);font-family:"SF Mono",monospace;font-size:11px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600}
+  tbody tr:hover{background:#f7f2e6}
+  td:first-child,th:first-child{font-weight:600}
+  .tag{display:inline-block;font-family:"SF Mono",monospace;font-size:10.5px;font-weight:600;
+    border-radius:3px;padding:2px 8px;letter-spacing:.04em;white-space:nowrap}
+  .t-hi{background:#e7efe5;color:#26543e;border:1px solid #a9c3b0}
+  .t-mid{background:#f2ead2;color:#7a5e1c;border:1px solid #d6c590}
+  .t-lo{background:#f0e2df;color:#7a2f29;border:1px solid #d3b3ae}
+  .verdict{background:linear-gradient(180deg,#1f4a45,#173734);color:#eef3ef;
+    border-radius:4px;padding:24px 28px;margin:24px 0;box-shadow:var(--shadow)}
+  .verdict h3{color:#e8d7a6;margin-top:0}
+  .verdict p,.verdict li{color:#dfe7e0}
+  .verdict .em-gold{color:#e8c870}
+  .verdict code{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#f0e6c8}
+  .kicker-num{font-family:"SF Mono",monospace;color:var(--gold);font-size:13px;letter-spacing:.1em}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;font-family:"SF Mono",monospace;
+    font-size:11.5px;color:var(--muted);letter-spacing:.05em;margin:6px 0}
+  .pull{font-size:21px;line-height:1.5;color:var(--teal);font-style:italic;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:18px 0;margin:26px 0;max-width:820px}
+  .rank{display:flex;align-items:baseline;gap:12px;margin:10px 0}
+  .rank .n{font-family:"SF Mono",monospace;font-size:13px;color:var(--gold);font-weight:600;min-width:26px}
+  .small{font-size:13.5px;color:var(--muted)}
+  .foot{margin-top:64px;border-top:2px solid var(--ink);padding-top:18px;
+    color:var(--muted);font-size:12.5px;font-family:"SF Mono",monospace;letter-spacing:.03em}
+  .twin{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;box-shadow:var(--shadow)}
+  @media(max-width:800px){.twin{grid-template-columns:1fr}}
+  .twin > div{padding:22px 24px}
+  .twin > div:first-child{border-right:1px solid var(--line)}
+  @media(max-width:800px){.twin > div:first-child{border-right:none;border-bottom:1px solid var(--line)}}
+  .twin .lbl{font-family:"SF Mono",monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Executive Digest · Agent Harness</div>
+    <h1>Harness 维度的<em>共性、分化</em>与场景偏向</h1>
+    <p class="dek">在确立"先场景、后维度"之后——本摘要回答四件事：场景如何划分、6 维与 7 维(2 层)之异同与"非正交"的本质、哪些维度共识强 / 哪些发散强,以及两类真实场景该把资源压在何处。</p>
+    <div class="rule-row"><span>2026 · 06 · 24</span><span class="ln"></span><span>Based on the 24-source deep-research report</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- 01 -->
+  <h2><span class="no">01</span>应用场景的常规划分</h2>
+  <div class="h2title">怎么分、最核心是哪个、各重哪些维度</div>
+  <p class="lead">业界对 agent 场景的划分高度收敛。综述与厂商口径合并后,<strong>对 harness 设计有显著区分度的场景共 5 个</strong>;其中<span class="em-gold">编码 / 软件工程(Coding / SWE)是最核心的"母场景"</span>——"harness"一词即源于此(OpenAI Codex、Claude Code),也是唯一对六维全部高强度依赖的场景,其余场景多是它的"维度子集 + 某一维的极端化"。</p>
+
+  <table>
+    <thead><tr><th>场景</th><th>角色隐喻</th><th>该场景的"命门"维度</th></tr></thead>
+    <tbody>
+      <tr><td>① 编码 / SWE <span class="tag t-hi">母场景</span></td><td>工匠</td><td>六维全开;以 Execution Loop + Evaluation(单测)为轴</td></tr>
+      <tr><td>② 深度研究 Deep Research</td><td>分析师</td><td>Execution Loop(多跳) · Context(多源聚合) · Evaluation(引用忠实度)</td></tr>
+      <tr><td>③ 计算机操作 / Web · GUI</td><td>操作员</td><td><span class="em-gold">Lifecycle Hooks(审批/护栏)</span> · Tool Registry(动作空间)</td></tr>
+      <tr><td>④ 对话 / 客服</td><td>管家</td><td>Evaluation(多维 rubric) · Context/State(记忆/个性化)</td></tr>
+      <tr><td>⑤ 编排 / 长任务</td><td>总管</td><td>State Store(可回放) · Orchestration Loop · Context(子代理隔离)</td></tr>
+    </tbody>
+  </table>
+  <p class="small">规律:场景越靠近"不可逆的真实世界动作"(③⑤),安全门控与状态持久越重;越靠近"产出需被问责"(②④),评估维度越重。编码场景同时具备这两类压力,故成为压力测试 harness 的母场景。</p>
+
+  <!-- 02 -->
+  <h2><span class="no">02</span>6 维 vs ETCLOVG 七层(2 层)</h2>
+  <div class="h2title">同源精炼:从 (E,T,C,S,L,V) 到 ETCLOVG</div>
+  <p class="lead">ETCLOVG 不是另起炉灶,而是六维 <code>H=(E,T,C,S,L,V)</code> 的<strong>精炼与升格</strong>——同一系统,动了三处"手术",并把七层归拢为<strong>运行层 / 保障治理层</strong>两大层。</p>
+
+  <div class="twin">
+    <div>
+      <div class="lbl">A · 六维形式化模型</div>
+      <h3 style="margin-top:8px">H = (E, T, C, S, L, V)</h3>
+      <p class="small">出自《Agent Harness Survey》(Preprints 2026)。按<strong>职责</strong>切:Execution Loop · Tool Registry · Context Manager · State Store · Lifecycle Hooks · Evaluation Interface。强调"每一维在对抗什么失效模式"。</p>
+    </div>
+    <div>
+      <div class="lbl">B · ETCLOVG 七层模型</div>
+      <h3 style="margin-top:8px">E · T · C · L · O · V · G</h3>
+      <p class="small"><strong>E</strong>xecution · <strong>T</strong>ool · <strong>C</strong>ontext · <strong>L</strong>ifecycle · <strong>O</strong>bservability · <strong>V</strong>erification · <strong>G</strong>overnance。在六维基础上:<strong>并</strong> State→Context、<strong>拆</strong> 评估为 O+V、<strong>升</strong> Governance 独立。归为两层 ↓</p>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="card" style="border-left:3px solid var(--teal)">
+      <div class="lbl" style="color:var(--teal)">第一层 · 运行 / Operation</div>
+      <h4>ETCL —— 让 agent 跑得动</h4>
+      <p><code>E</code> Execution(主循环) · <code>T</code> Tool(工具) · <code>C</code> Context(上下文,已吸收 State/Memory) · <code>L</code> Lifecycle(生命周期钩子,纯拦截机制)。这四层与六维核心高度重合,回答"功能能不能跑起来"。</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--gold)">
+      <div class="lbl" style="color:var(--gold)">第二层 · 保障治理 / Assurance</div>
+      <h4>OVG —— 让 agent 可信、可问责</h4>
+      <p><code>O</code> Observability(看得见:trace / log / metric) · <code>V</code> Verification(判得准:正确性核验 / 质量门) · <code>G</code> Governance(管得住:合规 / 审计 / 策略)。这三层是 ETCLOVG 相对六维的<strong>真正升级</strong>——把"质量与治理"从附属物提为独立一层。</p>
+    </div>
+  </div>
+
+  <h3>三处"手术":六维 → ETCLOVG</h3>
+  <div class="grid3">
+    <div class="card">
+      <div class="lbl" style="color:var(--teal)">并 · MERGE</div>
+      <h4>S → C</h4>
+      <p>State Store 不再独立,<strong>并入 Context</strong>。这正坐实前文"Context↔State 是强耦合对"的判断——光压缩不够、还须读状态才能恢复,二者本就难分。</p>
+    </div>
+    <div class="card">
+      <div class="lbl" style="color:var(--gold)">拆 · SPLIT</div>
+      <h4>老 V → O + V</h4>
+      <p>原"Evaluation Interface"在截图里本就定义为"<strong>可观测</strong> + 可分析的<strong>评估</strong>"二合一。ETCLOVG 把它拆成 <code>O</code>(看得见)与 <code>V</code>(判得准)——观测与核验是两件事。</p>
+    </div>
+    <div class="card">
+      <div class="lbl" style="color:var(--crimson)">升 · ELEVATE</div>
+      <h4>G 从 L 独立</h4>
+      <p>Lifecycle Hooks 原本兼任"拦截<strong>机制</strong>"与"合规<strong>目的</strong>"。ETCLOVG 让 <code>L</code> 专注机制、把 <code>G</code> Governance(合规 / 审计 / 策略)<strong>升为独立层</strong>——机制与目的解耦。</p>
+    </div>
+  </div>
+
+  <div class="panel flush">
+    <strong>逐项对照:</strong>
+    <table style="margin-top:8px">
+      <thead><tr><th>关注点</th><th>六维 H=(E,T,C,S,L,V)</th><th>ETCLOVG 七层</th><th>关系</th></tr></thead>
+      <tbody>
+        <tr><td>执行</td><td>Execution Loop</td><td>E Execution</td><td>✅ 原样保留</td></tr>
+        <tr><td>工具</td><td>Tool Registry</td><td>T Tool</td><td>✅ 原样保留</td></tr>
+        <tr><td>上下文</td><td>Context Manager</td><td>C Context</td><td>⊕ 吸收 State/Memory</td></tr>
+        <tr><td>状态</td><td><span class="em-gold">State Store(独立)</span></td><td>(并入 C)</td><td>⊖ 取消独立维</td></tr>
+        <tr><td>生命周期</td><td>Lifecycle Hooks(机制+合规)</td><td>L Lifecycle(纯机制)</td><td>◐ 收窄</td></tr>
+        <tr><td>可观测</td><td>(混在 Evaluation 内)</td><td><span class="em-gold">O Observability</span></td><td>✚ 拆出独立</td></tr>
+        <tr><td>核验 / 评估</td><td>Evaluation Interface(观测+评估)</td><td>V Verification(纯核验)</td><td>◑ 收窄为"判得准"</td></tr>
+        <tr><td>治理</td><td>(混在 Lifecycle 内)</td><td><span class="em-gold">G Governance</span></td><td>✚ 升为独立层</td></tr>
+      </tbody>
+    </table>
+    <p class="small" style="margin-top:10px"><strong>净变化:</strong> −1(State 并入 C)+2(拆出 O、升出 G)= 六维 → 七维。<strong>核心立意:</strong>六维把"质量 / 治理"压缩在 V、L 两维里;ETCLOVG 把它<strong>展开成 O·V·G 三层独立的"保障治理层"</strong>。一句话:<em>六维问"功能齐不齐",ETCLOVG 追问"可信不可信、合不合规"。</em></p>
+  </div>
+
+  <p class="pull">这恰好回应 §03 与 §04:最发散、最不成熟的"评估",和最被低估的"治理",在 ETCLOVG 里被显化为 <span class="em-gold">O / V / G</span> 三个一等层——这正是 §04·A 企业级经营决策 agent 的命门(可观测 + 可核验 + 可治理)。<strong>越是"治理重"的场景,越该用 ETCLOVG 而非裸六维来盘点。</strong></p>
+
+  <div class="verdict">
+    <h3>它们都不是正交维度——该如何理解维度关系</h3>
+    <p>这是必须钉死的判断。两套框架的原始来源<strong>各自都明确否认正交性</strong>:</p>
+    <ul>
+      <li>Claude Code 论文原话:维度"<strong>相互依赖而非正交</strong>",一处选择约束他处(deny-first 授权方式 → 决定 subagent 如何隔离上下文)。</li>
+      <li>LangChain:维度"<strong>嵌套且复利</strong>";70 项目实证:维度"<strong>成对共现耦合</strong>"。</li>
+      <li>唯一说"正交"的源码 taxonomy,指的也只是<strong>维度内部的取值可自由组合</strong>(如 loop driver 与 loop topology 取值独立),而非维度之间相互无关。</li>
+      <li>ETCLOVG 自身的两层结构已内含答案:<strong>保障治理层(OVG)定义上就"作用于"运行层(ETCL)</strong>——观测、核验、治理的对象正是 E/T/C/L 的运行,故二者天然依赖、绝不正交。</li>
+    </ul>
+    <p style="margin-bottom:6px"><strong>正确的心智模型 ——「分析正交、实现耦合」三层关系:</strong></p>
+    <div class="rank"><span class="n">①</span><span>把 ETCLOVG 七层当 <span class="em-gold">审计清单(checklist)</span>:逐层盘点"有无终止条件 / 有无压缩 / 看不看得见 / 判不判得准 / 管不管得住"。这层视角是正交的——可独立检查。</span></div>
+    <div class="rank"><span class="n">②</span><span>承认 <span class="em-gold">保障治理层即横切面(cross-cutting)</span>:<code>O</code>/<code>V</code>/<code>G</code>(及机制层 <code>L</code>)不是与 <code>E</code>/<code>T</code>/<code>C</code> 并列的模块,而是<strong>穿过</strong>运行层的切面——Observability 观测 ETCL 的运行轨迹,Verification 的 grader 跑在记录了 tool call 的 transcript 上,Governance 经 L 在 loop 关键点落地策略。</span></div>
+    <div class="rank"><span class="n">③</span><span>承认 <span class="em-gold">强耦合对(coupled pairs)</span>:<code>Context ↔ State</code>(ETCLOVG 干脆把二者并成一层)、<code>Tool ↔ Lifecycle</code>(授权门控就长在工具注册上)。改一处必波及另一处。</span></div>
+    <p style="margin-bottom:0">→ 实操结论:<strong>用 ETCLOVG 七层做盘点,用"保障层横切 + 耦合对"做改造设计。</strong>切忌假设可以单独优化某一层而不外溢。</p>
+  </div>
+
+  <!-- 03 -->
+  <h2><span class="no">03</span>共识强 vs 发散强</h2>
+  <div class="h2title">既有维度的"地基"与"自由设计区"</div>
+  <p class="lead">一条可引用的判据(源码 taxonomy):<strong>维度在外部约束强处收敛,在设计仍开放处发散。</strong></p>
+
+  <div class="grid2">
+    <div class="card" style="border-left:3px solid var(--teal)">
+      <div class="lbl" style="color:var(--teal)">共识强 · 地基 · 跨场景趋同</div>
+      <ul style="margin-top:8px">
+        <li><strong>Execution Loop 的存在性</strong>——人人需要 observe-think-act + 终止条件,无场景可免。</li>
+        <li><strong>Tool 的能力类别</strong>——read / search / edit / execute 四类在所有自主 agent 中普遍出现。</li>
+        <li><strong>"上下文窗口是硬约束"的认知</strong>——长程场景都视其为 binding constraint。</li>
+        <li><strong>"无评估不可迭代"</strong>——eval-driven development 是共识。</li>
+      </ul>
+      <p class="small">→ 这些可直接复用成熟方案,不必每场景重造。</p>
+    </div>
+    <div class="card" style="border-left:3px solid var(--gold)">
+      <div class="lbl" style="color:var(--gold)">发散强 · 自由设计区 · 跨场景分化</div>
+      <ul style="margin-top:8px">
+        <li><span class="em-gold">Evaluation Interface(分化最剧)</span>——编码=确定性单测;客服=多维 rubric;研究=引用忠实度;操作=任务终态。判分范式互不通用,<strong>且当前工程化最不成熟</strong>。</li>
+        <li><strong>Context 压缩策略</strong>——实测 7 种不同 compaction 路线。</li>
+        <li><strong>State 持久化强度</strong>——由"是否跨 context window"驱动,从临时到 append-only 可回放不等。</li>
+        <li><strong>Lifecycle Hooks 门控强度</strong>——不可逆动作场景需最强审批,只读场景可大幅弱化。</li>
+        <li><strong>Tool 接口粒度 / 多模型路由</strong>——能力趋同,工具数从 0 到 37;路由仍是开放问题。</li>
+      </ul>
+      <p class="small">→ 这些必须按场景定制,是 harness 工程的真正投入所在。</p>
+    </div>
+  </div>
+  <p class="pull">值得反复强调:<span class="em-gold">Evaluation Interface 同时是"最发散"且"最不成熟"的维度</span>——它既最依赖场景,又是当前最薄弱的一环。谁先把某场景的评估 harness 做扎实,谁就握住了护城河。</p>
+
+  <!-- 04 -->
+  <h2><span class="no">04</span>两类真实场景的维度偏向</h2>
+  <div class="h2title">把资源压在哪里</div>
+
+  <h3>4·A　连锁经营型大企业 · AI 经营决策 Agent</h3>
+  <p>这类 agent 服务于"多门店 / 标准化运营 / 数据驱动决策"(选址、定价、补货、排班、销量预测),其本质是 <span class="em-gold">客服式多维核验 + 长任务持久化 + 计算机操作级的审批门控</span> 的叠加体。它<strong>不是</strong>编码型——Execution / Tool 不是它的命门;命门<strong>整层落在 ETCLOVG 的保障治理层(OVG)上</strong>:</p>
+
+  <div class="grid3">
+    <div class="card">
+      <div class="lbl">第一优先 · G</div>
+      <h4>Governance <span class="tag t-hi">高</span></h4>
+      <p>决策动作<strong>影响实体经营、不可逆</strong>(改价、调配库存)。必须有<strong>合规策略 + 审批门控 + 越权拦截 + 审计留痕</strong>,等同计算机操作场景的安全等级。"建议"与"执行"之间必须有治理闸门(经 L 落地)。</p>
+    </div>
+    <div class="card">
+      <div class="lbl">第二优先 · V</div>
+      <h4>Verification <span class="tag t-hi">高</span></h4>
+      <p>经营决策必须<strong>判得准、可问责</strong>:多维核验(财务结果 + 合规 + 风险),而非二元对错——与客服 rubric 同源,是最难也最值钱的一层。</p>
+    </div>
+    <div class="card">
+      <div class="lbl">第三优先 · O</div>
+      <h4>Observability <span class="tag t-hi">高</span></h4>
+      <p><strong>看得见才追得溯</strong>:"为何建议给 500 店统一调价"要能逐步回放——决策链路的 trace / 中间证据 / 数据来源全程可观测。C(Context 含 State)居中:跨周跨季持久化 + 多源异构数据聚合(POS / 库存 / 区域 / 市场)。</p>
+    </div>
+  </div>
+  <p class="small">一句话画像:<strong>经营决策 agent ≈「保障治理层(OVG)重、运行层(ETCL)轻」</strong>——预算压在可观测、可核验、可治理上;Execution / Tool 用成熟方案即可。这正是 ETCLOVG 把 O·V·G 显化为独立层的价值场景。</p>
+
+  <h3 style="margin-top:34px">4·B　Polyrepo 跨端 AI-Native 研发团队 · 研发迭代层(全程基于 Claude Code)</h3>
+  <p>设定:为上述 4·A 类服务做研发,代码组织为 <strong>polyrepo</strong>(多仓)、交付<strong>横跨多端</strong>(Web / iOS / Android / 后端),团队以 Claude Code 为研发主力。在<strong>研发迭代</strong>这一层,维度优先级与 4·A <em>截然不同</em>——这里没有不可逆的经营动作,真正的 binding constraint 是<strong>跨仓上下文</strong>与<strong>每端工具链/反馈的异质性</strong>。</p>
+
+  <div class="panel">
+    <div class="rank"><span class="n">#1</span><div><strong>Context Manager —— 头号命门</strong> <span class="tag t-hi">最高</span><br>
+      <span class="small">Polyrepo 意味着相关代码散落多仓,无法整体进窗。这是该场景压力最大的一维。<br>
+      <strong>Claude Code 具体抓手:</strong> 每仓 <code>CLAUDE.md</code> + 分层 <code>AGENTS.md</code> 注入仓约定;<code>ToolSearch</code> 按需加载工具 schema 而非全量预载;用 <strong>subagent 为每个 repo / 每个端隔离独立 context window</strong>,避免跨仓信息互相污染;依赖 <code>PreCompact</code> 钩子定制压缩保留规则。</span></div></div>
+
+    <div class="rank"><span class="n">#2</span><div><strong>Lifecycle Hooks —— 把"每端规范"自动化为闸门</strong> <span class="tag t-hi">高</span><br>
+      <span class="small">跨端 = 每端有不同的 format / lint / test 规范,靠人记不住。<br>
+      <strong>具体抓手:</strong> <code>PostToolUse</code> 钩子按语言自动跑格式化(prettier / gofmt / ktlint / swiftformat);<code>PreToolUse</code> 钩子在写入前做路径/越权校验;每仓 <code>.claude/settings.json</code> 落地"该仓专属"的 hook,使同一个 Claude Code 在不同仓表现出不同纪律。</span></div></div>
+
+    <div class="rank"><span class="n">#3</span><div><strong>Tool Registry / Permissions —— 每端工具链作用域化</strong> <span class="tag t-hi">高</span><br>
+      <span class="small"><strong>具体抓手:</strong> 用 <code>allowed_tools</code> 按端授权——前端 <code>Bash(npm *)</code> / Android <code>Bash(./gradlew *)</code> / iOS <code>Bash(xcodebuild *)</code> / 后端测试命令;<code>disallowed_tools</code> 封禁危险操作;沙箱隔离各端构建。能力类别趋同,但<strong>注册粒度与作用域必须按端切</strong>。</span></div></div>
+
+    <div class="rank"><span class="n">#4</span><div><strong>Verification(V)—— 以"规则型反馈"做迭代闭环</strong> <span class="tag t-mid">中高</span><br>
+      <span class="small">Anthropic 明确:rules-based 反馈最强,LLM-as-judge 不稳。研发迭代天然具备最强反馈源——<strong>每仓的测试套件 + 类型检查 + lint</strong>。<strong>具体抓手:</strong> 让每端的 test/typecheck 成为 Claude Code 的确定性反馈回路(generate-test-repair),按端分别建评估,而非共用一套。</span></div></div>
+
+    <div class="rank"><span class="n">#5</span><div><strong>State Store —— 会话续接与分支</strong> <span class="tag t-mid">中</span><br>
+      <span class="small"><strong>具体抓手:</strong> 用 session <code>resume</code> 跨日续接某仓任务;<code>fork</code> 在不污染主线的前提下试不同实现路线;JSONL 会话留痕供复盘。Execution Loop 用 Claude Code 默认即可,非差异化项。</span></div></div>
+  </div>
+
+  <div class="verdict">
+    <h3>两类场景的偏向对照(一句话)</h3>
+    <table style="margin-top:6px">
+      <thead><tr><th style="color:#e8d7a6">场景</th><th style="color:#e8d7a6">维度重心</th><th style="color:#e8d7a6">本质</th></tr></thead>
+      <tbody>
+        <tr><td style="color:#fff">4·A 经营决策 Agent</td><td style="color:#dfe7e0"><span class="em-gold">G · V · O</span>(保障治理层)</td><td style="color:#dfe7e0">治理重、执行轻:可治理 + 可核验 + 可观测</td></tr>
+        <tr><td style="color:#fff">4·B Polyrepo 研发迭代</td><td style="color:#dfe7e0"><span class="em-gold">C · L · T</span>(运行层)</td><td style="color:#dfe7e0">工程重、治理轻:跨仓上下文 + 每端纪律自动化</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-bottom:0">两类场景几乎压在 ETCLOVG 的<strong>两个不同层</strong>上:A 在<span class="em-gold">保障治理层(OVG)</span>、B 在<span class="em-gold">运行层(ETCL)</span>。唯一的"桥"是 <code>L</code> Lifecycle——A 经由 L 落地<strong>合规审批闸门(服务 G)</strong>,B 经由 L 落地<strong>每端研发纪律(format/lint/test)</strong>。同一机制层、两种用途,正是"维度共识强(都要 hook)、诉求却发散(目的两样)"的活样本。</p>
+  </div>
+
+  <div class="foot">
+    摘要基于前序《AI Agent Harness 维度与场景研究报告》(deep-research,24 来源 / 118 论断)。六维出处:Agent Harness Survey (Preprints 2026, H=(E,T,C,S,L,V))。ETCLOVG 七层(Execution / Tool / Context / Lifecycle / Observability / Verification / Governance,分"运行 ETCL"与"保障治理 OVG"两层)为用户提供之框架,本节将其与六维做同源对照(并 S→C、拆 评估为 O+V、升 G 独立)。"非正交"判断由 Claude Code 论文(arXiv 2604.14228)、LangChain、70 项目实证各自佐证。4·A / 4·B 的维度优先级为基于证据的研判,落地前建议结合团队实际复核。
+  </div>
+
+</div>
+</body>
+</html>

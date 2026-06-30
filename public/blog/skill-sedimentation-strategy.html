@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skill 沉淀策略调整方案</title>
+  <style>
+    :root { color-scheme: light; --paper: #f7f4ee; --ink: #1d2523; --muted: #66706c; --line: #d8d0c1; --panel: #fffaf1; --accent: #256b5f; --gold: #9a7332; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(circle at 16% 0%, rgba(37,107,95,.10), transparent 34%), var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.72; }
+    main { width: min(920px, calc(100vw - 40px)); margin: 0 auto; padding: 58px 0 90px; }
+    article { border: 1px solid var(--line); background: rgba(255,250,241,.86); box-shadow: 0 24px 70px rgba(44,38,29,.10); padding: clamp(24px, 5vw, 54px); }
+    h1 { margin: 0 0 8px; font-size: clamp(34px, 6vw, 62px); line-height: 1.05; letter-spacing: 0; }
+    .meta { margin: 0 0 32px; color: var(--gold); font: 700 12px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .09em; text-transform: uppercase; }
+    h2 { margin: 44px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--accent); font-size: 24px; }
+    h3 { margin: 30px 0 8px; font-size: 19px; }
+    h4 { margin: 24px 0 8px; }
+    p { margin: 12px 0; color: #34413e; }
+    ul, ol { padding-left: 1.35rem; }
+    li { margin: 7px 0; color: #34413e; }
+    strong { color: var(--ink); }
+    code { border: 1px solid #d8ceb9; border-radius: 5px; background: #efe8d8; padding: 1px 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88em; color: #5f4a1c; }
+    pre { overflow: auto; padding: 16px; background: #1f2927; color: #f8f1df; border-radius: 8px; line-height: 1.55; }
+    pre code { border: 0; background: transparent; padding: 0; color: inherit; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .back { display: inline-flex; margin-bottom: 18px; color: var(--accent); font-weight: 800; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="/#blog">← Back to Blog</a>
+    <article>
+      <h1>Skill 沉淀策略调整方案</h1>
+<p>日期：2026-06-25</p>
+<h2>背景判断</h2>
+<p>当前用户大量使用 HiPilot 做查数、指标分析、数据口径确认等任务。这类任务很容易因为多轮查表、查 ontology、试错 SQL、字段匹配等原因触发大量 tool call，轻松超过 10 次。</p>
+<p>但在数据字典和 ontology 还不够准确的阶段，tool call 数高并不代表这次流程值得沉淀。它很多时候反而说明：</p>
+<ul>
+<li>数据口径不清</li>
+<li>字段或指标匹配不稳定</li>
+<li>ontology 命中不准</li>
+<li>Agent 在多次 fallback / retry 后才得到一个看似合理的答案</li>
+<li>用户并没有确认这个流程可长期复用</li>
+</ul>
+<p>所以现在最大的问题是：<strong>现有逻辑容易把“复杂执行”误判成“可复用方法”。</strong></p>
+<p>Skill 不应该沉淀“这次查出来的结果”，而应该沉淀“稳定、可重复、可验证的工作方法”。查数类任务尤其不应该只因为 tool call 多就自动建议保存为 Skill。</p>
+<h2>核心原则</h2>
+<ol>
+<li><strong>tool call 数只能是弱信号</strong></li>
+</ol>
+<p>tool call 多只能说明过程复杂，不能说明过程正确。查数场景下，tool call 多经常是负向信号。</p>
+<ol>
+<li><strong>可验证正确性优先于复杂度</strong></li>
+</ol>
+<p>如果本次回答依赖不确定的数据口径、模糊字段匹配、低置信 ontology 或 SQL 多次修正，就不应该沉淀。</p>
+<ol>
+<li><strong>用户认可比 AI 自评更重要</strong></li>
+</ol>
+<p>模型觉得自己答对了不算。沉淀应该依赖明确用户信号，例如用户说“以后都按这个流程来”、点赞、复制、反复复用等。</p>
+<ol>
+<li><strong>查数沉淀应与通用 Skill 分开</strong></li>
+</ol>
+<p>查数更适合沉淀为 Query Recipe / Metric Recipe / Metric Contract，而不是直接沉淀为通用 Skill。</p>
+<ol>
+<li><strong>自动沉淀应先观察，再候选，再草稿</strong></li>
+</ol>
+<p>不应从一次复杂对话直接跳到 UserSkillDraft。中间应该有 observe / candidate 阶段。</p>
+<ol>
+<li><strong>策略不能依赖人工逐条标注</strong></li>
+</ol>
+<p>人工抽样可以作为以后校准手段，但不应成为主流程前置条件。新方案默认不要求人工给 observation 打指标，而是依赖自动信号、重复出现、无负向信号和用户自然反馈来推进候选。</p>
+<h2>负向 Gate</h2>
+<p>只要出现下面任一信号，就不应主动生成 Skill 草稿：</p>
+<ul>
+<li>任务是查数、SQL、指标分析、数据口径确认、ontology 依赖任务</li>
+<li>ontology 命中低置信度</li>
+<li>ontology unmatched / ambiguous</li>
+<li>数据字典字段靠猜测或 fuzzy match</li>
+<li>表、字段、指标口径未明确确认</li>
+<li>SQL 多次报错或多次 retry</li>
+<li>结果依赖 fallback schema</li>
+<li>用户纠错过结果</li>
+<li>最终回答包含“可能 / 大概 / 需要确认 / 未核到 / 口径不确定”</li>
+<li>没有明确数据来源、指标口径、时间范围</li>
+<li>用户只是一次性说“查一下 / 算一下 / 看一下”</li>
+</ul>
+<h2>正向信号</h2>
+<p>比较可靠的沉淀正向信号包括：</p>
+<ul>
+<li>用户明确说“把这个沉淀成 Skill”</li>
+<li>用户说“以后都按这个流程来”</li>
+<li>用户点赞、采纳、复制、导出结果</li>
+<li>同一个用户多次重复类似任务</li>
+<li>多个用户在同类场景重复使用</li>
+<li>后续调用结果稳定，没有被用户纠错</li>
+<li>输出有清晰来源、口径、时间范围、步骤和失败兜底</li>
+</ul>
+<h2>当前状态</h2>
+<p>当前已经从止血态推进到“策略守门 + observe-only + 自动候选聚合 shadow mode + 用户主动沉淀灰度代码态 + 自动草稿低打扰代码态”：</p>
+<ul>
+<li><code>USER_SKILL_ACTIVE_SEDIMENT_ENABLED=false</code></li>
+<li><code>USER_SKILL_REVIEWER_ENABLED=false</code></li>
+<li>被动 reviewer 不创建 review job / draft</li>
+<li>runtime 默认不暴露 <code>propose_skill_from_recent_turns</code></li>
+<li><code>/my-skills/package</code> 禁止创建草稿</li>
+<li>pending draft confirm 被拒绝</li>
+<li>SkillsTab 不展示空的 Agent 沉淀入口</li>
+<li>旧卡保存会变为 expired</li>
+<li>已新增 <code>user_skill_sediment_policy.py</code></li>
+<li>已新增 observe-only observation 表</li>
+<li>QA 可通过 <code>USER_SKILL_SEDIMENT_OBSERVE_ENABLED=true</code> 只记录策略判定</li>
+<li>observation 记录结构化信号，不存用户正文和 tool result 正文</li>
+<li>已新增 <code>user_skill_sediment_candidates</code> 候选聚合表</li>
+<li>observe-only worker 会在记录 observation 后同步更新 candidate</li>
+<li>candidate report 可查看 <code>collecting / ready_for_review / suppressed</code> 候选分布</li>
+<li>candidate key 已包含 <code>intent_signature_hash</code>，只存 hash，不存用户原文</li>
+<li>Phase 4 主动沉淀代码已落地，但默认关闭；只有显式打开 active 开关且 policy allow 才创建 <code>UserSkillDraft</code> 和聊天保存卡片</li>
+<li>Phase 5 自动草稿代码已落地，但默认关闭；只有 mature candidate 且存在正向信号时才创建低打扰草稿，不主动发聊天卡片</li>
+</ul>
+<p>这一步是正确的，建议继续保持用户侧沉淀关闭。后续不要把“人工标注 observation”作为必经步骤；QA/灰度可以按需只开 observe 或 active 做验证，生产默认继续关闭。</p>
+<h2>从当前形态到长期形态的 Phase</h2>
+<h3>Phase 0：保持关闭，止血态</h3>
+<p>目标：不再新增错误沉淀。</p>
+<p>状态：已完成。</p>
+<ul>
+<li>被动 reviewer 不启动</li>
+<li>主动沉淀 tool 不暴露</li>
+<li>API 层阻断创建 UserSkillDraft</li>
+<li>历史 pending 卡片保存时变为不可保存状态</li>
+<li>已启用 Skill、官方 Skill、用户手动导入/编辑 Skill 不受影响</li>
+</ul>
+<p>这一阶段不需要继续扩展功能，只需要确保开关默认关闭。</p>
+<h3>Phase 1：新增沉淀策略判定层，但不打开沉淀</h3>
+<p>目标：先把“什么不该沉淀”固化成代码和测试，不改变用户体验。</p>
+<p>状态：已完成。</p>
+<p>已新增纯策略模块：</p>
+<pre data-lang="text"><code>app/services/user_skill_sediment_policy.py
+</code></pre>
+<p>输入：</p>
+<ul>
+<li>最近 AgentRun</li>
+<li>tool trace</li>
+<li>final answer</li>
+<li>trigger source</li>
+<li>用户 hint</li>
+</ul>
+<p>输出：</p>
+<pre data-lang="python"><code>{
+    "decision": "block" | "observe" | "allow",
+    "task_kind": "data_query" | "research" | "workflow" | "unknown",
+    "reasons": [...],
+    "signals": {...}
+}
+</code></pre>
+<p>第一版只做 hard block，不做复杂评分：</p>
+<ul>
+<li>data query / SQL / metric / ontology 相关任务默认 block</li>
+<li>ontology unmatched / ambiguous block</li>
+<li>schema fallback / fuzzy match / unknown field block</li>
+<li>SQL 多次 error / retry block</li>
+<li>final answer 有不确定措辞 block</li>
+</ul>
+<p>这一阶段不创建草稿、不展示卡片，只建立策略和测试。</p>
+<h3>Phase 2：自动 observation，不要求人工打标</h3>
+<p>目标：系统自动记录每次策略判定，作为后续候选聚合的事实输入，但不要求人工逐条标注。</p>
+<p>实现方式：</p>
+<ul>
+<li>新增 <code>user_skill_sediment_observations</code></li>
+<li>worker 在 observe-only 开启时记录 policy result</li>
+<li>记录字段只包含结构化信号：</li>
+</ul>
+<p>- tenant_id / user_id / agent_id / channel_id - trigger_source - policy_version - decision / task_kind / confidence - reasons_json / signals_json / tool_names_json - run_ids_json / run_ids_hash</p>
+<ul>
+<li>不存用户消息正文</li>
+<li>不存 tool result 正文</li>
+<li>不创建 <code>UserSkillReviewJob</code></li>
+<li>不创建 <code>UserSkillDraft</code></li>
+<li>不展示 <code>skill_proposal</code> 卡片</li>
+</ul>
+<p>状态：已完成基础能力，QA 可打开 observe-only。</p>
+<p>注意：原先考虑的“人工给 observation 标 <code>good_candidate / bad_candidate / unsure</code>”不再作为主方案要求。相关能力即使存在，也只作为可选调试工具，不进入日常流程。</p>
+<h3>Phase 3：自动候选聚合 shadow mode</h3>
+<p>目标：不依赖人工标注，从 observation 中自动聚合同类重复任务，形成候选模式，但不打扰用户。</p>
+<p>状态：代码已完成，待部署后观察。</p>
+<p>实现方式：</p>
+<ul>
+<li>新增 <code>user_skill_sediment_candidates</code></li>
+<li>按自动 fingerprint 聚合 observation，例如：</li>
+</ul>
+<p>- tenant_id / user_id / agent_id - task_kind - stable tool pattern - reason profile - normalized intent signature hash（只存 hash，不存用户正文）</p>
+<ul>
+<li>只接收 <code>decision in ("observe", "allow")</code> 且无 hard risk 的 observation</li>
+<li>hard risk 包括：</li>
+</ul>
+<p>- data_query_tool_used - ontology_unmatched_or_ambiguous - data_query_error - tool_result_error - user_correction_seen</p>
+<ul>
+<li>candidate 记录：</li>
+</ul>
+<p>- seen_count - first_seen_at / last_seen_at - supporting_observation_ids - positive_signal_count - negative_signal_count - status = collecting | ready_for_review | suppressed</p>
+<ul>
+<li><code>seen_count &gt;= 3</code> 且 negative_signal_count = 0 时，才进入 <code>ready_for_review</code></li>
+<li>本阶段只提供 report，不创建 draft/card</li>
+</ul>
+<p>这一阶段已经完成代码实现。部署后只需要验证 candidate 是否按预期累计：查数类不生成 candidate，研究 / workflow 类重复稳定出现后进入 <code>ready_for_review</code>。</p>
+<h3>Phase 4：恢复用户主动沉淀，但必须经过 candidate / policy gate</h3>
+<p>目标：用户明确说“沉淀成 Skill”时，可以恢复路径，但不再直接打包最近一次对话。</p>
+<p>状态：代码已完成，默认关闭，待 QA/灰度验证。</p>
+<p>实现方式：</p>
+<ul>
+<li>新增 <code>USER_SKILL_ACTIVE_SEDIMENT_ENABLED</code> 独立开关</li>
+<li><code>propose_skill_from_recent_turns</code> 继续调用 policy</li>
+<li><code>decision=block</code> 时不创建 <code>UserSkillDraft</code></li>
+<li><code>decision=observe</code> 时只记录 / 更新 candidate，不创建草稿</li>
+<li><code>decision=allow</code> 也要检查：</li>
+</ul>
+<p>- 不是查数 / ontology 风险任务 - 没有 tool error / data error / 用户纠错 - 最终回答没有“可能 / 大概 / 需要确认 / 未核到 / 口径不确定 / 待确认”等不确定性措辞 - 有明确用户意图或已有 ready candidate</p>
+<ul>
+<li>满足条件才进入 <code>generate_skill_from_context</code></li>
+<li>否则返回清晰解释：</li>
+</ul>
+<pre data-lang="text"><code>这次流程还不适合保存为 Skill。我会先把它作为候选模式继续观察；
+等同类流程多次稳定出现后，再建议沉淀。
+</code></pre>
+<p>这一阶段仍然不打开后台自动沉淀，只恢复用户主动要求的路径。</p>
+<h3>Phase 5：多次成功后才自动进入草稿</h3>
+<p>触发条件从：</p>
+<pre data-lang="text"><code>tool_call &gt;= 10
+</code></pre>
+<p>改为：</p>
+<pre data-lang="text"><code>同类任务重复出现
++ 无负向信号
++ 有自动正向信号或用户自然正向信号
++ 多次输出稳定
+</code></pre>
+<p>只有满足这些条件时，才创建低打扰 <code>UserSkillDraft</code>，进入 SkillsTab「Agent沉淀」。本阶段不主动在聊天里发自动建议卡片。</p>
+<p>状态：代码已完成，默认关闭，待 QA/灰度验证。没有人工标注数据时，自动草稿阈值必须更高：</p>
+<ul>
+<li>seen_count &gt;= 5</li>
+<li>最近 14 天内重复出现</li>
+<li>negative_signal_count = 0</li>
+<li>存在 <code>intent_signature_hash</code></li>
+<li>至少 1 个正向信号。当前代码第一版只认 <code>allow</code> / <code>explicit_request</code>；复制、导出、点赞等自然行为信号后续再接入</li>
+</ul>
+<h3>Phase 6：查数类任务独立为 Query Recipe / Metric Contract</h3>
+<p>目标：查数不要沉淀成通用 Skill，而是进入单独体系。</p>
+<p>建议新增概念：</p>
+<ul>
+<li><code>QueryRecipe</code></li>
+<li><code>MetricRecipe</code></li>
+<li><code>MetricContract</code></li>
+<li><code>DataWorkflowRecipe</code></li>
+</ul>
+<p>它保存的不是通用方法，而是：</p>
+<ul>
+<li>指标口径</li>
+<li>数据源</li>
+<li>表 / 字段映射</li>
+<li>维度范围</li>
+<li>时间口径</li>
+<li>SQL 模板</li>
+<li>验证样例</li>
+<li>owner / reviewer</li>
+</ul>
+<p>查数类任务最终应该进入这个体系，而不是直接进入 Skill。</p>
+<h2>推荐实施顺序</h2>
+<ol>
+<li><strong>Phase 0 + Phase 1：已完成</strong></li>
+</ol>
+<p>关闭用户侧沉淀，并把“查数 / ontology 不确定不能沉淀”的规则落代码和测试。</p>
+<ol>
+<li><strong>Phase 2：已完成基础 observe-only</strong></li>
+</ol>
+<p>记录 observation，但不要求人工打标，不创建草稿。</p>
+<ol>
+<li><strong>Phase 3：自动候选聚合 shadow mode 已完成代码实现</strong></li>
+</ol>
+<p>不依赖人工标注，从 observation 自动累计重复模式，只出 report，不打扰用户。待 QA/灰度打开 observe 后验证真实分布。</p>
+<ol>
+<li><strong>Phase 4：恢复用户主动沉淀代码已完成</strong></li>
+</ol>
+<p>用户明确要求时，可以通过 policy + candidate gate 创建草稿；不符合条件则只进入候选观察。默认关闭，待 QA/灰度验证。</p>
+<ol>
+<li><strong>Phase 5：自动草稿低打扰代码已完成</strong></li>
+</ol>
+<p>没有人工标注数据时，自动草稿阈值必须更高，且默认只对非查数、非 ontology 风险任务开放。默认关闭，待 QA/灰度验证。</p>
+<ol>
+<li><strong>Query Recipe / Metric Contract 单独立项</strong></li>
+</ol>
+<p>这会牵涉 ontology、数据字典、SQL template、metric governance，边界比 Skill 沉淀更大，不建议和 Skill gate 混在一个 PR 里。</p>
+<h2>Phase 3 Implementation 状态</h2>
+<p>Phase 3 已按以下范围完成代码实现：</p>
+<ul>
+<li>新增 <code>user_skill_sediment_candidates</code> 表</li>
+<li>新增 candidate 聚合服务</li>
+<li>observe-only worker 记录 observation 后同步更新 candidate</li>
+<li>新增 candidate report 脚本</li>
+<li>不打开 <code>USER_SKILL_REVIEWER_ENABLED</code></li>
+<li>不恢复 runtime tool</li>
+<li>不改 mobile UI</li>
+<li>不创建 <code>UserSkillDraft</code></li>
+<li>不展示 <code>skill_proposal</code></li>
+<li>不影响已有 Skill 使用和用户手动导入</li>
+</ul>
+<p>第一版 candidate gate 识别：</p>
+<ul>
+<li>同一 user + agent 下重复出现的非查数研究 / workflow 模式</li>
+<li>无 data_query / ontology / tool_error / correction hard risk</li>
+<li>有 <code>intent_signature_hash</code> 时才允许进入自动草稿 gate</li>
+<li>seen_count &gt;= 3 才进入 <code>ready_for_review</code></li>
+</ul>
+<p>验收标准：</p>
+<ul>
+<li>查数任务即使多次出现，也不会成为 Skill candidate</li>
+<li>普通研究型/流程型任务多次稳定出现后进入 ready candidate</li>
+<li>只生成 candidate/report，不生成 draft/card</li>
+<li>不需要人工标注 observation</li>
+<li>现有用户侧沉淀关闭态不被破坏</li>
+</ul>
+<h2>当前代码态后的 QA / 灰度建议</h2>
+<p>下一步建议不要直接打开生产自动沉淀，而是分开验证三个开关：</p>
+<ul>
+<li>QA/灰度只开 <code>USER_SKILL_SEDIMENT_OBSERVE_ENABLED=true</code></li>
+<li><code>USER_SKILL_REVIEWER_ENABLED=false</code> 保持关闭</li>
+<li>查数类 run 不生成 candidate</li>
+<li>研究 / workflow 类重复 3 次后 candidate 进入 <code>ready_for_review</code></li>
+<li><code>UserSkillDraft</code>、聊天卡片、runtime tool 均没有恢复</li>
+<li>单独打开 <code>USER_SKILL_ACTIVE_SEDIMENT_ENABLED=true</code> 验证：用户明确要求 + clean allow 才生成草稿和卡片；查数、tool error、ontology 风险、最终回答不确定都不生成草稿</li>
+<li>只有在确认 candidate 分布可靠后，才考虑 QA 打开 <code>USER_SKILL_REVIEWER_ENABLED=true</code> 验证低打扰自动草稿；自动草稿必须满足 seen_count &gt;= 5、14 天内重复、无 negative、存在 intent hash、positive_signal_count &gt;= 1</li>
+</ul>
+<p>生产默认继续关闭 active/reviewer。observe 是否打开由部署侧单独决定。</p>
+<h2>结论</h2>
+<p>Skill 沉淀的核心不应该是“复杂度”，而应该是：</p>
+<pre data-lang="text"><code>可验证正确
++ 可复用
++ 用户认可
++ 无数据口径不确定性
+</code></pre>
+<p>查数类任务尤其要谨慎。短期应继续关闭自动沉淀，先建立 policy gate；中期恢复用户主动沉淀但加拦截；长期把查数沉淀拆到 Query Recipe / Metric Contract，而不是塞进通用 Skill。</p>
+<p>更新后策略：<strong>不再依赖人工 observation 标注</strong>。系统可以继续自动记录 observation，但下一步重点是自动候选聚合，而不是要求运营或产品逐条打 <code>good_candidate / bad_candidate / unsure</code>。</p>
+
+    </article>
+  </main>
+</body>
+</html>

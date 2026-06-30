@@ -49,6 +49,27 @@ const sectionSubtitle = computed(() => {
 
 const featuredProjects: FeaturedProject[] = [
   {
+    title: 'yt-dub-studio',
+    period: 'Jun 2026',
+    context: {
+      en: 'Local AI video dubbing studio',
+      zh: '本地 AI 视频配音工作台'
+    },
+    role: {
+      en: 'YouTube pipeline, Gradio workflow, source-voice dubbing, lip-sync integration',
+      zh: 'YouTube 流水线、Gradio 工作流、源音色配音、唇形同步集成'
+    },
+    summary: {
+      en: 'A local AI dubbing pipeline that turns English YouTube videos into Chinese dubbed videos with transcription, translation, source-voice TTS, mixing, and optional Wav2Lip lip sync.',
+      zh: '本地 AI 视频配音流水线，输入英文 YouTube 链接后串联下载、转写、翻译、源音色中文配音、混音和可选 Wav2Lip 唇形同步。'
+    },
+    image: '/images/projects/yt-dub-studio-cover.webp',
+    stack: ['Python', 'Gradio', 'Whisper', 'CosyVoice', 'Demucs', 'Wav2Lip', 'ffmpeg'],
+    links: [
+      { type: 'github', url: 'https://github.com/nateEc/yt-dub-studio' }
+    ]
+  },
+  {
     title: 'Candidate Intel Agent',
     period: 'May 2026',
     context: {

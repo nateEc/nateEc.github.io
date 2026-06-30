@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import SkillsSection from './components/SkillsSection.vue'
 import PortfolioSection from './components/PortfolioSection.vue'
+import BlogSection from './components/BlogSection.vue'
 import ExperienceSection from './components/ExperienceSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import Navigation from './components/Navigation.vue'
@@ -47,6 +48,7 @@ onMounted(() => {
       <ExperienceSection />
       <SkillsSection />
       <PortfolioSection />
+      <BlogSection />
       <ContactSection />
       <Navigation />
       <div class="clock">{{ currentTime }}</div>

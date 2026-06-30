@@ -4,7 +4,7 @@ import { useLanguage } from '../composables/useLanguage'
 
 const { currentLanguage } = useLanguage()
 
-type SignalKey = 'idle' | 'profile' | 'rag' | 'mcp' | 'fastapi' | 'voice' | 'resume' | 'projects'
+type SignalKey = 'idle' | 'profile' | 'rag' | 'mcp' | 'fastapi' | 'voice' | 'resume' | 'projects' | 'blog'
 
 const typedText = ref('')
 const heroRef = ref<HTMLElement | null>(null)
@@ -26,6 +26,7 @@ const phrases = computed(() => currentLanguage.value === 'zh' ? phrasesZh : phra
 const resumeLink = computed(() => currentLanguage.value === 'zh' ? '/单玉昆resume2.pdf' : '/Resume.pdf')
 const cvButtonText = computed(() => currentLanguage.value === 'zh' ? '查看简历' : 'View CV')
 const projectsButtonText = computed(() => currentLanguage.value === 'zh' ? '查看项目' : 'View Projects')
+const blogButtonText = computed(() => currentLanguage.value === 'zh' ? '读 Blog' : 'Read Blog')
 let phraseIndex = 0
 let charIndex = 0
 let isDeleting = false
@@ -147,7 +148,8 @@ const signalMessages = computed<Record<SignalKey, string[]>>(() => {
       fastapi: ['fastapi.serve()', 'latency: optimized async pipeline', 'infra: observable and scalable'],
       voice: ['voice.parse(audio)', 'asr -> scoring -> tts', 'loop: real-time learning feedback'],
       resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI algorithm engineer'],
-      projects: ['projects.scan()', 'filter: agents, backend, full-stack', 'open: selected case studies']
+      projects: ['projects.scan()', 'filter: agents, backend, full-stack', 'open: selected case studies'],
+      blog: ['blog.open(notes)', 'topics: harness, eval, skill sediment', 'mode: long-form system thinking']
     }
   }
 
@@ -159,7 +161,8 @@ const signalMessages = computed<Record<SignalKey, string[]>>(() => {
     fastapi: ['fastapi.serve()', 'latency: optimized async pipeline', 'infra: observable and scalable'],
     voice: ['voice.parse(audio)', 'asr -> scoring -> tts', 'loop: real-time learning feedback'],
     resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI algorithm engineer'],
-    projects: ['projects.scan()', 'filter: agents, backend, full-stack', 'open: selected case studies']
+    projects: ['projects.scan()', 'filter: agents, backend, full-stack', 'open: selected case studies'],
+    blog: ['blog.open(notes)', 'topics: harness, eval, skill sediment', 'mode: long-form system thinking']
   }
 })
 
@@ -201,6 +204,18 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M13 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a
+              href="#blog"
+              class="blog-button"
+              @mouseenter="setSignal('blog')"
+              @mouseleave="setSignal('idle')"
+            >
+              {{ blogButtonText }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path>
               </svg>
             </a>
           </div>
@@ -337,36 +352,42 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
   51%, 100% { opacity: 0; }
 }
 
-.cv-button {
+.cv-button,
+.project-button,
+.blog-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.875rem 1.75rem;
-  background-color: var(--text-color);
-  color: var(--bg-color);
   text-decoration: none;
   border-radius: 0.5rem;
   font-weight: 500;
   transition: all 0.3s ease;
+}
+
+.cv-button {
+  background-color: var(--text-color);
+  color: var(--bg-color);
   border: 2px solid var(--text-color);
 }
 
 .project-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
   background-color: transparent;
   color: var(--text-color);
-  text-decoration: none;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
   border: 1px solid var(--border-color);
 }
 
+.blog-button {
+  color: #fff;
+  background:
+    linear-gradient(135deg, #0f766e, #111 82%);
+  border: 1px solid #0f766e;
+  box-shadow: 0 12px 26px rgba(15, 118, 110, 0.16);
+}
+
 .cv-button:hover,
-.project-button:hover {
+.project-button:hover,
+.blog-button:hover {
   background-color: transparent;
   color: var(--text-color);
   transform: translateY(-2px);
@@ -377,8 +398,15 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
   color: var(--accent-color);
 }
 
+.blog-button:hover {
+  border-color: #0f766e;
+  color: #0f766e;
+  box-shadow: none;
+}
+
 .cv-button svg,
-.project-button svg {
+.project-button svg,
+.blog-button svg {
   transition: transform 0.3s ease;
 }
 
@@ -388,6 +416,10 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
 
 .project-button:hover svg {
   transform: translateX(3px);
+}
+
+.blog-button:hover svg {
+  transform: rotate(-5deg) translateY(-1px);
 }
 
 .hero-agent {
@@ -764,7 +796,8 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
   }
 
   .cv-button,
-  .project-button {
+  .project-button,
+  .blog-button {
     justify-content: center;
     flex: 1 1 160px;
   }

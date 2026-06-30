@@ -9,6 +9,7 @@ const navItems = [
   { id: 'experience', label: 'Experience', icon: 'clock' },
   { id: 'skills', label: 'Skills', icon: 'code' },
   { id: 'portfolio', label: 'Portfolio', icon: 'briefcase' },
+  { id: 'blog', label: 'Blog', icon: 'book' },
   { id: 'contact', label: 'Contact', icon: 'mail' }
 ]
 
@@ -71,6 +72,10 @@ onUnmounted(() => {
       <svg v-else-if="item.icon === 'clock'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <circle cx="12" cy="12" r="10"></circle>
         <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      <svg v-else-if="item.icon === 'book'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path>
       </svg>
       <svg v-else-if="item.icon === 'mail'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
