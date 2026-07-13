@@ -8,6 +8,7 @@ export function useLanguage() {
   const setLanguage = (lang: Language) => {
     currentLanguage.value = lang
     localStorage.setItem('preferred-language', lang)
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en'
   }
 
   const toggleLanguage = () => {
@@ -20,6 +21,7 @@ export function useLanguage() {
     if (saved && (saved === 'en' || saved === 'zh')) {
       currentLanguage.value = saved
     }
+    document.documentElement.lang = currentLanguage.value === 'zh' ? 'zh-CN' : 'en'
   }
 
   return {

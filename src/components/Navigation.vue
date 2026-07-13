@@ -1,152 +1,313 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { computed, onBeforeUnmount, ref, watch } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
+import { useLanguage } from '../composables/useLanguage'
 
-const activeSection = ref('home')
+const route = useRoute()
+const menuOpen = ref(false)
+const { currentLanguage, toggleLanguage } = useLanguage()
 
-const navItems = [
-  { id: 'home', label: 'Home', icon: 'home' },
-  { id: 'about', label: 'About', icon: 'user' },
-  { id: 'experience', label: 'Experience', icon: 'clock' },
-  { id: 'skills', label: 'Skills', icon: 'code' },
-  { id: 'portfolio', label: 'Portfolio', icon: 'briefcase' },
-  { id: 'blog', label: 'Blog', icon: 'book' },
-  { id: 'contact', label: 'Contact', icon: 'mail' }
-]
-
-const scrollToSection = (sectionId: string) => {
-  const element = document.getElementById(sectionId)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
-    activeSection.value = sectionId
-  }
-}
-
-const handleScroll = () => {
-  const sections = navItems.map(item => document.getElementById(item.id))
-  const scrollPosition = window.scrollY + window.innerHeight / 3
-
-  for (let i = sections.length - 1; i >= 0; i--) {
-    const section = sections[i]
-    const navItem = navItems[i]
-    if (section && navItem && section.offsetTop <= scrollPosition) {
-      activeSection.value = navItem.id
-      break
+const copy = computed(() => currentLanguage.value === 'zh'
+  ? {
+      work: '案例',
+      experience: '经历',
+      notes: '文章',
+      contact: '联系',
+      menu: '菜单',
+      close: '关闭菜单',
+      switchLabel: 'Switch to English',
+      resume: '简历',
     }
-  }
+  : {
+      work: 'Casebook',
+      experience: 'Experience',
+      notes: 'Notes',
+      contact: 'Contact',
+      menu: 'Menu',
+      close: 'Close menu',
+      switchLabel: '切换到中文',
+      resume: 'Résumé',
+    })
+
+const navItems = computed(() => [
+  { hash: '#work', label: copy.value.work },
+  { hash: '#experience', label: copy.value.experience },
+  { hash: '#blog', label: copy.value.notes },
+  { hash: '#contact', label: copy.value.contact },
+])
+
+const resumeHref = computed(() => currentLanguage.value === 'zh' ? '/resume-zh.pdf' : '/resume-en.pdf')
+
+const closeMenu = () => {
+  menuOpen.value = false
 }
 
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+watch(menuOpen, (open) => {
+  document.body.style.overflow = open ? 'hidden' : ''
 })
 
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
+watch(() => route.fullPath, closeMenu)
+
+onBeforeUnmount(() => {
+  document.body.style.overflow = ''
 })
 </script>
 
 <template>
-  <nav class="navigation">
-    <button
-      v-for="item in navItems"
-      :key="item.id"
-      :class="['nav-button', { active: activeSection === item.id }]"
-      @click="scrollToSection(item.id)"
-      :title="item.label"
-    >
-      <svg v-if="item.icon === 'home'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-      </svg>
-      <svg v-else-if="item.icon === 'user'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
-      </svg>
-      <svg v-else-if="item.icon === 'code'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="16 18 22 12 16 6"></polyline>
-        <polyline points="8 6 2 12 8 18"></polyline>
-      </svg>
-      <svg v-else-if="item.icon === 'briefcase'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-      </svg>
-      <svg v-else-if="item.icon === 'clock'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="10"></circle>
-        <polyline points="12 6 12 12 16 14"></polyline>
-      </svg>
-      <svg v-else-if="item.icon === 'book'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-        <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path>
-      </svg>
-      <svg v-else-if="item.icon === 'mail'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-        <polyline points="22,6 12,13 2,6"></polyline>
-      </svg>
-      <span class="nav-label">{{ item.label }}</span>
-    </button>
-  </nav>
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <RouterLink class="wordmark" to="/" aria-label="Nathan Shan — home">
+        <span class="wordmark__mark">NS</span>
+        <span class="wordmark__name">Nathan Shan</span>
+      </RouterLink>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <RouterLink
+          v-for="item in navItems"
+          :key="item.hash"
+          :to="{ path: '/', hash: item.hash }"
+        >
+          {{ item.label }}
+        </RouterLink>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="language-button" type="button" :aria-label="copy.switchLabel" @click="toggleLanguage">
+          {{ currentLanguage === 'en' ? '中' : 'EN' }}
+        </button>
+        <a class="resume-link" :href="resumeHref" target="_blank" rel="noopener">
+          {{ copy.resume }} <span aria-hidden="true">↗</span>
+        </a>
+        <button
+          class="menu-button"
+          type="button"
+          :aria-expanded="menuOpen"
+          aria-controls="mobile-menu"
+          :aria-label="menuOpen ? copy.close : copy.menu"
+          @click="menuOpen = !menuOpen"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" :class="['mobile-menu', { 'is-open': menuOpen }]" :aria-hidden="!menuOpen">
+      <nav aria-label="Mobile navigation">
+        <RouterLink
+          v-for="(item, index) in navItems"
+          :key="item.hash"
+          :to="{ path: '/', hash: item.hash }"
+          :tabindex="menuOpen ? 0 : -1"
+          @click="closeMenu"
+        >
+          <span>0{{ index + 1 }}</span>{{ item.label }}
+        </RouterLink>
+        <a :href="resumeHref" target="_blank" rel="noopener" :tabindex="menuOpen ? 0 : -1">
+          <span>05</span>{{ copy.resume }} ↗
+        </a>
+      </nav>
+    </div>
+  </header>
 </template>
 
 <style scoped>
-.navigation {
+.site-header {
   position: fixed;
-  right: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  top: 0;
+  left: 0;
   z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid rgba(217, 222, 231, 0.9);
+  background: rgba(247, 248, 250, 0.9);
+  backdrop-filter: blur(18px);
 }
 
-.nav-button {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  border: 2px solid var(--border-color);
-  background-color: var(--bg-color);
-  border-radius: 50%;
+.nav-shell {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 72px;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 11px;
+  color: var(--ink);
+  font-family: var(--display);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.wordmark__mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: var(--white);
+  background: var(--ink);
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 0.69rem;
+  letter-spacing: -0.04em;
+}
+
+.wordmark__name {
+  font-size: 0.95rem;
+}
+
+.desktop-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: var(--secondary-color);
+  gap: 30px;
 }
 
-.nav-button:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-  transform: scale(1.1);
+.desktop-nav a,
+.resume-link {
+  position: relative;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.nav-button.active {
-  background-color: var(--text-color);
-  border-color: var(--text-color);
-  color: var(--bg-color);
-}
-
-.nav-label {
+.desktop-nav a::after {
   position: absolute;
-  right: 100%;
-  margin-right: 1rem;
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  font-size: 0.875rem;
-  white-space: nowrap;
+  right: 0;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  background: var(--ink);
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
+}
+
+.desktop-nav a:hover,
+.resume-link:hover {
+  color: var(--ink);
+}
+
+.desktop-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 16px;
+}
+
+.language-button {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.language-button:hover {
+  border-color: var(--ink);
+}
+
+.menu-button {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 6px 0;
+  background: var(--ink);
+  transition: transform 160ms ease;
+}
+
+.menu-button[aria-expanded='true'] span:first-child {
+  transform: translateY(3.5px) rotate(45deg);
+}
+
+.menu-button[aria-expanded='true'] span:last-child {
+  transform: translateY(-3.5px) rotate(-45deg);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  z-index: -1;
+  display: grid;
+  width: 100%;
+  height: calc(100dvh - 72px);
+  padding: 32px 24px;
+  place-items: start stretch;
+  visibility: hidden;
+  background: var(--paper);
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+  transform: translateY(-16px);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
 }
 
-.nav-button:hover .nav-label {
+.mobile-menu.is-open {
+  visibility: visible;
   opacity: 1;
+  transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .navigation {
+.mobile-menu nav {
+  display: grid;
+}
+
+.mobile-menu a {
+  display: flex;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(1.75rem, 9vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.mobile-menu a span {
+  padding-top: 8px;
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 0.67rem;
+  letter-spacing: 0;
+}
+
+@media (max-width: 900px) {
+  .nav-shell {
+    grid-template-columns: 1fr auto;
+  }
+
+  .desktop-nav,
+  .resume-link {
     display: none;
+  }
+
+  .menu-button {
+    display: block;
   }
 }
 </style>

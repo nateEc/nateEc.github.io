@@ -1,889 +1,520 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
+import { computed, ref } from 'vue'
 import { useLanguage } from '../composables/useLanguage'
 
 const { currentLanguage } = useLanguage()
+const activeStep = ref(3)
 
-type SignalKey = 'idle' | 'profile' | 'skills' | 'evals' | 'desktop' | 'voice' | 'resume' | 'projects' | 'blog'
-
-const typedText = ref('')
-const heroRef = ref<HTMLElement | null>(null)
-const cursorX = ref(0)
-const cursorY = ref(0)
-const activeSignal = ref<SignalKey>('idle')
-const phrasesEn = [
-  'AI Agent Engineer at VisionFlow AI,',
-  'building reliable agent systems and evaluation infrastructure',
-  'Boston University Computer Science graduate'
-]
-const phrasesZh = [
-  '我在 VisionFlow AI 从事 AI Agent 开发，',
-  '构建可靠的 Agent 系统与评测基础设施',
-  '波士顿大学计算机科学毕业生'
-]
-
-const phrases = computed(() => currentLanguage.value === 'zh' ? phrasesZh : phrasesEn)
-const resumeLink = '/resume-zh.pdf'
-const cvButtonText = computed(() => currentLanguage.value === 'zh' ? '查看简历' : 'Chinese CV')
-const projectsButtonText = computed(() => currentLanguage.value === 'zh' ? '查看项目' : 'View Projects')
-const blogButtonText = computed(() => currentLanguage.value === 'zh' ? '读 Blog' : 'Read Blog')
-let phraseIndex = 0
-let charIndex = 0
-let isDeleting = false
-let targetX = 0
-let targetY = 0
-let currentX = 0
-let currentY = 0
-let animationFrameId: number | undefined
-
-watch(currentLanguage, () => {
-  typedText.value = ''
-  phraseIndex = 0
-  charIndex = 0
-  isDeleting = false
-})
-
-onMounted(() => {
-  setTimeout(() => {
-    typeText()
-  }, 500)
-
-  window.addEventListener('mousemove', handlePointerMove)
-  animationFrameId = window.requestAnimationFrame(animateCursor)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('mousemove', handlePointerMove)
-  if (animationFrameId) {
-    window.cancelAnimationFrame(animationFrameId)
-  }
-})
-
-function typeText() {
-  const currentPhrase = phrases.value[phraseIndex]
-  if (!currentPhrase) return
-  
-  if (isDeleting) {
-    typedText.value = currentPhrase.substring(0, charIndex - 1)
-    charIndex--
-  } else {
-    typedText.value = currentPhrase.substring(0, charIndex + 1)
-    charIndex++
-  }
-  
-  if (!isDeleting && charIndex === currentPhrase.length) {
-    setTimeout(() => {
-      isDeleting = true
-      typeText()
-    }, 2000)
-    return
-  }
-  
-  if (isDeleting && charIndex === 0) {
-    isDeleting = false
-    phraseIndex = (phraseIndex + 1) % phrases.value.length
-  }
-  
-  const speed = isDeleting ? 35 : 50
-  setTimeout(typeText, speed)
-}
-
-function handlePointerMove(event: MouseEvent) {
-  const rect = heroRef.value?.getBoundingClientRect()
-  if (!rect) return
-
-  targetX = ((event.clientX - rect.left) / rect.width - 0.5) * 2
-  targetY = ((event.clientY - rect.top) / rect.height - 0.5) * 2
-  targetX = Math.max(-1, Math.min(1, targetX))
-  targetY = Math.max(-1, Math.min(1, targetY))
-}
-
-function animateCursor() {
-  currentX += (targetX - currentX) * 0.08
-  currentY += (targetY - currentY) * 0.08
-  cursorX.value = currentX
-  cursorY.value = currentY
-  animationFrameId = window.requestAnimationFrame(animateCursor)
-}
-
-function setSignal(signal: SignalKey) {
-  activeSignal.value = signal
-}
-
-const coreStyle = computed(() => ({
-  transform: `perspective(900px) rotateX(${(-cursorY.value * 8).toFixed(2)}deg) rotateY(${(cursorX.value * 10).toFixed(2)}deg) translate3d(${(cursorX.value * 14).toFixed(1)}px, ${(cursorY.value * 10).toFixed(1)}px, 0)`
-}))
-
-const visualStyle = computed(() => ({
-  transform: `translate3d(${(cursorX.value * 6).toFixed(1)}px, ${(cursorY.value * 4).toFixed(1)}px, 0)`
-}))
-
-const nodeDriftStyle = (index: number) => ({
-  transform: `translate3d(${(cursorX.value * (8 + index * 2)).toFixed(1)}px, ${(cursorY.value * (6 + index)).toFixed(1)}px, 0)`
-})
-
-const agentNodes = computed(() => [
-  {
-    key: 'skills' as SignalKey,
-    label: 'Skills',
-    detail: currentLanguage.value === 'zh' ? '沉淀与路由' : 'skill routing'
-  },
-  {
-    key: 'evals' as SignalKey,
-    label: 'Evals',
-    detail: currentLanguage.value === 'zh' ? '回归评测' : 'regression'
-  },
-  {
-    key: 'desktop' as SignalKey,
-    label: 'Desktop',
-    detail: currentLanguage.value === 'zh' ? 'Agent 基建' : 'agent tooling'
-  },
-  {
-    key: 'voice' as SignalKey,
-    label: 'ASR/TTS',
-    detail: currentLanguage.value === 'zh' ? '语音链路' : 'voice stack'
-  }
-])
-
-const signalMessages = computed<Record<SignalKey, string[]>>(() => {
-  if (currentLanguage.value === 'zh') {
-    return {
-      idle: ['agent.boot(profile)', 'load: agent systems + evaluation', 'status: building at VisionFlow AI'],
-      profile: ['profile.focus(Nathan)', 'role: AI agent engineer', 'base: Beijing + Boston University'],
-      skills: ['skills.observe(runs)', 'policy -> candidate -> confirm', 'result: reusable + privacy-aware'],
-      evals: ['evals.capture(failures)', 'replay: real runtime traces', 'judge: stable + reviewable'],
-      desktop: ['desktop.launch(agent)', 'electron + codex app server', 'release: signed + observable'],
-      voice: ['voice.run(interview)', 'asr -> agent -> feedback', 'session: resilient + resumable'],
-      resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI agent engineer'],
-      projects: ['projects.scan()', 'filter: agents, desktop, product', 'open: selected case studies'],
-      blog: ['blog.open(notes)', 'topics: harness, eval, skill sediment', 'mode: long-form system thinking']
+const content = computed(() => currentLanguage.value === 'zh'
+  ? {
+      kicker: 'AI Agent Engineer · Beijing',
+      title: ['让 AI Agent', '经得住', '真实生产环境。'],
+      intro: '我是 Nathan Shan。我把模型能力变成可靠、可观测、可回归的产品系统——从 Skill 路由与评测基础设施，到桌面 Agent 和实时语音工作流。',
+      primary: '查看案例',
+      secondary: '聊聊系统',
+      availability: '目前在 VisionFlow AI 负责生产级 Agent 工程',
+      traceTitle: 'Agent Trace Inspector',
+      traceCase: 'sanitized · routing shadow',
+      traceId: 'trace / vf-shadow-029',
+      verdict: '判定：进入人工审核',
+      stepLabel: '选择轨迹节点查看判定依据',
+      detailLabels: ['输入', '结果', '门禁'],
     }
-  }
+  : {
+      kicker: 'AI Agent Engineer · Beijing',
+      title: ['I make AI agents', 'survive contact', 'with production.'],
+      intro: 'I’m Nathan Shan. I turn model capability into reliable, observable, regression-tested product systems—from skill routing and evaluation infrastructure to desktop agents and real-time voice workflows.',
+      primary: 'Open the casebook',
+      secondary: 'Discuss a system',
+      availability: 'Currently building production agents at VisionFlow AI',
+      traceTitle: 'Agent Trace Inspector',
+      traceCase: 'sanitized · routing shadow',
+      traceId: 'trace / vf-shadow-029',
+      verdict: 'decision: held for review',
+      stepLabel: 'Select a trace node to inspect its decision evidence',
+      detailLabels: ['input', 'result', 'gate'],
+    })
 
-  return {
-    idle: ['agent.boot(profile)', 'load: agent systems + evaluation', 'status: building at VisionFlow AI'],
-    profile: ['profile.focus(Nathan)', 'role: AI agent engineer', 'base: Beijing + Boston University'],
-    skills: ['skills.observe(runs)', 'policy -> candidate -> confirm', 'result: reusable + privacy-aware'],
-    evals: ['evals.capture(failures)', 'replay: real runtime traces', 'judge: stable + reviewable'],
-    desktop: ['desktop.launch(agent)', 'electron + codex app server', 'release: signed + observable'],
-    voice: ['voice.run(interview)', 'asr -> agent -> feedback', 'session: resilient + resumable'],
-    resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI agent engineer'],
-    projects: ['projects.scan()', 'filter: agents, desktop, product', 'open: selected case studies'],
-    blog: ['blog.open(notes)', 'topics: harness, eval, skill sediment', 'mode: long-form system thinking']
-  }
-})
+const traceSteps = computed(() => currentLanguage.value === 'zh'
+  ? [
+      { key: '01', name: '捕获运行', meta: 'tool + feedback', state: 'pass', detail: ['点踩 + 工具轨迹', '保存最小上下文', '隐私最小化'] },
+      { key: '02', name: '标准化信号', meta: 'stable fields', state: 'pass', detail: ['route=calendar', '稳定字段已提取', '格式校验通过'] },
+      { key: '03', name: '回放候选规则', meta: 'shadow mode', state: 'pass', detail: ['candidate=v17', '29 个套件中回放', '无线上流量影响'] },
+      { key: '04', name: '比较语义', meta: 'latency + output', state: 'review', detail: ['基线 vs. 候选', '+184ms / 语义变化', '超出自动接受阈值'] },
+      { key: '05', name: '发布决策', meta: 'atomic bundle', state: 'held', detail: ['原子审查包', '等待责任人确认', '未进入生产'] },
+    ]
+  : [
+      { key: '01', name: 'Capture run', meta: 'tool + feedback', state: 'pass', detail: ['negative feedback + tool trace', 'minimal context retained', 'privacy minimization'] },
+      { key: '02', name: 'Normalize signal', meta: 'stable fields', state: 'pass', detail: ['route=calendar', 'stable fields extracted', 'schema gate passed'] },
+      { key: '03', name: 'Replay candidate rule', meta: 'shadow mode', state: 'pass', detail: ['candidate=v17', 'replayed across 29 suites', 'zero production traffic impact'] },
+      { key: '04', name: 'Compare semantics', meta: 'latency + output', state: 'review', detail: ['baseline vs. candidate', '+184ms / semantic delta', 'outside auto-accept bound'] },
+      { key: '05', name: 'Release decision', meta: 'atomic bundle', state: 'held', detail: ['atomic review bundle', 'owner confirmation required', 'not promoted to production'] },
+    ])
 
-const terminalLines = computed(() => signalMessages.value[activeSignal.value])
+const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSteps.value[0]!)
 </script>
 
 <template>
-  <section id="home" ref="heroRef" class="hero-section">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            {{ currentLanguage === 'zh' ? '你好，我是' : "Hi, I'm" }}<br />
-            <span class="name">{{ currentLanguage === 'zh' ? '单玉昆 (Nathan)' : 'Yukun (Nathan) Shan' }}</span>
-          </h1>
-          <p class="hero-subtitle">{{ typedText }}<span class="cursor">|</span></p>
-          <div class="hero-actions">
-            <a
-              :href="resumeLink"
-              target="_blank"
-              class="cv-button"
-              @mouseenter="setSignal('resume')"
-              @mouseleave="setSignal('idle')"
-            >
-              {{ cvButtonText }}
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-              </svg>
-            </a>
-            <a
-              href="#portfolio"
-              class="project-button"
-              @mouseenter="setSignal('projects')"
-              @mouseleave="setSignal('idle')"
-            >
-              {{ projectsButtonText }}
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14"></path>
-                <path d="M13 5l7 7-7 7"></path>
-              </svg>
-            </a>
-            <a
-              href="#blog"
-              class="blog-button"
-              @mouseenter="setSignal('blog')"
-              @mouseleave="setSignal('idle')"
-            >
-              {{ blogButtonText }}
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path>
-              </svg>
-            </a>
-          </div>
+  <section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="shell hero-grid">
+      <div :class="['hero-copy', { 'is-zh': currentLanguage === 'zh' }]">
+        <p class="eyebrow">{{ content.kicker }}</p>
+        <h1 id="hero-title">
+          <span v-for="(line, index) in content.title" :key="line" :class="{ accent: index === 1 }">{{ line }}</span>
+        </h1>
+        <p class="hero-intro">{{ content.intro }}</p>
+        <div class="hero-actions">
+          <a class="button" href="#work">{{ content.primary }} <span aria-hidden="true">↓</span></a>
+          <a class="button button--ghost" href="#contact">{{ content.secondary }}</a>
         </div>
-
-        <div class="hero-agent" :style="visualStyle" aria-label="Interactive AI agent visualization">
-          <div class="agent-stage">
-            <div class="agent-grid"></div>
-            <button
-              v-for="(node, index) in agentNodes"
-              :key="node.key"
-              :class="['agent-node', `node-${node.key}`, { active: activeSignal === node.key }]"
-              :style="nodeDriftStyle(index)"
-              type="button"
-              @mouseenter="setSignal(node.key)"
-              @mouseleave="setSignal('idle')"
-            >
-              <span>{{ node.label }}</span>
-              <small>{{ node.detail }}</small>
-            </button>
-
-            <div
-              class="portrait-module"
-              :style="coreStyle"
-              @mouseenter="setSignal('profile')"
-              @mouseleave="setSignal('idle')"
-            >
-              <div class="portrait-glow"></div>
-              <img src="/images/me.png" alt="Yukun Nathan Shan" />
-              <div class="portrait-label">
-                <span>Nathan Shan</span>
-                <small>{{ currentLanguage === 'zh' ? 'AI Agent 开发工程师' : 'AI Agent Engineer' }}</small>
-              </div>
-            </div>
-
-            <div class="agent-core">
-              <div class="core-ring ring-one"></div>
-              <div class="core-ring ring-two"></div>
-              <div class="core-chip">
-                <span>AI</span>
-                <small>agent core</small>
-              </div>
-              <div class="core-eye">
-                <span></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="agent-terminal">
-            <div class="terminal-bar">
-              <span></span>
-              <span></span>
-              <span></span>
-              <p>nathan.agent</p>
-            </div>
-            <div class="terminal-lines">
-              <p v-for="line in terminalLines" :key="line">
-                <span>›</span>{{ line }}
-              </p>
-            </div>
-          </div>
-        </div>
+        <p class="availability"><span aria-hidden="true"></span>{{ content.availability }}</p>
       </div>
+
+      <article class="trace-window" aria-labelledby="trace-title">
+        <div class="trace-chrome">
+          <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p id="trace-title">{{ content.traceTitle }}</p>
+          <span>LIVE / SCRUBBED</span>
+        </div>
+
+        <div class="trace-meta">
+          <div>
+            <p>{{ content.traceId }}</p>
+            <strong>{{ content.traceCase }}</strong>
+          </div>
+          <span class="trace-verdict">{{ content.verdict }}</span>
+        </div>
+
+        <p class="sr-only">{{ content.stepLabel }}</p>
+        <ol class="trace-steps">
+          <li v-for="(step, index) in traceSteps" :key="step.key">
+            <button
+              type="button"
+              :class="['trace-step', `state-${step.state}`, { active: activeStep === index }]"
+              :aria-pressed="activeStep === index"
+              @click="activeStep = index"
+            >
+              <span class="trace-index">{{ step.key }}</span>
+              <span class="trace-node" aria-hidden="true"></span>
+              <span class="trace-name"><strong>{{ step.name }}</strong><small>{{ step.meta }}</small></span>
+              <span class="trace-state">{{ step.state }}</span>
+            </button>
+          </li>
+        </ol>
+
+        <div class="trace-detail" aria-live="polite">
+          <p class="mono-label">node / {{ activeTrace.key }}</p>
+          <dl>
+            <div v-for="(item, index) in activeTrace.detail" :key="item">
+              <dt>{{ content.detailLabels[index] }}</dt>
+              <dd>{{ item }}</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+    </div>
+
+    <div class="shell hero-footnote" aria-hidden="true">
+      <span>01 — observe</span><span>02 — replay</span><span>03 — decide</span>
     </div>
   </section>
 </template>
 
 <style scoped>
-.hero-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  border-bottom: 1px solid var(--border-color);
-  overflow: hidden;
+.hero {
   position: relative;
-}
-
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.hero-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 520px);
+  min-height: 100svh;
+  padding: 148px 0 42px;
   align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
+  overflow: hidden;
 }
 
-.hero-text {
-  max-width: 640px;
+.hero::after {
+  position: absolute;
+  top: 72px;
+  right: -18vw;
+  z-index: -1;
+  width: 58vw;
+  height: 58vw;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 80px rgba(37, 99, 235, 0.018), inset 0 0 0 160px rgba(37, 99, 235, 0.018);
+  content: '';
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(500px, 0.92fr);
+  gap: clamp(38px, 5vw, 70px);
+  align-items: center;
 }
 
-.name {
-  display: inline-block;
-  background: linear-gradient(135deg, var(--accent-color), #0099ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.hero-copy h1 {
+  max-width: 690px;
+  margin: 22px 0 28px;
+  font-size: clamp(3.4rem, 5.6vw, 6.25rem);
+  line-height: 0.91;
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--secondary-color);
-  margin-bottom: 2rem;
-  min-height: 2em;
+.hero-copy h1 span {
+  display: block;
+}
+
+.hero-copy h1 .accent {
+  color: var(--blue);
+}
+
+.hero-intro {
+  max-width: 625px;
+  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: clamp(1.04rem, 1.4vw, 1.2rem);
+  line-height: 1.65;
 }
 
 .hero-actions {
   display: flex;
-  align-items: center;
-  gap: 0.875rem;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
-.cursor {
-  display: inline-block;
-  animation: blink 1s infinite;
-  margin-left: 2px;
-}
-
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
-.cv-button,
-.project-button,
-.blog-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1.75rem;
-  text-decoration: none;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.cv-button {
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  border: 2px solid var(--text-color);
-}
-
-.project-button {
-  background-color: transparent;
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-}
-
-.blog-button {
-  color: #fff;
-  background:
-    linear-gradient(135deg, #0f766e, #111 82%);
-  border: 1px solid #0f766e;
-  box-shadow: 0 12px 26px rgba(15, 118, 110, 0.16);
-}
-
-.cv-button:hover,
-.project-button:hover,
-.blog-button:hover {
-  background-color: transparent;
-  color: var(--text-color);
-  transform: translateY(-2px);
-}
-
-.project-button:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
-
-.blog-button:hover {
-  border-color: #0f766e;
-  color: #0f766e;
-  box-shadow: none;
-}
-
-.cv-button svg,
-.project-button svg,
-.blog-button svg {
-  transition: transform 0.3s ease;
-}
-
-.cv-button:hover svg {
-  transform: translateY(2px);
-}
-
-.project-button:hover svg {
-  transform: translateX(3px);
-}
-
-.blog-button:hover svg {
-  transform: rotate(-5deg) translateY(-1px);
-}
-
-.hero-agent {
-  width: 100%;
-  max-width: 520px;
-  will-change: transform;
-}
-
-.agent-stage {
-  position: relative;
-  min-height: 380px;
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  background:
-    linear-gradient(135deg, rgba(0, 102, 255, 0.08), transparent 44%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.035), rgba(0, 0, 0, 0.01));
-  overflow: hidden;
-}
-
-.agent-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
-  background-size: 28px 28px;
-  mask-image: radial-gradient(circle at center, black 0%, transparent 76%);
-  opacity: 0.55;
-}
-
-.portrait-module {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 47%;
-  width: 244px;
-  height: 296px;
-  margin-left: -138px;
-  margin-top: -158px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 0.75rem;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.68)),
-    radial-gradient(circle at 50% 0%, rgba(0, 102, 255, 0.18), transparent 54%);
-  box-shadow:
-    0 26px 70px rgba(0, 0, 0, 0.18),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.62);
-  transition: box-shadow 0.25s ease;
-  transform-style: preserve-3d;
-  will-change: transform;
-  overflow: hidden;
-}
-
-.portrait-module:hover {
-  box-shadow:
-    0 30px 78px rgba(0, 102, 255, 0.16),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.68);
-}
-
-.portrait-module img {
-  position: absolute;
-  inset: 12px 12px 68px;
-  width: calc(100% - 24px);
-  height: calc(100% - 80px);
-  border-radius: 0.55rem;
-  object-fit: cover;
-  filter: saturate(0.96) contrast(1.04);
-}
-
-.portrait-glow {
-  position: absolute;
-  inset: -40%;
-  background:
-    radial-gradient(circle at 30% 20%, rgba(0, 102, 255, 0.24), transparent 34%),
-    radial-gradient(circle at 72% 78%, rgba(0, 168, 120, 0.18), transparent 36%);
-  animation: portraitGlow 7s ease-in-out infinite;
-}
-
-.portrait-label {
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
-  min-height: 48px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(12px);
+.availability {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.55rem 0.7rem;
-}
-
-.portrait-label span {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--text-color);
-}
-
-.portrait-label small {
-  margin-top: 0.1rem;
-  font-size: 0.72rem;
-  color: var(--secondary-color);
-}
-
-.agent-core {
-  position: absolute;
-  z-index: 3;
-  left: calc(50% + 110px);
-  top: calc(47% + 78px);
-  width: 132px;
-  height: 132px;
-  margin-left: -66px;
-  margin-top: -66px;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 38% 32%, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.18) 24%, transparent 42%),
-    radial-gradient(circle at center, #141414 0%, #050505 64%, #000 100%);
-  box-shadow:
-    0 24px 56px rgba(0, 0, 0, 0.28),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-  transform-style: preserve-3d;
-}
-
-.core-ring {
-  position: absolute;
-  inset: -14px;
-  border: 1px solid rgba(0, 102, 255, 0.32);
-  border-radius: 50%;
-  animation: ringSpin 12s linear infinite;
-}
-
-.ring-two {
-  inset: 14px;
-  border-color: rgba(0, 180, 130, 0.34);
-  animation-duration: 8s;
-  animation-direction: reverse;
-}
-
-.core-ring::before,
-.core-ring::after {
-  content: '';
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-}
-
-.core-ring::before {
-  top: 14px;
-  left: 30px;
-}
-
-.core-ring::after {
-  right: 22px;
-  bottom: 24px;
-  background-color: #00a878;
-}
-
-.core-chip {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 66px;
-  height: 66px;
-  margin-left: -33px;
-  margin-top: -33px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
 }
 
-.core-chip span {
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-.core-chip small {
-  margin-top: 0.2rem;
-  font-size: 0.56rem;
-  color: rgba(255, 255, 255, 0.62);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.core-eye {
-  position: absolute;
-  left: 50%;
-  bottom: 24px;
-  width: 38px;
-  height: 10px;
-  margin-left: -19px;
-  border-radius: 999px;
-  background: rgba(0, 102, 255, 0.22);
-  overflow: hidden;
-}
-
-.core-eye span {
-  display: block;
-  width: 14px;
-  height: 100%;
-  border-radius: 999px;
-  background-color: #5cc8ff;
-  animation: eyeScan 2.2s ease-in-out infinite;
-}
-
-.agent-node {
-  position: absolute;
-  z-index: 2;
-  min-width: 112px;
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  border-radius: 0.5rem;
-  padding: 0.75rem 0.85rem;
-  background: rgba(255, 255, 255, 0.84);
-  color: var(--text-color);
-  cursor: pointer;
-  text-align: left;
-  transition: border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
-  backdrop-filter: blur(10px);
-  will-change: transform;
-}
-
-.agent-node span {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.agent-node small {
-  display: block;
-  margin-top: 0.2rem;
-  color: var(--secondary-color);
-  font-size: 0.72rem;
-}
-
-.agent-node:hover,
-.agent-node.active {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-  box-shadow: 0 12px 28px rgba(0, 102, 255, 0.12);
-}
-
-.node-skills {
-  top: 34px;
-  left: 30px;
-}
-
-.node-evals {
-  top: 48px;
-  right: 28px;
-}
-
-.node-desktop {
-  left: 40px;
-  bottom: 50px;
-}
-
-.node-voice {
-  right: 34px;
-  bottom: 38px;
-}
-
-.agent-terminal {
-  margin-top: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  background-color: #080808;
-  color: #d7ffe9;
-  overflow: hidden;
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.14);
-}
-
-.terminal-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  height: 36px;
-  padding: 0 0.85rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.62);
-}
-
-.terminal-bar span {
+.availability span {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #ff5f57;
+  background: var(--teal);
+  box-shadow: 0 0 0 5px rgba(15, 118, 110, 0.12);
 }
 
-.terminal-bar span:nth-child(2) {
-  background-color: #ffbd2e;
+.trace-window {
+  border: 1px solid #252b36;
+  border-radius: 7px;
+  color: #e7ebf1;
+  background: #0d1118;
+  box-shadow: var(--shadow), 14px 14px 0 rgba(37, 99, 235, 0.13);
+  overflow: hidden;
 }
 
-.terminal-bar span:nth-child(3) {
-  background-color: #28c840;
+.trace-chrome {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 45px;
+  padding: 0 15px;
+  border-bottom: 1px solid #252b36;
+  color: #9ba5b4;
+  font-family: var(--mono);
+  font-size: 0.61rem;
+  letter-spacing: 0.04em;
 }
 
-.terminal-bar p {
-  margin-left: 0.45rem;
-  font-size: 0.78rem;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+.trace-chrome p {
+  margin: 0;
+  color: #dce3ed;
 }
 
-.terminal-lines {
-  min-height: 112px;
-  padding: 1rem;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+.trace-chrome > span {
+  justify-self: end;
+  color: #6bd2c6;
 }
 
-.terminal-lines p {
-  color: rgba(215, 255, 233, 0.9);
-  font-size: 0.86rem;
-  line-height: 1.8;
+.window-dots {
+  display: flex;
+  gap: 5px;
 }
 
-.terminal-lines span {
-  margin-right: 0.65rem;
-  color: #5cc8ff;
+.window-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3a4350;
 }
 
-@keyframes ringSpin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.trace-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 22px;
+  border-bottom: 1px solid #252b36;
 }
 
-@keyframes eyeScan {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(32px);
-  }
+.trace-meta p,
+.trace-meta strong {
+  display: block;
+  margin: 0;
+  font-family: var(--mono);
 }
 
-@keyframes portraitGlow {
-  0%, 100% {
-    transform: translate3d(-8px, -4px, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(8px, 4px, 0) rotate(8deg);
-  }
+.trace-meta p {
+  margin-bottom: 3px;
+  color: #778293;
+  font-size: 0.62rem;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 6rem 1rem 3rem;
-  }
-  
-  .hero-content {
+.trace-meta strong {
+  color: #e7ebf1;
+  font-size: 0.76rem;
+}
+
+.trace-verdict {
+  padding: 5px 8px;
+  border: 1px solid #765421;
+  border-radius: 3px;
+  color: #f0bd68;
+  background: rgba(183, 121, 31, 0.11);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  white-space: nowrap;
+}
+
+.trace-steps {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.trace-step {
+  display: grid;
+  grid-template-columns: 30px 18px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 22px;
+  border: 0;
+  color: #9ba5b4;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.trace-step:hover,
+.trace-step.active {
+  color: #f4f6f9;
+  background: #151b24;
+}
+
+.trace-step.active {
+  box-shadow: inset 2px 0 0 var(--blue);
+}
+
+.trace-index,
+.trace-state,
+.trace-name small {
+  font-family: var(--mono);
+  font-size: 0.59rem;
+}
+
+.trace-index {
+  color: #5d6877;
+}
+
+.trace-node {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #0d1118;
+  border-radius: 50%;
+  background: #5ec5b8;
+  box-shadow: 0 0 0 1px #5ec5b8;
+}
+
+.trace-node::after {
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 1px;
+  height: 31px;
+  background: #323b48;
+  content: '';
+}
+
+.trace-steps li:last-child .trace-node::after {
+  display: none;
+}
+
+.state-review .trace-node,
+.state-held .trace-node {
+  background: #e2a849;
+  box-shadow: 0 0 0 1px #e2a849;
+}
+
+.trace-name strong,
+.trace-name small {
+  display: block;
+}
+
+.trace-name strong {
+  color: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.trace-name small {
+  margin-top: 2px;
+  color: #697586;
+}
+
+.trace-state {
+  text-transform: uppercase;
+}
+
+.state-pass .trace-state {
+  color: #5ec5b8;
+}
+
+.state-review .trace-state,
+.state-held .trace-state {
+  color: #e2a849;
+}
+
+.trace-detail {
+  padding: 17px 22px 19px;
+  border-top: 1px solid #252b36;
+  background: #10151d;
+}
+
+.trace-detail .mono-label {
+  margin-bottom: 12px;
+  color: #718096;
+}
+
+.trace-detail dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0;
+}
+
+.trace-detail dl div {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #252b36;
+  border-radius: 3px;
+}
+
+.trace-detail dt {
+  color: #697586;
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  text-transform: uppercase;
+}
+
+.trace-detail dd {
+  margin: 4px 0 0;
+  color: #d3d9e2;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.hero-footnote {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  align-self: end;
+  margin-top: 38px;
+  color: var(--quiet);
+  font-family: var(--mono);
+  font-size: 0.61rem;
+  text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 1100px) {
+  .hero-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
-  
-  .hero-title {
-    font-size: 2rem;
+
+  .hero-copy {
+    max-width: 820px;
   }
-  
-  .hero-subtitle {
-    font-size: 1rem;
+
+  .trace-window {
+    width: min(100%, 760px);
   }
-  
+}
+
+@media (max-width: 620px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3rem, 15vw, 4.2rem);
+  }
+
+  .hero-copy.is-zh h1 {
+    font-size: clamp(2.9rem, 12.5vw, 3.4rem);
+    line-height: 0.94;
+  }
+
   .hero-actions {
     align-items: stretch;
+    flex-direction: column;
   }
 
-  .cv-button,
-  .project-button,
-  .blog-button {
-    justify-content: center;
-    flex: 1 1 160px;
+  .trace-window {
+    margin-inline: -8px;
+    width: calc(100% + 16px);
   }
 
-  .hero-agent {
-    max-width: 100%;
+  .trace-chrome {
+    grid-template-columns: 1fr auto;
   }
 
-  .agent-stage {
-    min-height: 340px;
+  .window-dots {
+    display: none;
   }
 
-  .portrait-module {
-    width: 196px;
-    height: 238px;
-    margin-left: -112px;
-    margin-top: -128px;
+  .trace-meta {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .portrait-module img {
-    inset: 10px 10px 58px;
-    width: calc(100% - 20px);
-    height: calc(100% - 68px);
+  .trace-step {
+    grid-template-columns: 24px 14px 1fr;
+    padding-inline: 15px;
   }
 
-  .agent-core {
-    left: calc(50% + 78px);
-    top: calc(47% + 66px);
-    width: 106px;
-    height: 106px;
-    margin-left: -53px;
-    margin-top: -53px;
+  .trace-state {
+    display: none;
   }
 
-  .core-chip {
-    width: 54px;
-    height: 54px;
-    margin-left: -27px;
-    margin-top: -27px;
+  .trace-detail {
+    padding-inline: 15px;
   }
 
-  .agent-node {
-    min-width: 96px;
-    padding: 0.65rem 0.7rem;
+  .trace-detail dl {
+    grid-template-columns: 1fr;
   }
 
-  .node-skills {
-    top: 28px;
-    left: 18px;
-  }
-
-  .node-evals {
-    top: 44px;
-    right: 16px;
-  }
-
-  .node-desktop {
-    left: 18px;
-    bottom: 38px;
-  }
-
-  .node-voice {
-    right: 16px;
-    bottom: 34px;
-  }
-
-  .terminal-lines p {
-    font-size: 0.78rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .core-ring,
-  .core-eye span,
-  .cursor {
-    animation: none;
+  .hero-footnote {
+    justify-content: flex-start;
+    gap: 15px;
   }
 }
 </style>

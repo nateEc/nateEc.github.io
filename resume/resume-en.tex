@@ -1,0 +1,94 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.42in]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{microtype}
+
+\setmainfont{Arial}
+\definecolor{accent}{HTML}{245BDB}
+\definecolor{muted}{HTML}{4D5664}
+\hypersetup{colorlinks=true,urlcolor=accent,pdfauthor={Nathan Shan},pdftitle={Nathan Shan — AI Agent Engineer}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.05em,itemsep=0.8pt,topsep=1.4pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{2pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+\newcommand{\role}[4]{%
+  \textbf{#1}\hfill\textbf{#2}\\[-1pt]
+  \textcolor{muted}{#3}\hfill\textcolor{muted}{#4}\par
+}
+
+\begin{document}
+\fontsize{9.2}{10.8}\selectfont
+
+\begin{center}
+  {\fontsize{21}{23}\selectfont\bfseries Nathan Shan}\\[1pt]
+  {\large\color{accent}AI Agent Engineer}\\[3pt]
+  \href{mailto:nathanshanusa@gmail.com}{nathanshanusa@gmail.com}
+  \quad $\cdot$ \quad +86 191 9242 2920
+  \quad $\cdot$ \quad Beijing, China\\[2pt]
+  \href{https://nateec.github.io/}{nateec.github.io}
+  \quad $\cdot$ \quad
+  \href{https://github.com/nateEc}{github.com/nateEc}
+  \quad $\cdot$ \quad
+  \href{https://www.linkedin.com/in/yukun-shan-803a02225/}{LinkedIn}
+\end{center}
+
+\section{Experience}
+
+\role{AI Agent Engineer}{Mar 2026 -- Present}{VisionFlow AI}{Beijing, China}
+\begin{itemize}
+  \item Designed a user-level skill-learning loop that turns multi-turn agent runs into policy, observation, candidate, and human-confirmation stages with risk tiers, idempotent deduplication, and privacy minimization.
+  \item Built an agent-failure regression platform that converts negative feedback, empty answers, and tool failures into reviewable cases across 6 repositories, 13 domains, and 29 suites; integrated runtime replay, semantic judging, LLM-cost isolation, and incremental Jenkins checks.
+  \item Designed a Skill Router Rule Shadow framework for evaluating candidate rules without affecting user traffic, using stable-field comparison, latency statistics, atomic review bundles, and sensitive-output scanning.
+  \item Built HiPilot Desktop with Electron, the Codex app server, and the t3code workbench, including short-lived model tokens, an SSE proxy, idempotent billing, redacted diagnostics, and macOS release verification.
+  \item Delivered recruiting-agent and AI-interview workflows spanning candidate synchronization, retrieval and matching, outreach reminders, operational reporting, and JD/r\'esum\'e-driven voice interviews.
+\end{itemize}
+
+\role{AI Algorithm Development Engineer}{May 2025 -- Feb 2026}{Iston AI}{Shanghai, China}
+\begin{itemize}
+  \item Architected an AI digital-human backend and integrated GPT, RAG, ASR/TTS, and Ollama-powered web search through FastAPI for real-time voice interaction.
+  \item Designed load balancing for Ollama services and moved the pipeline to asynchronous execution, reducing average latency by 70\% and increasing throughput by nearly 10$\times$.
+  \item Refactored phoneme parsing and similarity scoring, then built K--12 speaking tasks and dynamic question generation, improving scoring accuracy by approximately 40\%.
+\end{itemize}
+
+\role{Software Engineer Intern}{Jun 2024 -- Jul 2024}{Chinese Historical Christian Database}{Boston, MA}
+\begin{itemize}
+  \item Optimized Neo4j Cypher queries and fixed frontend data-fetching errors, reducing query time by approximately 30\% while improving regional church-population data accuracy.
+\end{itemize}
+
+\role{Software Engineer}{Sep 2023 -- Dec 2023}{BU Spark!}{Boston, MA}
+\begin{itemize}
+  \item Coordinated one designer and three developers to build Petventure with Ionic React, PostgreSQL, and Prisma for pet-friendly venue discovery and distance filtering.
+\end{itemize}
+
+\section{Selected Projects}
+
+\role{TalkIt Voice Learning Agent}{Mar 2026 -- Apr 2026}{Expo / React Native / Deepgram / Agent OS}{}
+\begin{itemize}
+  \item Built a voice-first agent app from the ground up, connecting streaming text, Deepgram STT, sentence-level TTS, quizzes, shadowing, and roleplay; improved long-session continuity through streaming batches, ASR fallback, and Redis session recovery.
+\end{itemize}
+
+\role{Flipod AI Listening App}{Apr 2026}{Expo / React Native / Cloudflare Workers / D1}{}
+\begin{itemize}
+  \item Modernized the mobile and server stack with word-level captions, CEFR difficulty highlighting, behavior-driven content ranking, structured practice from saved vocabulary, and content localization for 10 native languages.
+\end{itemize}
+
+\section{Education}
+\role{B.S. in Computer Science}{Sep 2021 -- Jan 2025}{Boston University}{Boston, MA}
+\textcolor{muted}{Coursework: algorithms, data structures, mobile software engineering, web programming, computer systems, databases, networks, linear algebra, and computational probability.}
+
+\section{Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.35in}X@{}}
+AI Agents & Skill and tool calling, RAG, LLM applications, agent evaluation, ASR/TTS, model integration, context and session management \\
+Engineering & Python, TypeScript, JavaScript, FastAPI, React / React Native, Vue, Electron, PostgreSQL, Redis, SQL \\
+Operations & Docker, Nginx, Git, CI/CD, Jenkins, Cloudflare, async systems, observability, automated testing
+\end{tabularx}
+
+\end{document}

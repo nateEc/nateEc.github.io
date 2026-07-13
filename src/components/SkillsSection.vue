@@ -4,205 +4,216 @@ import { useLanguage } from '../composables/useLanguage'
 
 const { currentLanguage } = useLanguage()
 
-type LocalizedText = {
-  en: string
-  zh: string
-}
-
-type Skill = {
-  name: string | LocalizedText
-  icon: string
-}
-
-type SkillCategory = {
-  title: LocalizedText
-  skills: Skill[]
-}
-
-const sectionTitle = computed(() => {
-  if (currentLanguage.value === 'zh') {
-    return { highlight: '我的', main: '技能' }
-  }
-  return { highlight: 'My', main: 'Skills' }
-})
-
-const skillCategories: SkillCategory[] = [
-  {
-    title: { en: 'AI & Agent Systems', zh: 'AI 与 Agent 系统' },
-    skills: [
-      { name: 'Agents', icon: '/images/skills/agents.png' },
-      { name: { en: 'Skill & Tool Calling', zh: 'Skill 与工具调用' }, icon: '/images/skills/function-calling.png' },
-      { name: { en: 'Agent Evaluation', zh: 'Agent 评测' }, icon: '/images/skills/model-deployment.png' },
-      { name: 'RAG', icon: '/images/skills/rag.png' },
-      { name: 'MCP', icon: '/images/skills/mcp.png' },
-      { name: { en: 'LLM App Development', zh: '大语言模型应用开发' }, icon: '/images/skills/llm-apps.png' },
-      { name: { en: 'Speech Recognition', zh: '语音识别' }, icon: '/images/skills/speech-recognition.png' },
-      { name: { en: 'Text-to-Speech', zh: '语音合成' }, icon: '/images/skills/text-to-speech.png' },
-      { name: { en: 'Context & Session Management', zh: '上下文与会话管理' }, icon: '/images/skills/environment-config.png' }
-    ]
-  },
-  {
-    title: { en: 'Engineering Development', zh: '工程开发' },
-    skills: [
-      { name: 'Python', icon: '/images/icons8-python.svg' },
-      { name: 'TypeScript', icon: '/images/skills/typescript.png' },
-      { name: 'JavaScript', icon: '/images/javascript.svg' },
-      { name: 'FastAPI', icon: '/images/skills/fastapi.png' },
-      { name: 'React / React Native', icon: '/images/react.svg' },
-      { name: 'Electron', icon: '/images/skills/electron.svg' },
-      { name: 'PostgreSQL', icon: '/images/skills/postgresql.png' },
-      { name: 'Redis', icon: '/images/skills/redis.svg' },
-      { name: 'SQL', icon: '/images/skills/sql.png' }
-    ]
-  },
-  {
-    title: { en: 'Infrastructure & Quality', zh: '工程化与质量' },
-    skills: [
-      { name: 'Docker', icon: '/images/skills/docker.png' },
-      { name: 'Nginx', icon: '/images/skills/nginx.png' },
-      { name: 'Git', icon: '/images/icons8-git.svg' },
-      { name: 'CI/CD', icon: '/images/skills/cicd.png' },
-      { name: 'Jenkins', icon: '/images/skills/cicd.png' },
-      { name: 'Cloudflare', icon: '/images/skills/cloudflare.svg' },
-      { name: { en: 'Async Programming', zh: '异步编程' }, icon: '/images/skills/async-concurrency.png' },
-      { name: { en: 'Observability', zh: '可观测性' }, icon: '/images/skills/load-balancing.png' },
-      { name: { en: 'Automated Testing', zh: '自动化测试' }, icon: '/images/skills/jmeter.png' }
-    ]
-  }
-]
-
-const localizedSkillCategories = computed(() => {
-  return skillCategories.map((category) => ({
-    title: currentLanguage.value === 'zh' ? category.title.zh : category.title.en,
-    skills: category.skills
-  }))
-})
-
-const skillName = (skill: Skill) => {
-  if (typeof skill.name === 'string') {
-    return skill.name
-  }
-  return currentLanguage.value === 'zh' ? skill.name.zh : skill.name.en
-}
+const content = computed(() => currentLanguage.value === 'zh'
+  ? {
+      kicker: '能力模型',
+      title: '围绕 Agent 生命周期工作的工程能力。',
+      subtitle: '不再用图标墙罗列工具；这里按我解决问题的方式组织能力。',
+      capabilities: [
+        {
+          index: '01',
+          title: 'Agent 可靠性',
+          summary: '捕获失败、构建回放、比较稳定信号，并把发布决策变成可审核证据。',
+          items: ['失败回归', 'LLM 评测', '路由 Shadow', '隐私最小化', '敏感输出扫描'],
+        },
+        {
+          index: '02',
+          title: '生产系统',
+          summary: '将流式模型调用、异步后端、用量账本和发布门禁组合成可运维产品。',
+          items: ['FastAPI', 'SSE / WebSocket', 'Redis', 'PostgreSQL', 'Docker / CI/CD'],
+        },
+        {
+          index: '03',
+          title: '多模态交互',
+          summary: '围绕语音、检索、工具调用和本地模型构建实时交互与工作流。',
+          items: ['ASR / TTS', 'RAG', 'Function calling', 'Ollama', '语音评分'],
+        },
+      ],
+      toolbox: '日常工具箱',
+      tools: ['Python', 'TypeScript', 'Vue / React', 'Electron', 'FastAPI', 'Playwright', 'PostgreSQL', 'Redis', 'Docker', 'Jenkins', 'Cloudflare'],
+    }
+  : {
+      kicker: 'Capability model',
+      title: 'Engineering across the agent lifecycle.',
+      subtitle: 'This replaces the old logo wall with the problem-solving capabilities I actually use.',
+      capabilities: [
+        {
+          index: '01',
+          title: 'Agent reliability',
+          summary: 'Capture failures, build replays, compare stable signals, and turn release decisions into reviewable evidence.',
+          items: ['Failure regression', 'LLM evaluation', 'Routing shadow', 'Privacy minimization', 'Sensitive-output scans'],
+        },
+        {
+          index: '02',
+          title: 'Production systems',
+          summary: 'Combine streaming model calls, async backends, usage ledgers, and release gates into operable products.',
+          items: ['FastAPI', 'SSE / WebSocket', 'Redis', 'PostgreSQL', 'Docker / CI/CD'],
+        },
+        {
+          index: '03',
+          title: 'Multimodal interaction',
+          summary: 'Build real-time experiences and workflows around voice, retrieval, tools, and local models.',
+          items: ['ASR / TTS', 'RAG', 'Function calling', 'Ollama', 'Pronunciation scoring'],
+        },
+      ],
+      toolbox: 'Working toolbox',
+      tools: ['Python', 'TypeScript', 'Vue / React', 'Electron', 'FastAPI', 'Playwright', 'PostgreSQL', 'Redis', 'Docker', 'Jenkins', 'Cloudflare'],
+    })
 </script>
 
 <template>
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <h2 class="section-title"><span>{{ sectionTitle.highlight }}</span> {{ sectionTitle.main }}</h2>
-
-      <div class="skills-grid">
-        <div v-for="category in localizedSkillCategories" :key="category.title" class="skill-category">
-          <h3>{{ category.title }}</h3>
-          <div class="skills-list">
-            <div v-for="skill in category.skills" :key="skillName(skill)" class="skill-item">
-              <img :src="skill.icon" :alt="skillName(skill)" />
-              <span>{{ skillName(skill) }}</span>
-            </div>
-          </div>
+  <section id="skills" class="section skills" aria-labelledby="skills-title">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">{{ content.kicker }}</p>
+        <div>
+          <h2 id="skills-title">{{ content.title }}</h2>
+          <p class="section-heading__copy">{{ content.subtitle }}</p>
         </div>
+      </div>
+
+      <div class="capability-grid">
+        <article v-for="capability in content.capabilities" :key="capability.index">
+          <span>{{ capability.index }}</span>
+          <h3>{{ capability.title }}</h3>
+          <p>{{ capability.summary }}</p>
+          <ul>
+            <li v-for="item in capability.items" :key="item">{{ item }}</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="toolbox">
+        <p class="mono-label">{{ content.toolbox }}</p>
+        <ul>
+          <li v-for="tool in content.tools" :key="tool">{{ tool }}</li>
+        </ul>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-.skills-section {
-  min-height: 100vh;
-  padding: 6rem 2rem;
-  border-bottom: 1px solid var(--border-color);
+.skills {
+  background: var(--paper-deep);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.section-heading__copy {
+  margin-top: 24px;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 4rem;
-  text-align: center;
-}
-
-.section-title span {
-  color: var(--accent-color);
-}
-
-.skills-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-}
-
-.skill-category h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  color: var(--text-color);
-}
-
-.skills-list {
+.capability-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
 }
 
-.skill-item {
+.capability-grid article {
+  min-height: 440px;
+  padding: 30px;
+  border-right: 1px solid var(--line-strong);
+}
+
+.capability-grid article:first-child {
+  padding-left: 0;
+}
+
+.capability-grid article:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.capability-grid article > span {
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 0.69rem;
+}
+
+.capability-grid h3 {
+  margin: 72px 0 16px;
+  font-size: clamp(1.6rem, 2.6vw, 2.25rem);
+}
+
+.capability-grid p {
+  min-height: 108px;
+  color: var(--muted);
+}
+
+.capability-grid ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+
+.capability-grid li {
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+}
+
+.toolbox {
+  display: grid;
+  grid-template-columns: 0.36fr 1.64fr;
+  gap: 30px;
+  padding-top: 38px;
+}
+
+.toolbox .mono-label {
+  color: var(--quiet);
+}
+
+.toolbox ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 128px;
-  gap: 0.75rem;
-  padding: 1.25rem;
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.skill-item:hover {
-  border-color: var(--accent-color);
-  transform: translateY(-4px);
+.toolbox li {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
 }
 
-.skill-item img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
+.toolbox li:not(:last-child)::after {
+  margin: 0 13px;
+  color: var(--line-strong);
+  content: '/';
 }
 
-.skill-item span {
-  max-width: 100%;
-  font-size: 0.875rem;
-  line-height: 1.35;
-  text-align: center;
-  color: var(--secondary-color);
-  overflow-wrap: anywhere;
-}
-
-@media (max-width: 768px) {
-  .skills-section {
-    padding: 4rem 1rem;
+@media (max-width: 780px) {
+  .capability-grid {
+    grid-template-columns: 1fr;
   }
 
-  .section-title {
-    font-size: 2rem;
+  .capability-grid article,
+  .capability-grid article:first-child,
+  .capability-grid article:last-child {
+    min-height: auto;
+    padding: 30px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line-strong);
   }
 
-  .skills-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+  .capability-grid article:last-child {
+    border-bottom: 0;
   }
 
-  .skill-item {
-    min-height: 112px;
-    padding: 1rem;
+  .capability-grid h3 {
+    margin-top: 35px;
   }
 
-  .skill-item img {
-    width: 36px;
-    height: 36px;
+  .capability-grid p {
+    min-height: 0;
+  }
+
+  .toolbox {
+    grid-template-columns: 1fr;
   }
 }
 </style>

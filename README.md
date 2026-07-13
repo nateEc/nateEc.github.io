@@ -1,42 +1,40 @@
-# portfolio-vue
+# Nathan Shan — Agent Reliability Casebook
 
-This template should help get you started developing with Vue 3 in Vite.
+A bilingual portfolio for production AI-agent engineering. The site is organized as an evidence archive rather than a generic project gallery: a sanitized trace inspector in the Hero, three deep case studies, a smaller product/open-source archive, technical notes, and a transparent mail-draft contact flow.
 
-## Recommended IDE Setup
+## Local review
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
+npm run check
+npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
-### Compile and Hot-Reload for Development
+Open [http://127.0.0.1:4173/](http://127.0.0.1:4173/).
 
-```sh
-npm run dev
+`npm run check` performs the TypeScript check, production build, local-link checks, required-asset checks, metadata checks, and verifies that generated `dist/` files are not tracked.
+
+## Content map
+
+- `src/data/portfolio.ts` — bilingual case-study and project content
+- `src/views/CaseStudyView.vue` — reusable deep-case route
+- `src/components/HeroSection.vue` — sanitized Agent Trace Inspector
+- `src/components/PortfolioSection.vue` — casebook and project archive
+- `public/blog/` — long-form notes with a shared reading shell
+- `resume/resume-en.tex` — reproducible English résumé source
+- `public/resume-en.pdf` / `public/resume-zh.pdf` — public résumé files
+- `scripts/check-site.mjs` — dependency-free site validation
+
+## Commands
+
+```bash
+npm run dev         # Vite development server
+npm run type-check  # Vue/TypeScript validation
+npm run build       # Production build
+npm run check       # Full local acceptance suite
+npm run preview     # Preview the production build
 ```
 
-### Type-Check, Compile and Minify for Production
+## Publishing
 
-```sh
-npm run build
-```
+This repository intentionally has no package script that deploys automatically. `dist/` is generated and ignored. Publishing should happen only after a reviewed local build through an explicitly chosen hosting workflow.
