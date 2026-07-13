@@ -1,0 +1,1308 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HiPilot Skill 沉淀算法外显</title>
+  <style>
+    :root {
+      --paper: #f7f4ee;
+      --ink: #1b2423;
+      --muted: #65706c;
+      --line: #d9d1c3;
+      --panel: #fffaf1;
+      --panel-2: #f0f7f4;
+      --hard: #b83e32;
+      --soft: #b88223;
+      --clean: #2f7d64;
+      --observe: #416a99;
+      --shadow: rgba(49, 42, 31, 0.12);
+      --mono: "SFMono-Regular", "Menlo", "Consolas", monospace;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.55;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px) 0 0 / 36px 36px,
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px) 0 0 / 36px 36px,
+        radial-gradient(circle at 20% 12%, rgba(47,125,100,0.08), transparent 30%),
+        var(--paper);
+    }
+
+    .page {
+      width: min(1320px, calc(100vw - 40px));
+      margin: 0 auto;
+      padding: 44px 0 72px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 28px;
+      align-items: stretch;
+      margin-bottom: 30px;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 241, 0.78);
+      box-shadow: 0 18px 50px var(--shadow);
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 9px;
+      background: linear-gradient(180deg, var(--clean), var(--observe), var(--soft), var(--hard));
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font: 700 12px/1 var(--mono);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-family: var(--serif);
+      font-size: clamp(38px, 5vw, 82px);
+      line-height: 0.96;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 20px 0 0;
+      max-width: 760px;
+      color: #34413e;
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .hero-button {
+      appearance: none;
+      border: 1px solid #202a28;
+      background: #202a28;
+      color: #fff7e6;
+      padding: 11px 14px;
+      font: 800 12px/1 var(--mono);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 4px 4px 0 #c7bead;
+      transition: transform 140ms ease, box-shadow 140ms ease;
+    }
+
+    .hero-button:hover,
+    .hero-button:focus-visible {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 #c7bead;
+      outline: none;
+    }
+
+    .hero-button.secondary {
+      background: #fffaf1;
+      color: #202a28;
+    }
+
+    .commit {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      border: 1px solid var(--line);
+      background: #202a28;
+      color: #f7f4ee;
+      box-shadow: 0 18px 50px var(--shadow);
+      padding: 24px;
+    }
+
+    .commit code,
+    code,
+    .mono {
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .commit .label {
+      color: #b7c2bc;
+      font: 700 11px/1 var(--mono);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .commit .line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.13);
+      padding-bottom: 8px;
+    }
+
+    .commit .line:last-child { border: 0; }
+    .commit b { color: #fff6dc; }
+
+    .legend {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0 0 28px;
+    }
+
+    .legend-item {
+      border: 1px solid var(--line);
+      background: rgba(255,250,241,0.82);
+      padding: 14px;
+      min-height: 84px;
+    }
+
+    .legend-item strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .legend-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: 1px;
+    }
+
+    .dot.clean { background: var(--clean); }
+    .dot.soft { background: var(--soft); }
+    .dot.hard { background: var(--hard); }
+    .dot.observe { background: var(--observe); }
+
+    .section {
+      margin: 30px 0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 14px;
+      font-family: var(--serif);
+      font-size: 30px;
+      line-height: 1.1;
+    }
+
+    .section-title .tag {
+      font: 700 12px/1 var(--mono);
+      color: var(--muted);
+      border: 1px solid var(--line);
+      padding: 6px 8px;
+      background: rgba(255,250,241,0.72);
+    }
+
+    .board {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 241, 0.9);
+      box-shadow: 0 18px 50px var(--shadow);
+      padding: 22px;
+      overflow: auto;
+    }
+
+    .flow {
+      min-width: 1080px;
+      display: grid;
+      grid-template-columns: 1fr 1.08fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      gap: 14px 18px;
+      align-items: stretch;
+    }
+
+    .node {
+      border: 1px solid #cfc5b5;
+      background: var(--panel);
+      padding: 16px;
+      position: relative;
+    }
+
+    .node h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .node p,
+    .node li {
+      margin: 0;
+      color: #4c5652;
+      font-size: 13px;
+    }
+
+    .node ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    .node .stamp {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: var(--muted);
+      font: 700 11px/1 var(--mono);
+    }
+
+    .node.input {
+      grid-column: 1 / span 3;
+      background: #fff6e3;
+      border-left: 8px solid #202a28;
+    }
+
+    .node.policy {
+      grid-column: 1 / span 3;
+      background: #eef5f2;
+      border-left: 8px solid var(--observe);
+    }
+
+    .node.hard { border-left: 8px solid var(--hard); }
+    .node.active { border-left: 8px solid var(--clean); }
+    .node.passive { border-left: 8px solid var(--observe); }
+    .node.soft { border-left: 8px solid var(--soft); }
+    .node.end { background: #f8f1e7; }
+
+    .arrow {
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font: 800 13px/1 var(--mono);
+      border: 1px dashed #cabfae;
+      background: rgba(255,255,255,0.36);
+      padding: 8px;
+    }
+
+    .decision-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      grid-column: 1 / span 3;
+    }
+
+    .ifelse {
+      border: 1px solid var(--line);
+      background: #1f2927;
+      color: #f9f0df;
+      box-shadow: 0 18px 50px var(--shadow);
+      padding: 22px;
+      overflow: auto;
+    }
+
+    .ifelse pre {
+      margin: 0;
+      font: 13px/1.7 var(--mono);
+      white-space: pre-wrap;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(255,250,241,0.84);
+      padding: 18px;
+      min-height: 170px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 17px;
+    }
+
+    .card p {
+      margin: 0 0 10px;
+      color: #4e5955;
+      font-size: 14px;
+    }
+
+    .card .source {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 8px;
+      color: #324340;
+      font: 700 11px/1 var(--mono);
+      background: #e9e2d7;
+      padding: 7px 9px;
+    }
+
+    .prompt-list {
+      margin: 10px 0 12px;
+      padding-left: 22px;
+    }
+
+    .prompt-list li {
+      margin: 0 0 9px;
+      color: #3f4b47;
+      font-size: 13px;
+    }
+
+    .prompt-list code {
+      display: block;
+      margin-top: 4px;
+      padding: 8px 9px;
+      background: #efe7da;
+      white-space: normal;
+      line-height: 1.5;
+    }
+
+    .table-wrap {
+      border: 1px solid var(--line);
+      background: rgba(255,250,241,0.92);
+      overflow: auto;
+      box-shadow: 0 18px 50px var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 980px;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 13px;
+    }
+
+    th {
+      background: #232c2a;
+      color: #f8f1df;
+      font: 700 12px/1.2 var(--mono);
+      letter-spacing: 0.03em;
+    }
+
+    td:first-child {
+      font-family: var(--mono);
+      color: #21312e;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .pill {
+      display: inline-block;
+      padding: 4px 7px;
+      margin: 0 4px 4px 0;
+      border: 1px solid #cfc5b5;
+      background: #fff5dc;
+      font: 700 11px/1 var(--mono);
+      color: #2a3532;
+    }
+
+    .pill.hard { border-color: rgba(184,62,50,0.35); background: #f8ded8; }
+    .pill.soft { border-color: rgba(184,130,35,0.35); background: #f7ead2; }
+    .pill.clean { border-color: rgba(47,125,100,0.35); background: #dff0e9; }
+    .pill.observe { border-color: rgba(65,106,153,0.35); background: #dde9f4; }
+
+    .switchboard {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .switch {
+      border: 1px solid var(--line);
+      background: #fffaf1;
+      padding: 18px;
+      position: relative;
+      min-height: 170px;
+    }
+
+    .switch::before {
+      content: "ON";
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font: 800 11px/1 var(--mono);
+      color: #fff;
+      background: var(--clean);
+      border-radius: 999px;
+      padding: 5px 8px;
+    }
+
+    .switch h3 {
+      margin: 0 52px 10px 0;
+      font-size: 16px;
+    }
+
+    .switch p {
+      margin: 0;
+      color: #4e5955;
+      font-size: 13px;
+    }
+
+    .note {
+      border-left: 8px solid #202a28;
+      background: #fff6e3;
+      padding: 18px 20px;
+      color: #35413e;
+      box-shadow: 0 12px 34px var(--shadow);
+    }
+
+    .note strong { color: var(--ink); }
+
+    .simple-summary {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .chalkboard {
+      border: 1px solid #202a28;
+      background: #202a28;
+      color: #fff8e8;
+      padding: 22px;
+      box-shadow: 0 18px 50px var(--shadow);
+    }
+
+    .chalkboard h3 {
+      margin: 0 0 14px;
+      font-family: var(--serif);
+      font-size: 28px;
+      line-height: 1.05;
+    }
+
+    .chalkboard p {
+      margin: 0 0 12px;
+      color: #e7dfcf;
+      font-size: 15px;
+    }
+
+    .steps {
+      display: grid;
+      gap: 10px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,250,241,0.9);
+      padding: 13px;
+    }
+
+    .step-num {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      background: #202a28;
+      color: #fff6dc;
+      font: 900 15px/1 var(--mono);
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 15px;
+    }
+
+    .step p {
+      margin: 0;
+      color: #4e5955;
+      font-size: 13px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 118px minmax(0, 1fr);
+      gap: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,250,241,0.88);
+      padding: 16px;
+      box-shadow: 0 12px 34px var(--shadow);
+    }
+
+    .timeline-date {
+      font: 900 20px/1 var(--serif);
+      color: #202a28;
+      border-right: 1px solid var(--line);
+      padding-right: 14px;
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .timeline-item p {
+      margin: 0 0 8px;
+      color: #4e5955;
+      font-size: 14px;
+    }
+
+    .hashes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .hashes code {
+      background: #ece3d5;
+      color: #24302d;
+      padding: 5px 7px;
+    }
+
+    footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 12px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .page { width: min(100vw - 24px, 1320px); padding-top: 24px; }
+      header,
+      .grid-two,
+      .cards,
+      .switchboard,
+      .simple-summary,
+      .legend {
+        grid-template-columns: 1fr;
+      }
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+      .timeline-date {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 0 0 10px;
+      }
+      .hero,
+      .commit {
+        padding: 20px;
+      }
+      .section-title {
+        font-size: 24px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media print {
+      body { background: white; }
+      .page { width: auto; padding: 0; }
+      .hero, .commit, .board, .ifelse, .table-wrap, .note { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <section class="hero" aria-labelledby="title">
+        <p class="eyebrow">HiPilot / Skill Sedimentation / all switches on</p>
+        <h1 id="title">Skill 沉淀算法外显图</h1>
+        <p class="subtitle">
+          这份 HTML 按当前 <strong>feature_dev_1.2.9</strong> 后端代码整理，假设
+          <strong>主动沉淀、observe-only、后台 reviewer</strong> 三个用户侧开关全部打开。
+          它解释一个用户 prompt 进来后，系统怎样判断、记录、聚合，并最终决定是否生成 Skill 草稿。
+        </p>
+        <div class="hero-actions" aria-label="快捷跳转">
+          <a class="hero-button" href="#today-commits">查看 06/29 今日提交</a>
+          <a class="hero-button secondary" href="#case5-review">看 Case 5 失败复盘</a>
+          <a class="hero-button secondary" href="#passive-testcases">看被动测试用例</a>
+          <a class="hero-button secondary" href="#plain-summary">看初中生版解释</a>
+        </div>
+      </section>
+
+      <aside class="commit" aria-label="代码来源">
+        <div class="line"><span class="label">Backend branch</span><b>feature_dev_1.2.9</b></div>
+        <div class="line"><span class="label">Latest skill fix</span><code>5a3fe8ae</code></div>
+        <div class="line"><span class="label">Policy version</span><code>p0_simplified_v2</code></div>
+        <div class="line"><span class="label">Classifier</span><b>Haiku semantic helper</b></div>
+        <div class="line"><span class="label">Auto draft rule</span><b>quiet SkillsTab only</b></div>
+      </aside>
+    </header>
+
+    <section class="legend" aria-label="图例">
+      <div class="legend-item"><strong><span class="dot hard"></span>硬风险</strong><p>工具最终失败、无可用数据、权限/超时、明确纠错。绝不生成草稿。</p></div>
+      <div class="legend-item"><strong><span class="dot soft"></span>软风险</strong><p>查数、SQL、ontology 歧义、最终答案不确定。主动要求时可生成需确认草稿。</p></div>
+      <div class="legend-item"><strong><span class="dot clean"></span>主动沉淀</strong><p>必须来自真实 human message 的强信号，不接受 LLM hint 单独触发。</p></div>
+      <div class="legend-item"><strong><span class="dot observe"></span>被动观察</strong><p>不打扰用户，先落 observation，再聚合 candidate，成熟后静默进 SkillsTab。</p></div>
+    </section>
+
+    <section class="section" id="plain-summary">
+      <h2 class="section-title">初中生也能懂的版本 <span class="tag">plain summary</span></h2>
+      <div class="simple-summary">
+        <div class="chalkboard">
+          <h3>把 Skill 想成“可复用做题方法”</h3>
+          <p>
+            一次聊天里的回答，可能只是“这道题的答案”；Skill 不是答案本身，
+            而是下次遇到类似题目时还能继续用的“解题步骤”。
+          </p>
+          <p>
+            所以系统不是看到工具调用多就保存，而是先问：这是不是一个可靠流程？
+            用户是不是明确想保存？里面有没有错、没查到、口径不确定？
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <div><strong>先检查有没有坏信号</strong><p>如果工具失败、数据没拿到、用户说“你错了”，就像草稿纸上有错题，不能直接变成方法。</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <div><strong>用户明确说“存成 Skill”才主动保存</strong><p>只有真实用户消息里说了“沉淀/保存/封装成 Skill/流程”，系统才会给聊天里放保存卡片。</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <div><strong>查数和口径不确定要贴“需确认”</strong><p>这种流程可以保存，但不能装作完全可靠；保存前要提醒用户检查口径。</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">4</span>
+            <div><strong>用户没说保存时，系统只偷偷记分</strong><p>同类干净流程反复出现，系统先记 observation 和 candidate，不打扰用户。</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">5</span>
+            <div><strong>重复够多才进 SkillsTab 草稿</strong><p>同类流程 5 次左右都稳定，才静默生成一个草稿放到 SkillsTab「Agent沉淀」，聊天里不弹窗。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">总流程图 <span class="tag">runtime + policy + reviewer</span></h2>
+      <div class="board">
+        <div class="flow" role="img" aria-label="Skill 沉淀算法流程图">
+          <div class="node input">
+            <span class="stamp">input</span>
+            <h3>用户 prompt 进入 Agent DM</h3>
+            <p>AgentRun 执行，产生 source_message、tool_use/tool_result WAL、AgentRun.output 或 agent message 最终回复。</p>
+          </div>
+
+          <div class="node policy">
+            <span class="stamp">policy</span>
+            <h3>Skill Sediment Policy 读取证据</h3>
+            <ul>
+              <li>真实用户消息：判断 explicit_request、correction、intent_signature。</li>
+              <li>工具轨迹：canonical tool names、错误、数据/ontology/research 分类。</li>
+              <li>最终回复：判断 uncertain 措辞；必要时给 Haiku classifier 截断摘要。</li>
+            </ul>
+          </div>
+
+          <div class="decision-row">
+            <div class="node hard">
+              <span class="stamp">if hard</span>
+              <h3>risk_level = hard</h3>
+              <p>block，不生成草稿。记录 observation；如果同 key candidate 已存在，则 suppress。</p>
+            </div>
+
+            <div class="node active">
+              <span class="stamp">elif explicit</span>
+              <h3>真实用户明确要求沉淀</h3>
+              <p>active 开关打开且是 native Agent DM 时，生成 pending UserSkillDraft，并在聊天挂 skill_proposal 卡片。</p>
+            </div>
+
+            <div class="node passive">
+              <span class="stamp">else passive</span>
+              <h3>未明确要求，进入静默观察</h3>
+              <p>observe/reviewer 开关打开时，记录 observation；clean research/workflow 才能聚合 candidate。</p>
+            </div>
+          </div>
+
+          <div class="node soft">
+            <span class="stamp">soft draft</span>
+            <h3>主动 + soft risk</h3>
+            <p>仍可生成草稿，但 trigger_context 和卡片写入 <code>risk_level=soft</code>、<code>risk_reasons</code>，用户看到“需确认”。</p>
+          </div>
+
+          <div class="node end">
+            <span class="stamp">normal draft</span>
+            <h3>主动 + clean</h3>
+            <p>生成普通 pending 草稿。用户点“保存 Skill”后才正式进入“我的”。刷新后卡片状态由后端持久化。</p>
+          </div>
+
+          <div class="node passive">
+            <span class="stamp">candidate</span>
+            <h3>被动 candidate 聚合</h3>
+            <p>data_query 不建 candidate；soft 不建也不 suppress；hard suppress；clean research/workflow/unknown 按 candidate_key 累计。</p>
+          </div>
+
+          <div class="node end">
+            <span class="stamp">auto gate</span>
+            <h3>成熟 candidate 自动草稿</h3>
+            <ul>
+              <li><code>seen_count &gt;= 5</code></li>
+              <li>14 天内 supporting observations &gt;= 5</li>
+              <li>task_kind 是 research/workflow</li>
+              <li>negative_signal_count = 0</li>
+              <li>有 intent_signature_hash</li>
+            </ul>
+          </div>
+
+          <div class="node passive">
+            <span class="stamp">quiet</span>
+            <h3>只进 SkillsTab「Agent沉淀」</h3>
+            <p>后台 reviewer 创建 UserSkillReviewJob，packager 生成 auto_generated UserSkillDraft；不发聊天消息，不挂聊天卡片。</p>
+          </div>
+
+          <div class="node hard">
+            <span class="stamp">guardrail</span>
+            <h3>失败兜底</h3>
+            <p>Haiku 失败、JSON 非法、证据不足都回落确定性规则；LLM 不能覆盖 terminal tool/data failure 或明确纠错。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grid-two">
+      <div>
+        <h2 class="section-title">If / Else 主逻辑 <span class="tag">human-readable</span></h2>
+        <div class="ifelse">
+<pre>用户 prompt → AgentRun → tool trace / final answer
+→ evaluate_user_skill_sediment_policy(...)
+
+if risk_level == "hard":
+    decision = "block"
+    不生成 UserSkillDraft
+    只记录 observation
+    若已有同 key candidate → suppressed
+
+elif task_kind == "data_query" and not explicit_request:
+    decision = "block"
+    查数不自动沉淀
+
+elif explicit_request:
+    decision = "allow"
+    if active 开关未开:
+        SKILL_SEDIMENT_DISABLED
+    elif 非 native Agent DM:
+        TOOL_NOT_AVAILABLE_IN_SOURCE
+    elif risk_level == "soft":
+        生成 pending draft + 聊天卡片「需确认」
+    else:
+        生成 pending draft + 普通聊天卡片
+
+elif high_tool_count or semantic_reusable_workflow:
+    decision = "observe"
+    记录 observation
+    clean research/workflow 聚合 candidate
+    mature gate 通过后静默生成 SkillsTab 草稿
+
+else:
+    decision = "block"
+    reasons = ["insufficient_signal"]
+    忽略，不打扰</pre>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="section-title">三个开关全开时 <span class="tag">QA mode</span></h2>
+        <div class="switchboard">
+          <div class="switch">
+            <h3><code>USER_SKILL_ACTIVE_SEDIMENT_ENABLED</code></h3>
+            <p>注册 <code>propose_skill_from_recent_turns</code> runtime tool。只有真实用户当前消息包含沉淀强信号时，才允许生成聊天卡片草稿。</p>
+          </div>
+          <div class="switch">
+            <h3><code>USER_SKILL_SEDIMENT_OBSERVE_ENABLED</code></h3>
+            <p>启动 user-skill reviewer worker，并允许把每次 policy 判定落成 observation，用于候选聚合。</p>
+          </div>
+          <div class="switch">
+            <h3><code>USER_SKILL_REVIEWER_ENABLED</code></h3>
+            <p>允许成熟 candidate 创建 review job，并由 packager 静默生成 SkillsTab「Agent沉淀」草稿。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Policy 输出字段怎么来的 <span class="tag">function vs LLM</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>输出字段</th>
+              <th>判断方式</th>
+              <th>关键规则</th>
+              <th>来源代码</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>explicit_request</td>
+              <td><span class="pill clean">确定性 regex</span></td>
+              <td>只看真实 human message / explicit_message_text 是否命中“沉淀、保存、封装、打包 + Skill/技能/流程”。LLM hint 不算。</td>
+              <td><code>has_explicit_skill_sediment_request</code><br><code>EXPLICIT_SKILL_REQUEST_RE</code></td>
+            </tr>
+            <tr>
+              <td>task_kind</td>
+              <td><span class="pill observe">工具分类</span><span class="pill observe">Haiku 兜底</span></td>
+              <td>data/ontology tool → data_query；research tool → research；高 tool count → workflow；模糊被动场景可由 Haiku 返回 data_query/research/workflow。</td>
+              <td><code>_is_data_query_tool</code><br><code>_is_research_tool</code><br><code>classify_user_skill_sediment</code></td>
+            </tr>
+            <tr>
+              <td>risk_level</td>
+              <td><span class="pill hard">规则裁判</span></td>
+              <td>terminal tool/data failure 或明确纠错 → hard；查数、ontology risk、部分错误、最终回答不确定 → soft；否则 none。Haiku 只能补 correction，不覆盖硬失败。</td>
+              <td><code>terminal_tool_failure</code><br><code>terminal_data_error</code><br><code>CORRECTION_RE</code></td>
+            </tr>
+            <tr>
+              <td>reasons</td>
+              <td><span class="pill observe">规则累加</span><span class="pill observe">语义补充</span></td>
+              <td>记录 explicit_user_request、data_query_tool_used、tool_result_error、ontology_unmatched_or_ambiguous、final_answer_uncertain、semantic_reusable_workflow 等。</td>
+              <td><code>evaluate_user_skill_sediment_policy</code></td>
+            </tr>
+            <tr>
+              <td>confidence</td>
+              <td><span class="pill observe">策略分支</span></td>
+              <td>hard block 通常 high；主动 clean allow 为 high；主动 soft allow 为 medium；observe 为 low；证据不足 block 为 medium。</td>
+              <td><code>_log_and_result</code></td>
+            </tr>
+            <tr>
+              <td>tool_names</td>
+              <td><span class="pill observe">WAL 解析</span></td>
+              <td>从 <code>RunStreamSegment(kind=tool_use)</code> 读取；<code>mcp__hipilot__web_search</code> 会归一为 <code>web_search</code>。</td>
+              <td><code>_load_trace</code><br><code>canonical_tool_name</code></td>
+            </tr>
+            <tr>
+              <td>intent_signature_hash</td>
+              <td><span class="pill observe">文本归一 hash</span><span class="pill observe">Haiku signature hash</span></td>
+              <td>优先从真实用户消息做归一 hash；被动模糊流程中，Haiku 产出 workflow_signature 后写入 semantic hash，用来判断“同类”。不存原文。</td>
+              <td><code>_intent_signature_hash</code><br><code>_stable_hash</code></td>
+            </tr>
+            <tr>
+              <td>semantic_classifier_used</td>
+              <td><span class="pill observe">Haiku only when needed</span></td>
+              <td>只在 passive_reviewer、非 data/ontology、非 terminal failure、非 correction，且任务模糊或 tool count 不高时调用。</td>
+              <td><code>_should_call_semantic_classifier</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">风险与输出结果 <span class="tag">what users see</span></h2>
+      <div class="cards">
+        <article class="card">
+          <h3><span class="dot hard"></span>hard：绝不固化</h3>
+          <p>工具最终失败、数据无结果、权限或超时、用户明确纠错。结果是 block；不会有草稿，不会有卡片。</p>
+          <span class="source">user_correction_seen / tool_result_error</span>
+        </article>
+        <article class="card">
+          <h3><span class="dot soft"></span>soft：可沉淀但需确认</h3>
+          <p>查数/SQL/data gateway、ontology 歧义、最终回答含“待确认/口径不确定”。只有用户主动要求时生成草稿，并显示“需确认”。</p>
+          <span class="source">risk_level=soft</span>
+        </article>
+        <article class="card">
+          <h3><span class="dot clean"></span>clean：普通草稿</h3>
+          <p>用户主动要求且没有风险时，聊天中出现 skill_proposal 卡片。用户保存前只是 pending draft，不会自动启用。</p>
+          <span class="source">decision=allow</span>
+        </article>
+        <article class="card">
+          <h3><span class="dot observe"></span>observe：静默样本</h3>
+          <p>未主动要求但流程有复用信号时，只记录 observation，不打扰用户。</p>
+          <span class="source">decision=observe</span>
+        </article>
+        <article class="card">
+          <h3><span class="dot observe"></span>candidate：同类聚合</h3>
+          <p>candidate_key = task_kind + canonical tool pattern + non-risk reason profile + intent_signature_hash。重复 3 次进入 ready_for_review。</p>
+          <span class="source">upsert_user_skill_sediment_candidate</span>
+        </article>
+        <article class="card">
+          <h3><span class="dot observe"></span>quiet draft：低打扰</h3>
+          <p>成熟 candidate 达到 5 次、14 天窗口、无负向信号、有 intent hash 后，后台生成 SkillsTab 草稿，但不在聊天里推卡。</p>
+          <span class="source">candidate_ready_for_auto_draft</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">代码地图 <span class="tag">where to look</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>模块</th>
+              <th>职责</th>
+              <th>关键函数 / 行为</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>user_skill_sediment_policy.py</code></td>
+              <td>核心判定层，读 run、WAL、human message、final answer，输出 decision/task_kind/risk/signals。</td>
+              <td><code>evaluate_user_skill_sediment_policy</code>、<code>canonical_tool_name</code>、<code>policy_blocks_skill_draft</code></td>
+            </tr>
+            <tr>
+              <td><code>user_skill_sediment_classifier.py</code></td>
+              <td>Haiku 语义兜底，只服务被动 reviewer 的模糊分支。</td>
+              <td><code>dispatch_text(... model="haiku")</code>、严格 JSON 输出、失败返回 None</td>
+            </tr>
+            <tr>
+              <td><code>propose_skill_from_recent_turns.py</code></td>
+              <td>用户主动沉淀 runtime tool，负责真实用户强信号校验、policy gate、生成草稿和聊天卡片。</td>
+              <td><code>_load_current_explicit_source_message</code>、<code>_skill_proposal_card</code></td>
+            </tr>
+            <tr>
+              <td><code>user_skill_sediment_candidates.py</code></td>
+              <td>观察样本聚合成 shadow candidate，并判断是否成熟到可以自动静默草稿。</td>
+              <td><code>build_candidate_key</code>、<code>candidate_ready_for_auto_draft</code></td>
+            </tr>
+            <tr>
+              <td><code>user_skill_reviewer/loop.py</code></td>
+              <td>后台扫描 completed native Agent DM run，记录 observation，聚合 candidate，成熟后 queue job。</td>
+              <td><code>_scan_tick</code>、<code>_candidate_run_ids_for_auto_review</code></td>
+            </tr>
+            <tr>
+              <td><code>user_skill_packager.py</code></td>
+              <td>把已通过 gate 的上下文真正打包成 UserSkillDraft。policy 不通过时不会调用它。</td>
+              <td><code>generate_skill_from_context</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="today-commits">
+      <h2 class="section-title">06/29 Nathan Shan 提交做了什么 <span class="tag">author: Nathan Shan</span></h2>
+      <div class="note" style="margin-bottom: 14px;">
+        这里只保留 <strong>Nathan Shan &lt;nathanielcrush51@gmail.com&gt;</strong> 在 06/29 的提交。
+        今天 Nathan 的工作集中在 Skill 沉淀链路：一部分修主动沉淀“用户都说保存了却被拒绝”，另一部分修被动沉淀“重复流程跑了 5 次也不进草稿”。
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">15:42<br>Active</div>
+          <div>
+            <h3>主动沉淀：用户明确说“存成 Skill”时，不再被自动沉淀口径误杀</h3>
+            <p>
+              这个提交修的是主动路径：用户在聊天里明确要求“把刚才流程沉淀成 Skill”，系统应该尊重这个动作，
+              只要不是硬风险，就应该生成一个待确认草稿，而不是继续用“后台自动沉淀必须多轮重复”的标准来拒绝。
+            </p>
+            <p>
+              具体改动包括：给 packager 补上 <code>source_type=user_requested</code>、policy decision、
+              risk level 和 trigger context，让打包模型知道这是用户主动请求；更新 prompt，
+              明确“用户主动沉淀的单轮可复用流程也可以生成草稿”；同时把
+              <code>nothing_to_package</code> 兜底话术改掉，避免再让用户“多跑几轮”。
+            </p>
+            <p>
+              用户感知上的变化是：当用户已经清楚表达“保存/沉淀成 Skill”时，系统应该给出“已生成草稿，还未启用，请保存或跳过”的闭环，而不是像卡住一样继续建议验证流程。
+            </p>
+            <div class="hashes">
+              <code>c4298aea</code>
+              <code>fix(skill): 放宽主动沉淀打包拒绝</code>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">17:41<br>Passive</div>
+          <div>
+            <h3>被动沉淀：修复 Case 5，重复 clean workflow 能进入 candidate / SkillsTab 草稿链路</h3>
+            <p>
+              这个提交修的是后台自动沉淀路径。测试里连续跑 5 次“AI 科技新闻扫描”却没有草稿，
+              根因不是前端，而是 policy 把这类 run 误判掉了：<code>mcp__hipilot__web_search</code>
+              没被识别成 <code>web_search</code>，所以 task_kind 容易变成 unknown；用户说“重新执行”
+              被裸 regex 当成“纠错”；低于 10 次 tool call 的高质量 research/workflow 也进不了 observe。
+            </p>
+            <p>
+              具体改动包括：新增 canonical tool name helper，把 MCP 工具名归一到业务工具名；
+              移除裸“重新”的 hard-risk 判定，只把“不对/错了/你理解错/重来/redo because wrong”当纠错；
+              新增 Haiku 语义分类器，只在被动且模糊的场景里判断是否有可复用 workflow，并产出
+              <code>workflow_signature</code> 的 hash 用于判断“同类流程”。
+            </p>
+            <p>
+              这不是让 LLM 当最终裁判：工具最终失败、权限失败、数据没有可用结果、用户明确纠错这些硬风险，
+              仍然由规则直接 block。Haiku 只负责帮忙分辨“这是用户要求独立重跑”还是“用户在纠错”，以及低工具次数但有 SOP 的 research/workflow 是否值得观察。
+            </p>
+            <p>
+              这个修复先作为 <code>23c1ae71</code> 推到 1.2.7，随后 cherry-pick 到 1.2.9 成为
+              <code>5a3fe8ae</code>，所以 QA 在 1.2.9 上也能测到同一套修复。
+            </p>
+            <div class="hashes">
+              <code>23c1ae71</code>
+              <code>5a3fe8ae</code>
+              <code>fix(skill): 修复被动沉淀语义误判</code>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="case5-review">
+      <h2 class="section-title">Case 5 为什么失败，后来怎么修 <span class="tag">plain postmortem</span></h2>
+      <div class="simple-summary">
+        <div class="chalkboard">
+          <h3>先说人话版</h3>
+          <p>
+            Case 5 想测的是：同一个干净的研究流程重复跑 5 次，系统不要打扰用户，
+            但应该在后台发现“这个方法经常用”，最后把它放进 SkillsTab 的草稿里。
+          </p>
+          <p>
+            失败时，系统像一个太死板的班长：它没有认出你用的是“搜索工具”，
+            又把“请重新执行”误会成“你前面做错了”，还觉得工具次数没到旧门槛，
+            于是连续几次都没有把这个流程记进候选本。
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">错 1</span>
+            <div>
+              <strong>工具名字看错了</strong>
+              <p>实际工具名是 <code>mcp__hipilot__web_search</code>，旧规则没把它当成 <code>web_search</code>，所以研究任务被看成 unknown。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">错 2</span>
+            <div>
+              <strong>“重新执行”被误会成纠错</strong>
+              <p>测试里说“独立重新跑一遍”，意思是不要复用旧结果；旧 regex 看到“重新”就当成用户说“你错了”，直接 hard block。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">错 3</span>
+            <div>
+              <strong>旧门槛太机械</strong>
+              <p>高质量 research workflow 可能只调用 4 到 6 次搜索工具，但旧逻辑更依赖“工具调用次数够不够多”，所以没进 observe/candidate。</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">果</span>
+            <div>
+              <strong>结果就是 5 次跑完也没草稿</strong>
+              <p>前端 SkillsTab 没显示草稿不是 UI 坏了，而是后端 policy/candidate 链路根本没有把这些 run 识别成成熟候选。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline" style="margin-top: 18px;">
+        <article class="timeline-item">
+          <div class="timeline-date">修 1<br>识别工具</div>
+          <div>
+            <h3>把 MCP 工具名翻译成业务工具名</h3>
+            <p>
+              新增 <code>canonical_tool_name</code>：看到 <code>mcp__hipilot__web_search</code>
+              就归一成 <code>web_search</code>，看到 <code>mcp__hipilot__database_query</code>
+              就归一成 <code>database_query</code>。这样 policy 才能正确判断任务是 research 还是 data_query。
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">修 2<br>分清语气</div>
+          <div>
+            <h3>“重新执行”不再等于“你做错了”</h3>
+            <p>
+              从纠错 regex 里移除裸“重新”。现在只有“不对 / 错了 / 你理解错 / 重来 / redo because wrong”
+              这类明确纠错才算 hard risk；“请完整重新执行 / 独立重跑 / 重新搜索”不会被当作纠错。
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">修 3<br>语义兜底</div>
+          <div>
+            <h3>让 Haiku 帮忙判断“这是不是可复用流程”</h3>
+            <p>
+              当规则看不准、工具次数也不高时，后端会把截断后的用户消息、最终回复摘要、
+              工具名和结构化信号交给 Haiku。Haiku 只回答 JSON：是不是纠错、是什么任务、
+              有没有可复用 workflow、workflow_signature 是什么。
+            </p>
+            <p>
+              这一步不让 LLM 覆盖硬失败。工具全失败、权限失败、数据没结果、用户明确纠错时，
+              规则仍然直接 block。
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">修 4<br>进候选</div>
+          <div>
+            <h3>低工具次数但有 SOP 的 research/workflow 可以 observe</h3>
+            <p>
+              修复后，只要是 clean research/workflow，并且 Haiku 判断有可复用流程，
+              即使没有达到旧的 10 次 tool call，也可以进入 observation/candidate。
+              同类流程累计到成熟门槛后，后台 reviewer 会静默生成 SkillsTab「Agent沉淀」草稿。
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="note" style="margin-top: 18px;">
+        <strong>Case 5 修复后的预期：</strong>
+        同一个 AI 科技新闻扫描 prompt 连续跑 5 次，聊天里不应该弹保存卡片；
+        后端应该把它识别成 clean research/workflow candidate；
+        达到成熟条件后，草稿只出现在 SkillsTab「Agent沉淀」，不主动打扰聊天。
+      </div>
+    </section>
+
+    <section class="section" id="passive-testcases">
+      <h2 class="section-title">被动沉淀测试用例 <span class="tag">real usage checklist</span></h2>
+      <div class="note" style="margin-bottom: 14px;">
+        <strong>测试原则：</strong>
+        每组尽量在同一个 Agent 单聊里连续跑 5 次左右；不要说“沉淀成 Skill”，否则会走主动链路。
+        预期是：聊天里不主动弹保存卡片；如果是干净、重复、可复用的 research/workflow，草稿只出现在 SkillsTab「Agent沉淀」。
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3><span class="dot observe"></span>Case A：同一流程，不同措辞</h3>
+          <p>验证 Haiku / intent signature 能把相似 workflow 聚到一起。</p>
+          <ol class="prompt-list">
+            <li><code>帮我扫一轮今天 AI 科技新闻，重点看模型、芯片、算力和应用，各找重要新闻，按重要性排序，最后给一个可复用分析流程。</code></li>
+            <li><code>做一版今天 AI 产业情报速览：基础设施、模型、芯片、应用都覆盖，每条一句洞察，最后总结这类扫描以后怎么做。</code></li>
+            <li><code>帮我看今天 AI 领域最重要的 10 条动态，分基础设施/模型/芯片/应用，排优先级，并沉淀一个通用分析步骤。</code></li>
+            <li><code>今天 AI 科技新闻帮我做一次结构化扫描，找 10 条关键变化，说明为什么重要，最后输出以后复用的 SOP。</code></li>
+            <li><code>再做一轮 AI 科技情报扫描，覆盖算力、模型、芯片、应用，把重要性排出来，最后给复用流程。</code></li>
+          </ol>
+          <p><strong>预期：</strong>不弹聊天卡片；第 5 次后可能出现“AI 科技新闻扫描/情报速览”类草稿。</p>
+        </article>
+
+        <article class="card">
+          <h3><span class="dot observe"></span>Case B：同类流程，参数不同</h3>
+          <p>验证“同类”不是完全相同文字，而是稳定步骤。</p>
+          <ol class="prompt-list">
+            <li><code>帮我分析 Costco 最近一周的零售动态：新闻、财报、门店、会员、竞对，各给一句判断，最后总结分析框架。</code></li>
+            <li><code>帮我分析 Walmart 最近一周的零售动态：新闻、财报、门店、会员、竞对，各给一句判断，最后总结分析框架。</code></li>
+            <li><code>帮我分析 Target 最近一周的零售动态：新闻、财报、门店、会员、竞对，各给一句判断，最后总结分析框架。</code></li>
+            <li><code>帮我分析 Dollar General 最近一周的零售动态：新闻、财报、门店、会员、竞对，各给一句判断，最后总结分析框架。</code></li>
+            <li><code>帮我分析 Five Below 最近一周的零售动态：新闻、财报、门店、会员、竞对，各给一句判断，最后总结分析框架。</code></li>
+          </ol>
+          <p><strong>预期：</strong>应被识别成“零售公司动态扫描流程”，而不是 5 个无关任务。</p>
+        </article>
+
+        <article class="card">
+          <h3><span class="dot observe"></span>Case C：行业研究模板</h3>
+          <p>验证非查数 research workflow 可以被动沉淀。</p>
+          <ol class="prompt-list">
+            <li><code>帮我整理最近生成式 AI 在教育行业的应用案例，按 K12、高教、职业教育分类，每类给案例、机会、风险，最后给复用分析模板。</code></li>
+            <li><code>帮我整理最近生成式 AI 在医疗行业的应用案例，按患者服务、医生辅助、药研、管理分类，每类给案例、机会、风险，最后给复用分析模板。</code></li>
+            <li><code>帮我整理最近生成式 AI 在金融行业的应用案例，按客服、风控、投研、运营分类，每类给案例、机会、风险，最后给复用分析模板。</code></li>
+            <li><code>帮我整理最近生成式 AI 在零售行业的应用案例，按营销、供应链、门店、客服分类，每类给案例、机会、风险，最后给复用分析模板。</code></li>
+            <li><code>帮我整理最近生成式 AI 在制造业的应用案例，按质检、设备维护、排产、知识管理分类，每类给案例、机会、风险，最后给复用分析模板。</code></li>
+          </ol>
+          <p><strong>预期：</strong>可以形成“行业 AI 应用案例扫描模板”类候选。</p>
+        </article>
+
+        <article class="card">
+          <h3><span class="dot hard"></span>Case D：查数高频，不自动沉淀</h3>
+          <p>验证 data_query 仍然被自动链路排除。</p>
+          <ol class="prompt-list">
+            <li><code>帮我查一下本月各销售区域 GMV 和同比。</code></li>
+            <li><code>帮我查一下本月各销售区域订单量和同比。</code></li>
+            <li><code>帮我查一下本月各销售区域客单价和同比。</code></li>
+            <li><code>帮我查一下本月各销售区域复购率和同比。</code></li>
+            <li><code>帮我查一下本月各销售区域退款率和同比。</code></li>
+          </ol>
+          <p><strong>预期：</strong>即使工具调用很多，也不应该自动出 Skill 草稿。</p>
+        </article>
+
+        <article class="card">
+          <h3><span class="dot soft"></span>Case E：口径不确定，不自动沉淀</h3>
+          <p>验证 ontology / 口径风险不会进入自动草稿。</p>
+          <ol class="prompt-list">
+            <li><code>帮我查一下“有效活跃客户”的本月趋势，如果口径不明确就先按你理解查。</code></li>
+            <li><code>帮我查一下“核心客户”的本月趋势，如果口径不明确就先按你理解查。</code></li>
+            <li><code>帮我查一下“高价值客户”的本月趋势，如果口径不明确就先按你理解查。</code></li>
+            <li><code>帮我查一下“沉默客户”的本月趋势，如果口径不明确就先按你理解查。</code></li>
+            <li><code>帮我查一下“流失风险客户”的本月趋势，如果口径不明确就先按你理解查。</code></li>
+          </ol>
+          <p><strong>预期：</strong>不自动出草稿；如果用户主动要求保存，才可能生成“需确认”草稿。</p>
+        </article>
+
+        <article class="card">
+          <h3><span class="dot hard"></span>Case F：用户纠错，不沉淀</h3>
+          <p>验证 hard risk 会 block 或 suppress。</p>
+          <ol class="prompt-list">
+            <li><code>帮我做一轮全球 AI 芯片市场动态扫描，找 10 条重要新闻，按影响力排序，最后总结分析框架。</code></li>
+            <li><code>不对，你理解错了。不是让我看全球市场，是只看中国市场，重来。</code></li>
+            <li><code>重新做一轮中国 AI 芯片市场动态扫描，重点看国产 GPU、云厂商采购、政策和供应链。</code></li>
+            <li><code>再看一轮中国 AI 芯片生态，按公司、产品、客户、政策四类归纳，最后给判断框架。</code></li>
+            <li><code>继续帮我看中国 AI 芯片市场最新变化，输出重要新闻、影响判断和分析步骤。</code></li>
+          </ol>
+          <p><strong>预期：</strong>明确纠错后，这类候选不应生成自动草稿。</p>
+        </article>
+
+        <article class="card">
+          <h3><span class="dot hard"></span>Case G：一次性任务，不沉淀</h3>
+          <p>确认“高质量答案”不等于“可复用流程”。</p>
+          <ol class="prompt-list">
+            <li><code>帮我判断今天这篇文章的核心观点。</code></li>
+            <li><code>帮我润色这段话。</code></li>
+            <li><code>帮我写一段会议开场白。</code></li>
+            <li><code>帮我比较这两个标题哪个好。</code></li>
+            <li><code>帮我把这段内容改得更短。</code></li>
+          </ol>
+          <p><strong>预期：</strong>不应该出自动 Skill，因为这些不是同一类稳定 workflow。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="note">
+        <strong>一句话理解：</strong>
+        硬风险不固化；用户主动优先；软风险可沉淀但必须标“需确认”；查数不自动沉淀；
+        自动链路只做低打扰 SkillsTab 草稿。Haiku 不是裁判，只在被动、模糊、低工具次数但可能可复用的场景里帮忙判断语义和生成同类 workflow hash。
+      </div>
+    </section>
+
+    <footer>
+      Generated from current backend code on 2026-06-29. Key files reviewed:
+      <code>user_skill_sediment_policy.py</code>,
+      <code>user_skill_sediment_candidates.py</code>,
+      <code>user_skill_sediment_classifier.py</code>,
+      <code>propose_skill_from_recent_turns.py</code>,
+      <code>user_skill_reviewer/loop.py</code>.
+    </footer>
+  </main>
+</body>
+</html>
