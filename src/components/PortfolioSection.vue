@@ -49,6 +49,27 @@ const sectionSubtitle = computed(() => {
 
 const featuredProjects: FeaturedProject[] = [
   {
+    title: 'Shortcutype',
+    period: 'Jul 2026',
+    context: {
+      en: 'Keyboard-first shortcut recall trainer',
+      zh: '键盘优先的快捷键回忆训练器'
+    },
+    role: {
+      en: 'Product design, adaptive scheduling, real-chord input, accessible keyboard workflow',
+      zh: '产品设计、自适应调度、真实组合键输入、无障碍键盘工作流'
+    },
+    summary: {
+      en: 'A local-only trainer that turns developer commands into reflexes through hidden-answer recall, real chord capture, focused review, and adaptive practice sessions.',
+      zh: '一款纯本地训练工具，通过隐藏答案回忆、真实组合键捕获、错题复练和自适应训练，把开发者命令练成下意识。'
+    },
+    image: '/images/projects/shortcutype-cover.webp',
+    stack: ['React', 'TypeScript', 'Vite', 'Vitest', 'Playwright', 'Local-first'],
+    links: [
+      { type: 'github', url: 'https://github.com/nateEc/Shortcutype' }
+    ]
+  },
+  {
     title: 'yt-dub-studio',
     period: 'Jun 2026',
     context: {
