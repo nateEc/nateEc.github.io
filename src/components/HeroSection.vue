@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
 import { useLanguage } from '../composables/useLanguage'
 
 const { currentLanguage } = useLanguage()
 
-type SignalKey = 'idle' | 'profile' | 'rag' | 'mcp' | 'fastapi' | 'voice' | 'resume' | 'projects' | 'blog'
+type SignalKey = 'idle' | 'profile' | 'skills' | 'evals' | 'desktop' | 'voice' | 'resume' | 'projects' | 'blog'
 
 const typedText = ref('')
 const heroRef = ref<HTMLElement | null>(null)
@@ -12,19 +12,19 @@ const cursorX = ref(0)
 const cursorY = ref(0)
 const activeSignal = ref<SignalKey>('idle')
 const phrasesEn = [
-  "I'm a passionate software engineer,",
-  "and undergraduate student at Boston University",
-  "Explore more on my site 😉"
+  'AI Agent Engineer at VisionFlow AI,',
+  'building reliable agent systems and evaluation infrastructure',
+  'Boston University Computer Science graduate'
 ]
 const phrasesZh = [
-  "我是一名充满热情的软件工程师，",
-  "波士顿大学计算机科学毕业生",
-  "欢迎浏览我的网站 😉"
+  '我在 VisionFlow AI 从事 AI Agent 开发，',
+  '构建可靠的 Agent 系统与评测基础设施',
+  '波士顿大学计算机科学毕业生'
 ]
 
 const phrases = computed(() => currentLanguage.value === 'zh' ? phrasesZh : phrasesEn)
-const resumeLink = computed(() => currentLanguage.value === 'zh' ? '/单玉昆resume2.pdf' : '/Resume.pdf')
-const cvButtonText = computed(() => currentLanguage.value === 'zh' ? '查看简历' : 'View CV')
+const resumeLink = '/resume-zh.pdf'
+const cvButtonText = computed(() => currentLanguage.value === 'zh' ? '查看简历' : 'Chinese CV')
 const projectsButtonText = computed(() => currentLanguage.value === 'zh' ? '查看项目' : 'View Projects')
 const blogButtonText = computed(() => currentLanguage.value === 'zh' ? '读 Blog' : 'Read Blog')
 let phraseIndex = 0
@@ -35,6 +35,13 @@ let targetY = 0
 let currentX = 0
 let currentY = 0
 let animationFrameId: number | undefined
+
+watch(currentLanguage, () => {
+  typedText.value = ''
+  phraseIndex = 0
+  charIndex = 0
+  isDeleting = false
+})
 
 onMounted(() => {
   setTimeout(() => {
@@ -117,19 +124,19 @@ const nodeDriftStyle = (index: number) => ({
 
 const agentNodes = computed(() => [
   {
-    key: 'rag' as SignalKey,
-    label: 'RAG',
-    detail: currentLanguage.value === 'zh' ? '检索增强' : 'retrieval'
+    key: 'skills' as SignalKey,
+    label: 'Skills',
+    detail: currentLanguage.value === 'zh' ? '沉淀与路由' : 'skill routing'
   },
   {
-    key: 'mcp' as SignalKey,
-    label: 'MCP',
-    detail: currentLanguage.value === 'zh' ? '工具协议' : 'tool protocol'
+    key: 'evals' as SignalKey,
+    label: 'Evals',
+    detail: currentLanguage.value === 'zh' ? '回归评测' : 'regression'
   },
   {
-    key: 'fastapi' as SignalKey,
-    label: 'FastAPI',
-    detail: currentLanguage.value === 'zh' ? '异步接口' : 'async APIs'
+    key: 'desktop' as SignalKey,
+    label: 'Desktop',
+    detail: currentLanguage.value === 'zh' ? 'Agent 基建' : 'agent tooling'
   },
   {
     key: 'voice' as SignalKey,
@@ -141,27 +148,27 @@ const agentNodes = computed(() => [
 const signalMessages = computed<Record<SignalKey, string[]>>(() => {
   if (currentLanguage.value === 'zh') {
     return {
-      idle: ['agent.boot(profile)', 'load: backend + AI systems', 'status: ready for new work'],
-      profile: ['profile.focus(Nathan)', 'role: AI algorithm engineer', 'base: Shanghai + Boston University'],
-      rag: ['rag.retrieve(context)', 'rank: product + engineering signals', 'answer: grounded and testable'],
-      mcp: ['mcp.connect(tools)', 'expose: file, browser, workflow actions', 'agent: uses tools with intent'],
-      fastapi: ['fastapi.serve()', 'latency: optimized async pipeline', 'infra: observable and scalable'],
-      voice: ['voice.parse(audio)', 'asr -> scoring -> tts', 'loop: real-time learning feedback'],
-      resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI algorithm engineer'],
-      projects: ['projects.scan()', 'filter: agents, backend, full-stack', 'open: selected case studies'],
+      idle: ['agent.boot(profile)', 'load: agent systems + evaluation', 'status: building at VisionFlow AI'],
+      profile: ['profile.focus(Nathan)', 'role: AI agent engineer', 'base: Beijing + Boston University'],
+      skills: ['skills.observe(runs)', 'policy -> candidate -> confirm', 'result: reusable + privacy-aware'],
+      evals: ['evals.capture(failures)', 'replay: real runtime traces', 'judge: stable + reviewable'],
+      desktop: ['desktop.launch(agent)', 'electron + codex app server', 'release: signed + observable'],
+      voice: ['voice.run(interview)', 'asr -> agent -> feedback', 'session: resilient + resumable'],
+      resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI agent engineer'],
+      projects: ['projects.scan()', 'filter: agents, desktop, product', 'open: selected case studies'],
       blog: ['blog.open(notes)', 'topics: harness, eval, skill sediment', 'mode: long-form system thinking']
     }
   }
 
   return {
-    idle: ['agent.boot(profile)', 'load: backend + AI systems', 'status: ready for new work'],
-    profile: ['profile.focus(Nathan)', 'role: AI algorithm engineer', 'base: Shanghai + Boston University'],
-    rag: ['rag.retrieve(context)', 'rank: product + engineering signals', 'answer: grounded and testable'],
-    mcp: ['mcp.connect(tools)', 'expose: file, browser, workflow actions', 'agent: uses tools with intent'],
-    fastapi: ['fastapi.serve()', 'latency: optimized async pipeline', 'infra: observable and scalable'],
-    voice: ['voice.parse(audio)', 'asr -> scoring -> tts', 'loop: real-time learning feedback'],
-    resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI algorithm engineer'],
-    projects: ['projects.scan()', 'filter: agents, backend, full-stack', 'open: selected case studies'],
+    idle: ['agent.boot(profile)', 'load: agent systems + evaluation', 'status: building at VisionFlow AI'],
+    profile: ['profile.focus(Nathan)', 'role: AI agent engineer', 'base: Beijing + Boston University'],
+    skills: ['skills.observe(runs)', 'policy -> candidate -> confirm', 'result: reusable + privacy-aware'],
+    evals: ['evals.capture(failures)', 'replay: real runtime traces', 'judge: stable + reviewable'],
+    desktop: ['desktop.launch(agent)', 'electron + codex app server', 'release: signed + observable'],
+    voice: ['voice.run(interview)', 'asr -> agent -> feedback', 'session: resilient + resumable'],
+    resume: ['resume.open()', 'profile: Nathan Shan', 'signal: AI agent engineer'],
+    projects: ['projects.scan()', 'filter: agents, desktop, product', 'open: selected case studies'],
     blog: ['blog.open(notes)', 'topics: harness, eval, skill sediment', 'mode: long-form system thinking']
   }
 })
@@ -247,7 +254,7 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
               <img src="/images/me.png" alt="Yukun Nathan Shan" />
               <div class="portrait-label">
                 <span>Nathan Shan</span>
-                <small>AI Algorithm Engineer</small>
+                <small>{{ currentLanguage === 'zh' ? 'AI Agent 开发工程师' : 'AI Agent Engineer' }}</small>
               </div>
             </div>
 
@@ -452,6 +459,7 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
 
 .portrait-module {
   position: absolute;
+  z-index: 1;
   left: 50%;
   top: 47%;
   width: 244px;
@@ -527,6 +535,7 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
 
 .agent-core {
   position: absolute;
+  z-index: 3;
   left: calc(50% + 110px);
   top: calc(47% + 78px);
   width: 132px;
@@ -635,6 +644,7 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
 
 .agent-node {
   position: absolute;
+  z-index: 2;
   min-width: 112px;
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: 0.5rem;
@@ -668,17 +678,17 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
   box-shadow: 0 12px 28px rgba(0, 102, 255, 0.12);
 }
 
-.node-rag {
+.node-skills {
   top: 34px;
   left: 30px;
 }
 
-.node-mcp {
+.node-evals {
   top: 48px;
   right: 28px;
 }
 
-.node-fastapi {
+.node-desktop {
   left: 40px;
   bottom: 50px;
 }
@@ -844,17 +854,17 @@ const terminalLines = computed(() => signalMessages.value[activeSignal.value])
     padding: 0.65rem 0.7rem;
   }
 
-  .node-rag {
+  .node-skills {
     top: 28px;
     left: 18px;
   }
 
-  .node-mcp {
+  .node-evals {
     top: 44px;
     right: 16px;
   }
 
-  .node-fastapi {
+  .node-desktop {
     left: 18px;
     bottom: 38px;
   }

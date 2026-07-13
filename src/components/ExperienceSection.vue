@@ -6,17 +6,38 @@ const { currentLanguage } = useLanguage()
 
 const experiencesEn = [
   {
-    duration: '2025.05 — Present',
-    title: 'AI Algorithm Engineer',
+    duration: 'Mar 2026 — Present',
+    title: 'AI Agent Engineer',
+    company: 'VisionFlow AI',
+    location: 'Beijing, China',
+    bullets: [
+      'Designed a user-level <strong>Skill learning loop</strong> that turns multi-turn agent runs into policy, observation, candidate, and human-confirmation stages with risk tiers, idempotent deduplication, and privacy minimization',
+      'Built an <strong>agent failure regression platform</strong> that converts negative feedback, empty answers, and tool failures into reviewable cases across 6 repositories, 13 domains, and 29 suites',
+      'Designed a <strong>Skill Router Rule Shadow</strong> framework for safe candidate-rule evaluation with stable-field comparison, latency statistics, atomic review bundles, and sensitive-output scanning',
+      'Built <strong>HiPilot Desktop</strong> with Electron, Codex app server, and the t3code workbench, including short-lived model tokens, an SSE proxy, idempotent billing, redacted diagnostics, and macOS release verification',
+      'Delivered recruiting and AI interview workflows spanning candidate sync, retrieval and matching, outreach reminders, operational reporting, and JD/resume-driven voice interviews'
+    ],
+    icon: 'briefcase'
+  },
+  {
+    duration: 'May 2025 — Feb 2026',
+    title: 'AI Algorithm Development Engineer',
     company: 'Iston AI',
     location: 'Shanghai, China',
     bullets: [
-      'Responsible for backend development, leading the data team in multi-modal data analysis and architecture design',
-      'Utilized <strong>FastAPI</strong> to build high-performance <strong>RESTful APIs</strong>, integrated <strong>GPT</strong>, <strong>RAG</strong>, <strong>ASR/TTS</strong>, and <strong>Ollama</strong> models (Searxng) for algorithm development',
-      'Optimized data processing and storage architecture to support front-end and real-time data query requirements',
-      'Optimized <strong>Ollama</strong> model services to enhance monitoring and debugging, designed multi-agent scheduling and parallel processing (ainvoke), reducing average response time by <strong>70%</strong>',
-      'Independently developed a complete evaluation and training pipeline, integrating voice parsing and root cause analysis, with a <strong>40%</strong> improvement in model accuracy',
-      'Developed multiple <strong>K12</strong> base models (image description, emotion analysis) and post-training optimization methods, achieving intelligent emotion recognition and support for multilingual scenarios'
+      'Designed the architecture for an AI digital-human product and integrated GPT, RAG, ASR/TTS, and Ollama-powered web search through <strong>FastAPI</strong> for real-time voice interaction',
+      'Designed a load-balancing proxy for Ollama services and moved the pipeline to asynchronous execution, reducing average latency by <strong>70%</strong> and increasing throughput by nearly <strong>10×</strong>',
+      'Refactored phoneme parsing and similarity scoring, then built K12 speaking tasks and dynamic question generation, improving scoring accuracy by approximately <strong>40%</strong>'
+    ],
+    icon: 'briefcase'
+  },
+  {
+    duration: 'Jun 2024 — Jul 2024',
+    title: 'Software Engineer Intern',
+    company: 'Chinese Historical Christian Database',
+    location: 'Boston, MA',
+    bullets: [
+      'Optimized <strong>Neo4j Cypher</strong> queries and fixed frontend data-fetching errors, reducing query time by approximately <strong>30%</strong> while improving regional church population data accuracy'
     ],
     icon: 'briefcase'
   },
@@ -26,33 +47,17 @@ const experiencesEn = [
     company: 'BU Spark!',
     location: 'Boston, MA',
     bullets: [
-      'Orchestrated a cross-functional team of one UX designer and three developers to effectively launch and nurture a startup',
-      'Employed <strong>Ionic React</strong> to construct a comprehensive full-stack mobile application',
-      'Used <strong>PostgreSQL</strong> as the backend database repository for the extensive collection of data related to pet-friendly venues in the Boston area',
-      'Serving more than <strong>500</strong> pet owners in Boston with precise insights on pet-friendly dining options and nearby destinations'
+      'Coordinated one designer and three developers to build the Petventure full-stack application with <strong>Ionic React</strong>, <strong>PostgreSQL</strong>, and <strong>Prisma</strong> for pet-friendly venue search and distance filtering'
     ],
     icon: 'briefcase'
   },
   {
-    duration: 'June 2023 — July 2023',
-    title: 'Software Engineer Intern',
-    company: 'XuDuo Trade Co',
-    location: 'HangZhou, China',
-    bullets: [
-      'Designed and implemented backend infrastructure, <strong>APIs</strong>, and data validation',
-      'Enhanced website performance by implementing efficient <strong>JavaScript</strong> functions in the backend that improve the efficiency by <strong>20%</strong>',
-      'Conducted unit tests for a robust <strong>MongoDB</strong> database',
-      'Actively participated in team meetings, brainstorming sessions, and agile development processes'
-    ],
-    icon: 'briefcase'
-  },
-  {
-    duration: '2021 - 2025',
-    title: 'Computer Science Student',
+    duration: 'Sep 2021 — Jan 2025',
+    title: 'B.S. in Computer Science',
     company: 'Boston University',
+    location: 'Boston, MA',
     bullets: [
-      "Pursuing Bachelor's degree in Computer Science",
-      'Focused on software engineering, data science, and web development'
+      'Coursework included algorithms, data structures, mobile software engineering, web programming, computer systems, databases, networks, linear algebra, and computational probability'
     ],
     icon: 'graduation'
   }
@@ -60,51 +65,58 @@ const experiencesEn = [
 
 const experiencesZh = [
   {
-    duration: '2025.05 — 至今',
-    title: 'AI算法工程师',
+    duration: '2026.03 — 至今',
+    title: 'AI Agent 开发工程师',
+    company: '北京目的涌现科技公司',
+    location: '北京，中国',
+    bullets: [
+      '设计并实现用户级 <strong>Skill 自动沉淀闭环</strong>，将多轮 Agent 运行抽象为 Policy、Observation、Candidate 与人工确认链路，通过风险分级、幂等去重与隐私最小化，避免错误查数和不确定结论被固化为技能',
+      '搭建 <strong>Agent 失败自动回归平台</strong>，将点踩、空答、工具失败等线上信号转化为可审核用例，并建设覆盖 6 个仓库、13 个领域、29 个套件的回归注册表',
+      '设计 <strong>Skill Router Rule Shadow</strong> 安全灰度框架，通过稳定字段比对、延迟统计、原子审查包和敏感输出扫描支撑规则评审与快速回滚',
+      '从 0 到 1 构建 <strong>HiPilot Desktop</strong>，集成 Electron、Codex app server 与 t3code workbench，实现模型代理、幂等计费、脱敏诊断及 macOS 签名发布验收链路',
+      '实现招聘 Agent 与 AI 面试业务闭环，覆盖候选人同步、检索匹配、触达提醒、运营周报及 JD/简历驱动的语音 AI 面试能力'
+    ],
+    icon: 'briefcase'
+  },
+  {
+    duration: '2025.05 — 2026.02',
+    title: 'AI 算法开发工程师',
     company: '意仕腾人工智能科技',
     location: '上海，中国',
     bullets: [
-      '作为后端核心开发，主导数据团队的需求分析与架构设计，使用<strong>FastAPI</strong>构建高性能<strong>RESTful API</strong>，集成<strong>GPT</strong>、<strong>RAG</strong>、<strong>ASR/TTS</strong>、<strong>ollama</strong>联网模型（Searxng）等能力，并通过负载均衡与全链路异步改造，支撑高并发实时语音交互。',
-      '对<strong>Ollama</strong>模型服务进行监控与调优，设计部署负载均衡代理，结合全链路异步并行化（ainvoke），降低平均响应时70%，提升系统吐量近10倍。',
-      '独立负责英语发音评测训练流程迭代，重构音素解析与根因设计理逻辑，增强对连读、省略等自然语音现象的处理，并准确率提升40%，并且为标注接口集成到生产流程线。',
-      '开发多种<strong>K12</strong>开发多种K12口语题型（如图片描述、情景对话）后端逻辑与动态题目生成算法，实现智能离题判断与交互流程。'
+      '作为后端核心开发完成 AI 数字人项目的需求分析与架构设计，基于 <strong>FastAPI</strong> 集成 GPT、RAG、ASR/TTS 及 Ollama 联网搜索，支撑实时语音交互',
+      '为 Ollama 模型服务设计负载均衡代理并推进全链路异步化，降低平均响应时间 <strong>70%</strong>，提升系统吞吐量近 <strong>10 倍</strong>',
+      '重构音素解析与相似度计算逻辑，并开发图片描述、情景对话等 K12 口语题型及动态出题流程，评分准确率提升约 <strong>40%</strong>'
     ],
     icon: 'briefcase'
   },
   {
-    duration: '2023年9月 — 2023年12月',
+    duration: '2024.06 — 2024.07',
+    title: '软件工程师实习生',
+    company: '中国历史基督教数据库',
+    location: '美国波士顿',
+    bullets: [
+      '优化 <strong>Neo4j Cypher</strong> 查询并修复前端数据获取错误，使查询执行时间减少约 <strong>30%</strong>，提升教堂区域人口数据的准确性与可用性'
+    ],
+    icon: 'briefcase'
+  },
+  {
+    duration: '2023.09 — 2023.12',
     title: '软件工程师',
     company: 'BU Spark!',
-    location: '波士顿，马萨诸塞州',
+    location: '美国波士顿',
     bullets: [
-      '组织一个UX设计师和三名开发人员的跨职能团队，有效启动和培育创业项目',
-      '使用<strong>Ionic React</strong>构建全栈移动应用程序',
-      '使用<strong>PostgreSQL</strong>作为后端数据库，存储波士顿地区宠物友好场所的广泛数据',
-      '为波士顿超过<strong>500</strong>名宠物主提供关于宠物友好餐饮选项和附近目的地的精确见解'
+      '协调 1 名设计师与 3 名开发者，使用 <strong>Ionic React</strong>、<strong>PostgreSQL</strong> 和 <strong>Prisma</strong> 构建 Petventure 全栈应用，为波士顿宠物主人提供宠物友好场所检索与距离筛选'
     ],
     icon: 'briefcase'
   },
   {
-    duration: '2023年6月 — 2023年7月',
-    title: '软件工程师实习生',
-    company: '许多贸易公司',
-    location: '杭州，中国',
-    bullets: [
-      '设计和实现后端基础设施、<strong>API</strong>和数据验证',
-      '通过在后端实现高效的<strong>JavaScript</strong>函数，提高网站性能<strong>20%</strong>',
-      '对健壮的<strong>MongoDB</strong>数据库进行单元测试',
-      '积极参与团队会议、头脑风暴会议和敏捷开发流程'
-    ],
-    icon: 'briefcase'
-  },
-  {
-    duration: '2021 - 2025',
-    title: '计算机科学学生',
+    duration: '2021.09 — 2025.01',
+    title: '计算机科学学士',
     company: '波士顿大学',
+    location: '美国波士顿',
     bullets: [
-      '攻读计算机科学学士学位',
-      '专注于软件工程、数据科学和Web开发'
+      '相关课程包括算法、数据结构、移动软件工程、Web 编程、计算机系统、数据库系统、计算机网络、线性代数和计算概率论'
     ],
     icon: 'graduation'
   }

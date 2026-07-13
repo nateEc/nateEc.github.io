@@ -28,84 +28,45 @@ const sectionTitle = computed(() => {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: { en: 'AI & Machine Learning', zh: '人工智能与机器学习' },
+    title: { en: 'AI & Agent Systems', zh: 'AI 与 Agent 系统' },
     skills: [
-      { name: 'MCP', icon: '/images/skills/mcp.png' },
-      { name: 'RAG', icon: '/images/skills/rag.png' },
       { name: 'Agents', icon: '/images/skills/agents.png' },
-      { name: 'Function Calling', icon: '/images/skills/function-calling.png' },
+      { name: { en: 'Skill & Tool Calling', zh: 'Skill 与工具调用' }, icon: '/images/skills/function-calling.png' },
+      { name: { en: 'Agent Evaluation', zh: 'Agent 评测' }, icon: '/images/skills/model-deployment.png' },
+      { name: 'RAG', icon: '/images/skills/rag.png' },
+      { name: 'MCP', icon: '/images/skills/mcp.png' },
       { name: { en: 'LLM App Development', zh: '大语言模型应用开发' }, icon: '/images/skills/llm-apps.png' },
       { name: { en: 'Speech Recognition', zh: '语音识别' }, icon: '/images/skills/speech-recognition.png' },
       { name: { en: 'Text-to-Speech', zh: '语音合成' }, icon: '/images/skills/text-to-speech.png' },
-      { name: 'Ollama', icon: '/images/skills/ollama.png' },
-      { name: { en: 'Pronunciation Assessment', zh: '发音测评算法' }, icon: '/images/skills/pronunciation-scoring.png' },
-      { name: { en: 'NLP Engineering', zh: 'NLP工程化' }, icon: '/images/skills/nlp-engineering.png' },
-      { name: { en: 'Model Deployment & Load Testing', zh: '模型部署与压测' }, icon: '/images/skills/model-deployment.png' }
+      { name: { en: 'Context & Session Management', zh: '上下文与会话管理' }, icon: '/images/skills/environment-config.png' }
     ]
   },
   {
-    title: { en: 'Programming Languages', zh: '编程语言' },
+    title: { en: 'Engineering Development', zh: '工程开发' },
     skills: [
       { name: 'Python', icon: '/images/icons8-python.svg' },
-      { name: 'Java', icon: '/images/icons8-java.svg' },
-      { name: 'JavaScript', icon: '/images/javascript.svg' },
       { name: 'TypeScript', icon: '/images/skills/typescript.png' },
-      { name: 'C', icon: '/images/icons8-c-programming-48.png' },
-      { name: 'Assembly', icon: '/images/ass.png' },
-      { name: 'SML', icon: '/images/sml.png' },
-      { name: 'Bash', icon: '/images/bash.svg' },
+      { name: 'JavaScript', icon: '/images/javascript.svg' },
+      { name: 'FastAPI', icon: '/images/skills/fastapi.png' },
+      { name: 'React / React Native', icon: '/images/react.svg' },
+      { name: 'Electron', icon: '/images/skills/electron.svg' },
+      { name: 'PostgreSQL', icon: '/images/skills/postgresql.png' },
+      { name: 'Redis', icon: '/images/skills/redis.svg' },
       { name: 'SQL', icon: '/images/skills/sql.png' }
     ]
   },
   {
-    title: { en: 'Backend Development', zh: '后端开发' },
-    skills: [
-      { name: 'FastAPI', icon: '/images/skills/fastapi.png' },
-      { name: 'Node.js', icon: '/images/node.svg' },
-      { name: 'Express.js', icon: '/images/expressjs-icon.svg' },
-      { name: 'tRPC', icon: '/images/skills/trpc.png' },
-      { name: 'Prisma', icon: '/images/skills/prisma.png' },
-      { name: { en: 'RESTful API Development', zh: 'RESTful API开发' }, icon: '/images/skills/rest-api.png' },
-      { name: { en: 'High Concurrency & Async', zh: '高并发与异步编程' }, icon: '/images/skills/async-concurrency.png' },
-      { name: { en: 'Load Balancing', zh: '负载均衡' }, icon: '/images/skills/load-balancing.png' },
-      { name: 'JMeter', icon: '/images/skills/jmeter.png' }
-    ]
-  },
-  {
-    title: { en: 'Frontend, Full Stack & Databases', zh: '前端、全栈与数据库' },
-    skills: [
-      { name: 'React.js', icon: '/images/react.svg' },
-      { name: 'Bootstrap', icon: '/images/bootstrap.svg' },
-      { name: 'Passport.js', icon: '/images/passportjs.png' },
-      { name: 'PostgreSQL', icon: '/images/skills/postgresql.png' },
-      { name: 'MongoDB', icon: '/images/mongodb-icon.svg' },
-      { name: 'SQLite', icon: '/images/skills/sqlite.png' }
-    ]
-  },
-  {
-    title: { en: 'Cloud & DevOps', zh: '云与DevOps' },
+    title: { en: 'Infrastructure & Quality', zh: '工程化与质量' },
     skills: [
       { name: 'Docker', icon: '/images/skills/docker.png' },
       { name: 'Nginx', icon: '/images/skills/nginx.png' },
       { name: 'Git', icon: '/images/icons8-git.svg' },
-      { name: 'Jira', icon: '/images/skills/jira.png' },
-      { name: 'Postman', icon: '/images/postman-icon-svgrepo-com.svg' },
-      { name: 'GNU/Linux', icon: '/images/skills/gnu-linux.png' },
-      { name: { en: 'Environment Configuration', zh: '环境配置' }, icon: '/images/skills/environment-config.png' },
-      { name: 'CI/CD', icon: '/images/skills/cicd.png' }
-    ]
-  },
-  {
-    title: { en: 'Development Tools & Other', zh: '开发工具与其他' },
-    skills: [
-      { name: 'Cursor', icon: '/images/skills/cursor.png' },
-      { name: 'Windsurf', icon: '/images/skills/windsurf.png' },
-      { name: 'Gemini-CLI', icon: '/images/skills/gemini-cli.png' },
-      { name: 'Xcode', icon: '/images/skills/xcode.png' },
-      { name: 'LaTeX', icon: '/images/latex-svgrepo-com.svg' },
-      { name: 'JSON/XML', icon: '/images/skills/json-xml.png' },
-      { name: 'Microsoft Office', icon: '/images/skills/microsoft-office.png' },
-      { name: 'Figma', icon: '/images/skills/figma.png' }
+      { name: 'CI/CD', icon: '/images/skills/cicd.png' },
+      { name: 'Jenkins', icon: '/images/skills/cicd.png' },
+      { name: 'Cloudflare', icon: '/images/skills/cloudflare.svg' },
+      { name: { en: 'Async Programming', zh: '异步编程' }, icon: '/images/skills/async-concurrency.png' },
+      { name: { en: 'Observability', zh: '可观测性' }, icon: '/images/skills/load-balancing.png' },
+      { name: { en: 'Automated Testing', zh: '自动化测试' }, icon: '/images/skills/jmeter.png' }
     ]
   }
 ]
@@ -230,7 +191,7 @@ const skillName = (skill: Skill) => {
   }
 
   .skills-list {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
 

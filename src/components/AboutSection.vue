@@ -26,7 +26,7 @@ const content = computed(() => {
       titleHighlight: '我',
       subtitle: '了解',
       subtitleHighlight: '我',
-      description: '我是<strong>波士顿大学</strong>计算机科学专业的毕业生（<strong>2025届</strong>），目前在上海的<strong>Iston AI</strong>担任<strong>AI算法工程师</strong>。我具有好奇心和勤奋的个性，热衷于探索<strong>人工智能</strong>与<strong>Web开发</strong>的交叉领域，不断学习并构建创新解决方案，在不断发展的技术领域中成长。'
+      description: '我是<strong>波士顿大学计算机科学学士</strong>，目前在北京的<strong>目的涌现科技</strong>担任<strong>AI Agent 开发工程师</strong>。我的工作聚焦于可落地的 Agent 系统，包括<strong>Skill 沉淀与路由</strong>、失败回归与评测、桌面端 Agent 基础设施，以及招聘与语音 AI 工作流。此前我在<strong>意仕腾</strong>从事 AI 算法与实时语音后端开发，持续关注如何把模型能力构建成可靠、可观测、可验证的产品。'
     }
   }
   return {
@@ -34,7 +34,7 @@ const content = computed(() => {
     titleHighlight: 'me',
     subtitle: 'Get to',
     subtitleHighlight: 'Know',
-    description: "I'm a <strong>Boston University</strong> Computer Science alumni (<strong>Class of 2025</strong>), currently working as an <strong>AI Algorithm Engineer</strong> at <strong>Iston AI</strong> in <strong>Shanghai</strong>. With a curious mind and diligent personality, I'm passionate about exploring the intersection of <strong>artificial intelligence</strong> and <strong>web development</strong>, constantly learning and building innovative solutions in the ever-evolving tech landscape."
+    description: "I'm a <strong>Boston University Computer Science graduate</strong> and an <strong>AI Agent Engineer</strong> at <strong>VisionFlow AI</strong> in Beijing. I build production agent systems across <strong>skill learning and routing</strong>, evaluation and regression infrastructure, desktop agent tooling, and recruiting and voice workflows. Previously, I worked on AI algorithm and real-time voice backend systems at <strong>Iston AI</strong>, focusing on making model capabilities reliable, observable, and testable."
   }
 })
 </script>
