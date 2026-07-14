@@ -28,7 +28,7 @@ const requiredFiles = [
   'dist/og-image.png',
   'dist/resume-en.pdf',
   'dist/resume-zh.pdf',
-  'dist/images/portrait.JPG',
+  'dist/images/linkedin-avatar.webp',
   'dist/images/projects/yt-dub-studio-cover.webp',
   'dist/images/projects/shortcutype-cover.webp',
   'dist/blog/blog-shell.css',
@@ -54,6 +54,8 @@ assert(!source.includes('IntroSection'), 'forced intro component is absent')
 assert(!source.includes('/assignments.html'), 'removed assignment link cannot route to a 404')
 assert(!/alert\s*\(/.test(source), 'contact flow does not fake success with alert()')
 assert(source.includes('/resume-en.pdf') && source.includes('/resume-zh.pdf'), 'both résumé paths are wired')
+assert(source.includes('/images/linkedin-avatar.webp'), 'LinkedIn portrait is wired')
+assert(source.includes('linkedin.com/in/yukun-shan-803a02225'), 'portrait links to the LinkedIn profile')
 
 for (const file of ['public/resume-en.pdf', 'public/resume-zh.pdf']) {
   const path = join(root, file)
