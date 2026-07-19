@@ -3,10 +3,15 @@ import { onMounted } from 'vue'
 import { RouterView } from 'vue-router'
 import Navigation from './components/Navigation.vue'
 import { useLanguage } from './composables/useLanguage'
+import { useTheme } from './composables/useTheme'
 
 const { initLanguage } = useLanguage()
+const { initTheme } = useTheme()
 
-onMounted(initLanguage)
+onMounted(() => {
+  initLanguage()
+  initTheme()
+})
 </script>
 
 <template>

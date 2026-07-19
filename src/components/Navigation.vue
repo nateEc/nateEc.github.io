@@ -2,10 +2,12 @@
 import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { useLanguage } from '../composables/useLanguage'
+import { useTheme } from '../composables/useTheme'
 
 const route = useRoute()
 const menuOpen = ref(false)
 const { currentLanguage, toggleLanguage } = useLanguage()
+const { currentTheme, toggleTheme } = useTheme()
 
 const copy = computed(() => currentLanguage.value === 'zh'
   ? {
@@ -16,6 +18,8 @@ const copy = computed(() => currentLanguage.value === 'zh'
       menu: '菜单',
       close: '关闭菜单',
       switchLabel: 'Switch to English',
+      themeToDark: '切换到深色模式',
+      themeToLight: '切换到浅色模式',
       resume: '简历',
     }
   : {
@@ -26,6 +30,8 @@ const copy = computed(() => currentLanguage.value === 'zh'
       menu: 'Menu',
       close: 'Close menu',
       switchLabel: '切换到中文',
+      themeToDark: 'Switch to dark mode',
+      themeToLight: 'Switch to light mode',
       resume: 'Résumé',
     })
 
@@ -37,6 +43,7 @@ const navItems = computed(() => [
 ])
 
 const resumeHref = computed(() => currentLanguage.value === 'zh' ? '/resume-zh.pdf' : '/resume-en.pdf')
+const themeLabel = computed(() => currentTheme.value === 'dark' ? copy.value.themeToLight : copy.value.themeToDark)
 
 const closeMenu = () => {
   menuOpen.value = false
@@ -72,6 +79,22 @@ onBeforeUnmount(() => {
       </nav>
 
       <div class="nav-actions">
+        <button
+          class="theme-button"
+          type="button"
+          :aria-label="themeLabel"
+          :title="themeLabel"
+          :aria-pressed="currentTheme === 'dark'"
+          @click="toggleTheme"
+        >
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.2A8.4 8.4 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z" />
+          </svg>
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.4" />
+            <path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4" />
+          </svg>
+        </button>
         <button class="language-button" type="button" :aria-label="copy.switchLabel" @click="toggleLanguage">
           {{ currentLanguage === 'en' ? '中' : 'EN' }}
         </button>
@@ -117,8 +140,8 @@ onBeforeUnmount(() => {
   left: 0;
   z-index: 100;
   width: 100%;
-  border-bottom: 1px solid rgba(217, 222, 231, 0.9);
-  background: rgba(247, 248, 250, 0.9);
+  border-bottom: 1px solid var(--header-line);
+  background: var(--header-bg);
   backdrop-filter: blur(18px);
 }
 
@@ -145,8 +168,8 @@ onBeforeUnmount(() => {
   width: 34px;
   height: 34px;
   place-items: center;
-  color: var(--white);
-  background: var(--ink);
+  color: var(--solid-text);
+  background: var(--solid-bg);
   border-radius: 3px;
   font-family: var(--mono);
   font-size: 0.69rem;
@@ -202,6 +225,7 @@ onBeforeUnmount(() => {
   gap: 16px;
 }
 
+.theme-button,
 .language-button {
   width: 34px;
   height: 34px;
@@ -216,8 +240,54 @@ onBeforeUnmount(() => {
   font-weight: 600;
 }
 
+.theme-button {
+  position: relative;
+  display: grid;
+  padding: 0;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  background: var(--surface-soft);
+  cursor: pointer;
+}
+
+.theme-button:hover,
 .language-button:hover {
   border-color: var(--ink);
+}
+
+.theme-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+  transition: opacity 180ms ease, transform 220ms ease;
+}
+
+.theme-icon--moon {
+  fill: currentColor;
+  stroke: none;
+}
+
+.theme-icon--sun {
+  opacity: 0;
+  transform: rotate(-35deg) scale(0.55);
+}
+
+:global(html[data-theme='dark']) .theme-icon--moon {
+  opacity: 0;
+  transform: rotate(35deg) scale(0.55);
+}
+
+:global(html[data-theme='dark']) .theme-icon--sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
 }
 
 .menu-button {

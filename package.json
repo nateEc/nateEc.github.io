@@ -13,7 +13,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "check": "npm run build && node scripts/check-site.mjs"
+    "check": "npm run build && node scripts/check-site.mjs && node scripts/check-theme.mjs"
   },
   "dependencies": {
     "vue": "^3.5.25",

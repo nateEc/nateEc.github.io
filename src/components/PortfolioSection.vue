@@ -130,7 +130,7 @@ const t = (text: { en: string; zh: string }) => localize(text, currentLanguage.v
 
 <style scoped>
 .portfolio {
-  background: var(--ink);
+  background: var(--console-bg);
 }
 
 .portfolio :deep(.section-heading h2),

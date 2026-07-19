@@ -181,7 +181,7 @@ watchEffect(() => {
   --case-soft: var(--blue-soft);
   padding: 76px 0 88px;
   border-bottom: 1px solid var(--line);
-  background: linear-gradient(135deg, var(--case-soft), rgba(255, 255, 255, 0.44) 64%);
+  background: linear-gradient(135deg, var(--case-soft), var(--case-glow) 64%);
 }
 
 .case-hero.accent-teal {
@@ -252,7 +252,7 @@ watchEffect(() => {
 
 .case-hero__media figcaption {
   padding: 10px 13px;
-  color: #687384;
+  color: var(--quiet);
   background: var(--paper);
   font-family: var(--mono);
   font-size: 0.62rem;
@@ -265,7 +265,7 @@ watchEffect(() => {
 
 .evidence-section {
   padding: 44px 0 74px;
-  background: var(--ink);
+  background: var(--console-bg);
 }
 
 .evidence-section .mono-label {
@@ -396,7 +396,7 @@ watchEffect(() => {
   min-height: 192px;
   padding: 21px 20px;
   border: 1px solid var(--line-strong);
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--surface-soft);
 }
 
 .architecture-flow li + li {
@@ -447,7 +447,7 @@ watchEffect(() => {
   min-height: 280px;
   padding: 28px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.55);
+  background: var(--surface-soft);
 }
 
 .decision-grid h3 {
@@ -461,7 +461,7 @@ watchEffect(() => {
 }
 
 .outcome-section {
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--surface-soft);
 }
 
 .stack-block {
@@ -474,8 +474,8 @@ watchEffect(() => {
 
 .case-next {
   padding: 36px 0;
-  color: var(--white);
-  background: var(--ink);
+  color: var(--console-text);
+  background: var(--console-bg);
 }
 
 .case-next .shell {

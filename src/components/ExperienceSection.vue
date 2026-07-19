@@ -156,7 +156,7 @@ const experiences = computed(() => currentLanguage.value === 'zh'
 
 <style scoped>
 .experience {
-  background: rgba(255, 255, 255, 0.62);
+  background: var(--section-tint);
 }
 
 .section-heading__copy {
@@ -224,7 +224,7 @@ summary:hover .experience-role h3 {
 
 .current-label {
   padding: 3px 7px;
-  border: 1px solid #9dd4cc;
+  border: 1px solid var(--teal-line);
   border-radius: 3px;
   color: var(--teal);
   background: var(--teal-soft);
@@ -246,8 +246,8 @@ summary:hover .experience-role h3 {
 }
 
 details[open] .disclosure {
-  color: var(--white);
-  background: var(--ink);
+  color: var(--solid-text);
+  background: var(--solid-bg);
   transform: rotate(45deg);
 }
 

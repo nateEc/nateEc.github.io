@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
+  color-scheme: light;
   --paper: #f7f8fa;
   --paper-deep: #eef1f5;
+  --surface: #ffffff;
+  --surface-soft: rgba(255, 255, 255, 0.56);
+  --section-tint: rgba(255, 255, 255, 0.6);
   --ink: #0b0d10;
   --muted: #5d6573;
   --quiet: #7d8592;
@@ -15,11 +19,58 @@
   --amber: #9a6416;
   --amber-soft: #f8ecd7;
   --white: #ffffff;
+  --grid-line: rgba(11, 13, 16, 0.025);
+  --header-bg: rgba(247, 248, 250, 0.9);
+  --header-line: rgba(217, 222, 231, 0.9);
+  --solid-bg: #0b0d10;
+  --solid-text: #ffffff;
+  --console-bg: #0b0d10;
+  --console-text: #f4f7fb;
+  --case-glow: rgba(255, 255, 255, 0.44);
+  --focus-ring: rgba(37, 99, 235, 0.38);
+  --footer-bg: #0b0d10;
+  --footer-text: #cbd2dd;
+  --selection-text: #ffffff;
+  --teal-line: #9dd4cc;
   --display: 'Space Grotesk', 'Avenir Next', 'Segoe UI', sans-serif;
   --body: 'IBM Plex Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   --mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
   --shadow: 0 24px 60px rgba(24, 34, 52, 0.09);
   --shell: min(1180px, calc(100vw - 48px));
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #0b1017;
+  --paper-deep: #111923;
+  --surface: #121a25;
+  --surface-soft: rgba(18, 26, 37, 0.72);
+  --section-tint: rgba(18, 26, 37, 0.62);
+  --ink: #edf2f7;
+  --muted: #a7b2c1;
+  --quiet: #7f8b9c;
+  --line: #263241;
+  --line-strong: #3a4859;
+  --blue: #7d9fff;
+  --blue-soft: #16264b;
+  --teal: #62c8bb;
+  --teal-soft: #12312e;
+  --amber: #efb45c;
+  --amber-soft: #382a17;
+  --grid-line: rgba(125, 159, 255, 0.045);
+  --header-bg: rgba(11, 16, 23, 0.9);
+  --header-line: rgba(42, 54, 69, 0.92);
+  --solid-bg: #edf2f7;
+  --solid-text: #0b1017;
+  --console-bg: #080c12;
+  --console-text: #f4f7fb;
+  --case-glow: rgba(18, 26, 37, 0.56);
+  --focus-ring: rgba(125, 159, 255, 0.52);
+  --footer-bg: #070a0f;
+  --footer-text: #a7b2c1;
+  --selection-text: #08101e;
+  --teal-line: #275c58;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
 }
 
 *,
@@ -29,6 +80,7 @@
 }
 
 html {
+  background: var(--paper);
   scroll-behavior: smooth;
   scroll-padding-top: 92px;
 }
@@ -54,8 +106,8 @@ body::before {
   pointer-events: none;
   content: '';
   background-image:
-    linear-gradient(rgba(11, 13, 16, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 13, 16, 0.025) 1px, transparent 1px);
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: linear-gradient(to bottom, black, transparent 82%);
 }
@@ -97,12 +149,12 @@ h3 {
 }
 
 ::selection {
-  color: var(--white);
+  color: var(--selection-text);
   background: var(--blue);
 }
 
 :focus-visible {
-  outline: 3px solid rgba(37, 99, 235, 0.38);
+  outline: 3px solid var(--focus-ring);
   outline-offset: 4px;
 }
 
@@ -112,8 +164,8 @@ h3 {
   left: 12px;
   z-index: 999;
   padding: 10px 14px;
-  color: var(--white);
-  background: var(--ink);
+  color: var(--solid-text);
+  background: var(--solid-bg);
   border-radius: 6px;
   transform: translateY(-160%);
 }
@@ -180,10 +232,10 @@ h3 {
   justify-content: center;
   min-height: 48px;
   padding: 0 18px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--solid-bg);
   border-radius: 4px;
-  color: var(--white);
-  background: var(--ink);
+  color: var(--solid-text);
+  background: var(--solid-bg);
   font-family: var(--mono);
   font-size: 0.78rem;
   font-weight: 600;
@@ -203,8 +255,8 @@ h3 {
 }
 
 .button--ghost:hover {
-  color: var(--white);
-  background: var(--ink);
+  color: var(--solid-text);
+  background: var(--solid-bg);
 }
 
 .text-link {
@@ -237,15 +289,15 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 3px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.56);
+  background: var(--surface-soft);
   font-family: var(--mono);
   font-size: 0.68rem;
 }
 
 .site-footer {
   padding: 28px 0;
-  color: #cbd2dd;
-  background: var(--ink);
+  color: var(--footer-text);
+  background: var(--footer-bg);
   font-family: var(--mono);
   font-size: 0.7rem;
 }

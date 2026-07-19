@@ -98,7 +98,7 @@ const t = (text: LocalizedText) => text[currentLanguage.value]
 
 <style scoped>
 .blog {
-  background: rgba(255, 255, 255, 0.63);
+  background: var(--section-tint);
 }
 
 .section-heading__copy {

@@ -260,7 +260,7 @@ textarea:focus {
 .contact-form .button {
   justify-self: start;
   border-color: #f4f6f9;
-  color: var(--ink);
+  color: #0b0d10;
   background: #f4f6f9;
   cursor: pointer;
 }

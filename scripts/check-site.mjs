@@ -25,6 +25,7 @@ const requiredFiles = [
   'dist/404.html',
   'dist/robots.txt',
   'dist/sitemap.xml',
+  'dist/theme-init.js',
   'dist/og-image.png',
   'dist/resume-en.pdf',
   'dist/resume-zh.pdf',
@@ -47,6 +48,13 @@ assert(/name="description"/.test(sourceIndex), 'homepage has a meta description'
 assert(/rel="canonical"/.test(sourceIndex), 'homepage has a canonical URL')
 assert(/property="og:image"/.test(sourceIndex), 'homepage has Open Graph metadata')
 assert(/application\/ld\+json/.test(sourceIndex), 'homepage has structured Person data')
+assert(sourceIndex.includes('/theme-init.js'), 'theme initialization runs before the Vue app')
+assert(sourceIndex.indexOf('/theme-init.js') < sourceIndex.indexOf('/src/main.ts'), 'theme initialization precedes application rendering')
+
+const themeInit = read('public/theme-init.js')
+assert(themeInit.includes('preferred-theme'), 'theme preference uses stable local storage')
+assert(themeInit.includes('prefers-color-scheme: dark'), 'theme initialization follows the system preference')
+assert(themeInit.includes('theme-color'), 'theme initialization updates browser chrome color')
 
 const sourceFiles = walk(join(root, 'src')).filter((path) => ['.vue', '.ts', '.css'].includes(extname(path)))
 const source = sourceFiles.map((path) => readFileSync(path, 'utf8')).join('\n')
@@ -56,6 +64,10 @@ assert(!/alert\s*\(/.test(source), 'contact flow does not fake success with aler
 assert(source.includes('/resume-en.pdf') && source.includes('/resume-zh.pdf'), 'both résumé paths are wired')
 assert(source.includes('/images/linkedin-avatar.webp'), 'LinkedIn portrait is wired')
 assert(source.includes('linkedin.com/in/yukun-shan-803a02225'), 'portrait links to the LinkedIn profile')
+assert(source.includes("data-theme='dark'") && source.includes('toggleTheme'), 'Vue surfaces expose dark theme tokens and a toggle')
+assert(source.includes(':aria-pressed="currentTheme === \'dark\'"'), 'Vue theme toggle exposes its pressed state')
+assert(source.includes('themeToDark') && source.includes('themeToLight'), 'Vue theme toggle describes both actions bilingually')
+assert(source.includes('@media (prefers-reduced-motion: reduce)'), 'theme motion respects reduced-motion preferences')
 
 for (const file of ['public/resume-en.pdf', 'public/resume-zh.pdf']) {
   const path = join(root, file)
@@ -85,6 +97,14 @@ for (const file of walk(join(root, 'public', 'blog'), '.html')) {
   const html = readFileSync(file, 'utf8')
   assert(html.includes('portfolio-nav'), `${relative(root, file)} uses the shared portfolio navigation`)
   assert(html.includes('/blog/blog-shell.css'), `${relative(root, file)} uses the shared reading shell`)
+  assert(html.includes('/theme-init.js'), `${relative(root, file)} initializes the saved theme before rendering`)
+  assert(html.includes('data-theme-toggle'), `${relative(root, file)} exposes the shared theme toggle`)
+}
+
+const blogShell = read('public/blog/blog-shell.css')
+assert(blogShell.includes('.portfolio-theme-button:focus-visible'), 'blog theme toggle has a visible keyboard focus state')
+for (const article of ['harness', 'algorithm', 'strategy']) {
+  assert(blogShell.includes(`data-article='${article}'`), `blog shell contains dark overrides for ${article}`)
 }
 
 const sitemap = read('public/sitemap.xml')

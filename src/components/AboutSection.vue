@@ -124,7 +124,7 @@ const content = computed(() => currentLanguage.value === 'zh'
 
 <style scoped>
 .about {
-  background: rgba(255, 255, 255, 0.48);
+  background: var(--section-tint);
 }
 
 .about-grid {
