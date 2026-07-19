@@ -1,14 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
+  color-scheme: light;
   --portfolio-paper: #f7f8fa;
+  --portfolio-surface: #ffffff;
   --portfolio-ink: #0b0d10;
   --portfolio-muted: #5d6573;
   --portfolio-line: #d9dee7;
   --portfolio-blue: #2563eb;
+  --portfolio-header: rgba(247, 248, 250, 0.92);
+  --portfolio-header-line: rgba(217, 222, 231, 0.92);
+  --portfolio-solid-bg: #0b0d10;
+  --portfolio-solid-text: #ffffff;
   --portfolio-font: 'IBM Plex Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   --portfolio-display: 'Space Grotesk', 'PingFang SC', sans-serif;
   --portfolio-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --portfolio-paper: #0b1017;
+  --portfolio-surface: #121a25;
+  --portfolio-ink: #edf2f7;
+  --portfolio-muted: #a7b2c1;
+  --portfolio-line: #2a3645;
+  --portfolio-blue: #7d9fff;
+  --portfolio-header: rgba(11, 16, 23, 0.92);
+  --portfolio-header-line: rgba(42, 54, 69, 0.94);
+  --portfolio-solid-bg: #edf2f7;
+  --portfolio-solid-text: #0b1017;
+  --paper: #0b1017;
+  --paper2: #111923;
+  --ink: #edf2f7;
+  --ink2: #b8c3d0;
+  --muted: #96a3b2;
+  --line: #2b3746;
+  --panel: #121a25;
+  --panel-2: #13201f;
+  --card: #121a25;
+  --accent: #62c8bb;
+  --gold: #e0b45f;
+  --gold2: #efc86f;
+  --teal: #62c8bb;
+  --teal2: #8bddcf;
+  --crimson: #ed8178;
+  --hard: #e47b70;
+  --soft: #e1b35f;
+  --clean: #62c8bb;
+  --observe: #7d9fff;
+  --shadow: rgba(0, 0, 0, 0.34);
 }
 
 html {
@@ -41,8 +81,8 @@ h4 {
   padding: 0 max(20px, calc((100vw - 1180px) / 2));
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(217, 222, 231, 0.92);
-  background: rgba(247, 248, 250, 0.92);
+  border-bottom: 1px solid var(--portfolio-header-line);
+  background: var(--portfolio-header);
   backdrop-filter: blur(18px);
 }
 
@@ -66,8 +106,8 @@ h4 {
   height: 32px;
   place-items: center;
   border-radius: 3px;
-  color: #fff;
-  background: var(--portfolio-ink);
+  color: var(--portfolio-solid-text);
+  background: var(--portfolio-solid-bg);
   font-family: var(--portfolio-mono);
   font-size: 10px;
 }
@@ -75,6 +115,7 @@ h4 {
 .portfolio-links {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 
 .portfolio-links a {
@@ -95,8 +136,8 @@ h4 {
   left: 12px;
   z-index: 1000;
   padding: 8px 12px;
-  color: white !important;
-  background: var(--portfolio-ink);
+  color: var(--portfolio-solid-text) !important;
+  background: var(--portfolio-solid-bg);
   transform: translateY(-150%);
 }
 
@@ -122,6 +163,223 @@ h4 {
   color: var(--portfolio-ink) !important;
   font-weight: 600;
   text-underline-offset: 4px;
+}
+
+.portfolio-theme-button {
+  position: relative;
+  display: grid;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 50%;
+  color: var(--portfolio-ink);
+  background: var(--portfolio-surface);
+  cursor: pointer;
+}
+
+.portfolio-theme-button:hover {
+  border-color: var(--portfolio-ink);
+}
+
+.portfolio-theme-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--portfolio-blue), transparent 52%);
+  outline-offset: 3px;
+}
+
+.portfolio-theme-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+  transition: opacity 180ms ease, transform 220ms ease;
+}
+
+.portfolio-theme-icon--moon {
+  fill: currentColor;
+  stroke: none;
+}
+
+.portfolio-theme-icon--sun {
+  opacity: 0;
+  transform: rotate(-35deg) scale(0.55);
+}
+
+html[data-theme='dark'] .portfolio-theme-icon--moon {
+  opacity: 0;
+  transform: rotate(35deg) scale(0.55);
+}
+
+html[data-theme='dark'] .portfolio-theme-icon--sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+html[data-theme='dark'] body {
+  color: var(--ink) !important;
+}
+
+html[data-theme='dark'][data-article='harness'] code {
+  border-color: #38475a;
+  color: #e7c979;
+  background: #18212c;
+}
+
+html[data-theme='dark'][data-article='harness'] blockquote,
+html[data-theme='dark'][data-article='harness'] tbody tr:hover {
+  background: #151f2b;
+}
+
+html[data-theme='dark'][data-article='harness'] .t-hi {
+  border-color: #32675c;
+  color: #9de0cd;
+  background: #15302d;
+}
+
+html[data-theme='dark'][data-article='harness'] .t-mid {
+  border-color: #6e5628;
+  color: #f0ca78;
+  background: #332817;
+}
+
+html[data-theme='dark'][data-article='harness'] .t-lo {
+  border-color: #6b3c3a;
+  color: #f1a39c;
+  background: #321d1d;
+}
+
+html[data-theme='dark'][data-article='harness'] .verdict code {
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #f0e6c8;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme='dark'][data-article='strategy'] article {
+  border-color: var(--line);
+  background: rgba(18, 26, 37, 0.9);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+html[data-theme='dark'][data-article='strategy'] p,
+html[data-theme='dark'][data-article='strategy'] li {
+  color: var(--ink2);
+}
+
+html[data-theme='dark'][data-article='strategy'] code {
+  border-color: #38475a;
+  color: #e7c979;
+  background: #18212c;
+}
+
+html[data-theme='dark'][data-article='strategy'] pre,
+html[data-theme='dark'][data-article='strategy'] pre code {
+  color: #f8f1df;
+  background: #080c12;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .hero,
+html[data-theme='dark'][data-article='algorithm'] .legend-item,
+html[data-theme='dark'][data-article='algorithm'] .board,
+html[data-theme='dark'][data-article='algorithm'] .card,
+html[data-theme='dark'][data-article='algorithm'] .table-wrap,
+html[data-theme='dark'][data-article='algorithm'] .switch,
+html[data-theme='dark'][data-article='algorithm'] .step,
+html[data-theme='dark'][data-article='algorithm'] .timeline-item {
+  border-color: var(--line);
+  background: var(--panel);
+}
+
+html[data-theme='dark'][data-article='algorithm'] .node,
+html[data-theme='dark'][data-article='algorithm'] .node.input,
+html[data-theme='dark'][data-article='algorithm'] .node.policy,
+html[data-theme='dark'][data-article='algorithm'] .node.end,
+html[data-theme='dark'][data-article='algorithm'] .arrow,
+html[data-theme='dark'][data-article='algorithm'] .note {
+  border-color: var(--line);
+  color: var(--ink2);
+  background: var(--panel-2);
+}
+
+html[data-theme='dark'][data-article='algorithm'] .subtitle,
+html[data-theme='dark'][data-article='algorithm'] .node p,
+html[data-theme='dark'][data-article='algorithm'] .node li,
+html[data-theme='dark'][data-article='algorithm'] .card p,
+html[data-theme='dark'][data-article='algorithm'] .prompt-list li,
+html[data-theme='dark'][data-article='algorithm'] .switch p,
+html[data-theme='dark'][data-article='algorithm'] .step p,
+html[data-theme='dark'][data-article='algorithm'] .timeline-item p {
+  color: var(--ink2);
+}
+
+html[data-theme='dark'][data-article='algorithm'] .section-title .tag,
+html[data-theme='dark'][data-article='algorithm'] .card .source,
+html[data-theme='dark'][data-article='algorithm'] .prompt-list code,
+html[data-theme='dark'][data-article='algorithm'] .hashes code {
+  border-color: var(--line);
+  color: var(--ink2);
+  background: #18212c;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .hero-button {
+  border-color: var(--portfolio-solid-bg);
+  color: var(--portfolio-solid-text);
+  background: var(--portfolio-solid-bg);
+  box-shadow: 4px 4px 0 #2b3746;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .hero-button:hover,
+html[data-theme='dark'][data-article='algorithm'] .hero-button:focus-visible {
+  box-shadow: 6px 6px 0 #2b3746;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .hero-button.secondary {
+  border-color: var(--line);
+  color: var(--ink);
+  background: var(--panel);
+}
+
+html[data-theme='dark'][data-article='algorithm'] .commit,
+html[data-theme='dark'][data-article='algorithm'] .ifelse,
+html[data-theme='dark'][data-article='algorithm'] .chalkboard {
+  border-color: var(--line);
+  background: #080c12;
+}
+
+html[data-theme='dark'][data-article='algorithm'] td:first-child,
+html[data-theme='dark'][data-article='algorithm'] .timeline-date {
+  color: var(--ink);
+}
+
+html[data-theme='dark'][data-article='algorithm'] .pill {
+  border-color: var(--line);
+  color: var(--ink2);
+  background: #18212c;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .pill.hard {
+  border-color: #6b3c3a;
+  background: #321d1d;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .pill.soft {
+  border-color: #6e5628;
+  background: #332817;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .pill.clean {
+  border-color: #32675c;
+  background: #15302d;
+}
+
+html[data-theme='dark'][data-article='algorithm'] .pill.observe {
+  border-color: #405883;
+  background: #192744;
 }
 
 @media (max-width: 620px) {
