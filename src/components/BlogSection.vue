@@ -43,20 +43,38 @@ const posts = [
     tags: ['HiPilot', 'Runtime', 'QA Flow'],
     href: '/blog/skill-sedimentation-algorithm.html',
   },
+  {
+    number: '04',
+    date: '2026.08.10',
+    category: { en: 'Protocol evolution', zh: '协议演进' },
+    title: {
+      en: 'MCP’s Real Upgrade: From Stateful Sessions to a Stateless Standard',
+      zh: 'MCP 真正的大更新来了：它正在从“老式状态机”变成“无状态标准”',
+    },
+    summary: {
+      en: 'A practical reading of MCP’s latest stable protocol: stateless requests, a revised initialization flow, unified notifications, and what the transition means for servers, SDKs, and platforms.',
+      zh: '解读 MCP 最新稳定协议如何转向无状态请求、调整初始化流程、统一通知机制，以及这次变化对 Server、SDK、工具链和平台意味着什么。',
+    },
+    tags: ['MCP', 'Stateless', 'Protocol'],
+    href: 'https://juejin.cn/post/7671947410311184403',
+    external: true,
+  },
 ]
 
 const copy = computed(() => currentLanguage.value === 'zh'
   ? {
       kicker: '技术笔记',
       title: '把思考留成可复用的系统图。',
-      subtitle: '关于 Agent 架构、Harness 评估和 Skill 学习策略的长文。文章使用与主站一致的阅读外壳。',
+      subtitle: '关于 Agent 架构、Harness 评估、Skill 学习策略与协议演进的长文。站内文章使用与主站一致的阅读外壳。',
       read: '阅读笔记',
+      readExternal: '在掘金阅读',
     }
   : {
       kicker: 'Technical notes',
       title: 'Leave the thinking as a reusable system map.',
-      subtitle: 'Long-form notes on agent architecture, harness evaluation, and skill-learning strategy, now sharing the portfolio’s reading shell.',
+      subtitle: 'Long-form notes on agent architecture, harness evaluation, skill learning, and protocol evolution. On-site essays share the portfolio’s reading shell.',
       read: 'Read note',
+      readExternal: 'Read on Juejin',
     })
 
 const t = (text: LocalizedText) => text[currentLanguage.value]
@@ -87,8 +105,14 @@ const t = (text: LocalizedText) => text[currentLanguage.value]
               <li v-for="tag in post.tags" :key="tag">{{ tag }}</li>
             </ul>
           </div>
-          <a class="post-link" :href="post.href" :aria-label="`${copy.read}: ${t(post.title)}`">
-            {{ copy.read }} <span aria-hidden="true">↗</span>
+          <a
+            class="post-link"
+            :href="post.href"
+            :target="post.external ? '_blank' : undefined"
+            :rel="post.external ? 'noopener noreferrer' : undefined"
+            :aria-label="`${post.external ? copy.readExternal : copy.read}: ${t(post.title)}`"
+          >
+            {{ post.external ? copy.readExternal : copy.read }} <span aria-hidden="true">↗</span>
           </a>
         </article>
       </div>
