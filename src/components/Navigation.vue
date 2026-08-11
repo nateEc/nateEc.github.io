@@ -14,6 +14,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       work: '案例',
       experience: '经历',
       notes: '文章',
+      worklog: '周志',
       contact: '联系',
       menu: '菜单',
       close: '关闭菜单',
@@ -26,6 +27,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       work: 'Casebook',
       experience: 'Experience',
       notes: 'Notes',
+      worklog: 'Worklog',
       contact: 'Contact',
       menu: 'Menu',
       close: 'Close menu',
@@ -36,10 +38,11 @@ const copy = computed(() => currentLanguage.value === 'zh'
     })
 
 const navItems = computed(() => [
-  { hash: '#work', label: copy.value.work },
-  { hash: '#experience', label: copy.value.experience },
-  { hash: '#blog', label: copy.value.notes },
-  { hash: '#contact', label: copy.value.contact },
+  { key: 'work', to: { path: '/', hash: '#work' }, label: copy.value.work },
+  { key: 'experience', to: { path: '/', hash: '#experience' }, label: copy.value.experience },
+  { key: 'notes', to: { path: '/', hash: '#blog' }, label: copy.value.notes },
+  { key: 'worklog', to: { path: '/worklog' }, route: '/worklog', label: copy.value.worklog },
+  { key: 'contact', to: { path: '/', hash: '#contact' }, label: copy.value.contact },
 ])
 
 const resumeHref = computed(() => currentLanguage.value === 'zh' ? '/resume-zh.pdf' : '/resume-en.pdf')
@@ -71,8 +74,9 @@ onBeforeUnmount(() => {
       <nav class="desktop-nav" aria-label="Primary navigation">
         <RouterLink
           v-for="item in navItems"
-          :key="item.hash"
-          :to="{ path: '/', hash: item.hash }"
+          :key="item.key"
+          :to="item.to"
+          :class="{ 'is-current': item.route === route.path }"
         >
           {{ item.label }}
         </RouterLink>
@@ -118,15 +122,16 @@ onBeforeUnmount(() => {
       <nav aria-label="Mobile navigation">
         <RouterLink
           v-for="(item, index) in navItems"
-          :key="item.hash"
-          :to="{ path: '/', hash: item.hash }"
+          :key="item.key"
+          :to="item.to"
+          :class="{ 'is-current': item.route === route.path }"
           :tabindex="menuOpen ? 0 : -1"
           @click="closeMenu"
         >
           <span>0{{ index + 1 }}</span>{{ item.label }}
         </RouterLink>
         <a :href="resumeHref" target="_blank" rel="noopener" :tabindex="menuOpen ? 0 : -1">
-          <span>05</span>{{ copy.resume }} ↗
+          <span>0{{ navItems.length + 1 }}</span>{{ copy.resume }} ↗
         </a>
       </nav>
     </div>
@@ -210,11 +215,13 @@ onBeforeUnmount(() => {
 }
 
 .desktop-nav a:hover,
+.desktop-nav a.is-current,
 .resume-link:hover {
   color: var(--ink);
 }
 
-.desktop-nav a:hover::after {
+.desktop-nav a:hover::after,
+.desktop-nav a.is-current::after {
   transform: scaleX(1);
 }
 
@@ -364,6 +371,10 @@ onBeforeUnmount(() => {
   font-family: var(--mono);
   font-size: 0.67rem;
   letter-spacing: 0;
+}
+
+.mobile-menu a.is-current {
+  color: var(--blue);
 }
 
 @media (max-width: 900px) {

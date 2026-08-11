@@ -32,6 +32,16 @@ const requiredFiles = [
   'dist/images/linkedin-avatar.webp',
   'dist/images/projects/yt-dub-studio-cover.webp',
   'dist/images/projects/shortcutype-cover.webp',
+  'dist/demos/hipilot/workbench.webp',
+  'dist/demos/hipilot/terminal.webp',
+  'dist/demos/hipilot/preview-panel.webp',
+  'dist/demos/hipilot/settings.webp',
+  'dist/demos/yt-dub/app-workspace.webp',
+  'dist/demos/yt-dub/original.mp4',
+  'dist/demos/yt-dub/dubbed.mp4',
+  'dist/demos/yt-dub/original-en.vtt',
+  'dist/demos/yt-dub/dubbed-zh.vtt',
+  'dist/demos/yt-dub/run-report.json',
   'dist/blog/blog-shell.css',
   'dist/blog/ai-harness-summary.html',
   'dist/blog/skill-sedimentation-strategy.html',
@@ -66,10 +76,23 @@ assert(source.includes('/images/linkedin-avatar.webp'), 'LinkedIn portrait is wi
 assert(source.includes('linkedin.com/in/yukun-shan-803a02225'), 'portrait links to the LinkedIn profile')
 assert(source.includes('juejin.cn/post/7671947410311184403'), 'latest MCP article links to its Juejin publication')
 assert(source.includes('noopener noreferrer'), 'external article links isolate the new browsing context')
+assert(source.includes('worklogWeeks') && source.includes("path: '/worklog'"), 'weekly worklog data and route are wired')
 assert(source.includes("data-theme='dark'") && source.includes('toggleTheme'), 'Vue surfaces expose dark theme tokens and a toggle')
 assert(source.includes(':aria-pressed="currentTheme === \'dark\'"'), 'Vue theme toggle exposes its pressed state')
 assert(source.includes('themeToDark') && source.includes('themeToLight'), 'Vue theme toggle describes both actions bilingually')
 assert(source.includes('@media (prefers-reduced-motion: reduce)'), 'theme motion respects reduced-motion preferences')
+assert(source.includes('RegressionReplayDemo') && source.includes('quality.empty_answer'), 'casebook wires the interactive regression replay lab')
+assert(source.includes('HiPilotTourDemo') && source.includes('/demos/hipilot/settings.webp'), 'casebook wires the real HiPilot Desktop tour')
+assert(source.includes('DubStudioDemo') && source.includes('/demos/yt-dub/dubbed.mp4'), 'casebook wires the playable A/B dubbing demo')
+assert(source.indexOf('case-demo-section') < source.indexOf('evidence-section'), 'case studies present the demo before supporting evidence')
+
+const dubReport = JSON.parse(read('public/demos/yt-dub/run-report.json'))
+assert(dubReport.ok === true && dubReport.tts.used_source_voice === true, 'yt-dub report records a successful source-voice run')
+assert(dubReport.asr.language_probability === 1 && dubReport.output.audio_video_duration_delta_seconds === 0, 'yt-dub report records ASR confidence and synchronized output')
+for (const file of ['public/demos/yt-dub/original.mp4', 'public/demos/yt-dub/dubbed.mp4']) {
+  const path = join(root, file)
+  assert(existsSync(path) && statSync(path).size > 50_000, `${file} is a non-empty playable demo`)
+}
 
 for (const file of ['public/resume-en.pdf', 'public/resume-zh.pdf']) {
   const path = join(root, file)
@@ -113,6 +136,7 @@ const sitemap = read('public/sitemap.xml')
 for (const slug of ['agent-failure-regression', 'hipilot-desktop', 'yt-dub-studio']) {
   assert(sitemap.includes(`/case-studies/${slug}`), `sitemap includes ${slug}`)
 }
+assert(sitemap.includes('/worklog'), 'sitemap includes the weekly worklog')
 
 const trackedDist = execFileSync('git', ['ls-files', 'dist'], { cwd: root, encoding: 'utf8' }).trim()
 assert(trackedDist === '', 'generated dist/ is not tracked as source')

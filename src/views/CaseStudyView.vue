@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed, watchEffect } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
+import DubStudioDemo from '../components/case-demos/DubStudioDemo.vue'
+import HiPilotTourDemo from '../components/case-demos/HiPilotTourDemo.vue'
+import RegressionReplayDemo from '../components/case-demos/RegressionReplayDemo.vue'
 import { caseStudies, localize } from '../data/portfolio'
 import { useLanguage } from '../composables/useLanguage'
 import { setPageMeta } from '../composables/usePageMeta'
@@ -12,6 +15,8 @@ const study = computed(() => caseStudies.find((item) => item.slug === route.para
 const copy = computed(() => currentLanguage.value === 'zh'
   ? {
       back: '返回案例总览',
+      demo: '可体验 Demo',
+      demoNote: '先操作产品，再看系统解释。',
       evidence: '可核验证据',
       challenge: '问题与约束',
       constraints: '约束',
@@ -25,6 +30,8 @@ const copy = computed(() => currentLanguage.value === 'zh'
     }
   : {
       back: 'Back to casebook',
+      demo: 'Working demo',
+      demoNote: 'Use the product first; inspect the system second.',
       evidence: 'Verifiable evidence',
       challenge: 'Problem & constraints',
       constraints: 'Constraints',
@@ -68,16 +75,24 @@ watchEffect(() => {
             </a>
           </div>
         </div>
-        <figure v-if="study.image" class="case-hero__media">
-          <img :src="study.image" :alt="`${study.title.en} application interface`" width="1280" height="720" />
-          <figcaption>{{ currentLanguage === 'zh' ? '实际应用界面 · Gradio 本地工作台' : 'Actual application interface · local Gradio workspace' }}</figcaption>
-        </figure>
       </div>
     </header>
 
+    <section class="case-demo-section" :aria-labelledby="`${study.slug}-demo`">
+      <div class="shell">
+        <div class="demo-section-label">
+          <p :id="`${study.slug}-demo`" class="mono-label">01 / {{ copy.demo }}</p>
+          <span>{{ copy.demoNote }}</span>
+        </div>
+        <RegressionReplayDemo v-if="study.slug === 'agent-failure-regression'" :language="currentLanguage" />
+        <HiPilotTourDemo v-else-if="study.slug === 'hipilot-desktop'" :language="currentLanguage" />
+        <DubStudioDemo v-else-if="study.slug === 'yt-dub-studio'" :language="currentLanguage" />
+      </div>
+    </section>
+
     <section class="case-section evidence-section" :aria-labelledby="`${study.slug}-evidence`">
       <div class="shell">
-        <p :id="`${study.slug}-evidence`" class="mono-label">01 / {{ copy.evidence }}</p>
+        <p :id="`${study.slug}-evidence`" class="mono-label">02 / {{ copy.evidence }}</p>
         <div class="evidence-grid">
           <article v-for="item in study.evidence" :key="item.value">
             <strong>{{ item.value }}</strong>
@@ -91,7 +106,7 @@ watchEffect(() => {
     <section class="case-section">
       <div class="shell case-two-column">
         <div>
-          <p class="mono-label">02 / {{ copy.challenge }}</p>
+          <p class="mono-label">03 / {{ copy.challenge }}</p>
           <h2>{{ copy.challenge }}</h2>
         </div>
         <div class="case-prose">
@@ -107,7 +122,7 @@ watchEffect(() => {
     <section class="case-section architecture-section">
       <div class="shell">
         <div class="case-section-heading">
-          <p class="mono-label">03 / {{ copy.architecture }}</p>
+          <p class="mono-label">04 / {{ copy.architecture }}</p>
           <h2>{{ copy.architecture }}</h2>
         </div>
         <ol class="architecture-flow">
@@ -123,7 +138,7 @@ watchEffect(() => {
     <section class="case-section">
       <div class="shell">
         <div class="case-section-heading">
-          <p class="mono-label">04 / {{ copy.decisions }}</p>
+          <p class="mono-label">05 / {{ copy.decisions }}</p>
           <h2>{{ copy.decisions }}</h2>
         </div>
         <div class="decision-grid">
@@ -139,7 +154,7 @@ watchEffect(() => {
     <section class="case-section outcome-section">
       <div class="shell case-two-column">
         <div>
-          <p class="mono-label">05 / {{ copy.outcomes }}</p>
+          <p class="mono-label">06 / {{ copy.outcomes }}</p>
           <h2>{{ copy.outcomes }}</h2>
         </div>
         <div>
@@ -236,26 +251,29 @@ watchEffect(() => {
   font-size: 1.02rem;
 }
 
-.case-hero__media {
-  margin: 70px 0 0;
-  border: 1px solid var(--line-strong);
-  background: #0d1118;
-  box-shadow: 12px 12px 0 color-mix(in srgb, var(--case-accent), transparent 78%);
+.case-demo-section {
+  padding: 48px 0 92px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-deep);
 }
 
-.case-hero__media img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: top left;
+.demo-section-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-.case-hero__media figcaption {
-  padding: 10px 13px;
+.demo-section-label p {
+  margin: 0;
+  color: var(--case-accent);
+}
+
+.demo-section-label span {
   color: var(--quiet);
-  background: var(--paper);
   font-family: var(--mono);
-  font-size: 0.62rem;
+  font-size: 0.68rem;
 }
 
 .case-section {
@@ -553,6 +571,19 @@ watchEffect(() => {
 
   .case-section {
     padding: 74px 0;
+  }
+
+  .case-demo-section {
+    padding: 34px 0 70px;
+  }
+
+  .demo-section-label {
+    display: block;
+  }
+
+  .demo-section-label span {
+    display: block;
+    margin-top: 6px;
   }
 
   .case-section-heading {
