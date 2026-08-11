@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-08-10T23:39:00+08:00",
+  "ok": true,
+  "media_provenance": "Original copy and motion media created for this portfolio demo; no third-party video used.",
+  "source_audio": {
+    "generator": "macOS system English voice",
+    "duration_seconds": 6.304625
+  },
+  "asr": {
+    "engine": "faster-whisper-base",
+    "language": "en",
+    "language_probability": 1.0,
+    "segment_count": 1,
+    "transcript": "Small failures become useful when a system can replay them, compare them, and turn them into evidence."
+  },
+  "translation": {
+    "method": "human-authored and reviewed",
+    "segment_count": 1,
+    "text": "当系统能够回放、比较并沉淀证据时，小故障也会变成有用的工程输入。"
+  },
+  "tts": {
+    "engine": "CosyVoice2-0.5B",
+    "mode": "Cross-Lingual",
+    "used_source_voice": true,
+    "fallback_occurred": false,
+    "duration_seconds": 7.4
+  },
+  "output": {
+    "original_video_duration_seconds": 12.0,
+    "dubbed_video_duration_seconds": 12.0,
+    "audio_video_duration_delta_seconds": 0.0,
+    "lip_sync": "not_applicable_no_face",
+    "artifact_count": 6
+  }
+}
