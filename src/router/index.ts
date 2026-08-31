@@ -1,6 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
+const redirectedPath = sessionStorage.getItem('spa-redirect')
+if (redirectedPath) {
+  sessionStorage.removeItem('spa-redirect')
+  window.history.replaceState(null, '', redirectedPath)
+}
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
