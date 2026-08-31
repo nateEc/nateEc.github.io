@@ -15,7 +15,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       titleLead: '工作，',
       titleSignal: '一周一周展开。',
       intro: '这不是工时表，而是一条可核验的交付轨迹：从入职第一周开始，把远端 Git 历史按周切开，保留高峰，也保留空档。',
-      snapshot: '数据快照 · 2026 年 7 月 26 日',
+      snapshot: '数据快照 · 2026 年 8 月 31 日（W36 为部分周）',
       pulse: '提交脉冲',
       pulseHint: '选择任意周，跳到对应记录',
       commits: '次提交',
@@ -23,7 +23,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       weeks: '周',
       activeWeeks: '个活跃周',
       method: '如何阅读',
-      methodBody: '统计匹配两个已确认的作者身份，覆盖当前可达的分支、标签与 Merge Request refs；合并提交计入总数。',
+      methodBody: '统计匹配两个已确认的作者身份，覆盖本机可达的公司远端分支、标签与 Merge Request refs；合并提交计入总数。',
       identities: '匹配身份',
       coverage: '覆盖范围',
       coverageValue: '远端 branches · tags · MR refs',
@@ -34,7 +34,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       projectMix: '项目构成',
       noProject: '没有可归属的仓库活动',
       close: '记录结束',
-      closeBody: '所有内容来自截至快照日仍可达的 GitLab commit objects，并经过面向公开 portfolio 的概括与脱敏。',
+      closeBody: '所有内容来自截至快照日仍可达的公司 Git commit objects，并经过面向公开 portfolio 的概括与脱敏。',
     }
   : {
       back: 'Back home',
@@ -42,7 +42,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       titleLead: 'The work,',
       titleSignal: 'week by week.',
       intro: 'Not a timesheet, but a verifiable delivery trail. The remote Git history is cut into weeks from day one, keeping the peaks—and the gaps—visible.',
-      snapshot: 'Data snapshot · 26 Jul 2026',
+      snapshot: 'Data snapshot · 31 Aug 2026 (W36 is partial)',
       pulse: 'Commit pulse',
       pulseHint: 'Select any week to jump to its record',
       commits: 'commits',
@@ -50,7 +50,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       weeks: 'weeks',
       activeWeeks: 'active weeks',
       method: 'How to read this',
-      methodBody: 'The audit matches two confirmed author identities across currently reachable branches, tags, and merge-request refs. Merge commits are included.',
+      methodBody: 'The audit matches two confirmed author identities across locally reachable company remote branches, tags, and merge-request refs. Merge commits are included.',
       identities: 'Matched identities',
       coverage: 'Coverage',
       coverageValue: 'Remote branches · tags · MR refs',
@@ -61,7 +61,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       projectMix: 'Project mix',
       noProject: 'No attributable repository activity',
       close: 'End of record',
-      closeBody: 'Every entry comes from GitLab commit objects reachable on the snapshot date, then summarized and sanitized for a public-facing portfolio.',
+      closeBody: 'Every entry comes from company Git commit objects reachable on the snapshot date, then summarized and sanitized for a public-facing portfolio.',
     })
 
 const t = (text: { en: string; zh: string }) => localize(text, currentLanguage.value)
@@ -70,6 +70,7 @@ const totalCommits = worklogWeeks.reduce((sum, week) => sum + week.commits, 0)
 const activeWeeks = worklogWeeks.filter((week) => week.commits > 0).length
 const repositoryCount = new Set(worklogWeeks.flatMap((week) => week.projects.map((project) => project.name))).size
 const maxCommits = Math.max(...worklogWeeks.map((week) => week.commits))
+const latestWeekId = worklogWeeks[worklogWeeks.length - 1]?.id
 
 const pulseHeight = (week: WorklogWeek) => {
   if (week.commits === 0) return '3px'
@@ -217,7 +218,7 @@ watchEffect(() => {
 
             <div class="week-entry__body">
               <div class="week-story">
-                <p v-if="week.id === '2026-w30'" class="latest-label">{{ copy.latest }}</p>
+                <p v-if="week.id === latestWeekId" class="latest-label">{{ copy.latest }}</p>
                 <h2>{{ t(week.title) }}</h2>
                 <p class="week-summary">{{ t(week.summary) }}</p>
 

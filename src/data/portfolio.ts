@@ -25,7 +25,8 @@ export type Decision = {
 export type CaseStudy = {
   slug: string
   period: string
-  accent: 'blue' | 'teal' | 'amber'
+  accent: 'blue' | 'teal' | 'amber' | 'violet'
+  featured?: boolean
   kind: LocalizedText
   title: LocalizedText
   thesis: LocalizedText
@@ -44,6 +45,7 @@ export type CaseStudy = {
 export type Project = {
   title: string
   period: string
+  featured?: boolean
   context: LocalizedText
   summary: LocalizedText
   role: LocalizedText
@@ -53,6 +55,14 @@ export type Project = {
   liveUrl?: string
 }
 
+export type UpstreamContribution = {
+  project: string
+  merged: number
+  focus: LocalizedText
+  detail: LocalizedText
+  sourceUrl: string
+}
+
 export const localize = (text: LocalizedText, language: Language) => text[language]
 
 export const caseStudies: CaseStudy[] = [
@@ -60,6 +70,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'agent-failure-regression',
     period: '2026',
     accent: 'blue',
+    featured: true,
     kind: {
       en: 'Sanitized production case',
       zh: '脱敏生产案例',
@@ -194,12 +205,12 @@ export const caseStudies: CaseStudy[] = [
       zh: '交付桌面 Agent 工作台，同时正面处理生产环境里的复杂边界。',
     },
     summary: {
-      en: 'A desktop agent product built from Electron, the Codex app server, and the t3code workbench, with short-lived model credentials, SSE proxying, idempotent billing, redacted diagnostics, and macOS release verification.',
-      zh: '基于 Electron、Codex app server 与 t3code workbench 构建的桌面 Agent 产品，覆盖短期模型令牌、SSE 代理、幂等计费、脱敏诊断和 macOS 发布验收。',
+      en: 'A desktop agent product built from Electron, the Codex app server, and an upstream-synced t3code workbench. The release-hardening path covers short-lived model credentials, capability-gated image input, explicit PR/MR handoffs, local project preferences, redacted diagnostics, and macOS verification.',
+      zh: '基于 Electron、Codex app server 与同步上游的 t3code 工作台构建的桌面 Agent 产品。发布加固覆盖短期模型令牌、能力门控的图片输入、显式 PR/MR 交接、本地项目偏好、脱敏诊断和 macOS 验收。',
     },
     challenge: {
-      en: 'A desktop agent is not only a chat interface. Authentication, long-running streams, billing retries, diagnostics, and signed releases all cross trust boundaries that must fail safely.',
-      zh: '桌面 Agent 不只是聊天界面。认证、长连接流式传输、计费重试、诊断信息和签名发布跨越多个信任边界，任何一处失败都必须可控。',
+      en: 'A desktop agent is not only a chat interface. Upstream workbench changes, long-running streams, multimodal input, collaboration actions, billing retries, diagnostics, and signed releases all cross trust boundaries that must fail safely.',
+      zh: '桌面 Agent 不只是聊天界面。上游工作台变更、长连接流式传输、多模态输入、协作操作、计费重试、诊断信息和签名发布跨越多个信任边界，任何一处失败都必须可控。',
     },
     constraints: [
       {
@@ -214,27 +225,35 @@ export const caseStudies: CaseStudy[] = [
         en: 'Support diagnostics must remain useful after sensitive fields are removed.',
         zh: '支持诊断在移除敏感字段后仍要保留排障价值。',
       },
+      {
+        en: 'Upstream capabilities must become intentional product integrations rather than uncontrolled surface area.',
+        zh: '上游能力必须成为有意设计的产品集成，而不能变成失控的功能面。',
+      },
+      {
+        en: 'Image input and Git collaboration actions need clear capability and confirmation boundaries.',
+        zh: '图片输入与 Git 协作操作需要明确的能力与确认边界。',
+      },
     ],
     architecture: [
       {
         key: 'workbench',
         label: { en: 'Workbench', zh: '工作台' },
-        detail: { en: 'Electron shell and t3code UI', zh: 'Electron 外壳与 t3code UI' },
+        detail: { en: 'Electron shell, upstream sync, local appearance', zh: 'Electron 外壳、上游同步与本地外观' },
       },
       {
         key: 'runtime',
         label: { en: 'Agent runtime', zh: 'Agent 运行时' },
-        detail: { en: 'Codex app server lifecycle', zh: 'Codex app server 生命周期' },
+        detail: { en: 'Codex lifecycle and visible agent work', zh: 'Codex 生命周期与可见的 Agent 工作' },
       },
       {
         key: 'proxy',
         label: { en: 'Model proxy', zh: '模型代理' },
-        detail: { en: 'Short-lived tokens and SSE', zh: '短期令牌与 SSE' },
+        detail: { en: 'Short-lived tokens, SSE, image capability gates', zh: '短期令牌、SSE 与图片能力门禁' },
       },
       {
-        key: 'ledger',
-        label: { en: 'Event ledger', zh: '事件账本' },
-        detail: { en: 'Idempotent usage and billing', zh: '幂等用量与计费' },
+        key: 'collaboration',
+        label: { en: 'Collaboration', zh: '协作' },
+        detail: { en: 'Explicit PR/MR handoffs and project settings', zh: '显式 PR/MR 交接与项目设置' },
       },
       {
         key: 'release',
@@ -264,22 +283,36 @@ export const caseStudies: CaseStudy[] = [
           zh: '诊断从一开始就围绕安全且有用的字段设计，而不是先收集全部数据再事后脱敏。',
         },
       },
+      {
+        title: { en: 'Capability before multimodality', zh: '多模态之前先验证能力' },
+        body: {
+          en: 'Image input is routed only when the selected model path explicitly supports it, keeping a visual affordance from becoming an ambiguous request path.',
+          zh: '仅在所选模型链路明确支持时才路由图片输入，避免视觉入口变成含糊的请求路径。',
+        },
+      },
+      {
+        title: { en: 'Show consequential handoffs', zh: '显式展示关键交接' },
+        body: {
+          en: 'Project settings, agent lifecycle, and GitHub/GitLab collaboration are exposed as visible choices and confirmations rather than background side effects.',
+          zh: '项目设置、Agent 生命周期及 GitHub/GitLab 协作以可见的选择和确认呈现，而不是后台副作用。',
+        },
+      },
     ],
     evidence: [
       {
-        value: 'TTL',
-        label: { en: 'scoped authority', zh: '限时授权' },
-        detail: { en: 'no durable provider credential', zh: '不保存长期供应商凭证' },
+        value: 'UPSTREAM',
+        label: { en: 'controlled integration', zh: '受控集成' },
+        detail: { en: 'workbench changes pass through desktop policy', zh: '工作台变更经由桌面产品策略接入' },
       },
       {
-        value: 'SSE',
-        label: { en: 'streaming proxy', zh: '流式代理' },
-        detail: { en: 'resilient long-running sessions', zh: '支撑可恢复的长会话' },
+        value: 'CAP-GATE',
+        label: { en: 'image input boundary', zh: '图片输入边界' },
+        detail: { en: 'only supported paths can accept an image', zh: '只有受支持的链路可以接受图片' },
       },
       {
-        value: 'IDEMP',
-        label: { en: 'usage ledger', zh: '用量账本' },
-        detail: { en: 'retry-safe event identities', zh: '跨重试保持事件身份稳定' },
+        value: 'EXPLICIT',
+        label: { en: 'visible handoffs', zh: '可见交接' },
+        detail: { en: 'settings, agent state, and PR/MR actions stay reviewable', zh: '设置、Agent 状态和 PR/MR 操作均可审核' },
       },
     ],
     outcomes: [
@@ -295,8 +328,12 @@ export const caseStudies: CaseStudy[] = [
         en: 'macOS release readiness became an explicit gate rather than a manual afterthought.',
         zh: 'macOS 发布就绪度成为明确门禁，而不是最后阶段的人工补丁。',
       },
+      {
+        en: 'Recent workbench capabilities became reviewable desktop integrations instead of invisible upstream drift.',
+        zh: '近期工作台能力成为可审核的桌面产品集成，而不是不可见的上游漂移。',
+      },
     ],
-    stack: ['Electron', 'TypeScript', 'Codex app server', 'SSE', 'macOS release'],
+    stack: ['Electron', 'TypeScript', 'Codex app server', 't3code', 'Ghostty', 'GitHub/GitLab', 'macOS release'],
   },
   {
     slug: 'yt-dub-studio',
@@ -421,9 +458,151 @@ export const caseStudies: CaseStudy[] = [
     image: '/images/projects/yt-dub-studio-cover.webp',
     sourceUrl: 'https://github.com/nateEc/yt-dub-studio',
   },
+  {
+    slug: 'enterprise-knowledge-delivery',
+    period: '2026',
+    accent: 'violet',
+    featured: true,
+    kind: {
+      en: 'Sanitized production case',
+      zh: '脱敏生产案例',
+    },
+    title: {
+      en: 'Enterprise Knowledge Delivery',
+      zh: '企业知识交付系统',
+    },
+    thesis: {
+      en: 'Make what the system knows reviewable before it becomes a decision.',
+      zh: '在结论成为决策之前，先让系统所知的内容可审核。',
+    },
+    summary: {
+      en: 'A governed delivery workflow that turns incomplete source material and interviews into versioned knowledge objects, evidence-bound assertions, human review states, and client-ready delivery packages. This public case uses synthetic data only.',
+      zh: '一套受治理的交付流程：把不完整的资料与访谈转化为版本化知识对象、证据绑定的结论、人工审核状态和面向交付的内容包。公开案例仅使用合成数据。',
+    },
+    challenge: {
+      en: 'Enterprise source material is often partial, contradictory, and sensitive. A useful system cannot jump from ingestion to a polished answer; it must preserve lineage, expose uncertainty, and make readiness a human decision.',
+      zh: '企业资料常常不完整、彼此矛盾且敏感。有效的系统不能从导入直接跳到精致结论；它必须保留来源链路、展示不确定性，并把就绪度交给人来确认。',
+    },
+    constraints: [
+      {
+        en: 'No internal source, customer identifier, or production output can appear in the public case.',
+        zh: '公开案例中不能出现内部资料、客户标识或生产输出。',
+      },
+      {
+        en: 'Every decision-relevant assertion needs a source path, version, and review state.',
+        zh: '每条与决策相关的结论都需要来源路径、版本与审核状态。',
+      },
+      {
+        en: 'Delivery must remain usable in controlled and intermittently connected environments.',
+        zh: '交付必须能在受控、间歇联网的环境中保持可用。',
+      },
+    ],
+    architecture: [
+      {
+        key: 'intake',
+        label: { en: 'Intake', zh: '接入' },
+        detail: { en: 'Source register and access boundary', zh: '来源登记与访问边界' },
+      },
+      {
+        key: 'distill',
+        label: { en: 'Distill', zh: '提炼' },
+        detail: { en: 'Versioned knowledge objects', zh: '版本化知识对象' },
+      },
+      {
+        key: 'bind',
+        label: { en: 'Bind', zh: '绑定' },
+        detail: { en: 'Assertion-to-evidence links', zh: '结论到证据的链接' },
+      },
+      {
+        key: 'review',
+        label: { en: 'Review', zh: '审核' },
+        detail: { en: 'Human acceptance and exception state', zh: '人工验收与例外状态' },
+      },
+      {
+        key: 'deliver',
+        label: { en: 'Deliver', zh: '交付' },
+        detail: { en: 'Versioned package and readiness record', zh: '版本化内容包与就绪记录' },
+      },
+    ],
+    decisions: [
+      {
+        title: { en: 'Keep the intermediate state', zh: '保留中间状态' },
+        body: {
+          en: 'The workflow keeps source registration, distilled objects, exceptions, and review history visible, so delivery never relies on a final answer alone.',
+          zh: '流程保留来源登记、提炼对象、例外与审核历史，使交付不只依赖最终答案。',
+        },
+      },
+      {
+        title: { en: 'Bind evidence at the assertion', zh: '在结论层绑定证据' },
+        body: {
+          en: 'A citation is not a footer. Each decision-relevant statement points back to a precise fragment and its current version.',
+          zh: '引用不应只是页脚。每条与决策相关的陈述都指向具体片段及其当前版本。',
+        },
+      },
+      {
+        title: { en: 'Make delivery readiness explicit', zh: '显式表达交付就绪度' },
+        body: {
+          en: 'The system distinguishes draft, needs-clarification, accepted, and ready-to-deliver instead of treating generated content as automatically complete.',
+          zh: '系统区分草稿、待澄清、已验收和可交付，而不把生成内容自动视为完成。',
+        },
+      },
+    ],
+    evidence: [
+      {
+        value: 'TRACE',
+        label: { en: 'assertion lineage', zh: '结论链路' },
+        detail: { en: 'source fragment, version, and owner remain inspectable', zh: '来源片段、版本和责任人保持可检查' },
+      },
+      {
+        value: 'GATE',
+        label: { en: 'human acceptance', zh: '人工验收' },
+        detail: { en: 'readiness is a decision, not a completion animation', zh: '就绪度是一项决策，不是完成动画' },
+      },
+      {
+        value: 'PACK',
+        label: { en: 'controlled delivery', zh: '受控交付' },
+        detail: { en: 'versioned materials stay recoverable and reviewable', zh: '版本化材料可恢复、可审核' },
+      },
+    ],
+    outcomes: [
+      {
+        en: 'Reviewers can see what is known, what remains uncertain, and why a conclusion is present before it enters a delivery package.',
+        zh: '审核者可在结论进入交付包之前看见已知信息、未确定项及结论出现的原因。',
+      },
+      {
+        en: 'Operators can recover a decision path without reopening every original source or trusting a black-box summary.',
+        zh: '执行人员无需重开每一份原始资料，也无需相信黑箱总结，即可恢复决策路径。',
+      },
+      {
+        en: 'Human acceptance becomes a recorded stage of the system rather than an untracked offline handoff.',
+        zh: '人工验收成为系统中被记录的阶段，而不是未追踪的线下交接。',
+      },
+    ],
+    stack: ['TypeScript', 'Knowledge contracts', 'Evidence bindings', 'Versioned delivery', 'Human review'],
+  },
 ]
 
 export const projects: Project[] = [
+  {
+    title: 'DSH Git Workbench',
+    period: 'Aug 2026',
+    featured: true,
+    context: {
+      en: 'Open-source visual Git client for DSH',
+      zh: '面向 DSH 的开源可视化 Git 客户端',
+    },
+    summary: {
+      en: 'A Git DAG workbench that makes history, rich search, multi-diff review, WIP staging, worktrees, agent workspaces, and recovery-safe Git operations visible in one local desktop surface.',
+      zh: '一套 Git DAG 工作台：把历史、富搜索、多 Diff 审阅、WIP 暂存、worktree、Agent 工作区和可恢复的 Git 操作放进同一本地桌面界面。',
+    },
+    role: {
+      en: 'Product architecture, graph UI, Git service layer, safety model, test suite',
+      zh: '产品架构、图谱 UI、Git 服务层、安全模型、测试套件',
+    },
+    image: '/images/projects/dsh-git-workbench-cover.jpg',
+    stack: ['TypeScript', 'React', 'Cordis / DSH', 'Git DAG', 'Vitest'],
+    sourceUrl: 'https://github.com/nateEc/dsh-gitKraken',
+  },
   {
     title: 'Shortcutype',
     period: 'Jul 2026',
@@ -499,5 +678,34 @@ export const projects: Project[] = [
     image: '/images/projects/pet-safe-cover.webp',
     stack: ['Ionic React', 'Capacitor', 'TypeScript', 'Mapbox'],
     sourceUrl: 'https://github.com/nateEc/pet-safe',
+  },
+]
+
+export const upstreamContributions: UpstreamContribution[] = [
+  {
+    project: 'MetaBot',
+    merged: 9,
+    focus: {
+      en: 'runtime reliability, safety, and developer setup',
+      zh: '运行时可靠性、安全性与开发者配置',
+    },
+    detail: {
+      en: 'Accepted upstream patches across the agent runtime and its operating edges.',
+      zh: '已被上游接受的 Agent 运行时及其运行边界改进。',
+    },
+    sourceUrl: 'https://github.com/xvirobotics/metabot/pulls?q=is%3Apr+author%3AnateEc+is%3Amerged',
+  },
+  {
+    project: 'T3 Code',
+    merged: 5,
+    focus: {
+      en: 'workbench stability and streaming behavior',
+      zh: '工作台稳定性与流式行为',
+    },
+    detail: {
+      en: 'Merged fixes that improve the open-source workbench used as an upstream integration point.',
+      zh: '已合入的修复，改善作为上游集成点的开源工作台。',
+    },
+    sourceUrl: 'https://github.com/pingdotgg/t3code/pulls?q=is%3Apr+author%3AnateEc+is%3Amerged',
   },
 ]

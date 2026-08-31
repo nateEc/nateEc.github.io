@@ -32,6 +32,7 @@ const requiredFiles = [
   'dist/images/linkedin-avatar.webp',
   'dist/images/projects/yt-dub-studio-cover.webp',
   'dist/images/projects/shortcutype-cover.webp',
+  'dist/images/projects/dsh-git-workbench-cover.jpg',
   'dist/demos/hipilot/workbench.webp',
   'dist/demos/hipilot/terminal.webp',
   'dist/demos/hipilot/preview-panel.webp',
@@ -84,7 +85,11 @@ assert(source.includes('@media (prefers-reduced-motion: reduce)'), 'theme motion
 assert(source.includes('RegressionReplayDemo') && source.includes('quality.empty_answer'), 'casebook wires the interactive regression replay lab')
 assert(source.includes('HiPilotTourDemo') && source.includes('/demos/hipilot/settings.webp'), 'casebook wires the real HiPilot Desktop tour')
 assert(source.includes('DubStudioDemo') && source.includes('/demos/yt-dub/dubbed.mp4'), 'casebook wires the playable A/B dubbing demo')
+assert(source.includes('KnowledgeDeliveryDemo') && source.includes('Evidence Rail'), 'casebook wires the synthetic enterprise knowledge delivery demo')
 assert(source.indexOf('case-demo-section') < source.indexOf('evidence-section'), 'case studies present the demo before supporting evidence')
+assert(source.includes('DSH Git Workbench') && source.includes('/images/projects/dsh-git-workbench-cover.jpg'), 'public DSH Git Workbench project uses a real application capture')
+assert(source.includes('upstreamContributions') && source.includes('14 patches'), 'accepted upstream contributions are presented as a separate evidence record')
+assert(source.includes('2026-w36') && source.includes('31 Aug 2026'), 'worklog reaches the current partial week with an updated snapshot')
 
 const dubReport = JSON.parse(read('public/demos/yt-dub/run-report.json'))
 assert(dubReport.ok === true && dubReport.tts.used_source_voice === true, 'yt-dub report records a successful source-voice run')
@@ -133,7 +138,7 @@ for (const article of ['harness', 'algorithm', 'strategy']) {
 }
 
 const sitemap = read('public/sitemap.xml')
-for (const slug of ['agent-failure-regression', 'hipilot-desktop', 'yt-dub-studio']) {
+for (const slug of ['agent-failure-regression', 'hipilot-desktop', 'yt-dub-studio', 'enterprise-knowledge-delivery']) {
   assert(sitemap.includes(`/case-studies/${slug}`), `sitemap includes ${slug}`)
 }
 assert(sitemap.includes('/worklog'), 'sitemap includes the weekly worklog')

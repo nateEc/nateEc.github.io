@@ -3,6 +3,7 @@ import { computed, watchEffect } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import DubStudioDemo from '../components/case-demos/DubStudioDemo.vue'
 import HiPilotTourDemo from '../components/case-demos/HiPilotTourDemo.vue'
+import KnowledgeDeliveryDemo from '../components/case-demos/KnowledgeDeliveryDemo.vue'
 import RegressionReplayDemo from '../components/case-demos/RegressionReplayDemo.vue'
 import { caseStudies, localize } from '../data/portfolio'
 import { useLanguage } from '../composables/useLanguage'
@@ -87,6 +88,7 @@ watchEffect(() => {
         <RegressionReplayDemo v-if="study.slug === 'agent-failure-regression'" :language="currentLanguage" />
         <HiPilotTourDemo v-else-if="study.slug === 'hipilot-desktop'" :language="currentLanguage" />
         <DubStudioDemo v-else-if="study.slug === 'yt-dub-studio'" :language="currentLanguage" />
+        <KnowledgeDeliveryDemo v-else-if="study.slug === 'enterprise-knowledge-delivery'" :language="currentLanguage" />
       </div>
     </section>
 
@@ -207,6 +209,16 @@ watchEffect(() => {
 .case-hero.accent-amber {
   --case-accent: var(--amber);
   --case-soft: var(--amber-soft);
+}
+
+.case-hero.accent-violet {
+  --case-accent: #8260dc;
+  --case-soft: #eee8ff;
+}
+
+:global(html[data-theme='dark']) .case-hero.accent-violet {
+  --case-accent: #b397ff;
+  --case-soft: #241c3b;
 }
 
 .case-hero .eyebrow,
