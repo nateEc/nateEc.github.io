@@ -12,6 +12,7 @@ const content = computed(() => currentLanguage.value === 'zh'
       intro: '我是 Nathan Shan。我把模型能力变成可靠、可观测、可回归的产品系统——从 Skill 路由与评测基础设施，到桌面 Agent 和实时语音工作流。',
       primary: '查看案例',
       secondary: '聊聊系统',
+      techNews: 'Tech News',
       availability: '目前在 VisionFlow AI 负责生产级 Agent 工程',
       traceTitle: 'Agent Trace Inspector',
       traceCase: 'sanitized · routing shadow',
@@ -26,6 +27,7 @@ const content = computed(() => currentLanguage.value === 'zh'
       intro: 'I’m Nathan Shan. I turn model capability into reliable, observable, regression-tested product systems—from skill routing and evaluation infrastructure to desktop agents and real-time voice workflows.',
       primary: 'Open the casebook',
       secondary: 'Discuss a system',
+      techNews: 'Tech News',
       availability: 'Currently building production agents at VisionFlow AI',
       traceTitle: 'Agent Trace Inspector',
       traceCase: 'sanitized · routing shadow',
@@ -66,6 +68,7 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
         <div class="hero-actions">
           <a class="button" href="#work">{{ content.primary }} <span aria-hidden="true">↓</span></a>
           <a class="button button--ghost" href="#contact">{{ content.secondary }}</a>
+          <a class="button button--ghost button--tiny" href="#tech-news">{{ content.techNews }} <span aria-hidden="true">⚡</span></a>
         </div>
         <p class="availability"><span aria-hidden="true"></span>{{ content.availability }}</p>
       </div>
@@ -177,6 +180,12 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.button--tiny {
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 0.66rem;
 }
 
 .availability {
