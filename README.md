@@ -37,4 +37,8 @@ npm run preview     # Preview the production build
 
 ## Publishing
 
-This repository intentionally has no package script that deploys automatically. `dist/` is generated and ignored. Publishing should happen only after a reviewed local build through an explicitly chosen hosting workflow.
+This repository now uses GitHub Actions to publish on every push to `main` via `Deploy to GitHub Pages` workflow.
+
+- Build and deploy are fully automated after `main` receives updates.
+- `dist/` remains generated and ignored in git.
+- Default site URL: `https://nateec.github.io/`
