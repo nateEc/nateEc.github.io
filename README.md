@@ -42,3 +42,9 @@ This repository now uses GitHub Actions to publish on every push to `main` via `
 - Build and deploy are fully automated after `main` receives updates.
 - `dist/` remains generated and ignored in git.
 - Default site URL: `https://nateec.github.io/`
+
+## Daily Tech Signal publishing
+
+Hermes collects the AI digest and the Hacker News + TechCrunch digest at 11:00 Beijing time. At 11:30, `publish-tech-news.py` regenerates the public snapshot, runs the full acceptance suite, commits only `public/tech-news/latest.json`, and pushes `main`. The existing Pages workflow performs the deployment.
+
+The publisher fails closed when the repository is not on `main`, when local changes exist outside the news snapshot, when `main` differs from `origin/main`, or when validation fails. Resolve the reported condition and rerun the Hermes job instead of bypassing these checks.

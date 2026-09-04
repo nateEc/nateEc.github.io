@@ -26,6 +26,7 @@ const requiredFiles = [
   'dist/robots.txt',
   'dist/sitemap.xml',
   'dist/theme-init.js',
+  'dist/tech-news/latest.json',
   'dist/og-image.png',
   'dist/resume-en.pdf',
   'dist/resume-zh.pdf',
@@ -90,6 +91,17 @@ assert(source.indexOf('case-demo-section') < source.indexOf('evidence-section'),
 assert(source.includes('DSH Git Workbench') && source.includes('/images/projects/dsh-git-workbench-cover.jpg'), 'public DSH Git Workbench project uses a real application capture')
 assert(source.includes('upstreamContributions') && source.includes('14 patches'), 'accepted upstream contributions are presented as a separate evidence record')
 assert(source.includes('2026-w36') && source.includes('31 Aug 2026'), 'worklog reaches the current partial week with an updated snapshot')
+assert(source.includes("path: '/tech-news'") && source.includes('TechNewsView'), 'Tech Signal has a dedicated application route')
+assert(source.includes("to=\"/tech-news\"") && source.includes("route: '/tech-news'"), 'Tech Signal is linked from the hero and primary navigation')
+assert(!source.includes('TechNewsSection'), 'the old homepage Tech News section is removed')
+
+const techNewsPayload = JSON.parse(read('public/tech-news/latest.json'))
+assert(techNewsPayload.schemaVersion === 1, 'Tech Signal payload declares its schema version')
+assert(Array.isArray(techNewsPayload.sections) && techNewsPayload.sections.length >= 3, 'Tech Signal contains all configured sources')
+const techNewsItems = techNewsPayload.sections.flatMap((section) => section.items ?? [])
+assert(techNewsItems.length >= 3, 'Tech Signal contains displayable items')
+assert(techNewsItems.every((item) => /^https:\/\//.test(item.url)), 'Tech Signal exposes only HTTPS article links')
+assert(techNewsItems.every((item) => !/…$/.test(item.published ?? '')), 'Tech Signal preserves complete publication timestamps')
 
 const dubReport = JSON.parse(read('public/demos/yt-dub/run-report.json'))
 assert(dubReport.ok === true && dubReport.tts.used_source_voice === true, 'yt-dub report records a successful source-voice run')
@@ -142,6 +154,7 @@ for (const slug of ['agent-failure-regression', 'hipilot-desktop', 'yt-dub-studi
   assert(sitemap.includes(`/case-studies/${slug}`), `sitemap includes ${slug}`)
 }
 assert(sitemap.includes('/worklog'), 'sitemap includes the weekly worklog')
+assert(sitemap.includes('/tech-news'), 'sitemap includes the daily Tech Signal page')
 
 const trackedDist = execFileSync('git', ['ls-files', 'dist'], { cwd: root, encoding: 'utf8' }).trim()
 assert(trackedDist === '', 'generated dist/ is not tracked as source')

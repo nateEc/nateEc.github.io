@@ -15,6 +15,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       experience: '经历',
       notes: '文章',
       worklog: '周志',
+      signals: '情报',
       contact: '联系',
       menu: '菜单',
       close: '关闭菜单',
@@ -28,6 +29,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       experience: 'Experience',
       notes: 'Notes',
       worklog: 'Worklog',
+      signals: 'Signals',
       contact: 'Contact',
       menu: 'Menu',
       close: 'Close menu',
@@ -42,6 +44,7 @@ const navItems = computed(() => [
   { key: 'experience', to: { path: '/', hash: '#experience' }, label: copy.value.experience },
   { key: 'notes', to: { path: '/', hash: '#blog' }, label: copy.value.notes },
   { key: 'worklog', to: { path: '/worklog' }, route: '/worklog', label: copy.value.worklog },
+  { key: 'signals', to: { path: '/tech-news' }, route: '/tech-news', label: copy.value.signals },
   { key: 'contact', to: { path: '/', hash: '#contact' }, label: copy.value.contact },
 ])
 

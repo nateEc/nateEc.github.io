@@ -6,7 +6,6 @@ import ExperienceSection from '../components/ExperienceSection.vue'
 import SkillsSection from '../components/SkillsSection.vue'
 import PortfolioSection from '../components/PortfolioSection.vue'
 import BlogSection from '../components/BlogSection.vue'
-import TechNewsSection from '../components/TechNewsSection.vue'
 import ContactSection from '../components/ContactSection.vue'
 import { useLanguage } from '../composables/useLanguage'
 import { setPageMeta } from '../composables/usePageMeta'
@@ -34,7 +33,6 @@ watchEffect(() => {
     <SkillsSection />
     <PortfolioSection />
     <BlogSection />
-    <TechNewsSection />
     <ContactSection />
   </main>
 </template>

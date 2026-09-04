@@ -31,6 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nateec.github.io/tech-news</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nateec.github.io/blog/ai-harness-summary.html</loc>
     <lastmod>2026-06-24</lastmod>
     <priority>0.7</priority>
