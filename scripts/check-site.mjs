@@ -26,6 +26,9 @@ const requiredFiles = [
   'dist/robots.txt',
   'dist/sitemap.xml',
   'dist/theme-init.js',
+  'dist/favicon.ico',
+  'dist/favicon-32x32.png',
+  'dist/apple-touch-icon.png',
   'dist/tech-news/latest.json',
   'dist/og-image.png',
   'dist/resume-en.pdf',
@@ -60,6 +63,8 @@ assert(/name="description"/.test(sourceIndex), 'homepage has a meta description'
 assert(/rel="canonical"/.test(sourceIndex), 'homepage has a canonical URL')
 assert(/property="og:image"/.test(sourceIndex), 'homepage has Open Graph metadata')
 assert(/application\/ld\+json/.test(sourceIndex), 'homepage has structured Person data')
+assert(sourceIndex.includes('/favicon-32x32.png?v=20260907'), 'homepage uses the versioned portrait favicon')
+assert(sourceIndex.includes('/apple-touch-icon.png?v=20260907'), 'homepage exposes the portrait Apple touch icon')
 assert(sourceIndex.includes('/theme-init.js'), 'theme initialization runs before the Vue app')
 assert(sourceIndex.indexOf('/theme-init.js') < sourceIndex.indexOf('/src/main.ts'), 'theme initialization precedes application rendering')
 
