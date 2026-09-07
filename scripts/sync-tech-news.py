@@ -200,8 +200,8 @@ def main() -> int:
     }
 
     if not run_times['ai'] or not run_times['hn']:
-        print('skip: one or both scheduled tech-news cron jobs have not completed today yet')
-        return 0
+        print('error: one or both scheduled tech-news cron jobs have not completed today yet')
+        return 1
 
     try:
         ai_data = _run_digest(AI_SCRIPT)

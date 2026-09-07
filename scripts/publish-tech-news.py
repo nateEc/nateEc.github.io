@@ -15,14 +15,31 @@ PROJECT_ROOT = Path(os.environ.get(
     'PORTFOLIO_PROJECT_ROOT',
     '/Users/nathanshan/Desktop/nateEc.github copy.io',
 )).expanduser().resolve()
+NODE_BIN = Path(os.environ.get(
+    'PORTFOLIO_NODE_BIN',
+    str(Path.home() / '.nvm' / 'versions' / 'node' / 'v22.22.1' / 'bin'),
+)).expanduser().resolve()
 NEWS_PATH = Path('public/tech-news/latest.json')
 SYNC_SCRIPT = PROJECT_ROOT / 'scripts' / 'sync-tech-news.py'
+
+
+def _runtime_env() -> dict[str, str]:
+    node = NODE_BIN / 'node'
+    npm = NODE_BIN / 'npm'
+    if not node.is_file() or not npm.is_file():
+        raise RuntimeError(f'portfolio Node runtime is missing: {NODE_BIN}')
+
+    env = os.environ.copy()
+    current_path = env.get('PATH', '')
+    env['PATH'] = os.pathsep.join(part for part in (str(NODE_BIN), current_path) if part)
+    return env
 
 
 def _run(command: list[str], *, timeout: int = 600) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         command,
         cwd=PROJECT_ROOT,
+        env=_runtime_env(),
         text=True,
         capture_output=True,
         check=False,
@@ -82,6 +99,8 @@ def _validate_payload(payload: Any) -> str:
 def _ensure_publishable_worktree() -> None:
     if not (PROJECT_ROOT / '.git').exists():
         raise RuntimeError(f'portfolio repository is missing: {PROJECT_ROOT}')
+    _checked(['node', '--version'])
+    _checked(['npm', '--version'])
     if _checked(['git', 'branch', '--show-current']) != 'main':
         raise RuntimeError('portfolio publishing requires the main branch')
 
