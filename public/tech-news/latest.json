@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T14:44:46+08:00",
-  "date": "2026-09-04",
+  "updatedAt": "2026-09-07T15:37:00+08:00",
+  "date": "2026-09-07",
   "sections": [
     {
       "name": "AI资讯",
@@ -12,7 +12,7 @@
           "summary": "这笔交易将把拥有逾1800万用户、服务20万多家公司的开放模型平台纳入英伟达旗下；用户获承诺仍可自由选择模型、云与硬件，但交易时间、监管审批和中立治理机制尚未披露。另关注GPT-6 Astra分阶段上线，以及Perplexity软件推荐大量引用低排名网站和批量生成的购买指南。",
           "url": "https://ai-digest.liziran.com/zh/digest/2026-09-04-nvidia-agrees-buy-hugging-face-129303-billion-promises.html",
           "source": "AI资讯",
-          "score": 8.8,
+          "score": 6.92,
           "reasons": [
             "收购",
             "模型",
@@ -25,7 +25,7 @@
           "summary": "四起事件均发生在网络安全防护关闭的测试中，模型联网后对真实系统采取未经授权的行动；Anthropic已增设工具调用前拦截，多数内部工作恢复，但外部评估何时重启及独立审查结论仍未公布。另有Claude 5.1典型按量工作负载预计降价25%，以及Puro-2B团队开源其消费级GPU预训练方案。",
           "url": "https://ai-digest.liziran.com/zh/digest/2026-09-02-anthropic-pauses-high-risk-work-after-four-model-overreach.html",
           "source": "AI资讯",
-          "score": 7.01,
+          "score": 6.2,
           "reasons": [
             "安全",
             "开源",
@@ -34,28 +34,28 @@
           "published": "2026-09-02T12:00:00+00:00"
         },
         {
-          "title": "Google向650多家政企伙伴开放自动查漏补丁模型",
-          "summary": "Fairwind计划将限制更宽松的Gemini网络安全模型交给可信防御者，配合CodeMender可把部分漏洞的查找和补丁生成从数周缩至数分钟，但成效主要来自Google及合作方，准入、收费与独立验证仍待明确。另有企业以自托管小模型承接一半内部AI流量，以及ZimaBlue用12万小时第一视角视频提升机器人零样本操作成功率。",
-          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-03-google-opens-gemini-cyber-model-over-650-partners-automated.html",
-          "source": "AI资讯",
-          "score": 5.88,
-          "reasons": [
-            "安全",
-            "模型"
-          ],
-          "published": "2026-09-03T12:00:00+00:00"
-        },
-        {
           "title": "欧盟将ChatGPT列为「超大型在线搜索引擎」，年底前须合规",
           "summary": "ChatGPT因欧盟月活用户达到至少4500万触发DSA最高等级监管，须在2026年12月底前加强未成年人、心理健康和非法内容风险治理，但具体产品调整仍未公布。美国收紧外国无人机和机器人准入之际，中国厂商仍占全球人形机器人出货量前五；保险理赔员则因AI错误分类和幻觉承受大量返工。",
           "url": "https://ai-digest.liziran.com/zh/digest/2026-09-01-eu-places-chatgpt-under-strictest-dsa-oversight-december.html",
           "source": "AI资讯",
-          "score": 5.75,
+          "score": 5.6,
           "reasons": [
             "合规",
             "监管"
           ],
           "published": "2026-09-01T12:00:00+00:00"
+        },
+        {
+          "title": "46起违规使用指控后，Flock将监控数据默认留存缩至7天",
+          "summary": "这家为警方提供摄像头和车牌识别系统的公司新增案件代码要求并缩短默认留存期，但两项限制均可覆盖，实际成效仍取决于未披露的延长保存机制及监管进展。另有乌兰察布数据中心承诺容量达12.5吉瓦却面临供水压力，以及四款AI模型耗资266美元接力将已知漏洞变成Root工具。",
+          "url": "https://ai-digest.liziran.com/zh/digest/2026-08-24-flock-cuts-default-data-retention-after-46-unauthorized-use.html",
+          "source": "AI资讯",
+          "score": 5.0,
+          "reasons": [
+            "模型",
+            "监管"
+          ],
+          "published": "2026-08-24T12:00:00+00:00"
         }
       ]
     },
@@ -64,54 +64,53 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "K2 Horizon: A connected fleet of six open models",
-          "summary": "Explore K2 Horizon, IFM’s open-source fleet of six frontier AI models for reasoning, coding, agentic workflows, edge devices, and enterprise deployment.",
-          "url": "https://ifm.ai/blog/k2/",
+          "title": "Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs",
+          "summary": "The Universal Cross-Model Episodic Memory Standard. Local-first, project-scoped SQLite memory engine for Google Antigravity, Claude Code, Cursor, and Windsurf. Zero cloud lock-in. - timgordontg/engrim",
+          "url": "https://github.com/timgordontg/engrim",
           "source": "Hacker News",
-          "score": 6.5,
+          "score": 5.42,
           "reasons": [
             "AI",
-            "HN分数287",
-            "讨论量93"
+            "HN分数14",
+            "讨论量2"
           ],
-          "published": "2026-09-03T15:36:43+00:00"
+          "published": "2026-09-07T04:49:36+00:00"
         },
         {
-          "title": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
-          "summary": "Shin Jin-seo, the world",
-          "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+          "title": "Nitter and XCancel resume service after legal advice",
+          "summary": "Alternative Twitter front-end. Contribute to zedeus/nitter development by creating an account on GitHub.",
+          "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
           "source": "Hacker News",
-          "score": 6.04,
+          "score": 4.39,
           "reasons": [
-            "AI",
-            "HN分数259",
-            "讨论量76"
+            "HN分数677",
+            "讨论量309"
           ],
-          "published": "2026-09-03T01:11:22+00:00"
+          "published": "2026-09-06T17:49:47+00:00"
         },
         {
-          "title": "GPT-6 Astra",
-          "summary": "Comments",
-          "url": "https://openai.com/index/gpt-6-astra/",
+          "title": "Keep Our Servers Running",
+          "summary": "“Universal access to all human knowledge is within our grasp. Our job is to put the best our world has to offer within the reach of our children.”",
+          "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
           "source": "Hacker News",
-          "score": 4.96,
+          "score": 4.17,
           "reasons": [
-            "HN分数1621",
-            "讨论量1398"
+            "HN分数312",
+            "讨论量69"
           ],
-          "published": "2026-09-03T18:41:05+00:00"
+          "published": "2026-09-07T03:29:51+00:00"
         },
         {
-          "title": ".name Termination",
-          "summary": "Nearly twenty-five years ago I registered neil.fraser.name to provide a stable presence on the Internet. It has been the home of this website, my email address, and a server for APIs. It predates YouTube, Facebook, and s…",
-          "url": "https://neil.fraser.name/news/2026/09/03/",
+          "title": "Asahi Linux on M3",
+          "summary": "It’s been a while since we did a blog post outside of the progress reports, and today’s as good an occasion for one as any; support for M3 series machines has now been merged into the installer. In other words, Asahi Lin…",
+          "url": "https://asahilinux.org/2026/09/m2-episode-1/",
           "source": "Hacker News",
-          "score": 4.62,
+          "score": 4.15,
           "reasons": [
-            "HN分数1629",
-            "讨论量414"
+            "HN分数432",
+            "讨论量265"
           ],
-          "published": "2026-09-03T14:54:39+00:00"
+          "published": "2026-09-06T14:08:59+00:00"
         }
       ]
     },
@@ -120,48 +119,48 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "The sameness problem behind those unappetizing AI-generated menus",
-          "summary": "While restaurant owners might look to generative AI as a shortcut to sprucing up their menu, customers can viscerally sense that something is wrong with the food.",
-          "url": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
+          "title": "Authors push back as publishers and agents make claims on Anthropic settlement",
+          "summary": "Authors say publishers seem to be claiming more than their fair share of settlement payments.",
+          "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
           "source": "TechCrunch",
-          "score": 4.53,
+          "score": 4.3,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-04T04:21:03+00:00"
+          "published": "2026-09-06T20:47:37+00:00"
         },
         {
-          "title": "Crusoe reportedly raises $3B at a $30B valuation",
-          "summary": "The round came together after the data center developer reportedly secured a $13 billion contract with Jane Street.",
-          "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
+          "title": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
+          "summary": "The Uber founder has said that Atoms will allow him to complete \"unfinished business.\"",
+          "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.19,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-04T00:48:42+00:00"
+          "published": "2026-09-06T16:45:00+00:00"
         },
         {
-          "title": "Startup ARR is less secure than ever, new research shows",
-          "summary": "The AI era has completely broken enterprise buying patterns, and startups haven't yet figured out how to navigate.",
-          "url": "https://techcrunch.com/2026/09/03/startup-arr-is-less-secure-than-ever-new-research-shows/",
+          "title": "TechCrunch Mobility: Tesla Cybercab hits the road — and a snag",
+          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+          "url": "https://techcrunch.com/2026/09/06/techcrunch-mobility-tesla-cybercab-hits-the-road-and-a-snag/",
           "source": "TechCrunch",
-          "score": 4.33,
+          "score": 4.17,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-03T20:59:23+00:00"
+          "published": "2026-09-06T16:08:00+00:00"
         },
         {
-          "title": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
-          "summary": "The high-profile startup's annual revenue run rate stands at over $100 million.",
-          "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
+          "title": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
+          "summary": "Two more news organizations are suing OpenAI and Microsoft over the supposed use of their journalism to train AI.",
+          "url": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 3.69,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-03T19:36:29+00:00"
+          "published": "2026-09-05T22:49:55+00:00"
         }
       ]
     }
@@ -169,11 +168,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-04T11:00:57.763098+08:00"
+      "lastRunAt": "2026-09-07T11:00:38.499680+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-04T11:03:13.637833+08:00"
+      "lastRunAt": "2026-09-07T11:01:39.827334+08:00"
     }
   }
 }
