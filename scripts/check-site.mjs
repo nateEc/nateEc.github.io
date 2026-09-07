@@ -80,6 +80,7 @@ assert(!source.includes('/assignments.html'), 'removed assignment link cannot ro
 assert(!/alert\s*\(/.test(source), 'contact flow does not fake success with alert()')
 assert(source.includes('/resume-en.pdf') && source.includes('/resume-zh.pdf'), 'both résumé paths are wired')
 assert(source.includes('/images/linkedin-avatar.webp'), 'LinkedIn portrait is wired')
+assert(source.includes('/apple-touch-icon.png?v=20260907') && source.includes('wordmark__mark'), 'navigation wordmark uses the portrait icon')
 assert(source.includes('linkedin.com/in/yukun-shan-803a02225'), 'portrait links to the LinkedIn profile')
 assert(source.includes('juejin.cn/post/7671947410311184403'), 'latest MCP article links to its Juejin publication')
 assert(source.includes('noopener noreferrer'), 'external article links isolate the new browsing context')
