@@ -6,6 +6,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -22,6 +23,8 @@ DB_PATH = Path.home() / '.hermes' / 'cron' / 'executions.db'
 AI_JOB_ID = 'a804139d5bcb'
 HN_JOB_ID = '0d56c417b34c'
 FETCH_TIMEOUT_SECONDS = int(os.environ.get('TECH_NEWS_FETCH_TIMEOUT_SECONDS', '300'))
+FETCH_ATTEMPTS = max(1, int(os.environ.get('TECH_NEWS_FETCH_ATTEMPTS', '2')))
+FETCH_RETRY_SECONDS = max(0, int(os.environ.get('TECH_NEWS_FETCH_RETRY_SECONDS', '10')))
 
 AI_SCRIPT = Path.home() / '.hermes' / 'scripts' / 'ai_digest_zh.py'
 HN_SCRIPT = Path.home() / '.hermes' / 'scripts' / 'hacker_news_digest.py'
@@ -30,19 +33,30 @@ HN_SCRIPT = Path.home() / '.hermes' / 'scripts' / 'hacker_news_digest.py'
 def _run_digest(script_path: Path) -> dict[str, Any]:
     if not script_path.is_file():
         raise RuntimeError(f'missing digest script: {script_path}')
-    result = subprocess.run(
-        [sys.executable, str(script_path)],
-        text=True,
-        capture_output=True,
-        check=False,
-        timeout=FETCH_TIMEOUT_SECONDS,
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f'{script_path.name} execution failed: {result.stderr.strip() or result.stdout[:400]}')
-    try:
-        return json.loads(result.stdout)
-    except json.JSONDecodeError as exc:
-        raise RuntimeError(f'{script_path.name} output is not valid JSON ({exc})') from exc
+    last_error = 'unknown fetch error'
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            result = subprocess.run(
+                [sys.executable, str(script_path)],
+                text=True,
+                capture_output=True,
+                check=False,
+                timeout=FETCH_TIMEOUT_SECONDS,
+            )
+            if result.returncode != 0:
+                last_error = result.stderr.strip() or result.stdout[:400] or f'exit code {result.returncode}'
+            else:
+                try:
+                    return json.loads(result.stdout)
+                except json.JSONDecodeError as exc:
+                    last_error = f'output is not valid JSON ({exc})'
+        except subprocess.TimeoutExpired:
+            last_error = f'timed out after {FETCH_TIMEOUT_SECONDS} seconds'
+
+        if attempt < FETCH_ATTEMPTS:
+            time.sleep(FETCH_RETRY_SECONDS)
+
+    raise RuntimeError(f'{script_path.name} failed after {FETCH_ATTEMPTS} attempts: {last_error}')
 
 
 def _parse_dt(value: str | None) -> datetime | None:
@@ -167,7 +181,11 @@ def _build_hn_sections(data: dict[str, Any]) -> list[dict[str, Any]]:
     return sections
 
 
-def _to_json_payload(ai_data: dict[str, Any], hn_data: dict[str, Any], run_times: dict[str, datetime]) -> dict[str, Any]:
+def _to_json_payload(
+    ai_data: dict[str, Any],
+    hn_data: dict[str, Any],
+    run_times: dict[str, datetime | None],
+) -> dict[str, Any]:
     now = datetime.now().astimezone()
     sections = []
 
@@ -198,10 +216,6 @@ def main() -> int:
         'ai': _last_completed_run(AI_JOB_ID, now),
         'hn': _last_completed_run(HN_JOB_ID, now),
     }
-
-    if not run_times['ai'] or not run_times['hn']:
-        print('error: one or both scheduled tech-news cron jobs have not completed today yet')
-        return 1
 
     try:
         ai_data = _run_digest(AI_SCRIPT)
