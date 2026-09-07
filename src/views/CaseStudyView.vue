@@ -216,7 +216,7 @@ watchEffect(() => {
   --case-soft: #eee8ff;
 }
 
-:global(html[data-theme='dark']) .case-hero.accent-violet {
+:global(html[data-theme='dark'] .case-hero.accent-violet) {
   --case-accent: #b397ff;
   --case-soft: #241c3b;
 }

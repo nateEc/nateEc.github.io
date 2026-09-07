@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
+.article-reading-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 999; pointer-events: none; }
+.article-reading-progress span { display: block; height: 100%; background: var(--portfolio-blue); transform-origin: left; }
+.article-current-chapter { position: fixed; bottom: 16px; right: 20px; z-index: 20; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 7px 12px; border: 1px solid var(--portfolio-line); border-radius: 4px; background: var(--portfolio-surface); color: var(--portfolio-muted); font: 11px var(--portfolio-mono); pointer-events: none; }
+.article-current-chapter:empty { display: none; }
+h2.reading-current { text-decoration: underline; text-decoration-color: var(--portfolio-blue); text-underline-offset: 8px; text-decoration-thickness: 2px; }
+@media (max-width: 760px) { .article-current-chapter { display: none; } }
+
 :root {
   color-scheme: light;
   --portfolio-paper: #f7f8fa;

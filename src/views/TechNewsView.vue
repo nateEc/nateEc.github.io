@@ -445,7 +445,7 @@ const itemReasons = (item: NewsItem) => item.reasons?.join(' · ') ?? ''
   padding-top: 72px;
 }
 
-:global(html[data-theme='dark']) .signal-page {
+:global(html[data-theme='dark'] .signal-page) {
   --signal: #ff6f91;
   --signal-deep: #ff9bb2;
   --signal-soft: #3a1724;

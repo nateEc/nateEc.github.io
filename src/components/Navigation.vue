@@ -295,12 +295,12 @@ onBeforeUnmount(() => {
   transform: rotate(-35deg) scale(0.55);
 }
 
-:global(html[data-theme='dark']) .theme-icon--moon {
+:global(html[data-theme='dark'] .theme-icon--moon) {
   opacity: 0;
   transform: rotate(35deg) scale(0.55);
 }
 
-:global(html[data-theme='dark']) .theme-icon--sun {
+:global(html[data-theme='dark'] .theme-icon--sun) {
   opacity: 1;
   transform: rotate(0) scale(1);
 }

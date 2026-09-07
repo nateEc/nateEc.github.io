@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { watchEffect } from 'vue'
 import HeroSection from '../components/HeroSection.vue'
+import WorkCinema from '../components/WorkCinema.vue'
 import AboutSection from '../components/AboutSection.vue'
 import ExperienceSection from '../components/ExperienceSection.vue'
 import SkillsSection from '../components/SkillsSection.vue'
@@ -28,6 +29,7 @@ watchEffect(() => {
 <template>
   <main>
     <HeroSection />
+    <WorkCinema />
     <AboutSection />
     <ExperienceSection />
     <SkillsSection />

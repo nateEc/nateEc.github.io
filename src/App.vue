@@ -2,6 +2,7 @@
 import { onMounted } from 'vue'
 import { RouterView } from 'vue-router'
 import Navigation from './components/Navigation.vue'
+import ScrollDirection from './components/ScrollDirection.vue'
 import { useLanguage } from './composables/useLanguage'
 import { useTheme } from './composables/useTheme'
 
@@ -17,6 +18,7 @@ onMounted(() => {
 <template>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <Navigation />
+  <ScrollDirection />
   <div id="main-content" tabindex="-1">
     <RouterView />
   </div>

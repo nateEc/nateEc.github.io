@@ -271,7 +271,7 @@ watchEffect(() => {
   padding-top: 72px;
 }
 
-:global(html[data-theme='dark']) .worklog-page {
+:global(html[data-theme='dark'] .worklog-page) {
   --signal: #ff7958;
   --signal-soft: #3c211b;
   --signal-ink: #ffb09a;

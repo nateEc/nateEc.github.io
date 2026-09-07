@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { RouterLink } from 'vue-router'
-import { caseStudies, localize, projects, upstreamContributions } from '../data/portfolio'
+import CaseGallery from './CaseGallery.vue'
+import { localize, projects, upstreamContributions } from '../data/portfolio'
 import { useLanguage } from '../composables/useLanguage'
 
 const { currentLanguage } = useLanguage()
@@ -61,55 +61,7 @@ const mergedContributions = upstreamContributions.reduce((sum, contribution) => 
         </div>
       </div>
 
-      <div class="case-grid">
-        <article
-          v-for="(study, index) in caseStudies"
-          :key="study.slug"
-          :class="['case-card', `accent-${study.accent}`, { 'case-card--featured': study.featured }]"
-        >
-          <div class="case-card__topline">
-            <span>0{{ index + 1 }}</span>
-            <span>{{ t(study.kind) }}</span>
-            <time>{{ study.period }}</time>
-          </div>
-
-          <div class="case-card__body">
-            <div class="case-card__copy">
-              <h3>{{ t(study.title) }}</h3>
-              <p class="case-card__thesis">{{ t(study.thesis) }}</p>
-              <p>{{ t(study.summary) }}</p>
-            </div>
-
-            <figure v-if="study.image" class="case-card__media">
-              <img :src="study.image" :alt="`${study.title.en} application interface`" width="1280" height="720" loading="lazy" />
-              <figcaption>{{ currentLanguage === 'zh' ? '实际 Gradio 应用界面' : 'Actual Gradio application interface' }}</figcaption>
-            </figure>
-
-            <div v-else class="mini-architecture" aria-hidden="true">
-              <p>{{ copy.architecture }}</p>
-              <ol>
-                <li v-for="step in study.architecture" :key="step.key">
-                  <span></span>{{ t(step.label) }}
-                </li>
-              </ol>
-            </div>
-          </div>
-
-          <div class="case-card__evidence">
-            <p class="mono-label">{{ copy.evidence }}</p>
-            <dl>
-              <div v-for="item in study.evidence" :key="item.value">
-                <dt>{{ item.value }}</dt>
-                <dd>{{ t(item.label) }}</dd>
-              </div>
-            </dl>
-          </div>
-
-          <RouterLink class="case-card__link" :to="`/case-studies/${study.slug}`">
-            {{ copy.open }} <span aria-hidden="true">↗</span>
-          </RouterLink>
-        </article>
-      </div>
+      <CaseGallery />
 
       <section class="upstream-ledger" aria-labelledby="upstream-title">
         <header class="upstream-ledger__heading">
@@ -184,225 +136,6 @@ const mergedContributions = upstreamContributions.reduce((sum, contribution) => 
 
 .portfolio .eyebrow {
   color: #7d9fff;
-}
-
-.case-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 18px;
-}
-
-.case-card {
-  --case-accent: var(--blue);
-  --case-soft: rgba(37, 99, 235, 0.12);
-  position: relative;
-  display: flex;
-  grid-column: span 6;
-  min-height: 600px;
-  padding: 30px;
-  border: 1px solid #303744;
-  border-top: 3px solid var(--case-accent);
-  color: #e8edf4;
-  background: linear-gradient(155deg, var(--case-soft), #11161e 42%);
-  flex-direction: column;
-  overflow: hidden;
-  transition: border-color 180ms ease, transform 180ms ease;
-}
-
-.case-card--featured {
-  grid-column: span 12;
-  min-height: 540px;
-}
-
-.case-card.accent-teal {
-  --case-accent: #45b8aa;
-  --case-soft: rgba(15, 118, 110, 0.15);
-}
-
-.case-card.accent-amber {
-  --case-accent: #daa34e;
-  --case-soft: rgba(154, 100, 22, 0.16);
-}
-
-.case-card.accent-violet {
-  --case-accent: #b397ff;
-  --case-soft: rgba(125, 92, 210, 0.18);
-}
-
-.case-card:hover {
-  border-color: #556070;
-  transform: translateY(-3px);
-}
-
-.case-card__topline {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 20px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid #323946;
-  color: #8591a2;
-  font-family: var(--mono);
-  font-size: 0.63rem;
-  text-transform: uppercase;
-}
-
-.case-card__topline span:first-child {
-  color: var(--case-accent);
-}
-
-.case-card__body {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
-  gap: 42px;
-  padding: 42px 0 32px;
-}
-
-.case-card:not(.case-card--featured) .case-card__body {
-  grid-template-columns: 1fr;
-}
-
-.case-card h3 {
-  max-width: 720px;
-  margin-bottom: 19px;
-  color: var(--white);
-  font-size: clamp(2rem, 4vw, 4.25rem);
-  line-height: 0.97;
-}
-
-.case-card:not(.case-card--featured) h3 {
-  font-size: clamp(2rem, 3.3vw, 3rem);
-}
-
-.case-card__thesis {
-  max-width: 660px;
-  color: #dce4ef !important;
-  font-family: var(--display);
-  font-size: 1.18rem;
-  letter-spacing: -0.02em;
-}
-
-.case-card__copy > p:last-child {
-  max-width: 660px;
-  margin: 0;
-  color: #939eae;
-  font-size: 0.94rem;
-}
-
-.mini-architecture {
-  align-self: end;
-  padding: 18px;
-  border: 1px solid #323946;
-  background: rgba(7, 10, 15, 0.48);
-}
-
-.case-card__media {
-  align-self: end;
-  margin: 0;
-  border: 1px solid #323946;
-  background: #090d12;
-}
-
-.case-card__media img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: top left;
-}
-
-.case-card__media figcaption {
-  padding: 8px 10px;
-  color: #788597;
-  font-family: var(--mono);
-  font-size: 0.58rem;
-}
-
-.mini-architecture > p {
-  margin-bottom: 14px;
-  color: #667285;
-  font-family: var(--mono);
-  font-size: 0.6rem;
-  text-transform: uppercase;
-}
-
-.mini-architecture ol {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mini-architecture li {
-  display: grid;
-  grid-template-columns: 12px 1fr;
-  gap: 9px;
-  align-items: center;
-  padding: 7px 0;
-  color: #aab4c2;
-  font-family: var(--mono);
-  font-size: 0.63rem;
-}
-
-.mini-architecture li span {
-  width: 7px;
-  height: 7px;
-  border: 1px solid var(--case-accent);
-  border-radius: 50%;
-  background: var(--case-accent);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--case-accent), transparent 80%);
-}
-
-.case-card__evidence {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 20px;
-  padding: 20px 0;
-  margin-top: auto;
-  border-top: 1px solid #323946;
-  border-bottom: 1px solid #323946;
-}
-
-.case-card__evidence .mono-label {
-  margin: 0;
-  color: #667285;
-}
-
-.case-card__evidence dl {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin: 0;
-}
-
-.case-card__evidence dl div {
-  min-width: 0;
-}
-
-.case-card__evidence dt {
-  color: var(--white);
-  font-family: var(--display);
-  font-size: 1.35rem;
-  font-weight: 600;
-}
-
-.case-card__evidence dd {
-  margin: 1px 0 0;
-  color: #8591a2;
-  font-family: var(--mono);
-  font-size: 0.58rem;
-}
-
-.case-card__link {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 21px;
-  color: #d9e1ec;
-  font-family: var(--mono);
-  font-size: 0.71rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.case-card__link:hover {
-  color: var(--case-accent);
 }
 
 .upstream-ledger {
@@ -689,16 +422,6 @@ const mergedContributions = upstreamContributions.reduce((sum, contribution) => 
 }
 
 @media (max-width: 850px) {
-  .case-card,
-  .case-card--featured {
-    grid-column: span 12;
-  }
-
-  .case-card__body,
-  .case-card--featured .case-card__body {
-    grid-template-columns: 1fr;
-  }
-
   .upstream-ledger__heading {
     grid-template-columns: 1fr;
     gap: 22px;
@@ -741,40 +464,6 @@ const mergedContributions = upstreamContributions.reduce((sum, contribution) => 
 }
 
 @media (max-width: 560px) {
-  .case-card {
-    min-height: auto;
-    padding: 21px;
-  }
-
-  .case-card__topline {
-    grid-template-columns: auto 1fr;
-  }
-
-  .case-card__topline time {
-    display: none;
-  }
-
-  .case-card__evidence {
-    grid-template-columns: 1fr;
-  }
-
-  .case-card__evidence dl {
-    gap: 10px;
-  }
-
-  .case-card__evidence dt {
-    font-size: 1.05rem;
-  }
-
-  .case-card__body {
-    gap: 22px;
-    padding: 30px 0 24px;
-  }
-
-  .case-card .mini-architecture {
-    display: none;
-  }
-
   .upstream-ledger {
     padding-top: 60px;
   }

@@ -59,6 +59,7 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
 
 <template>
   <section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="hero-stage">
     <div class="shell hero-grid">
       <div :class="['hero-copy', { 'is-zh': currentLanguage === 'zh' }]">
         <p class="eyebrow">{{ content.kicker }}</p>
@@ -74,6 +75,7 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
         <p class="availability"><span aria-hidden="true"></span>{{ content.availability }}</p>
       </div>
 
+      <div class="hero-window-bridge">
       <article class="trace-window" aria-labelledby="trace-title">
         <div class="trace-chrome">
           <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -116,15 +118,32 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
           </dl>
         </div>
       </article>
+      <div class="hero-product-bridge" aria-hidden="true">
+        <div class="bridge-chrome"><span>● ● ●</span><span>HiPilot Desktop</span><span>↗</span></div>
+        <img src="/demos/hipilot/preview-panel.webp" alt="" width="956" height="768" />
+      </div>
+      </div>
     </div>
-
-    <div class="shell hero-footnote" aria-hidden="true">
-      <span>01 — observe</span><span>02 — replay</span><span>03 — decide</span>
+    <p class="hero-handoff-title" aria-hidden="true">{{ currentLanguage === 'zh' ? '从思考，到行动。' : 'From thinking. To doing.' }}</p>
+    <div class="shell hero-footnote">
+      <span>observe → replay → decide</span>
+      <a class="motion-invitation" href="#in-motion">{{ currentLanguage === 'zh' ? '向下探索，让作品动起来' : 'Scroll down. See it in motion.' }} <span aria-hidden="true">↓</span></a>
+    </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.hero-stage { display: contents; }
+.hero-window-bridge { position: relative; min-width: 0; }
+.hero-product-bridge, .hero-handoff-title { display: none; }
+.hero-product-bridge { position: absolute; inset: 0; border: 1px solid #788baa; border-radius: 7px; background: #101725; overflow: hidden; pointer-events: none; }
+.bridge-chrome { display: flex; justify-content: space-between; padding: 10px 14px; color: #9eadc4; font: 9px var(--mono); border-bottom: 1px solid #344258; }
+.hero-product-bridge img { height: calc(100% - 34px); width: 100%; object-fit: contain; }
+.motion-invitation { display: inline-flex; align-items: center; gap: 24px; color: var(--ink); }
+.motion-invitation span { display: inline-block; animation: invite-scroll 2s ease-in-out infinite; }
+@keyframes invite-scroll { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+@media (prefers-reduced-motion: reduce) { .motion-invitation span { animation: none; } }
 .hero {
   position: relative;
   display: grid;

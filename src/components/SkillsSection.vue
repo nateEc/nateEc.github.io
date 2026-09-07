@@ -1,14 +1,18 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useLanguage } from '../composables/useLanguage'
+import { useScrollChapters } from '../composables/useScrollChapters'
+import SystemSculpture from './SystemSculpture.vue'
 
 const { currentLanguage } = useLanguage()
+const section = ref<HTMLElement>()
+const { active, phase, visible, reduced, select } = useScrollChapters(section, '.capability-chapter')
 
 const content = computed(() => currentLanguage.value === 'zh'
   ? {
       kicker: '能力模型',
-      title: '围绕 Agent 生命周期工作的工程能力。',
-      subtitle: '不再用图标墙罗列工具；这里按我解决问题的方式组织能力。',
+      title: '拆开系统，看看里面。',
+      subtitle: '从交互到执行，再到验证。让模型能力成为产品，需要把这三个工作面连接起来。',
       capabilities: [
         {
           index: '01',
@@ -34,8 +38,8 @@ const content = computed(() => currentLanguage.value === 'zh'
     }
   : {
       kicker: 'Capability model',
-      title: 'Engineering across the agent lifecycle.',
-      subtitle: 'This replaces the old logo wall with the problem-solving capabilities I actually use.',
+      title: 'Inside the system.',
+      subtitle: 'Interaction. Execution. Assurance. The connected surfaces that turn model capability into a working product.',
       capabilities: [
         {
           index: '01',
@@ -62,7 +66,7 @@ const content = computed(() => currentLanguage.value === 'zh'
 </script>
 
 <template>
-  <section id="skills" class="section skills" aria-labelledby="skills-title">
+  <section id="skills" ref="section" class="section skills" aria-labelledby="skills-title">
     <div class="shell">
       <div class="section-heading">
         <p class="eyebrow">{{ content.kicker }}</p>
@@ -72,15 +76,23 @@ const content = computed(() => currentLanguage.value === 'zh'
         </div>
       </div>
 
-      <div class="capability-grid">
-        <article v-for="capability in content.capabilities" :key="capability.index">
-          <span>{{ capability.index }}</span>
-          <h3>{{ capability.title }}</h3>
-          <p>{{ capability.summary }}</p>
-          <ul>
-            <li v-for="item in capability.items" :key="item">{{ item }}</li>
-          </ul>
-        </article>
+      <div class="capability-layout">
+        <div class="capability-narrative">
+          <article v-for="(capability, i) in content.capabilities" :key="capability.index" class="capability-chapter" :class="{ 'is-current': i === active }">
+            <p class="capability-number"><span>{{ capability.index }}</span> / {{ currentLanguage === 'zh' ? '工作面' : 'WORKING SURFACE' }}</p>
+            <h3>{{ capability.title }}</h3>
+            <p class="capability-summary">{{ capability.summary }}</p>
+            <ul><li v-for="item in capability.items" :key="item">{{ item }}</li></ul>
+          </article>
+        </div>
+        <div class="capability-visual" data-chapter-stage>
+          <div class="capability-sticky">
+            <SystemSculpture :active="active" :phase="phase" :running="visible && !reduced" :language="currentLanguage" />
+            <nav class="capability-tabs" :aria-label="currentLanguage === 'zh' ? '选择工程能力' : 'Choose an engineering capability'">
+              <button v-for="(capability, i) in content.capabilities" :key="capability.index" type="button" :aria-pressed="i === active" @click="select(i)">{{ capability.title }}</button>
+            </nav>
+          </div>
+        </div>
       </div>
 
       <div class="toolbox">
@@ -94,64 +106,29 @@ const content = computed(() => currentLanguage.value === 'zh'
 </template>
 
 <style scoped>
+.capability-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 60px; align-items: stretch; }
+.capability-visual { min-width: 0; }
+.capability-sticky { position: sticky; top: max(100px, calc((100vh - 590px) / 2)); padding: 15px 0; }
+.capability-chapter { min-height: 62vh; display: flex; flex-direction: column; justify-content: center; padding: 55px 0; opacity: .42; transition: opacity .6s; }
+.capability-chapter.is-current, .capability-chapter:focus-within { opacity: 1; }
+.capability-number { font: 10px var(--mono); color: var(--muted); letter-spacing: .1em; }
+.capability-number span { color: var(--blue); margin-right: 18px; }
+.capability-chapter h3 { font-size: clamp(32px, 3.7vw, 55px); line-height: 1.07; margin: 15px 0 22px; letter-spacing: -.055em; }
+.capability-summary { color: var(--muted); font-size: 17px; line-height: 1.75; }
+.capability-chapter ul { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; margin: 12px 0 0; }
+.capability-chapter li { border: 1px solid var(--line-strong); background: var(--surface-soft); padding: 6px 10px; font: 10px var(--mono); border-radius: 4px; }
+.capability-tabs { display: flex; margin-top: 18px; gap: 14px; }
+.capability-tabs button { flex: 1; background: transparent; border: 0; border-top: 2px solid var(--line); padding: 12px 0; font: 10px var(--mono); color: var(--muted); text-align: left; cursor: pointer; }
+.capability-tabs button[aria-pressed='true'] { border-color: var(--blue); color: var(--ink); }
+@media(max-width: 900px) { .capability-layout { gap: 30px; grid-template-columns: .9fr 1.1fr; }.capability-chapter h3 { font-size: 34px; } }
+@media(max-width: 700px) { .capability-layout { display: flex; flex-direction: column; gap: 20px; }.capability-visual { order: -1; position: sticky; top: 72px; z-index: 4; background: var(--paper-deep); padding: 8px 0; }.capability-sticky { padding: 0; position: static; }.capability-tabs { margin-top: 6px; gap: 8px; }.capability-tabs button { font-size: 8px; padding: 7px 0; }.capability-chapter { min-height: 420px; padding: 35px 0; }.capability-chapter h3 { font-size: 34px; }.capability-summary { font-size: 15px; }.capability-chapter li { font-size: 9px; } }
+@media(prefers-reduced-motion: reduce) { .capability-chapter { opacity: 1; min-height: 0; transition: none; }.capability-visual { position: static; }.capability-sticky { position: static; } }
 .skills {
   background: var(--paper-deep);
 }
 
 .section-heading__copy {
   margin-top: 24px;
-}
-
-.capability-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--line-strong);
-  border-bottom: 1px solid var(--line-strong);
-}
-
-.capability-grid article {
-  min-height: 440px;
-  padding: 30px;
-  border-right: 1px solid var(--line-strong);
-}
-
-.capability-grid article:first-child {
-  padding-left: 0;
-}
-
-.capability-grid article:last-child {
-  padding-right: 0;
-  border-right: 0;
-}
-
-.capability-grid article > span {
-  color: var(--blue);
-  font-family: var(--mono);
-  font-size: 0.69rem;
-}
-
-.capability-grid h3 {
-  margin: 72px 0 16px;
-  font-size: clamp(1.6rem, 2.6vw, 2.25rem);
-}
-
-.capability-grid p {
-  min-height: 108px;
-  color: var(--muted);
-}
-
-.capability-grid ul {
-  padding: 0;
-  margin: 24px 0 0;
-  list-style: none;
-}
-
-.capability-grid li {
-  padding: 8px 0;
-  border-top: 1px solid var(--line);
-  color: var(--ink);
-  font-family: var(--mono);
-  font-size: 0.7rem;
 }
 
 .toolbox {
@@ -187,31 +164,6 @@ const content = computed(() => currentLanguage.value === 'zh'
 }
 
 @media (max-width: 780px) {
-  .capability-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .capability-grid article,
-  .capability-grid article:first-child,
-  .capability-grid article:last-child {
-    min-height: auto;
-    padding: 30px 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--line-strong);
-  }
-
-  .capability-grid article:last-child {
-    border-bottom: 0;
-  }
-
-  .capability-grid h3 {
-    margin-top: 35px;
-  }
-
-  .capability-grid p {
-    min-height: 0;
-  }
-
   .toolbox {
     grid-template-columns: 1fr;
   }
