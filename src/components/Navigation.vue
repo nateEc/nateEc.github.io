@@ -88,6 +88,9 @@ onBeforeUnmount(() => {
       </nav>
 
       <div class="nav-actions">
+        <RouterLink class="play-button" to="/play" :aria-label="currentLanguage === 'zh' ? '玩 Little Sunshine 贪吃蛇' : 'Play Little Sunshine Snake'" :title="currentLanguage === 'zh' ? '休息一下，玩贪吃蛇' : 'Take a break. Play Snake.'" :aria-current="route.path === '/play' ? 'page' : undefined">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h10a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h8"/><circle cx="18" cy="5" r="2"/><circle class="snake-food" cx="4" cy="5" r="1"/></svg><span>{{ currentLanguage === 'zh' ? '玩一下' : 'Play' }}</span>
+        </RouterLink>
         <button
           class="theme-button"
           type="button"
@@ -144,6 +147,13 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
+.play-button { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid var(--line-strong); border-radius: 20px; color: var(--teal); text-decoration: none; font: 10px var(--mono); transition: background .2s, border-color .2s; }
+.play-button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }.play-button circle { fill: currentColor; }.play-button .snake-food { fill: #b98a35; stroke: #b98a35; }
+.play-button:hover,.play-button[aria-current] { background: var(--blue-soft); border-color: var(--teal); }.play-button:hover svg { animation: snake-wiggle .6s ease; }
+@keyframes snake-wiggle { 30% { rotate: -10deg; }70% { rotate: 10deg; } }
+@media(max-width:1200px) { .play-button span { display: none; }.play-button { padding: 7px; } }
+@media(max-width:400px) { .wordmark__name { display: none; } }
+@media(prefers-reduced-motion:reduce) { .play-button:hover svg { animation: none; } }
 .site-header {
   position: fixed;
   top: 0;

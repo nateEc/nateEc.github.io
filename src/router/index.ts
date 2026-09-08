@@ -11,6 +11,11 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/play',
+      name: 'play',
+      component: () => import('../views/PlayView.vue'),
+    },
+    {
       path: '/',
       name: 'home',
       component: HomeView,

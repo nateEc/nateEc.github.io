@@ -1,0 +1,107 @@
+:root {
+  color-scheme: dark;
+  --night: #0d2029;
+  --deep: #102b36;
+  --board: #153944;
+  --mist: #b9d3d6;
+  --muted: #78969b;
+  --line: rgba(185, 211, 214, 0.15);
+  --sun: #f4c965;
+  --sun-soft: #ffdf8a;
+  --mint: #a9d6c1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 78% 14%, rgba(244, 201, 101, 0.09), transparent 22rem),
+    linear-gradient(135deg, var(--night), #0b1922 62%, #102b36);
+  color: var(--mist);
+  font-family: "Avenir Next", Avenir, "Nunito Sans", system-ui, sans-serif;
+}
+
+button, canvas { -webkit-tap-highlight-color: transparent; }
+
+.shell {
+  width: min(100% - 36px, 760px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(26px, 6vw, 54px) 0 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(16px, 3vw, 26px);
+}
+
+.topbar, .controls { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.brand { display: flex; align-items: center; gap: 11px; }
+.brand-mark { color: var(--sun); font-size: 24px; line-height: 1; text-shadow: 0 0 18px rgba(244, 201, 101, .35); }
+.eyebrow { margin: 0 0 3px; color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: .13em; text-transform: uppercase; }
+h1 { margin: 0; color: #e0efee; font-family: "Iowan Old Style", "Baskerville", Georgia, serif; font-size: clamp(24px, 5vw, 31px); font-weight: 400; letter-spacing: -.03em; line-height: 1; }
+
+.scores { display: flex; gap: clamp(13px, 4vw, 28px); }
+.score-block { min-width: 42px; text-align: right; }
+.score-block span { display: block; color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: .09em; text-transform: uppercase; }
+.score-block strong { color: #ecf5f2; font-size: 18px; font-weight: 500; font-variant-numeric: tabular-nums; }
+
+.game-frame {
+  position: relative;
+  aspect-ratio: 1;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(185, 211, 214, .21);
+  border-radius: 19px;
+  background: linear-gradient(145deg, #19434d, var(--deep));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .25), inset 0 1px rgba(255,255,255,.06);
+}
+
+canvas { display: block; width: 100%; height: 100%; outline: none; }
+.game-frame:focus-within { border-color: rgba(244, 201, 101, .62); box-shadow: 0 0 0 3px rgba(244,201,101,.12), 0 24px 70px rgba(0,0,0,.25), inset 0 1px rgba(255,255,255,.06); }
+
+.status { position: absolute; top: 16px; left: 17px; display: flex; align-items: center; gap: 7px; color: rgba(220, 238, 235, .72); font-size: 11px; font-weight: 550; letter-spacing: .025em; pointer-events: none; }
+.status-dot { width: 5px; height: 5px; border-radius: 100%; background: var(--sun); box-shadow: 0 0 9px var(--sun); }
+
+.game-over { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; padding: 32px; text-align: center; background: rgba(8, 26, 34, .58); backdrop-filter: blur(5px); }
+.game-over[hidden] { display: none; }
+.comfort-pet { width: 64px; height: 70px; margin-bottom: 17px; background: url("assets/little-sunshine.webp") 0 -346.67px / 512px auto no-repeat; filter: drop-shadow(0 0 14px rgba(244, 201, 101, .2)); }
+h2 { max-width: 330px; margin: 4px 0 21px; color: #f0f7f1; font-family: "Iowan Old Style", "Baskerville", Georgia, serif; font-size: clamp(25px, 5vw, 35px); font-weight: 400; letter-spacing: -.035em; line-height: 1.08; }
+
+.retry-button, .restart-button, .sound-button { border: 0; cursor: pointer; font: inherit; transition: background .18s ease, color .18s ease, transform .18s ease; }
+.retry-button { padding: 11px 17px; border-radius: 99px; background: var(--sun); color: #193039; font-size: 13px; font-weight: 700; }
+.retry-button:hover, .restart-button:hover, .sound-button:hover { transform: translateY(-1px); }
+.retry-button:hover { background: var(--sun-soft); }
+
+.controls { min-height: 30px; color: var(--muted); font-size: 11px; }
+.controls p { margin: 0; line-height: 1.8; }
+kbd { display: inline-grid; min-width: 17px; height: 17px; place-items: center; margin: 0 1px; padding: 0 3px; border: 1px solid rgba(185, 211, 214, .24); border-bottom-color: rgba(185, 211, 214, .12); border-radius: 4px; color: var(--mist); background: rgba(185, 211, 214, .06); font: 600 10px/1 "Avenir Next", sans-serif; }
+.footer-actions { display: flex; align-items: center; gap: 16px; }
+.restart-button, .sound-button { padding: 0; color: var(--mist); background: transparent; font-size: 12px; font-weight: 650; white-space: nowrap; }
+.sound-button { color: var(--muted); }
+.sound-button[aria-pressed="true"] { color: var(--mist); }
+.sound-button[aria-pressed="true"] > span:first-child { color: var(--sun); }
+.restart-button span { color: var(--sun); font-size: 15px; }
+button:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; }
+
+@media (max-width: 480px) { .controls { align-items: flex-start; } .controls p { max-width: 275px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+
+/* Portfolio edition: isolate the original game, fit its host and add touch input. */
+body { min-width: 0; background: #10232d; }
+.shell { width: min(100% - 32px, 600px); padding: 18px 0; gap: 14px; }
+.game-frame { width: min(100%, calc(100svh - 155px)); align-self: center; flex-shrink: 0; }
+.topbar { width: 100%; }.brand .eyebrow { display: none; }
+.controls { flex-direction: column; align-items: center; gap: 12px; }
+.footer-actions { gap: 24px; }
+.touch-controls { display: none; grid-template-columns: repeat(3, 44px); gap: 5px; align-self: center; }
+.touch-controls button { min-height: 40px; border: 1px solid #52717a; border-radius: 10px; color: #cfe5df; background: #203e47; font: 20px system-ui; touch-action: manipulation; cursor: pointer; }
+.touch-controls button:first-child { grid-column: 2; }.touch-controls button:nth-child(2) { grid-column: 1; }
+@media(max-width:600px), (pointer:coarse) {
+  .shell { gap: 12px; justify-content: flex-start; }.topbar { gap: 10px; }.brand { gap: 5px; }h1 { font-size: 21px; }
+  .scores { gap: 12px; }.score-block { min-width: 28px; }
+  .touch-controls { display: grid; }.controls > p { display: none; }
+  .game-frame { width: min(100%, calc(100svh - 220px)); }.footer-actions { min-height: 32px; }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10232d" />
+    <meta name="description" content="A quiet, offline Snake game with a little sunshine." />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Little Sunshine — Snake</title>
+  </head>
+  <body>
+    <main class="shell" aria-labelledby="page-title">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">☼</span>
+          <div>
+            <p class="eyebrow">A small, quiet game</p>
+            <h1 id="page-title">Little Sunshine</h1>
+          </div>
+        </div>
+        <div class="scores" aria-label="Game scores">
+          <div class="score-block"><span>Score</span><strong id="score">0</strong></div>
+          <div class="score-block"><span>Best</span><strong id="best-score">0</strong></div>
+        </div>
+      </header>
+
+      <section class="game-frame" aria-label="Snake game">
+        <canvas id="game" aria-label="Snake game board" tabindex="0"></canvas>
+        <div class="status" id="status" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="status-text">Find the light</span>
+        </div>
+        <div class="game-over" id="game-over" hidden>
+          <div class="comfort-pet" aria-hidden="true"></div>
+          <p class="eyebrow">Little Sunshine is here</p>
+          <h2>One more round —<br />the sun is still up.</h2>
+          <button class="retry-button" id="retry-overlay" type="button">Play again</button>
+        </div>
+      </section>
+
+      <footer class="controls">
+        <p><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move <span aria-hidden="true">·</span> <kbd>Space</kbd> to pause</p>
+        <div class="footer-actions">
+          <button class="restart-button" id="pause-toggle" type="button">Pause</button>
+          <button class="sound-button" id="sound-toggle" type="button" aria-pressed="true"><span aria-hidden="true">♩</span> <span id="sound-label">Sound on</span></button>
+          <button class="restart-button" id="restart" type="button">Restart <span aria-hidden="true">↻</span></button>
+        </div>
+      </footer>
+      <nav class="touch-controls" aria-label="Touch controls">
+        <button type="button" data-direction="ArrowUp" aria-label="Move up">↑</button>
+        <button type="button" data-direction="ArrowLeft" aria-label="Move left">←</button>
+        <button type="button" data-direction="ArrowDown" aria-label="Move down">↓</button>
+        <button type="button" data-direction="ArrowRight" aria-label="Move right">→</button>
+      </nav>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
