@@ -28,6 +28,10 @@ coverage
 
 .eslintcache
 
+# Python news automation
+__pycache__/
+*.pyc
+
 # Cypress
 /cypress/videos/
 /cypress/screenshots/

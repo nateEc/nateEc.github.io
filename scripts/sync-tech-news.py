@@ -12,11 +12,12 @@ from pathlib import Path
 from typing import Any
 import sqlite3
 from urllib.parse import urlparse
+from news_contract import validate_digest, write_snapshot
 
 
 PROJECT_ROOT = Path(os.environ.get(
     'PORTFOLIO_PROJECT_ROOT',
-    '/Users/nathanshan/Desktop/nateEc.github copy.io',
+    str(Path(__file__).resolve().parents[1]),
 )).expanduser().resolve()
 OUTPUT_JSON = PROJECT_ROOT / 'public/tech-news/latest.json'
 DB_PATH = Path.home() / '.hermes' / 'cron' / 'executions.db'
@@ -26,8 +27,8 @@ FETCH_TIMEOUT_SECONDS = int(os.environ.get('TECH_NEWS_FETCH_TIMEOUT_SECONDS', '3
 FETCH_ATTEMPTS = max(1, int(os.environ.get('TECH_NEWS_FETCH_ATTEMPTS', '2')))
 FETCH_RETRY_SECONDS = max(0, int(os.environ.get('TECH_NEWS_FETCH_RETRY_SECONDS', '10')))
 
-AI_SCRIPT = Path.home() / '.hermes' / 'scripts' / 'ai_digest_zh.py'
-HN_SCRIPT = Path.home() / '.hermes' / 'scripts' / 'hacker_news_digest.py'
+AI_SCRIPT = Path(__file__).resolve().parent / 'ai_digest_zh.py'
+HN_SCRIPT = Path(__file__).resolve().parent / 'hacker_news_digest.py'
 
 
 def _run_digest(script_path: Path) -> dict[str, Any]:
@@ -47,9 +48,13 @@ def _run_digest(script_path: Path) -> dict[str, Any]:
                 last_error = result.stderr.strip() or result.stdout[:400] or f'exit code {result.returncode}'
             else:
                 try:
-                    return json.loads(result.stdout)
-                except json.JSONDecodeError as exc:
-                    last_error = f'output is not valid JSON ({exc})'
+                    data = validate_digest(json.loads(result.stdout))
+                    for source in data.get('sources', []):
+                        if source.get('warning'):
+                            print(f'warning: {source["name"]}: {source["warning"]}', file=sys.stderr)
+                    return data
+                except (ValueError, TypeError) as exc:
+                    last_error = f'invalid digest ({exc})'
         except subprocess.TimeoutExpired:
             last_error = f'timed out after {FETCH_TIMEOUT_SECONDS} seconds'
 
@@ -186,6 +191,8 @@ def _to_json_payload(
     hn_data: dict[str, Any],
     run_times: dict[str, datetime | None],
 ) -> dict[str, Any]:
+    validate_digest(ai_data)
+    validate_digest(hn_data)
     now = datetime.now().astimezone()
     sections = []
 
@@ -212,22 +219,23 @@ def _to_json_payload(
 
 def main() -> int:
     now = datetime.now().astimezone()
-    run_times = {
-        'ai': _last_completed_run(AI_JOB_ID, now),
-        'hn': _last_completed_run(HN_JOB_ID, now),
-    }
+    run_times = {'ai': None, 'hn': None}
+    for name, job_id in [('ai', AI_JOB_ID), ('hn', HN_JOB_ID)]:
+        try:
+            run_times[name] = _last_completed_run(job_id, now)
+        except sqlite3.Error as exc:
+            # Execution timestamps are optional metadata, not a news source.
+            print(f'warning: {name} run metadata unavailable: {exc}', file=sys.stderr)
 
     try:
         ai_data = _run_digest(AI_SCRIPT)
         hn_data = _run_digest(HN_SCRIPT)
+        payload = _to_json_payload(ai_data, hn_data, run_times)
+        write_snapshot(OUTPUT_JSON, payload)
     except Exception as exc:
         print(f'error: {exc}')
         return 1
 
-    payload = _to_json_payload(ai_data, hn_data, run_times)
-
-    OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'updated: tech-news payload saved -> {OUTPUT_JSON}')
     return 0
 

@@ -45,6 +45,8 @@ This repository now uses GitHub Actions to publish on every push to `main` via `
 
 ## Daily Tech Signal publishing
 
-Hermes collects the AI digest and the Hacker News + TechCrunch digest at 11:00 Beijing time. At 11:30, `publish-tech-news.py` independently regenerates all three sources with bounded retries, runs the full acceptance suite, commits only `public/tech-news/latest.json`, pushes `main`, and verifies that the exact snapshot is live. A failed news-only push is retried safely on the next run; unrelated commits or worktree changes still stop publication.
+Hermes collects the AI digest and the Hacker News + TechCrunch digest at 11:00 Beijing time. At 11:30, `publish-tech-news.py` independently regenerates all three sources with bounded retries, runs the full acceptance suite, commits only `public/tech-news/latest.json`, pushes `main`, and verifies the complete snapshot online. HN RSS failures fall back to the official HN API; incomplete results never overwrite the previous snapshot.
 
-The publisher fails closed when the repository is not on `main`, when local changes exist outside the news snapshot, when `main` differs from `origin/main`, or when validation fails. Resolve the reported condition and rerun the Hermes job instead of bypassing these checks.
+Publishing runs in a dedicated bot checkout, separate from local portfolio development. A file lock prevents overlapping publishers. Remote application changes fast-forward safely; interrupted news-only pushes can recover without force-pushing. The same day's complete, committed snapshot is verified rather than regenerated on retry.
+
+See [the Tech Signal runbook](TECH-SIGNAL-RUNBOOK.md) for paths, scheduling, recovery, and verification. Run `PYTHONDONTWRITEBYTECODE=1 python3 scripts/test_tech_news.py` for isolated, network-free regression tests.
