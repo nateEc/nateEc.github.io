@@ -49,4 +49,6 @@ Hermes collects the AI digest and the Hacker News + TechCrunch digest at 11:00 B
 
 Publishing runs in a dedicated bot checkout, separate from local portfolio development. A file lock prevents overlapping publishers. Remote application changes fast-forward safely; interrupted news-only pushes can recover without force-pushing. The same day's complete, committed snapshot is verified rather than regenerated on retry.
 
+When local DNS/TLS blocks the site probe, the publisher can verify the exact commit's successful Pages deployment through GitHub's official API, explicitly reporting that local HTTP reachability remains unverified. It never changes network security settings or accepts a failed/incorrect deployment as success.
+
 See [the Tech Signal runbook](TECH-SIGNAL-RUNBOOK.md) for paths, scheduling, recovery, and verification. Run `PYTHONDONTWRITEBYTECODE=1 python3 scripts/test_tech_news.py` for isolated, network-free regression tests.

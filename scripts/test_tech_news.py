@@ -8,6 +8,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from urllib.error import HTTPError, URLError
 from unittest.mock import patch, MagicMock
 
 ROOT = Path(__file__).resolve().parent
@@ -124,6 +125,34 @@ class FetchTests(unittest.TestCase):
             result = hn.fetch_hn_api(hn.SOURCES[0])
             self.assertEqual(len(result['items']), 1)
             self.assertEqual(result['items'][0]['link'], 'https://news.ycombinator.com/item?id=1')
+
+class DeploymentTests(unittest.TestCase):
+    def evidence(self, state='success', run_sha='abc', conclusion='success'):
+        return [[{'id': 123, 'sha': 'abc', 'ref': 'main', 'environment': 'github-pages'}],
+                [{'state': state, 'log_url': 'https://github.com/nateEc/nateEc.github.io/actions/runs/456/job/789'}],
+                {'head_sha': run_sha, 'head_branch': 'main', 'path': '.github/workflows/pages.yml', 'status': 'completed', 'conclusion': conclusion}]
+
+    def test_api_requires_exact_sha_successful_pages_workflow(self):
+        with patch.object(publisher, '_github_api', side_effect=self.evidence()):
+            self.assertIn('/runs/456/', publisher._github_deployment_evidence('abc'))
+        for responses in [self.evidence(state='failure'), self.evidence(run_sha='different'), self.evidence(conclusion='failure')]:
+            with patch.object(publisher, '_github_api', side_effect=responses):
+                self.assertIsNone(publisher._github_deployment_evidence('abc'))
+
+    def test_api_rejects_other_sha_without_querying_its_status(self):
+        with patch.object(publisher, '_github_api', return_value=self.evidence()[0]) as api:
+            self.assertIsNone(publisher._github_deployment_evidence('different'))
+            api.assert_called_once()
+
+    def test_transport_block_can_use_explicit_deployment_evidence(self):
+        with patch.object(publisher, 'urlopen', side_effect=URLError('DNS sinkhole')), patch.object(publisher, '_checked', return_value='abc'), patch.object(publisher, '_github_deployment_evidence', return_value='https://github.com/nateEc/nateEc.github.io/actions/runs/456'):
+            self.assertIn('local HTTP unavailable', publisher._wait_for_deployment(payload()['date'], payload()['updatedAt']))
+
+    def test_http_server_failure_is_not_masked_by_deployment_success(self):
+        with patch.object(publisher, 'urlopen', side_effect=HTTPError('https://example.org', 503, 'unavailable', {}, None)), patch.object(publisher, '_github_deployment_evidence') as api, patch.object(publisher, 'DEPLOYMENT_TIMEOUT_SECONDS', 1), patch.object(publisher.time, 'monotonic', side_effect=[0, 1]):
+            with self.assertRaises(RuntimeError):
+                publisher._wait_for_deployment(payload()['date'], payload()['updatedAt'])
+            api.assert_not_called()
 
 class PublisherTests(unittest.TestCase):
     def setUp(self):

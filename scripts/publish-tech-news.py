@@ -5,12 +5,14 @@ import fcntl
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import time
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlencode
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from news_contract import validate_payload
 
@@ -114,24 +116,76 @@ def _push_main() -> None:
     raise RuntimeError(f'git push origin main failed after {PUSH_ATTEMPTS} attempts: {last_detail[:1200]}')
 
 
-def _wait_for_deployment(snapshot_date: str, updated_at: str) -> None:
+def _github_api(path: str) -> Any:
+    request = Request(f'https://api.github.com/repos/nateEc/nateEc.github.io/{path}', headers={
+        'User-Agent': 'tech-signal-publisher/1.0',
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2026-03-10',
+    })
+    with urlopen(request, timeout=15) as response:
+        return json.load(response)
+
+
+def _github_deployment_evidence(sha: str) -> str | None:
+    query = urlencode({'sha': sha, 'environment': 'github-pages', 'per_page': 3})
+    deployments = _github_api(f'deployments?{query}')
+    for deployment in deployments:
+        if deployment.get('sha') != sha or deployment.get('environment') != 'github-pages' or deployment.get('ref') != 'main':
+            continue
+        deployment_id = str(deployment.get('id', ''))
+        if not deployment_id.isdigit():
+            continue
+        statuses = _github_api(f'deployments/{deployment_id}/statuses?per_page=1')
+        if not statuses or statuses[0].get('state') != 'success':
+            continue
+        log_url = statuses[0].get('log_url', '')
+        match = re.fullmatch(r'https://github\.com/nateEc/nateEc\.github\.io/actions/runs/(\d+)(?:/job/\d+)?', log_url, re.I)
+        if not match:
+            continue
+        run = _github_api(f'actions/runs/{match[1]}')
+        if (run.get('head_sha') == sha and run.get('head_branch') == 'main'
+                and run.get('path') == '.github/workflows/pages.yml'
+                and run.get('status') == 'completed' and run.get('conclusion') == 'success'):
+            return log_url
+    return None
+
+
+def _wait_for_deployment(snapshot_date: str, updated_at: str) -> str:
     deadline = time.monotonic() + DEPLOYMENT_TIMEOUT_SECONDS
     last_detail = 'deployment snapshot was not reachable'
-    query = urlencode({'published': updated_at})
+    next_api_check = 0.0
 
     while True:
         try:
+            query = urlencode({'published': updated_at, 'probe': time.time_ns()})
             request = Request(f'{DEPLOYMENT_URL}?{query}', headers={'User-Agent': 'tech-signal-publisher/1.0'})
             with urlopen(request, timeout=20) as response:
                 deployed = json.load(response)
             validate_payload(deployed)
             if deployed.get('date') == snapshot_date and deployed.get('updatedAt') == updated_at:
-                return
+                return 'live HTTP snapshot'
             last_detail = (
                 f'deployed snapshot is {deployed.get("date")} / {deployed.get("updatedAt")}, '
                 f'expected {snapshot_date} / {updated_at}'
             )
+        except (URLError, OSError) as exc:
+            last_detail = str(exc)
+            # Do not bypass DNS/network controls. The accessible GitHub control
+            # plane can attest the exact SHA's Pages deployment, not reachability.
+            if not isinstance(exc, HTTPError) and time.monotonic() >= next_api_check:
+                next_api_check = time.monotonic() + 60
+                try:
+                    sha = _checked(['git', 'rev-parse', 'HEAD'])
+                    evidence = _github_deployment_evidence(sha)
+                    if evidence:
+                        print(f'warning: local website HTTP probe unavailable: {exc}')
+                        print(f'deployment evidence: {evidence}; exact SHA {sha}; local website reachability not verified')
+                        return 'GitHub Pages deployment API (local HTTP unavailable)'
+                except Exception as api_error:
+                    last_detail += f'; GitHub deployment verification: {api_error}'
         except Exception as exc:
+            # A reachable but malformed, empty, stale, or 4xx/5xx page is not
+            # excused by a successful deployment status.
             last_detail = str(exc)
 
         remaining = deadline - time.monotonic()
@@ -212,8 +266,8 @@ def _publish() -> int:
     except (ValueError, TypeError):
         pass
     else:
-        _wait_for_deployment(date, current['updatedAt'])
-        print(f'no-op: complete snapshot {date} is already committed and verified online')
+        evidence = _wait_for_deployment(date, current['updatedAt'])
+        print(f'no-op: complete snapshot {date} is already committed; deployment verified via {evidence}')
         return 0
     _ensure_dependencies()
     sync_result = _run([sys.executable, str(SYNC_SCRIPT)], timeout=1300)
@@ -233,8 +287,8 @@ def _publish() -> int:
         _checked(['git', 'commit', '-m', f'chore(news): 更新 {snapshot_date} 科技资讯',
                   '-m', '- 刷新三个完整新闻来源，失败时不覆盖有效快照。\n- 通过构建与站点检查，隔离发布并核实线上版本。'])
         _push_main()
-    _wait_for_deployment(snapshot_date, payload['updatedAt'])
-    print(f'published: Tech Signal {snapshot_date}; all sources validated, main pushed, deployment verified')
+    evidence = _wait_for_deployment(snapshot_date, payload['updatedAt'])
+    print(f'published: Tech Signal {snapshot_date}; all sources validated, main pushed, deployment verified via {evidence}')
     return 0
 
 
