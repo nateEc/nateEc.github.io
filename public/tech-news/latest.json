@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-08T12:02:47+08:00",
-  "date": "2026-09-08",
+  "updatedAt": "2026-09-09T11:31:08+08:00",
+  "date": "2026-09-09",
   "sections": [
     {
       "name": "AI资讯",
@@ -64,52 +64,55 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "216M Spy TVs – The LG Smart TV Problem [video]",
-          "summary": "SUPPORT THE DATA DRAGNET SERIES: https://store.gamersnexus.net/data-dragnetThe LG Smart TVs we've tested have first-party ACR (automatic content recognition)...",
-          "url": "https://www.youtube.com/watch?v=6IFVTcM28KA",
+          "title": "Muse – Meta’s personal AI agent",
+          "summary": "Meet Muse, Meta's personal AI agent. Learn what it can do across everyday tasks, how it works, and how it helps you get more done.",
+          "url": "https://ai.meta.com/muse/",
           "source": "Hacker News",
-          "score": 4.18,
+          "score": 7.03,
           "reasons": [
-            "HN分数603",
-            "讨论量834"
+            "AI",
+            "HN分数360",
+            "讨论量369"
           ],
-          "published": "2026-09-07T00:22:04+00:00"
+          "published": "2026-09-08T19:25:00+00:00"
         },
         {
-          "title": "Keep Our Servers Running",
-          "summary": "“Universal access to all human knowledge is within our grasp. Our job is to put the best our world has to offer within the reach of our children.”",
-          "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
+          "title": "Tao: Open math problems being non-renewably mined by AI",
+          "summary": "I wrote recently about how the collection of good, fruitful open problems is now being mined in a non-renewable fashion, leading to the potential scenario of these problems becoming scarce. This may seem unintuitive at f…",
+          "url": "https://mathstodon.xyz/@tao/117237320796901560",
           "source": "Hacker News",
-          "score": 4.14,
+          "score": 6.75,
           "reasons": [
-            "HN分数970",
-            "讨论量251"
+            "AI",
+            "HN分数206",
+            "讨论量142"
           ],
-          "published": "2026-09-07T03:29:51+00:00"
+          "published": "2026-09-08T21:00:52+00:00"
         },
         {
-          "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
-          "summary": "Every building standing in Los Angeles County today, one box per structure, appearing in the year it was built. The surviving county, 1880 to now.",
-          "url": "https://lax-skyline.parcelscope.net/",
+          "title": "AI Responsibility – OpenAI and Anthropic",
+          "summary": "I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence a…",
+          "url": "https://twitter.com/hilbertspaess/status/2097476196791709843",
           "source": "Hacker News",
-          "score": 4.09,
+          "score": 5.94,
           "reasons": [
-            "HN分数245",
-            "讨论量126"
+            "AI",
+            "HN分数45",
+            "讨论量8"
           ],
-          "published": "2026-09-07T18:52:06+00:00"
+          "published": "2026-09-09T01:32:49+00:00"
         },
         {
-          "title": "bzip3",
-          "summary": "A better and stronger spiritual successor to BZip2. - iczelia/bzip3",
-          "url": "https://github.com/iczelia/bzip3",
+          "title": "On the Navier–Stokes Millennium Prize Problem",
+          "summary": "Comments",
+          "url": "https://openai.com/index/navier-stokes-solution/",
           "source": "Hacker News",
-          "score": 4.04,
+          "score": 4.86,
           "reasons": [
-            "HN分数391",
-            "讨论量111"
+            "HN分数1165",
+            "讨论量1003"
           ],
-          "published": "2026-09-07T13:35:13+00:00"
+          "published": "2026-09-08T17:13:21+00:00"
         }
       ]
     },
@@ -118,48 +121,48 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Eric Wu’s newest company, out of stealth since May, is going after construction’s labor crunch",
-          "summary": "Eric Wu, who built and ran Opendoor before stepping away in 2022, has had his new company, NavigateAI, out of stealth since May — building AI copilots that give construction workers real-time, hands-free guidance through…",
-          "url": "https://techcrunch.com/2026/09/07/eric-wus-newest-company-out-of-stealth-since-may-is-going-after-constructions-labor-crunch/",
+          "title": "Hackers are stealing Claude tokens from subscribers",
+          "summary": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
+          "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
           "source": "TechCrunch",
-          "score": 4.55,
+          "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-08T02:16:39+00:00"
+          "published": "2026-09-08T21:10:27+00:00"
         },
         {
-          "title": "Opaque recurrence, and other AI terms that you should probably know",
-          "summary": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
-          "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+          "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all m…",
+          "summary": "Cognition's valuation multiple is higher than Cursor's was before selling to SpaceX.",
+          "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+          "source": "TechCrunch",
+          "score": 4.42,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-08T21:04:06+00:00"
+        },
+        {
+          "title": "Meta debuts its Muse AI agent. Will consumers trust it?",
+          "summary": "Meta's new personal AI agent Muse wants access to users' email, calendars, payments, health services, and more — making the company's biggest consumer AI bet yet a major test of whether people still trust Meta with their…",
+          "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
           "source": "TechCrunch",
           "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-07T19:24:00+00:00"
+          "published": "2026-09-08T19:00:00+00:00"
         },
         {
-          "title": "Authors push back as publishers and agents make claims on Anthropic settlement",
-          "summary": "Authors say publishers seem to be claiming more than their fair share of settlement payments.",
-          "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+          "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
+          "summary": "There is a $1 million bounty for the first person providing a solution to the Navier-Stokes existence and smoothness problem.",
+          "url": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
           "source": "TechCrunch",
-          "score": 3.73,
+          "score": 4.32,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-06T20:47:37+00:00"
-        },
-        {
-          "title": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
-          "summary": "The Uber founder has said that Atoms will allow him to complete \"unfinished business.\"",
-          "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
-          "source": "TechCrunch",
-          "score": 3.62,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-06T16:45:00+00:00"
+          "published": "2026-09-08T17:32:15+00:00"
         }
       ]
     }
@@ -167,11 +170,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-08T11:01:20.103862+08:00"
+      "lastRunAt": "2026-09-09T11:01:08.015652+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-08T11:00:58.865348+08:00"
+      "lastRunAt": "2026-09-09T11:01:13.336091+08:00"
     }
   }
 }
