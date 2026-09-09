@@ -22,8 +22,16 @@ def load(name, filename):
 sync = load('sync_news', 'sync-tech-news.py')
 publisher = load('publisher', 'publish-tech-news.py')
 hn = load('hn', 'hacker_news_digest.py')
+ai = load('ai', 'ai_digest_zh.py')
 from news_contract import validate_payload, validate_digest, write_snapshot
 import news_http
+
+class DigestDepthTests(unittest.TestCase):
+    def test_agent_receives_twelve_rich_candidates_per_source(self):
+        self.assertEqual(ai.MAX_ITEMS, 12)
+        self.assertEqual(ai.SUMMARY_TARGET_LEN, 800)
+        self.assertEqual(hn.MAX_OUTPUT_PER_SOURCE, 12)
+        self.assertEqual(hn.SUMMARY_TARGET_LEN, 800)
 
 def payload():
     now = datetime.now().astimezone()

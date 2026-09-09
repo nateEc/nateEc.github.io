@@ -15,8 +15,8 @@ from xml.etree import ElementTree as ET
 URL = "https://ai-digest.liziran.com/zh/feed.xml"
 UA = "Mozilla/5.0 (compatible; HermesAgent/1.0; +https://hermes-agent.nousresearch.com)"
 MAX_CANDIDATES = 20
-MAX_ITEMS = 8
-SUMMARY_TARGET_LEN = 500
+MAX_ITEMS = 12
+SUMMARY_TARGET_LEN = 800
 MIN_SUMMARY_LEN = 120
 TREND_WEIGHTS = {
     "监管": 3.0,
