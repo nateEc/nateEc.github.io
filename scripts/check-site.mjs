@@ -30,6 +30,7 @@ const requiredFiles = [
   'dist/favicon-32x32.png',
   'dist/apple-touch-icon.png',
   'dist/tech-news/latest.json',
+  'dist/tech-news/github-trending.json',
   'dist/og-image.png',
   'dist/resume-en.pdf',
   'dist/resume-zh.pdf',
@@ -98,6 +99,8 @@ assert(source.includes('DSH Git Workbench') && source.includes('/images/projects
 assert(source.includes('upstreamContributions') && source.includes('14 patches'), 'accepted upstream contributions are presented as a separate evidence record')
 assert(source.includes('2026-w36') && source.includes('31 Aug 2026'), 'worklog reaches the current partial week with an updated snapshot')
 assert(source.includes("path: '/tech-news'") && source.includes('TechNewsView'), 'Tech Signal has a dedicated application route')
+assert(source.includes("path: '/tech-news/github'") && source.includes('GitHubTrendingView'), 'Repository Radar has a dedicated Tech Signal sub-route')
+assert(source.includes('Repository Radar') && source.includes('/tech-news/github'), 'Tech Signal links to its GitHub trend radar')
 assert(source.includes("to=\"/tech-news\"") && source.includes("route: '/tech-news'"), 'Tech Signal is linked from the hero and primary navigation')
 assert(!source.includes('TechNewsSection'), 'the old homepage Tech News section is removed')
 
@@ -112,6 +115,12 @@ assert(techNewsItems.length >= 3, 'Tech Signal contains displayable items')
 assert(techNewsItems.every((item) => /^https:\/\//.test(item.url)), 'Tech Signal exposes only HTTPS article links')
 assert(techNewsItems.every((item) => !/…$/.test(item.published ?? '')), 'Tech Signal preserves complete publication timestamps')
 assert(techNewsItems.every((item) => typeof item.published === 'string' && Number.isFinite(Date.parse(item.published))), 'Tech Signal publication timestamps are valid')
+
+const githubTrending = JSON.parse(read('public/tech-news/github-trending.json'))
+assert(githubTrending.schemaVersion === 1 && githubTrending.period === 'daily', 'Repository Radar declares its daily schema')
+assert(Array.isArray(githubTrending.repositories) && githubTrending.repositories.length > 0, 'Repository Radar contains trending repositories')
+assert(githubTrending.repositories.every((repo, index) => repo.rank === index + 1), 'Repository Radar ranks are contiguous')
+assert(githubTrending.repositories.every((repo) => repo.url === `https://github.com/${repo.fullName}`), 'Repository Radar links only to matching GitHub repositories')
 
 const dubReport = JSON.parse(read('public/demos/yt-dub/run-report.json'))
 assert(dubReport.ok === true && dubReport.tts.used_source_voice === true, 'yt-dub report records a successful source-voice run')
@@ -165,6 +174,7 @@ for (const slug of ['agent-failure-regression', 'hipilot-desktop', 'yt-dub-studi
 }
 assert(sitemap.includes('/worklog'), 'sitemap includes the weekly worklog')
 assert(sitemap.includes('/tech-news'), 'sitemap includes the daily Tech Signal page')
+assert(sitemap.includes('/tech-news/github'), 'sitemap includes the Repository Radar page')
 
 const trackedDist = execFileSync('git', ['ls-files', 'dist'], { cwd: root, encoding: 'utf8' }).trim()
 assert(trackedDist === '', 'generated dist/ is not tracked as source')

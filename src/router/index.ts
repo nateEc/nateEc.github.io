@@ -36,6 +36,11 @@ const router = createRouter({
       component: () => import('../views/TechNewsView.vue'),
     },
     {
+      path: '/tech-news/github',
+      name: 'github-trending',
+      component: () => import('../views/GitHubTrendingView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('../views/NotFoundView.vue'),

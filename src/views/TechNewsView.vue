@@ -246,6 +246,10 @@ const itemReasons = (item: NewsItem) => item.reasons?.join(' · ') ?? ''
     <header class="signal-hero">
       <div class="shell">
         <RouterLink class="signal-back" to="/">← {{ copy.back }}</RouterLink>
+        <nav class="signal-switcher" aria-label="Signal desk sections">
+          <RouterLink class="is-current" to="/tech-news" aria-current="page">Tech Signal</RouterLink>
+          <RouterLink to="/tech-news/github">Repository Radar</RouterLink>
+        </nav>
 
         <div class="signal-hero__grid">
           <div class="signal-thesis">
@@ -482,6 +486,36 @@ const itemReasons = (item: NewsItem) => item.reasons?.join(' · ') ?? ''
 
 .signal-back:hover {
   color: var(--signal);
+}
+
+.signal-switcher {
+  display: inline-flex;
+  gap: 6px;
+  margin-left: 28px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.signal-switcher a {
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: var(--muted);
+  font: 0.62rem var(--mono);
+  text-decoration: none;
+}
+
+.signal-switcher a.is-current {
+  color: white;
+  background: var(--signal);
+}
+
+@media (max-width: 600px) {
+  .signal-switcher {
+    display: flex;
+    width: fit-content;
+    margin: -48px 0 48px;
+  }
 }
 
 .signal-hero__grid {
