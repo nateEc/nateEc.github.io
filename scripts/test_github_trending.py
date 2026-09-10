@@ -70,6 +70,7 @@ class GitHubTrendingSyncTests(unittest.TestCase):
         self.assertEqual(module.base.NEWS_PATH.as_posix(), "public/tech-news/github-trending.json")
         self.assertEqual(module.base.SYNC_SCRIPT.name, "sync-github-trending.py")
         self.assertEqual(module.base.DEPLOYMENT_URL, "https://nateec.github.io/tech-news/github-trending.json")
+        self.assertIs(module.base.validate_payload, module.validate_payload)
 
 
 if __name__ == "__main__":

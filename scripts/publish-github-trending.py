@@ -22,6 +22,7 @@ base.NEWS_PATH = Path("public/tech-news/github-trending.json")
 base.SYNC_SCRIPT = HERE / "sync-github-trending.py"
 base.DEPLOYMENT_URL = "https://nateec.github.io/tech-news/github-trending.json"
 base._validate_payload = validate_payload
+base.validate_payload = validate_payload
 
 
 def publish() -> int:
