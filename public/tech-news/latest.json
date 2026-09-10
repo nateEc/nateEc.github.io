@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T11:31:08+08:00",
-  "date": "2026-09-09",
+  "updatedAt": "2026-09-10T11:30:36+08:00",
+  "date": "2026-09-10",
   "sections": [
     {
       "name": "AI资讯",
@@ -64,55 +64,53 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Muse – Meta’s personal AI agent",
-          "summary": "Meet Muse, Meta's personal AI agent. Learn what it can do across everyday tasks, how it works, and how it helps you get more done.",
-          "url": "https://ai.meta.com/muse/",
+          "title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+          "summary": "Creatures bred for speed grow really tall and generate high velocities by falling over. An evolved player makes invalid moves far away in the board, causing opponent players to run out of memory and crash. A game-playing…",
+          "url": "https://slimemoldtimemold.com/2026/08/05/a-stupid-idea-for-ai-alignment-we-came-up-with-by-looking-at-the-list-of-specification-gaming-behaviours/",
           "source": "Hacker News",
-          "score": 7.03,
+          "score": 5.25,
           "reasons": [
             "AI",
-            "HN分数360",
-            "讨论量369"
+            "HN分数8",
+            "讨论量1"
           ],
-          "published": "2026-09-08T19:25:00+00:00"
+          "published": "2026-09-10T01:59:51+00:00"
         },
         {
-          "title": "Tao: Open math problems being non-renewably mined by AI",
-          "summary": "I wrote recently about how the collection of good, fruitful open problems is now being mined in a non-renewable fashion, leading to the potential scenario of these problems becoming scarce. This may seem unintuitive at f…",
-          "url": "https://mathstodon.xyz/@tao/117237320796901560",
+          "title": "iPhone Duo",
+          "summary": "iPhone Duo. The largest iPhone display ever. In a thin, foldable design. 48MP Dual Fusion camera system. A20 Pro chip. All-day battery life.",
+          "url": "https://www.apple.com/iphone-duo/",
           "source": "Hacker News",
-          "score": 6.75,
+          "score": 4.96,
           "reasons": [
-            "AI",
-            "HN分数206",
-            "讨论量142"
+            "HN分数978",
+            "讨论量1768"
           ],
-          "published": "2026-09-08T21:00:52+00:00"
+          "published": "2026-09-09T18:15:43+00:00"
         },
         {
-          "title": "AI Responsibility – OpenAI and Anthropic",
-          "summary": "I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence a…",
-          "url": "https://twitter.com/hilbertspaess/status/2097476196791709843",
+          "title": "Shopify acquires Tailwind",
+          "summary": "We're joining Shopify to give Tailwind a stable long-term home where it will be actively maintained for the millions of people who depend on it.",
+          "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
           "source": "Hacker News",
-          "score": 5.94,
+          "score": 4.5,
           "reasons": [
-            "AI",
-            "HN分数45",
-            "讨论量8"
+            "HN分数923",
+            "讨论量368"
           ],
-          "published": "2026-09-09T01:32:49+00:00"
+          "published": "2026-09-09T13:27:11+00:00"
         },
         {
-          "title": "On the Navier–Stokes Millennium Prize Problem",
-          "summary": "Comments",
-          "url": "https://openai.com/index/navier-stokes-solution/",
+          "title": "AirPods 5",
+          "summary": "Apple today announced AirPods 5, delivering the industry’s best Active Noise Cancellation in an open-ear design and even better sound quality.",
+          "url": "https://www.apple.com/newsroom/2026/09/apple-introduces-airpods-5-with-best-in-class-open-ear-active-noise-cancellation/",
           "source": "Hacker News",
-          "score": 4.86,
+          "score": 4.38,
           "reasons": [
-            "HN分数1165",
-            "讨论量1003"
+            "HN分数398",
+            "讨论量318"
           ],
-          "published": "2026-09-08T17:13:21+00:00"
+          "published": "2026-09-09T17:39:24+00:00"
         }
       ]
     },
@@ -121,48 +119,48 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Hackers are stealing Claude tokens from subscribers",
-          "summary": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
-          "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+          "title": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+          "summary": "Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, sources say.",
+          "url": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.5,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-08T21:10:27+00:00"
+          "published": "2026-09-10T00:00:37+00:00"
         },
         {
-          "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all m…",
-          "summary": "Cognition's valuation multiple is higher than Cursor's was before selling to SpaceX.",
-          "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+          "title": "OpenAI adds a prominent AI doomer to its board of directors",
+          "summary": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
+          "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-08T21:04:06+00:00"
+          "published": "2026-09-09T22:25:22+00:00"
         },
         {
-          "title": "Meta debuts its Muse AI agent. Will consumers trust it?",
-          "summary": "Meta's new personal AI agent Muse wants access to users' email, calendars, payments, health services, and more — making the company's biggest consumer AI bet yet a major test of whether people still trust Meta with their…",
-          "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+          "title": "Massachusetts hits data centers with new clean power rules",
+          "summary": "Massachusetts has become the third state in as many months to slap new restrictions on data center development.",
+          "url": "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-08T19:00:00+00:00"
+          "published": "2026-09-09T21:43:34+00:00"
         },
         {
-          "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
-          "summary": "There is a $1 million bounty for the first person providing a solution to the Navier-Stokes existence and smoothness problem.",
-          "url": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+          "title": "Apple Watch’s new AI features are normalizing the idea that technology is always listening",
+          "summary": "Apple says its new watches won’t save raw audio, but features that can transcribe recent speech and summarize ambient conversations raise new questions about consent, privacy, and how people behave when they know they co…",
+          "url": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
           "source": "TechCrunch",
-          "score": 4.32,
+          "score": 4.4,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-08T17:32:15+00:00"
+          "published": "2026-09-09T20:24:48+00:00"
         }
       ]
     }
@@ -170,11 +168,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-09T11:01:08.015652+08:00"
+      "lastRunAt": "2026-09-10T11:00:49.889709+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-09T11:01:13.336091+08:00"
+      "lastRunAt": "2026-09-10T11:01:20.708631+08:00"
     }
   }
 }
