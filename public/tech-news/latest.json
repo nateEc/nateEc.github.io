@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T11:31:11+08:00",
-  "date": "2026-09-11",
+  "updatedAt": "2026-09-12T11:30:52+08:00",
+  "date": "2026-09-12",
   "sections": [
     {
       "name": "AI资讯",
@@ -64,53 +64,54 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
-          "summary": "Accelerate Your AI Development with the Thelio Mira AI Linux desktop workstation",
-          "url": "https://system76.com/workstations/thelio-mira-ai",
+          "title": "A misalignment of AI in mathematics",
+          "summary": "Read the declaration and add your name.",
+          "url": "https://mathandai.org/",
           "source": "Hacker News",
-          "score": 6.17,
+          "score": 7.3,
           "reasons": [
             "AI",
-            "HN分数52",
-            "讨论量32"
+            "HN分数720",
+            "讨论量741"
           ],
-          "published": "2026-09-10T23:10:06+00:00"
+          "published": "2026-09-11T17:45:12+00:00"
         },
         {
-          "title": "Shopify is moving from React Native back to Swift and Kotlin",
-          "summary": "Coding agents changed what it costs to build mobile apps twice. Here’s why Shopify is moving from React Native back to Swift and Kotlin.",
-          "url": "https://shopify.engineering/back-to-native",
+          "title": "AI researchers debate how close we are to recursive self-improvement",
+          "summary": "“We're nowhere near the ceiling.”",
+          "url": "https://www.dwarkesh.com/p/john-beren-charlie",
           "source": "Hacker News",
-          "score": 4.58,
+          "score": 6.25,
           "reasons": [
-            "HN分数844",
-            "讨论量567"
+            "AI",
+            "HN分数63",
+            "讨论量48"
           ],
-          "published": "2026-09-10T14:09:31+00:00"
+          "published": "2026-09-11T21:35:29+00:00"
         },
         {
-          "title": "iPhone Duo",
-          "summary": "iPhone Duo. The largest iPhone display ever. In a thin, foldable design. 48MP Dual Fusion camera system. A20 Pro chip. All-day battery life.",
-          "url": "https://www.apple.com/iphone-duo/",
+          "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+          "summary": "On May 11th, 2026, hundreds of malicious packages were uploaded to RubyGems by AI agents performing web-lookup tasks with significant overlap with the German Wiki Incident.",
+          "url": "https://www.rubyhack.ai/",
           "source": "Hacker News",
-          "score": 4.45,
+          "score": 4.5,
           "reasons": [
-            "HN分数1418",
-            "讨论量2451"
+            "HN分数431",
+            "讨论量245"
           ],
-          "published": "2026-09-09T18:15:43+00:00"
+          "published": "2026-09-11T23:17:42+00:00"
         },
         {
-          "title": "Rust is tier-1 language at Microsoft",
-          "summary": "By now it’s no surprise that Rust is of strategic importance to Microsoft. From bold mission statements when Azure CTO Mark Russinovich outlined our future strategy for native code, to millions of dollars invested by Mic…",
-          "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+          "title": "The EPA is planning to scrap public review rules for data center pollution",
+          "summary": "Proposed rule changes would leave residents with less say over pollution in their communities.",
+          "url": "https://capitalbnews.org/data-centers-permit-rules-epa/",
           "source": "Hacker News",
-          "score": 4.4,
+          "score": 4.35,
           "reasons": [
-            "HN分数624",
-            "讨论量356"
+            "HN分数385",
+            "讨论量267"
           ],
-          "published": "2026-09-10T13:39:16+00:00"
+          "published": "2026-09-11T18:05:21+00:00"
         }
       ]
     },
@@ -119,48 +120,48 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Jensen Huang explains why Nvidia will grow an astounding 70% next year",
-          "summary": "Nvidia has its finger in every pie, and sees another year of plenty in its future, Jensen Huang says. But, he insists, its deals are not circular.",
-          "url": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
+          "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+          "summary": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
+          "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-10T21:51:59+00:00"
+          "published": "2026-09-11T22:58:17+00:00"
         },
         {
-          "title": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
-          "summary": "Mark Wahlberg joins Bruce K. Lee at TechCrunch Disrupt 2026 to discuss entrepreneurship, investing, and building startups. Register here to join.",
-          "url": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
-          "source": "TechCrunch",
-          "score": 4.43,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-10T21:35:00+00:00"
-        },
-        {
-          "title": "OpenAI puts Pro subscriptions on hold due to Astra demand",
-          "summary": "The company said Pro subscriptions put the most strain on its systems, so it's pausing sign-ups while adding more capacity.",
-          "url": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+          "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+          "summary": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
+          "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
           "source": "TechCrunch",
           "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-10T20:59:51+00:00"
+          "published": "2026-09-11T20:59:47+00:00"
         },
         {
-          "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
-          "summary": "A new report released Thursday by Anthropic alleges persistent distillation attacks by China-based AI companies, which have escalated in recent months as competition in the space has intensified.",
-          "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+          "title": "OpenAI’s feud with mathematicians is only escalating",
+          "summary": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.",
+          "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
           "source": "TechCrunch",
           "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-10T20:57:30+00:00"
+          "published": "2026-09-11T20:57:36+00:00"
+        },
+        {
+          "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
+          "summary": "Book your TechCrunch Disrupt 2026 exhibit table. Get in front of 10,000+ founders, investors, and tech leaders in SF. The last day is Sept 25.",
+          "url": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+          "source": "TechCrunch",
+          "score": 4.41,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-11T20:33:18+00:00"
         }
       ]
     }
@@ -168,11 +169,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-11T11:01:13.557831+08:00"
+      "lastRunAt": "2026-09-12T11:14:35.109315+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-11T11:01:28.717994+08:00"
+      "lastRunAt": "2026-09-12T11:15:10.444848+08:00"
     }
   }
 }
