@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T14:30:12+08:00",
-  "date": "2026-09-11",
+  "updatedAt": "2026-09-12T14:30:33+08:00",
+  "date": "2026-09-12",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,9 +11,9 @@
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 3882,
-      "totalStars": 39081,
-      "forks": 2237,
+      "starsToday": 3463,
+      "totalStars": 42382,
+      "forks": 2404,
       "url": "https://github.com/ayghri/i-have-adhd"
     },
     {
@@ -22,111 +22,105 @@
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 1762,
-      "totalStars": 25042,
-      "forks": 5157,
+      "starsToday": 3680,
+      "totalStars": 27509,
+      "forks": 5622,
       "url": "https://github.com/bilawalsidhu/gods-eye-view"
     },
     {
       "rank": 3,
-      "fullName": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89E051",
-      "starsToday": 732,
-      "totalStars": 284859,
-      "forks": 25483,
-      "url": "https://github.com/obra/superpowers"
+      "fullName": "nab138/iloader",
+      "description": "User friendly sideloader",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 50,
+      "totalStars": 2951,
+      "forks": 205,
+      "url": "https://github.com/nab138/iloader"
     },
     {
       "rank": 4,
-      "fullName": "alsk1992/CloddsBot",
-      "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-host",
+      "fullName": "melgarafael/DeskcommCRM",
+      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 277,
-      "totalStars": 1810,
-      "forks": 264,
-      "url": "https://github.com/alsk1992/CloddsBot"
+      "starsToday": 152,
+      "totalStars": 1457,
+      "forks": 510,
+      "url": "https://github.com/melgarafael/DeskcommCRM"
     },
     {
       "rank": 5,
-      "fullName": "Tencent/teamai-cli",
-      "description": "Make Every Team AI Native",
+      "fullName": "vastsa/PI-Desktop",
+      "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 841,
-      "totalStars": 3965,
-      "forks": 254,
-      "url": "https://github.com/Tencent/teamai-cli"
+      "starsToday": 552,
+      "totalStars": 2879,
+      "forks": 225,
+      "url": "https://github.com/vastsa/PI-Desktop"
     },
     {
       "rank": 6,
-      "fullName": "AlexsJones/llmfit",
-      "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 258,
-      "totalStars": 35863,
-      "forks": 2271,
-      "url": "https://github.com/AlexsJones/llmfit"
-    },
-    {
-      "rank": 7,
-      "fullName": "liquidslr/system-design-notes",
-      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
-      "language": "Unknown",
-      "languageColor": "#8B949E",
-      "starsToday": 900,
-      "totalStars": 18998,
-      "forks": 3504,
-      "url": "https://github.com/liquidslr/system-design-notes"
-    },
-    {
-      "rank": 8,
-      "fullName": "cathrynlavery/diagram-design",
-      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "languageColor": "#E34C26",
-      "starsToday": 1294,
-      "totalStars": 38022,
-      "forks": 2407,
-      "url": "https://github.com/cathrynlavery/diagram-design"
-    },
-    {
-      "rank": 9,
-      "fullName": "freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 962,
-      "totalStars": 31068,
-      "forks": 3009,
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2"
-    },
-    {
-      "rank": 10,
       "fullName": "armory3d/armorpaint",
       "description": "Graphics Creation Tools",
       "language": "C",
       "languageColor": "#555555",
-      "starsToday": 72,
-      "totalStars": 4513,
-      "forks": 522,
+      "starsToday": 350,
+      "totalStars": 4780,
+      "forks": 537,
       "url": "https://github.com/armory3d/armorpaint"
+    },
+    {
+      "rank": 7,
+      "fullName": "alsk1992/CloddsBot",
+      "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-host",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 626,
+      "totalStars": 2243,
+      "forks": 290,
+      "url": "https://github.com/alsk1992/CloddsBot"
+    },
+    {
+      "rank": 8,
+      "fullName": "nashsu/llm_wiki",
+      "description": "LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from yo",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 647,
+      "totalStars": 18864,
+      "forks": 2144,
+      "url": "https://github.com/nashsu/llm_wiki"
+    },
+    {
+      "rank": 9,
+      "fullName": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 729,
+      "totalStars": 285481,
+      "forks": 25529,
+      "url": "https://github.com/obra/superpowers"
+    },
+    {
+      "rank": 10,
+      "fullName": "Sonarr/Sonarr",
+      "description": "Smart PVR for newsgroup and bittorrent users.",
+      "language": "C#",
+      "languageColor": "#8B949E",
+      "starsToday": 191,
+      "totalStars": 15776,
+      "forks": 1949,
+      "url": "https://github.com/Sonarr/Sonarr"
     }
   ],
   "languages": [
     {
-      "name": "JavaScript",
-      "count": 2,
-      "share": 20,
-      "color": "#F1E05A"
-    },
-    {
       "name": "TypeScript",
-      "count": 2,
-      "share": 20,
+      "count": 5,
+      "share": 50,
       "color": "#3178C6"
     },
     {
@@ -136,10 +130,16 @@
       "color": "#555555"
     },
     {
-      "name": "HTML",
+      "name": "C#",
       "count": 1,
       "share": 10,
-      "color": "#E34C26"
+      "color": "#8B949E"
+    },
+    {
+      "name": "JavaScript",
+      "count": 1,
+      "share": 10,
+      "color": "#F1E05A"
     },
     {
       "name": "Python",
@@ -148,49 +148,39 @@
       "color": "#3572A5"
     },
     {
-      "name": "Rust",
-      "count": 1,
-      "share": 10,
-      "color": "#DEA584"
-    },
-    {
       "name": "Shell",
       "count": 1,
       "share": 10,
       "color": "#89E051"
-    },
-    {
-      "name": "Unknown",
-      "count": 1,
-      "share": 10,
-      "color": "#8B949E"
     }
   ],
   "themes": [
     {
-      "name": "Developer tools",
+      "name": "AI infrastructure",
       "count": 4,
       "repositories": [
-        "ayghri/i-have-adhd",
-        "Tencent/teamai-cli",
-        "cathrynlavery/diagram-design",
-        "freestylefly/awesome-gpt-image-2"
-      ]
-    },
-    {
-      "name": "AI infrastructure",
-      "count": 2,
-      "repositories": [
+        "melgarafael/DeskcommCRM",
+        "vastsa/PI-Desktop",
         "alsk1992/CloddsBot",
-        "Tencent/teamai-cli"
+        "nashsu/llm_wiki"
       ]
     },
     {
       "name": "Agent systems",
+      "count": 4,
+      "repositories": [
+        "ayghri/i-have-adhd",
+        "melgarafael/DeskcommCRM",
+        "vastsa/PI-Desktop",
+        "alsk1992/CloddsBot"
+      ]
+    },
+    {
+      "name": "Developer tools",
       "count": 2,
       "repositories": [
         "ayghri/i-have-adhd",
-        "alsk1992/CloddsBot"
+        "vastsa/PI-Desktop"
       ]
     }
   ]
