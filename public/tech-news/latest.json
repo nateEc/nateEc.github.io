@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13T11:31:09+08:00",
-  "date": "2026-09-13",
+  "updatedAt": "2026-09-14T11:30:24+08:00",
+  "date": "2026-09-14",
   "sections": [
     {
       "name": "AI资讯",
@@ -64,56 +64,53 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Nvidia is the central bank of AI",
+          "title": "Open-Source AI and Open Models Reading List",
+          "summary": "How to get up to speed on open models and their implications.",
+          "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+          "source": "Hacker News",
+          "score": 5.64,
+          "reasons": [
+            "AI",
+            "HN分数37",
+            "讨论量2"
+          ],
+          "published": "2026-09-14T00:22:51+00:00"
+        },
+        {
+          "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+          "summary": "Private, domain-specific benchmarks in legal, tax, and finance.",
+          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+          "source": "Hacker News",
+          "score": 4.5,
+          "reasons": [
+            "HN分数554",
+            "讨论量246"
+          ],
+          "published": "2026-09-13T21:06:13+00:00"
+        },
+        {
+          "title": "Why is Google still serving dodgy ads?",
+          "summary": "I accidentally clicked a shady YouTube ad that mimics an iOS “Storage Full” alert, reported it (twice), and Google still said it was fine. Meanwhile, Gemini flags it in seconds for deceptive design...",
+          "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+          "source": "Hacker News",
+          "score": 4.49,
+          "reasons": [
+            "HN分数649",
+            "讨论量304"
+          ],
+          "published": "2026-09-13T17:37:44+00:00"
+        },
+        {
+          "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
           "summary": "Comments",
-          "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+          "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
           "source": "Hacker News",
-          "score": 6.89,
+          "score": 4.17,
           "reasons": [
-            "AI",
-            "HN分数415",
-            "讨论量283"
+            "HN分数395",
+            "讨论量179"
           ],
-          "published": "2026-09-12T15:08:27+00:00"
-        },
-        {
-          "title": "Everyone should slow down AI development except for me",
-          "summary": "Making sure you're not a bot! Loading... Please wait a moment while we ensure the security of your connection.",
-          "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
-          "source": "Hacker News",
-          "score": 6.75,
-          "reasons": [
-            "AI",
-            "HN分数200",
-            "讨论量91"
-          ],
-          "published": "2026-09-13T00:30:44+00:00"
-        },
-        {
-          "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
-          "summary": "Real-SWE benchmarks frontier AI models on private production codebases licensed from real companies. Eight model and harness configurations, ten tasks, 640 scored rollouts.",
-          "url": "https://withspecific.com/benchmarks/real-swe",
-          "source": "Hacker News",
-          "score": 6.52,
-          "reasons": [
-            "AI",
-            "HN分数148",
-            "讨论量74"
-          ],
-          "published": "2026-09-12T20:25:48+00:00"
-        },
-        {
-          "title": "Align AI and Mathematics–To Something Else",
-          "summary": "Twenty five Fields medalists were initial signatories of the letter “A Severe Misalignment of AI in Mathematics” in which they opine that “The goals of the AI companies and the go…",
-          "url": "https://liorpachter.wordpress.com/2026/09/12/align-ai-and-mathematics-to-something-else/",
-          "source": "Hacker News",
-          "score": 5.86,
-          "reasons": [
-            "AI",
-            "HN分数26",
-            "讨论量12"
-          ],
-          "published": "2026-09-13T00:47:48+00:00"
+          "published": "2026-09-13T14:28:36+00:00"
         }
       ]
     },
@@ -122,48 +119,48 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
-          "summary": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman.",
-          "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+          "title": "Insight Partners’ Deven Parekh on why the firm is diversifying while everyone else bets the farm on…",
+          "summary": "Insight Partners' Devin Parekh opens up about losing Legora to General Catalyst, why he's fine holding stakes in rival AI labs, and why — even as everyone else piles into OpenAI and Anthropic — his $90 billion firm is de…",
+          "url": "https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 4.43,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-12T20:19:16+00:00"
+          "published": "2026-09-13T21:30:00+00:00"
         },
         {
-          "title": "Anthropic CEO outlines plan to slow AI development",
-          "summary": "Anthropic's Dario Amodei and OpenAI's Sam Altman seem to agree that it's time to \"pace the frontier.\" What would that actually look like?",
-          "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+          "title": "What’s behind the AI industry’s latest warnings of doom?",
+          "summary": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
+          "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
           "source": "TechCrunch",
           "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-12T19:34:44+00:00"
+          "published": "2026-09-13T19:40:15+00:00"
         },
         {
-          "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
-          "summary": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
-          "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+          "title": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
+          "summary": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
+          "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
           "source": "TechCrunch",
-          "score": 3.81,
+          "score": 4.29,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-11T22:58:17+00:00"
+          "published": "2026-09-13T16:30:00+00:00"
         },
         {
-          "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
-          "summary": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
-          "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+          "title": "TechCrunch Mobility: Lyft has entered the robotaxi chat",
+          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation, and now, more than ever, the role AI is playing in it.",
+          "url": "https://techcrunch.com/2026/09/13/techcrunch-mobility-lyft-has-entered-the-robotaxi-chat/",
           "source": "TechCrunch",
-          "score": 3.75,
+          "score": 4.28,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-11T20:59:47+00:00"
+          "published": "2026-09-13T16:04:00+00:00"
         }
       ]
     }
@@ -171,11 +168,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-13T11:01:32.809368+08:00"
+      "lastRunAt": "2026-09-14T11:00:35.538022+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-13T11:01:35.235844+08:00"
+      "lastRunAt": "2026-09-14T11:00:47.584842+08:00"
     }
   }
 }
