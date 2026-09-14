@@ -7,6 +7,8 @@ import { setPageMeta } from '../composables/usePageMeta'
 type NewsItem = {
   title: string
   summary: string
+  titleZh?: string
+  summaryZh?: string
   url: string
   source: string
   score?: number
@@ -142,6 +144,8 @@ const normalizePayload = (data: unknown): NewsPayload => {
         title,
         url,
         summary: typeof item.summary === 'string' ? item.summary.trim() : '',
+        titleZh: typeof item.titleZh === 'string' ? item.titleZh.trim() : '',
+        summaryZh: typeof item.summaryZh === 'string' ? item.summaryZh.trim() : '',
         source: typeof item.source === 'string' ? item.source.trim() : name,
         score: typeof item.score === 'number' && Number.isFinite(item.score) ? item.score : undefined,
         reasons: Array.isArray(item.reasons)
@@ -182,6 +186,8 @@ onMounted(loadNews)
 const allItems = computed<RankedNewsItem[]>(() => payload.value.sections
   .flatMap((section) => section.items.map((item) => ({
     ...item,
+    title: currentLanguage.value === 'zh' && item.titleZh ? item.titleZh : item.title,
+    summary: currentLanguage.value === 'zh' && item.summaryZh ? item.summaryZh : item.summary,
     sectionName: section.name,
     sectionSource: section.source,
   })))
@@ -238,7 +244,15 @@ const todayInBeijing = () => new Intl.DateTimeFormat('en-CA', {
 
 const isFresh = computed(() => payload.value.date === todayInBeijing())
 const scoreWidth = (score?: number) => `${Math.max(8, Math.min(100, ((score ?? 0) / maxScore.value) * 100))}%`
-const itemReasons = (item: NewsItem) => item.reasons?.join(' · ') ?? ''
+const itemReasons = (item: NewsItem) => item.reasons?.map((reason) => {
+  if (currentLanguage.value === 'zh') return reason
+  if (reason.startsWith('HN分数')) return reason.replace('HN分数', 'HN score ')
+  if (reason.startsWith('讨论量')) return reason.replace('讨论量', 'comments ')
+  return ({ 人工智能: 'AI', 大模型: 'LLM', 模型: 'model', 监管: 'regulation', 安全: 'security',
+    安全性: 'safety', 漏洞: 'vulnerability', 隐私: 'privacy', 开源: 'open source',
+    融资: 'funding', 投资: 'investment', 上市: 'IPO', 收购: 'acquisition',
+    创业: 'startup', 产品: 'product', 基础设施: 'infrastructure' } as Record<string, string>)[reason] ?? reason
+}).join(' · ') ?? ''
 </script>
 
 <template>

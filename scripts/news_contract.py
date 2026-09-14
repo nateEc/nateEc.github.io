@@ -3,10 +3,12 @@ from datetime import datetime
 import json
 import os
 from pathlib import Path
+import re
 import tempfile
 from urllib.parse import urlparse
 
 REQUIRED_SOURCES = {'AI资讯', 'Hacker News', 'TechCrunch'}
+CJK_RE = re.compile(r'[\u3400-\u9fff]')
 
 def validate_digest(data):
     if not isinstance(data, dict):
@@ -35,7 +37,7 @@ def validate_digest(data):
     return data
 
 def validate_payload(payload):
-    if not isinstance(payload, dict) or payload.get('schemaVersion') != 1:
+    if not isinstance(payload, dict) or payload.get('schemaVersion') != 2:
         raise ValueError('invalid tech-news schema')
     today = datetime.now().astimezone().date().isoformat()
     if payload.get('date') != today:
@@ -59,6 +61,11 @@ def validate_payload(payload):
             parsed = urlparse(item.get('url', ''))
             if parsed.scheme != 'https' or not parsed.netloc:
                 raise ValueError('unsafe news URL')
+            if section['name'] in {'Hacker News', 'TechCrunch'}:
+                if not isinstance(item.get('titleZh'), str) or not CJK_RE.search(item['titleZh']):
+                    raise ValueError('news item is missing Chinese localization')
+                if item.get('summary') and (not isinstance(item.get('summaryZh'), str) or not CJK_RE.search(item['summaryZh'])):
+                    raise ValueError('news item is missing Chinese localization')
             published = datetime.fromisoformat(item.get('published', ''))
             if published.tzinfo is None:
                 raise ValueError('publication timestamp needs timezone')

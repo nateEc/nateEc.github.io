@@ -35,12 +35,33 @@ class DigestDepthTests(unittest.TestCase):
 
 def payload():
     now = datetime.now().astimezone()
-    return {'schemaVersion': 1, 'date': now.date().isoformat(), 'updatedAt': now.isoformat(),
+    return {'schemaVersion': 2, 'date': now.date().isoformat(), 'updatedAt': now.isoformat(),
             'sections': [{'name': name, 'source': 'https://example.org', 'items': [
-                {'title': 'A real title', 'url': 'https://example.org/article', 'published': now.isoformat()}
+                {'title': 'A real title', 'url': 'https://example.org/article', 'published': now.isoformat(),
+                 **({'titleZh': '真实标题', 'summaryZh': ''} if name in {'Hacker News', 'TechCrunch'} else {})}
             ]} for name in ['AI资讯', 'Hacker News', 'TechCrunch']]}
 
 class SyncTests(unittest.TestCase):
+    def test_hn_sections_include_verified_chinese_localization(self):
+        digest = {'sources': [{'name': 'Hacker News', 'source_page': 'https://news.ycombinator.com/', 'items': [{
+            'title': 'A new developer tool', 'summary': 'A useful tool for developers.',
+            'link': 'https://example.org/article', 'published': datetime.now().astimezone().isoformat(),
+        }]}]}
+        translations = {'https://example.org/article': {
+            'titleZh': '一款新的开发者工具', 'summaryZh': '一款对开发者有帮助的工具。',
+        }}
+        sections = sync._build_hn_sections(digest, translations)
+        self.assertEqual(sections[0]['items'][0]['titleZh'], '一款新的开发者工具')
+        self.assertRegex(sections[0]['items'][0]['summaryZh'], r'[\u3400-\u9fff]')
+
+    def test_hn_sections_reject_missing_chinese_localization(self):
+        digest = {'sources': [{'name': 'TechCrunch', 'source_page': 'https://techcrunch.com/', 'items': [{
+            'title': 'Funding news', 'summary': 'A company raised funding.',
+            'link': 'https://example.org/funding', 'published': datetime.now().astimezone().isoformat(),
+        }]}]}
+        with self.assertRaisesRegex(ValueError, 'localization'):
+            sync._build_hn_sections(digest, {})
+
     def test_partial_source_error_retries_then_fails(self):
         result = subprocess.CompletedProcess([], 0, json.dumps({'sources': [
             {'name': 'Hacker News', 'error': 'TLS EOF'},
@@ -73,6 +94,16 @@ class SyncTests(unittest.TestCase):
             validate_payload(json.loads(target.read_text()))
 
 class ContractTests(unittest.TestCase):
+    def test_requires_chinese_localization_for_english_sources(self):
+        data = payload()
+        for section in data['sections']:
+            if section['name'] in {'Hacker News', 'TechCrunch'}:
+                section['items'][0].update(titleZh='中文标题', summaryZh='中文摘要')
+        validate_payload(data)
+        del data['sections'][1]['items'][0]['titleZh']
+        with self.assertRaisesRegex(ValueError, 'localization'):
+            validate_payload(data)
+
     def test_rejects_missing_duplicate_empty_sources(self):
         for mutate in [lambda p: p['sections'].pop(), lambda p: p['sections'].append(p['sections'][0]), lambda p: p['sections'][1].update(items=[])]:
             data = payload(); mutate(data)

@@ -4,6 +4,7 @@ from __future__ import annotations
 import os
 import json
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -29,6 +30,9 @@ FETCH_RETRY_SECONDS = max(0, int(os.environ.get('TECH_NEWS_FETCH_RETRY_SECONDS',
 
 AI_SCRIPT = Path(__file__).resolve().parent / 'ai_digest_zh.py'
 HN_SCRIPT = Path(__file__).resolve().parent / 'hacker_news_digest.py'
+HERMES_BIN = Path(os.environ.get('HERMES_BIN', shutil.which('hermes') or str(Path.home() / '.local/bin/hermes')))
+TRANSLATION_TIMEOUT_SECONDS = int(os.environ.get('TECH_NEWS_TRANSLATION_TIMEOUT_SECONDS', '600'))
+CJK_RE = re.compile(r'[\u3400-\u9fff]')
 
 
 def _run_digest(script_path: Path) -> dict[str, Any]:
@@ -157,7 +161,7 @@ def _build_ai_section(data: dict[str, Any], source_name: str) -> dict[str, Any]:
     return {'name': source_name, 'source': source_url, 'items': items}
 
 
-def _build_hn_sections(data: dict[str, Any]) -> list[dict[str, Any]]:
+def _build_hn_sections(data: dict[str, Any], translations: dict[str, dict[str, str]]) -> list[dict[str, Any]]:
     sections: list[dict[str, Any]] = []
     for source in data.get('sources', []):
         name = source.get('name', 'news source')
@@ -172,10 +176,17 @@ def _build_hn_sections(data: dict[str, Any]) -> list[dict[str, Any]]:
             url = _safe_https_url(item.get('link'))
             if not url:
                 continue
+            localized = translations.get(url, {})
+            title_zh = _normalize_text(localized.get('titleZh', ''), 100)
+            summary_zh = _normalize_text(localized.get('summaryZh', ''), 220)
+            if not CJK_RE.search(title_zh) or (summary and not CJK_RE.search(summary_zh)):
+                raise ValueError(f'missing Chinese localization for {name}: {url}')
             score = item.get('trend_score')
             items.append({
                 'title': title,
                 'summary': summary,
+                'titleZh': title_zh,
+                'summaryZh': summary_zh,
                 'url': url,
                 'source': name,
                 'score': round(float(score), 2) if isinstance(score, (int, float)) else None,
@@ -186,10 +197,94 @@ def _build_hn_sections(data: dict[str, Any]) -> list[dict[str, Any]]:
     return sections
 
 
+def _cached_translations() -> dict[str, dict[str, str]]:
+    try:
+        snapshot = json.loads(OUTPUT_JSON.read_text(encoding='utf-8'))
+    except (OSError, ValueError, TypeError):
+        return {}
+    cached: dict[str, dict[str, str]] = {}
+    for section in snapshot.get('sections', []):
+        if section.get('name') not in {'Hacker News', 'TechCrunch'}:
+            continue
+        for item in section.get('items', []):
+            url = _safe_https_url(item.get('url'))
+            title_zh = item.get('titleZh')
+            summary_zh = item.get('summaryZh', '')
+            if url and isinstance(title_zh, str) and CJK_RE.search(title_zh):
+                cached[url] = {'titleZh': title_zh, 'summaryZh': summary_zh if isinstance(summary_zh, str) else ''}
+    return cached
+
+
+def _translation_candidates(data: dict[str, Any]) -> list[dict[str, str]]:
+    candidates = []
+    for source in data.get('sources', []):
+        for item in (source.get('items') or [])[:4]:
+            url = _safe_https_url(item.get('link'))
+            title = _normalize_text(item.get('title', ''), 100)
+            if url and title:
+                candidates.append({
+                    'url': url,
+                    'title': title,
+                    'summary': _normalize_text(item.get('summary', ''), 220),
+                })
+    return candidates
+
+
+def _parse_translation_response(raw: str) -> dict[str, dict[str, str]]:
+    cleaned = raw.strip()
+    if cleaned.startswith('```'):
+        cleaned = re.sub(r'^```(?:json)?\s*|\s*```$', '', cleaned, flags=re.I)
+    data = json.loads(cleaned)
+    rows = data.get('translations') if isinstance(data, dict) else None
+    if not isinstance(rows, list):
+        raise ValueError('translation response has no translations list')
+    result: dict[str, dict[str, str]] = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        url = _safe_https_url(row.get('url'))
+        title_zh = _normalize_text(row.get('titleZh', ''), 100)
+        summary_zh = _normalize_text(row.get('summaryZh', ''), 220)
+        if url and CJK_RE.search(title_zh) and (not summary_zh or CJK_RE.search(summary_zh)):
+            result[url] = {'titleZh': title_zh, 'summaryZh': summary_zh}
+    return result
+
+
+def _translate_hn_items(data: dict[str, Any]) -> dict[str, dict[str, str]]:
+    candidates = _translation_candidates(data)
+    translations = _cached_translations()
+    missing = [item for item in candidates if item['url'] not in translations]
+    if missing:
+        if not HERMES_BIN.is_file():
+            raise RuntimeError(f'Hermes translator is missing: {HERMES_BIN}')
+        prompt = (
+            '你是科技新闻本地化编辑。把输入 JSON 中每条英文 title 和 summary 准确、自然、简洁地翻译为简体中文。'
+            '专有名词、产品名、公司名和代码名保持官方写法；不要添加事实、评论或解释。'
+            '必须覆盖每个 URL，并只返回一个 JSON 对象，格式为 '
+            '{"translations":[{"url":"原 URL","titleZh":"中文标题","summaryZh":"中文摘要"}]}。输入：'
+            + json.dumps(missing, ensure_ascii=False)
+        )
+        result = subprocess.run(
+            [str(HERMES_BIN), '-m', 'gpt-5.3-codex-spark', '--provider', 'openai-codex',
+             '--reasoning', 'low', '--ignore-rules', '-t', '', '-z', prompt],
+            text=True, capture_output=True, check=False, timeout=TRANSLATION_TIMEOUT_SECONDS,
+        )
+        if result.returncode != 0:
+            detail = result.stderr.strip() or result.stdout.strip() or f'exit code {result.returncode}'
+            raise RuntimeError(f'Hermes localization failed: {detail[:800]}')
+        translations.update(_parse_translation_response(result.stdout))
+
+    missing_urls = [item['url'] for item in candidates if item['url'] not in translations]
+    if missing_urls:
+        raise RuntimeError(f'Hermes localization incomplete: {", ".join(missing_urls)}')
+    return translations
+
+
 def _to_json_payload(
     ai_data: dict[str, Any],
     hn_data: dict[str, Any],
     run_times: dict[str, datetime | None],
+    translations: dict[str, dict[str, str]],
 ) -> dict[str, Any]:
     validate_digest(ai_data)
     validate_digest(hn_data)
@@ -197,10 +292,10 @@ def _to_json_payload(
     sections = []
 
     sections.append(_build_ai_section(ai_data, 'AI资讯'))
-    sections.extend(_build_hn_sections(hn_data))
+    sections.extend(_build_hn_sections(hn_data, translations))
 
     return {
-        'schemaVersion': 1,
+        'schemaVersion': 2,
         'updatedAt': now.isoformat(timespec='seconds'),
         'date': now.date().isoformat(),
         'sections': sections,
@@ -230,7 +325,8 @@ def main() -> int:
     try:
         ai_data = _run_digest(AI_SCRIPT)
         hn_data = _run_digest(HN_SCRIPT)
-        payload = _to_json_payload(ai_data, hn_data, run_times)
+        translations = _translate_hn_items(hn_data)
+        payload = _to_json_payload(ai_data, hn_data, run_times, translations)
         write_snapshot(OUTPUT_JSON, payload)
     except Exception as exc:
         print(f'error: {exc}')

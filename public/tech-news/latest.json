@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-09-14T11:30:24+08:00",
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-14T11:45:28+08:00",
   "date": "2026-09-14",
   "sections": [
     {
@@ -66,12 +66,14 @@
         {
           "title": "Open-Source AI and Open Models Reading List",
           "summary": "How to get up to speed on open models and their implications.",
+          "titleZh": "开源 AI 与开源模型阅读清单",
+          "summaryZh": "快速了解开源模型及其影响。",
           "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
           "source": "Hacker News",
-          "score": 5.64,
+          "score": 5.67,
           "reasons": [
             "AI",
-            "HN分数37",
+            "HN分数42",
             "讨论量2"
           ],
           "published": "2026-09-14T00:22:51+00:00"
@@ -79,36 +81,42 @@
         {
           "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
           "summary": "Private, domain-specific benchmarks in legal, tax, and finance.",
+          "titleZh": "Fable 5.1 解决了诞生于 370 年前的密码 Cyphral Distich",
+          "summaryZh": "法律、税务和金融领域的私有、面向特定领域的基准测试。",
           "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
           "source": "Hacker News",
           "score": 4.5,
           "reasons": [
-            "HN分数554",
-            "讨论量246"
+            "HN分数569",
+            "讨论量248"
           ],
           "published": "2026-09-13T21:06:13+00:00"
         },
         {
           "title": "Why is Google still serving dodgy ads?",
           "summary": "I accidentally clicked a shady YouTube ad that mimics an iOS “Storage Full” alert, reported it (twice), and Google still said it was fine. Meanwhile, Gemini flags it in seconds for deceptive design...",
+          "titleZh": "为何 Google 仍在投放可疑广告？",
+          "summaryZh": "我不小心点开了一个冒充 iOS“存储已满”提示的可疑 YouTube 广告，并举报了两次，但 Google 仍表示没问题。与此同时，Gemini 在几秒内就将其标记为误导性设计。",
           "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
           "source": "Hacker News",
           "score": 4.49,
           "reasons": [
-            "HN分数649",
-            "讨论量304"
+            "HN分数654",
+            "讨论量305"
           ],
           "published": "2026-09-13T17:37:44+00:00"
         },
         {
           "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
           "summary": "Comments",
+          "titleZh": "Astra 和 Fable 仍在对 2025 年的对齐评测简单变体进行“作弊”",
+          "summaryZh": "评论",
           "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
           "source": "Hacker News",
           "score": 4.17,
           "reasons": [
-            "HN分数395",
-            "讨论量179"
+            "HN分数396",
+            "讨论量180"
           ],
           "published": "2026-09-13T14:28:36+00:00"
         }
@@ -121,6 +129,8 @@
         {
           "title": "Insight Partners’ Deven Parekh on why the firm is diversifying while everyone else bets the farm on…",
           "summary": "Insight Partners' Devin Parekh opens up about losing Legora to General Catalyst, why he's fine holding stakes in rival AI labs, and why — even as everyone else piles into OpenAI and Anthropic — his $90 billion firm is de…",
+          "titleZh": "Insight Partners 的 Devin Parekh：为何该公司在其他人都押注 OpenAI 和 Anthropic 时选择多元化",
+          "summaryZh": "Insight Partners 的 Devin Parekh 讨论了将 Legora 让给 General Catalyst 的原因，为什么他对持有竞争性 AI 实验室股份并不反感，以及为何——在其他人都押注 OpenAI 和 Anthropic 的时候——其 900 亿美元规模的公司仍在…",
           "url": "https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/",
           "source": "TechCrunch",
           "score": 4.43,
@@ -132,6 +142,8 @@
         {
           "title": "What’s behind the AI industry’s latest warnings of doom?",
           "summary": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
+          "titleZh": "AI 行业最近“末日”警告背后的原因是什么？",
+          "summaryZh": "在《Equity》节目中，我们讨论了 AI 行业近期围绕其是否对人类构成生存威胁的争论。",
           "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
           "source": "TechCrunch",
           "score": 4.38,
@@ -143,6 +155,8 @@
         {
           "title": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
           "summary": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
+          "titleZh": "奥巴马敦促民主党人为 AI 防范制定“清晰方案”",
+          "summaryZh": "奥巴马最近表示，民主党人需要将人工智能纳入其“核心议程”之一，并围绕该技术的经济影响与安全性“制定非常清晰的方案”。",
           "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
           "source": "TechCrunch",
           "score": 4.29,
@@ -154,6 +168,8 @@
         {
           "title": "TechCrunch Mobility: Lyft has entered the robotaxi chat",
           "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation, and now, more than ever, the role AI is playing in it.",
+          "titleZh": "TechCrunch Mobility：Lyft 已加入 Robotaxi 讨论",
+          "summaryZh": "欢迎回到 TechCrunch Mobility，这里是你关注交通未来的据点，而如今 AI 在其中所扮演的角色比以往更为重要。",
           "url": "https://techcrunch.com/2026/09/13/techcrunch-mobility-lyft-has-entered-the-robotaxi-chat/",
           "source": "TechCrunch",
           "score": 4.28,
