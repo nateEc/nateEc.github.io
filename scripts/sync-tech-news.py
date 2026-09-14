@@ -265,8 +265,7 @@ def _translate_hn_items(data: dict[str, Any]) -> dict[str, dict[str, str]]:
             + json.dumps(missing, ensure_ascii=False)
         )
         result = subprocess.run(
-            [str(HERMES_BIN), '-m', 'gpt-5.3-codex-spark', '--provider', 'openai-codex',
-             '--reasoning', 'low', '--ignore-rules', '-t', '', '-z', prompt],
+            [str(HERMES_BIN), '--ignore-rules', '-t', '', '-z', prompt],
             text=True, capture_output=True, check=False, timeout=TRANSLATION_TIMEOUT_SECONDS,
         )
         if result.returncode != 0:
