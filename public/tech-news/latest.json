@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-14T11:45:28+08:00",
-  "date": "2026-09-14",
+  "updatedAt": "2026-09-15T11:30:56+08:00",
+  "date": "2026-09-15",
   "sections": [
     {
       "name": "AI资讯",
@@ -46,16 +46,16 @@
           "published": "2026-09-01T12:00:00+00:00"
         },
         {
-          "title": "46起违规使用指控后，Flock将监控数据默认留存缩至7天",
-          "summary": "这家为警方提供摄像头和车牌识别系统的公司新增案件代码要求并缩短默认留存期，但两项限制均可覆盖，实际成效仍取决于未披露的延长保存机制及监管进展。另有乌兰察布数据中心承诺容量达12.5吉瓦却面临供水压力，以及四款AI模型耗资266美元接力将已知漏洞变成Root工具。",
-          "url": "https://ai-digest.liziran.com/zh/digest/2026-08-24-flock-cuts-default-data-retention-after-46-unauthorized-use.html",
+          "title": "Google向650多家政企伙伴开放自动查漏补丁模型",
+          "summary": "Fairwind计划将限制更宽松的Gemini网络安全模型交给可信防御者，配合CodeMender可把部分漏洞的查找和补丁生成从数周缩至数分钟，但成效主要来自Google及合作方，准入、收费与独立验证仍待明确。另有企业以自托管小模型承接一半内部AI流量，以及ZimaBlue用12万小时第一视角视频提升机器人零样本操作成功率。",
+          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-03-google-opens-gemini-cyber-model-over-650-partners-automated.html",
           "source": "AI资讯",
-          "score": 5.0,
+          "score": 4.4,
           "reasons": [
-            "模型",
-            "监管"
+            "安全",
+            "模型"
           ],
-          "published": "2026-08-24T12:00:00+00:00"
+          "published": "2026-09-03T12:00:00+00:00"
         }
       ]
     },
@@ -64,61 +64,61 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Open-Source AI and Open Models Reading List",
-          "summary": "How to get up to speed on open models and their implications.",
-          "titleZh": "开源 AI 与开源模型阅读清单",
-          "summaryZh": "快速了解开源模型及其影响。",
-          "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+          "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+          "summary": "My brother and I spent a lot of time designing our eBPF security agent to be really fast from the ground up, but recently we discovered we could make it much faster using memoization! A couple of weeks ago, I profiled th…",
+          "titleZh": "通过记忆化将 eBPF CPU 开销降低约 90%（非 AI 生成）",
+          "summaryZh": "我和弟弟花了大量时间从头设计 eBPF 安全代理，力求让它真正快速，但最近发现，通过记忆化可以让它更快！几周前，我对其进行了性能分析……",
+          "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
           "source": "Hacker News",
-          "score": 5.67,
+          "score": 5.77,
           "reasons": [
             "AI",
-            "HN分数42",
-            "讨论量2"
+            "HN分数49",
+            "讨论量15"
           ],
-          "published": "2026-09-14T00:22:51+00:00"
+          "published": "2026-09-14T14:29:23+00:00"
         },
         {
-          "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
-          "summary": "Private, domain-specific benchmarks in legal, tax, and finance.",
-          "titleZh": "Fable 5.1 解决了诞生于 370 年前的密码 Cyphral Distich",
-          "summaryZh": "法律、税务和金融领域的私有、面向特定领域的基准测试。",
-          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+          "title": "Steam Frame starts at $1059",
+          "summary": "VR and non-VR gaming",
+          "titleZh": "Steam Frame 起售价为 1059 美元",
+          "summaryZh": "VR 和非 VR 游戏",
+          "url": "https://store.steampowered.com/hardware/steamframe",
           "source": "Hacker News",
           "score": 4.5,
           "reasons": [
-            "HN分数569",
-            "讨论量248"
+            "HN分数544",
+            "讨论量420"
           ],
-          "published": "2026-09-13T21:06:13+00:00"
+          "published": "2026-09-14T17:27:55+00:00"
         },
         {
-          "title": "Why is Google still serving dodgy ads?",
-          "summary": "I accidentally clicked a shady YouTube ad that mimics an iOS “Storage Full” alert, reported it (twice), and Google still said it was fine. Meanwhile, Gemini flags it in seconds for deceptive design...",
-          "titleZh": "为何 Google 仍在投放可疑广告？",
-          "summaryZh": "我不小心点开了一个冒充 iOS“存储已满”提示的可疑 YouTube 广告，并举报了两次，但 Google 仍表示没问题。与此同时，Gemini 在几秒内就将其标记为误导性设计。",
-          "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+          "title": "iOS 27, iPadOS 27, and macOS 27",
+          "summary": "Apple’s latest software updates introduce Siri AI and deliver helpful new Apple Intelligence features.",
+          "titleZh": "iOS 27、iPadOS 27 和 macOS 27",
+          "summaryZh": "Apple 最新的软件更新引入了 Siri AI，并带来实用的新 Apple Intelligence 功能。",
+          "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
           "source": "Hacker News",
           "score": 4.49,
           "reasons": [
-            "HN分数654",
-            "讨论量305"
+            "HN分数439",
+            "讨论量491"
           ],
-          "published": "2026-09-13T17:37:44+00:00"
+          "published": "2026-09-14T17:50:29+00:00"
         },
         {
-          "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
+          "title": "XCancel service is suspended until further notice",
           "summary": "Comments",
-          "titleZh": "Astra 和 Fable 仍在对 2025 年的对齐评测简单变体进行“作弊”",
+          "titleZh": "XCancel 服务暂停，恢复时间另行通知",
           "summaryZh": "评论",
-          "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+          "url": "https://xcancel.com/#",
           "source": "Hacker News",
-          "score": 4.17,
+          "score": 4.4,
           "reasons": [
-            "HN分数396",
-            "讨论量180"
+            "HN分数501",
+            "讨论量798"
           ],
-          "published": "2026-09-13T14:28:36+00:00"
+          "published": "2026-09-14T09:51:50+00:00"
         }
       ]
     },
@@ -127,56 +127,56 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Insight Partners’ Deven Parekh on why the firm is diversifying while everyone else bets the farm on…",
-          "summary": "Insight Partners' Devin Parekh opens up about losing Legora to General Catalyst, why he's fine holding stakes in rival AI labs, and why — even as everyone else piles into OpenAI and Anthropic — his $90 billion firm is de…",
-          "titleZh": "Insight Partners 的 Devin Parekh：为何该公司在其他人都押注 OpenAI 和 Anthropic 时选择多元化",
-          "summaryZh": "Insight Partners 的 Devin Parekh 讨论了将 Legora 让给 General Catalyst 的原因，为什么他对持有竞争性 AI 实验室股份并不反感，以及为何——在其他人都押注 OpenAI 和 Anthropic 的时候——其 900 亿美元规模的公司仍在…",
-          "url": "https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/",
+          "title": "Jensen Huang took a call from Trump, and showed off something else, too",
+          "summary": "When Jensen Huang took a live call from Trump, some of us were more focused the phone he used to take it.",
+          "titleZh": "Jensen Huang 接听了 Trump 的电话，还展示了另一件东西",
+          "summaryZh": "当 Jensen Huang 接听 Trump 的现场电话时，我们中的一些人更关注的是他用来接听电话的那部手机。",
+          "url": "https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.55,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-13T21:30:00+00:00"
+          "published": "2026-09-15T01:50:48+00:00"
         },
         {
-          "title": "What’s behind the AI industry’s latest warnings of doom?",
-          "summary": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
-          "titleZh": "AI 行业最近“末日”警告背后的原因是什么？",
-          "summaryZh": "在《Equity》节目中，我们讨论了 AI 行业近期围绕其是否对人类构成生存威胁的争论。",
-          "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
+          "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+          "summary": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
+          "titleZh": "Nvidia CEO Jensen Huang 告诉 Trump：“我们不会让 AI 放缓发生”",
+          "summaryZh": "尽管 Elon Musk 和 Sam Altman 都支持 Dario Amodei 关于放慢 AI 开发速度的呼吁，但 Jensen Huang 似乎持不同看法。",
+          "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-13T19:40:15+00:00"
+          "published": "2026-09-14T21:51:02+00:00"
         },
         {
-          "title": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
-          "summary": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
-          "titleZh": "奥巴马敦促民主党人为 AI 防范制定“清晰方案”",
-          "summaryZh": "奥巴马最近表示，民主党人需要将人工智能纳入其“核心议程”之一，并围绕该技术的经济影响与安全性“制定非常清晰的方案”。",
-          "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+          "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
+          "summary": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
+          "titleZh": "据报道，OpenAI 以 3 亿美元收购智能手机摄像头制造商 Glass Imaging",
+          "summaryZh": "Glass Imaging 由两名前 Apple 工程师创立，他们此前曾领导开发 Apple 人像模式的团队。",
+          "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 4.41,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-13T16:30:00+00:00"
+          "published": "2026-09-14T20:44:14+00:00"
         },
         {
-          "title": "TechCrunch Mobility: Lyft has entered the robotaxi chat",
-          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation, and now, more than ever, the role AI is playing in it.",
-          "titleZh": "TechCrunch Mobility：Lyft 已加入 Robotaxi 讨论",
-          "summaryZh": "欢迎回到 TechCrunch Mobility，这里是你关注交通未来的据点，而如今 AI 在其中所扮演的角色比以往更为重要。",
-          "url": "https://techcrunch.com/2026/09/13/techcrunch-mobility-lyft-has-entered-the-robotaxi-chat/",
+          "title": "AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance",
+          "summary": "The company also announced a product called Active Compute Fabric, a network technology that targets the fact that much GPU time is wasted waiting for data to arrive.",
+          "titleZh": "AI 基础设施公司 Cornelis 筹集 2.05 亿美元，逐步削弱 Nvidia 的主导地位",
+          "summaryZh": "该公司还宣布推出名为 Active Compute Fabric 的产品。这项网络技术旨在解决大量 GPU 时间被浪费在等待数据到达这一问题。",
+          "url": "https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/",
           "source": "TechCrunch",
-          "score": 4.28,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-13T16:04:00+00:00"
+          "published": "2026-09-14T20:07:37+00:00"
         }
       ]
     }
@@ -184,11 +184,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-14T11:00:35.538022+08:00"
+      "lastRunAt": "2026-09-15T11:02:16.510302+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-14T11:00:47.584842+08:00"
+      "lastRunAt": "2026-09-15T11:02:42.703274+08:00"
     }
   }
 }
