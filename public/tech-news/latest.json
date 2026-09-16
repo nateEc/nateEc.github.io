@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-15T11:30:56+08:00",
-  "date": "2026-09-15",
+  "updatedAt": "2026-09-16T11:31:36+08:00",
+  "date": "2026-09-16",
   "sections": [
     {
       "name": "AI资讯",
@@ -64,61 +64,61 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
-          "summary": "My brother and I spent a lot of time designing our eBPF security agent to be really fast from the ground up, but recently we discovered we could make it much faster using memoization! A couple of weeks ago, I profiled th…",
-          "titleZh": "通过记忆化将 eBPF CPU 开销降低约 90%（非 AI 生成）",
-          "summaryZh": "我和弟弟花了大量时间从头设计 eBPF 安全代理，力求让它真正快速，但最近发现，通过记忆化可以让它更快！几周前，我对其进行了性能分析……",
-          "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+          "title": "Stay discoverable in search while disallowing AI training",
+          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft.",
+          "titleZh": "在禁止 AI 训练的同时保持搜索可发现性",
+          "summaryZh": "Cloudflare 为网站所有者提供了一种在禁止 AI 训练的同时保持网站可发现性的方式。新的控制选项和 Accountable 标识，与 Apple、Google 和 Microsoft 建立了共享模式。",
+          "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
           "source": "Hacker News",
-          "score": 5.77,
+          "score": 5.93,
           "reasons": [
             "AI",
-            "HN分数49",
-            "讨论量15"
+            "HN分数27",
+            "讨论量13"
           ],
-          "published": "2026-09-14T14:29:23+00:00"
+          "published": "2026-09-16T02:25:18+00:00"
         },
         {
-          "title": "Steam Frame starts at $1059",
-          "summary": "VR and non-VR gaming",
-          "titleZh": "Steam Frame 起售价为 1059 美元",
-          "summaryZh": "VR 和非 VR 游戏",
-          "url": "https://store.steampowered.com/hardware/steamframe",
+          "title": "Introducing System One Models and Jev",
+          "summary": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
+          "titleZh": "推出 System One Models 和 Jev",
+          "summaryZh": "TypeSafe AI 是一家构建机器原生智能基础设施的 AI 实验室，旨在让软件能够自主决策。现可提前体验我们的首个 System One Model：Jev。",
+          "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
           "source": "Hacker News",
-          "score": 4.5,
+          "score": 4.6,
           "reasons": [
-            "HN分数544",
-            "讨论量420"
+            "HN分数886",
+            "讨论量283"
           ],
-          "published": "2026-09-14T17:27:55+00:00"
+          "published": "2026-09-15T19:25:03+00:00"
         },
         {
-          "title": "iOS 27, iPadOS 27, and macOS 27",
-          "summary": "Apple’s latest software updates introduce Siri AI and deliver helpful new Apple Intelligence features.",
-          "titleZh": "iOS 27、iPadOS 27 和 macOS 27",
-          "summaryZh": "Apple 最新的软件更新引入了 Siri AI，并带来实用的新 Apple Intelligence 功能。",
-          "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+          "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+          "summary": "E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, rendered as real, hand-cut 1800s bird illustrations. - arnegiacomo/fugleramme",
+          "titleZh": "Show HN：一款能听辨鸟鸣并将其绘制成 19 世纪插画的电子墨水相框",
+          "summaryZh": "适用于 Raspberry Pi 的电子墨水鸟类相框：通过声音实时识别鸟类，使用完全本地化的 AI，并将结果渲染为真实的手工剪裁风格 19 世纪鸟类插画。- arnegiacomo/fugleramme",
+          "url": "https://github.com/arnegiacomo/fugleramme",
           "source": "Hacker News",
-          "score": 4.49,
+          "score": 4.43,
           "reasons": [
-            "HN分数439",
-            "讨论量491"
+            "HN分数1378",
+            "讨论量183"
           ],
-          "published": "2026-09-14T17:50:29+00:00"
+          "published": "2026-09-15T12:31:10+00:00"
         },
         {
-          "title": "XCancel service is suspended until further notice",
-          "summary": "Comments",
-          "titleZh": "XCancel 服务暂停，恢复时间另行通知",
-          "summaryZh": "评论",
-          "url": "https://xcancel.com/#",
+          "title": "An update on Wayback Machine access",
+          "summary": "Here’s what’s going on. The Internet Archive’s Wayback Machine has been hit by waves of high-volume automated traffic, and we’ve put protections in place to keep the service running. One recent change: we rewrote the mes…",
+          "titleZh": "Wayback Machine 访问情况更新",
+          "summaryZh": "以下是当前情况。Internet Archive 的 Wayback Machine 遭遇了多轮高流量自动化访问，我们已采取保护措施以维持服务运行。近期的一项变化是：我们重写了 mes…",
+          "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
           "source": "Hacker News",
-          "score": 4.4,
+          "score": 4.33,
           "reasons": [
-            "HN分数501",
-            "讨论量798"
+            "HN分数423",
+            "讨论量222"
           ],
-          "published": "2026-09-14T09:51:50+00:00"
+          "published": "2026-09-15T17:52:18+00:00"
         }
       ]
     },
@@ -127,56 +127,56 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Jensen Huang took a call from Trump, and showed off something else, too",
-          "summary": "When Jensen Huang took a live call from Trump, some of us were more focused the phone he used to take it.",
-          "titleZh": "Jensen Huang 接听了 Trump 的电话，还展示了另一件东西",
-          "summaryZh": "当 Jensen Huang 接听 Trump 的现场电话时，我们中的一些人更关注的是他用来接听电话的那部手机。",
-          "url": "https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/",
+          "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
+          "summary": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
+          "titleZh": "Nvidia 的 Jensen Huang：我们不需要 AI 监管，安全问题交给我们",
+          "summaryZh": "Jensen Huang 表示，AI 并不是什么新的“外星思维”。它只是硬件和软件，因此每家 AI 产品制造商都可以通过工程手段保障安全。",
+          "url": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
           "source": "TechCrunch",
-          "score": 4.55,
+          "score": 4.51,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-15T01:50:48+00:00"
+          "published": "2026-09-16T00:20:39+00:00"
         },
         {
-          "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
-          "summary": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
-          "titleZh": "Nvidia CEO Jensen Huang 告诉 Trump：“我们不会让 AI 放缓发生”",
-          "summaryZh": "尽管 Elon Musk 和 Sam Altman 都支持 Dario Amodei 关于放慢 AI 开发速度的呼吁，但 Jensen Huang 似乎持不同看法。",
-          "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+          "title": "The AI data center boom is colliding with cities scarred by big industry",
+          "summary": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.",
+          "titleZh": "AI 数据中心热潮正与饱受重工业创伤的城市发生冲突",
+          "summaryZh": "反对建设数据中心的全国性抗议已蔓延至 Philadelphia，当地官员提出了在一个已受到现已停运的炼油厂影响的社区进行建设的可能性。",
+          "url": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
           "source": "TechCrunch",
           "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-14T21:51:02+00:00"
+          "published": "2026-09-15T21:47:38+00:00"
         },
         {
-          "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
-          "summary": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
-          "titleZh": "据报道，OpenAI 以 3 亿美元收购智能手机摄像头制造商 Glass Imaging",
-          "summaryZh": "Glass Imaging 由两名前 Apple 工程师创立，他们此前曾领导开发 Apple 人像模式的团队。",
-          "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+          "title": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
+          "summary": "A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting.",
+          "titleZh": "Meta 现允许 AI agents 处理 WhatsApp Business 设置中的繁琐工作",
+          "summaryZh": "新的 WhatsApp Business MCP server 允许开发者使用 Claude、Cursor、Codex 和 ChatGPT 等 AI coding agents，处理设置、消息模板、测试和故障排查。",
+          "url": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.4,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-14T20:44:14+00:00"
+          "published": "2026-09-15T20:12:53+00:00"
         },
         {
-          "title": "AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance",
-          "summary": "The company also announced a product called Active Compute Fabric, a network technology that targets the fact that much GPU time is wasted waiting for data to arrive.",
-          "titleZh": "AI 基础设施公司 Cornelis 筹集 2.05 亿美元，逐步削弱 Nvidia 的主导地位",
-          "summaryZh": "该公司还宣布推出名为 Active Compute Fabric 的产品。这项网络技术旨在解决大量 GPU 时间被浪费在等待数据到达这一问题。",
-          "url": "https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/",
+          "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+          "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+          "titleZh": "AI 墓地：一份持续更新的失败项目和初创公司名单",
+          "summaryZh": "从一再延期的 Apple Siri AI，到混乱上线的 OpenAI“超级应用”，本文盘点了那些已经关闭或未达到预期的 AI 项目。",
+          "url": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-14T20:07:37+00:00"
+          "published": "2026-09-15T19:00:00+00:00"
         }
       ]
     }
@@ -184,11 +184,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-15T11:02:16.510302+08:00"
+      "lastRunAt": "2026-09-16T11:00:56.655940+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-15T11:02:42.703274+08:00"
+      "lastRunAt": "2026-09-16T11:02:46.902801+08:00"
     }
   }
 }
