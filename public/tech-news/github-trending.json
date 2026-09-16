@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T14:30:31+08:00",
-  "date": "2026-09-15",
+  "updatedAt": "2026-09-16T14:30:13+08:00",
+  "date": "2026-09-16",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "JustVugg/colibri",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "language": "C",
-      "languageColor": "#555555",
-      "starsToday": 2173,
-      "totalStars": 32523,
-      "forks": 3423,
-      "url": "https://github.com/JustVugg/colibri"
-    },
-    {
-      "rank": 2,
       "fullName": "alibaba/open-code-review",
       "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "starsToday": 1571,
-      "totalStars": 26419,
-      "forks": 1901,
+      "starsToday": 2756,
+      "totalStars": 29376,
+      "forks": 2085,
       "url": "https://github.com/alibaba/open-code-review"
     },
     {
+      "rank": 2,
+      "fullName": "JustVugg/colibri",
+      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+      "language": "C",
+      "languageColor": "#555555",
+      "starsToday": 2026,
+      "totalStars": 34182,
+      "forks": 3580,
+      "url": "https://github.com/JustVugg/colibri"
+    },
+    {
       "rank": 3,
-      "fullName": "multimodal-art-projection/YuE",
-      "description": "YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 559,
-      "totalStars": 8619,
-      "forks": 923,
-      "url": "https://github.com/multimodal-art-projection/YuE"
+      "fullName": "ever-co/ever-gauzy",
+      "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 634,
+      "totalStars": 6873,
+      "forks": 1057,
+      "url": "https://github.com/ever-co/ever-gauzy"
     },
     {
       "rank": 4,
@@ -44,84 +44,90 @@
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 2776,
-      "totalStars": 29761,
-      "forks": 3601,
+      "starsToday": 2072,
+      "totalStars": 31331,
+      "forks": 3725,
       "url": "https://github.com/debpalash/VoiceStudio"
     },
     {
       "rank": 5,
-      "fullName": "666ghj/MiroFish",
-      "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 560,
-      "totalStars": 73411,
-      "forks": 11300,
-      "url": "https://github.com/666ghj/MiroFish"
+      "fullName": "Homebrew/BrewUI",
+      "description": "📺 Homebrew's official macOS GUI",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "starsToday": 271,
+      "totalStars": 1556,
+      "forks": 37,
+      "url": "https://github.com/Homebrew/BrewUI"
     },
     {
       "rank": 6,
-      "fullName": "Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 651,
-      "totalStars": 81596,
-      "forks": 7098,
-      "url": "https://github.com/Panniantong/Agent-Reach"
+      "fullName": "melgarafael/DeskcommCRM",
+      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 193,
+      "totalStars": 2956,
+      "forks": 695,
+      "url": "https://github.com/melgarafael/DeskcommCRM"
     },
     {
       "rank": 7,
-      "fullName": "asgeirtj/system_prompts_leaks",
-      "description": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 764,
-      "totalStars": 66967,
-      "forks": 10882,
-      "url": "https://github.com/asgeirtj/system_prompts_leaks"
+      "fullName": "alphaXiv/OpenResearch",
+      "description": "Turn your coding agents into research agents",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 531,
+      "totalStars": 3617,
+      "forks": 237,
+      "url": "https://github.com/alphaXiv/OpenResearch"
     },
     {
       "rank": 8,
-      "fullName": "rlaope/oh-my-hermes",
-      "description": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 77,
-      "totalStars": 2220,
-      "forks": 168,
-      "url": "https://github.com/rlaope/oh-my-hermes"
+      "fullName": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "languageColor": "#B07219",
+      "starsToday": 725,
+      "totalStars": 76991,
+      "forks": 8494,
+      "url": "https://github.com/NationalSecurityAgency/ghidra"
     },
     {
       "rank": 9,
-      "fullName": "localsend/localsend",
-      "description": "An open-source cross-platform alternative to AirDrop",
-      "language": "Dart",
-      "languageColor": "#8B949E",
-      "starsToday": 251,
-      "totalStars": 91470,
-      "forks": 5103,
-      "url": "https://github.com/localsend/localsend"
+      "fullName": "danny-avila/LibreChat",
+      "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions,",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 254,
+      "totalStars": 43966,
+      "forks": 9037,
+      "url": "https://github.com/danny-avila/LibreChat"
     },
     {
       "rank": 10,
-      "fullName": "dani-garcia/vaultwarden",
-      "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+      "fullName": "pacifio/atlas",
+      "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
       "language": "Rust",
       "languageColor": "#DEA584",
-      "starsToday": 115,
-      "totalStars": 67593,
-      "forks": 3213,
-      "url": "https://github.com/dani-garcia/vaultwarden"
+      "starsToday": 91,
+      "totalStars": 4729,
+      "forks": 282,
+      "url": "https://github.com/pacifio/atlas"
     }
   ],
   "languages": [
     {
-      "name": "Python",
-      "count": 5,
-      "share": 50,
-      "color": "#3572A5"
+      "name": "TypeScript",
+      "count": 3,
+      "share": 30,
+      "color": "#3178C6"
+    },
+    {
+      "name": "Rust",
+      "count": 2,
+      "share": 20,
+      "color": "#DEA584"
     },
     {
       "name": "C",
@@ -130,39 +136,49 @@
       "color": "#555555"
     },
     {
-      "name": "Dart",
-      "count": 1,
-      "share": 10,
-      "color": "#8B949E"
-    },
-    {
       "name": "Go",
       "count": 1,
       "share": 10,
       "color": "#00ADD8"
     },
     {
-      "name": "JavaScript",
+      "name": "Java",
       "count": 1,
       "share": 10,
-      "color": "#F1E05A"
+      "color": "#B07219"
     },
     {
-      "name": "Rust",
+      "name": "Python",
       "count": 1,
       "share": 10,
-      "color": "#DEA584"
+      "color": "#3572A5"
+    },
+    {
+      "name": "Swift",
+      "count": 1,
+      "share": 10,
+      "color": "#F05138"
     }
   ],
   "themes": [
     {
+      "name": "Agent systems",
+      "count": 5,
+      "repositories": [
+        "alibaba/open-code-review",
+        "melgarafael/DeskcommCRM",
+        "alphaXiv/OpenResearch",
+        "danny-avila/LibreChat"
+      ]
+    },
+    {
       "name": "AI infrastructure",
       "count": 4,
       "repositories": [
-        "JustVugg/colibri",
         "alibaba/open-code-review",
-        "Panniantong/Agent-Reach",
-        "rlaope/oh-my-hermes"
+        "JustVugg/colibri",
+        "melgarafael/DeskcommCRM",
+        "danny-avila/LibreChat"
       ]
     },
     {
@@ -170,18 +186,9 @@
       "count": 4,
       "repositories": [
         "alibaba/open-code-review",
-        "Panniantong/Agent-Reach",
-        "asgeirtj/system_prompts_leaks",
-        "rlaope/oh-my-hermes"
-      ]
-    },
-    {
-      "name": "Agent systems",
-      "count": 3,
-      "repositories": [
-        "alibaba/open-code-review",
-        "Panniantong/Agent-Reach",
-        "rlaope/oh-my-hermes"
+        "alphaXiv/OpenResearch",
+        "danny-avila/LibreChat",
+        "pacifio/atlas"
       ]
     }
   ]
