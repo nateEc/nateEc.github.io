@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-16T11:31:36+08:00",
-  "date": "2026-09-16",
+  "updatedAt": "2026-09-17T11:30:44+08:00",
+  "date": "2026-09-17",
   "sections": [
     {
       "name": "AI资讯",
@@ -64,61 +64,61 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft.",
-          "titleZh": "在禁止 AI 训练的同时保持搜索可发现性",
-          "summaryZh": "Cloudflare 为网站所有者提供了一种在禁止 AI 训练的同时保持网站可发现性的方式。新的控制选项和 Accountable 标识，与 Apple、Google 和 Microsoft 建立了共享模式。",
-          "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+          "title": "OpenSpec – A lightweight and configurable AI spec framework",
+          "summary": "OpenSpec helps teams and coding agents create, refine, and manage living specifications.",
+          "titleZh": "OpenSpec——轻量且可配置的 AI 规范框架",
+          "summaryZh": "OpenSpec 帮助团队和编码代理创建、完善和管理持续演进的规范。",
+          "url": "https://openspec.dev/",
           "source": "Hacker News",
-          "score": 5.93,
+          "score": 6.32,
           "reasons": [
             "AI",
-            "HN分数27",
-            "讨论量13"
+            "HN分数90",
+            "讨论量35"
           ],
-          "published": "2026-09-16T02:25:18+00:00"
+          "published": "2026-09-16T23:06:39+00:00"
         },
         {
-          "title": "Introducing System One Models and Jev",
-          "summary": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
-          "titleZh": "推出 System One Models 和 Jev",
-          "summaryZh": "TypeSafe AI 是一家构建机器原生智能基础设施的 AI 实验室，旨在让软件能够自主决策。现可提前体验我们的首个 System One Model：Jev。",
-          "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+          "title": "Small programming tricks",
+          "summary": "A lot of effective engineering comes from the accumulation of small nuggets of knowledge.",
+          "titleZh": "小编程技巧",
+          "summaryZh": "许多高效的工程实践，都源于点滴知识的积累。",
+          "url": "https://will-keleher.com/posts/small-programming-tricks-matter/",
           "source": "Hacker News",
-          "score": 4.6,
+          "score": 4.24,
           "reasons": [
-            "HN分数886",
-            "讨论量283"
+            "HN分数424",
+            "讨论量189"
           ],
-          "published": "2026-09-15T19:25:03+00:00"
+          "published": "2026-09-16T15:56:47+00:00"
         },
         {
-          "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
-          "summary": "E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, rendered as real, hand-cut 1800s bird illustrations. - arnegiacomo/fugleramme",
-          "titleZh": "Show HN：一款能听辨鸟鸣并将其绘制成 19 世纪插画的电子墨水相框",
-          "summaryZh": "适用于 Raspberry Pi 的电子墨水鸟类相框：通过声音实时识别鸟类，使用完全本地化的 AI，并将结果渲染为真实的手工剪裁风格 19 世纪鸟类插画。- arnegiacomo/fugleramme",
-          "url": "https://github.com/arnegiacomo/fugleramme",
+          "title": "Training a 4B model to produce 81% faster query plans than Postgres",
+          "summary": "...or how to make Qwen learn query optimization via agentic reinforcement learning",
+          "titleZh": "训练一个 4B 模型，使其生成查询计划的速度比 Postgres 快 81%",
+          "summaryZh": "……或者说，如何通过智能体强化学习让 Qwen 学会查询优化",
+          "url": "https://rohanbansal.com/qorl",
           "source": "Hacker News",
-          "score": 4.43,
+          "score": 4.18,
           "reasons": [
-            "HN分数1378",
-            "讨论量183"
+            "HN分数433",
+            "讨论量91"
           ],
-          "published": "2026-09-15T12:31:10+00:00"
+          "published": "2026-09-16T18:50:00+00:00"
         },
         {
-          "title": "An update on Wayback Machine access",
-          "summary": "Here’s what’s going on. The Internet Archive’s Wayback Machine has been hit by waves of high-volume automated traffic, and we’ve put protections in place to keep the service running. One recent change: we rewrote the mes…",
-          "titleZh": "Wayback Machine 访问情况更新",
-          "summaryZh": "以下是当前情况。Internet Archive 的 Wayback Machine 遭遇了多轮高流量自动化访问，我们已采取保护措施以维持服务运行。近期的一项变化是：我们重写了 mes…",
-          "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
+          "title": "Australia says it could follow Canada in forging deeper ties with EU",
+          "summary": "Trade minister says Canberra is on the same page as Ottawa and ‘will take great interest in what Mark Carney does’",
+          "titleZh": "澳大利亚称可能效仿加拿大，与欧盟建立更紧密的关系",
+          "summaryZh": "贸易部长表示，堪培拉与渥太华立场一致，“会高度关注 Mark Carney 的行动”",
+          "url": "https://www.independent.co.uk/news/world/australasia/canda-eu-membership-australia-us-trade-b3050227.html",
           "source": "Hacker News",
-          "score": 4.33,
+          "score": 4.15,
           "reasons": [
-            "HN分数423",
-            "讨论量222"
+            "HN分数183",
+            "讨论量131"
           ],
-          "published": "2026-09-15T17:52:18+00:00"
+          "published": "2026-09-16T22:56:48+00:00"
         }
       ]
     },
@@ -127,56 +127,56 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
-          "summary": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
-          "titleZh": "Nvidia 的 Jensen Huang：我们不需要 AI 监管，安全问题交给我们",
-          "summaryZh": "Jensen Huang 表示，AI 并不是什么新的“外星思维”。它只是硬件和软件，因此每家 AI 产品制造商都可以通过工程手段保障安全。",
-          "url": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+          "title": "Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what…",
+          "summary": "This session will explore how early-stage companies are building teams where humans and AI agents work alongside each other — and how founders can do that without sacrificing speed, accountability, or culture. Learn more…",
+          "titleZh": "你的创业公司下一位队友可能是 AI 代理：Gusto、Insight Partners 和 Leland 解释这将带来哪些变化……",
+          "summaryZh": "本场讨论将探讨早期公司如何组建由人类和 AI 代理协同工作的团队，以及创始人如何在不牺牲速度、责任感或企业文化的情况下实现这一点。了解更多……",
+          "url": "https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/",
           "source": "TechCrunch",
-          "score": 4.51,
+          "score": 4.6,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-16T00:20:39+00:00"
+          "published": "2026-09-17T03:30:00+00:00"
         },
         {
-          "title": "The AI data center boom is colliding with cities scarred by big industry",
-          "summary": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.",
-          "titleZh": "AI 数据中心热潮正与饱受重工业创伤的城市发生冲突",
-          "summaryZh": "反对建设数据中心的全国性抗议已蔓延至 Philadelphia，当地官员提出了在一个已受到现已停运的炼油厂影响的社区进行建设的可能性。",
-          "url": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
+          "title": "Snap tries to make the case again for its $2,200 smart glasses",
+          "summary": "Since Specs' debut earlier this year, Snap has clearly been looking for an opportunity to explain why the smart glasses deserve to exist.",
+          "titleZh": "Snap 再次努力证明其售价 2200 美元的智能眼镜物有所值",
+          "summaryZh": "自 Specs 于今年早些时候亮相以来，Snap 显然一直在寻找机会解释这款智能眼镜为何有存在的必要。",
+          "url": "https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.53,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-15T21:47:38+00:00"
+          "published": "2026-09-17T00:58:49+00:00"
         },
         {
-          "title": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
-          "summary": "A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting.",
-          "titleZh": "Meta 现允许 AI agents 处理 WhatsApp Business 设置中的繁琐工作",
-          "summaryZh": "新的 WhatsApp Business MCP server 允许开发者使用 Claude、Cursor、Codex 和 ChatGPT 等 AI coding agents，处理设置、消息模板、测试和故障排查。",
-          "url": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+          "title": "Al Gore says the real AI risk isn’t data centers — it’s what industry leaders are warning about",
+          "summary": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
+          "titleZh": "Al Gore 称，真正的 AI 风险不是数据中心，而是行业领导者发出的警告",
+          "summaryZh": "Al Gore 在接受 TechCrunch 采访时表示，他并不太担心 AI 数据中心的排放，更担忧 AI 行业自身对于这项技术发展方向的警告。",
+          "url": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 4.5,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-15T20:12:53+00:00"
+          "published": "2026-09-16T23:43:09+00:00"
         },
         {
-          "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-          "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-          "titleZh": "AI 墓地：一份持续更新的失败项目和初创公司名单",
-          "summaryZh": "从一再延期的 Apple Siri AI，到混乱上线的 OpenAI“超级应用”，本文盘点了那些已经关闭或未达到预期的 AI 项目。",
-          "url": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+          "title": "Anthropic and OpenAI want to embed safety evaluators. Will they really be independent?",
+          "summary": "Anthropic and OpenAI want to embed independent safety evaluators inside their AI labs. Researchers welcome the unprecedented access, but warn meaningful oversight requires transparency, independence, and eventually regul…",
+          "titleZh": "Anthropic 和 OpenAI 想让安全评估人员常驻其中。他们真的会保持独立吗？",
+          "summaryZh": "Anthropic 和 OpenAI 希望让独立的安全评估人员进驻各自的 AI 实验室。研究人员欢迎这种前所未有的访问权限，但警告称，有意义的监督需要透明度、独立性，并最终需要监管……",
+          "url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-15T19:00:00+00:00"
+          "published": "2026-09-16T21:07:24+00:00"
         }
       ]
     }
@@ -184,11 +184,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-16T11:00:56.655940+08:00"
+      "lastRunAt": "2026-09-17T11:01:20.358281+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-16T11:02:46.902801+08:00"
+      "lastRunAt": "2026-09-17T11:02:03.632961+08:00"
     }
   }
 }
