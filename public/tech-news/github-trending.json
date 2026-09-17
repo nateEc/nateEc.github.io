@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T14:30:13+08:00",
-  "date": "2026-09-16",
+  "updatedAt": "2026-09-17T14:30:36+08:00",
+  "date": "2026-09-17",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,123 +11,123 @@
       "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "starsToday": 2756,
-      "totalStars": 29376,
-      "forks": 2085,
+      "starsToday": 3231,
+      "totalStars": 32737,
+      "forks": 2316,
       "url": "https://github.com/alibaba/open-code-review"
     },
     {
       "rank": 2,
+      "fullName": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 927,
+      "totalStars": 7949,
+      "forks": 447,
+      "url": "https://github.com/cloudflare/security-audit-skill"
+    },
+    {
+      "rank": 3,
       "fullName": "JustVugg/colibri",
       "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
       "language": "C",
       "languageColor": "#555555",
-      "starsToday": 2026,
-      "totalStars": 34182,
-      "forks": 3580,
+      "starsToday": 1546,
+      "totalStars": 35205,
+      "forks": 3702,
       "url": "https://github.com/JustVugg/colibri"
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "fullName": "abue-ammar/tinycast",
+      "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "starsToday": 1179,
+      "totalStars": 5772,
+      "forks": 274,
+      "url": "https://github.com/abue-ammar/tinycast"
+    },
+    {
+      "rank": 5,
+      "fullName": "jamiepine/voicebox",
+      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 417,
+      "totalStars": 54554,
+      "forks": 6798,
+      "url": "https://github.com/jamiepine/voicebox"
+    },
+    {
+      "rank": 6,
+      "fullName": "Lakr233/vphone-cli",
+      "description": "",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "starsToday": 547,
+      "totalStars": 13464,
+      "forks": 1596,
+      "url": "https://github.com/Lakr233/vphone-cli"
+    },
+    {
+      "rank": 7,
+      "fullName": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 110,
+      "totalStars": 24365,
+      "forks": 2925,
+      "url": "https://github.com/anthropics/knowledge-work-plugins"
+    },
+    {
+      "rank": 8,
       "fullName": "ever-co/ever-gauzy",
       "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 634,
-      "totalStars": 6873,
-      "forks": 1057,
+      "starsToday": 778,
+      "totalStars": 7428,
+      "forks": 1097,
       "url": "https://github.com/ever-co/ever-gauzy"
     },
     {
-      "rank": 4,
-      "fullName": "debpalash/VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 2072,
-      "totalStars": 31331,
-      "forks": 3725,
-      "url": "https://github.com/debpalash/VoiceStudio"
-    },
-    {
-      "rank": 5,
-      "fullName": "Homebrew/BrewUI",
-      "description": "📺 Homebrew's official macOS GUI",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "starsToday": 271,
-      "totalStars": 1556,
-      "forks": 37,
-      "url": "https://github.com/Homebrew/BrewUI"
-    },
-    {
-      "rank": 6,
-      "fullName": "melgarafael/DeskcommCRM",
-      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 193,
-      "totalStars": 2956,
-      "forks": 695,
-      "url": "https://github.com/melgarafael/DeskcommCRM"
-    },
-    {
-      "rank": 7,
-      "fullName": "alphaXiv/OpenResearch",
-      "description": "Turn your coding agents into research agents",
+      "rank": 9,
+      "fullName": "ankitects/anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
       "language": "Rust",
       "languageColor": "#DEA584",
-      "starsToday": 531,
-      "totalStars": 3617,
-      "forks": 237,
-      "url": "https://github.com/alphaXiv/OpenResearch"
+      "starsToday": 58,
+      "totalStars": 30967,
+      "forks": 3214,
+      "url": "https://github.com/ankitects/anki"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "fullName": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
       "languageColor": "#B07219",
-      "starsToday": 725,
-      "totalStars": 76991,
-      "forks": 8494,
+      "starsToday": 1059,
+      "totalStars": 78016,
+      "forks": 8631,
       "url": "https://github.com/NationalSecurityAgency/ghidra"
-    },
-    {
-      "rank": 9,
-      "fullName": "danny-avila/LibreChat",
-      "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions,",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 254,
-      "totalStars": 43966,
-      "forks": 9037,
-      "url": "https://github.com/danny-avila/LibreChat"
-    },
-    {
-      "rank": 10,
-      "fullName": "pacifio/atlas",
-      "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 91,
-      "totalStars": 4729,
-      "forks": 282,
-      "url": "https://github.com/pacifio/atlas"
     }
   ],
   "languages": [
     {
-      "name": "TypeScript",
-      "count": 3,
-      "share": 30,
-      "color": "#3178C6"
-    },
-    {
-      "name": "Rust",
+      "name": "Swift",
       "count": 2,
       "share": 20,
-      "color": "#DEA584"
+      "color": "#F05138"
+    },
+    {
+      "name": "TypeScript",
+      "count": 2,
+      "share": 20,
+      "color": "#3178C6"
     },
     {
       "name": "C",
@@ -148,47 +148,49 @@
       "color": "#B07219"
     },
     {
+      "name": "JavaScript",
+      "count": 1,
+      "share": 10,
+      "color": "#F1E05A"
+    },
+    {
       "name": "Python",
       "count": 1,
       "share": 10,
       "color": "#3572A5"
     },
     {
-      "name": "Swift",
+      "name": "Rust",
       "count": 1,
       "share": 10,
-      "color": "#F05138"
+      "color": "#DEA584"
     }
   ],
   "themes": [
     {
-      "name": "Agent systems",
-      "count": 5,
-      "repositories": [
-        "alibaba/open-code-review",
-        "melgarafael/DeskcommCRM",
-        "alphaXiv/OpenResearch",
-        "danny-avila/LibreChat"
-      ]
-    },
-    {
       "name": "AI infrastructure",
-      "count": 4,
+      "count": 3,
       "repositories": [
         "alibaba/open-code-review",
         "JustVugg/colibri",
-        "melgarafael/DeskcommCRM",
-        "danny-avila/LibreChat"
+        "jamiepine/voicebox"
       ]
     },
     {
       "name": "Developer tools",
-      "count": 4,
+      "count": 3,
       "repositories": [
         "alibaba/open-code-review",
-        "alphaXiv/OpenResearch",
-        "danny-avila/LibreChat",
-        "pacifio/atlas"
+        "cloudflare/security-audit-skill",
+        "Lakr233/vphone-cli"
+      ]
+    },
+    {
+      "name": "Agent systems",
+      "count": 2,
+      "repositories": [
+        "alibaba/open-code-review",
+        "cloudflare/security-audit-skill"
       ]
     }
   ]
