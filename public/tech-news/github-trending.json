@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T14:30:36+08:00",
-  "date": "2026-09-17",
+  "updatedAt": "2026-09-18T14:30:27+08:00",
+  "date": "2026-09-18",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,9 +11,9 @@
       "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "starsToday": 3231,
-      "totalStars": 32737,
-      "forks": 2316,
+      "starsToday": 3286,
+      "totalStars": 35514,
+      "forks": 2515,
       "url": "https://github.com/alibaba/open-code-review"
     },
     {
@@ -22,106 +22,112 @@
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 927,
-      "totalStars": 7949,
-      "forks": 447,
+      "starsToday": 3607,
+      "totalStars": 11176,
+      "forks": 601,
       "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
       "rank": 3,
-      "fullName": "JustVugg/colibri",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "language": "C",
-      "languageColor": "#555555",
-      "starsToday": 1546,
-      "totalStars": 35205,
-      "forks": 3702,
-      "url": "https://github.com/JustVugg/colibri"
+      "fullName": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 680,
+      "totalStars": 96006,
+      "forks": 10158,
+      "url": "https://github.com/addyosmani/agent-skills"
     },
     {
       "rank": 4,
-      "fullName": "abue-ammar/tinycast",
-      "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "starsToday": 1179,
-      "totalStars": 5772,
-      "forks": 274,
-      "url": "https://github.com/abue-ammar/tinycast"
+      "fullName": "Tencent/BrowserSkill",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 1302,
+      "totalStars": 4557,
+      "forks": 321,
+      "url": "https://github.com/Tencent/BrowserSkill"
     },
     {
       "rank": 5,
-      "fullName": "jamiepine/voicebox",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 417,
-      "totalStars": 54554,
-      "forks": 6798,
-      "url": "https://github.com/jamiepine/voicebox"
+      "fullName": "alphaXiv/OpenResearch",
+      "description": "Turn your coding agents into research agents",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 939,
+      "totalStars": 5105,
+      "forks": 310,
+      "url": "https://github.com/alphaXiv/OpenResearch"
     },
     {
       "rank": 6,
-      "fullName": "Lakr233/vphone-cli",
-      "description": "",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "starsToday": 547,
-      "totalStars": 13464,
-      "forks": 1596,
-      "url": "https://github.com/Lakr233/vphone-cli"
+      "fullName": "anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 538,
+      "totalStars": 145962,
+      "forks": 23658,
+      "url": "https://github.com/anthropics/claude-code"
     },
     {
       "rank": 7,
-      "fullName": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 110,
-      "totalStars": 24365,
-      "forks": 2925,
-      "url": "https://github.com/anthropics/knowledge-work-plugins"
-    },
-    {
-      "rank": 8,
-      "fullName": "ever-co/ever-gauzy",
-      "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 778,
-      "totalStars": 7428,
-      "forks": 1097,
-      "url": "https://github.com/ever-co/ever-gauzy"
-    },
-    {
-      "rank": 9,
-      "fullName": "ankitects/anki",
-      "description": "Anki is a smart spaced repetition flashcard program",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 58,
-      "totalStars": 30967,
-      "forks": 3214,
-      "url": "https://github.com/ankitects/anki"
-    },
-    {
-      "rank": 10,
       "fullName": "NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "language": "Java",
       "languageColor": "#B07219",
-      "starsToday": 1059,
-      "totalStars": 78016,
-      "forks": 8631,
+      "starsToday": 912,
+      "totalStars": 78659,
+      "forks": 8696,
       "url": "https://github.com/NationalSecurityAgency/ghidra"
+    },
+    {
+      "rank": 8,
+      "fullName": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 287,
+      "totalStars": 24642,
+      "forks": 2955,
+      "url": "https://github.com/anthropics/knowledge-work-plugins"
+    },
+    {
+      "rank": 9,
+      "fullName": "Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 1125,
+      "totalStars": 26559,
+      "forks": 3578,
+      "url": "https://github.com/Tencent/WeKnora"
+    },
+    {
+      "rank": 10,
+      "fullName": "abue-ammar/tinycast",
+      "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "starsToday": 739,
+      "totalStars": 6242,
+      "forks": 288,
+      "url": "https://github.com/abue-ammar/tinycast"
     }
   ],
   "languages": [
     {
-      "name": "Swift",
+      "name": "Go",
       "count": 2,
       "share": 20,
-      "color": "#F05138"
+      "color": "#00ADD8"
+    },
+    {
+      "name": "JavaScript",
+      "count": 2,
+      "share": 20,
+      "color": "#F1E05A"
     },
     {
       "name": "TypeScript",
@@ -130,28 +136,10 @@
       "color": "#3178C6"
     },
     {
-      "name": "C",
-      "count": 1,
-      "share": 10,
-      "color": "#555555"
-    },
-    {
-      "name": "Go",
-      "count": 1,
-      "share": 10,
-      "color": "#00ADD8"
-    },
-    {
       "name": "Java",
       "count": 1,
       "share": 10,
       "color": "#B07219"
-    },
-    {
-      "name": "JavaScript",
-      "count": 1,
-      "share": 10,
-      "color": "#F1E05A"
     },
     {
       "name": "Python",
@@ -164,33 +152,43 @@
       "count": 1,
       "share": 10,
       "color": "#DEA584"
+    },
+    {
+      "name": "Swift",
+      "count": 1,
+      "share": 10,
+      "color": "#F05138"
     }
   ],
   "themes": [
     {
-      "name": "AI infrastructure",
-      "count": 3,
+      "name": "Agent systems",
+      "count": 6,
       "repositories": [
         "alibaba/open-code-review",
-        "JustVugg/colibri",
-        "jamiepine/voicebox"
+        "cloudflare/security-audit-skill",
+        "addyosmani/agent-skills",
+        "Tencent/BrowserSkill"
       ]
     },
     {
       "name": "Developer tools",
-      "count": 3,
+      "count": 6,
       "repositories": [
         "alibaba/open-code-review",
         "cloudflare/security-audit-skill",
-        "Lakr233/vphone-cli"
+        "addyosmani/agent-skills",
+        "Tencent/BrowserSkill"
       ]
     },
     {
-      "name": "Agent systems",
-      "count": 2,
+      "name": "AI infrastructure",
+      "count": 4,
       "repositories": [
         "alibaba/open-code-review",
-        "cloudflare/security-audit-skill"
+        "addyosmani/agent-skills",
+        "Tencent/BrowserSkill",
+        "Tencent/WeKnora"
       ]
     }
   ]
