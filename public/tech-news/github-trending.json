@@ -1,194 +1,182 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T14:30:27+08:00",
-  "date": "2026-09-18",
+  "updatedAt": "2026-09-19T14:30:26+08:00",
+  "date": "2026-09-19",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "alibaba/open-code-review",
-      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 3286,
-      "totalStars": 35514,
-      "forks": 2515,
-      "url": "https://github.com/alibaba/open-code-review"
-    },
-    {
-      "rank": 2,
       "fullName": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 3607,
-      "totalStars": 11176,
-      "forks": 601,
+      "starsToday": 3006,
+      "totalStars": 14278,
+      "forks": 770,
       "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
-      "rank": 3,
-      "fullName": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 680,
-      "totalStars": 96006,
-      "forks": 10158,
-      "url": "https://github.com/addyosmani/agent-skills"
-    },
-    {
-      "rank": 4,
-      "fullName": "Tencent/BrowserSkill",
-      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 1302,
-      "totalStars": 4557,
-      "forks": 321,
-      "url": "https://github.com/Tencent/BrowserSkill"
-    },
-    {
-      "rank": 5,
-      "fullName": "alphaXiv/OpenResearch",
-      "description": "Turn your coding agents into research agents",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 939,
-      "totalStars": 5105,
-      "forks": 310,
-      "url": "https://github.com/alphaXiv/OpenResearch"
-    },
-    {
-      "rank": 6,
+      "rank": 2,
       "fullName": "anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 538,
-      "totalStars": 145962,
-      "forks": 23658,
+      "starsToday": 444,
+      "totalStars": 146409,
+      "forks": 23820,
       "url": "https://github.com/anthropics/claude-code"
     },
     {
+      "rank": 3,
+      "fullName": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 2704,
+      "totalStars": 36914,
+      "forks": 2631,
+      "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+      "rank": 4,
+      "fullName": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 958,
+      "totalStars": 262246,
+      "forks": 39231,
+      "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "rank": 5,
+      "fullName": "Tencent/BrowserSkill",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 1306,
+      "totalStars": 5457,
+      "forks": 377,
+      "url": "https://github.com/Tencent/BrowserSkill"
+    },
+    {
+      "rank": 6,
+      "fullName": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 675,
+      "totalStars": 96533,
+      "forks": 10201,
+      "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
       "rank": 7,
-      "fullName": "NationalSecurityAgency/ghidra",
-      "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "language": "Java",
-      "languageColor": "#B07219",
-      "starsToday": 912,
-      "totalStars": 78659,
-      "forks": 8696,
-      "url": "https://github.com/NationalSecurityAgency/ghidra"
+      "fullName": "TencentCloud/Octop",
+      "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 569,
+      "totalStars": 4041,
+      "forks": 418,
+      "url": "https://github.com/TencentCloud/Octop"
     },
     {
       "rank": 8,
+      "fullName": "Fission-AI/OpenSpec",
+      "description": "Spec-driven development (SDD) for AI coding assistants.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 296,
+      "totalStars": 69455,
+      "forks": 4758,
+      "url": "https://github.com/Fission-AI/OpenSpec"
+    },
+    {
+      "rank": 9,
+      "fullName": "ankitects/anki",
+      "description": "Anki is a smart spaced repetition flashcard program",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 174,
+      "totalStars": 31254,
+      "forks": 3238,
+      "url": "https://github.com/ankitects/anki"
+    },
+    {
+      "rank": 10,
       "fullName": "anthropics/knowledge-work-plugins",
       "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 287,
-      "totalStars": 24642,
-      "forks": 2955,
+      "starsToday": 299,
+      "totalStars": 24939,
+      "forks": 2974,
       "url": "https://github.com/anthropics/knowledge-work-plugins"
-    },
-    {
-      "rank": 9,
-      "fullName": "Tencent/WeKnora",
-      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 1125,
-      "totalStars": 26559,
-      "forks": 3578,
-      "url": "https://github.com/Tencent/WeKnora"
-    },
-    {
-      "rank": 10,
-      "fullName": "abue-ammar/tinycast",
-      "description": "Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "starsToday": 739,
-      "totalStars": 6242,
-      "forks": 288,
-      "url": "https://github.com/abue-ammar/tinycast"
     }
   ],
   "languages": [
     {
-      "name": "Go",
-      "count": 2,
-      "share": 20,
-      "color": "#00ADD8"
-    },
-    {
       "name": "JavaScript",
-      "count": 2,
-      "share": 20,
+      "count": 3,
+      "share": 30,
       "color": "#F1E05A"
     },
     {
       "name": "TypeScript",
-      "count": 2,
-      "share": 20,
+      "count": 3,
+      "share": 30,
       "color": "#3178C6"
     },
     {
-      "name": "Java",
-      "count": 1,
-      "share": 10,
-      "color": "#B07219"
+      "name": "Python",
+      "count": 2,
+      "share": 20,
+      "color": "#3572A5"
     },
     {
-      "name": "Python",
+      "name": "Go",
       "count": 1,
       "share": 10,
-      "color": "#3572A5"
+      "color": "#00ADD8"
     },
     {
       "name": "Rust",
       "count": 1,
       "share": 10,
       "color": "#DEA584"
-    },
-    {
-      "name": "Swift",
-      "count": 1,
-      "share": 10,
-      "color": "#F05138"
     }
   ],
   "themes": [
     {
-      "name": "Agent systems",
-      "count": 6,
+      "name": "Developer tools",
+      "count": 7,
       "repositories": [
-        "alibaba/open-code-review",
         "cloudflare/security-audit-skill",
-        "addyosmani/agent-skills",
-        "Tencent/BrowserSkill"
+        "anthropics/claude-code",
+        "alibaba/open-code-review",
+        "affaan-m/ECC"
       ]
     },
     {
-      "name": "Developer tools",
+      "name": "Agent systems",
       "count": 6,
       "repositories": [
-        "alibaba/open-code-review",
         "cloudflare/security-audit-skill",
-        "addyosmani/agent-skills",
+        "alibaba/open-code-review",
+        "affaan-m/ECC",
         "Tencent/BrowserSkill"
       ]
     },
     {
       "name": "AI infrastructure",
-      "count": 4,
+      "count": 5,
       "repositories": [
         "alibaba/open-code-review",
-        "addyosmani/agent-skills",
         "Tencent/BrowserSkill",
-        "Tencent/WeKnora"
+        "addyosmani/agent-skills",
+        "TencentCloud/Octop"
       ]
     }
   ]
