@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-17T11:30:44+08:00",
-  "date": "2026-09-17",
+  "updatedAt": "2026-09-19T11:57:32+08:00",
+  "date": "2026-09-19",
   "sections": [
     {
       "name": "AI资讯",
@@ -64,61 +64,61 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "OpenSpec – A lightweight and configurable AI spec framework",
-          "summary": "OpenSpec helps teams and coding agents create, refine, and manage living specifications.",
-          "titleZh": "OpenSpec——轻量且可配置的 AI 规范框架",
-          "summaryZh": "OpenSpec 帮助团队和编码代理创建、完善和管理持续演进的规范。",
-          "url": "https://openspec.dev/",
+          "title": "Gemini hacked three companies in first known breakout by Google's AI",
+          "summary": "Comments",
+          "titleZh": "Gemini 入侵了三家公司，成为谷歌 AI 首次已知的突破性行动",
+          "summaryZh": "评论",
+          "url": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/",
           "source": "Hacker News",
-          "score": 6.32,
+          "score": 6.12,
           "reasons": [
             "AI",
-            "HN分数90",
-            "讨论量35"
+            "HN分数34",
+            "讨论量32"
           ],
-          "published": "2026-09-16T23:06:39+00:00"
+          "published": "2026-09-19T01:40:35+00:00"
         },
         {
-          "title": "Small programming tricks",
-          "summary": "A lot of effective engineering comes from the accumulation of small nuggets of knowledge.",
-          "titleZh": "小编程技巧",
-          "summaryZh": "许多高效的工程实践，都源于点滴知识的积累。",
-          "url": "https://will-keleher.com/posts/small-programming-tricks-matter/",
+          "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
+          "summary": "Android 17 QPR1 is the first release since Android Honeycomb (3.x) adding new APIs for app developers without a release to the Android Open Source Project. The new APIs are currently exclusive to the Pixel OS and aren't…",
+          "titleZh": "Android 17 是自 3.x 以来首个在未发布到 AOSP 的情况下新增 API 的版本",
+          "summaryZh": "Android 17 QPR1 是自 Android Honeycomb（3.x）以来首个在未发布到 Android 开源项目的情况下，为应用开发者新增 API 的版本。这些新 API 目前仅供 Pixel OS 使用，且不会……",
+          "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
           "source": "Hacker News",
-          "score": 4.24,
+          "score": 4.51,
           "reasons": [
-            "HN分数424",
-            "讨论量189"
+            "HN分数634",
+            "讨论量306"
           ],
-          "published": "2026-09-16T15:56:47+00:00"
+          "published": "2026-09-18T19:03:09+00:00"
         },
         {
-          "title": "Training a 4B model to produce 81% faster query plans than Postgres",
-          "summary": "...or how to make Qwen learn query optimization via agentic reinforcement learning",
-          "titleZh": "训练一个 4B 模型，使其生成查询计划的速度比 Postgres 快 81%",
-          "summaryZh": "……或者说，如何通过智能体强化学习让 Qwen 学会查询优化",
-          "url": "https://rohanbansal.com/qorl",
+          "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+          "summary": "Release notes for Claude Code, including new features, improvements, and bug fixes by version.",
+          "titleZh": "如果没有 Claude.md，Claude Code 现在会读取 AGENTS.md",
+          "summaryZh": "Claude Code 的发行说明，包括各版本的新功能、改进和错误修复。",
+          "url": "https://code.claude.com/docs/en/changelog",
           "source": "Hacker News",
-          "score": 4.18,
+          "score": 4.45,
           "reasons": [
-            "HN分数433",
-            "讨论量91"
+            "HN分数556",
+            "讨论量202"
           ],
-          "published": "2026-09-16T18:50:00+00:00"
+          "published": "2026-09-18T21:00:32+00:00"
         },
         {
-          "title": "Australia says it could follow Canada in forging deeper ties with EU",
-          "summary": "Trade minister says Canberra is on the same page as Ottawa and ‘will take great interest in what Mark Carney does’",
-          "titleZh": "澳大利亚称可能效仿加拿大，与欧盟建立更紧密的关系",
-          "summaryZh": "贸易部长表示，堪培拉与渥太华立场一致，“会高度关注 Mark Carney 的行动”",
-          "url": "https://www.independent.co.uk/news/world/australasia/canda-eu-membership-australia-us-trade-b3050227.html",
+          "title": "Cloudflare Quick Tunnels",
+          "summary": "Localhost, meet the Internet. Turn the server on your laptop into a public, encrypted URL on Cloudflare",
+          "titleZh": "Cloudflare 快速隧道",
+          "summaryZh": "本地主机，连接互联网。通过 Cloudflare 将笔记本电脑上的服务器变成公开、加密的 URL",
+          "url": "https://try.cloudflare.com/",
           "source": "Hacker News",
-          "score": 4.15,
+          "score": 4.34,
           "reasons": [
-            "HN分数183",
-            "讨论量131"
+            "HN分数624",
+            "讨论量260"
           ],
-          "published": "2026-09-16T22:56:48+00:00"
+          "published": "2026-09-18T14:18:41+00:00"
         }
       ]
     },
@@ -127,56 +127,56 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what…",
-          "summary": "This session will explore how early-stage companies are building teams where humans and AI agents work alongside each other — and how founders can do that without sacrificing speed, accountability, or culture. Learn more…",
-          "titleZh": "你的创业公司下一位队友可能是 AI 代理：Gusto、Insight Partners 和 Leland 解释这将带来哪些变化……",
-          "summaryZh": "本场讨论将探讨早期公司如何组建由人类和 AI 代理协同工作的团队，以及创始人如何在不牺牲速度、责任感或企业文化的情况下实现这一点。了解更多……",
-          "url": "https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/",
+          "title": "India forces caller-ID apps to feed spam reports to telcos",
+          "summary": "Truecaller says the one-way sharing requirement would hand a commercially valuable proprietary asset to telecom operators.",
+          "titleZh": "印度强制来电识别应用向电信运营商提供垃圾来电报告",
+          "summaryZh": "Truecaller 表示，这项单向共享要求会将一项具有商业价值的专有资产交给电信运营商。",
+          "url": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/",
           "source": "TechCrunch",
-          "score": 4.6,
+          "score": 4.52,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-17T03:30:00+00:00"
+          "published": "2026-09-19T01:00:00+00:00"
         },
         {
-          "title": "Snap tries to make the case again for its $2,200 smart glasses",
-          "summary": "Since Specs' debut earlier this year, Snap has clearly been looking for an opportunity to explain why the smart glasses deserve to exist.",
-          "titleZh": "Snap 再次努力证明其售价 2200 美元的智能眼镜物有所值",
-          "summaryZh": "自 Specs 于今年早些时候亮相以来，Snap 显然一直在寻找机会解释这款智能眼镜为何有存在的必要。",
-          "url": "https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/",
-          "source": "TechCrunch",
-          "score": 4.53,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-17T00:58:49+00:00"
-        },
-        {
-          "title": "Al Gore says the real AI risk isn’t data centers — it’s what industry leaders are warning about",
-          "summary": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
-          "titleZh": "Al Gore 称，真正的 AI 风险不是数据中心，而是行业领导者发出的警告",
-          "summaryZh": "Al Gore 在接受 TechCrunch 采访时表示，他并不太担心 AI 数据中心的排放，更担忧 AI 行业自身对于这项技术发展方向的警告。",
-          "url": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
+          "title": "Tilly Norwood’s press tour is going about as well as you’d expect for an AI",
+          "summary": "In one particularly odd interview, Norwood seems to malfunction and begin speaking Chinese.",
+          "titleZh": "Tilly Norwood 的媒体巡访表现，正如你对一个 AI 所预期的那样",
+          "summaryZh": "在一次尤其古怪的采访中，Norwood 似乎出现故障，开始说中文。",
+          "url": "https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/",
           "source": "TechCrunch",
           "score": 4.5,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-16T23:43:09+00:00"
+          "published": "2026-09-19T00:12:07+00:00"
         },
         {
-          "title": "Anthropic and OpenAI want to embed safety evaluators. Will they really be independent?",
-          "summary": "Anthropic and OpenAI want to embed independent safety evaluators inside their AI labs. Researchers welcome the unprecedented access, but warn meaningful oversight requires transparency, independence, and eventually regul…",
-          "titleZh": "Anthropic 和 OpenAI 想让安全评估人员常驻其中。他们真的会保持独立吗？",
-          "summaryZh": "Anthropic 和 OpenAI 希望让独立的安全评估人员进驻各自的 AI 实验室。研究人员欢迎这种前所未有的访问权限，但警告称，有意义的监督需要透明度、独立性，并最终需要监管……",
-          "url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
+          "title": "A startup that builds other startups raised $100M and is all-in on physical AI",
+          "summary": "UP.Labs, now doing business under the name Vantora, is building startups for industrial corporations.",
+          "titleZh": "一家专门打造其他初创公司的初创企业筹得 1 亿美元，并全面押注实体 AI",
+          "summaryZh": "UP.Labs 目前以 Vantora 的名义开展业务，正在为工业企业打造初创公司。",
+          "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-16T21:07:24+00:00"
+          "published": "2026-09-18T23:25:01+00:00"
+        },
+        {
+          "title": "Anthropic is operating a lab that conducts biology experiments",
+          "summary": "AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.",
+          "titleZh": "Anthropic 正在运营一座开展生物学实验的实验室",
+          "summaryZh": "AI 领域的领导者一直承诺，AI 是治愈人类疾病的关键。Anthropic 的研究人员也一直警告，AI 可能会杀死我们所有人。",
+          "url": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
+          "source": "TechCrunch",
+          "score": 4.47,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-18T23:13:31+00:00"
         }
       ]
     }
@@ -184,11 +184,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-17T11:01:20.358281+08:00"
+      "lastRunAt": "2026-09-19T11:13:52.020362+08:00"
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-17T11:02:03.632961+08:00"
+      "lastRunAt": "2026-09-19T11:14:47.694826+08:00"
     }
   }
 }

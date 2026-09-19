@@ -9,6 +9,13 @@ from urllib.parse import urlparse
 
 REQUIRED_SOURCES = {'AI资讯', 'Hacker News', 'TechCrunch'}
 CJK_RE = re.compile(r'[\u3400-\u9fff]')
+BRAND_ONLY_RE = re.compile(r'[A-Za-z0-9][A-Za-z0-9._+\-]*')
+
+def is_localized(original, translated):
+    if not isinstance(original, str) or not isinstance(translated, str):
+        return False
+    source, target = original.strip(), translated.strip()
+    return bool(target and (CJK_RE.search(target) or (target == source and BRAND_ONLY_RE.fullmatch(source))))
 
 def validate_digest(data):
     if not isinstance(data, dict):
@@ -62,9 +69,9 @@ def validate_payload(payload):
             if parsed.scheme != 'https' or not parsed.netloc:
                 raise ValueError('unsafe news URL')
             if section['name'] in {'Hacker News', 'TechCrunch'}:
-                if not isinstance(item.get('titleZh'), str) or not CJK_RE.search(item['titleZh']):
+                if not is_localized(item['title'], item.get('titleZh')):
                     raise ValueError('news item is missing Chinese localization')
-                if item.get('summary') and (not isinstance(item.get('summaryZh'), str) or not CJK_RE.search(item['summaryZh'])):
+                if item.get('summary') and not is_localized(item['summary'], item.get('summaryZh')):
                     raise ValueError('news item is missing Chinese localization')
             published = datetime.fromisoformat(item.get('published', ''))
             if published.tzinfo is None:

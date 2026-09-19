@@ -109,9 +109,11 @@ assert(techNewsPayload.schemaVersion === 2, 'Tech Signal payload declares its bi
 const localizedNews = techNewsPayload.sections
   .filter((section) => ['Hacker News', 'TechCrunch'].includes(section.name))
   .flatMap((section) => section.items)
-assert(localizedNews.length > 0 && localizedNews.every((item) => /[\u3400-\u9fff]/u.test(item.titleZh ?? '')),
+const isLocalizedNewsText = (original, translated) => typeof translated === 'string' &&
+  (/[\u3400-\u9fff]/u.test(translated) || (translated === original && /^[A-Za-z0-9][A-Za-z0-9._+\-]*$/u.test(original)))
+assert(localizedNews.length > 0 && localizedNews.every((item) => isLocalizedNewsText(item.title, item.titleZh)),
   'Hacker News and TechCrunch include Chinese titles')
-assert(localizedNews.every((item) => !item.summary || /[\u3400-\u9fff]/u.test(item.summaryZh ?? '')),
+assert(localizedNews.every((item) => !item.summary || isLocalizedNewsText(item.summary, item.summaryZh)),
   'Hacker News and TechCrunch include Chinese summaries')
 assert(Array.isArray(techNewsPayload.sections) && techNewsPayload.sections.length >= 3, 'Tech Signal contains all configured sources')
 const techNewsSourceNames = new Set(techNewsPayload.sections.map((section) => section.name))

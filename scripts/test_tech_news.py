@@ -42,6 +42,29 @@ def payload():
             ]} for name in ['AI资讯', 'Hacker News', 'TechCrunch']]}
 
 class SyncTests(unittest.TestCase):
+    def test_brand_only_title_can_remain_untranslated(self):
+        digest = {'sources': [{'name': 'Hacker News', 'source_page': 'https://news.ycombinator.com/', 'items': [{
+            'title': 'OpenJEV', 'summary': 'OpenJEV', 'link': 'https://openjev.com/',
+            'published': datetime.now().astimezone().isoformat(),
+        }]}]}
+        translations = {'https://openjev.com/': {'titleZh': 'OpenJEV', 'summaryZh': 'OpenJEV'}}
+        self.assertEqual(sync._build_hn_sections(digest, translations)[0]['items'][0]['titleZh'], 'OpenJEV')
+
+    def test_generic_english_title_is_retried_when_first_pass_preserves_it(self):
+        digest = {'sources': [{'name': 'Hacker News', 'items': [{
+            'title': 'Cloudflare Quick Tunnels', 'summary': 'Turn localhost into a public URL.',
+            'link': 'https://try.cloudflare.com/',
+        }]}]}
+        first = {'translations': [{'url': 'https://try.cloudflare.com/', 'titleZh': 'Cloudflare Quick Tunnels',
+                                   'summaryZh': '将本地服务转换为公开网址。'}]}
+        second = {'translations': [{'url': 'https://try.cloudflare.com/', 'titleZh': 'Cloudflare 快速隧道',
+                                    'summaryZh': '将本地服务转换为公开网址。'}]}
+        replies = [subprocess.CompletedProcess([], 0, json.dumps(row, ensure_ascii=False), '') for row in (first, second)]
+        with patch.object(sync, '_cached_translations', return_value={}), patch.object(sync.subprocess, 'run', side_effect=replies) as run:
+            result = sync._translate_hn_items(digest)
+        self.assertEqual(result['https://try.cloudflare.com/']['titleZh'], 'Cloudflare 快速隧道')
+        self.assertEqual(run.call_count, 2)
+
     def test_hn_sections_include_verified_chinese_localization(self):
         digest = {'sources': [{'name': 'Hacker News', 'source_page': 'https://news.ycombinator.com/', 'items': [{
             'title': 'A new developer tool', 'summary': 'A useful tool for developers.',
@@ -94,6 +117,16 @@ class SyncTests(unittest.TestCase):
             validate_payload(json.loads(target.read_text()))
 
 class ContractTests(unittest.TestCase):
+    def test_brand_only_localization_is_valid_but_untranslated_phrase_is_not(self):
+        data = payload()
+        item = data['sections'][1]['items'][0]
+        item.update(title='OpenJEV', summary='OpenJEV', titleZh='OpenJEV', summaryZh='OpenJEV')
+        validate_payload(data)
+        item.update(title='Cloudflare Quick Tunnels', summary='Turn localhost into a public URL.',
+                    titleZh='Cloudflare Quick Tunnels', summaryZh='将本地服务转换为公开网址。')
+        with self.assertRaisesRegex(ValueError, 'localization'):
+            validate_payload(data)
+
     def test_requires_chinese_localization_for_english_sources(self):
         data = payload()
         for section in data['sections']:

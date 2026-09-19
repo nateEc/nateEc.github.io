@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 import sqlite3
 from urllib.parse import urlparse
-from news_contract import validate_digest, write_snapshot
+from news_contract import is_localized, validate_digest, write_snapshot
 
 
 PROJECT_ROOT = Path(os.environ.get(
@@ -32,7 +32,6 @@ AI_SCRIPT = Path(__file__).resolve().parent / 'ai_digest_zh.py'
 HN_SCRIPT = Path(__file__).resolve().parent / 'hacker_news_digest.py'
 HERMES_BIN = Path(os.environ.get('HERMES_BIN', shutil.which('hermes') or str(Path.home() / '.local/bin/hermes')))
 TRANSLATION_TIMEOUT_SECONDS = int(os.environ.get('TECH_NEWS_TRANSLATION_TIMEOUT_SECONDS', '600'))
-CJK_RE = re.compile(r'[\u3400-\u9fff]')
 
 
 def _run_digest(script_path: Path) -> dict[str, Any]:
@@ -179,7 +178,7 @@ def _build_hn_sections(data: dict[str, Any], translations: dict[str, dict[str, s
             localized = translations.get(url, {})
             title_zh = _normalize_text(localized.get('titleZh', ''), 100)
             summary_zh = _normalize_text(localized.get('summaryZh', ''), 220)
-            if not CJK_RE.search(title_zh) or (summary and not CJK_RE.search(summary_zh)):
+            if not is_localized(title, title_zh) or (summary and not is_localized(summary, summary_zh)):
                 raise ValueError(f'missing Chinese localization for {name}: {url}')
             score = item.get('trend_score')
             items.append({
@@ -210,7 +209,7 @@ def _cached_translations() -> dict[str, dict[str, str]]:
             url = _safe_https_url(item.get('url'))
             title_zh = item.get('titleZh')
             summary_zh = item.get('summaryZh', '')
-            if url and isinstance(title_zh, str) and CJK_RE.search(title_zh):
+            if url and is_localized(item.get('title'), title_zh) and (not item.get('summary') or is_localized(item.get('summary'), summary_zh)):
                 cached[url] = {'titleZh': title_zh, 'summaryZh': summary_zh if isinstance(summary_zh, str) else ''}
     return cached
 
@@ -245,7 +244,7 @@ def _parse_translation_response(raw: str) -> dict[str, dict[str, str]]:
         url = _safe_https_url(row.get('url'))
         title_zh = _normalize_text(row.get('titleZh', ''), 100)
         summary_zh = _normalize_text(row.get('summaryZh', ''), 220)
-        if url and CJK_RE.search(title_zh) and (not summary_zh or CJK_RE.search(summary_zh)):
+        if url and title_zh:
             result[url] = {'titleZh': title_zh, 'summaryZh': summary_zh}
     return result
 
@@ -253,27 +252,37 @@ def _parse_translation_response(raw: str) -> dict[str, dict[str, str]]:
 def _translate_hn_items(data: dict[str, Any]) -> dict[str, dict[str, str]]:
     candidates = _translation_candidates(data)
     translations = _cached_translations()
-    missing = [item for item in candidates if item['url'] not in translations]
-    if missing:
+    def missing_items() -> list[dict[str, str]]:
+        return [item for item in candidates if not (
+            is_localized(item['title'], translations.get(item['url'], {}).get('titleZh'))
+            and (not item['summary'] or is_localized(item['summary'], translations.get(item['url'], {}).get('summaryZh')))
+        )]
+
+    if missing_items():
         if not HERMES_BIN.is_file():
             raise RuntimeError(f'Hermes translator is missing: {HERMES_BIN}')
-        prompt = (
-            '你是科技新闻本地化编辑。把输入 JSON 中每条英文 title 和 summary 准确、自然、简洁地翻译为简体中文。'
-            '专有名词、产品名、公司名和代码名保持官方写法；不要添加事实、评论或解释。'
-            '必须覆盖每个 URL，并只返回一个 JSON 对象，格式为 '
-            '{"translations":[{"url":"原 URL","titleZh":"中文标题","summaryZh":"中文摘要"}]}。输入：'
-            + json.dumps(missing, ensure_ascii=False)
-        )
-        result = subprocess.run(
-            [str(HERMES_BIN), '--ignore-rules', '-t', '', '-z', prompt],
-            text=True, capture_output=True, check=False, timeout=TRANSLATION_TIMEOUT_SECONDS,
-        )
-        if result.returncode != 0:
-            detail = result.stderr.strip() or result.stdout.strip() or f'exit code {result.returncode}'
-            raise RuntimeError(f'Hermes localization failed: {detail[:800]}')
-        translations.update(_parse_translation_response(result.stdout))
+        for attempt in range(2):
+            missing = missing_items()
+            if not missing:
+                break
+            prompt = (
+                '你是科技新闻本地化编辑。将 JSON 中每条英文 title 和 summary 准确、自然、简洁地翻译为简体中文。'
+                '保留品牌和产品专名，但必须翻译其中的通用词，例如 Cloudflare Quick Tunnels → Cloudflare 快速隧道。'
+                '只有完全由单个品牌名构成的字段（如 OpenJEV）才允许原样保留。不要添加事实、评论或解释。'
+                '必须覆盖每个 URL，只返回 JSON 对象：'
+                '{"translations":[{"url":"原 URL","titleZh":"中文标题","summaryZh":"中文摘要"}]}。输入：'
+                + json.dumps(missing, ensure_ascii=False)
+            )
+            result = subprocess.run(
+                [str(HERMES_BIN), '--ignore-rules', '-t', '', '-z', prompt],
+                text=True, capture_output=True, check=False, timeout=TRANSLATION_TIMEOUT_SECONDS,
+            )
+            if result.returncode != 0:
+                detail = result.stderr.strip() or result.stdout.strip() or f'exit code {result.returncode}'
+                raise RuntimeError(f'Hermes localization failed: {detail[:800]}')
+            translations.update(_parse_translation_response(result.stdout))
 
-    missing_urls = [item['url'] for item in candidates if item['url'] not in translations]
+    missing_urls = [item['url'] for item in missing_items()]
     if missing_urls:
         raise RuntimeError(f'Hermes localization incomplete: {", ".join(missing_urls)}')
     return translations
