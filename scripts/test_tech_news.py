@@ -60,10 +60,26 @@ class SyncTests(unittest.TestCase):
         second = {'translations': [{'url': 'https://try.cloudflare.com/', 'titleZh': 'Cloudflare 快速隧道',
                                     'summaryZh': '将本地服务转换为公开网址。'}]}
         replies = [subprocess.CompletedProcess([], 0, json.dumps(row, ensure_ascii=False), '') for row in (first, second)]
-        with patch.object(sync, '_cached_translations', return_value={}), patch.object(sync.subprocess, 'run', side_effect=replies) as run:
+        with patch.object(sync, '_cached_translations', return_value={}), \
+                patch.object(sync, 'HERMES_BIN', Path(__file__)), \
+                patch.object(sync.subprocess, 'run', side_effect=replies) as run:
             result = sync._translate_hn_items(digest)
         self.assertEqual(result['https://try.cloudflare.com/']['titleZh'], 'Cloudflare 快速隧道')
         self.assertEqual(run.call_count, 2)
+
+    def test_missing_hermes_binary_fails_before_translation(self):
+        digest = {'sources': [{'name': 'Hacker News', 'items': [{
+            'title': 'A developer tool', 'summary': 'Useful for developers.',
+            'link': 'https://example.org/tool',
+        }]}]}
+        with tempfile.TemporaryDirectory() as folder:
+            missing_binary = Path(folder) / 'hermes'
+            with patch.object(sync, '_cached_translations', return_value={}), \
+                    patch.object(sync, 'HERMES_BIN', missing_binary), \
+                    patch.object(sync.subprocess, 'run') as run:
+                with self.assertRaisesRegex(RuntimeError, 'Hermes translator is missing'):
+                    sync._translate_hn_items(digest)
+            run.assert_not_called()
 
     def test_hn_sections_include_verified_chinese_localization(self):
         digest = {'sources': [{'name': 'Hacker News', 'source_page': 'https://news.ycombinator.com/', 'items': [{
