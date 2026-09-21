@@ -1,139 +1,139 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-20T14:30:58+08:00",
-  "date": "2026-09-20",
+  "updatedAt": "2026-09-21T14:30:55+08:00",
+  "date": "2026-09-21",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
+      "fullName": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 826,
+      "totalStars": 264019,
+      "forks": 39488,
+      "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "rank": 2,
+      "fullName": "BuilderIO/agent-native",
+      "description": "A framework for building agentic apps",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 98,
+      "totalStars": 5411,
+      "forks": 502,
+      "url": "https://github.com/BuilderIO/agent-native"
+    },
+    {
+      "rank": 3,
       "fullName": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 3155,
-      "totalStars": 16865,
-      "forks": 924,
+      "starsToday": 2428,
+      "totalStars": 18304,
+      "forks": 1024,
       "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "fullName": "trycua/cua",
       "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
       "language": "HTML",
       "languageColor": "#E34C26",
-      "starsToday": 859,
-      "totalStars": 24669,
-      "forks": 1696,
+      "starsToday": 1018,
+      "totalStars": 25322,
+      "forks": 1742,
       "url": "https://github.com/trycua/cua"
     },
     {
-      "rank": 3,
-      "fullName": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 556,
-      "totalStars": 97214,
-      "forks": 10258,
-      "url": "https://github.com/addyosmani/agent-skills"
-    },
-    {
-      "rank": 4,
-      "fullName": "coder/coder",
-      "description": "Secure environments for developers and their agents",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 402,
-      "totalStars": 15705,
-      "forks": 1525,
-      "url": "https://github.com/coder/coder"
-    },
-    {
       "rank": 5,
+      "fullName": "anthropics/financial-services",
+      "description": "",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 260,
+      "totalStars": 35499,
+      "forks": 5256,
+      "url": "https://github.com/anthropics/financial-services"
+    },
+    {
+      "rank": 6,
+      "fullName": "paperless-ngx/paperless-ngx",
+      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 57,
+      "totalStars": 45685,
+      "forks": 3159,
+      "url": "https://github.com/paperless-ngx/paperless-ngx"
+    },
+    {
+      "rank": 7,
       "fullName": "anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 483,
-      "totalStars": 146810,
-      "forks": 23979,
+      "starsToday": 419,
+      "totalStars": 147271,
+      "forks": 24086,
       "url": "https://github.com/anthropics/claude-code"
     },
     {
-      "rank": 6,
-      "fullName": "Open-Dev-Society/OpenStock",
-      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 472,
-      "totalStars": 16263,
-      "forks": 2100,
-      "url": "https://github.com/Open-Dev-Society/OpenStock"
+      "rank": 8,
+      "fullName": "mihail911/modern-software-dev-assignments",
+      "description": "Assignments for CS146S: The Modern Software Dev (Stanford University Fall 2026/2025)",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 172,
+      "totalStars": 4643,
+      "forks": 1016,
+      "url": "https://github.com/mihail911/modern-software-dev-assignments"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "fullName": "higgsfield-ai/higgsfield",
       "description": "Fault-tolerant, highly scalable GPU orchestration, and a machine learning framework designed for training models with billions to trillions of parameters",
       "language": "Jupyter Notebook",
       "languageColor": "#8B949E",
-      "starsToday": 196,
-      "totalStars": 5048,
-      "forks": 924,
+      "starsToday": 465,
+      "totalStars": 5489,
+      "forks": 964,
       "url": "https://github.com/higgsfield-ai/higgsfield"
     },
     {
-      "rank": 8,
-      "fullName": "docling-project/docling",
-      "description": "Get your documents ready for gen AI",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 129,
-      "totalStars": 67223,
-      "forks": 4840,
-      "url": "https://github.com/docling-project/docling"
-    },
-    {
-      "rank": 9,
-      "fullName": "cloudflare/quiche",
-      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 31,
-      "totalStars": 12085,
-      "forks": 1121,
-      "url": "https://github.com/cloudflare/quiche"
-    },
-    {
       "rank": 10,
-      "fullName": "asciimoo/hister",
-      "description": "Your own search engine",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 420,
-      "totalStars": 5311,
-      "forks": 222,
-      "url": "https://github.com/asciimoo/hister"
+      "fullName": "Open-Dev-Society/OpenStock",
+      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 755,
+      "totalStars": 17049,
+      "forks": 2147,
+      "url": "https://github.com/Open-Dev-Society/OpenStock"
     }
   ],
   "languages": [
     {
-      "name": "Go",
-      "count": 2,
-      "share": 20,
-      "color": "#00ADD8"
+      "name": "Python",
+      "count": 3,
+      "share": 30,
+      "color": "#3572A5"
+    },
+    {
+      "name": "TypeScript",
+      "count": 3,
+      "share": 30,
+      "color": "#3178C6"
     },
     {
       "name": "JavaScript",
       "count": 2,
       "share": 20,
       "color": "#F1E05A"
-    },
-    {
-      "name": "TypeScript",
-      "count": 2,
-      "share": 20,
-      "color": "#3178C6"
     },
     {
       "name": "HTML",
@@ -146,46 +146,33 @@
       "count": 1,
       "share": 10,
       "color": "#8B949E"
-    },
-    {
-      "name": "Python",
-      "count": 1,
-      "share": 10,
-      "color": "#3572A5"
-    },
-    {
-      "name": "Rust",
-      "count": 1,
-      "share": 10,
-      "color": "#DEA584"
     }
   ],
   "themes": [
     {
-      "name": "AI infrastructure",
-      "count": 3,
-      "repositories": [
-        "addyosmani/agent-skills",
-        "higgsfield-ai/higgsfield",
-        "docling-project/docling"
-      ]
-    },
-    {
       "name": "Agent systems",
       "count": 3,
       "repositories": [
-        "cloudflare/security-audit-skill",
-        "addyosmani/agent-skills",
-        "coder/coder"
+        "affaan-m/ECC",
+        "BuilderIO/agent-native",
+        "cloudflare/security-audit-skill"
       ]
     },
     {
       "name": "Developer tools",
       "count": 3,
       "repositories": [
+        "affaan-m/ECC",
         "cloudflare/security-audit-skill",
-        "addyosmani/agent-skills",
         "anthropics/claude-code"
+      ]
+    },
+    {
+      "name": "Security",
+      "count": 2,
+      "repositories": [
+        "affaan-m/ECC",
+        "cloudflare/security-audit-skill"
       ]
     }
   ]
