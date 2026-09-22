@@ -285,7 +285,7 @@ def _publish() -> int:
     if NEWS_PATH.as_posix() in changed:
         _checked(['git', 'add', '--', NEWS_PATH.as_posix()])
         _checked(['git', 'commit', '-m', f'chore(news): 更新 {snapshot_date} 科技资讯',
-                  '-m', '- 刷新三个完整新闻来源，失败时不覆盖有效快照。\n- 通过构建与站点检查，隔离发布并核实线上版本。'])
+                  '-m', '- 刷新 Hacker News 与 TechCrunch 各八条新闻，失败时不覆盖有效快照。\n- 通过构建与站点检查，隔离发布并核实线上版本。'])
         _push_main()
     evidence = _wait_for_deployment(snapshot_date, payload['updatedAt'])
     print(f'published: Tech Signal {snapshot_date}; all sources validated, main pushed, deployment verified via {evidence}')

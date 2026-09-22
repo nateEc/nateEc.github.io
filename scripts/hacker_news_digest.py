@@ -31,7 +31,7 @@ SOURCES = [
 ]
 
 UA = "Mozilla/5.0 (compatible; HermesAgent/1.0; +https://hermes-agent.nousresearch.com)"
-MAX_OUTPUT_PER_SOURCE = 12
+MAX_OUTPUT_PER_SOURCE = 8
 SUMMARY_TARGET_LEN = 800
 MIN_SUMMARY_LEN = 140
 TREND_WEIGHTS = {

@@ -2,8 +2,8 @@
 
 ## 当前运行方式
 
-- 发布任务：`ddc4746f1b10`，每天北京时间 11:30，保留 `no_agent=true`；不依赖 LLM 是否可用。
-- 11:00 的 AI、HN + TechCrunch 简报任务保持原有时间；发布任务自行重新抓取，不依赖简报生成或消息投递成功。
+- 发布任务：`ddc4746f1b10`，每天北京时间 11:30，保留 `no_agent=true`；脚本会调用 Hermes 补全中文翻译，因此翻译阶段仍依赖模型可用。
+- 11:00 的 HN + TechCrunch 简报任务 `0d56c417b34c` 保持原有时间，每个来源恰好 8 条；独立 AI 简报 `a804139d5bcb` 已暂停。发布任务自行重新抓取同样两个来源、每源 8 条，不依赖简报生成或消息投递成功。
 - 专用目录：`~/.hermes/workspaces/portfolio-tech-signal`，跟踪远端 `main`。
 - 开发目录仍用于本地预览，不会被日更任务 stash、提交或推送。
 - Hermes 入口：`~/.hermes/scripts/{publish-tech-news.py,sync-tech-news.py,ai_digest_zh.py,hacker_news_digest.py}`，仅启动专用目录中的同名版本化脚本。
@@ -16,8 +16,8 @@
 2. 检查专用目录和 `main`，拒绝非新闻文件的脏改动。前次中断留下的未提交快照先备份到 `.git/tech-news-recovery.json`，再恢复已提交版本。
 3. 拉取远端，正常更新直接 fast-forward。仅包含新闻快照的待推送提交可以 rebase 后重试推送；冲突会中止 rebase 并保留提交，绝不 force push。
 4. 如果今天已有完整的已提交快照，直接核对线上版本，避免重复生成和提交。否则按 Node 版本和 lockfile 指纹安装依赖。
-5. 抓取三个来源。每次 HTTP 请求最多两次尝试、单次 socket 超时最多 10 秒；整个 digest 最多两次尝试。HN RSS 失败或返回空内容时改用 [HN 官方 API](https://github.com/HackerNews/API)。可选文章摘要和热度补充使用有上限的并发，失败保留来源已有摘要。
-6. 同时校验来源错误、非空条目、三个不同来源、HTTPS 链接、标题及时间戳。验证通过后先写同目录临时文件、`fsync`，再原子替换；失败不会覆盖旧快照。不把昨天的数据伪装成今天。
+5. 抓取 Hacker News 与 TechCrunch，每个来源输出 8 条。每次 HTTP 请求最多两次尝试、单次 socket 超时最多 10 秒；整个 digest 最多两次尝试。HN RSS 失败或返回空内容时改用 [HN 官方 API](https://github.com/HackerNews/API)。可选文章摘要和热度补充使用有上限的并发，失败保留来源已有摘要。
+6. 校验两个不同来源、每源恰好 8 条、HTTPS 链接、标题及时间戳。翻译最多三轮，只修复缺失字段并携带上次结果与校验反馈，保留已通过的字段；多词标题须含中文，例如 Xiaomi MiMo v2.6 → 小米 MiMo v2.6。验证通过后原子替换快照；失败不会覆盖旧快照，不用重复条目或昨天的数据凑数。
 7. 运行 `npm run check`。只提交 `public/tech-news/latest.json`，提交使用 Conventional Commits 中文标题和非空中文正文，推送最多三次。
 8. 等待 GitHub Pages，最长 10 分钟。优先核对线上完整快照的日期和生成时间戳，每次探测使用不同查询值避免旧缓存。如果本机遇到 DNS/TLS 等连接故障，可以改用 [GitHub 官方部署 API](https://docs.github.com/en/rest/deployments/deployments)：必须同时匹配本次完整 commit SHA、`main`、`github-pages` 环境成功状态，以及 `.github/workflows/pages.yml` 工作流成功结果。日志明确注明“GitHub 已确认部署，但本机 HTTP 可达性未核验”，不把它说成在线内容直读验证。可达但返回错误状态、空数据、过期数据的页面不能走该替代路径。部署超时保留提交供下次核验，不回滚远端或掩盖错误。
 

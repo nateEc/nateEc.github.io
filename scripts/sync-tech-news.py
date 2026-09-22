@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 import sqlite3
 from urllib.parse import urlparse
-from news_contract import is_localized, validate_digest, write_snapshot
+from news_contract import ITEMS_PER_SOURCE, is_localized, validate_digest, write_snapshot
 
 
 PROJECT_ROOT = Path(os.environ.get(
@@ -22,13 +22,11 @@ PROJECT_ROOT = Path(os.environ.get(
 )).expanduser().resolve()
 OUTPUT_JSON = PROJECT_ROOT / 'public/tech-news/latest.json'
 DB_PATH = Path.home() / '.hermes' / 'cron' / 'executions.db'
-AI_JOB_ID = 'a804139d5bcb'
 HN_JOB_ID = '0d56c417b34c'
 FETCH_TIMEOUT_SECONDS = int(os.environ.get('TECH_NEWS_FETCH_TIMEOUT_SECONDS', '300'))
 FETCH_ATTEMPTS = max(1, int(os.environ.get('TECH_NEWS_FETCH_ATTEMPTS', '2')))
 FETCH_RETRY_SECONDS = max(0, int(os.environ.get('TECH_NEWS_FETCH_RETRY_SECONDS', '10')))
 
-AI_SCRIPT = Path(__file__).resolve().parent / 'ai_digest_zh.py'
 HN_SCRIPT = Path(__file__).resolve().parent / 'hacker_news_digest.py'
 HERMES_BIN = Path(os.environ.get('HERMES_BIN', shutil.which('hermes') or str(Path.home() / '.local/bin/hermes')))
 TRANSLATION_TIMEOUT_SECONDS = int(os.environ.get('TECH_NEWS_TRANSLATION_TIMEOUT_SECONDS', '600'))
@@ -133,33 +131,6 @@ def _last_completed_run(job_id: str, now: datetime) -> datetime | None:
     return None
 
 
-def _build_ai_section(data: dict[str, Any], source_name: str) -> dict[str, Any]:
-    raw_items = data.get('items') or []
-    items = []
-    for item in raw_items[:4]:
-        title = _normalize_text(item.get('title', ''), 100)
-        if not title:
-            continue
-        summary = _normalize_text(item.get('summary', ''), 220)
-        url = _safe_https_url(item.get('link'))
-        if not url:
-            continue
-        score = item.get('trend_score')
-        items.append({
-            'title': title,
-            'summary': summary,
-            'url': url,
-            'source': source_name,
-            'score': round(float(score), 2) if isinstance(score, (int, float)) else None,
-            'reasons': _reasons(item.get('why_trending')),
-            'published': _published(item.get('published')),
-        })
-    source_url = _safe_https_url(data.get('source_page') or data.get('feed_url'))
-    if not source_url:
-        source_url = 'https://ai-digest.liziran.com/zh/'
-    return {'name': source_name, 'source': source_url, 'items': items}
-
-
 def _build_hn_sections(data: dict[str, Any], translations: dict[str, dict[str, str]]) -> list[dict[str, Any]]:
     sections: list[dict[str, Any]] = []
     for source in data.get('sources', []):
@@ -167,7 +138,7 @@ def _build_hn_sections(data: dict[str, Any], translations: dict[str, dict[str, s
         source_page = _safe_https_url(source.get('source_page') or source.get('feed_url'))
         raw_items = source.get('items') or []
         items = []
-        for item in raw_items[:4]:
+        for item in raw_items[:ITEMS_PER_SOURCE]:
             title = _normalize_text(item.get('title', ''), 100)
             if not title:
                 continue
@@ -217,7 +188,7 @@ def _cached_translations() -> dict[str, dict[str, str]]:
 def _translation_candidates(data: dict[str, Any]) -> list[dict[str, str]]:
     candidates = []
     for source in data.get('sources', []):
-        for item in (source.get('items') or [])[:4]:
+        for item in (source.get('items') or [])[:ITEMS_PER_SOURCE]:
             url = _safe_https_url(item.get('link'))
             title = _normalize_text(item.get('title', ''), 100)
             if url and title:
@@ -261,26 +232,50 @@ def _translate_hn_items(data: dict[str, Any]) -> dict[str, dict[str, str]]:
     if missing_items():
         if not HERMES_BIN.is_file():
             raise RuntimeError(f'Hermes translator is missing: {HERMES_BIN}')
-        for attempt in range(2):
+        deadline = time.monotonic() + TRANSLATION_TIMEOUT_SECONDS
+        for attempt in range(3):
             missing = missing_items()
             if not missing:
                 break
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                raise RuntimeError('Hermes localization exceeded its time budget')
+            repair_items = []
+            for item in missing:
+                previous = translations.get(item['url'], {})
+                invalid_fields = [field + 'Zh' for field in ('title', 'summary')
+                                  if item[field] and not is_localized(item[field], previous.get(field + 'Zh'))]
+                repair_items.append({**item, 'previousTranslation': previous, 'invalidFields': invalid_fields})
             prompt = (
                 '你是科技新闻本地化编辑。将 JSON 中每条英文 title 和 summary 准确、自然、简洁地翻译为简体中文。'
                 '保留品牌和产品专名，但必须翻译其中的通用词，例如 Cloudflare Quick Tunnels → Cloudflare 快速隧道。'
                 '只有完全由单个品牌名构成的字段（如 OpenJEV）才允许原样保留。不要添加事实、评论或解释。'
+                '多词标题必须含中文；品牌有常用中文名时使用中文，例如 Xiaomi MiMo v2.6 → 小米 MiMo v2.6。'
+                'invalidFields 列出尚未通过校验的字段，请修正 previousTranslation 中这些字段；摘要不得留空。'
                 '必须覆盖每个 URL，只返回 JSON 对象：'
                 '{"translations":[{"url":"原 URL","titleZh":"中文标题","summaryZh":"中文摘要"}]}。输入：'
-                + json.dumps(missing, ensure_ascii=False)
+                + json.dumps(repair_items, ensure_ascii=False)
             )
             result = subprocess.run(
                 [str(HERMES_BIN), '--ignore-rules', '-t', '', '-z', prompt],
-                text=True, capture_output=True, check=False, timeout=TRANSLATION_TIMEOUT_SECONDS,
+                text=True, capture_output=True, check=False, timeout=remaining,
             )
             if result.returncode != 0:
                 detail = result.stderr.strip() or result.stdout.strip() or f'exit code {result.returncode}'
                 raise RuntimeError(f'Hermes localization failed: {detail[:800]}')
-            translations.update(_parse_translation_response(result.stdout))
+            try:
+                response = _parse_translation_response(result.stdout)
+            except (ValueError, TypeError) as exc:
+                if attempt == 2:
+                    raise RuntimeError(f'Hermes localization returned invalid JSON: {exc}') from exc
+                continue
+            for item in missing:
+                row = response.get(item['url'], {})
+                previous = translations.setdefault(item['url'], {})
+                for field in ('title', 'summary'):
+                    key = field + 'Zh'
+                    if is_localized(item[field], row.get(key)):
+                        previous[key] = row[key]
 
     missing_urls = [item['url'] for item in missing_items()]
     if missing_urls:
@@ -289,18 +284,13 @@ def _translate_hn_items(data: dict[str, Any]) -> dict[str, dict[str, str]]:
 
 
 def _to_json_payload(
-    ai_data: dict[str, Any],
     hn_data: dict[str, Any],
     run_times: dict[str, datetime | None],
     translations: dict[str, dict[str, str]],
 ) -> dict[str, Any]:
-    validate_digest(ai_data)
     validate_digest(hn_data)
     now = datetime.now().astimezone()
-    sections = []
-
-    sections.append(_build_ai_section(ai_data, 'AI资讯'))
-    sections.extend(_build_hn_sections(hn_data, translations))
+    sections = _build_hn_sections(hn_data, translations)
 
     return {
         'schemaVersion': 2,
@@ -308,10 +298,6 @@ def _to_json_payload(
         'date': now.date().isoformat(),
         'sections': sections,
         'jobs': {
-            'ai': {
-                'id': AI_JOB_ID,
-                'lastRunAt': run_times['ai'].isoformat() if run_times.get('ai') else None,
-            },
             'hn': {
                 'id': HN_JOB_ID,
                 'lastRunAt': run_times['hn'].isoformat() if run_times.get('hn') else None,
@@ -322,8 +308,8 @@ def _to_json_payload(
 
 def main() -> int:
     now = datetime.now().astimezone()
-    run_times = {'ai': None, 'hn': None}
-    for name, job_id in [('ai', AI_JOB_ID), ('hn', HN_JOB_ID)]:
+    run_times = {'hn': None}
+    for name, job_id in [('hn', HN_JOB_ID)]:
         try:
             run_times[name] = _last_completed_run(job_id, now)
         except sqlite3.Error as exc:
@@ -331,10 +317,9 @@ def main() -> int:
             print(f'warning: {name} run metadata unavailable: {exc}', file=sys.stderr)
 
     try:
-        ai_data = _run_digest(AI_SCRIPT)
         hn_data = _run_digest(HN_SCRIPT)
         translations = _translate_hn_items(hn_data)
-        payload = _to_json_payload(ai_data, hn_data, run_times, translations)
+        payload = _to_json_payload(hn_data, run_times, translations)
         write_snapshot(OUTPUT_JSON, payload)
     except Exception as exc:
         print(f'error: {exc}')

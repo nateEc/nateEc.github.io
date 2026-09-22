@@ -44,7 +44,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       kicker: 'NATHAN’S SIGNAL DESK · DAILY',
       titleLead: '我不追完所有新闻。',
       titleAccent: '只保留值得改变判断的信号。',
-      intro: '来自 AI、开发者工具与科技产业的一份每日筛选。热度只负责排序；是否值得读，仍由事实、工程影响和后续问题决定。',
+      intro: '每天从 Hacker News 与 TechCrunch 各选 8 条，关注开发者社区与科技产业。热度只负责排序；是否值得读，仍由事实、工程影响和后续问题决定。',
       fresh: '今日快照',
       stale: '最近快照',
       updated: '生成时间',
@@ -63,7 +63,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       sourcePage: '查看来源',
       method: '筛选方法',
       methodTitle: '让热度进入视野，让判断留在人手里。',
-      methodBody: '自动任务每天汇总三个公开来源，保留原文链接、发布时间与趋势依据。分数用于建立阅读顺序，不替代事实核验。',
+      methodBody: '每天汇总 Hacker News 与 TechCrunch 各 8 条，保留原文链接、发布时间与趋势依据，并提供中英文阅读。分数用于建立阅读顺序，不替代事实核验。',
       methodTags: ['时效性', '讨论热度', '工程相关性'],
       loading: '正在读取最新信号…',
       empty: '最新快照里还没有可展示的信号。',
@@ -75,7 +75,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       kicker: 'NATHAN’S SIGNAL DESK · DAILY',
       titleLead: 'I don’t read everything.',
       titleAccent: 'I keep the signals that might change my mind.',
-      intro: 'A daily filter across AI, developer tools, and the technology business. Momentum sets the reading order; facts, engineering impact, and open questions decide what deserves attention.',
+      intro: 'Eight stories each from Hacker News and TechCrunch, every day. Momentum sets the reading order; facts, engineering impact, and open questions decide what deserves attention.',
       fresh: 'Today’s snapshot',
       stale: 'Latest snapshot',
       updated: 'Generated',
@@ -94,7 +94,7 @@ const copy = computed(() => currentLanguage.value === 'zh'
       sourcePage: 'Open source',
       method: 'Selection method',
       methodTitle: 'Let momentum into the room. Keep judgment human.',
-      methodBody: 'An automated task collects three public sources each day and preserves the original link, publication time, and ranking evidence. The score sets an order; it does not replace verification.',
+      methodBody: 'Eight stories from Hacker News and eight from TechCrunch, available in English and Chinese with original links, publication times, and ranking evidence. The score sets an order; it does not replace verification.',
       methodTags: ['Recency', 'Discussion', 'Engineering relevance'],
       loading: 'Reading the latest signals…',
       empty: 'The latest snapshot has no displayable signals yet.',
@@ -219,7 +219,7 @@ const pointPosition = (item: RankedNewsItem, index: number) => {
   return { left: `${left}%`, top: `${top}%` }
 }
 
-const sourceLabel = (name: string) => currentLanguage.value === 'en' && name === 'AI资讯' ? 'AI Digest' : name
+const sourceLabel = (name: string) => name
 
 const displayDate = (value?: string, withTime = false) => {
   if (!value) return '—'

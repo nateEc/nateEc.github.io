@@ -30,7 +30,7 @@ class DigestDepthTests(unittest.TestCase):
     def test_agent_receives_twelve_rich_candidates_per_source(self):
         self.assertEqual(ai.MAX_ITEMS, 12)
         self.assertEqual(ai.SUMMARY_TARGET_LEN, 800)
-        self.assertEqual(hn.MAX_OUTPUT_PER_SOURCE, 12)
+        self.assertEqual(hn.MAX_OUTPUT_PER_SOURCE, 8)
         self.assertEqual(hn.SUMMARY_TARGET_LEN, 800)
 
 def payload():
@@ -39,7 +39,7 @@ def payload():
             'sections': [{'name': name, 'source': 'https://example.org', 'items': [
                 {'title': 'A real title', 'url': 'https://example.org/article', 'published': now.isoformat(),
                  **({'titleZh': '真实标题', 'summaryZh': ''} if name in {'Hacker News', 'TechCrunch'} else {})}
-            ]} for name in ['AI资讯', 'Hacker News', 'TechCrunch']]}
+            ] * 8} for name in ['Hacker News', 'TechCrunch']]}
 
 class SyncTests(unittest.TestCase):
     def test_brand_only_title_can_remain_untranslated(self):
@@ -66,6 +66,17 @@ class SyncTests(unittest.TestCase):
             result = sync._translate_hn_items(digest)
         self.assertEqual(result['https://try.cloudflare.com/']['titleZh'], 'Cloudflare 快速隧道')
         self.assertEqual(run.call_count, 2)
+        self.assertIn('invalidFields', run.call_args.args[0][-1])
+
+    def test_eight_items_per_source_are_selected_for_translation_and_display(self):
+        digest = {'sources': [{'name': name, 'items': [
+            {'title': f'Tool {i}', 'summary': '', 'link': f'https://example.org/{name}/{i}'}
+            for i in range(12)
+        ]} for name in ['Hacker News', 'TechCrunch']]}
+        candidates = sync._translation_candidates(digest)
+        self.assertEqual(len(candidates), 16)
+        translations = {item['url']: {'titleZh': '工具', 'summaryZh': ''} for item in candidates}
+        self.assertEqual([len(s['items']) for s in sync._build_hn_sections(digest, translations)], [8, 8])
 
     def test_missing_hermes_binary_fails_before_translation(self):
         digest = {'sources': [{'name': 'Hacker News', 'items': [{
@@ -80,6 +91,23 @@ class SyncTests(unittest.TestCase):
                 with self.assertRaisesRegex(RuntimeError, 'Hermes translator is missing'):
                     sync._translate_hn_items(digest)
             run.assert_not_called()
+
+    def test_product_title_repair_preserves_an_already_translated_summary(self):
+        url = 'https://mimo.xiaomi.com/mimo-v2-6'
+        digest = {'sources': [{'name': 'Hacker News', 'items': [{
+            'title': 'Xiaomi MiMo v2.6', 'summary': 'Introducing the MiMo-V2.6 series.', 'link': url,
+        }]}]}
+        rows = [
+            {'url': url, 'titleZh': 'Xiaomi MiMo v2.6', 'summaryZh': '介绍 MiMo-V2.6 系列。'},
+            {'url': url, 'titleZh': 'Xiaomi MiMo v2.6'},
+            {'url': url, 'titleZh': '小米 MiMo v2.6'},
+        ]
+        replies = [subprocess.CompletedProcess([], 0, json.dumps({'translations': [row]}), '') for row in rows]
+        with patch.object(sync, '_cached_translations', return_value={}), \
+                patch.object(sync, 'HERMES_BIN', Path(__file__)), \
+                patch.object(sync.subprocess, 'run', side_effect=replies):
+            result = sync._translate_hn_items(digest)[url]
+        self.assertEqual(result, {'titleZh': '小米 MiMo v2.6', 'summaryZh': '介绍 MiMo-V2.6 系列。'})
 
     def test_hn_sections_include_verified_chinese_localization(self):
         digest = {'sources': [{'name': 'Hacker News', 'source_page': 'https://news.ycombinator.com/', 'items': [{
@@ -157,6 +185,13 @@ class ContractTests(unittest.TestCase):
         for mutate in [lambda p: p['sections'].pop(), lambda p: p['sections'].append(p['sections'][0]), lambda p: p['sections'][1].update(items=[])]:
             data = payload(); mutate(data)
             with self.assertRaises(ValueError): validate_payload(data)
+
+    def test_requires_exactly_eight_items_per_source(self):
+        for count in [7, 9]:
+            data = payload()
+            data['sections'][0]['items'] = [dict(data['sections'][0]['items'][0]) for _ in range(count)]
+            with self.assertRaisesRegex(ValueError, '8'):
+                validate_payload(data)
 
     def test_rejects_missing_digest_source(self):
         with self.assertRaises(ValueError):

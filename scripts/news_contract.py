@@ -7,7 +7,8 @@ import re
 import tempfile
 from urllib.parse import urlparse
 
-REQUIRED_SOURCES = {'AI资讯', 'Hacker News', 'TechCrunch'}
+REQUIRED_SOURCES = {'Hacker News', 'TechCrunch'}
+ITEMS_PER_SOURCE = 8
 CJK_RE = re.compile(r'[\u3400-\u9fff]')
 BRAND_ONLY_RE = re.compile(r'[A-Za-z0-9][A-Za-z0-9._+\-]*')
 
@@ -62,6 +63,8 @@ def validate_payload(payload):
         items = section.get('items')
         if not isinstance(items, list) or not items:
             raise ValueError(f'tech-news source has no items: {section["name"]}')
+        if len(items) != ITEMS_PER_SOURCE:
+            raise ValueError(f'tech-news source requires {ITEMS_PER_SOURCE} items: {section["name"]}')
         for item in items:
             if not isinstance(item, dict) or not isinstance(item.get('title'), str) or not item['title'].strip():
                 raise ValueError('news item has no title')

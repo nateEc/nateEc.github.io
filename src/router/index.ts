@@ -27,8 +27,7 @@ const router = createRouter({
     },
     {
       path: '/worklog',
-      name: 'worklog',
-      component: () => import('../views/WorklogView.vue'),
+      redirect: '/',
     },
     {
       path: '/tech-news',

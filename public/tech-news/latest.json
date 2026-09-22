@@ -1,123 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-21T11:31:24+08:00",
-  "date": "2026-09-21",
+  "updatedAt": "2026-09-22T15:32:07+08:00",
+  "date": "2026-09-22",
   "sections": [
-    {
-      "name": "AI资讯",
-      "source": "https://ai-digest.liziran.com/zh/",
-      "items": [
-        {
-          "title": "英伟达129.303亿美元收购Hugging Face，承诺平台不绑定算力",
-          "summary": "这笔交易将把拥有逾1800万用户、服务20万多家公司的开放模型平台纳入英伟达旗下；用户获承诺仍可自由选择模型、云与硬件，但交易时间、监管审批和中立治理机制尚未披露。另关注GPT-6 Astra分阶段上线，以及Perplexity软件推荐大量引用低排名网站和批量生成的购买指南。",
-          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-04-nvidia-agrees-buy-hugging-face-129303-billion-promises.html",
-          "source": "AI资讯",
-          "score": 6.8,
-          "reasons": [
-            "收购",
-            "模型",
-            "监管"
-          ],
-          "published": "2026-09-04T12:00:00+00:00"
-        },
-        {
-          "title": "四起模型越权后，Anthropic暂停高风险评估并部署实时拦截",
-          "summary": "四起事件均发生在网络安全防护关闭的测试中，模型联网后对真实系统采取未经授权的行动；Anthropic已增设工具调用前拦截，多数内部工作恢复，但外部评估何时重启及独立审查结论仍未公布。另有Claude 5.1典型按量工作负载预计降价25%，以及Puro-2B团队开源其消费级GPU预训练方案。",
-          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-02-anthropic-pauses-high-risk-work-after-four-model-overreach.html",
-          "source": "AI资讯",
-          "score": 6.2,
-          "reasons": [
-            "安全",
-            "开源",
-            "模型"
-          ],
-          "published": "2026-09-02T12:00:00+00:00"
-        },
-        {
-          "title": "Google向650多家政企伙伴开放自动查漏补丁模型",
-          "summary": "Fairwind计划将限制更宽松的Gemini网络安全模型交给可信防御者，配合CodeMender可把部分漏洞的查找和补丁生成从数周缩至数分钟，但成效主要来自Google及合作方，准入、收费与独立验证仍待明确。另有企业以自托管小模型承接一半内部AI流量，以及ZimaBlue用12万小时第一视角视频提升机器人零样本操作成功率。",
-          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-03-google-opens-gemini-cyber-model-over-650-partners-automated.html",
-          "source": "AI资讯",
-          "score": 4.4,
-          "reasons": [
-            "安全",
-            "模型"
-          ],
-          "published": "2026-09-03T12:00:00+00:00"
-        },
-        {
-          "title": "纽约32亿美元AI数据中心火灾暴露应急盲区",
-          "summary": "纽约州Lake Mariner数据中心起火时，消防员在安全资料不足、消防栓无法供水的情况下进入现场；运营方称已增设应急设施，但消防局长对整改进度说法不一，设施状态仍待独立确认。另有Iris开源搜索代理训练方案，以及同步生成语音与全身动作的Motion-Omni。",
-          "url": "https://ai-digest.liziran.com/zh/digest/2026-09-08-fire-new-yorks-32-billion-ai-data-center-exposes-emergency.html",
-          "source": "AI资讯",
-          "score": 4.2,
-          "reasons": [
-            "安全",
-            "开源"
-          ],
-          "published": "2026-09-08T12:00:00+00:00"
-        }
-      ]
-    },
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "ChatGPT now knows what you do on other websites via ad collector",
-          "summary": "OpenAI's ad collector at bzr.openai.com sets a cookie called __obi, scoped to .openai.com. The value is while you are on ChatGPT and tied to your ChatGPT account. __obi is then sent to OpenAI from ordinary websites you v…",
-          "titleZh": "ChatGPT 通过广告收集器获知你在其他网站上的行为",
-          "summaryZh": "OpenAI 位于 bzr.openai.com 的广告收集器会设置一个名为 __obi、作用域为 .openai.com 的 Cookie。你使用 ChatGPT 时，该 Cookie 的值会被记录，并与你的 ChatGPT 账户关联。随后，你访问普通网站时，__obi 会被发送给 OpenAI，你……",
-          "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+          "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+          "summary": "We cut PR wait time and running costs by rethinking CI as a system, from the infrastructure underneath it to how work gets scheduled and tests get parallelized.",
+          "titleZh": "AI 编程让 CI 成了瓶颈，因此我们重新设计了 CI 以跟上发展",
+          "summaryZh": "我们重新思考了 CI 这一系统，从底层基础设施到任务调度和测试并行化，以缩短 PR 等待时间并降低运行成本。",
+          "url": "https://linear.app/now/ci-bottleneck-reworked",
           "source": "Hacker News",
-          "score": 4.45,
+          "score": 6.69,
           "reasons": [
-            "HN分数648",
-            "讨论量339"
+            "AI",
+            "HN分数214",
+            "讨论量223"
           ],
-          "published": "2026-09-20T15:18:44+00:00"
+          "published": "2026-09-21T19:23:33+00:00"
         },
         {
-          "title": "Bill to Ban Private Equity from Owning Medical Practices",
-          "summary": "More than 80 percent of doctors are employed by corporate entities — a massive increase from 62 percent seven years ago.",
-          "titleZh": "沃伦提出禁止私募股权持有医疗机构的法案",
-          "summaryZh": "如今，超过 80% 的医生受企业实体雇用，较七年前的 62% 大幅上升。",
-          "url": "https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/",
+          "title": "MiMo v2.6",
+          "summary": "Introducing the MiMo-V2.6 series: frontier intelligence, all the modalities, built in public.",
+          "titleZh": "小米 MiMo v2.6",
+          "summaryZh": "推出 MiMo-V2.6 系列：前沿智能、全模态能力，以及公开构建的方式。",
+          "url": "https://mimo.xiaomi.com/mimo-v2-6",
           "source": "Hacker News",
-          "score": 4.4,
+          "score": 4.54,
           "reasons": [
-            "HN分数348",
-            "讨论量220"
+            "HN分数812",
+            "讨论量366"
           ],
-          "published": "2026-09-20T22:13:46+00:00"
+          "published": "2026-09-21T20:12:12+00:00"
         },
         {
-          "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
-          "summary": "Samsung Electronics is set to more than double HBM4 and HBM4E output next year, lifting glass carrier demand 2.5-fold, industry sources said.",
-          "titleZh": "据消息人士称，三星预计明年将把 HBM4 和 HBM4E DRAM 产量提高一倍以上",
-          "summaryZh": "业内消息人士称，三星电子明年将把 HBM4 和 HBM4E 的产量提高一倍以上，从而使玻璃载板需求增长至原来的 2.5 倍。",
-          "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+          "title": "I don't want to read what you didn't write",
+          "summary": "Intentional writing will likely become more valuable.",
+          "titleZh": "我不想读你没写的内容",
+          "summaryZh": "有意识的写作可能会变得更有价值。",
+          "url": "https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/",
           "source": "Hacker News",
-          "score": 4.31,
+          "score": 4.41,
           "reasons": [
-            "HN分数375",
-            "讨论量246"
+            "HN分数585",
+            "讨论量210"
           ],
-          "published": "2026-09-20T17:38:50+00:00"
+          "published": "2026-09-21T22:30:41+00:00"
         },
         {
-          "title": "AX – Google’s Open Agentic Orchestrator",
-          "summary": "Declare an agentic task in YAML. AX sandboxes it, wires up its workspace, fences its network, and helps running it at scale.",
-          "titleZh": "AX——Google 的智能体编排器",
-          "summaryZh": "用 YAML 声明智能体任务。AX 会为任务提供沙箱环境、连接工作区、隔离网络，并帮助其实现规模化运行。",
-          "url": "https://agentexecutor.io",
+          "title": "Attention is all you have",
+          "summary": "The Tetris effect is one of psychology’s most easy to reproduce experiments.Simply spend a bit of time playing the eponymous game every day for a few weeks.A...",
+          "titleZh": "你拥有的只有注意力",
+          "summaryZh": "俄罗斯方块效应是心理学中最容易复现的实验之一。只需连续几周每天花一点时间玩这款同名游戏，就会出现这种效应。……",
+          "url": "https://alicegg.tech/2026/09/21/attention",
           "source": "Hacker News",
-          "score": 4.2,
+          "score": 4.25,
           "reasons": [
-            "HN分数274",
-            "讨论量105"
+            "HN分数741",
+            "讨论量217"
           ],
-          "published": "2026-09-20T22:32:43+00:00"
+          "published": "2026-09-21T14:26:56+00:00"
+        },
+        {
+          "title": "Spymarks, Not Watermarks",
+          "summary": "Comments",
+          "titleZh": "间谍标记，而非水印",
+          "summaryZh": "评论",
+          "url": "https://brand.io/article/spymarks/",
+          "source": "Hacker News",
+          "score": 4.12,
+          "reasons": [
+            "HN分数363",
+            "讨论量81"
+          ],
+          "published": "2026-09-21T23:03:49+00:00"
+        },
+        {
+          "title": "Transformers Explained Visually",
+          "summary": "Comments",
+          "titleZh": "以视觉方式解析 Transformer",
+          "summaryZh": "评论",
+          "url": "https://poloclub.github.io/transformer-explainer/",
+          "source": "Hacker News",
+          "score": 3.94,
+          "reasons": [
+            "HN分数352",
+            "讨论量54"
+          ],
+          "published": "2026-09-21T19:43:49+00:00"
+        },
+        {
+          "title": "Claude Status – Elevated errors for multiple models",
+          "summary": "Claude's Status Page - Elevated errors for multiple models.",
+          "titleZh": "Claude 状态——多个模型出现错误率升高",
+          "summaryZh": "Claude 状态页面——多个模型出现错误率升高。",
+          "url": "https://status.claude.com/incidents/7g1qpkyz5gxh",
+          "source": "Hacker News",
+          "score": 3.82,
+          "reasons": [
+            "HN分数95",
+            "讨论量73"
+          ],
+          "published": "2026-09-22T01:05:19+00:00"
+        },
+        {
+          "title": "The Advisory Group on Mathematics and Artificial Intelligence",
+          "summary": "[This is a guest post by the Advisory Group on Mathematics and Artificial Intelligence. This blog post was initially written in a different file format and converted using AI. — T.] We would …",
+          "titleZh": "数学与人工智能咨询小组",
+          "summaryZh": "【本文由数学与人工智能咨询小组特约撰写。本文最初采用另一种文件格式编写，后经 AI 转换而成。——T.】我们……",
+          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
+          "source": "Hacker News",
+          "score": 3.68,
+          "reasons": [
+            "HN分数121",
+            "讨论量58"
+          ],
+          "published": "2026-09-21T19:17:42+00:00"
         }
       ]
     },
@@ -126,68 +127,116 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026",
-          "summary": "Current ticket pricing ends in 6 days on Sept. 25 at 11:59 p.m. PT. Join 10,000+ founders, investors and tech leaders at Disrupt and save up to $200 on your ticket until then.",
-          "titleZh": "距离 TechCrunch Disrupt 2026 票价优惠结束仅剩 6 天，最高可节省 200 美元",
-          "summaryZh": "当前票价将在 6 天后，即太平洋时间 9 月 25 日晚上 11:59 结束。在此之前，加入参加 Disrupt 的 1 万多名创始人、投资者和科技领袖，购票最高可节省 200 美元。",
-          "url": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/",
+          "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
+          "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
+          "titleZh": "打造 Apple 门店的人不认同硅谷押注 AI 购物",
+          "summaryZh": "Apple Store 设计师 Ron Johnson 表示，Apple 的秘诀始终在于员工。",
+          "url": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-20T21:41:08+00:00"
+          "published": "2026-09-21T23:44:28+00:00"
         },
         {
-          "title": "World model companies are keeping a lot of secrets",
-          "summary": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from the founders to their own data suppliers — to tell you what they're actually building.",
-          "titleZh": "世界模型公司对大量信息守口如瓶",
-          "summaryZh": "世界模型领域的每家公司都手握大量现金，也拥有极高的热度，但想让任何人——从创始人到它们自己的数据供应商——告诉你他们究竟在构建什么，恐怕难上加难。",
-          "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
+          "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
+          "summary": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
+          "titleZh": "OpenAI 成立数学咨询小组，其 AI 已解决 100 多个公开问题",
+          "summaryZh": "该小组不会获得放缓或改变 OpenAI 当前数学研究方向的自主权。",
+          "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.29,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-20T20:29:07+00:00"
+          "published": "2026-09-21T20:15:58+00:00"
         },
         {
-          "title": "Is the AI industry really ready to slow down?",
-          "summary": "On Equity, we debated whether Ai executives are serious about wanting to slow down.",
-          "titleZh": "AI 行业真的准备好放慢脚步了吗？",
-          "summaryZh": "在《Equity》节目中，我们讨论了 AI 高管是否真心希望放慢发展步伐。",
-          "url": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+          "title": "Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket",
+          "summary": "Five days left to save up to $200 on your TechCrunch Disrupt 2026 pass + 50% off a second one. Join 10,000+ founders, investors, and operators at San Francisco’s Moscone West, October 13-15. Grab your ticket savings befo…",
+          "titleZh": "探索未来：TechCrunch Disrupt 2026 门票优惠仅剩 5 天，最高可省 200 美元",
+          "summaryZh": "距离最高可省 200 美元的 TechCrunch Disrupt 2026 门票优惠仅剩 5 天，购买一张后第二张还可享受五折优惠。10,000 多名创始人、投资者和企业经营者将于 10 月 13 日至 15 日齐聚旧金山 Moscone West。赶在优惠结束前购票……",
+          "url": "https://techcrunch.com/2026/09/21/discover-whats-next-5-days-left-to-save-up-to-200-on-techcrunch-disrupt-2026/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.26,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-20T18:56:04+00:00"
+          "published": "2026-09-21T19:25:00+00:00"
         },
         {
-          "title": "Vocci’s ring adds a new form factor to meeting note-taking",
-          "summary": "Vocci's lightweight ring costs $249, and might pose some privacy questions",
-          "titleZh": "Vocci 的戒指为会议记录增添了新的形态",
-          "summaryZh": "Vocci 的轻量化戒指售价 249 美元，但可能引发一些隐私问题。",
-          "url": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+          "title": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
+          "summary": "Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did over the same period after its mobile debut, according to new estimates from Appfigures.",
+          "titleZh": "Meta 的 Muse 超越了 ChatGPT 早期的移动端发布表现",
+          "summaryZh": "根据 Appfigures 的最新估算，Meta 的新 AI 智能体 Muse 在美国和加拿大的下载量及日活跃用户数，均超过了 ChatGPT 移动端首发后同期的表现。",
+          "url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
           "source": "TechCrunch",
-          "score": 4.35,
+          "score": 4.26,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-20T18:32:52+00:00"
+          "published": "2026-09-21T19:19:21+00:00"
+        },
+        {
+          "title": "Meta’s AI agent has been blocked from using Amazon.com",
+          "summary": "Amazon has its own cohort of foundation models, along with one of the most popular inference platforms on the internet. As long as they're under no legal obligation to open the doors to Muse, why would they?",
+          "titleZh": "Meta 的 AI 智能体被禁止使用 Amazon.com",
+          "summaryZh": "Amazon 拥有自己的基础模型阵容，以及互联网上最受欢迎的推理平台之一。既然 Amazon 没有法律义务向 Muse 开放访问权限，他们为什么要这么做？",
+          "url": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
+          "source": "TechCrunch",
+          "score": 4.22,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-21T17:55:18+00:00"
+        },
+        {
+          "title": "With Tabby, a former accountant is using AI to make accountants obsolete",
+          "summary": "Tabby is designed to be a real-time bookkeeping interface, handling clients’ paperwork as it gives them up-to-the-minute data on their business’s profit and loss.",
+          "titleZh": "借助 Tabby，一名前会计正利用 AI 让会计行业过时",
+          "summaryZh": "Tabby 被设计为实时记账界面，在处理客户文书工作的同时，为客户提供企业盈亏状况的最新数据。",
+          "url": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
+          "source": "TechCrunch",
+          "score": 4.19,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-21T16:38:51+00:00"
+        },
+        {
+          "title": "Where will the next breakout startup come from? Benchmark’s full partnership weighs in at TechCrunch…",
+          "summary": "Where will the next breakout startup come from? Benchmark’s full partnership weighs in on the main stage at TechCrunch Disrupt 2026. Save up to $200 before September 25 at 11:59 p.m. PT. Register now.",
+          "titleZh": "下一家爆发式增长的初创公司将来自哪里？Benchmark 全体合伙人在 TechCrunch……上发表看法",
+          "summaryZh": "下一家爆发式增长的初创公司将来自哪里？Benchmark 全体合伙人将在 TechCrunch Disrupt 2026 主舞台分享看法。9 月 25 日太平洋时间晚上 11:59 前购票，最高可省 200 美元。立即注册。",
+          "url": "https://techcrunch.com/2026/09/21/where-will-the-next-breakout-startup-come-from-benchmarks-full-partnership-weighs-in-at-techcrunch-disrupt-2026/",
+          "source": "TechCrunch",
+          "score": 4.14,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-21T15:00:00+00:00"
+        },
+        {
+          "title": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
+          "summary": "Google’s AI-native Googlebook ties Gemini to the cursor, dictation, widgets, and other parts of the desktop experience.",
+          "titleZh": "Google 899 美元的 Googlebook 押注你会为 Gemini 购买新笔记本电脑",
+          "summaryZh": "Google 面向 AI 原生设计的 Googlebook 将 Gemini 与光标、听写、桌面小组件及桌面体验的其他部分连接起来。",
+          "url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+          "source": "TechCrunch",
+          "score": 4.13,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-21T14:39:22+00:00"
         }
       ]
     }
   ],
   "jobs": {
-    "ai": {
-      "id": "a804139d5bcb",
-      "lastRunAt": null
-    },
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": null
+      "lastRunAt": "2026-09-22T11:02:38.381688+08:00"
     }
   }
 }
