@@ -1,119 +1,119 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-21T14:30:55+08:00",
-  "date": "2026-09-21",
+  "updatedAt": "2026-09-22T14:30:13+08:00",
+  "date": "2026-09-22",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 826,
-      "totalStars": 264019,
-      "forks": 39488,
-      "url": "https://github.com/affaan-m/ECC"
-    },
-    {
-      "rank": 2,
       "fullName": "BuilderIO/agent-native",
       "description": "A framework for building agentic apps",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 98,
-      "totalStars": 5411,
-      "forks": 502,
+      "starsToday": 607,
+      "totalStars": 6095,
+      "forks": 556,
       "url": "https://github.com/BuilderIO/agent-native"
     },
     {
-      "rank": 3,
-      "fullName": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 2428,
-      "totalStars": 18304,
-      "forks": 1024,
-      "url": "https://github.com/cloudflare/security-audit-skill"
-    },
-    {
-      "rank": 4,
+      "rank": 2,
       "fullName": "trycua/cua",
       "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
       "language": "HTML",
       "languageColor": "#E34C26",
-      "starsToday": 1018,
-      "totalStars": 25322,
-      "forks": 1742,
+      "starsToday": 609,
+      "totalStars": 25808,
+      "forks": 1776,
       "url": "https://github.com/trycua/cua"
     },
     {
-      "rank": 5,
-      "fullName": "anthropics/financial-services",
-      "description": "",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 260,
-      "totalStars": 35499,
-      "forks": 5256,
-      "url": "https://github.com/anthropics/financial-services"
-    },
-    {
-      "rank": 6,
-      "fullName": "paperless-ngx/paperless-ngx",
-      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 57,
-      "totalStars": 45685,
-      "forks": 3159,
-      "url": "https://github.com/paperless-ngx/paperless-ngx"
-    },
-    {
-      "rank": 7,
-      "fullName": "anthropics/claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 419,
-      "totalStars": 147271,
-      "forks": 24086,
-      "url": "https://github.com/anthropics/claude-code"
-    },
-    {
-      "rank": 8,
-      "fullName": "mihail911/modern-software-dev-assignments",
-      "description": "Assignments for CS146S: The Modern Software Dev (Stanford University Fall 2026/2025)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 172,
-      "totalStars": 4643,
-      "forks": 1016,
-      "url": "https://github.com/mihail911/modern-software-dev-assignments"
-    },
-    {
-      "rank": 9,
-      "fullName": "higgsfield-ai/higgsfield",
-      "description": "Fault-tolerant, highly scalable GPU orchestration, and a machine learning framework designed for training models with billions to trillions of parameters",
-      "language": "Jupyter Notebook",
-      "languageColor": "#8B949E",
-      "starsToday": 465,
-      "totalStars": 5489,
-      "forks": 964,
-      "url": "https://github.com/higgsfield-ai/higgsfield"
-    },
-    {
-      "rank": 10,
+      "rank": 3,
       "fullName": "Open-Dev-Society/OpenStock",
       "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 755,
-      "totalStars": 17049,
-      "forks": 2147,
+      "starsToday": 844,
+      "totalStars": 18003,
+      "forks": 2222,
       "url": "https://github.com/Open-Dev-Society/OpenStock"
+    },
+    {
+      "rank": 4,
+      "fullName": "akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 167,
+      "totalStars": 7834,
+      "forks": 527,
+      "url": "https://github.com/akitaonrails/ai-memory"
+    },
+    {
+      "rank": 5,
+      "fullName": "coder/coder",
+      "description": "Secure environments for developers and their agents",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 460,
+      "totalStars": 16511,
+      "forks": 1569,
+      "url": "https://github.com/coder/coder"
+    },
+    {
+      "rank": 6,
+      "fullName": "anthropics/financial-services",
+      "description": "",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 424,
+      "totalStars": 35932,
+      "forks": 5274,
+      "url": "https://github.com/anthropics/financial-services"
+    },
+    {
+      "rank": 7,
+      "fullName": "cloudflare/quiche",
+      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 32,
+      "totalStars": 12417,
+      "forks": 1137,
+      "url": "https://github.com/cloudflare/quiche"
+    },
+    {
+      "rank": 8,
+      "fullName": "mvt-project/mvt",
+      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 169,
+      "totalStars": 13700,
+      "forks": 1332,
+      "url": "https://github.com/mvt-project/mvt"
+    },
+    {
+      "rank": 9,
+      "fullName": "zhouxiaoka/autoclip",
+      "description": "AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 250,
+      "totalStars": 8453,
+      "forks": 1583,
+      "url": "https://github.com/zhouxiaoka/autoclip"
+    },
+    {
+      "rank": 10,
+      "fullName": "ruanyf/weekly",
+      "description": "科技爱好者周刊，每周五发布",
+      "language": "Unknown",
+      "languageColor": "#8B949E",
+      "starsToday": 182,
+      "totalStars": 104213,
+      "forks": 4458,
+      "url": "https://github.com/ruanyf/weekly"
     }
   ],
   "languages": [
@@ -124,16 +124,22 @@
       "color": "#3572A5"
     },
     {
+      "name": "Rust",
+      "count": 2,
+      "share": 20,
+      "color": "#DEA584"
+    },
+    {
       "name": "TypeScript",
-      "count": 3,
-      "share": 30,
+      "count": 2,
+      "share": 20,
       "color": "#3178C6"
     },
     {
-      "name": "JavaScript",
-      "count": 2,
-      "share": 20,
-      "color": "#F1E05A"
+      "name": "Go",
+      "count": 1,
+      "share": 10,
+      "color": "#00ADD8"
     },
     {
       "name": "HTML",
@@ -142,7 +148,7 @@
       "color": "#E34C26"
     },
     {
-      "name": "Jupyter Notebook",
+      "name": "Unknown",
       "count": 1,
       "share": 10,
       "color": "#8B949E"
@@ -153,26 +159,24 @@
       "name": "Agent systems",
       "count": 3,
       "repositories": [
-        "affaan-m/ECC",
         "BuilderIO/agent-native",
-        "cloudflare/security-audit-skill"
+        "akitaonrails/ai-memory",
+        "coder/coder"
       ]
     },
     {
-      "name": "Developer tools",
-      "count": 3,
-      "repositories": [
-        "affaan-m/ECC",
-        "cloudflare/security-audit-skill",
-        "anthropics/claude-code"
-      ]
-    },
-    {
-      "name": "Security",
+      "name": "AI infrastructure",
       "count": 2,
       "repositories": [
-        "affaan-m/ECC",
-        "cloudflare/security-audit-skill"
+        "akitaonrails/ai-memory",
+        "zhouxiaoka/autoclip"
+      ]
+    },
+    {
+      "name": "Data & systems",
+      "count": 1,
+      "repositories": [
+        "trycua/cua"
       ]
     }
   ]
