@@ -1,182 +1,144 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T14:30:13+08:00",
-  "date": "2026-09-22",
+  "updatedAt": "2026-09-23T14:30:16+08:00",
+  "date": "2026-09-23",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "BuilderIO/agent-native",
-      "description": "A framework for building agentic apps",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 607,
-      "totalStars": 6095,
-      "forks": 556,
-      "url": "https://github.com/BuilderIO/agent-native"
-    },
-    {
-      "rank": 2,
-      "fullName": "trycua/cua",
-      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
-      "language": "HTML",
-      "languageColor": "#E34C26",
-      "starsToday": 609,
-      "totalStars": 25808,
-      "forks": 1776,
-      "url": "https://github.com/trycua/cua"
-    },
-    {
-      "rank": 3,
-      "fullName": "Open-Dev-Society/OpenStock",
-      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 844,
-      "totalStars": 18003,
-      "forks": 2222,
-      "url": "https://github.com/Open-Dev-Society/OpenStock"
-    },
-    {
-      "rank": 4,
-      "fullName": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 167,
-      "totalStars": 7834,
-      "forks": 527,
-      "url": "https://github.com/akitaonrails/ai-memory"
-    },
-    {
-      "rank": 5,
-      "fullName": "coder/coder",
-      "description": "Secure environments for developers and their agents",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 460,
-      "totalStars": 16511,
-      "forks": 1569,
-      "url": "https://github.com/coder/coder"
-    },
-    {
-      "rank": 6,
       "fullName": "anthropics/financial-services",
       "description": "",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 424,
-      "totalStars": 35932,
-      "forks": 5274,
+      "starsToday": 438,
+      "totalStars": 36537,
+      "forks": 5336,
       "url": "https://github.com/anthropics/financial-services"
     },
     {
-      "rank": 7,
-      "fullName": "cloudflare/quiche",
-      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 32,
-      "totalStars": 12417,
-      "forks": 1137,
-      "url": "https://github.com/cloudflare/quiche"
+      "rank": 2,
+      "fullName": "agent-substrate/substrate",
+      "description": "Agent Substrate: the core system",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 245,
+      "totalStars": 3110,
+      "forks": 390,
+      "url": "https://github.com/agent-substrate/substrate"
     },
     {
-      "rank": 8,
+      "rank": 3,
+      "fullName": "dream-num/univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 255,
+      "totalStars": 15779,
+      "forks": 1402,
+      "url": "https://github.com/dream-num/univer"
+    },
+    {
+      "rank": 4,
+      "fullName": "davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 64,
+      "totalStars": 31217,
+      "forks": 3550,
+      "url": "https://github.com/davila7/claude-code-templates"
+    },
+    {
+      "rank": 5,
+      "fullName": "google/ax",
+      "description": "Google's open agentic orchestration runtime",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 2305,
+      "totalStars": 7977,
+      "forks": 369,
+      "url": "https://github.com/google/ax"
+    },
+    {
+      "rank": 6,
       "fullName": "mvt-project/mvt",
       "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 169,
-      "totalStars": 13700,
-      "forks": 1332,
+      "starsToday": 441,
+      "totalStars": 14236,
+      "forks": 1367,
       "url": "https://github.com/mvt-project/mvt"
     },
     {
-      "rank": 9,
-      "fullName": "zhouxiaoka/autoclip",
-      "description": "AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具",
+      "rank": 7,
+      "fullName": "superdesigndev/treg",
+      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 250,
-      "totalStars": 8453,
-      "forks": 1583,
-      "url": "https://github.com/zhouxiaoka/autoclip"
+      "starsToday": 230,
+      "totalStars": 2343,
+      "forks": 226,
+      "url": "https://github.com/superdesigndev/treg"
     },
     {
-      "rank": 10,
-      "fullName": "ruanyf/weekly",
-      "description": "科技爱好者周刊，每周五发布",
-      "language": "Unknown",
-      "languageColor": "#8B949E",
-      "starsToday": 182,
-      "totalStars": 104213,
-      "forks": 4458,
-      "url": "https://github.com/ruanyf/weekly"
+      "rank": 8,
+      "fullName": "browser-use/video-use",
+      "description": "Edit videos with coding agents",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 191,
+      "totalStars": 26059,
+      "forks": 3131,
+      "url": "https://github.com/browser-use/video-use"
     }
   ],
   "languages": [
     {
       "name": "Python",
-      "count": 3,
-      "share": 30,
+      "count": 5,
+      "share": 62,
       "color": "#3572A5"
     },
     {
-      "name": "Rust",
-      "count": 2,
-      "share": 20,
-      "color": "#DEA584"
-    },
-    {
-      "name": "TypeScript",
-      "count": 2,
-      "share": 20,
-      "color": "#3178C6"
-    },
-    {
       "name": "Go",
-      "count": 1,
-      "share": 10,
+      "count": 2,
+      "share": 25,
       "color": "#00ADD8"
     },
     {
-      "name": "HTML",
+      "name": "TypeScript",
       "count": 1,
-      "share": 10,
-      "color": "#E34C26"
-    },
-    {
-      "name": "Unknown",
-      "count": 1,
-      "share": 10,
-      "color": "#8B949E"
+      "share": 12,
+      "color": "#3178C6"
     }
   ],
   "themes": [
     {
       "name": "Agent systems",
-      "count": 3,
+      "count": 4,
       "repositories": [
-        "BuilderIO/agent-native",
-        "akitaonrails/ai-memory",
-        "coder/coder"
-      ]
-    },
-    {
-      "name": "AI infrastructure",
-      "count": 2,
-      "repositories": [
-        "akitaonrails/ai-memory",
-        "zhouxiaoka/autoclip"
+        "agent-substrate/substrate",
+        "dream-num/univer",
+        "superdesigndev/treg",
+        "browser-use/video-use"
       ]
     },
     {
       "name": "Data & systems",
-      "count": 1,
+      "count": 2,
       "repositories": [
-        "trycua/cua"
+        "dream-num/univer",
+        "google/ax"
+      ]
+    },
+    {
+      "name": "Developer tools",
+      "count": 2,
+      "repositories": [
+        "davila7/claude-code-templates",
+        "browser-use/video-use"
       ]
     }
   ]
