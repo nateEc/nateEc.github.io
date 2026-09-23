@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-22T15:32:07+08:00",
-  "date": "2026-09-22",
+  "updatedAt": "2026-09-23T11:32:02+08:00",
+  "date": "2026-09-23",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
-          "summary": "We cut PR wait time and running costs by rethinking CI as a system, from the infrastructure underneath it to how work gets scheduled and tests get parallelized.",
-          "titleZh": "AI 编程让 CI 成了瓶颈，因此我们重新设计了 CI 以跟上发展",
-          "summaryZh": "我们重新思考了 CI 这一系统，从底层基础设施到任务调度和测试并行化，以缩短 PR 等待时间并降低运行成本。",
-          "url": "https://linear.app/now/ci-bottleneck-reworked",
+          "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+          "summary": "Comments",
+          "titleZh": "五角大楼称，过度依赖人工智能导致伊朗学校遭导弹袭击",
+          "summaryZh": "评论",
+          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
           "source": "Hacker News",
-          "score": 6.69,
+          "score": 7.01,
           "reasons": [
             "AI",
-            "HN分数214",
-            "讨论量223"
+            "HN分数480",
+            "讨论量243"
           ],
-          "published": "2026-09-21T19:23:33+00:00"
+          "published": "2026-09-22T19:03:38+00:00"
         },
         {
-          "title": "MiMo v2.6",
-          "summary": "Introducing the MiMo-V2.6 series: frontier intelligence, all the modalities, built in public.",
-          "titleZh": "小米 MiMo v2.6",
-          "summaryZh": "推出 MiMo-V2.6 系列：前沿智能、全模态能力，以及公开构建的方式。",
-          "url": "https://mimo.xiaomi.com/mimo-v2-6",
+          "title": "Claude Opus 5.5",
+          "summary": "Claude Opus 5.5 leads in agentic coding and knowledge work, and costs 40% less to run than Opus 5 on typical workloads.",
+          "titleZh": "Claude Opus 5.5 模型",
+          "summaryZh": "Claude Opus 5.5 在智能体编程和知识工作方面表现领先，在典型工作负载下的运行成本比 Opus 5 低 40%。",
+          "url": "https://www.anthropic.com/claude-opus-5-5",
           "source": "Hacker News",
-          "score": 4.54,
+          "score": 4.83,
           "reasons": [
-            "HN分数812",
-            "讨论量366"
+            "HN分数1285",
+            "讨论量853"
           ],
-          "published": "2026-09-21T20:12:12+00:00"
+          "published": "2026-09-22T16:29:05+00:00"
         },
         {
-          "title": "I don't want to read what you didn't write",
-          "summary": "Intentional writing will likely become more valuable.",
-          "titleZh": "我不想读你没写的内容",
-          "summaryZh": "有意识的写作可能会变得更有价值。",
-          "url": "https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/",
+          "title": "GPT-6 Sol and Luna",
+          "summary": "Comments",
+          "titleZh": "GPT-6 Sol 和 Luna",
+          "summaryZh": "评论",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
           "source": "Hacker News",
-          "score": 4.41,
+          "score": 4.81,
+          "reasons": [
+            "HN分数1266",
+            "讨论量636"
+          ],
+          "published": "2026-09-22T18:00:34+00:00"
+        },
+        {
+          "title": "'We hacked the FBI:' Hackers say they have data on all FBI employees",
+          "summary": "A sample of 5,000 alleged agents seen by 404 Media includes names, addresses, phone numbers, and details on FBI employees' spouses.",
+          "titleZh": "“我们黑了 FBI”：黑客称掌握所有 FBI 员工的数据",
+          "summaryZh": "404 Media 查看的一份样本包含 5000 名据称是特工的人员信息，其中包括姓名、地址、电话号码，以及 FBI 员工配偶的相关资料。",
+          "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/",
+          "source": "Hacker News",
+          "score": 4.43,
+          "reasons": [
+            "HN分数464",
+            "讨论量337"
+          ],
+          "published": "2026-09-22T17:46:02+00:00"
+        },
+        {
+          "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+          "summary": "On 15 September 2026, Carter Leffer contacted me to request validation of a break of the German Army Enigma message MVUEH of 10 July 1941. The message, which was sent by a radio station with the tactical callsign 2ny, wa…",
+          "titleZh": "OpenAI GPT–6 Astra 破解了自 2005 年以来一直无人破解的 Enigma 密电",
+          "summaryZh": "2026 年 9 月 15 日，Carter Leffer 联系我，请求验证一项破解成果：德国陆军于 1941 年 7 月 10 日发送的 MVUEH Enigma 密电。这条消息由一座使用战术呼号 2ny 的电台发出，内容……",
+          "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+          "source": "Hacker News",
+          "score": 4.4,
           "reasons": [
             "HN分数585",
-            "讨论量210"
+            "讨论量370"
           ],
-          "published": "2026-09-21T22:30:41+00:00"
+          "published": "2026-09-22T13:52:15+00:00"
         },
         {
-          "title": "Attention is all you have",
-          "summary": "The Tetris effect is one of psychology’s most easy to reproduce experiments.Simply spend a bit of time playing the eponymous game every day for a few weeks.A...",
-          "titleZh": "你拥有的只有注意力",
-          "summaryZh": "俄罗斯方块效应是心理学中最容易复现的实验之一。只需连续几周每天花一点时间玩这款同名游戏，就会出现这种效应。……",
-          "url": "https://alicegg.tech/2026/09/21/attention",
+          "title": "Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived",
+          "summary": "A modern IDE and 64-bit runtime for Visual FoxPro 9 applications: the same language, rebuilt on Electron, React and a Rust virtual machine in WebAssembly.",
+          "titleZh": "微软于 2007 年终止了 FoxPro；如今，FoxPro 重获新生",
+          "summaryZh": "这是一款面向 Visual FoxPro 9 应用的现代集成开发环境和 64 位运行时：沿用原有语言，基于 Electron、React 和 WebAssembly 中的 Rust 虚拟机重建。",
+          "url": "https://foxscript.org/",
           "source": "Hacker News",
-          "score": 4.25,
+          "score": 4.15,
           "reasons": [
-            "HN分数741",
-            "讨论量217"
+            "HN分数212",
+            "讨论量143"
           ],
-          "published": "2026-09-21T14:26:56+00:00"
+          "published": "2026-09-22T21:00:30+00:00"
         },
         {
-          "title": "Spymarks, Not Watermarks",
-          "summary": "Comments",
-          "titleZh": "间谍标记，而非水印",
-          "summaryZh": "评论",
-          "url": "https://brand.io/article/spymarks/",
+          "title": "OpenAI is well positioned to fast-follow Jev",
+          "summary": "TypeSafe",
+          "titleZh": "OpenAI 已做好充分准备，能够快速跟进 Jev",
+          "summaryZh": "TypeSafe",
+          "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
           "source": "Hacker News",
-          "score": 4.12,
+          "score": 4.1,
           "reasons": [
-            "HN分数363",
-            "讨论量81"
+            "HN分数271",
+            "讨论量195"
           ],
-          "published": "2026-09-21T23:03:49+00:00"
+          "published": "2026-09-22T14:42:59+00:00"
         },
         {
-          "title": "Transformers Explained Visually",
-          "summary": "Comments",
-          "titleZh": "以视觉方式解析 Transformer",
-          "summaryZh": "评论",
-          "url": "https://poloclub.github.io/transformer-explainer/",
+          "title": "SAML: A fractal of bad design",
+          "summary": "SAML, the XML-based authentication protocol that birthed the SSO industry, is fundamentally flawed due to XML complexity, canonicalization issues, enveloped signatures, and design ossification, making it vulnerable to si…",
+          "titleZh": "SAML：糟糕设计的层层嵌套",
+          "summaryZh": "SAML 是一种基于 XML 的身份验证协议，也是单点登录（SSO）行业的起点。由于 XML 复杂性、规范化问题、封装签名以及设计僵化等缺陷，该协议存在根本性问题，容易受到……",
+          "url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
           "source": "Hacker News",
-          "score": 3.94,
+          "score": 3.98,
           "reasons": [
-            "HN分数352",
-            "讨论量54"
+            "HN分数177",
+            "讨论量102"
           ],
-          "published": "2026-09-21T19:43:49+00:00"
-        },
-        {
-          "title": "Claude Status – Elevated errors for multiple models",
-          "summary": "Claude's Status Page - Elevated errors for multiple models.",
-          "titleZh": "Claude 状态——多个模型出现错误率升高",
-          "summaryZh": "Claude 状态页面——多个模型出现错误率升高。",
-          "url": "https://status.claude.com/incidents/7g1qpkyz5gxh",
-          "source": "Hacker News",
-          "score": 3.82,
-          "reasons": [
-            "HN分数95",
-            "讨论量73"
-          ],
-          "published": "2026-09-22T01:05:19+00:00"
-        },
-        {
-          "title": "The Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": "[This is a guest post by the Advisory Group on Mathematics and Artificial Intelligence. This blog post was initially written in a different file format and converted using AI. — T.] We would …",
-          "titleZh": "数学与人工智能咨询小组",
-          "summaryZh": "【本文由数学与人工智能咨询小组特约撰写。本文最初采用另一种文件格式编写，后经 AI 转换而成。——T.】我们……",
-          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
-          "source": "Hacker News",
-          "score": 3.68,
-          "reasons": [
-            "HN分数121",
-            "讨论量58"
-          ],
-          "published": "2026-09-21T19:17:42+00:00"
+          "published": "2026-09-22T18:57:17+00:00"
         }
       ]
     },
@@ -127,108 +127,104 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
-          "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
-          "titleZh": "打造 Apple 门店的人不认同硅谷押注 AI 购物",
-          "summaryZh": "Apple Store 设计师 Ron Johnson 表示，Apple 的秘诀始终在于员工。",
-          "url": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
+          "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston o…",
+          "summary": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
+          "titleZh": "TechCrunch 创始人峰会议程公布：11 月 4 日在波士顿探讨融资、招聘与 AI",
+          "summaryZh": "创业者不该只能通过最艰难的方式吸取最深刻的教训。TechCrunch 创始人峰会旨在降低创业过程中的挑战，让成功的喜悦更加丰厚。",
+          "url": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-21T23:44:28+00:00"
+          "published": "2026-09-22T23:21:49+00:00"
         },
         {
-          "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
-          "summary": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
-          "titleZh": "OpenAI 成立数学咨询小组，其 AI 已解决 100 多个公开问题",
-          "summaryZh": "该小组不会获得放缓或改变 OpenAI 当前数学研究方向的自主权。",
-          "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+          "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
+          "summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
+          "titleZh": "AI 训练数据需求激增，Snorkel AI 估值升至 35 亿美元，达到原来的三倍",
+          "summaryZh": "这家成立七年的初创公司已融资 3.5 亿美元，完成 E 轮融资，以推动其数据即服务业务模式。",
+          "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+          "source": "TechCrunch",
+          "score": 4.45,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-22T21:56:43+00:00"
+        },
+        {
+          "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
+          "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
+          "titleZh": "高通推出两款主打 AI 的新款智能手机芯片",
+          "summaryZh": "高通表示，其新款旗舰芯片可在本地运行拥有 300 亿参数的混合专家模型。",
+          "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+          "source": "TechCrunch",
+          "score": 4.39,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-22T20:00:00+00:00"
+        },
+        {
+          "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
+          "summary": "Meta says Muse was built from scratch, but acknowledges the AI assistant was \"heavily inspired\" by OpenClaw — down to some of its workspace filenames and content.",
+          "titleZh": "Meta 承认 Muse 与 OpenClaw 相似并非巧合",
+          "summaryZh": "Meta 称 Muse 是从头打造的，但也承认这款 AI 助手“深受 OpenClaw 启发”，甚至连部分工作区文件名和内容都与之相似。",
+          "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
+          "source": "TechCrunch",
+          "score": 4.37,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-22T19:09:11+00:00"
+        },
+        {
+          "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
+          "summary": "OpenAI is launching two new models, which it says are cut from the same cloth as Astra.",
+          "titleZh": "OpenAI 发布 GPT-6 Sol 和 Luna，称其成本更低、错误更少",
+          "summaryZh": "OpenAI 正在推出两款新模型，并称它们与 Astra 一脉相承。",
+          "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+          "source": "TechCrunch",
+          "score": 4.34,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-22T18:00:00+00:00"
+        },
+        {
+          "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
+          "summary": "Anthropic called it \"the strongest-performing model we've tested to date.\"",
+          "titleZh": "Anthropic 发布 Opus 5.5：价格更低，性能媲美 Fable",
+          "summaryZh": "Anthropic 称，这是“我们迄今测试过的性能最强的模型”。",
+          "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
           "source": "TechCrunch",
           "score": 4.29,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-21T20:15:58+00:00"
+          "published": "2026-09-22T16:30:07+00:00"
         },
         {
-          "title": "Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket",
-          "summary": "Five days left to save up to $200 on your TechCrunch Disrupt 2026 pass + 50% off a second one. Join 10,000+ founders, investors, and operators at San Francisco’s Moscone West, October 13-15. Grab your ticket savings befo…",
-          "titleZh": "探索未来：TechCrunch Disrupt 2026 门票优惠仅剩 5 天，最高可省 200 美元",
-          "summaryZh": "距离最高可省 200 美元的 TechCrunch Disrupt 2026 门票优惠仅剩 5 天，购买一张后第二张还可享受五折优惠。10,000 多名创始人、投资者和企业经营者将于 10 月 13 日至 15 日齐聚旧金山 Moscone West。赶在优惠结束前购票……",
-          "url": "https://techcrunch.com/2026/09/21/discover-whats-next-5-days-left-to-save-up-to-200-on-techcrunch-disrupt-2026/",
+          "title": "Apple could take on Whoop with a new fitness tracker, report says",
+          "summary": "Apple may be developing a new fitness tracker as part of its new generation of hardware devices.",
+          "titleZh": "报道称，苹果或将推出新款健身追踪器，挑战 Whoop",
+          "summaryZh": "苹果可能正在开发新款健身追踪器，作为新一代硬件设备的一部分。",
+          "url": "https://techcrunch.com/2026/09/22/apple-could-take-on-whoop-with-a-new-fitness-tracker-report-says/",
           "source": "TechCrunch",
-          "score": 4.26,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-21T19:25:00+00:00"
+          "score": 1.78,
+          "reasons": [],
+          "published": "2026-09-22T19:27:57+00:00"
         },
         {
-          "title": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
-          "summary": "Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did over the same period after its mobile debut, according to new estimates from Appfigures.",
-          "titleZh": "Meta 的 Muse 超越了 ChatGPT 早期的移动端发布表现",
-          "summaryZh": "根据 Appfigures 的最新估算，Meta 的新 AI 智能体 Muse 在美国和加拿大的下载量及日活跃用户数，均超过了 ChatGPT 移动端首发后同期的表现。",
-          "url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+          "title": "Hacking group ShinyHunters claims it breached the FBI, stole agents’ and applicants’ data",
+          "summary": "The theft of agents' personal information could present a major counterintelligence threat, where agents and their families are extorted into cooperating with a foreign government.",
+          "titleZh": "黑客组织 ShinyHunters 声称入侵 FBI，窃取特工和申请者数据",
+          "summaryZh": "特工个人信息遭窃可能构成重大反情报威胁：特工及其家人可能遭到勒索，被迫与外国政府合作。",
+          "url": "https://techcrunch.com/2026/09/22/hacking-group-shinyhunters-claims-it-breached-the-fbi-stole-agents-and-applicants-data/",
           "source": "TechCrunch",
-          "score": 4.26,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-21T19:19:21+00:00"
-        },
-        {
-          "title": "Meta’s AI agent has been blocked from using Amazon.com",
-          "summary": "Amazon has its own cohort of foundation models, along with one of the most popular inference platforms on the internet. As long as they're under no legal obligation to open the doors to Muse, why would they?",
-          "titleZh": "Meta 的 AI 智能体被禁止使用 Amazon.com",
-          "summaryZh": "Amazon 拥有自己的基础模型阵容，以及互联网上最受欢迎的推理平台之一。既然 Amazon 没有法律义务向 Muse 开放访问权限，他们为什么要这么做？",
-          "url": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
-          "source": "TechCrunch",
-          "score": 4.22,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-21T17:55:18+00:00"
-        },
-        {
-          "title": "With Tabby, a former accountant is using AI to make accountants obsolete",
-          "summary": "Tabby is designed to be a real-time bookkeeping interface, handling clients’ paperwork as it gives them up-to-the-minute data on their business’s profit and loss.",
-          "titleZh": "借助 Tabby，一名前会计正利用 AI 让会计行业过时",
-          "summaryZh": "Tabby 被设计为实时记账界面，在处理客户文书工作的同时，为客户提供企业盈亏状况的最新数据。",
-          "url": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
-          "source": "TechCrunch",
-          "score": 4.19,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-21T16:38:51+00:00"
-        },
-        {
-          "title": "Where will the next breakout startup come from? Benchmark’s full partnership weighs in at TechCrunch…",
-          "summary": "Where will the next breakout startup come from? Benchmark’s full partnership weighs in on the main stage at TechCrunch Disrupt 2026. Save up to $200 before September 25 at 11:59 p.m. PT. Register now.",
-          "titleZh": "下一家爆发式增长的初创公司将来自哪里？Benchmark 全体合伙人在 TechCrunch……上发表看法",
-          "summaryZh": "下一家爆发式增长的初创公司将来自哪里？Benchmark 全体合伙人将在 TechCrunch Disrupt 2026 主舞台分享看法。9 月 25 日太平洋时间晚上 11:59 前购票，最高可省 200 美元。立即注册。",
-          "url": "https://techcrunch.com/2026/09/21/where-will-the-next-breakout-startup-come-from-benchmarks-full-partnership-weighs-in-at-techcrunch-disrupt-2026/",
-          "source": "TechCrunch",
-          "score": 4.14,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-21T15:00:00+00:00"
-        },
-        {
-          "title": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
-          "summary": "Google’s AI-native Googlebook ties Gemini to the cursor, dictation, widgets, and other parts of the desktop experience.",
-          "titleZh": "Google 899 美元的 Googlebook 押注你会为 Gemini 购买新笔记本电脑",
-          "summaryZh": "Google 面向 AI 原生设计的 Googlebook 将 Gemini 与光标、听写、桌面小组件及桌面体验的其他部分连接起来。",
-          "url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-          "source": "TechCrunch",
-          "score": 4.13,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-21T14:39:22+00:00"
+          "score": 1.75,
+          "reasons": [],
+          "published": "2026-09-22T18:40:30+00:00"
         }
       ]
     }
@@ -236,7 +232,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-22T11:02:38.381688+08:00"
+      "lastRunAt": "2026-09-23T11:03:42.085984+08:00"
     }
   }
 }
