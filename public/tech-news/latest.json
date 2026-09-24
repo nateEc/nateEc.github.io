@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-23T11:32:02+08:00",
-  "date": "2026-09-23",
+  "updatedAt": "2026-09-24T11:31:41+08:00",
+  "date": "2026-09-24",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "summary": "Comments",
-          "titleZh": "五角大楼称，过度依赖人工智能导致伊朗学校遭导弹袭击",
-          "summaryZh": "评论",
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+          "title": "Feds Target AI Critics as \"Foreign Agents\"",
+          "summary": "Trump admin sees China behind opposition to AI data centers",
+          "titleZh": "联邦官员将 AI 批评者视为“外国代理人”",
+          "summaryZh": "特朗普政府认为，反对 AI 数据中心的声音背后有中国的影子。",
+          "url": "https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign",
           "source": "Hacker News",
-          "score": 7.01,
+          "score": 6.46,
           "reasons": [
             "AI",
-            "HN分数480",
-            "讨论量243"
+            "HN分数87",
+            "讨论量58"
           ],
-          "published": "2026-09-22T19:03:38+00:00"
+          "published": "2026-09-24T00:41:31+00:00"
         },
         {
-          "title": "Claude Opus 5.5",
-          "summary": "Claude Opus 5.5 leads in agentic coding and knowledge work, and costs 40% less to run than Opus 5 on typical workloads.",
-          "titleZh": "Claude Opus 5.5 模型",
-          "summaryZh": "Claude Opus 5.5 在智能体编程和知识工作方面表现领先，在典型工作负载下的运行成本比 Opus 5 低 40%。",
-          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
+          "titleZh": "Claude 发现一种具有类 CRISPR 重复序列的新型酶系统",
+          "summaryZh": "在新生命科学研究实验室的早期研究中，Claude 智能体发现了一种功能尚不明确的酶系统。",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
           "source": "Hacker News",
-          "score": 4.83,
+          "score": 4.58,
           "reasons": [
-            "HN分数1285",
-            "讨论量853"
+            "HN分数544",
+            "讨论量573"
           ],
-          "published": "2026-09-22T16:29:05+00:00"
+          "published": "2026-09-23T18:06:47+00:00"
         },
         {
-          "title": "GPT-6 Sol and Luna",
+          "title": "Italian parliament votes for return to nuclear energy",
           "summary": "Comments",
-          "titleZh": "GPT-6 Sol 和 Luna",
+          "titleZh": "意大利议会投票支持重返核能",
           "summaryZh": "评论",
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "url": "https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567",
           "source": "Hacker News",
-          "score": 4.81,
+          "score": 4.52,
           "reasons": [
-            "HN分数1266",
-            "讨论量636"
+            "HN分数622",
+            "讨论量402"
           ],
-          "published": "2026-09-22T18:00:34+00:00"
+          "published": "2026-09-23T17:06:16+00:00"
         },
         {
-          "title": "'We hacked the FBI:' Hackers say they have data on all FBI employees",
-          "summary": "A sample of 5,000 alleged agents seen by 404 Media includes names, addresses, phone numbers, and details on FBI employees' spouses.",
-          "titleZh": "“我们黑了 FBI”：黑客称掌握所有 FBI 员工的数据",
-          "summaryZh": "404 Media 查看的一份样本包含 5000 名据称是特工的人员信息，其中包括姓名、地址、电话号码，以及 FBI 员工配偶的相关资料。",
-          "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/",
+          "title": "Meta VR Glasses",
+          "summary": "隆重介紹 Meta VR 眼鏡和頭戴式裝置。AR 眼鏡可串流電影、節目和運動賽事直播，或讓你在無邊際螢幕上工作。立即選購！",
+          "titleZh": "Meta VR 眼镜",
+          "summaryZh": "隆重介绍 Meta VR 眼镜和头戴式设备。AR 眼镜可用于串流观看电影、节目和体育赛事直播，也可让你在超宽屏幕上工作。立即选购！",
+          "url": "https://www.meta.com/vr-glasses/",
           "source": "Hacker News",
-          "score": 4.43,
+          "score": 4.41,
           "reasons": [
-            "HN分数464",
-            "讨论量337"
+            "HN分数281",
+            "讨论量248"
           ],
-          "published": "2026-09-22T17:46:02+00:00"
+          "published": "2026-09-23T23:47:56+00:00"
         },
         {
-          "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
-          "summary": "On 15 September 2026, Carter Leffer contacted me to request validation of a break of the German Army Enigma message MVUEH of 10 July 1941. The message, which was sent by a radio station with the tactical callsign 2ny, wa…",
-          "titleZh": "OpenAI GPT–6 Astra 破解了自 2005 年以来一直无人破解的 Enigma 密电",
-          "summaryZh": "2026 年 9 月 15 日，Carter Leffer 联系我，请求验证一项破解成果：德国陆军于 1941 年 7 月 10 日发送的 MVUEH Enigma 密电。这条消息由一座使用战术呼号 2ny 的电台发出，内容……",
-          "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+          "title": "Linux support is coming to Snapdragon X2 Series",
+          "summary": "Explore the agentic AI PCs, Googlebook laptops, Linux support and partner devices powered by Snapdragon unveiled at Snapdragon Summit 2026.",
+          "titleZh": "Snapdragon X2 系列即将支持 Linux",
+          "summaryZh": "了解在 2026 年 Snapdragon 峰会上发布的智能体 AI PC、Googlebook 笔记本、Linux 支持，以及由 Snapdragon 提供动力的合作伙伴设备。",
+          "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
           "source": "Hacker News",
-          "score": 4.4,
+          "score": 4.12,
           "reasons": [
-            "HN分数585",
-            "讨论量370"
+            "HN分数204",
+            "讨论量103"
           ],
-          "published": "2026-09-22T13:52:15+00:00"
+          "published": "2026-09-23T22:38:16+00:00"
         },
         {
-          "title": "Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived",
-          "summary": "A modern IDE and 64-bit runtime for Visual FoxPro 9 applications: the same language, rebuilt on Electron, React and a Rust virtual machine in WebAssembly.",
-          "titleZh": "微软于 2007 年终止了 FoxPro；如今，FoxPro 重获新生",
-          "summaryZh": "这是一款面向 Visual FoxPro 9 应用的现代集成开发环境和 64 位运行时：沿用原有语言，基于 Electron、React 和 WebAssembly 中的 Rust 虚拟机重建。",
-          "url": "https://foxscript.org/",
+          "title": "Fixing the Portobello Police Station Clock",
+          "summary": "I got a message from a friend today which read along the lines of \"I know we were going to meet in Edinburgh today, but do you fancy meeting in Portobello instead and trying to fix the clock in the old police station wit…",
+          "titleZh": "修理波托贝洛警察局的时钟",
+          "summaryZh": "今天我收到一位朋友发来的消息，大意是：“我知道我们原本打算今天在爱丁堡见面，不过你想不想改在波托贝洛碰面，试着修好旧警察局的时钟……”",
+          "url": "https://pointinthecloud.com/2026-04-11-211700.html",
           "source": "Hacker News",
-          "score": 4.15,
+          "score": 4.06,
           "reasons": [
-            "HN分数212",
-            "讨论量143"
+            "HN分数388",
+            "讨论量92"
           ],
-          "published": "2026-09-22T21:00:30+00:00"
+          "published": "2026-09-23T15:18:53+00:00"
         },
         {
-          "title": "OpenAI is well positioned to fast-follow Jev",
-          "summary": "TypeSafe",
-          "titleZh": "OpenAI 已做好充分准备，能够快速跟进 Jev",
-          "summaryZh": "TypeSafe",
-          "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
-          "source": "Hacker News",
-          "score": 4.1,
-          "reasons": [
-            "HN分数271",
-            "讨论量195"
-          ],
-          "published": "2026-09-22T14:42:59+00:00"
-        },
-        {
-          "title": "SAML: A fractal of bad design",
-          "summary": "SAML, the XML-based authentication protocol that birthed the SSO industry, is fundamentally flawed due to XML complexity, canonicalization issues, enveloped signatures, and design ossification, making it vulnerable to si…",
-          "titleZh": "SAML：糟糕设计的层层嵌套",
-          "summaryZh": "SAML 是一种基于 XML 的身份验证协议，也是单点登录（SSO）行业的起点。由于 XML 复杂性、规范化问题、封装签名以及设计僵化等缺陷，该协议存在根本性问题，容易受到……",
-          "url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
+          "title": "VSCode's SSH Agent Is Bananas (2025)",
+          "summary": "Documentation and guides from the team at Fly.io.",
+          "titleZh": "VSCode 的 SSH 代理简直离谱（2025）",
+          "summaryZh": "Fly.io 团队提供的文档和指南。",
+          "url": "https://fly.io/blog/vscode-ssh-wtf/",
           "source": "Hacker News",
           "score": 3.98,
           "reasons": [
-            "HN分数177",
-            "讨论量102"
+            "HN分数144",
+            "讨论量95"
           ],
-          "published": "2026-09-22T18:57:17+00:00"
+          "published": "2026-09-23T21:01:48+00:00"
+        },
+        {
+          "title": "A brief history of Windows scroll bar shortcuts",
+          "summary": "Right-clicking and shift-clicking.",
+          "titleZh": "Windows 滚动条快捷操作简史",
+          "summaryZh": "右键单击和按住 Shift 单击。",
+          "url": "https://devblogs.microsoft.com/oldnewthing/20260922-00/?p=112719/",
+          "source": "Hacker News",
+          "score": 3.74,
+          "reasons": [
+            "HN分数118",
+            "讨论量55"
+          ],
+          "published": "2026-09-23T18:02:08+00:00"
         }
       ]
     },
@@ -127,104 +127,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston o…",
-          "summary": "Founders shouldn't have to learn the hardest lessons the hardest way. TechCrunch Founder Summit is designed to make the challenges of starting a company easier and the highs that much greater.",
-          "titleZh": "TechCrunch 创始人峰会议程公布：11 月 4 日在波士顿探讨融资、招聘与 AI",
-          "summaryZh": "创业者不该只能通过最艰难的方式吸取最深刻的教训。TechCrunch 创始人峰会旨在降低创业过程中的挑战，让成功的喜悦更加丰厚。",
-          "url": "https://techcrunch.com/2026/09/22/techcrunch-founder-summits-agenda-revealed-unlock-fundraising-hiring-and-ai-insights-in-boston-on-november-4/",
+          "title": "Everything new coming to Meta’s AI agent Muse",
+          "summary": "CEO Mark Zuckerberg kicked off the company’s annual Connect event in Menlo Park on Wednesday with a keynote that made one thing clear: Meta is going all-in on Muse. It's even coming to Meta's AI glasses.",
+          "titleZh": "Meta AI 智能体 Muse 即将推出的所有新功能",
+          "summaryZh": "首席执行官马克·扎克伯格周三在门洛帕克为公司年度 Connect 大会拉开序幕，并发表主题演讲，明确表示 Meta 将全力投入 Muse。它甚至将登陆 Meta AI 眼镜。",
+          "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+          "source": "TechCrunch",
+          "score": 4.54,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-24T01:13:32+00:00"
+        },
+        {
+          "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
+          "summary": "The tiny hardware device creates another mobile home for its AI agent Muse.",
+          "titleZh": "Meta 为其 Muse AI 智能体打造了一款类似拓麻歌子的可穿戴设备",
+          "summaryZh": "这款小型硬件设备为 AI 智能体 Muse 提供了另一个移动载体。",
+          "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
+          "source": "TechCrunch",
+          "score": 4.52,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-24T00:46:17+00:00"
+        },
+        {
+          "title": "Meta introduces camera-free AI glasses",
+          "summary": "Meta says the camera-free glasses will be lighter and have up to 12 hours battery life.",
+          "titleZh": "Meta 推出无摄像头 AI 眼镜",
+          "summaryZh": "Meta 表示，这款无摄像头眼镜更轻，电池续航最长可达 12 小时。",
+          "url": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
           "source": "TechCrunch",
           "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-22T23:21:49+00:00"
+          "published": "2026-09-23T23:39:44+00:00"
         },
         {
-          "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
-          "summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
-          "titleZh": "AI 训练数据需求激增，Snorkel AI 估值升至 35 亿美元，达到原来的三倍",
-          "summaryZh": "这家成立七年的初创公司已融资 3.5 亿美元，完成 E 轮融资，以推动其数据即服务业务模式。",
-          "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+          "title": "Anthropic says its biology lab has already found something big",
+          "summary": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
+          "titleZh": "Anthropic 称其生物学实验室已有重大发现",
+          "summaryZh": "不过，最大的发现或许是 Anthropic 并未让 Claude 在生物学实验室里自由行动。至少目前，人类仍参与其中。",
+          "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
           "source": "TechCrunch",
-          "score": 4.45,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-22T21:56:43+00:00"
+          "published": "2026-09-23T22:17:39+00:00"
         },
         {
-          "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
-          "summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
-          "titleZh": "高通推出两款主打 AI 的新款智能手机芯片",
-          "summaryZh": "高通表示，其新款旗舰芯片可在本地运行拥有 300 亿参数的混合专家模型。",
-          "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+          "title": "VC firm Bessemer now has another $5.75B to invest in (what else?) AI",
+          "summary": "The VC firm says that AI-native companies are growing faster than any technology, ever.",
+          "titleZh": "风投公司 Bessemer 又有 57.5 亿美元可投——还能投什么？当然是 AI",
+          "summaryZh": "这家风投公司表示，原生 AI 企业的增长速度超过了以往任何一种技术公司。",
+          "url": "https://techcrunch.com/2026/09/23/vc-firm-bessemer-now-has-another-5-75b-to-invest-in-what-else-ai/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.41,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-22T20:00:00+00:00"
+          "published": "2026-09-23T20:35:17+00:00"
         },
         {
-          "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
-          "summary": "Meta says Muse was built from scratch, but acknowledges the AI assistant was \"heavily inspired\" by OpenClaw — down to some of its workspace filenames and content.",
-          "titleZh": "Meta 承认 Muse 与 OpenClaw 相似并非巧合",
-          "summaryZh": "Meta 称 Muse 是从头打造的，但也承认这款 AI 助手“深受 OpenClaw 启发”，甚至连部分工作区文件名和内容都与之相似。",
-          "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
+          "title": "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials",
+          "summary": "The round valued the AI biotech at $2 billion. It is currently testing drugs that treat skin conditions and preserve weight loss after stopping GLP-1s.",
+          "titleZh": "Enveda 获得 3.11 亿美元融资，将更多源自自然的 AI 药物推进临床试验",
+          "summaryZh": "此轮融资对这家 AI 生物科技公司的估值达到 20 亿美元。目前，该公司正在测试治疗皮肤疾病以及停用 GLP-1 药物后维持减重效果的药物。",
+          "url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials/",
           "source": "TechCrunch",
-          "score": 4.37,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-22T19:09:11+00:00"
+          "published": "2026-09-23T19:31:28+00:00"
         },
         {
-          "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
-          "summary": "OpenAI is launching two new models, which it says are cut from the same cloth as Astra.",
-          "titleZh": "OpenAI 发布 GPT-6 Sol 和 Luna，称其成本更低、错误更少",
-          "summaryZh": "OpenAI 正在推出两款新模型，并称它们与 Astra 一脉相承。",
-          "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+          "title": "The old cybersecurity model is breaking",
+          "summary": "As concern over AI safety and rogue agents continue to make headlines, it’s no surprise that cybersecurity stocks are rising, or that investors are pouring massive amounts of capital into startups trying to build the nex…",
+          "titleZh": "传统网络安全模式正在瓦解",
+          "summaryZh": "随着 AI 安全和失控智能体的担忧不断成为新闻头条，网络安全股上涨并不意外，投资者也正向致力于打造下一代网络安全方案的初创公司投入巨额资金……",
+          "url": "https://techcrunch.com/video/the-old-cybersecurity-model-is-breaking/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 4.33,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-22T18:00:00+00:00"
+          "published": "2026-09-23T17:44:02+00:00"
         },
         {
-          "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
-          "summary": "Anthropic called it \"the strongest-performing model we've tested to date.\"",
-          "titleZh": "Anthropic 发布 Opus 5.5：价格更低，性能媲美 Fable",
-          "summaryZh": "Anthropic 称，这是“我们迄今测试过的性能最强的模型”。",
-          "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+          "title": "Meta is trying VR glasses (again), this time with more IMAX",
+          "summary": "Meta's return to the VR glasses realm comes with a promising combination of light weight form factor and enhanced entertainment options.",
+          "titleZh": "Meta 再次尝试推出 VR 眼镜，这次加入更多 IMAX 内容",
+          "summaryZh": "Meta 重返 VR 眼镜领域，带来了轻巧的外形设计和更丰富的娱乐选择，组合颇具吸引力。",
+          "url": "https://techcrunch.com/2026/09/23/meta-is-trying-vr-glasses-again-this-time-with-more-imax/",
           "source": "TechCrunch",
-          "score": 4.29,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-22T16:30:07+00:00"
-        },
-        {
-          "title": "Apple could take on Whoop with a new fitness tracker, report says",
-          "summary": "Apple may be developing a new fitness tracker as part of its new generation of hardware devices.",
-          "titleZh": "报道称，苹果或将推出新款健身追踪器，挑战 Whoop",
-          "summaryZh": "苹果可能正在开发新款健身追踪器，作为新一代硬件设备的一部分。",
-          "url": "https://techcrunch.com/2026/09/22/apple-could-take-on-whoop-with-a-new-fitness-tracker-report-says/",
-          "source": "TechCrunch",
-          "score": 1.78,
+          "score": 1.9,
           "reasons": [],
-          "published": "2026-09-22T19:27:57+00:00"
-        },
-        {
-          "title": "Hacking group ShinyHunters claims it breached the FBI, stole agents’ and applicants’ data",
-          "summary": "The theft of agents' personal information could present a major counterintelligence threat, where agents and their families are extorted into cooperating with a foreign government.",
-          "titleZh": "黑客组织 ShinyHunters 声称入侵 FBI，窃取特工和申请者数据",
-          "summaryZh": "特工个人信息遭窃可能构成重大反情报威胁：特工及其家人可能遭到勒索，被迫与外国政府合作。",
-          "url": "https://techcrunch.com/2026/09/22/hacking-group-shinyhunters-claims-it-breached-the-fbi-stole-agents-and-applicants-data/",
-          "source": "TechCrunch",
-          "score": 1.75,
-          "reasons": [],
-          "published": "2026-09-22T18:40:30+00:00"
+          "published": "2026-09-23T23:47:35+00:00"
         }
       ]
     }
@@ -232,7 +234,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-23T11:03:42.085984+08:00"
+      "lastRunAt": "2026-09-24T11:02:16.577457+08:00"
     }
   }
 }
