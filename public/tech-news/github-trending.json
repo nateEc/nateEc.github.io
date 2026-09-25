@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-23T14:30:16+08:00",
-  "date": "2026-09-23",
+  "updatedAt": "2026-09-25T14:48:09+08:00",
+  "date": "2026-09-25",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "anthropics/financial-services",
-      "description": "",
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 438,
-      "totalStars": 36537,
-      "forks": 5336,
-      "url": "https://github.com/anthropics/financial-services"
+      "starsToday": 347,
+      "totalStars": 56843,
+      "forks": 9959,
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
     },
     {
       "rank": 2,
-      "fullName": "agent-substrate/substrate",
-      "description": "Agent Substrate: the core system",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 245,
-      "totalStars": 3110,
-      "forks": 390,
-      "url": "https://github.com/agent-substrate/substrate"
+      "fullName": "vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 1668,
+      "totalStars": 28217,
+      "forks": 2787,
+      "url": "https://github.com/vectorize-io/hindsight"
     },
     {
       "rank": 3,
@@ -33,96 +33,132 @@
       "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 255,
-      "totalStars": 15779,
-      "forks": 1402,
+      "starsToday": 1082,
+      "totalStars": 17973,
+      "forks": 1545,
       "url": "https://github.com/dream-num/univer"
     },
     {
       "rank": 4,
-      "fullName": "davila7/claude-code-templates",
-      "description": "CLI tool for configuring and monitoring Claude Code",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 64,
-      "totalStars": 31217,
-      "forks": 3550,
-      "url": "https://github.com/davila7/claude-code-templates"
-    },
-    {
-      "rank": 5,
       "fullName": "google/ax",
       "description": "Google's open agentic orchestration runtime",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "starsToday": 2305,
-      "totalStars": 7977,
-      "forks": 369,
+      "starsToday": 1373,
+      "totalStars": 10772,
+      "forks": 527,
       "url": "https://github.com/google/ax"
     },
     {
+      "rank": 5,
+      "fullName": "NVIDIA/Model-Optimizer",
+      "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inf",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 44,
+      "totalStars": 4163,
+      "forks": 633,
+      "url": "https://github.com/NVIDIA/Model-Optimizer"
+    },
+    {
       "rank": 6,
+      "fullName": "FxEmbed/FxEmbed",
+      "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 182,
+      "totalStars": 5405,
+      "forks": 253,
+      "url": "https://github.com/FxEmbed/FxEmbed"
+    },
+    {
+      "rank": 7,
+      "fullName": "anthropics/financial-services",
+      "description": "",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 509,
+      "totalStars": 37428,
+      "forks": 5423,
+      "url": "https://github.com/anthropics/financial-services"
+    },
+    {
+      "rank": 8,
+      "fullName": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 413,
+      "totalStars": 50413,
+      "forks": 4618,
+      "url": "https://github.com/HKUDS/CLI-Anything"
+    },
+    {
+      "rank": 9,
       "fullName": "mvt-project/mvt",
       "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 441,
-      "totalStars": 14236,
-      "forks": 1367,
+      "starsToday": 272,
+      "totalStars": 14769,
+      "forks": 1394,
       "url": "https://github.com/mvt-project/mvt"
     },
     {
-      "rank": 7,
-      "fullName": "superdesigndev/treg",
-      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 230,
-      "totalStars": 2343,
-      "forks": 226,
-      "url": "https://github.com/superdesigndev/treg"
-    },
-    {
-      "rank": 8,
-      "fullName": "browser-use/video-use",
-      "description": "Edit videos with coding agents",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 191,
-      "totalStars": 26059,
-      "forks": 3131,
-      "url": "https://github.com/browser-use/video-use"
+      "rank": 10,
+      "fullName": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 611,
+      "totalStars": 291315,
+      "forks": 26066,
+      "url": "https://github.com/obra/superpowers"
     }
   ],
   "languages": [
     {
       "name": "Python",
-      "count": 5,
-      "share": 62,
+      "count": 6,
+      "share": 60,
       "color": "#3572A5"
     },
     {
-      "name": "Go",
+      "name": "TypeScript",
       "count": 2,
-      "share": 25,
+      "share": 20,
+      "color": "#3178C6"
+    },
+    {
+      "name": "Go",
+      "count": 1,
+      "share": 10,
       "color": "#00ADD8"
     },
     {
-      "name": "TypeScript",
+      "name": "Shell",
       "count": 1,
-      "share": 12,
-      "color": "#3178C6"
+      "share": 10,
+      "color": "#89E051"
     }
   ],
   "themes": [
     {
-      "name": "Agent systems",
-      "count": 4,
+      "name": "AI infrastructure",
+      "count": 3,
       "repositories": [
-        "agent-substrate/substrate",
+        "rohitg00/ai-engineering-from-scratch",
         "dream-num/univer",
-        "superdesigndev/treg",
-        "browser-use/video-use"
+        "NVIDIA/Model-Optimizer"
+      ]
+    },
+    {
+      "name": "Agent systems",
+      "count": 3,
+      "repositories": [
+        "vectorize-io/hindsight",
+        "dream-num/univer",
+        "HKUDS/CLI-Anything"
       ]
     },
     {
@@ -131,14 +167,6 @@
       "repositories": [
         "dream-num/univer",
         "google/ax"
-      ]
-    },
-    {
-      "name": "Developer tools",
-      "count": 2,
-      "repositories": [
-        "davila7/claude-code-templates",
-        "browser-use/video-use"
       ]
     }
   ]
