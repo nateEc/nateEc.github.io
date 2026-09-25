@@ -1,124 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-24T11:31:41+08:00",
-  "date": "2026-09-24",
+  "updatedAt": "2026-09-25T12:05:02+08:00",
+  "date": "2026-09-25",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Feds Target AI Critics as \"Foreign Agents\"",
-          "summary": "Trump admin sees China behind opposition to AI data centers",
-          "titleZh": "联邦官员将 AI 批评者视为“外国代理人”",
-          "summaryZh": "特朗普政府认为，反对 AI 数据中心的声音背后有中国的影子。",
-          "url": "https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign",
+          "title": "F-Droid 2.0",
+          "summary": "After more than a year of hard work, we are thrilled to announce the launch of F-Droid 2.0, a complete redesign of the official F-Droid app and the largest a...",
+          "titleZh": "F-Droid 2.0 发布",
+          "summaryZh": "经过一年多的努力，我们很高兴宣布 F-Droid 2.0 正式推出。这是对 F-Droid 官方应用的全面重新设计，也是迄今规模最大的一次……",
+          "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
           "source": "Hacker News",
-          "score": 6.46,
+          "score": 4.51,
           "reasons": [
-            "AI",
-            "HN分数87",
-            "讨论量58"
+            "HN分数1022",
+            "讨论量276"
           ],
-          "published": "2026-09-24T00:41:31+00:00"
+          "published": "2026-09-24T15:26:12+00:00"
         },
         {
-          "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
-          "summary": "In early results from our new life sciences research lab, Claude agents found an enzyme system whose function is still unknown.",
-          "titleZh": "Claude 发现一种具有类 CRISPR 重复序列的新型酶系统",
-          "summaryZh": "在新生命科学研究实验室的早期研究中，Claude 智能体发现了一种功能尚不明确的酶系统。",
-          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "title": "California is chasing wealth that has feet",
+          "summary": "California has $8.14 trillion in land sitting right under its feet. It's chasing billionaires instead.",
+          "titleZh": "加州在追逐会离开的财富",
+          "summaryZh": "加州脚下拥有价值 8.14 万亿美元的土地，却把注意力放在追逐亿万富翁上。",
+          "url": "https://blog.landeconomics.org/p/california-is-chasing-wealth-that",
           "source": "Hacker News",
-          "score": 4.58,
+          "score": 4.32,
           "reasons": [
-            "HN分数544",
-            "讨论量573"
+            "HN分数172",
+            "讨论量489"
           ],
-          "published": "2026-09-23T18:06:47+00:00"
+          "published": "2026-09-24T20:34:32+00:00"
         },
         {
-          "title": "Italian parliament votes for return to nuclear energy",
-          "summary": "Comments",
-          "titleZh": "意大利议会投票支持重返核能",
-          "summaryZh": "评论",
-          "url": "https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567",
+          "title": "Two-tier encryption in the UK",
+          "summary": "Alice and Bill have identical iPhones. Only one gets Apple’s strongest iCloud protection.",
+          "titleZh": "英国的双层加密",
+          "summaryZh": "Alice 和 Bill 拥有一模一样的 iPhone，但只有一人的 iCloud 获得了 Apple 最强级别的保护。",
+          "url": "https://macanorak.com/two-tier-encryption-in-the-uk/",
           "source": "Hacker News",
-          "score": 4.52,
+          "score": 4.2,
           "reasons": [
-            "HN分数622",
-            "讨论量402"
+            "HN分数397",
+            "讨论量382"
           ],
-          "published": "2026-09-23T17:06:16+00:00"
+          "published": "2026-09-24T10:39:19+00:00"
         },
         {
-          "title": "Meta VR Glasses",
-          "summary": "隆重介紹 Meta VR 眼鏡和頭戴式裝置。AR 眼鏡可串流電影、節目和運動賽事直播，或讓你在無邊際螢幕上工作。立即選購！",
-          "titleZh": "Meta VR 眼镜",
-          "summaryZh": "隆重介绍 Meta VR 眼镜和头戴式设备。AR 眼镜可用于串流观看电影、节目和体育赛事直播，也可让你在超宽屏幕上工作。立即选购！",
-          "url": "https://www.meta.com/vr-glasses/",
+          "title": "Why is the liver so weirdly regenerative?",
+          "summary": "the question everyone is asking",
+          "titleZh": "肝脏为何拥有如此奇特的再生能力？",
+          "summaryZh": "这是每个人都在问的问题。",
+          "url": "https://dynomight.substack.com/p/liver",
           "source": "Hacker News",
-          "score": 4.41,
+          "score": 4.13,
           "reasons": [
-            "HN分数281",
-            "讨论量248"
+            "HN分数306",
+            "讨论量167"
           ],
-          "published": "2026-09-23T23:47:56+00:00"
+          "published": "2026-09-24T16:23:00+00:00"
         },
         {
-          "title": "Linux support is coming to Snapdragon X2 Series",
-          "summary": "Explore the agentic AI PCs, Googlebook laptops, Linux support and partner devices powered by Snapdragon unveiled at Snapdragon Summit 2026.",
-          "titleZh": "Snapdragon X2 系列即将支持 Linux",
-          "summaryZh": "了解在 2026 年 Snapdragon 峰会上发布的智能体 AI PC、Googlebook 笔记本、Linux 支持，以及由 Snapdragon 提供动力的合作伙伴设备。",
-          "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
+          "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+          "summary": "open-source canvas for thoughtful software design. Contribute to devdotfast/whiteboard development by creating an account on GitHub.",
+          "titleZh": "Show HN：Whiteboard（YC W26）——一款助力深度思考软件设计的开源集成开发环境",
+          "summaryZh": "一款用于深度思考软件设计的开源画布。登录 GitHub 账号即可参与 devdotfast/whiteboard 的开发。",
+          "url": "https://github.com/devdotfast/whiteboard",
           "source": "Hacker News",
-          "score": 4.12,
+          "score": 3.95,
           "reasons": [
-            "HN分数204",
-            "讨论量103"
+            "HN分数229",
+            "讨论量85"
           ],
-          "published": "2026-09-23T22:38:16+00:00"
+          "published": "2026-09-24T17:21:36+00:00"
         },
         {
-          "title": "Fixing the Portobello Police Station Clock",
-          "summary": "I got a message from a friend today which read along the lines of \"I know we were going to meet in Edinburgh today, but do you fancy meeting in Portobello instead and trying to fix the clock in the old police station wit…",
-          "titleZh": "修理波托贝洛警察局的时钟",
-          "summaryZh": "今天我收到一位朋友发来的消息，大意是：“我知道我们原本打算今天在爱丁堡见面，不过你想不想改在波托贝洛碰面，试着修好旧警察局的时钟……”",
-          "url": "https://pointinthecloud.com/2026-04-11-211700.html",
+          "title": "Google’s Project Suncatcher to put ML infrastructure in space",
+          "summary": "Learn about Google's Project Suncatcher, how we’re testing hardware survival for space, designing cooling systems for AI chips, and more.",
+          "titleZh": "Google 的 Project Suncatcher 将把机器学习基础设施送入太空",
+          "summaryZh": "了解 Google 的 Project Suncatcher，包括太空硬件耐久性测试、AI 芯片散热系统设计等内容。",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/",
           "source": "Hacker News",
-          "score": 4.06,
+          "score": 3.95,
           "reasons": [
-            "HN分数388",
-            "讨论量92"
+            "HN分数139",
+            "讨论量253"
           ],
-          "published": "2026-09-23T15:18:53+00:00"
+          "published": "2026-09-24T13:53:29+00:00"
         },
         {
-          "title": "VSCode's SSH Agent Is Bananas (2025)",
-          "summary": "Documentation and guides from the team at Fly.io.",
-          "titleZh": "VSCode 的 SSH 代理简直离谱（2025）",
-          "summaryZh": "Fly.io 团队提供的文档和指南。",
-          "url": "https://fly.io/blog/vscode-ssh-wtf/",
+          "title": "Show HN: Koi.rest – watch some fish and regain your balance",
+          "summary": "A koi pond to stare at. A place to do nothing.",
+          "titleZh": "Show HN：Koi.rest——看看鱼，找回内心平衡",
+          "summaryZh": "一个可以静静凝视的锦鲤池，一处什么也不用做的地方。",
+          "url": "https://koi.rest",
           "source": "Hacker News",
-          "score": 3.98,
+          "score": 3.8,
           "reasons": [
-            "HN分数144",
-            "讨论量95"
+            "HN分数148",
+            "讨论量38"
           ],
-          "published": "2026-09-23T21:01:48+00:00"
+          "published": "2026-09-24T21:33:03+00:00"
         },
         {
-          "title": "A brief history of Windows scroll bar shortcuts",
-          "summary": "Right-clicking and shift-clicking.",
-          "titleZh": "Windows 滚动条快捷操作简史",
-          "summaryZh": "右键单击和按住 Shift 单击。",
-          "url": "https://devblogs.microsoft.com/oldnewthing/20260922-00/?p=112719/",
+          "title": "Toyota is taking the Corolla electric",
+          "summary": "Toyota is preparing to introduce the electric version of its best-selling car of all time, the Corolla. When is Toyota...",
+          "titleZh": "Toyota 将推出纯电版 Corolla",
+          "summaryZh": "Toyota 正准备推出旗下史上最畅销车型 Corolla 的纯电版本。Toyota 何时……",
+          "url": "https://electrek.co/2026/09/23/toyota-best-selling-corolla-electric/",
           "source": "Hacker News",
-          "score": 3.74,
+          "score": 3.79,
           "reasons": [
-            "HN分数118",
-            "讨论量55"
+            "HN分数263",
+            "讨论量432"
           ],
-          "published": "2026-09-23T18:02:08+00:00"
+          "published": "2026-09-23T22:37:28+00:00"
         }
       ]
     },
@@ -127,106 +126,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Everything new coming to Meta’s AI agent Muse",
-          "summary": "CEO Mark Zuckerberg kicked off the company’s annual Connect event in Menlo Park on Wednesday with a keynote that made one thing clear: Meta is going all-in on Muse. It's even coming to Meta's AI glasses.",
-          "titleZh": "Meta AI 智能体 Muse 即将推出的所有新功能",
-          "summaryZh": "首席执行官马克·扎克伯格周三在门洛帕克为公司年度 Connect 大会拉开序幕，并发表主题演讲，明确表示 Meta 将全力投入 Muse。它甚至将登陆 Meta AI 眼镜。",
-          "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+          "title": "Bring your co-founder, partner, or colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
+          "summary": "Buy one pass to TechCrunch Disrupt 2026 and get 50% off a second of the same ticket type. Register before event starts on October 13 at 8 a.m. PT.",
+          "titleZh": "带上联合创始人、伴侣或同事，第二张 TechCrunch Disrupt 2026 门票可享五折",
+          "summaryZh": "购买一张 TechCrunch Disrupt 2026 门票，再购同一票种的第二张可享五折优惠。活动将于太平洋时间 10 月 13 日上午 8 点开始，请在活动开始前注册。",
+          "url": "https://techcrunch.com/2026/09/24/bring-your-co-founder-partner-or-colleague-and-get-50-off-a-second-techcrunch-disrupt-2026-pass/",
           "source": "TechCrunch",
-          "score": 4.54,
+          "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T01:13:32+00:00"
+          "published": "2026-09-24T19:15:00+00:00"
         },
         {
-          "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
-          "summary": "The tiny hardware device creates another mobile home for its AI agent Muse.",
-          "titleZh": "Meta 为其 Muse AI 智能体打造了一款类似拓麻歌子的可穿戴设备",
-          "summaryZh": "这款小型硬件设备为 AI 智能体 Muse 提供了另一个移动载体。",
-          "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
+          "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses",
+          "summary": "Prism's larger goal is open-weight AI that runs on devices and makes better use of the computing power they already have.",
+          "titleZh": "PrismML 将其小型大语言模型带到搭载 Qualcomm 芯片的智能眼镜",
+          "summaryZh": "Prism 的更宏大目标是打造开放权重 AI，让它在设备上运行，并更充分地利用设备现有的计算能力。",
+          "url": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
           "source": "TechCrunch",
-          "score": 4.52,
+          "score": 4.35,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T00:46:17+00:00"
+          "published": "2026-09-24T19:00:42+00:00"
         },
         {
-          "title": "Meta introduces camera-free AI glasses",
-          "summary": "Meta says the camera-free glasses will be lighter and have up to 12 hours battery life.",
-          "titleZh": "Meta 推出无摄像头 AI 眼镜",
-          "summaryZh": "Meta 表示，这款无摄像头眼镜更轻，电池续航最长可达 12 小时。",
-          "url": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
-          "source": "TechCrunch",
-          "score": 4.49,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-23T23:39:44+00:00"
-        },
-        {
-          "title": "Anthropic says its biology lab has already found something big",
-          "summary": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
-          "titleZh": "Anthropic 称其生物学实验室已有重大发现",
-          "summaryZh": "不过，最大的发现或许是 Anthropic 并未让 Claude 在生物学实验室里自由行动。至少目前，人类仍参与其中。",
-          "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
-          "source": "TechCrunch",
-          "score": 4.46,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-23T22:17:39+00:00"
-        },
-        {
-          "title": "VC firm Bessemer now has another $5.75B to invest in (what else?) AI",
-          "summary": "The VC firm says that AI-native companies are growing faster than any technology, ever.",
-          "titleZh": "风投公司 Bessemer 又有 57.5 亿美元可投——还能投什么？当然是 AI",
-          "summaryZh": "这家风投公司表示，原生 AI 企业的增长速度超过了以往任何一种技术公司。",
-          "url": "https://techcrunch.com/2026/09/23/vc-firm-bessemer-now-has-another-5-75b-to-invest-in-what-else-ai/",
-          "source": "TechCrunch",
-          "score": 4.41,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-23T20:35:17+00:00"
-        },
-        {
-          "title": "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials",
-          "summary": "The round valued the AI biotech at $2 billion. It is currently testing drugs that treat skin conditions and preserve weight loss after stopping GLP-1s.",
-          "titleZh": "Enveda 获得 3.11 亿美元融资，将更多源自自然的 AI 药物推进临床试验",
-          "summaryZh": "此轮融资对这家 AI 生物科技公司的估值达到 20 亿美元。目前，该公司正在测试治疗皮肤疾病以及停用 GLP-1 药物后维持减重效果的药物。",
-          "url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials/",
-          "source": "TechCrunch",
-          "score": 4.38,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-23T19:31:28+00:00"
-        },
-        {
-          "title": "The old cybersecurity model is breaking",
-          "summary": "As concern over AI safety and rogue agents continue to make headlines, it’s no surprise that cybersecurity stocks are rising, or that investors are pouring massive amounts of capital into startups trying to build the nex…",
-          "titleZh": "传统网络安全模式正在瓦解",
-          "summaryZh": "随着 AI 安全和失控智能体的担忧不断成为新闻头条，网络安全股上涨并不意外，投资者也正向致力于打造下一代网络安全方案的初创公司投入巨额资金……",
-          "url": "https://techcrunch.com/video/the-old-cybersecurity-model-is-breaking/",
+          "title": "Oracle sends force majeure notice on its New Mexico Stargate data center",
+          "summary": "The notice would allow Oracle to delay payments should the facility miss its 2028 target to come online.",
+          "titleZh": "Oracle 就其新墨西哥州 Stargate 数据中心发出不可抗力通知",
+          "summaryZh": "如果该设施未能按计划于 2028 年投入运营，这份通知将允许 Oracle 延迟付款。",
+          "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
           "source": "TechCrunch",
           "score": 4.33,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-23T17:44:02+00:00"
+          "published": "2026-09-24T18:11:44+00:00"
         },
         {
-          "title": "Meta is trying VR glasses (again), this time with more IMAX",
-          "summary": "Meta's return to the VR glasses realm comes with a promising combination of light weight form factor and enhanced entertainment options.",
-          "titleZh": "Meta 再次尝试推出 VR 眼镜，这次加入更多 IMAX 内容",
-          "summaryZh": "Meta 重返 VR 眼镜领域，带来了轻巧的外形设计和更丰富的娱乐选择，组合颇具吸引力。",
-          "url": "https://techcrunch.com/2026/09/23/meta-is-trying-vr-glasses-again-this-time-with-more-imax/",
+          "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
+          "summary": "Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend around bag charms, retro tech, and turning gadgets into fashion accessories.",
+          "titleZh": "Meta 的 Muse Charm 看起来像电子宠物，却瞄准了更新潮流",
+          "summaryZh": "Meta 的新款 AI 小玩意看起来像电子宠物，但其悬挂式造型契合了 Z 世代更广泛的潮流：包包装饰挂件、复古科技，以及将电子设备变成时尚配饰。",
+          "url": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
           "source": "TechCrunch",
-          "score": 1.9,
-          "reasons": [],
-          "published": "2026-09-23T23:47:35+00:00"
+          "score": 4.31,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-24T17:39:24+00:00"
+        },
+        {
+          "title": "Google Photos ‘Clueless’-inspired virtual closet is now available on Android and iOS",
+          "summary": "The AI-powered feature builds a virtual wardrobe from your photos, and is now broadly available after first rolling out to Android users in June.",
+          "titleZh": "Google Photos 推出受《独领风骚》启发的虚拟衣橱，现已登陆 Android 和 iOS",
+          "summaryZh": "这项 AI 功能会根据你的照片创建虚拟衣橱，在 6 月率先向 Android 用户推出后，现已全面开放。",
+          "url": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
+          "source": "TechCrunch",
+          "score": 4.29,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-24T17:00:00+00:00"
+        },
+        {
+          "title": "TechCrunch Founder Summit 2026: Everything you need to know",
+          "summary": "TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and scaling their compan…",
+          "titleZh": "TechCrunch Founder Summit 2026：你需要了解的一切",
+          "summaryZh": "TechCrunch Founder Summit 将于 11 月 4 日在波士顿举行，为期一天。各阶段的创始人将与顶尖风险投资家和资深创业者交流，获取打造和扩大公司规模的实战见解……",
+          "url": "https://techcrunch.com/2026/09/24/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+          "source": "TechCrunch",
+          "score": 4.29,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-24T16:46:47+00:00"
+        },
+        {
+          "title": "ElevenLabs’ CEO on margins, IPO timing, and telling customers they’re talking to a bot",
+          "summary": "ElevenLabs powers the AI voice on the other end of a lot of customer service calls, and its CEO told me this week that businesses should probably tell you that — at least until getting a machine is what everyone expects…",
+          "titleZh": "ElevenLabs 首席执行官谈利润率、IPO 时机，以及是否该告知客户正在与机器人交谈",
+          "summaryZh": "ElevenLabs 为许多客户服务电话另一端提供 AI 语音。本周，该公司首席执行官告诉我，企业或许应该告知客户这一点——至少在使用机器服务成为普遍预期之前……",
+          "url": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
+          "source": "TechCrunch",
+          "score": 4.28,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-24T16:35:13+00:00"
+        },
+        {
+          "title": "Meet the next wave of VCs judging Startup Battlefield 200 at TechCrunch Disrupt 2026",
+          "summary": "Meet the next wave of VCs judging the Startup Battlefield 200 contenders on the main stage at TechCrunch Disrupt 2026. Register by September 25 at 11:59 p.m. PT, to save up to $200 and to get a front-row seat to one of t…",
+          "titleZh": "认识评审 TechCrunch Disrupt 2026 Startup Battlefield 200 的新一代风险投资家",
+          "summaryZh": "认识将在 TechCrunch Disrupt 2026 主舞台评审 Startup Battlefield 200 入围者的新一代风险投资家。请于太平洋时间 9 月 25 日晚 11:59 前注册，可节省最多 200 美元，并抢占前排席位，观看其中一场……",
+          "url": "https://techcrunch.com/2026/09/24/meet-the-next-wave-of-vcs-judging-startup-battlefield-200-at-techcrunch-disrupt-2026/",
+          "source": "TechCrunch",
+          "score": 4.27,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-24T16:03:36+00:00"
         }
       ]
     }
@@ -234,7 +235,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-24T11:02:16.577457+08:00"
+      "lastRunAt": null
     }
   }
 }
