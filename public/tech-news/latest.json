@@ -1,123 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-25T12:05:02+08:00",
-  "date": "2026-09-25",
+  "updatedAt": "2026-09-27T11:31:32+08:00",
+  "date": "2026-09-27",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "F-Droid 2.0",
-          "summary": "After more than a year of hard work, we are thrilled to announce the launch of F-Droid 2.0, a complete redesign of the official F-Droid app and the largest a...",
-          "titleZh": "F-Droid 2.0 发布",
-          "summaryZh": "经过一年多的努力，我们很高兴宣布 F-Droid 2.0 正式推出。这是对 F-Droid 官方应用的全面重新设计，也是迄今规模最大的一次……",
-          "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
+          "title": "How I changed teaching after AI managed to do all my homework assignments",
+          "summary": "AI forced me to abandon evidence-based best pedagogy practices, focus on oral and written exams, and redo most assignments. Here is what we did in 17-645...",
+          "titleZh": "AI 能完成所有作业后，我如何改变教学方式",
+          "summaryZh": "AI 迫使我放弃循证的最佳教学实践，转而重视口试和笔试，并重做大部分作业。以下是我们在 17-645 课程中的做法……",
+          "url": "https://thelastsoftwareengineer.substack.com/p/how-i-changed-teaching-after-ai-managed",
           "source": "Hacker News",
-          "score": 4.51,
+          "score": 5.34,
           "reasons": [
-            "HN分数1022",
-            "讨论量276"
+            "AI",
+            "HN分数151",
+            "讨论量150"
           ],
-          "published": "2026-09-24T15:26:12+00:00"
+          "published": "2026-09-24T20:51:50+00:00"
         },
         {
-          "title": "California is chasing wealth that has feet",
-          "summary": "California has $8.14 trillion in land sitting right under its feet. It's chasing billionaires instead.",
-          "titleZh": "加州在追逐会离开的财富",
-          "summaryZh": "加州脚下拥有价值 8.14 万亿美元的土地，却把注意力放在追逐亿万富翁上。",
-          "url": "https://blog.landeconomics.org/p/california-is-chasing-wealth-that",
+          "title": "Evolving programming languages in the AI era",
+          "summary": "What happens to programming languages when humans are no longer writing most of the code?",
+          "titleZh": "AI 时代的编程语言演进",
+          "summaryZh": "当人类不再编写大部分代码时，编程语言会发生什么变化？",
+          "url": "https://dashbit.co/blog/evolving-ai-era",
           "source": "Hacker News",
-          "score": 4.32,
+          "score": 4.91,
           "reasons": [
-            "HN分数172",
-            "讨论量489"
+            "AI",
+            "HN分数45",
+            "讨论量34"
           ],
-          "published": "2026-09-24T20:34:32+00:00"
+          "published": "2026-09-25T02:34:39+00:00"
         },
         {
-          "title": "Two-tier encryption in the UK",
-          "summary": "Alice and Bill have identical iPhones. Only one gets Apple’s strongest iCloud protection.",
-          "titleZh": "英国的双层加密",
-          "summaryZh": "Alice 和 Bill 拥有一模一样的 iPhone，但只有一人的 iCloud 获得了 Apple 最强级别的保护。",
-          "url": "https://macanorak.com/two-tier-encryption-in-the-uk/",
+          "title": "Fifteen years later, the Apple Cards origin story",
+          "summary": "100% cotton paper. 100% crazy.",
+          "titleZh": "十五年后，Apple Cards 的起源故事",
+          "summaryZh": "100% 棉纸。100% 疯狂。",
+          "url": "https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story",
           "source": "Hacker News",
-          "score": 4.2,
+          "score": 3.87,
           "reasons": [
-            "HN分数397",
-            "讨论量382"
+            "HN分数357",
+            "讨论量92"
           ],
-          "published": "2026-09-24T10:39:19+00:00"
+          "published": "2026-09-26T09:13:41+00:00"
         },
         {
-          "title": "Why is the liver so weirdly regenerative?",
-          "summary": "the question everyone is asking",
-          "titleZh": "肝脏为何拥有如此奇特的再生能力？",
-          "summaryZh": "这是每个人都在问的问题。",
-          "url": "https://dynomight.substack.com/p/liver",
+          "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
+          "summary": "Contribute to reladraw/reladraw development by creating an account on GitHub.",
+          "titleZh": "Show HN：Reladraw——一种由你决定如何摆放元素的图表语言",
+          "summaryZh": "在 GitHub 创建账号，即可为 reladraw/reladraw 项目贡献代码。",
+          "url": "https://github.com/reladraw/reladraw",
           "source": "Hacker News",
-          "score": 4.13,
+          "score": 3.87,
           "reasons": [
-            "HN分数306",
-            "讨论量167"
+            "HN分数209",
+            "讨论量59"
           ],
-          "published": "2026-09-24T16:23:00+00:00"
+          "published": "2026-09-26T17:10:40+00:00"
         },
         {
-          "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-          "summary": "open-source canvas for thoughtful software design. Contribute to devdotfast/whiteboard development by creating an account on GitHub.",
-          "titleZh": "Show HN：Whiteboard（YC W26）——一款助力深度思考软件设计的开源集成开发环境",
-          "summaryZh": "一款用于深度思考软件设计的开源画布。登录 GitHub 账号即可参与 devdotfast/whiteboard 的开发。",
-          "url": "https://github.com/devdotfast/whiteboard",
+          "title": "DeepSeek Elastic Compute (DSec)",
+          "summary": "Abstract page for arXiv paper 2609.22978: DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
+          "titleZh": "DeepSeek 弹性计算（DSec）",
+          "summaryZh": "arXiv 论文 2609.22978 摘要页面：DeepSeek 弹性计算（DSec）：用于大规模有效智能体训练的沙箱基础设施。",
+          "url": "https://arxiv.org/abs/2609.22978",
           "source": "Hacker News",
-          "score": 3.95,
+          "score": 3.84,
           "reasons": [
-            "HN分数229",
-            "讨论量85"
+            "HN分数175",
+            "讨论量55"
           ],
-          "published": "2026-09-24T17:21:36+00:00"
+          "published": "2026-09-26T18:22:41+00:00"
         },
         {
-          "title": "Google’s Project Suncatcher to put ML infrastructure in space",
-          "summary": "Learn about Google's Project Suncatcher, how we’re testing hardware survival for space, designing cooling systems for AI chips, and more.",
-          "titleZh": "Google 的 Project Suncatcher 将把机器学习基础设施送入太空",
-          "summaryZh": "了解 Google 的 Project Suncatcher，包括太空硬件耐久性测试、AI 芯片散热系统设计等内容。",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/",
+          "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+          "summary": "The next-generation social coding platform.",
+          "titleZh": "Drawgent：在实时 Excalidraw 画布上运行的编程智能体",
+          "summaryZh": "新一代社交编程平台。",
+          "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
           "source": "Hacker News",
-          "score": 3.95,
+          "score": 3.57,
           "reasons": [
-            "HN分数139",
-            "讨论量253"
+            "HN分数115",
+            "讨论量32"
           ],
-          "published": "2026-09-24T13:53:29+00:00"
+          "published": "2026-09-26T15:56:34+00:00"
         },
         {
-          "title": "Show HN: Koi.rest – watch some fish and regain your balance",
-          "summary": "A koi pond to stare at. A place to do nothing.",
-          "titleZh": "Show HN：Koi.rest——看看鱼，找回内心平衡",
-          "summaryZh": "一个可以静静凝视的锦鲤池，一处什么也不用做的地方。",
-          "url": "https://koi.rest",
+          "title": "ASML says it sold 'absolutely nothing' in Europe in 2026",
+          "summary": "Subsidies for fabs do not help.",
+          "titleZh": "ASML 称 2026 年在欧洲“完全没有”销售额",
+          "summaryZh": "对芯片厂的补贴并无帮助。",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand",
           "source": "Hacker News",
-          "score": 3.8,
+          "score": 3.49,
           "reasons": [
-            "HN分数148",
-            "讨论量38"
+            "HN分数178",
+            "讨论量490"
           ],
-          "published": "2026-09-24T21:33:03+00:00"
+          "published": "2026-09-25T13:49:06+00:00"
         },
         {
-          "title": "Toyota is taking the Corolla electric",
-          "summary": "Toyota is preparing to introduce the electric version of its best-selling car of all time, the Corolla. When is Toyota...",
-          "titleZh": "Toyota 将推出纯电版 Corolla",
-          "summaryZh": "Toyota 正准备推出旗下史上最畅销车型 Corolla 的纯电版本。Toyota 何时……",
-          "url": "https://electrek.co/2026/09/23/toyota-best-selling-corolla-electric/",
+          "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
+          "summary": "An open-source Android app to let you browse YouTube and other services freely. - GitHub - InfinityLoop1308/PipePipe: An open-source Android app to let you browse YouTube and other services freely.",
+          "titleZh": "PipePipe：实现 SponsorBlock 功能的 NewPipe 分支",
+          "summaryZh": "一款开源 Android 应用，让你自由浏览 YouTube 和其他服务。——GitHub 上的 InfinityLoop1308/PipePipe：一款开源 Android 应用，让你自由浏览 YouTube 和其他服务。",
+          "url": "https://github.com/InfinityLoop1308/PipePipe",
           "source": "Hacker News",
-          "score": 3.79,
+          "score": 3.38,
           "reasons": [
-            "HN分数263",
-            "讨论量432"
+            "HN分数334",
+            "讨论量192"
           ],
-          "published": "2026-09-23T22:37:28+00:00"
+          "published": "2026-09-25T10:55:40+00:00"
         }
       ]
     },
@@ -126,108 +128,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Bring your co-founder, partner, or colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
-          "summary": "Buy one pass to TechCrunch Disrupt 2026 and get 50% off a second of the same ticket type. Register before event starts on October 13 at 8 a.m. PT.",
-          "titleZh": "带上联合创始人、伴侣或同事，第二张 TechCrunch Disrupt 2026 门票可享五折",
-          "summaryZh": "购买一张 TechCrunch Disrupt 2026 门票，再购同一票种的第二张可享五折优惠。活动将于太平洋时间 10 月 13 日上午 8 点开始，请在活动开始前注册。",
-          "url": "https://techcrunch.com/2026/09/24/bring-your-co-founder-partner-or-colleague-and-get-50-off-a-second-techcrunch-disrupt-2026-pass/",
+          "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
+          "summary": "The limited test covers select products and users, with a broader rollout planned for later in October.",
+          "titleZh": "Google 在印度测试通过 Gemini 和 AI 模式从沃尔玛旗下 Flipkart 购物",
+          "summaryZh": "此次小范围测试覆盖部分商品和用户，计划于 10 月晚些时候扩大推出范围。",
+          "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.54,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T19:15:00+00:00"
+          "published": "2026-09-27T01:30:00+00:00"
         },
         {
-          "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses",
-          "summary": "Prism's larger goal is open-weight AI that runs on devices and makes better use of the computing power they already have.",
-          "titleZh": "PrismML 将其小型大语言模型带到搭载 Qualcomm 芯片的智能眼镜",
-          "summaryZh": "Prism 的更宏大目标是打造开放权重 AI，让它在设备上运行，并更充分地利用设备现有的计算能力。",
-          "url": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
+          "title": "Insurers claim AI is already increasing healthcare costs",
+          "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
+          "titleZh": "保险公司称 AI 已在推高医疗成本",
+          "summaryZh": "Blue Cross Blue Shield 表示，医院使用 AI 工具导致两年内医疗支出额外增加 9.42 亿美元。",
+          "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
           "source": "TechCrunch",
-          "score": 4.35,
+          "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T19:00:42+00:00"
+          "published": "2026-09-26T21:02:06+00:00"
         },
         {
-          "title": "Oracle sends force majeure notice on its New Mexico Stargate data center",
-          "summary": "The notice would allow Oracle to delay payments should the facility miss its 2028 target to come online.",
-          "titleZh": "Oracle 就其新墨西哥州 Stargate 数据中心发出不可抗力通知",
-          "summaryZh": "如果该设施未能按计划于 2028 年投入运营，这份通知将允许 Oracle 延迟付款。",
-          "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+          "title": "I created an interactive digital avatar of myself — and you can talk to it",
+          "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+          "titleZh": "我创建了一个可交互的数字分身，你可以和它对话",
+          "summaryZh": "在获得一个交互式数字分身并训练它讨论风险投资欺诈后，我对制作自己的 AI 克隆体感受复杂。",
+          "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
           "source": "TechCrunch",
-          "score": 4.33,
+          "score": 4.22,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T18:11:44+00:00"
+          "published": "2026-09-26T14:00:00+00:00"
         },
         {
-          "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
-          "summary": "Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend around bag charms, retro tech, and turning gadgets into fashion accessories.",
-          "titleZh": "Meta 的 Muse Charm 看起来像电子宠物，却瞄准了更新潮流",
-          "summaryZh": "Meta 的新款 AI 小玩意看起来像电子宠物，但其悬挂式造型契合了 Z 世代更广泛的潮流：包包装饰挂件、复古科技，以及将电子设备变成时尚配饰。",
-          "url": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
+          "title": "At Meta Connect, the company’s smart glasses were everywhere",
+          "summary": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
+          "titleZh": "在 Meta Connect 上，这家公司的智能眼镜随处可见",
+          "summaryZh": "这家 Facebook 和 Instagram 的母公司希望通过不断扩充的智能眼镜产品线，让消费者持续连接数字世界。",
+          "url": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
           "source": "TechCrunch",
-          "score": 4.31,
+          "score": 3.87,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T17:39:24+00:00"
+          "published": "2026-09-26T01:08:57+00:00"
         },
         {
-          "title": "Google Photos ‘Clueless’-inspired virtual closet is now available on Android and iOS",
-          "summary": "The AI-powered feature builds a virtual wardrobe from your photos, and is now broadly available after first rolling out to Android users in June.",
-          "titleZh": "Google Photos 推出受《独领风骚》启发的虚拟衣橱，现已登陆 Android 和 iOS",
-          "summaryZh": "这项 AI 功能会根据你的照片创建虚拟衣橱，在 6 月率先向 Android 用户推出后，现已全面开放。",
-          "url": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
+          "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+          "summary": "Boom Supersonic CEO Blake Scholl said the company's new stationary power plants were no longer in Crusoe's near-term plans.",
+          "titleZh": "Crusoe 放弃在 AI 数据中心使用 Boom 涡轮机的 12.5 亿美元计划",
+          "summaryZh": "Boom Supersonic 首席执行官 Blake Scholl 表示，公司新建的固定式发电厂已不在 Crusoe 的近期计划之中。",
+          "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 3.81,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T17:00:00+00:00"
+          "published": "2026-09-25T23:11:10+00:00"
         },
         {
-          "title": "TechCrunch Founder Summit 2026: Everything you need to know",
-          "summary": "TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and scaling their compan…",
-          "titleZh": "TechCrunch Founder Summit 2026：你需要了解的一切",
-          "summaryZh": "TechCrunch Founder Summit 将于 11 月 4 日在波士顿举行，为期一天。各阶段的创始人将与顶尖风险投资家和资深创业者交流，获取打造和扩大公司规模的实战见解……",
-          "url": "https://techcrunch.com/2026/09/24/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+          "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
+          "summary": "AI agents operating in OpenAI's research environment posted user images on public image-hosting sites without the lab's knowledge.",
+          "titleZh": "未受保护的 OpenAI 智能体在实验室不知情的情况下，将 53 张用户图片发布到网上",
+          "summaryZh": "在 OpenAI 研究环境中运行的 AI 智能体，未经实验室知情便将用户图片发布到公开图片托管网站。",
+          "url": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 3.79,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T16:46:47+00:00"
+          "published": "2026-09-25T22:20:47+00:00"
         },
         {
-          "title": "ElevenLabs’ CEO on margins, IPO timing, and telling customers they’re talking to a bot",
-          "summary": "ElevenLabs powers the AI voice on the other end of a lot of customer service calls, and its CEO told me this week that businesses should probably tell you that — at least until getting a machine is what everyone expects…",
-          "titleZh": "ElevenLabs 首席执行官谈利润率、IPO 时机，以及是否该告知客户正在与机器人交谈",
-          "summaryZh": "ElevenLabs 为许多客户服务电话另一端提供 AI 语音。本周，该公司首席执行官告诉我，企业或许应该告知客户这一点——至少在使用机器服务成为普遍预期之前……",
-          "url": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
+          "title": "Meta opens early access program for new Muse features",
+          "summary": "Anyone interested in joining has to ask Muse to put them on the list.",
+          "titleZh": "Meta 为 Muse 新功能开放提前体验计划",
+          "summaryZh": "任何有意加入的人都必须请求 Muse 将自己列入名单。",
+          "url": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
           "source": "TechCrunch",
-          "score": 4.28,
+          "score": 3.74,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-24T16:35:13+00:00"
+          "published": "2026-09-25T20:34:53+00:00"
         },
         {
-          "title": "Meet the next wave of VCs judging Startup Battlefield 200 at TechCrunch Disrupt 2026",
-          "summary": "Meet the next wave of VCs judging the Startup Battlefield 200 contenders on the main stage at TechCrunch Disrupt 2026. Register by September 25 at 11:59 p.m. PT, to save up to $200 and to get a front-row seat to one of t…",
-          "titleZh": "认识评审 TechCrunch Disrupt 2026 Startup Battlefield 200 的新一代风险投资家",
-          "summaryZh": "认识将在 TechCrunch Disrupt 2026 主舞台评审 Startup Battlefield 200 入围者的新一代风险投资家。请于太平洋时间 9 月 25 日晚 11:59 前注册，可节省最多 200 美元，并抢占前排席位，观看其中一场……",
-          "url": "https://techcrunch.com/2026/09/24/meet-the-next-wave-of-vcs-judging-startup-battlefield-200-at-techcrunch-disrupt-2026/",
+          "title": "PNOE’s new face mask wants to make lab-grade breath testing a self-serve affair",
+          "summary": "PNOĒ, the Malden, Mass.-based startup whose breath-analyzing mask used to bear an unfortunate resemblance to Bane's, is launching a sleeker self-serve version on October 1 that lets gym-goers measure their VO₂ max and ot…",
+          "titleZh": "PNOE 推出新款面罩，力图让实验室级呼吸测试实现自助操作",
+          "summaryZh": "总部位于马萨诸塞州马尔登的初创公司 PNOĒ 曾推出一款用于分析呼吸的面罩，外形不幸让人联想到贝恩。该公司将于 10 月 1 日推出更简洁的新款自助式产品，让健身者测量自己的 VO₂ 最大摄氧量等指标。",
+          "url": "https://techcrunch.com/2026/09/26/pnoes-new-face-mask-wants-to-make-lab-grade-breath-testing-a-self-serve-affair/",
           "source": "TechCrunch",
-          "score": 4.27,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-24T16:03:36+00:00"
+          "score": 1.95,
+          "reasons": [],
+          "published": "2026-09-27T01:40:30+00:00"
         }
       ]
     }
@@ -235,7 +235,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": null
+      "lastRunAt": "2026-09-27T11:02:10.639943+08:00"
     }
   }
 }
