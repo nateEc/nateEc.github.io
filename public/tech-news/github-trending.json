@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-25T14:48:09+08:00",
-  "date": "2026-09-25",
+  "updatedAt": "2026-09-28T14:30:30+08:00",
+  "date": "2026-09-28",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 347,
-      "totalStars": 56843,
-      "forks": 9959,
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+      "fullName": "paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 2401,
+      "totalStars": 90714,
+      "forks": 15725,
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "rank": 2,
@@ -22,151 +22,139 @@
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 1668,
-      "totalStars": 28217,
-      "forks": 2787,
+      "starsToday": 4520,
+      "totalStars": 38343,
+      "forks": 5011,
       "url": "https://github.com/vectorize-io/hindsight"
     },
     {
       "rank": 3,
+      "fullName": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 3086,
+      "totalStars": 40837,
+      "forks": 4847,
+      "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+      "rank": 4,
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 790,
+      "totalStars": 59694,
+      "forks": 10279,
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+    },
+    {
+      "rank": 5,
+      "fullName": "InfinityLoop1308/PipePipe",
+      "description": "An open-source Android app to let you browse YouTube and other services freely.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 242,
+      "totalStars": 6685,
+      "forks": 225,
+      "url": "https://github.com/InfinityLoop1308/PipePipe"
+    },
+    {
+      "rank": 6,
+      "fullName": "vercel-labs/scriptc",
+      "description": "TypeScript-to-Native Compiler",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 102,
+      "totalStars": 5495,
+      "forks": 143,
+      "url": "https://github.com/vercel-labs/scriptc"
+    },
+    {
+      "rank": 7,
+      "fullName": "mvschwarz/openrig",
+      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 114,
+      "totalStars": 1174,
+      "forks": 111,
+      "url": "https://github.com/mvschwarz/openrig"
+    },
+    {
+      "rank": 8,
       "fullName": "dream-num/univer",
       "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 1082,
-      "totalStars": 17973,
-      "forks": 1545,
+      "starsToday": 895,
+      "totalStars": 20769,
+      "forks": 1763,
       "url": "https://github.com/dream-num/univer"
     },
     {
-      "rank": 4,
-      "fullName": "google/ax",
-      "description": "Google's open agentic orchestration runtime",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 1373,
-      "totalStars": 10772,
-      "forks": 527,
-      "url": "https://github.com/google/ax"
-    },
-    {
-      "rank": 5,
-      "fullName": "NVIDIA/Model-Optimizer",
-      "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inf",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 44,
-      "totalStars": 4163,
-      "forks": 633,
-      "url": "https://github.com/NVIDIA/Model-Optimizer"
-    },
-    {
-      "rank": 6,
-      "fullName": "FxEmbed/FxEmbed",
-      "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 182,
-      "totalStars": 5405,
-      "forks": 253,
-      "url": "https://github.com/FxEmbed/FxEmbed"
-    },
-    {
-      "rank": 7,
-      "fullName": "anthropics/financial-services",
-      "description": "",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 509,
-      "totalStars": 37428,
-      "forks": 5423,
-      "url": "https://github.com/anthropics/financial-services"
-    },
-    {
-      "rank": 8,
-      "fullName": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 413,
-      "totalStars": 50413,
-      "forks": 4618,
-      "url": "https://github.com/HKUDS/CLI-Anything"
-    },
-    {
       "rank": 9,
-      "fullName": "mvt-project/mvt",
-      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 272,
-      "totalStars": 14769,
-      "forks": 1394,
-      "url": "https://github.com/mvt-project/mvt"
-    },
-    {
-      "rank": 10,
-      "fullName": "obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "languageColor": "#89E051",
-      "starsToday": 611,
-      "totalStars": 291315,
-      "forks": 26066,
-      "url": "https://github.com/obra/superpowers"
+      "fullName": "willfaust/Madeira",
+      "description": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
+      "language": "C",
+      "languageColor": "#555555",
+      "starsToday": 83,
+      "totalStars": 882,
+      "forks": 153,
+      "url": "https://github.com/willfaust/Madeira"
     }
   ],
   "languages": [
     {
-      "name": "Python",
-      "count": 6,
-      "share": 60,
-      "color": "#3572A5"
-    },
-    {
       "name": "TypeScript",
-      "count": 2,
-      "share": 20,
+      "count": 4,
+      "share": 44,
       "color": "#3178C6"
     },
     {
-      "name": "Go",
+      "name": "Python",
+      "count": 3,
+      "share": 33,
+      "color": "#3572A5"
+    },
+    {
+      "name": "C",
       "count": 1,
-      "share": 10,
-      "color": "#00ADD8"
+      "share": 11,
+      "color": "#555555"
     },
     {
       "name": "Shell",
       "count": 1,
-      "share": 10,
+      "share": 11,
       "color": "#89E051"
     }
   ],
   "themes": [
     {
-      "name": "AI infrastructure",
-      "count": 3,
+      "name": "Agent systems",
+      "count": 4,
       "repositories": [
-        "rohitg00/ai-engineering-from-scratch",
-        "dream-num/univer",
-        "NVIDIA/Model-Optimizer"
+        "paperclipai/paperclip",
+        "vectorize-io/hindsight",
+        "mvschwarz/openrig",
+        "dream-num/univer"
       ]
     },
     {
-      "name": "Agent systems",
-      "count": 3,
+      "name": "AI infrastructure",
+      "count": 2,
       "repositories": [
-        "vectorize-io/hindsight",
-        "dream-num/univer",
-        "HKUDS/CLI-Anything"
+        "rohitg00/ai-engineering-from-scratch",
+        "dream-num/univer"
       ]
     },
     {
       "name": "Data & systems",
-      "count": 2,
+      "count": 1,
       "repositories": [
-        "dream-num/univer",
-        "google/ax"
+        "dream-num/univer"
       ]
     }
   ]
