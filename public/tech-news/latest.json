@@ -1,123 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-28T11:31:33+08:00",
-  "date": "2026-09-28",
+  "updatedAt": "2026-09-29T11:34:53+08:00",
+  "date": "2026-09-29",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "When did Google get so weird?",
-          "summary": "I recently had an experience while doing a simple Google search that was so profoundly weird that it stopped me in my tracks. Understanding this Google se...",
-          "titleZh": "Google 什么时候变得这么奇怪了？",
-          "summaryZh": "最近，我在进行一次简单的 Google 搜索时遇到了一件奇怪得让我停下手头事情的事。这让我开始思考 Google……",
-          "url": "https://sancho.bearblog.dev/google-weird/",
+          "title": "It's Time to Investigate the AI Labs",
+          "summary": "Over the last several months, the two leading frontier AI labs have shown some brazen behavior. It started with a series of​ carefully planned announcements​ ... Read more",
+          "titleZh": "是时候调查人工智能实验室了",
+          "summaryZh": "过去几个月，两家领先的前沿人工智能实验室表现出了一些胆大妄为的行为。一切始于一系列精心策划的公告……阅读全文",
+          "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
           "source": "Hacker News",
-          "score": 4.73,
+          "score": 6.82,
           "reasons": [
-            "HN分数891",
-            "讨论量475"
+            "AI",
+            "HN分数334",
+            "讨论量131"
           ],
-          "published": "2026-09-27T20:12:54+00:00"
+          "published": "2026-09-28T19:53:35+00:00"
         },
         {
-          "title": "Ember-1",
-          "summary": "Ember-1 is a new specialized model from Fireworks Research that delivers Kimi K3’s quality with 40% fewer tokens.",
-          "titleZh": "Ember-1",
-          "summaryZh": "Fireworks Research 推出了一款专用新模型 Ember-1，以少 40% 的 token 数实现了 Kimi K3 的质量水平。",
-          "url": "https://fireworks.ai/blog/ember-1",
+          "title": "Sonnet 5.5",
+          "summary": "Claude Sonnet 5.5 is a clear upgrade over Claude Sonnet 5, runs 30%+ faster, and costs up to 30% less for most work.",
+          "titleZh": "Sonnet 5.5 模型",
+          "summaryZh": "Claude Sonnet 5.5 是对 Claude Sonnet 5 的显著升级，运行速度提升 30% 以上，而且大多数工作场景的成本最高可降低 30%。",
+          "url": "https://www.anthropic.com/claude-sonnet-5-5",
           "source": "Hacker News",
-          "score": 4.26,
+          "score": 4.56,
           "reasons": [
-            "HN分数380",
-            "讨论量190"
+            "HN分数635",
+            "讨论量426"
           ],
-          "published": "2026-09-27T17:31:53+00:00"
+          "published": "2026-09-28T17:58:11+00:00"
         },
         {
-          "title": "Owed a billion dollars in Nvidia stock",
-          "summary": "A first-person account of a 1993 NVIDIA stock option grant, a decades-later discovery of a vesting discrepancy, and how the statute of limitations settled it.",
-          "titleZh": "曾获价值十亿美元的 Nvidia 股票",
-          "summaryZh": "作者以第一人称讲述了自己 1993 年获得的 NVIDIA 股票期权，数十年后发现归属情况存在差异，以及时效期限如何最终决定此事。",
-          "url": "https://colo.to/nvidia-stock-narrative.html",
+          "title": "Pirating the Pirates",
+          "summary": "Notes from the underground of film preservation.",
+          "titleZh": "盗版者的盗版",
+          "summaryZh": "来自电影保存地下圈的札记。",
+          "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
           "source": "Hacker News",
-          "score": 4.0,
+          "score": 4.29,
           "reasons": [
-            "HN分数142",
-            "讨论量54"
+            "HN分数444",
+            "讨论量235"
           ],
-          "published": "2026-09-28T02:05:13+00:00"
+          "published": "2026-09-28T15:54:15+00:00"
         },
         {
-          "title": "Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi",
-          "summary": "Endless lofi beats composed live in your browser, over pixel-art nights in Paris, Tokyo, New York, Hong Kong, Sydney, San Francisco and more. Free, no sign-up.",
-          "titleZh": "Show HN：Lofi Cities——用浏览器生成 lo-fi 音乐的像素风城市夜景",
-          "summaryZh": "浏览器实时创作无尽的 lo-fi 节拍，搭配巴黎、东京、纽约、香港、悉尼、旧金山等城市的像素风夜景。免费使用，无需注册。",
-          "url": "https://loficities.com/",
+          "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
+          "summary": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification - firelex/jeff",
+          "titleZh": "Jeff——兼容 Jev 的 0.8B 决策模型，在家训练，耗时约 30 毫秒",
+          "summaryZh": "针对零样本分类微调的 Qwen3.5 和 Gemma 4 模型——firelex/jeff",
+          "url": "https://github.com/firelex/jeff",
           "source": "Hacker News",
-          "score": 3.96,
+          "score": 4.23,
           "reasons": [
-            "HN分数190",
-            "讨论量86"
+            "HN分数331",
+            "讨论量133"
           ],
-          "published": "2026-09-27T18:44:30+00:00"
+          "published": "2026-09-28T20:23:36+00:00"
         },
         {
-          "title": "Don't couple your Go code to GitHub",
-          "summary": "The technical musings of Iain Cambridge.",
-          "titleZh": "别让 Go 代码依赖 GitHub",
-          "summaryZh": "Iain Cambridge 的技术随想。",
-          "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
+          "title": "Kids turned low-traffic NPR Spotify comments into a secret group chat",
+          "summary": "You are using an outdated browser. Please upgrade your browser or activate Google Chrome Frame to improve your experience.",
+          "titleZh": "孩子们把 NPR Spotify 上低流量节目的评论区变成了秘密群聊",
+          "summaryZh": "你正在使用过时的浏览器。请升级浏览器或启用 Google Chrome Frame，以改善使用体验。",
+          "url": "https://www.thisamericanlife.org/897/transcript",
           "source": "Hacker News",
-          "score": 3.86,
+          "score": 4.16,
           "reasons": [
-            "HN分数162",
+            "HN分数317",
+            "讨论量188"
+          ],
+          "published": "2026-09-28T15:35:09+00:00"
+        },
+        {
+          "title": "World Labs Is Joining AMD",
+          "summary": "Accelerating the future of AI research and compute",
+          "titleZh": "World Labs 将加入 AMD",
+          "summaryZh": "加速 AI 研究与算力的未来",
+          "url": "https://www.worldlabs.ai/blog/amd-announcement",
+          "source": "Hacker News",
+          "score": 4.02,
+          "reasons": [
+            "HN分数209",
             "讨论量81"
           ],
-          "published": "2026-09-27T16:50:58+00:00"
+          "published": "2026-09-28T20:18:05+00:00"
         },
         {
-          "title": "Self-Hosting on the Dark Web",
-          "summary": "This site is now reachable over Tor as a hidden service, at a .onion address that resolves only inside the Tor network. Tor relays and encrypts your traffic as …",
-          "titleZh": "在暗网上自托管",
-          "summaryZh": "这个网站现在可以通过 Tor 作为隐藏服务访问，地址是一个只能在 Tor 网络内解析的 .onion 域名。Tor 中继会加密并转发你的流量……",
-          "url": "https://david.alvarezrosa.com/posts/self-hosting-on-the-dark-web/",
+          "title": "California farmers are struggling to sell grapes as demand for wine drops",
+          "summary": "Many California growers can’t find buyers as the industry produces more wine grapes than the market wants. Wine consumption is declining globally as people drink less.",
+          "titleZh": "葡萄酒需求下滑，加州农民葡萄滞销",
+          "summaryZh": "随着葡萄酒产业生产的酿酒葡萄超过市场需求，许多加州种植者找不到买家。全球葡萄酒消费正在下降，人们喝得越来越少。",
+          "url": "https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops",
           "source": "Hacker News",
-          "score": 3.58,
+          "score": 3.99,
           "reasons": [
-            "HN分数80",
-            "讨论量31"
+            "HN分数88",
+            "讨论量221"
           ],
-          "published": "2026-09-27T20:03:36+00:00"
+          "published": "2026-09-28T20:00:06+00:00"
         },
         {
-          "title": "Alan Kay's answer to “Did the ENIAC have a BIOS”?",
-          "summary": "Comments",
-          "titleZh": "Alan Kay 对“ENIAC 有 BIOS 吗？”的回答",
-          "summaryZh": "评论。",
-          "url": "https://www.quora.com/Did-the-ENIAC-have-a-BIOS/answer/Alan-Kay-11",
+          "title": "Does Reddit have an astroturfing problem? What the data suggests",
+          "summary": "In 51,129 comments from six knife subreddits, the 5% most brand-heavy accounts wrote 11.3% of the brand mentions in buying threads, against 7.9% expected by chance. For one brand it is 31% against 8%. The full Reddit his…",
+          "titleZh": "Reddit 是否存在伪装草根宣传的问题？数据揭示了什么",
+          "summaryZh": "在六个刀具子版块的 51,129 条评论中，品牌提及最密集的前 5% 账号，在购买讨论帖中贡献了 11.3% 的品牌提及，高于随机情况下预期的 7.9%。其中一个品牌的比例更达到 31%，而随机预期为 8%。完整的 Reddit 历史……",
+          "url": "https://www.petervijeh.com/projects/reddit-astroturf",
           "source": "Hacker News",
-          "score": 3.58,
+          "score": 3.87,
           "reasons": [
-            "HN分数81",
-            "讨论量31"
+            "HN分数140",
+            "讨论量164"
           ],
-          "published": "2026-09-27T19:37:05+00:00"
-        },
-        {
-          "title": "Lunar Terminator Paradox",
-          "summary": "There's an optical illusion known by names like the \"lunar terminator paradox\". This has much discussion and descriptions online, but none made sense in my head, so I wrote this program to figure out what was going on. T…",
-          "titleZh": "月球晨昏线悖论",
-          "summaryZh": "有一种视觉错觉被称为“月球晨昏线悖论”等。网上有很多相关讨论和解释，但我始终没能理解，于是写了这个程序来弄清楚其中的原理……",
-          "url": "https://notes.secretsauce.net/notes/2026/09/27_lunar-terminator-paradox.html",
-          "source": "Hacker News",
-          "score": 3.54,
-          "reasons": [
-            "HN分数52",
-            "讨论量36"
-          ],
-          "published": "2026-09-27T21:06:17+00:00"
+          "published": "2026-09-28T13:30:54+00:00"
         }
       ]
     },
@@ -126,106 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Anthropic’s CEO is about to have dinner with President Trump",
-          "summary": "This will be the first one-on-one meeting between Dario Amodei and Donald Trump",
-          "titleZh": "Anthropic 首席执行官即将与特朗普总统共进晚餐",
-          "summaryZh": "这将是 Dario Amodei 与 Donald Trump 首次一对一会面。",
-          "url": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+          "title": "Peak XV ups Surge seed investment ceiling to $5M, unveils 18-startup cohort",
+          "summary": "Thirteen of the 18 startups in Peak XV’s latest Surge cohort are targeting global markets, while more than half are based in India.",
+          "titleZh": "Peak XV 提高 Surge 种子轮投资上限至 500 万美元，公布 18 家初创企业名单",
+          "summaryZh": "Peak XV 最新一届 Surge 项目中的 18 家初创企业，有 13 家瞄准全球市场，超过半数总部位于印度。",
+          "url": "https://techcrunch.com/2026/09/28/peak-xv-goes-bigger-at-seed-with-new-surge-cohort-as-series-a-bar-rises/",
+          "source": "TechCrunch",
+          "score": 4.52,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-29T00:30:00+00:00"
+        },
+        {
+          "title": "OpenAI reportedly ditches model over safety concerns",
+          "summary": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for following orders.",
+          "titleZh": "据称 OpenAI 因安全顾虑弃用一款模型",
+          "summaryZh": "这家人工智能实验室的一位高管告诉《华尔街日报》，相关模型在遵循指令方面表现不佳。",
+          "url": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/",
+          "source": "TechCrunch",
+          "score": 4.49,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-28T23:39:20+00:00"
+        },
+        {
+          "title": "Source: Inference provider Modal Labs closing in on $750M round at $15.75B valuation",
+          "summary": "The new financing is expected to more than triples the AI infrastructure startup's valuation from just four months ago.",
+          "titleZh": "消息人士：推理服务商 Modal Labs 即将完成 7.5 亿美元融资，估值达 157.5 亿美元",
+          "summaryZh": "这笔新融资预计将使这家人工智能基础设施初创公司的估值较仅仅四个月前增长逾三倍。",
+          "url": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/",
+          "source": "TechCrunch",
+          "score": 4.43,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-09-28T21:29:18+00:00"
+        },
+        {
+          "title": "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
+          "summary": "The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist.",
+          "titleZh": "AMD 将以 82 亿美元收购李飞飞创办的 World Labs",
+          "summaryZh": "收购完成后，World Labs 创始人李飞飞将加入 AMD，担任执行副总裁兼首席科学家。",
+          "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
           "source": "TechCrunch",
           "score": 4.41,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-27T20:34:28+00:00"
+          "published": "2026-09-28T20:39:33+00:00"
         },
         {
-          "title": "Can Muse overcome Meta’s trust issues?",
-          "summary": "On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.",
-          "titleZh": "Muse 能否化解 Meta 的信任危机？",
-          "summaryZh": "在 Equity 节目中，我们讨论了 Meta 的 AI 发布如何成功抢走 OpenAI 和 Anthropic 的风头。",
-          "url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+          "title": "Shopify opens checkout to browser-based AI agents",
+          "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
+          "titleZh": "Shopify 向基于浏览器的 AI 智能体开放结账功能",
+          "summaryZh": "Shopify 正将 WebMCP 支持扩展至结账环节，允许基于浏览器的 AI 智能体在买家授权后更新订单信息并完成购买。",
+          "url": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-27T19:57:30+00:00"
+          "published": "2026-09-28T19:33:57+00:00"
         },
         {
-          "title": "Anthropic’s Dario Amodei gets the SNL treatment",
-          "summary": "\"AI is the devil and I its maker.\"",
-          "titleZh": "Anthropic 的 Dario Amodei 登上《周六夜现场》",
-          "summaryZh": "“AI 是魔鬼，而我是它的创造者。”",
-          "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
+          "title": "The AI boom took over Climate Week and not everyone is happy about it",
+          "summary": "Just like the rest of the U.S., data centers and AI are dividing climate tech founders and investors.",
+          "titleZh": "AI 热潮席卷气候周，并非所有人都对此满意",
+          "summaryZh": "和美国其他地方一样，数据中心和人工智能也让气候科技领域的创始人和投资者意见分歧。",
+          "url": "https://techcrunch.com/2026/09/28/the-ai-boom-took-over-climate-week-and-not-everyone-is-happy-about-it/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 4.37,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-27T16:30:00+00:00"
+          "published": "2026-09-28T19:21:59+00:00"
         },
         {
-          "title": "TechCrunch Mobility: AV companies pick their lanes",
-          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-          "titleZh": "TechCrunch Mobility：自动驾驶公司各选赛道",
-          "summaryZh": "欢迎回到 TechCrunch Mobility——这里聚焦交通运输的未来，以及如今愈发重要的 AI 在其中扮演的角色。",
-          "url": "https://techcrunch.com/2026/09/27/techcrunch-mobility-av-companies-pick-their-lanes/",
+          "title": "Nvidia launches new platform for reining in rogue AI agents",
+          "summary": "Nvidia CEO Jensen Huang on Monday introduced a toolkit of software and hardware products that add independent security layers around AI agents to ensure they stay within their test environments even if they attempt to br…",
+          "titleZh": "Nvidia 推出新平台，约束失控的 AI 智能体",
+          "summaryZh": "Nvidia 首席执行官黄仁勋周一推出一套软硬件工具包，为 AI 智能体增设独立安全层，确保它们留在测试环境中，即使试图突破限制也不例外……",
+          "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
           "source": "TechCrunch",
-          "score": 4.28,
+          "score": 4.35,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-27T16:02:00+00:00"
+          "published": "2026-09-28T18:31:23+00:00"
         },
         {
-          "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
-          "summary": "The limited test covers select products and users, with a broader rollout planned for later in October.",
-          "titleZh": "Google 在印度测试通过 Gemini 和 AI 模式从沃尔玛旗下 Flipkart 购物",
-          "summaryZh": "此次小范围测试覆盖部分商品和用户，计划于 10 月晚些时候扩大推出范围。",
-          "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+          "title": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner",
+          "summary": "Anthropic has released the newest version of its mid-range model, boasting faster response times and less token burn.",
+          "titleZh": "Anthropic 发布 Sonnet 5.5，称其是更便宜、更快速的工作伙伴",
+          "summaryZh": "Anthropic 发布了其中端模型的最新版本，称其响应速度更快、令牌消耗更少。",
+          "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
           "source": "TechCrunch",
-          "score": 3.88,
+          "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-27T01:30:00+00:00"
-        },
-        {
-          "title": "Insurers claim AI is already increasing healthcare costs",
-          "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
-          "titleZh": "保险公司称 AI 已在推高医疗成本",
-          "summaryZh": "Blue Cross Blue Shield 表示，医院使用 AI 工具导致两年内医疗支出额外增加 9.42 亿美元。",
-          "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-          "source": "TechCrunch",
-          "score": 3.75,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-26T21:02:06+00:00"
-        },
-        {
-          "title": "I created an interactive digital avatar of myself — and you can talk to it",
-          "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
-          "titleZh": "我创建了一个可交互的数字分身，你可以和它对话",
-          "summaryZh": "在获得一个交互式数字分身并训练它讨论风险投资欺诈后，我对制作自己的 AI 克隆体感受复杂。",
-          "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
-          "source": "TechCrunch",
-          "score": 3.56,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-26T14:00:00+00:00"
-        },
-        {
-          "title": "Sennheiser Momentum 5 review: Great sound, incredible battery life, and few compromises",
-          "summary": "I spent the last few weeks with the Sennheiser Momentum 5 to determine if this pair actually stands out, testing everything from sound quality and noise cancellation to comfort and battery life.",
-          "titleZh": "Sennheiser Momentum 5 评测：音质出色、续航惊人，妥协之处寥寥",
-          "summaryZh": "过去几周，我一直在使用 Sennheiser Momentum 5，测试音质、降噪、佩戴舒适度和续航等表现，看看这款耳机是否真正出众。",
-          "url": "https://techcrunch.com/2026/09/27/sennheiser-momentum-5-review-great-sound-incredible-battery-life-and-few-compromises/",
-          "source": "TechCrunch",
-          "score": 1.65,
-          "reasons": [],
-          "published": "2026-09-27T15:00:00+00:00"
+          "published": "2026-09-28T18:00:00+00:00"
         }
       ]
     }
@@ -233,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-28T11:02:39.536715+08:00"
+      "lastRunAt": "2026-09-29T11:02:45.602170+08:00"
     }
   }
 }
