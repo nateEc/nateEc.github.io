@@ -1,75 +1,75 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-28T14:30:30+08:00",
-  "date": "2026-09-28",
+  "updatedAt": "2026-09-29T14:30:11+08:00",
+  "date": "2026-09-29",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 2401,
-      "totalStars": 90714,
-      "forks": 15725,
-      "url": "https://github.com/paperclipai/paperclip"
-    },
-    {
-      "rank": 2,
-      "fullName": "vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 4520,
-      "totalStars": 38343,
-      "forks": 5011,
-      "url": "https://github.com/vectorize-io/hindsight"
-    },
-    {
-      "rank": 3,
       "fullName": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 3086,
-      "totalStars": 40837,
-      "forks": 4847,
+      "starsToday": 3221,
+      "totalStars": 45131,
+      "forks": 5167,
       "url": "https://github.com/debpalash/VoiceStudio"
     },
     {
-      "rank": 4,
-      "fullName": "rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
+      "rank": 2,
+      "fullName": "paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 3197,
+      "totalStars": 93353,
+      "forks": 15935,
+      "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+      "rank": 3,
+      "fullName": "vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 790,
-      "totalStars": 59694,
-      "forks": 10279,
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+      "starsToday": 4561,
+      "totalStars": 41496,
+      "forks": 5582,
+      "url": "https://github.com/vectorize-io/hindsight"
+    },
+    {
+      "rank": 4,
+      "fullName": "NawfalMotii79/PLFM_RADAR",
+      "description": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
+      "language": "PLSQL",
+      "languageColor": "#8B949E",
+      "starsToday": 158,
+      "totalStars": 25871,
+      "forks": 5892,
+      "url": "https://github.com/NawfalMotii79/PLFM_RADAR"
     },
     {
       "rank": 5,
-      "fullName": "InfinityLoop1308/PipePipe",
-      "description": "An open-source Android app to let you browse YouTube and other services freely.",
-      "language": "Shell",
-      "languageColor": "#89E051",
-      "starsToday": 242,
-      "totalStars": 6685,
-      "forks": 225,
-      "url": "https://github.com/InfinityLoop1308/PipePipe"
+      "fullName": "cs341-illinois/coursebook",
+      "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
+      "language": "TeX",
+      "languageColor": "#8B949E",
+      "starsToday": 195,
+      "totalStars": 2638,
+      "forks": 245,
+      "url": "https://github.com/cs341-illinois/coursebook"
     },
     {
       "rank": 6,
-      "fullName": "vercel-labs/scriptc",
-      "description": "TypeScript-to-Native Compiler",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 102,
-      "totalStars": 5495,
-      "forks": 143,
-      "url": "https://github.com/vercel-labs/scriptc"
+      "fullName": "byoungd/up",
+      "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 327,
+      "totalStars": 65005,
+      "forks": 6541,
+      "url": "https://github.com/byoungd/up"
     },
     {
       "rank": 7,
@@ -77,9 +77,9 @@
       "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 114,
-      "totalStars": 1174,
-      "forks": 111,
+      "starsToday": 734,
+      "totalStars": 1909,
+      "forks": 146,
       "url": "https://github.com/mvschwarz/openrig"
     },
     {
@@ -88,47 +88,42 @@
       "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 895,
-      "totalStars": 20769,
-      "forks": 1763,
+      "starsToday": 1099,
+      "totalStars": 21441,
+      "forks": 1812,
       "url": "https://github.com/dream-num/univer"
-    },
-    {
-      "rank": 9,
-      "fullName": "willfaust/Madeira",
-      "description": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
-      "language": "C",
-      "languageColor": "#555555",
-      "starsToday": 83,
-      "totalStars": 882,
-      "forks": 153,
-      "url": "https://github.com/willfaust/Madeira"
     }
   ],
   "languages": [
     {
       "name": "TypeScript",
-      "count": 4,
-      "share": 44,
+      "count": 3,
+      "share": 38,
       "color": "#3178C6"
     },
     {
       "name": "Python",
-      "count": 3,
-      "share": 33,
+      "count": 2,
+      "share": 25,
       "color": "#3572A5"
     },
     {
-      "name": "C",
+      "name": "JavaScript",
       "count": 1,
-      "share": 11,
-      "color": "#555555"
+      "share": 12,
+      "color": "#F1E05A"
     },
     {
-      "name": "Shell",
+      "name": "PLSQL",
       "count": 1,
-      "share": 11,
-      "color": "#89E051"
+      "share": 12,
+      "color": "#8B949E"
+    },
+    {
+      "name": "TeX",
+      "count": 1,
+      "share": 12,
+      "color": "#8B949E"
     }
   ],
   "themes": [
@@ -144,9 +139,8 @@
     },
     {
       "name": "AI infrastructure",
-      "count": 2,
+      "count": 1,
       "repositories": [
-        "rohitg00/ai-engineering-from-scratch",
         "dream-num/univer"
       ]
     },
