@@ -1,154 +1,181 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T14:30:11+08:00",
-  "date": "2026-09-29",
+  "updatedAt": "2026-09-30T19:29:02+08:00",
+  "date": "2026-09-30",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
+      "fullName": "NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 1280,
+      "totalStars": 11151,
+      "forks": 1464,
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "rank": 2,
       "fullName": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 3221,
-      "totalStars": 45131,
-      "forks": 5167,
+      "starsToday": 3481,
+      "totalStars": 49662,
+      "forks": 5525,
       "url": "https://github.com/debpalash/VoiceStudio"
     },
     {
-      "rank": 2,
-      "fullName": "paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 3197,
-      "totalStars": 93353,
-      "forks": 15935,
-      "url": "https://github.com/paperclipai/paperclip"
-    },
-    {
       "rank": 3,
-      "fullName": "vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 4561,
-      "totalStars": 41496,
-      "forks": 5582,
-      "url": "https://github.com/vectorize-io/hindsight"
-    },
-    {
-      "rank": 4,
-      "fullName": "NawfalMotii79/PLFM_RADAR",
-      "description": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
-      "language": "PLSQL",
-      "languageColor": "#8B949E",
-      "starsToday": 158,
-      "totalStars": 25871,
-      "forks": 5892,
-      "url": "https://github.com/NawfalMotii79/PLFM_RADAR"
-    },
-    {
-      "rank": 5,
-      "fullName": "cs341-illinois/coursebook",
-      "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
-      "language": "TeX",
-      "languageColor": "#8B949E",
-      "starsToday": 195,
-      "totalStars": 2638,
-      "forks": 245,
-      "url": "https://github.com/cs341-illinois/coursebook"
-    },
-    {
-      "rank": 6,
-      "fullName": "byoungd/up",
-      "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 327,
-      "totalStars": 65005,
-      "forks": 6541,
-      "url": "https://github.com/byoungd/up"
-    },
-    {
-      "rank": 7,
       "fullName": "mvschwarz/openrig",
       "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 734,
-      "totalStars": 1909,
-      "forks": 146,
+      "starsToday": 622,
+      "totalStars": 2674,
+      "forks": 190,
       "url": "https://github.com/mvschwarz/openrig"
     },
     {
-      "rank": 8,
-      "fullName": "dream-num/univer",
-      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "rank": 4,
+      "fullName": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 1099,
-      "totalStars": 21441,
-      "forks": 1812,
-      "url": "https://github.com/dream-num/univer"
+      "starsToday": 88,
+      "totalStars": 24287,
+      "forks": 1757,
+      "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+      "rank": 5,
+      "fullName": "DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 675,
+      "totalStars": 148581,
+      "forks": 7990,
+      "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
+      "rank": 6,
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 338,
+      "totalStars": 127234,
+      "forks": 19900,
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "rank": 7,
+      "fullName": "openclaw/openclaw",
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 136,
+      "totalStars": 390815,
+      "forks": 82207,
+      "url": "https://github.com/openclaw/openclaw"
+    },
+    {
+      "rank": 8,
+      "fullName": "ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 118,
+      "totalStars": 75938,
+      "forks": 8865,
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+      "rank": 9,
+      "fullName": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 736,
+      "totalStars": 272535,
+      "forks": 22929,
+      "url": "https://github.com/mattpocock/skills"
+    },
+    {
+      "rank": 10,
+      "fullName": "heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 324,
+      "totalStars": 54393,
+      "forks": 4946,
+      "url": "https://github.com/heygen-com/hyperframes"
     }
   ],
   "languages": [
     {
       "name": "TypeScript",
-      "count": 3,
-      "share": 38,
+      "count": 4,
+      "share": 40,
       "color": "#3178C6"
     },
     {
       "name": "Python",
-      "count": 2,
-      "share": 25,
+      "count": 3,
+      "share": 30,
       "color": "#3572A5"
     },
     {
       "name": "JavaScript",
       "count": 1,
-      "share": 12,
+      "share": 10,
       "color": "#F1E05A"
     },
     {
-      "name": "PLSQL",
+      "name": "Rust",
       "count": 1,
-      "share": 12,
-      "color": "#8B949E"
+      "share": 10,
+      "color": "#DEA584"
     },
     {
-      "name": "TeX",
+      "name": "Shell",
       "count": 1,
-      "share": 12,
-      "color": "#8B949E"
+      "share": 10,
+      "color": "#89E051"
     }
   ],
   "themes": [
     {
-      "name": "Agent systems",
-      "count": 4,
-      "repositories": [
-        "paperclipai/paperclip",
-        "vectorize-io/hindsight",
-        "mvschwarz/openrig",
-        "dream-num/univer"
-      ]
-    },
-    {
       "name": "AI infrastructure",
-      "count": 1,
+      "count": 6,
       "repositories": [
-        "dream-num/univer"
+        "NVIDIA/OpenShell",
+        "mksglu/context-mode",
+        "DietrichGebert/ponytail",
+        "harry0703/MoneyPrinterTurbo"
       ]
     },
     {
-      "name": "Data & systems",
-      "count": 1,
+      "name": "Agent systems",
+      "count": 6,
       "repositories": [
-        "dream-num/univer"
+        "NVIDIA/OpenShell",
+        "mvschwarz/openrig",
+        "mksglu/context-mode",
+        "DietrichGebert/ponytail"
+      ]
+    },
+    {
+      "name": "Developer tools",
+      "count": 3,
+      "repositories": [
+        "mvschwarz/openrig",
+        "mksglu/context-mode",
+        "DietrichGebert/ponytail"
       ]
     }
   ]
