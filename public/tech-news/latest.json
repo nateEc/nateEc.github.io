@@ -1,124 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-29T11:34:53+08:00",
-  "date": "2026-09-29",
+  "updatedAt": "2026-09-30T11:32:01+08:00",
+  "date": "2026-09-30",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "It's Time to Investigate the AI Labs",
-          "summary": "Over the last several months, the two leading frontier AI labs have shown some brazen behavior. It started with a series of​ carefully planned announcements​ ... Read more",
-          "titleZh": "是时候调查人工智能实验室了",
-          "summaryZh": "过去几个月，两家领先的前沿人工智能实验室表现出了一些胆大妄为的行为。一切始于一系列精心策划的公告……阅读全文",
-          "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+          "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+          "titleZh": "GPT 6.1 Sol：以五分之一的价格，提供接近 Astra 的智能水平",
+          "summaryZh": "认识 GPT-6.1 Sol：它在编程、电脑操作和专业工作方面具备接近 Astra 的智能水平，API 输入和输出 token 价格仅为 Astra 标准价格的五分之一。",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
           "source": "Hacker News",
-          "score": 6.82,
+          "score": 4.71,
           "reasons": [
-            "AI",
-            "HN分数334",
-            "讨论量131"
+            "HN分数821",
+            "讨论量752"
           ],
-          "published": "2026-09-28T19:53:35+00:00"
+          "published": "2026-09-29T17:06:45+00:00"
         },
         {
-          "title": "Sonnet 5.5",
-          "summary": "Claude Sonnet 5.5 is a clear upgrade over Claude Sonnet 5, runs 30%+ faster, and costs up to 30% less for most work.",
-          "titleZh": "Sonnet 5.5 模型",
-          "summaryZh": "Claude Sonnet 5.5 是对 Claude Sonnet 5 的显著升级，运行速度提升 30% 以上，而且大多数工作场景的成本最高可降低 30%。",
-          "url": "https://www.anthropic.com/claude-sonnet-5-5",
+          "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+          "summary": "Benchmark for tracking model capability after release. - ninjahawk/livenerf",
+          "titleZh": "Livenerf：Opus 5.5 到底被削弱了吗？",
+          "summaryZh": "用于追踪模型发布后能力变化的基准测试。— ninjahawk/livenerf",
+          "url": "https://github.com/ninjahawk/livenerf",
           "source": "Hacker News",
-          "score": 4.56,
+          "score": 4.3,
           "reasons": [
-            "HN分数635",
-            "讨论量426"
+            "HN分数323",
+            "讨论量140"
           ],
-          "published": "2026-09-28T17:58:11+00:00"
+          "published": "2026-09-29T22:36:14+00:00"
         },
         {
-          "title": "Pirating the Pirates",
-          "summary": "Notes from the underground of film preservation.",
-          "titleZh": "盗版者的盗版",
-          "summaryZh": "来自电影保存地下圈的札记。",
-          "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
+          "title": "America.gov",
+          "summary": "Comments",
+          "titleZh": "America.gov",
+          "summaryZh": "评论",
+          "url": "https://america.gov/",
           "source": "Hacker News",
           "score": 4.29,
           "reasons": [
-            "HN分数444",
-            "讨论量235"
+            "HN分数409",
+            "讨论量334"
           ],
-          "published": "2026-09-28T15:54:15+00:00"
+          "published": "2026-09-29T14:04:57+00:00"
         },
         {
-          "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
-          "summary": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification - firelex/jeff",
-          "titleZh": "Jeff——兼容 Jev 的 0.8B 决策模型，在家训练，耗时约 30 毫秒",
-          "summaryZh": "针对零样本分类微调的 Qwen3.5 和 Gemma 4 模型——firelex/jeff",
-          "url": "https://github.com/firelex/jeff",
+          "title": "How Delhi cut electricity loss from 50 to 5 percent",
+          "summary": "Since 2002, Delhi has transformed its power grid from a dysfunctional, electricity-leaking mess to a world-class system. Here's how they did it.",
+          "titleZh": "德里如何将电力损耗从 50% 降至 5%",
+          "summaryZh": "自 2002 年以来，德里已将电网从运转失灵、漏损严重的系统改造成世界一流的电力系统。以下是他们的做法。",
+          "url": "https://spectrum.ieee.org/delhi-electricity-loss",
           "source": "Hacker News",
-          "score": 4.23,
+          "score": 4.24,
           "reasons": [
-            "HN分数331",
-            "讨论量133"
+            "HN分数453",
+            "讨论量265"
           ],
-          "published": "2026-09-28T20:23:36+00:00"
+          "published": "2026-09-29T12:43:29+00:00"
         },
         {
-          "title": "Kids turned low-traffic NPR Spotify comments into a secret group chat",
-          "summary": "You are using an outdated browser. Please upgrade your browser or activate Google Chrome Frame to improve your experience.",
-          "titleZh": "孩子们把 NPR Spotify 上低流量节目的评论区变成了秘密群聊",
-          "summaryZh": "你正在使用过时的浏览器。请升级浏览器或启用 Google Chrome Frame，以改善使用体验。",
-          "url": "https://www.thisamericanlife.org/897/transcript",
+          "title": "Ask HN: What are you reading?",
+          "summary": "Hacker News new | past | comments | ask | show | jobs | submit login Ask HN: What are you reading? 168 points by dan-bailey 12 hours ago | hide | past | favorite | 413 comments I'm plowing through the Dungeon Crawler Car…",
+          "titleZh": "Ask HN：你最近在读什么？",
+          "summaryZh": "Hacker News：最新｜过往｜评论｜提问｜展示｜招聘｜投稿｜登录。Ask HN：你最近在读什么？dan-bailey 于 12 小时前发布，获 168 分；413 条评论。提问者正在读《Dungeon Crawler Car…》",
+          "url": "https://news.ycombinator.com/item?id=49893157",
           "source": "Hacker News",
-          "score": 4.16,
+          "score": 4.11,
           "reasons": [
-            "HN分数317",
-            "讨论量188"
+            "HN分数168",
+            "讨论量413"
           ],
-          "published": "2026-09-28T15:35:09+00:00"
+          "published": "2026-09-29T13:44:43+00:00"
         },
         {
-          "title": "World Labs Is Joining AMD",
-          "summary": "Accelerating the future of AI research and compute",
-          "titleZh": "World Labs 将加入 AMD",
-          "summaryZh": "加速 AI 研究与算力的未来",
-          "url": "https://www.worldlabs.ai/blog/amd-announcement",
+          "title": "PS5 Relapse Exploit",
+          "summary": "Exploit chain for PS5 7.00 - 13.60. Contribute to ntfargo/Relapse-Exploit development by creating an account on GitHub.",
+          "titleZh": "PS5 Relapse 漏洞利用",
+          "summaryZh": "适用于 PS5 7.00 至 13.60 版本的漏洞利用链。登录 GitHub 以参与 ntfargo/Relapse-Exploit 项目开发。",
+          "url": "https://github.com/ntfargo/Relapse-Exploit",
           "source": "Hacker News",
-          "score": 4.02,
+          "score": 4.04,
           "reasons": [
-            "HN分数209",
-            "讨论量81"
+            "HN分数249",
+            "讨论量134"
           ],
-          "published": "2026-09-28T20:18:05+00:00"
+          "published": "2026-09-29T15:44:41+00:00"
         },
         {
-          "title": "California farmers are struggling to sell grapes as demand for wine drops",
-          "summary": "Many California growers can’t find buyers as the industry produces more wine grapes than the market wants. Wine consumption is declining globally as people drink less.",
-          "titleZh": "葡萄酒需求下滑，加州农民葡萄滞销",
-          "summaryZh": "随着葡萄酒产业生产的酿酒葡萄超过市场需求，许多加州种植者找不到买家。全球葡萄酒消费正在下降，人们喝得越来越少。",
-          "url": "https://www.kqed.org/news/12101534/california-farmers-are-struggling-to-sell-grapes-as-demand-for-wine-drops",
+          "title": "U.S. postal inspectors shut down website selling counterfeit postage labels",
+          "summary": "Miami, FL – 9/24/26 – The U.S. Postal Inspection Service and partner federal agencies have seized an internet domain, charging a Pakistani national with operating an unauthorized website that allegedly sold more than 5 m…",
+          "titleZh": "美国邮政检查员查封销售数百万张假邮资标签的网站",
+          "summaryZh": "佛罗里达州迈阿密，2026 年 9 月 24 日——美国邮政检查局及联邦合作机构查封了一个互联网域名，并指控一名巴基斯坦籍人士运营未经授权的网站，该网站涉嫌售出超过 500 万张……",
+          "url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/",
           "source": "Hacker News",
-          "score": 3.99,
+          "score": 4.03,
           "reasons": [
-            "HN分数88",
-            "讨论量221"
+            "HN分数185",
+            "讨论量110"
           ],
-          "published": "2026-09-28T20:00:06+00:00"
+          "published": "2026-09-29T19:30:17+00:00"
         },
         {
-          "title": "Does Reddit have an astroturfing problem? What the data suggests",
-          "summary": "In 51,129 comments from six knife subreddits, the 5% most brand-heavy accounts wrote 11.3% of the brand mentions in buying threads, against 7.9% expected by chance. For one brand it is 31% against 8%. The full Reddit his…",
-          "titleZh": "Reddit 是否存在伪装草根宣传的问题？数据揭示了什么",
-          "summaryZh": "在六个刀具子版块的 51,129 条评论中，品牌提及最密集的前 5% 账号，在购买讨论帖中贡献了 11.3% 的品牌提及，高于随机情况下预期的 7.9%。其中一个品牌的比例更达到 31%，而随机预期为 8%。完整的 Reddit 历史……",
-          "url": "https://www.petervijeh.com/projects/reddit-astroturf",
+          "title": "Show HN: Real-time Solar System with 526k asteroids and all tracked satellites",
+          "summary": "Космос сейчас ▶ демо Загружаю… 🌍 Земля ☀️ Вся система 🔄 Вращать с Землёй ✂ Короткие пути все ничего Тяни — вращать, колесо — приблизить, клик — карточка и орбита, двойной клик — лететь к телу. WASD — полёт, R/F — вверх/в…",
+          "titleZh": "Show HN：实时太阳系，包含 52.6 万颗小行星及所有已追踪卫星",
+          "summaryZh": "实时太空 ▶ 演示｜正在加载……🌍 地球 ☀️ 整个系统 🔄 与地球一起旋转 ✂ 所有短途径都无效。拖动可旋转，滚轮可缩放，单击查看天体卡片和轨道，双击飞向天体。WASD 控制飞行，R/F 控制上升和下……",
+          "url": "https://space.bl2.net/",
           "source": "Hacker News",
-          "score": 3.87,
+          "score": 3.72,
           "reasons": [
-            "HN分数140",
-            "讨论量164"
+            "HN分数144",
+            "讨论量33"
           ],
-          "published": "2026-09-28T13:30:54+00:00"
+          "published": "2026-09-29T19:08:01+00:00"
         }
       ]
     },
@@ -127,108 +126,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Peak XV ups Surge seed investment ceiling to $5M, unveils 18-startup cohort",
-          "summary": "Thirteen of the 18 startups in Peak XV’s latest Surge cohort are targeting global markets, while more than half are based in India.",
-          "titleZh": "Peak XV 提高 Surge 种子轮投资上限至 500 万美元，公布 18 家初创企业名单",
-          "summaryZh": "Peak XV 最新一届 Surge 项目中的 18 家初创企业，有 13 家瞄准全球市场，超过半数总部位于印度。",
-          "url": "https://techcrunch.com/2026/09/28/peak-xv-goes-bigger-at-seed-with-new-surge-cohort-as-series-a-bar-rises/",
-          "source": "TechCrunch",
-          "score": 4.52,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-29T00:30:00+00:00"
-        },
-        {
-          "title": "OpenAI reportedly ditches model over safety concerns",
-          "summary": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for following orders.",
-          "titleZh": "据称 OpenAI 因安全顾虑弃用一款模型",
-          "summaryZh": "这家人工智能实验室的一位高管告诉《华尔街日报》，相关模型在遵循指令方面表现不佳。",
-          "url": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/",
+          "title": "America.gov gets really weird when you ask it about Minecraft, but it’s not a glitch",
+          "summary": "For the sake of national security, it's a relief to learn that America.gov is not hallucinating to the point that it's penning lengthy poetry.",
+          "titleZh": "问 America.gov 关于 Minecraft 的问题，回答会变得非常古怪，但这不是故障",
+          "summaryZh": "考虑到国家安全，得知 America.gov 并没有出现幻觉、以至于写出长篇诗作，倒是让人松了一口气。",
+          "url": "https://techcrunch.com/2026/09/29/america-gov-gets-really-weird-when-you-ask-it-about-minecraft-but-its-not-a-glitch/",
           "source": "TechCrunch",
           "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-28T23:39:20+00:00"
+          "published": "2026-09-29T23:30:55+00:00"
         },
         {
-          "title": "Source: Inference provider Modal Labs closing in on $750M round at $15.75B valuation",
-          "summary": "The new financing is expected to more than triples the AI infrastructure startup's valuation from just four months ago.",
-          "titleZh": "消息人士：推理服务商 Modal Labs 即将完成 7.5 亿美元融资，估值达 157.5 亿美元",
-          "summaryZh": "这笔新融资预计将使这家人工智能基础设施初创公司的估值较仅仅四个月前增长逾三倍。",
-          "url": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/",
+          "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
+          "summary": "Before OpenAI launched its new AI agent, Dots, on Tuesday, Elon Musk's xAI had already acquired the domain name \"dot.com,\" which now redirects to the Grok chatbot download page.",
+          "titleZh": "网友认定埃隆·马斯克的 xAI 嘲讽了 OpenAI 的 Dots 发布",
+          "summaryZh": "OpenAI 周二推出新 AI 智能体 Dots 之前，埃隆·马斯克旗下的 xAI 已经收购了 dot.com 域名；该域名现在会跳转到 Grok 聊天机器人的下载页面。",
+          "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-28T21:29:18+00:00"
+          "published": "2026-09-29T22:20:59+00:00"
         },
         {
-          "title": "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
-          "summary": "The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist.",
-          "titleZh": "AMD 将以 82 亿美元收购李飞飞创办的 World Labs",
-          "summaryZh": "收购完成后，World Labs 创始人李飞飞将加入 AMD，担任执行副总裁兼首席科学家。",
-          "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+          "title": "a16z-backed EliseAI raises $350M, doubles valuation to $4B",
+          "summary": "EliseAI raises $350M, doubles valuation in a year.",
+          "titleZh": "获 a16z 支持的 EliseAI 融资 3.5 亿美元，估值翻倍至 40 亿美元",
+          "summaryZh": "EliseAI 融资 3.5 亿美元，估值在一年内翻倍。",
+          "url": "https://techcrunch.com/2026/09/29/a16z-backed-eliseai-raises-350m-doubles-valuation-to-4b/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-28T20:39:33+00:00"
+          "published": "2026-09-29T21:51:36+00:00"
         },
         {
-          "title": "Shopify opens checkout to browser-based AI agents",
-          "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
-          "titleZh": "Shopify 向基于浏览器的 AI 智能体开放结账功能",
-          "summaryZh": "Shopify 正将 WebMCP 支持扩展至结账环节，允许基于浏览器的 AI 智能体在买家授权后更新订单信息并完成购买。",
-          "url": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
+          "title": "OpenAI’s latest features take direct aim at the app store model",
+          "summary": "OpenAI is building out the pieces of an alternative to the traditional app store model, turning ChatGPT into a place where software can be discovered and used by people and AI agents alike.",
+          "titleZh": "OpenAI 最新功能直指应用商店模式",
+          "summaryZh": "OpenAI 正在逐步构建传统应用商店模式的替代方案，让 ChatGPT 成为人们和 AI 智能体都能发现并使用软件的地方。",
+          "url": "https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 4.4,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-28T19:33:57+00:00"
+          "published": "2026-09-29T20:15:47+00:00"
         },
         {
-          "title": "The AI boom took over Climate Week and not everyone is happy about it",
-          "summary": "Just like the rest of the U.S., data centers and AI are dividing climate tech founders and investors.",
-          "titleZh": "AI 热潮席卷气候周，并非所有人都对此满意",
-          "summaryZh": "和美国其他地方一样，数据中心和人工智能也让气候科技领域的创始人和投资者意见分歧。",
-          "url": "https://techcrunch.com/2026/09/28/the-ai-boom-took-over-climate-week-and-not-everyone-is-happy-about-it/",
+          "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+          "summary": "The new round is anticipated to be the company's last before its delayed 2027 public debut.",
+          "titleZh": "据称 OpenAI 正洽谈以 1.4 万亿美元估值融资 300 亿美元",
+          "summaryZh": "预计这将是该公司在推迟至 2027 年上市前的最后一轮融资。",
+          "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
           "source": "TechCrunch",
-          "score": 4.37,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-28T19:21:59+00:00"
+          "published": "2026-09-29T19:52:37+00:00"
         },
         {
-          "title": "Nvidia launches new platform for reining in rogue AI agents",
-          "summary": "Nvidia CEO Jensen Huang on Monday introduced a toolkit of software and hardware products that add independent security layers around AI agents to ensure they stay within their test environments even if they attempt to br…",
-          "titleZh": "Nvidia 推出新平台，约束失控的 AI 智能体",
-          "summaryZh": "Nvidia 首席执行官黄仁勋周一推出一套软硬件工具包，为 AI 智能体增设独立安全层，确保它们留在测试环境中，即使试图突破限制也不例外……",
-          "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
+          "title": "Here’s why OpenAI is absent from Nvidia’s industry-wide effort to end rogue AI agents",
+          "summary": "OpenAI isn't a public supporter of Nvidia's Open Agent Safety Platform, but it is privately working with Nvidia, TechCrunch has learned.",
+          "titleZh": "OpenAI 为何缺席 Nvidia 旨在终结失控 AI 智能体的行业行动",
+          "summaryZh": "据 TechCrunch 了解，OpenAI 没有公开支持 Nvidia 的 Open Agent Safety Platform，但私下正与 Nvidia 合作。",
+          "url": "https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/",
           "source": "TechCrunch",
           "score": 4.35,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-28T18:31:23+00:00"
+          "published": "2026-09-29T18:35:00+00:00"
         },
         {
-          "title": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner",
-          "summary": "Anthropic has released the newest version of its mid-range model, boasting faster response times and less token burn.",
-          "titleZh": "Anthropic 发布 Sonnet 5.5，称其是更便宜、更快速的工作伙伴",
-          "summaryZh": "Anthropic 发布了其中端模型的最新版本，称其响应速度更快、令牌消耗更少。",
-          "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+          "title": "OpenAI takes on Microsoft with the launch of what feels a whole lot like ChatGPT’s own office suite",
+          "summary": "OpenAI's newly announced suite of office features puts it into more direct competition with more traditional software companies.",
+          "titleZh": "OpenAI 推出酷似 ChatGPT 办公套件的功能，向 Microsoft 发起挑战",
+          "summaryZh": "OpenAI 新公布的一套办公功能，使其与传统软件公司的竞争更加直接。",
+          "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 4.33,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-28T18:00:00+00:00"
+          "published": "2026-09-29T17:45:51+00:00"
+        },
+        {
+          "title": "Your car and its mobile app are probably handing over all kinds of data to tech companies",
+          "summary": "Researchers at Northeastern University found vehicles and their companion apps regularly shared detailed data with some of the largest tech companies.",
+          "titleZh": "你的汽车及其手机应用可能正在向科技公司提供各种数据",
+          "summaryZh": "东北大学的研究人员发现，汽车及其配套应用经常向一些大型科技公司分享详细数据。",
+          "url": "https://techcrunch.com/2026/09/29/your-car-and-its-mobile-app-are-probably-handing-over-all-kinds-of-data-to-tech-companies/",
+          "source": "TechCrunch",
+          "score": 1.86,
+          "reasons": [],
+          "published": "2026-09-29T22:18:35+00:00"
         }
       ]
     }
@@ -236,7 +233,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-09-29T11:02:45.602170+08:00"
+      "lastRunAt": "2026-09-30T11:01:56.904108+08:00"
     }
   }
 }
