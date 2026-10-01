@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T19:29:02+08:00",
-  "date": "2026-09-30",
+  "updatedAt": "2026-10-01T14:30:51+08:00",
+  "date": "2026-10-01",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,9 +11,9 @@
       "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
       "language": "Rust",
       "languageColor": "#DEA584",
-      "starsToday": 1280,
-      "totalStars": 11151,
-      "forks": 1464,
+      "starsToday": 1281,
+      "totalStars": 13141,
+      "forks": 1567,
       "url": "https://github.com/NVIDIA/OpenShell"
     },
     {
@@ -22,9 +22,9 @@
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 3481,
-      "totalStars": 49662,
-      "forks": 5525,
+      "starsToday": 3483,
+      "totalStars": 50739,
+      "forks": 5625,
       "url": "https://github.com/debpalash/VoiceStudio"
     },
     {
@@ -33,9 +33,9 @@
       "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 622,
-      "totalStars": 2674,
-      "forks": 190,
+      "starsToday": 624,
+      "totalStars": 3178,
+      "forks": 219,
       "url": "https://github.com/mvschwarz/openrig"
     },
     {
@@ -44,9 +44,9 @@
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 88,
-      "totalStars": 24287,
-      "forks": 1757,
+      "starsToday": 90,
+      "totalStars": 24556,
+      "forks": 1771,
       "url": "https://github.com/mksglu/context-mode"
     },
     {
@@ -55,9 +55,9 @@
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 675,
-      "totalStars": 148581,
-      "forks": 7990,
+      "starsToday": 743,
+      "totalStars": 149452,
+      "forks": 8031,
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
@@ -66,9 +66,9 @@
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 338,
-      "totalStars": 127234,
-      "forks": 19900,
+      "starsToday": 431,
+      "totalStars": 127674,
+      "forks": 19971,
       "url": "https://github.com/harry0703/MoneyPrinterTurbo"
     },
     {
@@ -78,8 +78,8 @@
       "language": "TypeScript",
       "languageColor": "#3178C6",
       "starsToday": 136,
-      "totalStars": 390815,
-      "forks": 82207,
+      "totalStars": 391050,
+      "forks": 82229,
       "url": "https://github.com/openclaw/openclaw"
     },
     {
@@ -88,9 +88,9 @@
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 118,
-      "totalStars": 75938,
-      "forks": 8865,
+      "starsToday": 123,
+      "totalStars": 76211,
+      "forks": 8884,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
@@ -99,9 +99,9 @@
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
       "languageColor": "#89E051",
-      "starsToday": 736,
-      "totalStars": 272535,
-      "forks": 22929,
+      "starsToday": 876,
+      "totalStars": 273194,
+      "forks": 22966,
       "url": "https://github.com/mattpocock/skills"
     },
     {
@@ -110,9 +110,9 @@
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 324,
-      "totalStars": 54393,
-      "forks": 4946,
+      "starsToday": 349,
+      "totalStars": 54874,
+      "forks": 4988,
       "url": "https://github.com/heygen-com/hyperframes"
     }
   ],
