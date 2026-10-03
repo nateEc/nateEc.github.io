@@ -1,124 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-01T11:31:44+08:00",
-  "date": "2026-10-01",
+  "updatedAt": "2026-10-03T11:32:05+08:00",
+  "date": "2026-10-03",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Show HN: Lathoa, a math app for kids where the AI is wrong on purpose",
-          "summary": "Errol is a robot powered by real AI, and he gets math wrong on purpose. Your kid's job: catch the mistakes. Critical thinking for the AI age.",
-          "titleZh": "Show HN：Lathoa，一款故意让 AI 答错题的儿童数学应用",
-          "summaryZh": "Errol 是一台由真正的 AI 驱动的机器人，而且它会故意把数学题做错。孩子的任务是找出错误。在 AI 时代培养批判性思维。",
-          "url": "https://lathoa.ai/en",
+          "title": "With most information hidden, the game Stratego had stumped AI until now",
+          "summary": "Comments",
+          "titleZh": "信息大多隐藏的战略棋，曾让 AI 束手无策，如今终于被攻克",
+          "summaryZh": "评论",
+          "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
           "source": "Hacker News",
-          "score": 5.71,
+          "score": 6.45,
           "reasons": [
             "AI",
-            "HN分数37",
-            "讨论量15"
+            "HN分数191",
+            "讨论量92"
           ],
-          "published": "2026-09-30T14:38:57+00:00"
+          "published": "2026-10-02T14:11:24+00:00"
         },
         {
-          "title": "Gemini 4 Argon",
-          "summary": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
-          "titleZh": "Gemini 4 Argon 模型",
-          "summaryZh": "我们宣布推出 Gemini 4 Argon，这是我们的前沿模型，面向现实场景编程、企业知识工作和网络防御，预计很快推出。",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "title": "Show HN: Made an open-source Lego AI generator",
+          "summary": "Agent tooling for generative LEGO models building, built with Astra and Opus 5.5, powered by Jev - anteloc/ldraw-nova",
+          "titleZh": "Show HN：我制作了一个开源乐高 AI 生成器",
+          "summaryZh": "用于构建生成式 LEGO 模型的智能体工具，基于 Astra 和 Opus 5.5 构建，由 Jev 驱动——anteloc/ldraw-nova",
+          "url": "https://github.com/anteloc/ldraw-nova",
           "source": "Hacker News",
-          "score": 4.85,
+          "score": 6.24,
           "reasons": [
-            "HN分数1071",
-            "讨论量720"
+            "AI",
+            "HN分数80",
+            "讨论量41"
           ],
-          "published": "2026-09-30T20:04:37+00:00"
+          "published": "2026-10-02T20:00:15+00:00"
         },
         {
-          "title": "Singapore govt dating app uses Gale-Shapley stable marriage algorithm",
-          "summary": "Singapore's govt dating app runs on a Nobel Prize-winning game theory algorithm 👏 FirstDate uses Gale-Shapley, the 1962 stable marriage algorithm that won the 2012 Economics Nobel and still runs hospital residency matche…",
-          "titleZh": "新加坡政府约会应用采用盖尔-沙普利稳定婚姻算法",
-          "summaryZh": "新加坡政府的约会应用采用了荣获诺贝尔奖的博弈论算法 👏 FirstDate 使用盖尔-沙普利算法——这一稳定婚姻算法于 1962 年提出，并助其在 2012 年获得诺贝尔经济学奖；至今仍用于医院住院医师匹配……",
-          "url": "https://twitter.com/tuakdotsol/status/2105105417760391258",
+          "title": "Apple Pass Designer",
+          "summary": "Whether you’re creating passes for a local fitness center, a small music venue, a global airline, or a national coffee chain, Pass Designer makes it easy to craft and preview passes that reflect your business.",
+          "titleZh": "Apple 通行证设计器",
+          "summaryZh": "无论你是为本地健身中心、小型音乐场馆、全球航空公司还是全国连锁咖啡店创建通行证，Pass Designer 都能让你轻松设计并预览符合自身业务形象的通行证。",
+          "url": "https://developer.apple.com/pass-designer/",
           "source": "Hacker News",
-          "score": 3.93,
+          "score": 4.31,
           "reasons": [
-            "HN分数255",
-            "讨论量189"
+            "HN分数343",
+            "讨论量224"
           ],
-          "published": "2026-09-30T09:27:04+00:00"
+          "published": "2026-10-02T19:06:56+00:00"
         },
         {
-          "title": "EDG C++ front-end goes public",
-          "summary": "On September 30, 2026, EDG",
-          "titleZh": "EDG C++ 前端公开发布",
-          "summaryZh": "2026 年 9 月 30 日，EDG……",
-          "url": "https://edgcpp.org/#transition",
+          "title": "Updates to Full Disk Access in macOS",
+          "summary": "We give developers powerful APIs to build incredible capabilities into their apps for Apple products, backed by a set of controls designed to protect users’ private data. Full Disk Access largely sidesteps these controls…",
+          "titleZh": "macOS 完全磁盘访问权限更新",
+          "summaryZh": "我们为开发者提供强大的 API，帮助他们为 Apple 产品打造出色的应用功能，同时通过一系列控制措施保护用户的私人数据。完全磁盘访问权限在很大程度上绕过了这些控制措施……",
+          "url": "https://developer.apple.com/news/?id=p6zjojqw",
           "source": "Hacker News",
-          "score": 3.93,
+          "score": 3.91,
           "reasons": [
-            "HN分数166",
-            "讨论量78"
+            "HN分数141",
+            "讨论量83"
           ],
-          "published": "2026-09-30T19:26:37+00:00"
+          "published": "2026-10-02T19:37:01+00:00"
         },
         {
-          "title": "The top secret URSALA, RAQUEL, and FARRAH satellites (2025)",
-          "summary": "In 1963, the Air Force launched the first “hitchhiker” off the side of a larger satellite. This began a secretive program that lasted more than 40 years under a variety of names and designations. The satellites, about th…",
-          "titleZh": "绝密卫星 URSALA、RAQUEL 和 FARRAH（2025）",
-          "summaryZh": "1963 年，美国空军从一颗大型卫星侧面发射了第一颗“搭便车”卫星。由此开启了一项秘密计划，历时 40 多年，期间使用过多个名称和代号。这些卫星大约……",
-          "url": "https://www.thespacereview.com/article/4951/1",
+          "title": "Muse Gadgets",
+          "summary": "Muse gadgets are open source devices you build yourself. Program an off-the-shelf ESP32 board or set up a Raspberry Pi with our SDKs, then connect Muse to your displays, buttons, sensors, actuators, and whatever else you…",
+          "titleZh": "Muse 小工具",
+          "summaryZh": "Muse 小工具是开源设备，可由你亲手组装。你可以为现成的 ESP32 开发板编程，或使用我们的 SDK 设置 Raspberry Pi，然后将 Muse 连接到显示屏、按钮、传感器、执行器以及其他设备……",
+          "url": "https://gadgets.muse.ai",
           "source": "Hacker News",
-          "score": 3.93,
+          "score": 3.88,
           "reasons": [
-            "HN分数148",
-            "讨论量62"
+            "HN分数150",
+            "讨论量69"
           ],
-          "published": "2026-09-30T22:03:04+00:00"
+          "published": "2026-10-02T19:26:54+00:00"
         },
         {
-          "title": "A brief history of the Bloomberg terminal",
-          "summary": "Trace the history of the Bloomberg Terminal and its powerful role in turning disparate streams of financial data into actionable insights for investors.",
-          "titleZh": "彭博终端简史",
-          "summaryZh": "追溯彭博终端的发展历程，以及它如何将彼此分散的金融数据流转化为投资者可采取行动的洞见，并发挥重要作用。",
-          "url": "https://spectrum.ieee.org/bloomberg-terminal",
+          "title": "Court agrees with EFF: Utah's VPN law demands a technical impossibility",
+          "summary": "In a win for digital rights, a federal judge has issued a preliminary injunction blocking Utah’s SB 73, the state’s draconian anti-VPN age verification law. The decision comes as EFF submitted our comments to the Utah De…",
+          "titleZh": "法院认同 EFF：犹他州 VPN 法要求实现技术上不可能之事",
+          "summaryZh": "这是数字权利的一次胜利：联邦法官发布初步禁令，阻止犹他州 SB 73——该州严苛的反 VPN 年龄验证法。就在 EFF 向犹他州提交意见之际，法院作出了这一裁决……",
+          "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
           "source": "Hacker News",
-          "score": 3.92,
+          "score": 3.86,
           "reasons": [
-            "HN分数235",
-            "讨论量96"
+            "HN分数542",
+            "讨论量235"
           ],
-          "published": "2026-09-30T14:34:07+00:00"
+          "published": "2026-10-01T22:23:07+00:00"
         },
         {
-          "title": "56k.rip – the 1996 dial-up internet experience",
-          "summary": "The full 1996 dial-up experience: the handshake, the wait, someone picking up the phone. Sound on.",
-          "titleZh": "56k.rip——重现 1996 年拨号上网体验",
-          "summaryZh": "完整重现 1996 年的拨号上网体验：调制解调器握手、漫长等待，还有人拿起电话。请打开声音。",
-          "url": "https://56k.rip/",
+          "title": "Things that apparently cause cancer",
+          "summary": "What does this methodology measure anyway?",
+          "titleZh": "那些据称会致癌的东西",
+          "summaryZh": "这种方法究竟测量的是什么？",
+          "url": "https://www.breakthroughjournal.org/p/things-that-apparently-cause-cancer",
           "source": "Hacker News",
-          "score": 3.78,
+          "score": 3.86,
           "reasons": [
-            "HN分数91",
-            "讨论量54"
+            "HN分数110",
+            "讨论量45"
           ],
-          "published": "2026-09-30T22:08:50+00:00"
+          "published": "2026-10-03T00:23:11+00:00"
         },
         {
-          "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
-          "summary": "Open source inference engine for agents that optimizes itself for your exact hardware. Compiles and tunes its kernels on your device, so open models run up to 2x faster than llama.cpp. Works on Apple Silicon, NVIDIA, AMD…",
-          "titleZh": "Launch HN：Magnitude（YC S25）——面向智能体的自优化推理引擎",
-          "summaryZh": "开源推理引擎，能针对你的具体硬件自行优化。它会在你的设备上编译并调优内核，让开放模型的运行速度最高提升至 llama.cpp 的 2 倍。支持 Apple 芯片、NVIDIA、AMD……",
-          "url": "https://github.com/magnitudedev/magnitude",
+          "title": "One month coding with GLM 5.3 Flash",
+          "summary": "Reporting on 2B tokens of AI usage and what shapes model selection and cost",
+          "titleZh": "使用 GLM 5.3 Flash 编码一个月",
+          "summaryZh": "分享 20 亿个 AI 使用令牌的体验，以及影响模型选择和成本的因素",
+          "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
           "source": "Hacker News",
-          "score": 3.77,
+          "score": 3.8,
           "reasons": [
-            "HN分数131",
-            "讨论量61"
+            "HN分数128",
+            "讨论量100"
           ],
-          "published": "2026-09-30T17:37:40+00:00"
+          "published": "2026-10-02T15:29:15+00:00"
         }
       ]
     },
@@ -127,106 +128,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
-          "summary": "Google has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.",
-          "titleZh": "谷歌发布 Gemini 4 Argon，称其为迄今最强大的模型",
-          "summaryZh": "谷歌发布了最新的 Gemini 模型，并将其宣传为编程和网络安全领域的主力工具。",
-          "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+          "title": "Meta wants your next gadget to be Muse-infused",
+          "summary": "Meta wants Muse in your TV and your toaster, so it's giving the code away for free.",
+          "titleZh": "Meta 希望你的下一款小工具融入 Muse",
+          "summaryZh": "Meta 希望 Muse 出现在你的电视和烤面包机里，因此决定免费开放代码。",
+          "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
           "source": "TechCrunch",
-          "score": 4.5,
+          "score": 4.52,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-30T23:43:07+00:00"
+          "published": "2026-10-03T00:45:39+00:00"
         },
         {
-          "title": "Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation",
-          "summary": "Flow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and board member.",
-          "titleZh": "Valor、Atreides 和红杉投资 AI 初创公司 Flow Engineering，估值达 7.5 亿美元",
-          "summaryZh": "Flow Engineering 致力于将 AI 智能体引入硬件设计领域；公司还迎来 Roelof Botha 担任天使投资人和董事会成员。",
-          "url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
+          "title": "Sean Parker is rebuilding Stability AI around music",
+          "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money.",
+          "titleZh": "Sean Parker 正围绕音乐重建 Stability AI",
+          "summaryZh": "Sean Parker 曾让音乐行业见识了“先斩后奏、再请求原谅”是什么样子；如今，他在唱片公司的支持与资金加持下再度回归。",
+          "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
           "source": "TechCrunch",
           "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-30T21:07:40+00:00"
+          "published": "2026-10-02T21:09:14+00:00"
         },
         {
-          "title": "Factory CEO just accused his VC board adviser of spying for Cognition",
-          "summary": "VC Chris Degnan and former board adviser to Factory AI has taken a job as chief revenue officer for competitor Cognition -- and everyone is arguing on X about it.",
-          "titleZh": "Factory CEO 指控其风投董事会顾问替 Cognition 从事间谍活动",
-          "summaryZh": "风投人 Chris Degnan 曾任 Factory AI 的董事会顾问，如今已加入竞争对手 Cognition，担任首席营收官；此事引发了 X 上的热议。",
-          "url": "https://techcrunch.com/2026/09/30/factory-ceo-just-accused-his-vc-board-advisor-of-spying-for-cognition/",
+          "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
+          "summary": "If you've been laid off, you don't have to skip TechCrunch Disrupt 2026. Get your Expo+ Pass for just $75. Limited to the first 100 qualifying registrants.",
+          "titleZh": "遭遇裁员？别错过 TechCrunch Disrupt 2026 Expo+ 通行证的 75 美元优惠",
+          "summaryZh": "如果你被裁员，也不必错过 TechCrunch Disrupt 2026。只需 75 美元即可购买 Expo+ 通行证，优惠仅限前 100 位符合条件的注册者。",
+          "url": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.37,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-30T20:39:09+00:00"
+          "published": "2026-10-02T19:15:51+00:00"
         },
         {
-          "title": "OpenAI’s Jev clone could help the frontier lab stop its swarming agents",
-          "summary": "OpenAI's \"Decisions API\" is a Jev clone that confirms the importance of fast, cheap intelligence.",
-          "titleZh": "OpenAI 的 Jev 克隆产品或能帮助这家前沿实验室遏制智能体蜂拥行动",
-          "summaryZh": "OpenAI 的“Decisions API”是 Jev 的克隆产品，凸显了快速、低成本智能的重要性。",
-          "url": "https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/",
+          "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+          "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
+          "titleZh": "Apple 称将收紧 macOS“完全磁盘访问”权限控制，应对 AI 智能体带来的新风险",
+          "summaryZh": "Apple 表示，将为 macOS 的“完全磁盘访问”权限增加新的控制措施，并警告称，能力日益增强的 AI 智能体若广泛访问用户的文件、消息、邮件和浏览记录，风险也会随之上升。",
+          "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-30T19:00:57+00:00"
+          "published": "2026-10-02T18:11:27+00:00"
         },
         {
-          "title": "AI voice startup ElevenLabs doubles valuation to $22B",
-          "summary": "The $300 million employee tender was co-led by Wellington and T. Rowe Price.",
-          "titleZh": "AI 语音初创公司 ElevenLabs 估值翻倍至 220 亿美元",
-          "summaryZh": "这笔 3 亿美元的员工股权收购要约由 Wellington 和 T. Rowe Price 共同牵头。",
-          "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
-          "source": "TechCrunch",
-          "score": 4.35,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-09-30T18:23:57+00:00"
-        },
-        {
-          "title": "Reddit is killing RSS feeds and ending public API access because of AI bots",
-          "summary": "Reddit is ending support for RSS feeds, as the company continues tightening access to its trove of user-generated content.",
-          "titleZh": "Reddit 因 AI 机器人停用 RSS 订阅并终止公共 API 访问",
-          "summaryZh": "Reddit 将停止支持 RSS 订阅；与此同时，公司正持续收紧对其海量用户生成内容的访问。",
-          "url": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
+          "title": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
+          "summary": "This week, the White House got nearly every major tech CEO in one room — Zuckerberg, Bezos, Musk, and Anthropic’s Dario Amodei among them — to sign an AI safety pledge that President Donald Trump called “morally binding.…",
+          "titleZh": "白宫称：这已不再是 AI，而是“超级智能”",
+          "summaryZh": "本周，白宫让几乎所有主要科技公司的 CEO 齐聚一堂——包括 Zuckerberg、Bezos、Musk，以及 Anthropic 的 Dario Amodei——共同签署一份 AI 安全承诺。美国总统 Donald Trump 称这份承诺“具有道德约束力”……",
+          "url": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
           "source": "TechCrunch",
           "score": 4.33,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-30T17:45:00+00:00"
+          "published": "2026-10-02T17:48:16+00:00"
         },
         {
-          "title": "The ugly economics of consumer AI",
-          "summary": "There’s a reason frontier labs have gotten gun-shy about consumer AI — and it’s not because the tech isn’t good enough.",
-          "titleZh": "消费级 AI 的残酷经济现实",
-          "summaryZh": "前沿实验室对消费级 AI 越来越谨慎自有原因——并不是因为技术还不够好。",
-          "url": "https://techcrunch.com/2026/09/30/the-ugly-economics-of-consumer-ai/",
+          "title": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
+          "summary": "Blackstone's Jas Khaira will take the Builders Stage at TechCrunch Disrupt 2026 on building next-gen AI. Register for your pass and get 50% off a second.",
+          "titleZh": "TechCrunch Disrupt 2026：Blackstone 的 Jas Khaira 谈打造下一代 AI 巨头",
+          "summaryZh": "Blackstone 的 Jas Khaira 将在 TechCrunch Disrupt 2026 的 Builders Stage 分享打造下一代 AI 的经验。现在注册购票，第二张可享五折。",
+          "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
           "source": "TechCrunch",
           "score": 4.32,
           "reasons": [
             "AI"
           ],
-          "published": "2026-09-30T17:24:45+00:00"
+          "published": "2026-10-02T17:32:05+00:00"
         },
         {
-          "title": "The Pentagon taps Elon Musk and Palmer Luckey to help decide what the military should do next",
-          "summary": "Defense Secretary Pete Hegseth just launched a 120-day study on the future of warfare, led by Elon Musk, Palmer Luckey, and Newt Gingrich, and while it makes sense given their ties to the administration, critics could po…",
-          "titleZh": "五角大楼邀请埃隆·马斯克和帕尔默·拉奇参与决定美军下一步行动",
-          "summaryZh": "国防部长 Pete Hegseth 刚启动一项为期 120 天的未来战争研究，由埃隆·马斯克、帕尔默·拉奇和 Newt Gingrich 牵头。考虑到他们与本届政府的关系，这项安排不难理解，但批评者可能会……",
-          "url": "https://techcrunch.com/2026/09/30/the-pentagon-taps-elon-musk-and-palmer-luckey-to-help-decide-what-the-military-should-do-next/",
+          "title": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
+          "summary": "With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created \"crash-test dummies\" to solve that.",
+          "titleZh": "Circuit Breaker Labs 希望让 AI 对你的孩子（以及你）更安全",
+          "summaryZh": "关于 AI 有朝一日可能杀死所有人的讨论很多，人们很容易忘记，AI 已经对一些人的心理造成伤害。Circuit Breaker Labs 创建了“碰撞测试假人”来解决这一问题。",
+          "url": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
           "source": "TechCrunch",
-          "score": 1.88,
-          "reasons": [],
-          "published": "2026-09-30T23:08:00+00:00"
+          "score": 4.31,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-02T17:00:00+00:00"
+        },
+        {
+          "title": "Pope Leo XIV is not a fan of AI-generated art",
+          "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms l…",
+          "titleZh": "教皇利奥十四世并不喜欢 AI 生成的艺术",
+          "summaryZh": "教皇写道：“艺术与机器基于他人创作的数百万张图像，通过统计计算生成的作品之间，首先存在本体论上的差异，其次才是审美上的差异。”算法……",
+          "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+          "source": "TechCrunch",
+          "score": 4.27,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-02T15:39:41+00:00"
         }
       ]
     }
@@ -234,7 +237,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-01T11:01:44.300883+08:00"
+      "lastRunAt": "2026-10-03T11:02:29.417909+08:00"
     }
   }
 }
