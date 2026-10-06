@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-04T11:31:11+08:00",
-  "date": "2026-10-04",
+  "updatedAt": "2026-10-06T11:31:47+08:00",
+  "date": "2026-10-06",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
-          "summary": "David Robinson joins other insiders in urging industry to take more care over rapidly developing technology",
-          "titleZh": "OpenAI 安全负责人辞职，警告这家 AI 公司的文化已经“支离破碎”",
-          "summaryZh": "David Robinson 与其他业内人士一道，呼吁业界更加谨慎地对待快速发展的技术。",
-          "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+          "title": "AI tutoring with Khanmigo in a two-year school experiment",
+          "summary": "Generative AI has been promoted as the technology that could transform education by providing every student a personal tutor. We provide some of the first large-scale experimental evidence, from a two-year cluster random…",
+          "titleZh": "Khanmigo 辅助教学：一项为期两年的学校实验",
+          "summaryZh": "生成式人工智能被视为有望变革教育的技术，因为它能为每位学生提供一名私人导师。我们通过一项为期两年的集群随机实验，提供了首批大规模实验性证据。",
+          "url": "https://edworkingpapers.com/ai26-1551",
           "source": "Hacker News",
-          "score": 6.82,
+          "score": 6.14,
           "reasons": [
             "AI",
-            "HN分数214",
-            "讨论量168"
+            "HN分数44",
+            "讨论量30"
           ],
-          "published": "2026-10-03T22:18:13+00:00"
+          "published": "2026-10-06T00:00:45+00:00"
         },
         {
-          "title": "We're going to need default hard budget caps on pretty much everything",
-          "summary": "Here’s a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps. I’m talking about the …",
-          "titleZh": "几乎所有事物都需要默认启用硬性预算上限",
-          "summaryZh": "未来数月乃至数年，世界将越来越需要一项产品功能：默认启用硬性预算上限。",
-          "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+          "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
+          "summary": "OpenAI",
+          "titleZh": "ChatGPT 正在给伪造的《纽约客》漫画加上真实漫画家的签名",
+          "summaryZh": "OpenAI",
+          "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
           "source": "Hacker News",
-          "score": 4.28,
+          "score": 4.39,
           "reasons": [
-            "HN分数251",
-            "讨论量136"
+            "HN分数324",
+            "讨论量221"
           ],
-          "published": "2026-10-04T00:20:16+00:00"
+          "published": "2026-10-05T22:46:45+00:00"
         },
         {
-          "title": "Kolibri: A Sovereign Open-Weight Model",
-          "summary": "Kolibri is an English-German Mixture-of-Experts model with 78B total and 3B active parameters, a context of up to 1M tokens and open weights under Apache 2.0, specialized for sovereign, mission-critical work.",
-          "titleZh": "Kolibri：一款主权开放权重模型",
-          "summaryZh": "Kolibri 是一款英语—德语混合专家模型，总参数量为 780 亿、激活参数量为 30 亿，上下文长度最高可达 100 万 token，并以 Apache 2.0 许可开放权重，专为主权需求和关键任务打造。",
-          "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+          "title": "Anthropic reported diary entry to police, woman faces felony charge",
+          "summary": "According to the arrest report, Carli Michelle Heller, of Bonita Springs, Florida, wrote on September 26 that she would attack the Sheriff's office. She later said that...",
+          "titleZh": "Anthropic 向警方报告日记内容，一名女子面临重罪指控",
+          "summaryZh": "根据逮捕报告，佛罗里达州博尼塔斯普林斯居民卡莉·米歇尔·海勒于 9 月 26 日写道，她将袭击警长办公室。她后来表示……",
+          "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
           "source": "Hacker News",
           "score": 4.22,
           "reasons": [
-            "HN分数537",
-            "讨论量307"
+            "HN分数589",
+            "讨论量484"
           ],
-          "published": "2026-10-03T09:36:04+00:00"
+          "published": "2026-10-05T05:37:40+00:00"
         },
         {
-          "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-          "summary": "How to prompt Opus 5.5, steer a long run, and check your results in Claude apps and Claude Code.",
-          "titleZh": "充分发挥 Opus 5.5 在 Claude 和 Claude Code 中的能力",
-          "summaryZh": "介绍如何向 Opus 5.5 撰写提示词、引导长时间运行的任务，并在 Claude 应用和 Claude Code 中检查结果。",
-          "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+          "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+          "summary": "We are sharing two candidate magnets for next-generation computer memory, found by a team of Claude Opus 5.5 agents. Both are predicted to have zero net magnetism yet still sort electrons by spin: one a new compound we d…",
+          "titleZh": "Opus 5.5 智能体发现两种室温磁性半导体候选材料",
+          "summaryZh": "我们分享两种有望用于下一代计算机存储器的候选磁性材料，它们由一支 Claude Opus 5.5 智能体团队发现。据预测，两者的净磁性均为零，却仍能按自旋筛选电子：其中一种是我们发现的新化合物……",
+          "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
           "source": "Hacker News",
-          "score": 4.02,
+          "score": 4.22,
           "reasons": [
-            "HN分数179",
-            "讨论量127"
+            "HN分数240",
+            "讨论量171"
           ],
-          "published": "2026-10-03T18:29:30+00:00"
+          "published": "2026-10-05T21:00:21+00:00"
         },
         {
-          "title": "Hole Punch: Sling your spaceship around gravitational fields",
-          "summary": "Punch black holes in space and sling a ship home round them.",
-          "titleZh": "《Hole Punch：借助引力场甩动你的飞船》",
-          "summaryZh": "在太空中击穿黑洞，借助它们的引力将飞船甩回家。",
-          "url": "https://notoriousbfg.com/hole-punch/",
+          "title": "Web Search API",
+          "summary": "Search the web from your AI agents and applications through AI Gateway with Ceramic.ai, Exa, and Linkup.",
+          "titleZh": "网页搜索 API",
+          "summaryZh": "通过 AI Gateway，借助 Ceramic.ai、Exa 和 Linkup，让你的 AI 智能体和应用搜索网页。",
+          "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
           "source": "Hacker News",
-          "score": 3.95,
+          "score": 4.17,
           "reasons": [
-            "HN分数248",
-            "讨论量62"
+            "HN分数498",
+            "讨论量228"
           ],
-          "published": "2026-10-03T18:06:45+00:00"
+          "published": "2026-10-05T10:47:06+00:00"
         },
         {
-          "title": "Bob Cringely Has Died",
-          "summary": "Hacker News new | past | comments | ask | show | jobs | submit login Bob Cringely Has Died 187 points by paveworld 2 hours ago | hide | past | favorite | 29 comments I heard from a friend of the family that Bob passed aw…",
-          "titleZh": "Bob Cringely 去世",
-          "summaryZh": "Hacker News 用户 paveworld 发帖称，听家人朋友说 Bob Cringely 已经去世；帖子获得 187 分，目前有 29 条评论。",
-          "url": "https://news.ycombinator.com/item?id=49949438",
+          "title": "Beam: Reflection's 501B open-weight model",
+          "summary": "Make intelligence open and accessible to all",
+          "titleZh": "Beam：Reflection 的 5010 亿参数开放权重模型",
+          "summaryZh": "让智能开放并惠及所有人",
+          "url": "https://reflection.ai/blog/introducing-beam",
           "source": "Hacker News",
-          "score": 3.92,
+          "score": 4.16,
           "reasons": [
-            "HN分数188",
-            "讨论量29"
+            "HN分数347",
+            "讨论量103"
           ],
-          "published": "2026-10-04T00:50:52+00:00"
+          "published": "2026-10-05T19:16:35+00:00"
         },
         {
-          "title": "Reasons I didn't become an EMT, ranked",
-          "summary": "Here are 21 reasons I delayed getting my EMT licensed, sorted loosely by ridiculousness.",
-          "titleZh": "我没有成为急救医疗技术员的理由，按荒唐程度排序",
-          "summaryZh": "以下是我拖延取得急救医疗技术员执照的 21 个理由，大致按荒唐程度排序。",
-          "url": "https://ben.stolovitz.com/posts/reasons-not-emt-ranked/",
+          "title": "Example.com just launched the biggest redesign in decades",
+          "summary": "A look at the history of visual changes to example.com.",
+          "titleZh": "Example.com 刚刚推出数十年来最大规模的改版",
+          "summaryZh": "回顾 example.com 的视觉设计变迁历史。",
+          "url": "https://www.debugbear.com/blog/example-dot-com-redesign-history",
           "source": "Hacker News",
-          "score": 3.81,
+          "score": 3.9,
           "reasons": [
-            "HN分数114",
-            "讨论量56"
+            "HN分数113",
+            "讨论量68"
           ],
-          "published": "2026-10-03T20:49:15+00:00"
+          "published": "2026-10-05T22:55:11+00:00"
         },
         {
-          "title": "FTL: A new operating system for clouds",
-          "summary": "A new operating system for clouds.",
-          "titleZh": "FTL：一款面向云环境的新型操作系统",
-          "summaryZh": "一款面向云环境的新型操作系统。",
-          "url": "https://ftl-os.org/",
+          "title": "Find the flattest route between any two points in SF",
+          "summary": "flattensf: the flattest walking or cycling route between any two places in San Francisco, and every route between it and the shortest one.",
+          "titleZh": "查找旧金山任意两点之间坡度最平缓的路线",
+          "summaryZh": "flattensf：查找旧金山任意两地之间坡度最平缓的步行或骑行路线，以及从该路线到最短路线之间的所有路线。",
+          "url": "https://flattensf.com/",
           "source": "Hacker News",
-          "score": 3.74,
+          "score": 3.82,
           "reasons": [
-            "HN分数154",
-            "讨论量61"
+            "HN分数133",
+            "讨论量43"
           ],
-          "published": "2026-10-03T15:02:36+00:00"
+          "published": "2026-10-05T21:40:50+00:00"
         }
       ]
     },
@@ -127,106 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
-          "summary": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.",
-          "titleZh": "Amazon 回应数据中心引发的反弹，称已不再使用保密协议",
-          "summaryZh": "Amazon Web Services 首席执行官试图回应外界对数据中心普遍存在的疑虑。",
-          "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
+          "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
+          "summary": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks harder to detect, it says.",
+          "titleZh": "OpenAI 将开始为 ChatGPT 在欧盟生成的文本添加水印",
+          "summaryZh": "为遵守《人工智能法案》，OpenAI 将为 ChatGPT 和 Codex 在欧盟生成的文本添加水印。该公司表示，编辑文本可能会让这些不可见标记更难被检测到。",
+          "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+          "source": "TechCrunch",
+          "score": 4.41,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-05T20:36:48+00:00"
+        },
+        {
+          "title": "Etched fields funding offers at $40B+ valuation, sources say",
+          "summary": "Just a couple of months after its last big raise, the AI chip startup is already being plied with investment offers at double or more its current value, sources tell TechCrunch.",
+          "titleZh": "据消息人士称，Etched 收到以 400 亿美元以上估值融资的邀约",
+          "summaryZh": "距离上一次大规模融资仅几个月，这家 AI 芯片初创公司就已收到投资邀约，估值达到当前水平的两倍甚至更高。消息人士告诉 TechCrunch。",
+          "url": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/",
+          "source": "TechCrunch",
+          "score": 4.4,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-05T20:24:09+00:00"
+        },
+        {
+          "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
+          "summary": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,” a product that would let institutions build their own customized, local AI system by training Reflec…",
+          "titleZh": "Reflection 发布 Beam 开放权重 AI 模型，以更低算力成本挑战中国模型",
+          "summaryZh": "Reflection 希望将 Beam 及后续模型推向企业和主权国家。其设想是打造“AI 工厂”，让机构通过训练 Reflection 的模型，构建定制化的本地 AI 系统……",
+          "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+          "source": "TechCrunch",
+          "score": 4.38,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-05T19:33:53+00:00"
+        },
+        {
+          "title": "Instinct brings its AI agent to group chats, even for friends without an account",
+          "summary": "Instinct is launching group chats that let friends use its AI agent together for tasks like planning trips, organizing carpools, and coordinating events. The company says personal accounts remain separate, with permissio…",
+          "titleZh": "Instinct 将 AI 智能体引入群聊，无账号的朋友也能使用",
+          "summaryZh": "Instinct 推出群聊功能，让朋友们能一起使用其 AI 智能体来规划旅行、安排拼车和协调活动。该公司表示，个人账号仍彼此独立，并设有权限……",
+          "url": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/",
           "source": "TechCrunch",
           "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-03T18:43:57+00:00"
+          "published": "2026-10-05T18:54:30+00:00"
         },
         {
-          "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
-          "summary": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire warning while resigning from their job.",
-          "titleZh": "OpenAI 安全员工辞职，称公司“文化已经支离破碎”",
-          "summaryZh": "David Robinson 自称“多少有点落入俗套”：他是一家领先 AI 公司的一名员工，辞职时发出了严厉警告。",
-          "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+          "title": "TikTok rolls out an AI shopping assistant and one-click checkout",
+          "summary": "TikTok describes its new Shopping Assistant as a conversational AI agent designed to help users discover and purchase products.",
+          "titleZh": "TikTok 推出 AI 购物助手和一键结账功能",
+          "summaryZh": "TikTok 将其全新的购物助手描述为一款对话式 AI 智能体，旨在帮助用户发现并购买商品。",
+          "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 4.35,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-03T16:30:01+00:00"
+          "published": "2026-10-05T18:29:00+00:00"
         },
         {
-          "title": "All the AI agents that can live in your text messages",
-          "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-          "titleZh": "盘点所有可在短信中使用的 AI 智能体",
-          "summaryZh": "我们整理了一份值得关注的 AI 智能体清单，它们可在短信中使用，涵盖通用助手，以及为家庭、旅行和工作设计的智能体。",
-          "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
+          "title": "At 19, founder raises $11M for Ghost, maker of a $3,499 computer for personal AI",
+          "summary": "Ghost's first product is Core, a personal computer designed specifically for AI agents that can take actions on a person's behalf.",
+          "titleZh": "19 岁创始人为 Ghost 融资 1100 万美元，打造售价 3499 美元的个人 AI 电脑",
+          "summaryZh": "Ghost 的首款产品 Core 是一台专为 AI 智能体设计的个人电脑，能代替用户执行操作。",
+          "url": "https://techcrunch.com/2026/10/05/at-19-ghost-founder-raises-11-million-to-build-a-3499-computer-for-your-personal-ai/",
           "source": "TechCrunch",
-          "score": 4.22,
+          "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-03T14:00:00+00:00"
+          "published": "2026-10-05T18:07:07+00:00"
         },
         {
-          "title": "Meta wants your next gadget to be Muse-infused",
-          "summary": "Meta wants Muse in your TV and your toaster, so it's giving the code away for free.",
-          "titleZh": "Meta 希望你的下一款小工具融入 Muse",
-          "summaryZh": "Meta 希望 Muse 出现在你的电视和烤面包机里，因此决定免费开放代码。",
-          "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+          "title": "Hot Girl Hotline is like ‘Dear Abby’ for the AI era",
+          "summary": "Founded by two sisters, Hot Girl Hotline uses AI to give young women personalized dating and relationship advice, with an emphasis on safety and avoiding emotional dependency.",
+          "titleZh": "Hot Girl Hotline：AI 时代的“亲爱的艾比”",
+          "summaryZh": "Hot Girl Hotline 由两姐妹创立，利用 AI 为年轻女性提供个性化的约会和恋爱关系建议，并强调安全性及避免情感依赖。",
+          "url": "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era/",
           "source": "TechCrunch",
-          "score": 3.86,
+          "score": 4.32,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-03T00:45:39+00:00"
+          "published": "2026-10-05T17:29:22+00:00"
         },
         {
-          "title": "Sean Parker is rebuilding Stability AI around music",
-          "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money.",
-          "titleZh": "Sean Parker 正围绕音乐重建 Stability AI",
-          "summaryZh": "Sean Parker 曾让音乐行业见识了“先斩后奏、再请求原谅”是什么样子；如今，他在唱片公司的支持与资金加持下再度回归。",
-          "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+          "title": "5 startups that caught VCs’ attention at the latest PearX demo day",
+          "summary": "TechCrunch attended Pear’s latest demo day and discovered which startups generated the most buzz, from spatial models to chips for local AI.",
+          "titleZh": "最新 PearX 创业展示日上吸引风投关注的 5 家初创公司",
+          "summaryZh": "TechCrunch 参加了 Pear 最近的创业展示日，并了解哪些初创公司最受关注，涵盖空间模型到本地 AI 芯片。",
+          "url": "https://techcrunch.com/2026/10/05/5-startups-that-caught-vcs-attention-at-the-latest-pearx-demo-day/",
           "source": "TechCrunch",
-          "score": 3.76,
+          "score": 4.32,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-02T21:09:14+00:00"
-        },
-        {
-          "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
-          "summary": "If you've been laid off, you don't have to skip TechCrunch Disrupt 2026. Get your Expo+ Pass for just $75. Limited to the first 100 qualifying registrants.",
-          "titleZh": "遭遇裁员？别错过 TechCrunch Disrupt 2026 Expo+ 通行证的 75 美元优惠",
-          "summaryZh": "如果你被裁员，也不必错过 TechCrunch Disrupt 2026。只需 75 美元即可购买 Expo+ 通行证，优惠仅限前 100 位符合条件的注册者。",
-          "url": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
-          "source": "TechCrunch",
-          "score": 3.7,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-02T19:15:51+00:00"
-        },
-        {
-          "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
-          "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
-          "titleZh": "Apple 称将收紧 macOS“完全磁盘访问”权限控制，应对 AI 智能体带来的新风险",
-          "summaryZh": "Apple 表示，将为 macOS 的“完全磁盘访问”权限增加新的控制措施，并警告称，能力日益增强的 AI 智能体若广泛访问用户的文件、消息、邮件和浏览记录，风险也会随之上升。",
-          "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-          "source": "TechCrunch",
-          "score": 3.67,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-02T18:11:27+00:00"
-        },
-        {
-          "title": "Federal judge calls Flock ‘indiscriminate mass surveillance’",
-          "summary": "A federal judge ruled that a sheriff’s deputy violated a woman’s Fourth Amendment rights when using Flock to search for her license plate without a warrant.",
-          "titleZh": "联邦法官称 Flock 属于“无差别大规模监控”",
-          "summaryZh": "一名联邦法官裁定，一名警长办公室副警长在没有搜查令的情况下使用 Flock 搜查一名女性的车牌，侵犯了她的《第四修正案》权利。",
-          "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
-          "source": "TechCrunch",
-          "score": 1.78,
-          "reasons": [],
-          "published": "2026-10-03T19:33:15+00:00"
+          "published": "2026-10-05T17:26:44+00:00"
         }
       ]
     }
@@ -234,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-04T11:01:47.637196+08:00"
+      "lastRunAt": null
     }
   }
 }
