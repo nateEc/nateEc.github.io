@@ -1,124 +1,127 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-06T11:31:47+08:00",
-  "date": "2026-10-06",
+  "updatedAt": "2026-10-07T11:31:45+08:00",
+  "date": "2026-10-07",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI tutoring with Khanmigo in a two-year school experiment",
-          "summary": "Generative AI has been promoted as the technology that could transform education by providing every student a personal tutor. We provide some of the first large-scale experimental evidence, from a two-year cluster random…",
-          "titleZh": "Khanmigo 辅助教学：一项为期两年的学校实验",
-          "summaryZh": "生成式人工智能被视为有望变革教育的技术，因为它能为每位学生提供一名私人导师。我们通过一项为期两年的集群随机实验，提供了首批大规模实验性证据。",
-          "url": "https://edworkingpapers.com/ai26-1551",
+          "title": "Sharing AI progress in mathematics",
+          "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+          "titleZh": "分享 AI 在数学领域的进展",
+          "summaryZh": "OpenAI 发布了内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 分享了 Lean 证明形式化内容及研究细节。",
+          "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
           "source": "Hacker News",
-          "score": 6.14,
+          "score": 7.25,
           "reasons": [
             "AI",
-            "HN分数44",
-            "讨论量30"
+            "HN分数531",
+            "讨论量451"
           ],
-          "published": "2026-10-06T00:00:45+00:00"
+          "published": "2026-10-06T22:17:21+00:00"
         },
         {
-          "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
-          "summary": "OpenAI",
-          "titleZh": "ChatGPT 正在给伪造的《纽约客》漫画加上真实漫画家的签名",
-          "summaryZh": "OpenAI",
-          "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
+          "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+          "summary": "An open-source AI accelerator, developed by AI: RTL, ISA, simulator, compiler and profiler in one repo. Runs Qwen3, LFM2.5 and Qwen3.5 on a Kintex-7 PCIe card. - FeSens/openTPU",
+          "titleZh": "OpenTPU——由 AI 开发的开源 AI 加速器",
+          "summaryZh": "由 AI 开发的开源 AI 加速器：在一个代码仓库中包含 RTL、指令集架构、模拟器、编译器和性能分析器。可在 Kintex-7 PCIe 卡上运行 Qwen3、LFM2.5 和 Qwen3.5。",
+          "url": "https://github.com/FeSens/openTPU",
           "source": "Hacker News",
-          "score": 4.39,
+          "score": 6.82,
           "reasons": [
-            "HN分数324",
-            "讨论量221"
+            "AI",
+            "HN分数251",
+            "讨论量308"
           ],
-          "published": "2026-10-05T22:46:45+00:00"
+          "published": "2026-10-06T16:23:25+00:00"
         },
         {
-          "title": "Anthropic reported diary entry to police, woman faces felony charge",
-          "summary": "According to the arrest report, Carli Michelle Heller, of Bonita Springs, Florida, wrote on September 26 that she would attack the Sheriff's office. She later said that...",
-          "titleZh": "Anthropic 向警方报告日记内容，一名女子面临重罪指控",
-          "summaryZh": "根据逮捕报告，佛罗里达州博尼塔斯普林斯居民卡莉·米歇尔·海勒于 9 月 26 日写道，她将袭击警长办公室。她后来表示……",
-          "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+          "title": "Utah to let AI examine patients and prescribe medication without human oversight",
+          "summary": "The good news is that the program is currently very limited in its scope. It's just one year long and only for patients with mild-to-moderate acne.",
+          "titleZh": "犹他州将允许 AI 在无人类监督下为患者检查并开具处方",
+          "summaryZh": "好消息是，该计划目前的适用范围非常有限：为期一年，仅面向轻度至中度痤疮患者。",
+          "url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
           "source": "Hacker News",
-          "score": 4.22,
+          "score": 6.38,
           "reasons": [
-            "HN分数589",
-            "讨论量484"
+            "AI",
+            "HN分数93",
+            "讨论量105"
           ],
-          "published": "2026-10-05T05:37:40+00:00"
+          "published": "2026-10-06T17:01:52+00:00"
         },
         {
-          "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
-          "summary": "We are sharing two candidate magnets for next-generation computer memory, found by a team of Claude Opus 5.5 agents. Both are predicted to have zero net magnetism yet still sort electrons by spin: one a new compound we d…",
-          "titleZh": "Opus 5.5 智能体发现两种室温磁性半导体候选材料",
-          "summaryZh": "我们分享两种有望用于下一代计算机存储器的候选磁性材料，它们由一支 Claude Opus 5.5 智能体团队发现。据预测，两者的净磁性均为零，却仍能按自旋筛选电子：其中一种是我们发现的新化合物……",
-          "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+          "title": "Penguin Mail – open-source Rust email client for Linux with AI",
+          "summary": "Gmail, Microsoft and any IMAP or POP3 account, with your calendar and contacts, in one fast app on your own computer.",
+          "titleZh": "Penguin Mail——适用于 Linux、内置 AI 的开源 Rust 邮件客户端",
+          "summaryZh": "在自己的电脑上，通过一款快速应用使用 Gmail、Microsoft 及任何 IMAP 或 POP3 账户，并管理日历和联系人。",
+          "url": "https://penguin-mail.com/",
           "source": "Hacker News",
-          "score": 4.22,
+          "score": 6.33,
           "reasons": [
-            "HN分数240",
-            "讨论量171"
+            "AI",
+            "HN分数94",
+            "讨论量40"
           ],
-          "published": "2026-10-05T21:00:21+00:00"
+          "published": "2026-10-06T21:59:43+00:00"
         },
         {
-          "title": "Web Search API",
-          "summary": "Search the web from your AI agents and applications through AI Gateway with Ceramic.ai, Exa, and Linkup.",
-          "titleZh": "网页搜索 API",
-          "summaryZh": "通过 AI Gateway，借助 Ceramic.ai、Exa 和 Linkup，让你的 AI 智能体和应用搜索网页。",
-          "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+          "title": "Mistral Large 4",
+          "summary": "Comments",
+          "titleZh": "Mistral 大型 4",
+          "summaryZh": "评论",
+          "url": "https://mistral.ai/news/mistral-large-4/\\",
           "source": "Hacker News",
-          "score": 4.17,
+          "score": 4.83,
           "reasons": [
-            "HN分数498",
-            "讨论量228"
+            "HN分数1625",
+            "讨论量974"
           ],
-          "published": "2026-10-05T10:47:06+00:00"
+          "published": "2026-10-06T13:15:49+00:00"
         },
         {
-          "title": "Beam: Reflection's 501B open-weight model",
-          "summary": "Make intelligence open and accessible to all",
-          "titleZh": "Beam：Reflection 的 5010 亿参数开放权重模型",
-          "summaryZh": "让智能开放并惠及所有人",
-          "url": "https://reflection.ai/blog/introducing-beam",
+          "title": "Paramount Skydance has completed its $111B merger with Warner Bros. Discovery",
+          "summary": "Comments",
+          "titleZh": "Paramount Skydance 完成与 Warner Bros. Discovery 的 1110 亿美元合并",
+          "summaryZh": "Paramount Skydance 已完成与 Warner Bros. Discovery 的 1110 亿美元合并。",
+          "url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/",
           "source": "Hacker News",
-          "score": 4.16,
+          "score": 4.27,
           "reasons": [
-            "HN分数347",
-            "讨论量103"
+            "HN分数191",
+            "讨论量314"
           ],
-          "published": "2026-10-05T19:16:35+00:00"
+          "published": "2026-10-06T20:33:47+00:00"
         },
         {
-          "title": "Example.com just launched the biggest redesign in decades",
-          "summary": "A look at the history of visual changes to example.com.",
-          "titleZh": "Example.com 刚刚推出数十年来最大规模的改版",
-          "summaryZh": "回顾 example.com 的视觉设计变迁历史。",
-          "url": "https://www.debugbear.com/blog/example-dot-com-redesign-history",
+          "title": "AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)",
+          "summary": "Tool for automatic PS5 executables porting to Linux and Windows - boykopovar/AnyPS5",
+          "titleZh": "AnyPS5：无需模拟即可将 PS5 二进制程序移植到 PC（已映射 87% 的系统库）",
+          "summaryZh": "用于将 PS5 可执行文件自动移植到 Linux 和 Windows 的工具。",
+          "url": "https://github.com/boykopovar/AnyPS5",
           "source": "Hacker News",
-          "score": 3.9,
+          "score": 4.04,
           "reasons": [
-            "HN分数113",
-            "讨论量68"
+            "HN分数134",
+            "讨论量102"
           ],
-          "published": "2026-10-05T22:55:11+00:00"
+          "published": "2026-10-06T23:28:08+00:00"
         },
         {
-          "title": "Find the flattest route between any two points in SF",
-          "summary": "flattensf: the flattest walking or cycling route between any two places in San Francisco, and every route between it and the shortest one.",
-          "titleZh": "查找旧金山任意两点之间坡度最平缓的路线",
-          "summaryZh": "flattensf：查找旧金山任意两地之间坡度最平缓的步行或骑行路线，以及从该路线到最短路线之间的所有路线。",
-          "url": "https://flattensf.com/",
+          "title": "Decisions API is in public beta",
+          "summary": "Use the Decisions API to check conditions, select from fixed options, and score text and images against a rubric.",
+          "titleZh": "Decisions API 开放公测",
+          "summaryZh": "使用 Decisions API 检查条件、从固定选项中进行选择，并依据评分标准对文本和图像进行评分。",
+          "url": "https://developers.openai.com/api/docs/guides/decisions",
           "source": "Hacker News",
-          "score": 3.82,
+          "score": 3.98,
           "reasons": [
-            "HN分数133",
-            "讨论量43"
+            "HN分数181",
+            "讨论量75"
           ],
-          "published": "2026-10-05T21:40:50+00:00"
+          "published": "2026-10-06T20:57:25+00:00"
         }
       ]
     },
@@ -127,108 +130,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
-          "summary": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks harder to detect, it says.",
-          "titleZh": "OpenAI 将开始为 ChatGPT 在欧盟生成的文本添加水印",
-          "summaryZh": "为遵守《人工智能法案》，OpenAI 将为 ChatGPT 和 Codex 在欧盟生成的文本添加水印。该公司表示，编辑文本可能会让这些不可见标记更难被检测到。",
-          "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+          "title": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
+          "summary": "Instead of helping marketers manage and optimize ad spend, the company is focusing on building the tools that generate the creative assets and campaigns.",
+          "titleZh": "前 Ramp 工程师放弃首款产品后，为平台 Melius 筹集 2000 万美元",
+          "summaryZh": "公司不再帮助营销人员管理和优化广告支出，转而专注于打造用于生成创意素材和营销活动的工具。",
+          "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+          "source": "TechCrunch",
+          "score": 4.46,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-06T22:34:03+00:00"
+        },
+        {
+          "title": "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
+          "summary": "Sigil Wen, backed by a Silicon Valley who's who, has built an on-device AI assistant that promises to be free, fully private, and capable for everyday tasks.",
+          "titleZh": "硅谷 AI 神童推出 Underdog，称其为迄今隐私保护最强的 Instinct/Muse 竞品",
+          "summaryZh": "在硅谷众多知名人士支持下，Sigil Wen 打造了一款端侧 AI 助手，承诺免费、充分保护隐私，并能胜任日常任务。",
+          "url": "https://techcrunch.com/2026/10/06/silicon-valleys-ai-wunderkind-launches-underdog-the-most-private-instinct-muse-competitor-yet/",
           "source": "TechCrunch",
           "score": 4.41,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-05T20:36:48+00:00"
+          "published": "2026-10-06T20:47:01+00:00"
         },
         {
-          "title": "Etched fields funding offers at $40B+ valuation, sources say",
-          "summary": "Just a couple of months after its last big raise, the AI chip startup is already being plied with investment offers at double or more its current value, sources tell TechCrunch.",
-          "titleZh": "据消息人士称，Etched 收到以 400 亿美元以上估值融资的邀约",
-          "summaryZh": "距离上一次大规模融资仅几个月，这家 AI 芯片初创公司就已收到投资邀约，估值达到当前水平的两倍甚至更高。消息人士告诉 TechCrunch。",
-          "url": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/",
+          "title": "How AI decision models could change content moderation",
+          "summary": "On Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B, released with open weights.",
+          "titleZh": "AI 决策模型如何改变内容审核",
+          "summaryZh": "周二，Musubi 宣布推出专为实时审核打造的轻量级决策模型 PolicyLM-1.7B，并以开放权重形式发布。",
+          "url": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 4.41,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-05T20:24:09+00:00"
+          "published": "2026-10-06T20:35:20+00:00"
         },
         {
-          "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
-          "summary": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,” a product that would let institutions build their own customized, local AI system by training Reflec…",
-          "titleZh": "Reflection 发布 Beam 开放权重 AI 模型，以更低算力成本挑战中国模型",
-          "summaryZh": "Reflection 希望将 Beam 及后续模型推向企业和主权国家。其设想是打造“AI 工厂”，让机构通过训练 Reflection 的模型，构建定制化的本地 AI 系统……",
-          "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+          "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
+          "summary": "Nvidia-backed Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation ahead of a planned 2027 IPO, led by Coatue and Blackstone.",
+          "titleZh": "AI 计算初创公司 Lambda 计划 IPO 前筹集 40 亿美元",
+          "summaryZh": "由 Nvidia 支持的 Lambda 正以 145 亿美元的投前估值筹集至多 40 亿美元，为计划于 2027 年进行的 IPO 做准备；本轮融资由 Coatue 和 Blackstone 领投。",
+          "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-05T19:33:53+00:00"
+          "published": "2026-10-06T20:00:30+00:00"
         },
         {
-          "title": "Instinct brings its AI agent to group chats, even for friends without an account",
-          "summary": "Instinct is launching group chats that let friends use its AI agent together for tasks like planning trips, organizing carpools, and coordinating events. The company says personal accounts remain separate, with permissio…",
-          "titleZh": "Instinct 将 AI 智能体引入群聊，无账号的朋友也能使用",
-          "summaryZh": "Instinct 推出群聊功能，让朋友们能一起使用其 AI 智能体来规划旅行、安排拼车和协调活动。该公司表示，个人账号仍彼此独立，并设有权限……",
-          "url": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/",
+          "title": "The next hurdle for AI agents: getting websites to let them in",
+          "summary": "Personal AI agents promise to shop, book flights, and make reservations for you. But deliberate blocks and anti-bot defenses are getting in the way, leaving consumers caught in the middle. A new standard aims to help.",
+          "titleZh": "AI 智能体面临的下一道障碍：如何让网站放行",
+          "summaryZh": "个人 AI 智能体承诺能替你购物、订机票和预订服务。但网站有意设置的限制和反机器人防护正在阻碍它们，让消费者夹在中间。一项新标准旨在提供帮助。",
+          "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-05T18:54:30+00:00"
+          "published": "2026-10-06T19:56:50+00:00"
         },
         {
-          "title": "TikTok rolls out an AI shopping assistant and one-click checkout",
-          "summary": "TikTok describes its new Shopping Assistant as a conversational AI agent designed to help users discover and purchase products.",
-          "titleZh": "TikTok 推出 AI 购物助手和一键结账功能",
-          "summaryZh": "TikTok 将其全新的购物助手描述为一款对话式 AI 智能体，旨在帮助用户发现并购买商品。",
-          "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
+          "title": "Hark releases an AI personal assistant with a focus on privacy",
+          "summary": "The AI lab's personal assistant is an operating system from the future designed to compete with Muse, Dots, and Instinct.",
+          "titleZh": "Hark 推出注重隐私的 AI 个人助理",
+          "summaryZh": "这家 AI 实验室推出的个人助理是一款面向未来的操作系统，旨在与 Muse、Dots 和 Instinct 竞争。",
+          "url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
           "source": "TechCrunch",
           "score": 4.35,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-05T18:29:00+00:00"
+          "published": "2026-10-06T18:22:45+00:00"
         },
         {
-          "title": "At 19, founder raises $11M for Ghost, maker of a $3,499 computer for personal AI",
-          "summary": "Ghost's first product is Core, a personal computer designed specifically for AI agents that can take actions on a person's behalf.",
-          "titleZh": "19 岁创始人为 Ghost 融资 1100 万美元，打造售价 3499 美元的个人 AI 电脑",
-          "summaryZh": "Ghost 的首款产品 Core 是一台专为 AI 智能体设计的个人电脑，能代替用户执行操作。",
-          "url": "https://techcrunch.com/2026/10/05/at-19-ghost-founder-raises-11-million-to-build-a-3499-computer-for-your-personal-ai/",
+          "title": "Mirror Particle is building a ‘world model’ of human behavior",
+          "summary": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
+          "titleZh": "Mirror Particle 正在构建人类行为“世界模型”",
+          "summaryZh": "Mirror Particle 将携一款从零打造、用于预测人类行为的世界模型，参加 TechCrunch Disrupt 的 Startup Battlefield 200。该公司认为，LLM 角色扮演无法满足市场研究和品牌策略的需求。",
+          "url": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 4.3,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-05T18:07:07+00:00"
+          "published": "2026-10-06T16:35:00+00:00"
         },
         {
-          "title": "Hot Girl Hotline is like ‘Dear Abby’ for the AI era",
-          "summary": "Founded by two sisters, Hot Girl Hotline uses AI to give young women personalized dating and relationship advice, with an emphasis on safety and avoiding emotional dependency.",
-          "titleZh": "Hot Girl Hotline：AI 时代的“亲爱的艾比”",
-          "summaryZh": "Hot Girl Hotline 由两姐妹创立，利用 AI 为年轻女性提供个性化的约会和恋爱关系建议，并强调安全性及避免情感依赖。",
-          "url": "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era/",
+          "title": "How to find out if Amazon thinks you have ‘flat buttocks’",
+          "summary": "\"I stumbled upon a page of assumptions that Amazon has made about me based on my purchases and I’m literally speechless,\" one shopper wrote on Threads.",
+          "titleZh": "如何查明 Amazon 是否认为你“臀部扁平”",
+          "summaryZh": "一位购物者在 Threads 上写道：“我偶然发现一个页面，上面列着 Amazon 根据我的购买记录对我作出的种种推断，我简直说不出话来。”",
+          "url": "https://techcrunch.com/2026/10/06/how-to-find-out-if-amazon-thinks-you-have-flat-buttocks/",
           "source": "TechCrunch",
-          "score": 4.32,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-05T17:29:22+00:00"
-        },
-        {
-          "title": "5 startups that caught VCs’ attention at the latest PearX demo day",
-          "summary": "TechCrunch attended Pear’s latest demo day and discovered which startups generated the most buzz, from spatial models to chips for local AI.",
-          "titleZh": "最新 PearX 创业展示日上吸引风投关注的 5 家初创公司",
-          "summaryZh": "TechCrunch 参加了 Pear 最近的创业展示日，并了解哪些初创公司最受关注，涵盖空间模型到本地 AI 芯片。",
-          "url": "https://techcrunch.com/2026/10/05/5-startups-that-caught-vcs-attention-at-the-latest-pearx-demo-day/",
-          "source": "TechCrunch",
-          "score": 4.32,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-05T17:26:44+00:00"
+          "score": 1.87,
+          "reasons": [],
+          "published": "2026-10-06T22:55:39+00:00"
         }
       ]
     }
@@ -236,7 +237,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": null
+      "lastRunAt": "2026-10-07T11:02:09.123581+08:00"
     }
   }
 }
