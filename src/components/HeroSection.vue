@@ -2,9 +2,11 @@
 import { computed, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useLanguage } from '../composables/useLanguage'
+import PrismSignature from './PrismSignature.vue'
 
 const { currentLanguage } = useLanguage()
 const activeStep = ref(3)
+const inspectTrace = ref(false)
 
 const content = computed(() => currentLanguage.value === 'zh'
   ? {
@@ -76,7 +78,8 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
       </div>
 
       <div class="hero-window-bridge">
-      <article class="trace-window" aria-labelledby="trace-title">
+      <div v-if="!inspectTrace" class="trace-window prism-window"><PrismSignature /></div>
+      <article v-else class="trace-window" aria-labelledby="trace-title">
         <div class="trace-chrome">
           <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
           <p id="trace-title">{{ content.traceTitle }}</p>
@@ -118,6 +121,10 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
           </dl>
         </div>
       </article>
+      <button class="hero-perspective-toggle" type="button" :aria-pressed="inspectTrace" @click="inspectTrace = !inspectTrace">
+        <span>{{ inspectTrace ? '02 / SYSTEM' : '01 / PERSPECTIVE' }}</span>
+        <span>{{ inspectTrace ? (currentLanguage === 'zh' ? '返回玻璃视图' : 'Back to the glass') : (currentLanguage === 'zh' ? '查看 Agent 运行轨迹' : 'Inside an agent trace') }} ↗</span>
+      </button>
       <div class="hero-product-bridge" aria-hidden="true">
         <div class="bridge-chrome"><span>● ● ●</span><span>HiPilot Desktop</span><span>↗</span></div>
         <img src="/demos/hipilot/preview-panel.webp" alt="" width="956" height="768" />
@@ -136,6 +143,10 @@ const activeTrace = computed(() => traceSteps.value[activeStep.value] ?? traceSt
 <style scoped>
 .hero-stage { display: contents; }
 .hero-window-bridge { position: relative; min-width: 0; }
+.prism-window { border-color: #343944; box-shadow: var(--shadow) !important; }
+.hero-perspective-toggle { display: flex; justify-content: space-between; gap: 16px; align-items: center; width: 100%; padding: 15px 2px 0; border: 0; color: var(--muted); background: none; font: 9px var(--mono); letter-spacing: .04em; cursor: pointer; text-align: left; }
+.hero-perspective-toggle span:last-child { color: var(--ink); }
+.hero-perspective-toggle:hover span:last-child { color: var(--blue); }
 .hero-product-bridge, .hero-handoff-title { display: none; }
 .hero-product-bridge { position: absolute; inset: 0; border: 1px solid #788baa; border-radius: 7px; background: #101725; overflow: hidden; pointer-events: none; }
 .bridge-chrome { display: flex; justify-content: space-between; padding: 10px 14px; color: #9eadc4; font: 9px var(--mono); border-bottom: 1px solid #344258; }

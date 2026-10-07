@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Prism behavioral checks</title>
+<style>body{background:#eee;color:#111;font:16px monospace}canvas{width:300px;height:300px;display:block}pre{white-space:pre-wrap}</style>
+<h1>Prism behavioral checks</h1><pre id="results">Running…</pre><canvas id="scene"></canvas>
+<script type="module">
+import { createPrism } from '/src/three/prism.ts'
+const output = document.querySelector('#results')
+const canvas = document.querySelector('canvas')
+const results = []
+const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms))
+const assert = (condition, label) => { results.push(`${condition ? 'PASS' : 'FAIL'} ${label}`); output.textContent = results.join('\n'); if (!condition) throw Error(label) }
+let draws = 0, scene
+const prototype = WebGL2RenderingContext.prototype
+const originalDraw = prototype.drawElements
+const originalMedia = window.matchMedia.bind(window)
+prototype.drawElements = function (...args) { draws++; return originalDraw.apply(this, args) }
+try {
+  let lost = false
+  scene = createPrism(canvas, () => { lost = true })
+  await wait(600)
+  assert(draws > 0, 'Visible sculpture produces WebGL draws')
+  scene.pause(true)
+  await wait(120)
+  let before = draws
+  await wait(250)
+  assert(draws === before, 'Paused sculpture stops continuous rendering')
+  scene.rotate(1)
+  await wait(120)
+  assert(draws > before, 'Explicit rotation still renders while paused')
+  canvas.style.display = 'none'
+  await wait(120)
+  scene.pause(false)
+  before = draws
+  await wait(250)
+  assert(draws === before, 'Offscreen sculpture does not render')
+  canvas.style.display = 'block'
+  await wait(250)
+  assert(draws > before, 'Re-entering view resumes rendering')
+  scene.dispose()
+  before = draws
+  await wait(250)
+  assert(draws === before, 'Disposal stops every scheduled draw')
+  // A controlled media fixture checks reduced-motion behavior without changing OS settings.
+  window.matchMedia = query => query === '(prefers-reduced-motion: reduce)'
+    ? { matches: true, addEventListener() {}, removeEventListener() {} } : originalMedia(query)
+  scene = createPrism(canvas, () => { lost = true })
+  assert(scene.reduced, 'Reduced motion is detected at creation')
+  await wait(200)
+  before = draws
+  await wait(200)
+  assert(draws === before, 'Reduced motion renders a still composition')
+  scene.rotate(-1)
+  await wait(120)
+  assert(draws > before, 'Reduced motion retains explicit keyboard/button rotation')
+  const gl = canvas.getContext('webgl2')
+  gl.getExtension('WEBGL_lose_context').loseContext()
+  await wait(120)
+  assert(lost, 'Context loss notifies the static-fallback boundary')
+  before = draws
+  await wait(200)
+  assert(draws === before, 'Context loss stops rendering')
+  output.dataset.result = 'passed'
+} catch (error) {
+  output.textContent += `\nERROR ${error.message}`
+  output.dataset.result = 'failed'
+} finally {
+  scene?.dispose()
+  prototype.drawElements = originalDraw
+  window.matchMedia = originalMedia
+}
+</script>
+</html>

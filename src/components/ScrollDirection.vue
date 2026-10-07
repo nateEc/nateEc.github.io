@@ -47,7 +47,7 @@ const update = () => {
         const cinematic = innerWidth > 1100 && innerHeight > 740
         const exit = cinematic ? clamp(-box.top / Math.max(1, box.height - height)) : 0
         el.style.setProperty('--hero-exit', exit.toFixed(4))
-        el.querySelectorAll<HTMLElement>('.hero-copy, .trace-window').forEach(node => { node.inert = exit > 0.65 })
+        el.querySelectorAll<HTMLElement>('.hero-copy, .trace-window, .hero-perspective-toggle').forEach(node => { node.inert = exit > 0.65 })
         el.querySelectorAll('.trace-steps li').forEach((node, i) => node.classList.toggle('trace-illuminated', i <= Math.floor(exit * 7)))
       }
       if (el.id === 'in-motion') el.style.setProperty('--cinema-entry', clamp(1 - box.top / height).toFixed(4))
@@ -230,7 +230,7 @@ onBeforeUnmount(() => {
   .motion-on #home .hero-stage { position: sticky; top: 0; height: 100svh; display: grid; grid-template-rows: 1fr auto; align-items: center; padding: 130px 0 38px; }
   .motion-on #home .hero-copy { translate: calc(var(--hero-exit, 0) * -80px) calc(var(--hero-exit, 0) * -15px); opacity: clamp(0, calc(1 - var(--hero-exit, 0) * 2.2), 1); }
   .motion-on #home .hero-window-bridge { z-index: 2; transform: translateX(calc(var(--hero-exit, 0) * -22vw)) scale(calc(1 + var(--hero-exit, 0) * .3)); }
-  .motion-on #home .hero-window-bridge .trace-window { opacity: clamp(0, calc(1 - var(--hero-exit, 0) * 1.7), 1); }
+  .motion-on #home .hero-window-bridge .trace-window, .motion-on #home .hero-perspective-toggle { opacity: clamp(0, calc(1 - var(--hero-exit, 0) * 1.7), 1); }
   .motion-on #home .hero-product-bridge { display: block; opacity: clamp(0, calc((var(--hero-exit, 0) - .22) * 1.8), 1); box-shadow: 0 30px 90px #15254940; }
   .motion-on #home .hero-handoff-title { display: block; position: absolute; top: 92px; left: 0; width: 100%; margin: 0; text-align: center; font: 500 clamp(25px, 3.5vw, 48px) var(--display); letter-spacing: -.055em; opacity: clamp(0, calc((var(--hero-exit, 0) - .4) * 2), 1); translate: 0 calc((1 - var(--hero-exit, 0)) * 20px); }
   .motion-on #about .about-grid { align-items: stretch; }
