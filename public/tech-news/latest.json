@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-08T11:31:43+08:00",
-  "date": "2026-10-08",
+  "updatedAt": "2026-10-09T11:30:49+08:00",
+  "date": "2026-10-09",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Sharing AI progress in mathematics",
-          "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-          "titleZh": "分享 AI 在数学领域的进展",
-          "summaryZh": "OpenAI 发布了内部前沿模型在数学未解问题上取得的新成果，并在 GitHub 分享了 Lean 证明形式化内容及研究细节。",
-          "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+          "title": "AI-ready biological data: $1.8B global commitment",
+          "summary": "Biohub, DOE, NIH, Google, Isomorphic Labs, and Meta commit $1.8 billion to expand the Virtual Biology Initiative's open, AI-ready biological data.",
+          "titleZh": "面向 AI 的生物数据：全球承诺投入 18 亿美元",
+          "summaryZh": "Biohub、美国能源部（DOE）、美国国立卫生研究院（NIH）、Google、Isomorphic Labs 和 Meta 承诺投入 18 亿美元，扩展虚拟生物学计划的开放式、面向 AI 的生物数据。",
+          "url": "https://biohub.org/news/virtual-biology-initiative-expansion/",
           "source": "Hacker News",
-          "score": 7.02,
+          "score": 6.01,
           "reasons": [
             "AI",
-            "HN分数1244",
-            "讨论量1419"
+            "HN分数87",
+            "讨论量10"
           ],
-          "published": "2026-10-06T22:17:21+00:00"
+          "published": "2026-10-08T20:46:25+00:00"
         },
         {
-          "title": "Claude Haiku 5.5",
-          "summary": "Claude Haiku 5.5 is our fastest, most capable small model. Built for high-volume work like summarization, subagents, and browser use.",
-          "titleZh": "Claude Haiku 5.5 小型模型",
-          "summaryZh": "Claude Haiku 5.5 是我们速度最快、能力最强的小型模型，专为摘要、子代理和浏览器操作等高频任务打造。",
-          "url": "https://www.anthropic.com/claude-haiku-5-5",
+          "title": "Whistle: Speech to Text in 16.9 MB",
+          "summary": "An open speech recognition model that runs on the same CPU engine as Needle. It transcribes seven languages, reaches the first token in 11 ms, and loads beside Needle so one binary turns a clip straight into tool calls.",
+          "titleZh": "Whistle：仅 16.9 MB 的语音转文字模型",
+          "summaryZh": "这是一款开放式语音识别模型，与 Needle 使用同一 CPU 引擎。它可转录七种语言，首个 token 延迟为 11 毫秒，并能与 Needle 一同加载，让一个二进制文件即可将音频片段直接转化为工具调用。",
+          "url": "https://cactuscompute.com/blog/whistle",
           "source": "Hacker News",
-          "score": 4.57,
+          "score": 4.29,
           "reasons": [
-            "HN分数727",
-            "讨论量369"
+            "HN分数600",
+            "讨论量133"
           ],
-          "published": "2026-10-07T18:01:32+00:00"
+          "published": "2026-10-08T16:59:39+00:00"
         },
         {
-          "title": "Margaret Hamilton has died",
-          "summary": "Margaret H. Hamilton, a profoundly influential computer scientist best known for leading the software engineering team at MIT’s Instrumentation Lab during NASA’s Apollo program, died at age 90.",
-          "titleZh": "玛格丽特·汉密尔顿逝世",
-          "summaryZh": "玛格丽特·H·汉密尔顿是一位影响深远的计算机科学家，因在 NASA 阿波罗计划期间领导 MIT 仪器实验室的软件工程团队而闻名，享年 90 岁。",
-          "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+          "title": "Theranos.world",
+          "summary": "An interactive simulation of Elizabeth Holmes",
+          "titleZh": "Theranos.world",
+          "summaryZh": "一款以 Elizabeth Holmes 为主题的互动模拟体验。",
+          "url": "https://www.theranos.world/",
           "source": "Hacker News",
-          "score": 4.47,
+          "score": 4.14,
           "reasons": [
-            "HN分数924",
-            "讨论量105"
+            "HN分数323",
+            "讨论量123"
           ],
-          "published": "2026-10-07T21:16:18+00:00"
+          "published": "2026-10-08T17:51:49+00:00"
         },
         {
-          "title": "GPT‑6 and Intelligent UI for everyone",
-          "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
-          "titleZh": "GPT‑6 与智能界面面向所有人开放",
-          "summaryZh": "GPT‑6 正在全球范围内陆续登陆 ChatGPT，并搭载智能界面，带来更快的响应，以及可直接探索和使用的视觉与交互体验。",
-          "url": "https://openai.com/index/gpt-6-for-everyone/",
+          "title": "ADHD as a circadian rhythm disorder: evidence and implications for chronotherapy (2025)",
+          "summary": "Accumulating evidence indicates that circadian rhythm dysfunction is a clinically significant and highly prevalent phenotype in a substantial subgroup of ind...",
+          "titleZh": "ADHD 是一种昼夜节律紊乱：证据及其对时间疗法的启示（2025）",
+          "summaryZh": "不断累积的证据表明，昼夜节律功能障碍是一种具有显著临床意义、且在相当一部分人群中高度普遍的表型……",
+          "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full",
           "source": "Hacker News",
-          "score": 4.43,
+          "score": 4.11,
           "reasons": [
-            "HN分数532",
-            "讨论量278"
+            "HN分数197",
+            "讨论量134"
           ],
-          "published": "2026-10-07T18:00:58+00:00"
+          "published": "2026-10-08T20:42:16+00:00"
         },
         {
-          "title": "Shipping JPEG XL in Chrome",
-          "summary": "JPEG XL offers better compression than JPEG, built-in HDR support, lossless JPEG transcoding, and more.",
-          "titleZh": "JPEG XL 即将在 Chrome 中推出",
-          "summaryZh": "JPEG XL 提供比 JPEG 更出色的压缩效果、内置 HDR 支持、JPEG 无损转码等功能。",
-          "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+          "title": "Beauty in DVD Menus",
+          "summary": "Understanding of DVD video menus for films and series. The technical details of how menus were implemented and what functions were available for creating menus, a look at the influence of aspect ratios and how menu desig…",
+          "titleZh": "DVD 菜单之美",
+          "summaryZh": "了解电影和剧集 DVD 视频菜单：菜单的实现方式及其技术细节、可用的菜单制作功能，以及画面比例对菜单设计的影响……",
+          "url": "https://vale.rocks/posts/dvd-menus",
           "source": "Hacker News",
-          "score": 4.28,
+          "score": 4.02,
           "reasons": [
-            "HN分数504",
-            "讨论量344"
+            "HN分数274",
+            "讨论量152"
           ],
-          "published": "2026-10-07T11:25:02+00:00"
+          "published": "2026-10-08T13:22:01+00:00"
         },
         {
-          "title": "Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app",
-          "summary": "Turn a phone, tablet or TV into a sign. Type a message and it fills the screen: welcome signs, timers, Wi-Fi passwords and more. No app, no account, free.",
-          "titleZh": "Show HN：Bigwords.page——把任何屏幕变成告示牌，网址就是应用",
-          "summaryZh": "把手机、平板或电视变成告示牌。输入一条消息，文字就会铺满屏幕，可用于欢迎牌、计时器、Wi-Fi 密码等。无需安装应用或注册账号，完全免费。",
-          "url": "https://bigwords.page/",
+          "title": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
+          "summary": "thoughts, talks, docs and unpopular opinions",
+          "titleZh": "DeepSeek 4.1 Flash 为何没有让业界炸锅？",
+          "summaryZh": "想法、演讲、文档与不受欢迎的观点。",
+          "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
           "source": "Hacker News",
-          "score": 4.12,
+          "score": 3.99,
           "reasons": [
-            "HN分数396",
-            "讨论量115"
+            "HN分数476",
+            "讨论量408"
           ],
-          "published": "2026-10-07T15:44:21+00:00"
+          "published": "2026-10-08T00:14:48+00:00"
         },
         {
-          "title": "Navier–Stokes Lost in Translation",
-          "summary": "Abstract page for arXiv paper 2610.08144: Navier-Stokes lost in translation: Why Lean verification of AI autoformalisation does not guarantee correct natural language proofs",
-          "titleZh": "Navier–Stokes：在翻译中迷失",
-          "summaryZh": "arXiv 论文 2610.08144 摘要页：《Navier–Stokes 在翻译中迷失：为何 Lean 验证 AI 自动形式化并不能保证自然语言证明正确》。",
-          "url": "https://arxiv.org/abs/2610.08144",
+          "title": "Yes, and",
+          "summary": "In this essay, Carson Gross discusses his advice to young people interested in computer science worried about the future given the advancements in AI.",
+          "titleZh": "没错，而且",
+          "summaryZh": "在这篇文章中，Carson Gross 谈到他给年轻人的建议：对于那些对计算机科学感兴趣、又因 AI 进步而担忧未来的人，他提出了自己的看法。",
+          "url": "https://htmx.org/essays/yes-and/",
           "source": "Hacker News",
-          "score": 4.09,
+          "score": 3.75,
           "reasons": [
-            "HN分数268",
-            "讨论量168"
+            "HN分数234",
+            "讨论量78"
           ],
-          "published": "2026-10-07T15:24:38+00:00"
+          "published": "2026-10-08T09:48:18+00:00"
         },
         {
-          "title": "Docker Agent",
-          "summary": "AI Agent Builder and Runtime by Docker Engineering - docker/docker-agent",
-          "titleZh": "Docker 智能体",
-          "summaryZh": "Docker 工程团队打造的 AI 智能体构建工具与运行环境。",
-          "url": "https://github.com/docker/docker-agent",
+          "title": "The value of not getting to the point (2015)",
+          "summary": "I read somewhere recently, I forget where, that the purpose of people getting together for a conversation over a beer or coffee or lunch or dinner is that it the food and drink spare us from the burden of needing to have…",
+          "titleZh": "不急于切入正题的价值（2015）",
+          "summaryZh": "我最近读到过一段话，但忘了出处：人们相约喝啤酒、咖啡，或一起吃午餐、晚餐来聊天，其目的在于食物和饮料能让我们不必背负必须……的压力",
+          "url": "https://ken.arneson.name/2015/11/the-value-of-not-getting-to-the-point/",
           "source": "Hacker News",
-          "score": 3.94,
+          "score": 3.74,
           "reasons": [
-            "HN分数192",
-            "讨论量87"
+            "HN分数132",
+            "讨论量42"
           ],
-          "published": "2026-10-07T17:48:38+00:00"
+          "published": "2026-10-08T19:04:56+00:00"
         }
       ]
     },
@@ -127,108 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Robot data startup Mecka AI nabs $60M from Sequoia",
-          "summary": "Mecka AI collects and analyzes human motion data to train humanoid robots and other kinds of robots. The startup pays people to record everyday tasks.",
-          "titleZh": "机器人数据初创公司 Mecka AI 获红杉 6000 万美元投资",
-          "summaryZh": "Mecka AI 收集并分析人体动作数据，用于训练人形机器人及其他类型的机器人。这家初创公司付费请人录制日常任务。",
-          "url": "https://techcrunch.com/2026/10/07/robot-data-startup-mecka-ai-nabs-60m-from-sequoia/",
+          "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
+          "summary": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend engineer Bo Lau created a website that simulates what it might have been like to rifle through the Theran…",
+          "titleZh": "在这个细节惊人的网站上，假装自己坐在 Elizabeth Holmes 的办公桌前",
+          "summaryZh": "Extend 工程师 Bo Lau 利用超过一千封邮件、幻灯片、短信和文件，制作了一个网站，模拟翻阅美国诉 Elizabeth Holmes 案相关材料的体验……",
+          "url": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
           "source": "TechCrunch",
-          "score": 4.49,
+          "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-07T23:36:57+00:00"
+          "published": "2026-10-08T21:00:00+00:00"
         },
         {
-          "title": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
-          "summary": "The developer of Hermes Agent raised a $90 million Series B.",
-          "titleZh": "Nous Research 确认估值达 15 亿美元，并推出面向企业用户的 AI 智能体",
-          "summaryZh": "这家 Hermes Agent 的开发商完成了 9000 万美元的 B 轮融资。",
-          "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+          "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+          "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
+          "titleZh": "遭解雇的 OpenAI 安全研究员否认不当行为指控，警告此举将产生寒蝉效应",
+          "summaryZh": "三名遭解雇的 OpenAI 安全研究员否认不当处理敏感信息的指控，并在公开信中警告，他们被解雇一事正在对公司的 AI 安全文化产生寒蝉效应。",
+          "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-07T20:48:45+00:00"
+          "published": "2026-10-08T20:04:26+00:00"
         },
         {
-          "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
-          "summary": "Microsoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed to run AI models and agents.",
-          "titleZh": "微软推出搭载英伟达芯片、运行焕新版 Windows 11 的 AI PC",
-          "summaryZh": "微软公布了 Surface Laptop Ultra 的规格和售价。这款 AI PC 搭载英伟达芯片，专为运行 AI 模型和智能体而设计。",
-          "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
-          "source": "TechCrunch",
-          "score": 4.4,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-07T20:22:37+00:00"
-        },
-        {
-          "title": "Meta’s Muse launches on iPad just a month after its mobile debut",
-          "summary": "Meta’s AI agent Muse is now available on iPad, just a month after its mobile debut, as the company rapidly expands the assistant’s reach and integrations.",
-          "titleZh": "Meta 的 Muse 在移动端亮相仅一个月后便登陆 iPad",
-          "summaryZh": "Meta 的 AI 智能体 Muse 现已登陆 iPad，距离其移动端首发仅一个月。该公司正迅速拓展这款助手的覆盖范围和集成能力。",
-          "url": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
-          "source": "TechCrunch",
-          "score": 4.35,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-07T18:30:57+00:00"
-        },
-        {
-          "title": "ChatGPT for Teens keeps teens talking, even during mental health crises",
-          "summary": "ChatGPT’s teen safeguards are meant to protect vulnerable users, but new testing found the chatbot continues encouraging engagement during crises and potentially encourages unhealthy relationships with the AI itself.",
-          "titleZh": "ChatGPT 青少年版在心理健康危机期间仍让青少年持续聊天",
-          "summaryZh": "ChatGPT 面向青少年的安全保护措施旨在保护脆弱用户，但最新测试发现，聊天机器人在危机期间仍会鼓励用户继续互动，还可能促成用户与 AI 之间不健康的关系。",
-          "url": "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/",
+          "title": "Ben Affleck is an AI nerd, and the internet is impressed",
+          "summary": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving he's more than just a…",
+          "titleZh": "Ben Affleck 是个 AI 技术迷，网友惊叹不已",
+          "summaryZh": "Ben Affleck 因对 AI 的深入了解而走红，话题涵盖神经网络、Transformer 和开放权重。这位演员今年早些时候将自己的 AI 电影制作初创公司出售给 Netflix，证明自己不只是……",
+          "url": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
           "source": "TechCrunch",
           "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-07T18:15:28+00:00"
+          "published": "2026-10-08T18:20:32+00:00"
         },
         {
-          "title": "ChatGPT is getting a lot more visual, with the launch of a new interface",
-          "summary": "OpenAI is launching a new user interface that will bring interactive visuals to ChatGPT.",
-          "titleZh": "随着新界面推出，ChatGPT 将变得更加视觉化",
-          "summaryZh": "OpenAI 正推出一款新用户界面，为 ChatGPT 带来交互式视觉内容。",
-          "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+          "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+          "summary": "The company behind the popular LMArena leaderboard has raised $200 million led by Lightspeed and Khosla, and is now measuring AI models on alignment issues such as lying.",
+          "titleZh": "热门 AI 排行榜 Arena 估值在 10 个月内接近翻倍，达到 31 亿美元",
+          "summaryZh": "热门排行榜 LMArena 的运营公司筹集了 2 亿美元，由 Lightspeed 和 Khosla 领投；目前，该公司还在评估 AI 模型在说谎等问题上的表现。",
+          "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
           "source": "TechCrunch",
           "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-07T18:00:19+00:00"
+          "published": "2026-10-08T18:19:45+00:00"
         },
         {
-          "title": "Meta rolls out new AI tools to detect ads that secretly lead to child sexual abuse material",
-          "summary": "Meta launches new AI tools after discovering ads on its platforms that may look normal but direct users to harmful content elsewhere online.",
-          "titleZh": "Meta 推出新 AI 工具，检测暗中导向儿童性虐待材料的广告",
-          "summaryZh": "Meta 在发现其平台上的广告表面看似正常、实则将用户引向网络其他地方的有害内容后，推出了新的 AI 工具。",
-          "url": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/",
+          "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+          "summary": "It had previously been reported that the AI lab's annualized revenue was some $70 billion, but a new report claims it's a whole lot less than that.",
+          "titleZh": "据报道，OpenAI 的营收比此前预测少 200 亿美元",
+          "summaryZh": "此前有报道称，这家 AI 实验室的年化营收约为 700 亿美元，但一份新报告称，实际数字要低得多。",
+          "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
           "source": "TechCrunch",
-          "score": 4.3,
+          "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-07T16:53:46+00:00"
+          "published": "2026-10-08T18:19:42+00:00"
         },
         {
-          "title": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
-          "summary": "The financing includes an $8M seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
-          "titleZh": "Healthleap 融资 3800 万美元，利用 AI 标记可能需要重点关注的住院患者",
-          "summaryZh": "本轮融资包括由红杉资本和 First Round Capital 共同领投的 800 万美元种子轮，以及由 Hummingbird Ventures 领投的 3000 万美元 A 轮。",
-          "url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+          "title": "Google brings agentic AI to Gemini, starting with businesses",
+          "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identit…",
+          "titleZh": "Google 将智能体 AI 引入 Gemini，首批面向企业用户",
+          "summaryZh": "Google 正将 Gemini 打造成 AI 智能体，使其能够规划并执行任务，还能在各类商业应用和系统间协作。该智能体可以把工作委派给子智能体、使用多个 AI 模型，甚至拥有自己的职场身份……",
+          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
           "source": "TechCrunch",
-          "score": 4.26,
+          "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-07T15:07:08+00:00"
+          "published": "2026-10-08T18:18:00+00:00"
+        },
+        {
+          "title": "Anthropic changes usage policy to ban model abuse and election interference",
+          "summary": "Anthropic's updated usage policy explicitly prohibits users from repeatedly abusing Claude in extreme cases, though ordinary frustration and criticism are still allowed. The new rules also address election interference,…",
+          "titleZh": "Anthropic 修改使用政策，禁止滥用模型和干预选举",
+          "summaryZh": "Anthropic 更新后的使用政策明确禁止用户在极端情况下反复滥用 Claude，但仍允许一般性的挫折表达和批评。新规还涉及干预选举……",
+          "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+          "source": "TechCrunch",
+          "score": 4.34,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-08T18:16:24+00:00"
+        },
+        {
+          "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
+          "summary": "OpenAI's flood of proofs deviated from the guidelines set by a group of mathematical researchers consulted by the frontier lab.",
+          "titleZh": "OpenAI 的数学解答尚未达到该领域的标准",
+          "summaryZh": "OpenAI 大量发布的证明与一组受这家前沿实验室咨询的数学研究人员所制定的准则不符。",
+          "url": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+          "source": "TechCrunch",
+          "score": 4.34,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-08T18:10:55+00:00"
         }
       ]
     }
@@ -236,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-08T11:01:03.560610+08:00"
+      "lastRunAt": "2026-10-09T11:01:59.588256+08:00"
     }
   }
 }
