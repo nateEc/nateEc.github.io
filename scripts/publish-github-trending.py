@@ -38,9 +38,9 @@ def publish() -> int:
         return 0
 
     base._ensure_dependencies()
-    result = base._run([sys.executable, str(base.SYNC_SCRIPT)], timeout=180)
+    result = base._run([sys.executable, str(base.SYNC_SCRIPT)], timeout=300)
     if result.returncode != 0:
-        detail = result.stderr.strip() or result.stdout.strip() or f"exit code {result.returncode}"
+        detail = "\n".join(part for part in (result.stdout.strip(), result.stderr.strip()) if part) or f"exit code {result.returncode}"
         raise RuntimeError(f"Repository Radar sync failed: {detail[:1600]}")
     payload = json.loads((base.PROJECT_ROOT / base.NEWS_PATH).read_text(encoding="utf-8"))
     date = validate_payload(payload)

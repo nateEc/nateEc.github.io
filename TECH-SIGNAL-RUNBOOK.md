@@ -44,6 +44,14 @@ npm run check
 
 ## 恢复与边界
 
+### Repository Radar 抓取恢复
+
+- 每日 14:00 简报 `34e962b893ea` 与 14:30 网站发布 `2ae3aacc9c38` 共用版本化的 `scripts/github_trending_digest.py`；Hermes 薄入口启动专用工作区的最新代码。
+- GitHub Trending 的 5xx、超时与连接错误最多尝试 5 次，单次 socket 超时 20 秒，等待依次为 2、4、8、12 秒；失败后在系统配置路径和直连路径间切换，始终请求同一个 GitHub 官方地址并验证 TLS。
+- HTTP 429 不切换路径，遵守不超过 30 秒的数字 `Retry-After`；更长或无法解释的限流提示直接失败。403、其他永久 HTTP 错误及数据契约变化直接失败。失败保持上一版快照，不改日期伪装成当日数据。
+- 抓取子进程上限 300 秒，包含重试等待余量。最终错误与逐次路径诊断一起保留。CI 运行 `python3 scripts/test_github_trending.py` 覆盖恢复与失败保护。
+- 只重跑该发布任务：`hermes cron run 2ae3aacc9c38`，每天 14:30 的计划不变。执行日志在 `~/.hermes/cron/output/2ae3aacc9c38/`。
+
 - 若网络或来源持续故障，旧页面继续可用，任务应诚实报错；网络恢复后用上面的 `run` 重试。
 - 2026-09-08 实测，本机曾将站点域名解析到 `sinkhole.paloaltonetworks.com`，出现 TLS EOF。脚本不会修改 DNS、启用代理或绕过网络安全策略；仅在可访问的 GitHub 官方控制面核验部署。若 GitHub API 也不可用，则继续重试并最终报告未完成核验。
 - Git 冲突或专用目录出现非新闻修改时，先保留现场，人工检查；不要删除改动、清空仓库或强推。与开发目录无关，不要要求先发布本地功能。

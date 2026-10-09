@@ -24,5 +24,7 @@ jobs:
         run: npm ci
       - name: Test Tech Signal recovery and publishing safety
         run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/test_tech_news.py
+      - name: Test Repository Radar fetch recovery and publishing safety
+        run: PYTHONDONTWRITEBYTECODE=1 python3 scripts/test_github_trending.py
       - name: Type-check, build, and validate links
         run: npm run check

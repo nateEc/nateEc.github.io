@@ -9,14 +9,14 @@ import sys
 import time
 from datetime import datetime
 from typing import Any
-from urllib.error import URLError
-from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
+from urllib.request import ProxyHandler, Request, build_opener, urlopen
 
 
 SOURCE_URL = "https://github.com/trending?since=daily"
 MAX_REPOSITORIES = 10
-FETCH_ATTEMPTS = 3
-FETCH_TIMEOUT_SECONDS = 25
+FETCH_ATTEMPTS = 5
+FETCH_TIMEOUT_SECONDS = 20
 MAX_RESPONSE_BYTES = 2_000_000
 LANGUAGE_COLORS = {
     "Python": "#3572A5", "TypeScript": "#3178C6", "JavaScript": "#F1E05A",
@@ -139,14 +139,22 @@ def validate_payload(payload: Any, *, require_today: bool = True) -> str:
 
 
 def fetch_payload() -> dict[str, Any]:
-    last_error = "unknown fetch error"
+    errors: list[str] = []
+    direct = False
     for attempt in range(1, FETCH_ATTEMPTS + 1):
+        route = "direct" if direct else "configured network"
+        delay = min(2 ** attempt, 12)
+        retryable = True
         try:
             request = Request(SOURCE_URL, headers={
-                "User-Agent": "Mozilla/5.0 portfolio-repository-radar/1.0",
+                "User-Agent": "Mozilla/5.0 portfolio-repository-radar/1.1",
                 "Accept": "text/html,application/xhtml+xml",
+                "Cache-Control": "no-cache",
             })
-            with urlopen(request, timeout=FETCH_TIMEOUT_SECONDS) as response:
+            # Retry the same official source through an independent route.
+            # Both openers retain Python's normal TLS certificate validation.
+            open_url = build_opener(ProxyHandler({})).open if direct else urlopen
+            with open_url(request, timeout=FETCH_TIMEOUT_SECONDS) as response:
                 body = response.read(MAX_RESPONSE_BYTES + 1)
             if len(body) > MAX_RESPONSE_BYTES:
                 raise ValueError("GitHub Trending response exceeded 2 MB")
@@ -154,11 +162,38 @@ def fetch_payload() -> dict[str, Any]:
             payload = build_payload(parse_trending_html(document))
             validate_payload(payload)
             return payload
-        except (OSError, URLError, ValueError) as exc:
-            last_error = str(exc)
-            if attempt < FETCH_ATTEMPTS:
-                time.sleep(2 * attempt)
-    raise RuntimeError(f"GitHub Trending fetch failed after {FETCH_ATTEMPTS} attempts: {last_error}")
+        except HTTPError as exc:
+            errors.append(f"{route}: HTTP {exc.code}")
+            retryable = exc.code == 429 or 500 <= exc.code <= 599
+            if exc.code == 429:
+                # Do not evade rate limiting by switching routes or retrying
+                # sooner than a numeric Retry-After. Long cooldowns fail safely.
+                retry_after = (exc.headers or {}).get("Retry-After", "")
+                if retry_after:
+                    try:
+                        wait = float(retry_after)
+                    except ValueError:
+                        retryable = False
+                    else:
+                        retryable = 0 <= wait <= 30
+                        delay = max(delay, wait)
+            elif retryable:
+                direct = not direct
+        except (OSError, URLError) as exc:
+            errors.append(f"{route}: {exc}")
+            direct = not direct
+        except ValueError as exc:
+            # A successful HTTP response with a changed/invalid contract is
+            # not evidence of a transient transport failure.
+            errors.append(f"{route}: {exc}")
+            retryable = False
+        if not retryable or attempt == FETCH_ATTEMPTS:
+            break
+        print(f"warning: GitHub Trending attempt {attempt}/{FETCH_ATTEMPTS} failed "
+              f"({errors[-1]}); retry in {delay:g}s via "
+              f"{'direct' if direct else 'configured network'}", file=sys.stderr)
+        time.sleep(delay)
+    raise RuntimeError(f"GitHub Trending fetch failed after {attempt} attempts: {'; '.join(errors)}")
 
 
 def main() -> int:
