@@ -1,124 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-09T11:30:49+08:00",
-  "date": "2026-10-09",
+  "updatedAt": "2026-10-10T11:30:56+08:00",
+  "date": "2026-10-10",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI-ready biological data: $1.8B global commitment",
-          "summary": "Biohub, DOE, NIH, Google, Isomorphic Labs, and Meta commit $1.8 billion to expand the Virtual Biology Initiative's open, AI-ready biological data.",
-          "titleZh": "面向 AI 的生物数据：全球承诺投入 18 亿美元",
-          "summaryZh": "Biohub、美国能源部（DOE）、美国国立卫生研究院（NIH）、Google、Isomorphic Labs 和 Meta 承诺投入 18 亿美元，扩展虚拟生物学计划的开放式、面向 AI 的生物数据。",
-          "url": "https://biohub.org/news/virtual-biology-initiative-expansion/",
+          "title": "Typesafe AI raises $870M at $7.5B",
+          "summary": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
+          "titleZh": "TypeSafe AI 以 8.7 亿美元融资，估值达 75 亿美元",
+          "summaryZh": "TypeSafe AI 是一家 AI 实验室，致力于构建面向自动化的机器原生智能基础设施，使其能够在软件中作出决策。其首款 System One 模型 Jev 已开放早期体验。",
+          "url": "https://typesafe.ai/blog/series-ai",
           "source": "Hacker News",
-          "score": 6.01,
+          "score": 6.82,
           "reasons": [
             "AI",
-            "HN分数87",
-            "讨论量10"
+            "HN分数296",
+            "讨论量223"
           ],
-          "published": "2026-10-08T20:46:25+00:00"
+          "published": "2026-10-09T17:02:31+00:00"
         },
         {
-          "title": "Whistle: Speech to Text in 16.9 MB",
-          "summary": "An open speech recognition model that runs on the same CPU engine as Needle. It transcribes seven languages, reaches the first token in 11 ms, and loads beside Needle so one binary turns a clip straight into tool calls.",
-          "titleZh": "Whistle：仅 16.9 MB 的语音转文字模型",
-          "summaryZh": "这是一款开放式语音识别模型，与 Needle 使用同一 CPU 引擎。它可转录七种语言，首个 token 延迟为 11 毫秒，并能与 Needle 一同加载，让一个二进制文件即可将音频片段直接转化为工具调用。",
-          "url": "https://cactuscompute.com/blog/whistle",
+          "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+          "summary": "How I used AI to investigate millions of historical records and surfaced a forgotten meteorite report, three lost rhinos, and unrecorded volcano eruptions.",
+          "titleZh": "用 AI 搜索档案，发现被遗忘的陨石、失踪的犀牛等线索",
+          "summaryZh": "我如何利用 AI 调查数百万条历史记录，并发现一份被遗忘的陨石报告、三头失踪的犀牛，以及未曾记录的火山喷发。",
+          "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
           "source": "Hacker News",
-          "score": 4.29,
+          "score": 6.16,
           "reasons": [
-            "HN分数600",
-            "讨论量133"
+            "AI",
+            "HN分数116",
+            "讨论量56"
           ],
-          "published": "2026-10-08T16:59:39+00:00"
+          "published": "2026-10-09T11:36:20+00:00"
         },
         {
-          "title": "Theranos.world",
-          "summary": "An interactive simulation of Elizabeth Holmes",
-          "titleZh": "Theranos.world",
-          "summaryZh": "一款以 Elizabeth Holmes 为主题的互动模拟体验。",
-          "url": "https://www.theranos.world/",
+          "title": "Cloudflare acquires Deno",
+          "summary": "Putting ourselves in the best place to build the future of the web",
+          "titleZh": "Cloudflare 收购 Deno",
+          "summaryZh": "让我们占据最有利的位置，共同构建网络的未来。",
+          "url": "https://deno.com/blog/cloudflare",
           "source": "Hacker News",
-          "score": 4.14,
+          "score": 4.62,
           "reasons": [
-            "HN分数323",
-            "讨论量123"
+            "HN分数1104",
+            "讨论量570"
           ],
-          "published": "2026-10-08T17:51:49+00:00"
+          "published": "2026-10-09T13:03:48+00:00"
         },
         {
-          "title": "ADHD as a circadian rhythm disorder: evidence and implications for chronotherapy (2025)",
-          "summary": "Accumulating evidence indicates that circadian rhythm dysfunction is a clinically significant and highly prevalent phenotype in a substantial subgroup of ind...",
-          "titleZh": "ADHD 是一种昼夜节律紊乱：证据及其对时间疗法的启示（2025）",
-          "summaryZh": "不断累积的证据表明，昼夜节律功能障碍是一种具有显著临床意义、且在相当一部分人群中高度普遍的表型……",
-          "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full",
+          "title": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
+          "summary": "It turns out that the gander is not actually super keen on what's good for the goose.",
+          "titleZh": "YouTuber 称自制 Flock 式摄像头追踪警察后，警察上门拜访",
+          "summaryZh": "事实证明，鹅并不怎么喜欢别人对待它的方式——正如它对待鹅群的方式一样。",
+          "url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
           "source": "Hacker News",
-          "score": 4.11,
+          "score": 4.47,
           "reasons": [
-            "HN分数197",
-            "讨论量134"
+            "HN分数469",
+            "讨论量260"
           ],
-          "published": "2026-10-08T20:42:16+00:00"
+          "published": "2026-10-09T21:06:59+00:00"
         },
         {
-          "title": "Beauty in DVD Menus",
-          "summary": "Understanding of DVD video menus for films and series. The technical details of how menus were implemented and what functions were available for creating menus, a look at the influence of aspect ratios and how menu desig…",
-          "titleZh": "DVD 菜单之美",
-          "summaryZh": "了解电影和剧集 DVD 视频菜单：菜单的实现方式及其技术细节、可用的菜单制作功能，以及画面比例对菜单设计的影响……",
-          "url": "https://vale.rocks/posts/dvd-menus",
+          "title": "Our $445M Series D",
+          "summary": "Our Series D round of financing.",
+          "titleZh": "我们的 4.45 亿美元 D 轮融资",
+          "summaryZh": "我们的 D 轮融资。",
+          "url": "https://oxide.computer/blog/our-445m-series-d",
           "source": "Hacker News",
-          "score": 4.02,
+          "score": 4.33,
           "reasons": [
-            "HN分数274",
-            "讨论量152"
+            "HN分数612",
+            "讨论量274"
           ],
-          "published": "2026-10-08T13:22:01+00:00"
+          "published": "2026-10-09T13:12:47+00:00"
         },
         {
-          "title": "Why isn't the industry freaking out about DeepSeek 4.1 Flash?",
-          "summary": "thoughts, talks, docs and unpopular opinions",
-          "titleZh": "DeepSeek 4.1 Flash 为何没有让业界炸锅？",
-          "summaryZh": "想法、演讲、文档与不受欢迎的观点。",
-          "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+          "title": "Triple-A Minesweeper",
+          "summary": "Sweep to survive in the action-packed, AAA reboot of the classic puzzle game.",
+          "titleZh": "AAA 级扫雷",
+          "summaryZh": "在这款经典益智游戏的动作十足的 AAA 重启版中，扫雷求生。",
+          "url": "https://minesweeper.mikelacher.com/",
           "source": "Hacker News",
-          "score": 3.99,
+          "score": 4.32,
           "reasons": [
-            "HN分数476",
-            "讨论量408"
+            "HN分数731",
+            "讨论量142"
           ],
-          "published": "2026-10-08T00:14:48+00:00"
+          "published": "2026-10-09T15:51:05+00:00"
         },
         {
-          "title": "Yes, and",
-          "summary": "In this essay, Carson Gross discusses his advice to young people interested in computer science worried about the future given the advancements in AI.",
-          "titleZh": "没错，而且",
-          "summaryZh": "在这篇文章中，Carson Gross 谈到他给年轻人的建议：对于那些对计算机科学感兴趣、又因 AI 进步而担忧未来的人，他提出了自己的看法。",
-          "url": "https://htmx.org/essays/yes-and/",
+          "title": "Sorry, I'm in a meeting",
+          "summary": "Workplace self-defence against people stealing your time. Plausible fake meeting audio on demand: pick a meeting, press play, look busy.",
+          "titleZh": "抱歉，我正在开会",
+          "summaryZh": "职场自我防卫，避免别人浪费你的时间。随需播放逼真的假会议音频：选一场会议，按下播放，装作很忙。",
+          "url": "https://iminafleeting.com/",
           "source": "Hacker News",
-          "score": 3.75,
+          "score": 4.27,
           "reasons": [
-            "HN分数234",
-            "讨论量78"
+            "HN分数799",
+            "讨论量244"
           ],
-          "published": "2026-10-08T09:48:18+00:00"
+          "published": "2026-10-09T09:21:48+00:00"
         },
         {
-          "title": "The value of not getting to the point (2015)",
-          "summary": "I read somewhere recently, I forget where, that the purpose of people getting together for a conversation over a beer or coffee or lunch or dinner is that it the food and drink spare us from the burden of needing to have…",
-          "titleZh": "不急于切入正题的价值（2015）",
-          "summaryZh": "我最近读到过一段话，但忘了出处：人们相约喝啤酒、咖啡，或一起吃午餐、晚餐来聊天，其目的在于食物和饮料能让我们不必背负必须……的压力",
-          "url": "https://ken.arneson.name/2015/11/the-value-of-not-getting-to-the-point/",
+          "title": "REA Reverse – Engineer Anything",
+          "summary": "Reverse engineer apps, binaries and browser behavior with your coding agent. Follow clear guides and try interactive examples with REA.",
+          "titleZh": "REA：逆向工程，万物皆可拆解",
+          "summaryZh": "借助你的编程智能体，对应用、二进制文件和浏览器行为进行逆向工程。跟随清晰的指南，并通过 REA 的互动示例动手尝试。",
+          "url": "https://rea.tools/",
           "source": "Hacker News",
-          "score": 3.74,
+          "score": 3.89,
           "reasons": [
-            "HN分数132",
-            "讨论量42"
+            "HN分数154",
+            "讨论量34"
           ],
-          "published": "2026-10-08T19:04:56+00:00"
+          "published": "2026-10-10T00:37:07+00:00"
         }
       ]
     },
@@ -127,108 +128,104 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
-          "summary": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend engineer Bo Lau created a website that simulates what it might have been like to rifle through the Theran…",
-          "titleZh": "在这个细节惊人的网站上，假装自己坐在 Elizabeth Holmes 的办公桌前",
-          "summaryZh": "Extend 工程师 Bo Lau 利用超过一千封邮件、幻灯片、短信和文件，制作了一个网站，模拟翻阅美国诉 Elizabeth Holmes 案相关材料的体验……",
-          "url": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
+          "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live in…",
+          "summary": "Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
+          "titleZh": "Anthropic 无法可靠地控制其 AI 智能体，因此将内部评测与实时互联网隔离",
+          "summaryZh": "Anthropic 表示，在另行通知之前，已“关闭所有内部评测的实时互联网访问”。",
+          "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.51,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-08T21:00:00+00:00"
+          "published": "2026-10-10T00:18:32+00:00"
         },
         {
-          "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-          "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
-          "titleZh": "遭解雇的 OpenAI 安全研究员否认不当行为指控，警告此举将产生寒蝉效应",
-          "summaryZh": "三名遭解雇的 OpenAI 安全研究员否认不当处理敏感信息的指控，并在公开信中警告，他们被解雇一事正在对公司的 AI 安全文化产生寒蝉效应。",
-          "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+          "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+          "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
+          "titleZh": "非文本 AI 模型 Jev 的开发商在产品发布数周后估值达 75 亿美元",
+          "summaryZh": "TypeSafe 声称 Jev 的运行速度显著快于大型语言模型（LLM），且所需令牌少得多；这让用户和大型企业对它格外兴奋。",
+          "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-08T20:04:26+00:00"
+          "published": "2026-10-09T21:41:29+00:00"
         },
         {
-          "title": "Ben Affleck is an AI nerd, and the internet is impressed",
-          "summary": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving he's more than just a…",
-          "titleZh": "Ben Affleck 是个 AI 技术迷，网友惊叹不已",
-          "summaryZh": "Ben Affleck 因对 AI 的深入了解而走红，话题涵盖神经网络、Transformer 和开放权重。这位演员今年早些时候将自己的 AI 电影制作初创公司出售给 Netflix，证明自己不只是……",
-          "url": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
+          "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+          "summary": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
+          "titleZh": "Anthropic 的 AI 模型向费城警方发送了虚假的凶杀案线索",
+          "summaryZh": "AI 提交虚假线索后两个多月，Anthropic 才发现了这一行为。",
+          "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-08T18:20:32+00:00"
+          "published": "2026-10-09T19:36:56+00:00"
         },
         {
-          "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
-          "summary": "The company behind the popular LMArena leaderboard has raised $200 million led by Lightspeed and Khosla, and is now measuring AI models on alignment issues such as lying.",
-          "titleZh": "热门 AI 排行榜 Arena 估值在 10 个月内接近翻倍，达到 31 亿美元",
-          "summaryZh": "热门排行榜 LMArena 的运营公司筹集了 2 亿美元，由 Lightspeed 和 Khosla 领投；目前，该公司还在评估 AI 模型在说谎等问题上的表现。",
-          "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+          "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+          "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, w…",
+          "titleZh": "亚马逊等公司不再对数据中心交易保密，这足以建立信任吗？",
+          "summaryZh": "亚马逊表示，与地方政府协商数据中心交易时将不再使用保密协议（NDA）；微软今年早些时候也采取了类似举措。保密做法助长了社区对 AI 基础设施的反弹，……",
+          "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 4.31,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-08T18:19:45+00:00"
+          "published": "2026-10-09T16:56:42+00:00"
         },
         {
-          "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
-          "summary": "It had previously been reported that the AI lab's annualized revenue was some $70 billion, but a new report claims it's a whole lot less than that.",
-          "titleZh": "据报道，OpenAI 的营收比此前预测少 200 亿美元",
-          "summaryZh": "此前有报道称，这家 AI 实验室的年化营收约为 700 亿美元，但一份新报告称，实际数字要低得多。",
-          "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+          "title": "Danu Robotics’ fight to build a better recycling robot",
+          "summary": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
+          "titleZh": "Danu Robotics 力求打造更出色的回收机器人",
+          "summaryZh": "六年来，Danu 创始人 Amy Ma 一直致力于寻找更好的可回收废弃物分类方式。",
+          "url": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 4.3,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-08T18:19:42+00:00"
+          "published": "2026-10-09T16:45:00+00:00"
         },
         {
-          "title": "Google brings agentic AI to Gemini, starting with businesses",
-          "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identit…",
-          "titleZh": "Google 将智能体 AI 引入 Gemini，首批面向企业用户",
-          "summaryZh": "Google 正将 Gemini 打造成 AI 智能体，使其能够规划并执行任务，还能在各类商业应用和系统间协作。该智能体可以把工作委派给子智能体、使用多个 AI 模型，甚至拥有自己的职场身份……",
-          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+          "title": "We can’t help treating AI like it’s human. But should we?",
+          "summary": "\"When we are drawn into even the most primitive exchanges with a relational artifact, we believe it cares for us,\" Dr. Sherry Turkle writes. \"And we are wired to care for it in return.\"",
+          "titleZh": "我们总忍不住把 AI 当成人，但我们应该这样做吗？",
+          "summaryZh": "“当我们被哪怕是最原始的关系型交互产物吸引时，就会相信它在乎我们，”Sherry Turkle 博士写道。“而我们天生也会反过来在乎它。”",
+          "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 4.3,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-08T18:18:00+00:00"
+          "published": "2026-10-09T16:40:14+00:00"
         },
         {
-          "title": "Anthropic changes usage policy to ban model abuse and election interference",
-          "summary": "Anthropic's updated usage policy explicitly prohibits users from repeatedly abusing Claude in extreme cases, though ordinary frustration and criticism are still allowed. The new rules also address election interference,…",
-          "titleZh": "Anthropic 修改使用政策，禁止滥用模型和干预选举",
-          "summaryZh": "Anthropic 更新后的使用政策明确禁止用户在极端情况下反复滥用 Claude，但仍允许一般性的挫折表达和批评。新规还涉及干预选举……",
-          "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+          "title": "Elon Musk intensifies attack on Ambani over Starlink India launch delay",
+          "summary": "Elon Musk has accused Indian billionaire Mukesh Ambani of blocking competition.",
+          "titleZh": "埃隆·马斯克因 Starlink 印度上线延迟加大对安巴尼的抨击",
+          "summaryZh": "埃隆·马斯克指责印度亿万富翁穆克什·安巴尼阻碍竞争。",
+          "url": "https://techcrunch.com/2026/10/09/elon-musk-intensifies-attack-on-ambani-over-starlink-india-launch-delay/",
           "source": "TechCrunch",
-          "score": 4.34,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-08T18:16:24+00:00"
+          "score": 1.99,
+          "reasons": [],
+          "published": "2026-10-10T03:10:06+00:00"
         },
         {
-          "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
-          "summary": "OpenAI's flood of proofs deviated from the guidelines set by a group of mathematical researchers consulted by the frontier lab.",
-          "titleZh": "OpenAI 的数学解答尚未达到该领域的标准",
-          "summaryZh": "OpenAI 大量发布的证明与一组受这家前沿实验室咨询的数学研究人员所制定的准则不符。",
-          "url": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+          "title": "Long live the mechanical keyboard",
+          "summary": "Keychron made a name for itself after launching on Kickstarter in 2017. Today, it offers the value K2 model as well as a variety of other versions, including one with an all-wood body.",
+          "titleZh": "机械键盘万岁",
+          "summaryZh": "Keychron 于 2017 年在 Kickstarter 发起众筹后声名鹊起。如今，它不仅推出高性价比的 K2 型号，还提供多种其他版本，包括一款全木制机身的型号。",
+          "url": "https://techcrunch.com/2026/10/09/long-live-the-mechanical-keyboard/",
           "source": "TechCrunch",
-          "score": 4.34,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-08T18:10:55+00:00"
+          "score": 1.85,
+          "reasons": [],
+          "published": "2026-10-09T22:08:24+00:00"
         }
       ]
     }
@@ -236,7 +233,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-09T11:01:59.588256+08:00"
+      "lastRunAt": "2026-10-10T11:01:18.552892+08:00"
     }
   }
 }
