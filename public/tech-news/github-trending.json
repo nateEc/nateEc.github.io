@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T14:30:57+08:00",
-  "date": "2026-10-10",
+  "updatedAt": "2026-10-11T14:30:09+08:00",
+  "date": "2026-10-11",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,9 +11,9 @@
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 14927,
-      "totalStars": 53547,
-      "forks": 10041,
+      "starsToday": 25793,
+      "totalStars": 78848,
+      "forks": 16999,
       "url": "https://github.com/morluto/rea"
     },
     {
@@ -22,130 +22,130 @@
       "description": "Tool for automatic PS5 executables porting to Linux and Windows",
       "language": "C++",
       "languageColor": "#F34B7D",
-      "starsToday": 5868,
-      "totalStars": 23271,
-      "forks": 1921,
+      "starsToday": 5805,
+      "totalStars": 27497,
+      "forks": 2324,
       "url": "https://github.com/boykopovar/AnyPS5"
     },
     {
       "rank": 3,
-      "fullName": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "languageColor": "#89E051",
-      "starsToday": 1687,
-      "totalStars": 283162,
-      "forks": 23721,
-      "url": "https://github.com/mattpocock/skills"
-    },
-    {
-      "rank": 4,
-      "fullName": "cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "languageColor": "#E34C26",
-      "starsToday": 1739,
-      "totalStars": 48188,
-      "forks": 3049,
-      "url": "https://github.com/cathrynlavery/diagram-design"
-    },
-    {
-      "rank": 5,
-      "fullName": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 326,
-      "totalStars": 45494,
-      "forks": 3284,
-      "url": "https://github.com/alibaba/open-code-review"
-    },
-    {
-      "rank": 6,
-      "fullName": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 709,
-      "totalStars": 28419,
-      "forks": 3255,
-      "url": "https://github.com/anthropics/knowledge-work-plugins"
-    },
-    {
-      "rank": 7,
-      "fullName": "BerriAI/litellm",
-      "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 95,
-      "totalStars": 60782,
-      "forks": 12199,
-      "url": "https://github.com/BerriAI/litellm"
-    },
-    {
-      "rank": 8,
-      "fullName": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 436,
-      "totalStars": 104171,
-      "forks": 10872,
-      "url": "https://github.com/addyosmani/agent-skills"
-    },
-    {
-      "rank": 9,
       "fullName": "storytold/artcraft",
       "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
       "language": "Rust",
       "languageColor": "#DEA584",
-      "starsToday": 3752,
-      "totalStars": 12168,
-      "forks": 1854,
+      "starsToday": 3222,
+      "totalStars": 15104,
+      "forks": 2400,
       "url": "https://github.com/storytold/artcraft"
     },
     {
-      "rank": 10,
-      "fullName": "Robbyant/lingbot-map",
-      "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
+      "rank": 4,
+      "fullName": "cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "languageColor": "#E34C26",
+      "starsToday": 1190,
+      "totalStars": 49222,
+      "forks": 3118,
+      "url": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+      "rank": 5,
+      "fullName": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 178,
+      "totalStars": 26436,
+      "forks": 1903,
+      "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+      "rank": 6,
+      "fullName": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 1736,
+      "totalStars": 284873,
+      "forks": 23840,
+      "url": "https://github.com/mattpocock/skills"
+    },
+    {
+      "rank": 7,
+      "fullName": "flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "language": "Dart",
+      "languageColor": "#8B949E",
+      "starsToday": 88,
+      "totalStars": 179633,
+      "forks": 33625,
+      "url": "https://github.com/flutter/flutter"
+    },
+    {
+      "rank": 8,
+      "fullName": "tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "language": "C++",
+      "languageColor": "#F34B7D",
+      "starsToday": 26,
+      "totalStars": 200789,
+      "forks": 78988,
+      "url": "https://github.com/tensorflow/tensorflow"
+    },
+    {
+      "rank": 9,
+      "fullName": "hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 110,
-      "totalStars": 17801,
-      "forks": 1957,
-      "url": "https://github.com/Robbyant/lingbot-map"
+      "starsToday": 461,
+      "totalStars": 59744,
+      "forks": 4712,
+      "url": "https://github.com/hugohe3/ppt-master"
+    },
+    {
+      "rank": 10,
+      "fullName": "pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 84,
+      "totalStars": 104201,
+      "forks": 31968,
+      "url": "https://github.com/pytorch/pytorch"
     }
   ],
   "languages": [
     {
-      "name": "Python",
-      "count": 3,
-      "share": 30,
-      "color": "#3572A5"
-    },
-    {
       "name": "C++",
-      "count": 1,
-      "share": 10,
+      "count": 2,
+      "share": 20,
       "color": "#F34B7D"
     },
     {
-      "name": "Go",
+      "name": "Python",
+      "count": 2,
+      "share": 20,
+      "color": "#3572A5"
+    },
+    {
+      "name": "TypeScript",
+      "count": 2,
+      "share": 20,
+      "color": "#3178C6"
+    },
+    {
+      "name": "Dart",
       "count": 1,
       "share": 10,
-      "color": "#00ADD8"
+      "color": "#8B949E"
     },
     {
       "name": "HTML",
       "count": 1,
       "share": 10,
       "color": "#E34C26"
-    },
-    {
-      "name": "JavaScript",
-      "count": 1,
-      "share": 10,
-      "color": "#F1E05A"
     },
     {
       "name": "Rust",
@@ -158,42 +158,33 @@
       "count": 1,
       "share": 10,
       "color": "#89E051"
-    },
-    {
-      "name": "TypeScript",
-      "count": 1,
-      "share": 10,
-      "color": "#3178C6"
     }
   ],
   "themes": [
     {
       "name": "Agent systems",
-      "count": 5,
+      "count": 4,
       "repositories": [
         "morluto/rea",
-        "mattpocock/skills",
         "cathrynlavery/diagram-design",
-        "alibaba/open-code-review"
+        "mksglu/context-mode",
+        "mattpocock/skills"
       ]
     },
     {
       "name": "AI infrastructure",
-      "count": 4,
+      "count": 2,
       "repositories": [
-        "alibaba/open-code-review",
-        "BerriAI/litellm",
-        "addyosmani/agent-skills",
-        "Robbyant/lingbot-map"
+        "mksglu/context-mode",
+        "hugohe3/ppt-master"
       ]
     },
     {
       "name": "Developer tools",
-      "count": 3,
+      "count": 2,
       "repositories": [
         "cathrynlavery/diagram-design",
-        "alibaba/open-code-review",
-        "addyosmani/agent-skills"
+        "mksglu/context-mode"
       ]
     }
   ]
