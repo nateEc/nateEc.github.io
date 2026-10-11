@@ -1,125 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-10T11:30:56+08:00",
-  "date": "2026-10-10",
+  "updatedAt": "2026-10-11T11:33:52+08:00",
+  "date": "2026-10-11",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Typesafe AI raises $870M at $7.5B",
-          "summary": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
-          "titleZh": "TypeSafe AI 以 8.7 亿美元融资，估值达 75 亿美元",
-          "summaryZh": "TypeSafe AI 是一家 AI 实验室，致力于构建面向自动化的机器原生智能基础设施，使其能够在软件中作出决策。其首款 System One 模型 Jev 已开放早期体验。",
-          "url": "https://typesafe.ai/blog/series-ai",
+          "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+          "summary": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest. Free-tier friendly, single-user, no telemetry. - rociiu/tal…",
+          "titleZh": "Talorys：基于 Cloudflare 免费套餐的自托管个人 AI 智能体",
+          "summaryZh": "在你自己的 Cloudflare 账户中运行个人 AI 智能体，支持聊天、记忆、任务、笔记和定时提醒，只需一条命令即可部署：npx create-talorys@latest。适合免费套餐，面向单用户，不收集遥测数据。- rociiu/tal…",
+          "url": "https://github.com/rociiu/talorys",
           "source": "Hacker News",
-          "score": 6.82,
+          "score": 6.5,
           "reasons": [
             "AI",
-            "HN分数296",
-            "讨论量223"
+            "HN分数263",
+            "讨论量123"
           ],
-          "published": "2026-10-09T17:02:31+00:00"
+          "published": "2026-10-10T10:52:09+00:00"
         },
         {
-          "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
-          "summary": "How I used AI to investigate millions of historical records and surfaced a forgotten meteorite report, three lost rhinos, and unrecorded volcano eruptions.",
-          "titleZh": "用 AI 搜索档案，发现被遗忘的陨石、失踪的犀牛等线索",
-          "summaryZh": "我如何利用 AI 调查数百万条历史记录，并发现一份被遗忘的陨石报告、三头失踪的犀牛，以及未曾记录的火山喷发。",
-          "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+          "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
+          "summary": "During the last 3 months, I spent some of my time and tokens decompiling a popular first-person shooter. The goal was not to reach a simple proof-of-concept state. Instead, we really wanted an accurate, stable and featur…",
+          "titleZh": "耗费 5000 亿个 Token 后：让 AI 智能体反编译一款第一人称射击游戏",
+          "summaryZh": "过去三个月里，我花了一些时间和 Token，反编译一款热门第一人称射击游戏。目标并非只做出简单的概念验证，而是真正实现准确、稳定且功能完善的成果……",
+          "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
           "source": "Hacker News",
-          "score": 6.16,
+          "score": 6.23,
           "reasons": [
             "AI",
-            "HN分数116",
-            "讨论量56"
+            "HN分数50",
+            "讨论量31"
           ],
-          "published": "2026-10-09T11:36:20+00:00"
+          "published": "2026-10-11T02:02:38+00:00"
         },
         {
-          "title": "Cloudflare acquires Deno",
-          "summary": "Putting ourselves in the best place to build the future of the web",
-          "titleZh": "Cloudflare 收购 Deno",
-          "summaryZh": "让我们占据最有利的位置，共同构建网络的未来。",
-          "url": "https://deno.com/blog/cloudflare",
+          "title": "A city-building game in which the city would prefer you didn't",
+          "summary": "A city-building game about trying to get housing built in San Francisco. By Oliver Sin.",
+          "titleZh": "一款城市建设游戏：这座城市可不想让你建房",
+          "summaryZh": "这是一款关于在旧金山努力建造住房的城市建设游戏。作者：Oliver Sin。",
+          "url": "https://housing.over.pizza/",
           "source": "Hacker News",
-          "score": 4.62,
+          "score": 4.04,
           "reasons": [
-            "HN分数1104",
-            "讨论量570"
+            "HN分数222",
+            "讨论量81"
           ],
-          "published": "2026-10-09T13:03:48+00:00"
+          "published": "2026-10-10T20:31:50+00:00"
         },
         {
-          "title": "YouTuber Says Cops Visited Him After He Built a Flock-Style Camera to Track Cops",
-          "summary": "It turns out that the gander is not actually super keen on what's good for the goose.",
-          "titleZh": "YouTuber 称自制 Flock 式摄像头追踪警察后，警察上门拜访",
-          "summaryZh": "事实证明，鹅并不怎么喜欢别人对待它的方式——正如它对待鹅群的方式一样。",
-          "url": "https://gizmodo.com/youtuber-says-cops-paid-him-a-visit-after-he-built-flock-style-camera-to-track-cops-2000824306",
+          "title": "WallHop – 12ft.io is gone, so I built a replacement",
+          "summary": "wallhop is a free paywall bypass. Paste any article link to read it without paywall popups, ads or clutter. No signup, no extension. A simple 12ft.io alternative.",
+          "titleZh": "WallHop：12ft.io 已经关闭，所以我做了一个替代品",
+          "summaryZh": "wallhop 是一款免费的付费墙绕过工具。粘贴文章链接，即可避开付费墙弹窗、广告和杂乱内容，直接阅读。无需注册，也不用安装扩展，是一个简单的 12ft.io 替代品。",
+          "url": "https://wallhop.io/",
           "source": "Hacker News",
-          "score": 4.47,
+          "score": 4.01,
           "reasons": [
-            "HN分数469",
-            "讨论量260"
+            "HN分数146",
+            "讨论量66"
           ],
-          "published": "2026-10-09T21:06:59+00:00"
+          "published": "2026-10-11T00:46:48+00:00"
         },
         {
-          "title": "Our $445M Series D",
-          "summary": "Our Series D round of financing.",
-          "titleZh": "我们的 4.45 亿美元 D 轮融资",
-          "summaryZh": "我们的 D 轮融资。",
-          "url": "https://oxide.computer/blog/our-445m-series-d",
+          "title": "Build your own decision model",
+          "summary": "\"System one\" decision models are models that infer and respond with calibrated probabilities or every allowed answer. Consider your everyday language model, to get typed output from it (JSON), you may use Structured Outp…",
+          "titleZh": "打造你自己的决策模型",
+          "summaryZh": "“系统一”决策模型会推断并以经过校准的概率作答，或从所有允许的答案中作出回应。以日常使用的语言模型为例，若要让它输出指定类型的数据（如 JSON），可以使用结构化输出……",
+          "url": "https://nishtahir.com/build-your-own-decision-model/",
           "source": "Hacker News",
-          "score": 4.33,
+          "score": 3.83,
           "reasons": [
-            "HN分数612",
-            "讨论量274"
+            "HN分数160",
+            "讨论量31"
           ],
-          "published": "2026-10-09T13:12:47+00:00"
+          "published": "2026-10-10T22:50:10+00:00"
         },
         {
-          "title": "Triple-A Minesweeper",
-          "summary": "Sweep to survive in the action-packed, AAA reboot of the classic puzzle game.",
-          "titleZh": "AAA 级扫雷",
-          "summaryZh": "在这款经典益智游戏的动作十足的 AAA 重启版中，扫雷求生。",
-          "url": "https://minesweeper.mikelacher.com/",
+          "title": "Why DuckDB 2.0 is faster",
+          "summary": "DuckDB 2.0 alpha vs 1.5.5 on one laptop: recursive CTEs up to 90x, VARIANT 6x faster than JSON text, async I/O 2.4x on S3. What changes, and how to model data to get the speedup.",
+          "titleZh": "DuckDB 2.0 为什么更快",
+          "summaryZh": "在一台笔记本电脑上，DuckDB 2.0 alpha 对比 1.5.5：递归 CTE 最多快 90 倍，VARIANT 比 JSON 文本快 6 倍，S3 异步 I/O 快 2.4 倍。本文介绍性能提升的原因，以及如何建模数据以获得这些加速。",
+          "url": "https://motherduck.com/blog/why-duckdb-20-is-faster/",
           "source": "Hacker News",
-          "score": 4.32,
+          "score": 3.81,
           "reasons": [
-            "HN分数731",
-            "讨论量142"
+            "HN分数165",
+            "讨论量51"
           ],
-          "published": "2026-10-09T15:51:05+00:00"
+          "published": "2026-10-10T18:08:49+00:00"
         },
         {
-          "title": "Sorry, I'm in a meeting",
-          "summary": "Workplace self-defence against people stealing your time. Plausible fake meeting audio on demand: pick a meeting, press play, look busy.",
-          "titleZh": "抱歉，我正在开会",
-          "summaryZh": "职场自我防卫，避免别人浪费你的时间。随需播放逼真的假会议音频：选一场会议，按下播放，装作很忙。",
-          "url": "https://iminafleeting.com/",
+          "title": "Knuth reward check",
+          "summary": "Twenty years ago I got a reward check from Donald Knuth.",
+          "titleZh": "高德纳的奖金支票",
+          "summaryZh": "二十年前，我收到了一张唐纳德·高德纳寄来的奖金支票。",
+          "url": "https://www.thomas-huehn.com/knuth-reward-check/",
           "source": "Hacker News",
-          "score": 4.27,
+          "score": 3.77,
           "reasons": [
-            "HN分数799",
-            "讨论量244"
+            "HN分数162",
+            "讨论量61"
           ],
-          "published": "2026-10-09T09:21:48+00:00"
+          "published": "2026-10-10T15:47:01+00:00"
         },
         {
-          "title": "REA Reverse – Engineer Anything",
-          "summary": "Reverse engineer apps, binaries and browser behavior with your coding agent. Follow clear guides and try interactive examples with REA.",
-          "titleZh": "REA：逆向工程，万物皆可拆解",
-          "summaryZh": "借助你的编程智能体，对应用、二进制文件和浏览器行为进行逆向工程。跟随清晰的指南，并通过 REA 的互动示例动手尝试。",
-          "url": "https://rea.tools/",
+          "title": "Unikernels were hard. key word: were",
+          "summary": "Justin Cormack, who worked on MirageOS back in the day, called me at the pub to talk about why unikernels are coming back. The friction that made them hard is gone, the operating system is design debt, and if you care ab…",
+          "titleZh": "单内核曾经很难。关键词：曾经",
+          "summaryZh": "曾参与 MirageOS 项目的 Justin Cormack 在酒吧给我打电话，聊起单内核为何正在回归。曾经让它们难以使用的障碍已经消失；操作系统本身成了设计负担；如果你在意……",
+          "url": "https://ghuntley.com/unikernels/",
           "source": "Hacker News",
-          "score": 3.89,
+          "score": 3.62,
           "reasons": [
-            "HN分数154",
-            "讨论量34"
+            "HN分数117",
+            "讨论量50"
           ],
-          "published": "2026-10-10T00:37:07+00:00"
+          "published": "2026-10-10T14:27:09+00:00"
         }
       ]
     },
@@ -128,13 +128,65 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+          "summary": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+          "titleZh": "微软 CEO 萨提亚·纳德拉称 AI 模型需要“紧急制动”机制",
+          "summaryZh": "微软 CEO 在周六早上的一篇帖子中写道，现在是时候“退一步，评估信任架构”了。",
+          "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+          "source": "TechCrunch",
+          "score": 4.44,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-10T21:47:51+00:00"
+        },
+        {
+          "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+          "summary": "Is Apple hoping to get into the AI-generated podcast business?",
+          "titleZh": "苹果披露交易：将聘用团队并授权个性化播客初创公司 Huxe 的技术",
+          "summaryZh": "苹果是否打算进军 AI 生成播客业务？",
+          "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+          "source": "TechCrunch",
+          "score": 4.39,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-10T19:50:00+00:00"
+        },
+        {
+          "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+          "summary": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register be…",
+          "titleZh": "距离 TechCrunch Disrupt 2026 还有 3 天：抢先认识这些即将走向主流的初创公司",
+          "summaryZh": "TechCrunch Disrupt 2026 将于 10 月 13 日至 15 日在旧金山举行。300 多家初创公司将向 1 万名科技行业领袖展示成果。此外，250 多位演讲嘉宾将在 200 多场会议中分享见解。现在注册……",
+          "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+          "source": "TechCrunch",
+          "score": 4.25,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-10T15:00:00+00:00"
+        },
+        {
+          "title": "Here are the top AI agents that can live in your text messages",
+          "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+          "titleZh": "盘点可在短信中使用的热门 AI 智能体",
+          "summaryZh": "我们整理了一份值得关注的 AI 智能体名单，它们可以在短信中使用，涵盖通用助手以及面向家庭、旅行和工作的智能体。",
+          "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+          "source": "TechCrunch",
+          "score": 4.22,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-10T14:00:00+00:00"
+        },
+        {
           "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live in…",
           "summary": "Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
           "titleZh": "Anthropic 无法可靠地控制其 AI 智能体，因此将内部评测与实时互联网隔离",
           "summaryZh": "Anthropic 表示，在另行通知之前，已“关闭所有内部评测的实时互联网访问”。",
           "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
           "source": "TechCrunch",
-          "score": 4.51,
+          "score": 3.84,
           "reasons": [
             "AI"
           ],
@@ -147,7 +199,7 @@
           "summaryZh": "TypeSafe 声称 Jev 的运行速度显著快于大型语言模型（LLM），且所需令牌少得多；这让用户和大型企业对它格外兴奋。",
           "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 3.77,
           "reasons": [
             "AI"
           ],
@@ -160,72 +212,22 @@
           "summaryZh": "AI 提交虚假线索后两个多月，Anthropic 才发现了这一行为。",
           "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 3.71,
           "reasons": [
             "AI"
           ],
           "published": "2026-10-09T19:36:56+00:00"
         },
         {
-          "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
-          "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, w…",
-          "titleZh": "亚马逊等公司不再对数据中心交易保密，这足以建立信任吗？",
-          "summaryZh": "亚马逊表示，与地方政府协商数据中心交易时将不再使用保密协议（NDA）；微软今年早些时候也采取了类似举措。保密做法助长了社区对 AI 基础设施的反弹，……",
-          "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+          "title": "Petra Power looks to modernize energy for data centers and defense vehicles",
+          "summary": "The startup says its fuel cells are super efficient and cut fuel costs during a time when the tech industry can’t get enough electricity.",
+          "titleZh": "Petra Power 致力于革新数据中心和国防车辆的能源",
+          "summaryZh": "这家初创公司称，其燃料电池效率极高，能降低燃料成本；与此同时，科技行业对电力的需求仍然有增无减。",
+          "url": "https://techcrunch.com/2026/10/10/petra-power-looks-to-modernize-energy-for-data-centers-and-defense-vehicles/",
           "source": "TechCrunch",
-          "score": 4.31,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-09T16:56:42+00:00"
-        },
-        {
-          "title": "Danu Robotics’ fight to build a better recycling robot",
-          "summary": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
-          "titleZh": "Danu Robotics 力求打造更出色的回收机器人",
-          "summaryZh": "六年来，Danu 创始人 Amy Ma 一直致力于寻找更好的可回收废弃物分类方式。",
-          "url": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
-          "source": "TechCrunch",
-          "score": 4.3,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-09T16:45:00+00:00"
-        },
-        {
-          "title": "We can’t help treating AI like it’s human. But should we?",
-          "summary": "\"When we are drawn into even the most primitive exchanges with a relational artifact, we believe it cares for us,\" Dr. Sherry Turkle writes. \"And we are wired to care for it in return.\"",
-          "titleZh": "我们总忍不住把 AI 当成人，但我们应该这样做吗？",
-          "summaryZh": "“当我们被哪怕是最原始的关系型交互产物吸引时，就会相信它在乎我们，”Sherry Turkle 博士写道。“而我们天生也会反过来在乎它。”",
-          "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
-          "source": "TechCrunch",
-          "score": 4.3,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-09T16:40:14+00:00"
-        },
-        {
-          "title": "Elon Musk intensifies attack on Ambani over Starlink India launch delay",
-          "summary": "Elon Musk has accused Indian billionaire Mukesh Ambani of blocking competition.",
-          "titleZh": "埃隆·马斯克因 Starlink 印度上线延迟加大对安巴尼的抨击",
-          "summaryZh": "埃隆·马斯克指责印度亿万富翁穆克什·安巴尼阻碍竞争。",
-          "url": "https://techcrunch.com/2026/10/09/elon-musk-intensifies-attack-on-ambani-over-starlink-india-launch-delay/",
-          "source": "TechCrunch",
-          "score": 1.99,
+          "score": 1.71,
           "reasons": [],
-          "published": "2026-10-10T03:10:06+00:00"
-        },
-        {
-          "title": "Long live the mechanical keyboard",
-          "summary": "Keychron made a name for itself after launching on Kickstarter in 2017. Today, it offers the value K2 model as well as a variety of other versions, including one with an all-wood body.",
-          "titleZh": "机械键盘万岁",
-          "summaryZh": "Keychron 于 2017 年在 Kickstarter 发起众筹后声名鹊起。如今，它不仅推出高性价比的 K2 型号，还提供多种其他版本，包括一款全木制机身的型号。",
-          "url": "https://techcrunch.com/2026/10/09/long-live-the-mechanical-keyboard/",
-          "source": "TechCrunch",
-          "score": 1.85,
-          "reasons": [],
-          "published": "2026-10-09T22:08:24+00:00"
+          "published": "2026-10-10T17:00:00+00:00"
         }
       ]
     }
@@ -233,7 +235,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-10T11:01:18.552892+08:00"
+      "lastRunAt": null
     }
   }
 }
