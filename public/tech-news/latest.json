@@ -1,123 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-12T11:31:14+08:00",
-  "date": "2026-10-12",
+  "updatedAt": "2026-10-13T11:31:54+08:00",
+  "date": "2026-10-13",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "The gap in shared understanding of LLM capability is widening",
-          "summary": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel. - Napkin math somewhere a…",
-          "titleZh": "人们对大语言模型能力的共同认知差距正在扩大",
-          "summaryZh": "翻出这条四月发的推文，因为人们对大语言模型能力的共同认知差距正在扩大。现在这不再只是“两群人各说各话”，而更像一个急剧收窄的漏斗。——一些粗略估算……",
-          "url": "https://twitter.com/karpathy/status/2109361546505966046",
+          "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+          "summary": "Comments",
+          "titleZh": "英特尔 D270 GPU AI 加速器——最高支持 480 GB LPDDR5X",
+          "summaryZh": "评论",
+          "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
           "source": "Hacker News",
-          "score": 4.45,
+          "score": 6.35,
           "reasons": [
-            "HN分数288",
-            "讨论量467"
+            "AI",
+            "HN分数103",
+            "讨论量43"
           ],
-          "published": "2026-10-11T20:20:52+00:00"
+          "published": "2026-10-12T21:35:35+00:00"
         },
         {
-          "title": "Passkeys are a trap",
-          "summary": "Intended audience: non-technical citizens of the web",
-          "titleZh": "通行密钥是个陷阱",
-          "summaryZh": "目标读者：不懂技术的网络用户。",
-          "url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+          "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+          "summary": "France, Belgium, and the Netherlands are reportedly affected.",
+          "titleZh": "黑客启动自动除霜功能，欧洲各地超市冰柜受影响",
+          "summaryZh": "据报道，法国、比利时和荷兰均受到影响。",
+          "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
           "source": "Hacker News",
-          "score": 4.37,
+          "score": 4.43,
           "reasons": [
-            "HN分数349",
-            "讨论量199"
+            "HN分数489",
+            "讨论量690"
           ],
-          "published": "2026-10-11T21:59:48+00:00"
+          "published": "2026-10-12T12:16:42+00:00"
         },
         {
-          "title": "NYC's \"Click to Cancel\" rule is now in effect",
-          "summary": "A .gov website belongs to an official government organization in the United States.",
-          "titleZh": "纽约市“点击取消”规定现已生效",
-          "summaryZh": "这是一个美国官方政府机构的网站。",
-          "url": "https://www.nyc.gov/main/click-to-cancel",
+          "title": "GLM-Legal",
+          "summary": "Comments",
+          "titleZh": "GLM-Legal",
+          "summaryZh": "评论",
+          "url": "https://z.ai/blog/glm-legal",
           "source": "Hacker News",
-          "score": 4.28,
+          "score": 4.34,
           "reasons": [
-            "HN分数384",
-            "讨论量191"
+            "HN分数470",
+            "讨论量262"
           ],
-          "published": "2026-10-11T18:01:16+00:00"
+          "published": "2026-10-12T16:11:45+00:00"
         },
         {
-          "title": "Total Annihilation, rebuilt for modern computers",
-          "summary": "Play the original Total Annihilation demo in your browser with Nanolathe, an open-source 2.5D RTS engine. Install the native beta, play online with friends, explore the code and build on it.",
-          "titleZh": "《全面歼灭》重制版，适配现代电脑",
-          "summaryZh": "在浏览器中通过 Nanolathe 游玩《全面歼灭》原版试玩版。这是一款开源 2.5D 即时战略引擎。安装原生测试版，与朋友在线游玩、探索代码并在此基础上进行开发。",
-          "url": "https://nanolathe.gg",
+          "title": "A Modern Web App in C",
+          "summary": "A modern web app written in c and served the old way: CGI, SQLite and a single binary. No frameworks, no containers and no regrets.",
+          "titleZh": "用 C 语言构建现代 Web 应用",
+          "summaryZh": "一个用 C 语言编写、以传统方式提供服务的现代 Web 应用：采用 CGI、SQLite 和单个二进制文件。不用框架、不用容器，也不留遗憾。",
+          "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
           "source": "Hacker News",
-          "score": 4.27,
+          "score": 4.24,
           "reasons": [
-            "HN分数400",
-            "讨论量171"
+            "HN分数429",
+            "讨论量176"
           ],
-          "published": "2026-10-11T18:04:47+00:00"
+          "published": "2026-10-12T16:13:10+00:00"
         },
         {
-          "title": "Terence Tao: Math 2.0 [pdf]",
-          "summary": "%PDF-1.7 % 10 0 obj > stream x\u000fP(\u0002\u0000\u0007\u0001 endstream endobj 17 0 obj > /BBox [0 0 725.669 7.97] /FormType 1 /Matrix [1 0 0 1 0 0] /Resources 18 0 R /Length 29 /Filter /FlateDecode >> stream x+2T0\u0000B\b˥k\u0015\u0005\u0000J3\u0005 endstream endobj 1…",
-          "titleZh": "陶哲轩：数学 2.0 [PDF]",
-          "summaryZh": "PDF 文件内容无法从提供的摘要中读取。",
-          "url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
+          "title": "Citroen revives the 2CV for an electric age",
+          "summary": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals.",
+          "titleZh": "雪铁龙让 2CV 经典车型焕发电动时代新生",
+          "summaryZh": "随着车企面临来自中国竞争对手的压力，这家法国公司正重新打造这一经典车型。",
+          "url": "https://www.bbc.com/news/articles/c620r33plgppo",
           "source": "Hacker News",
-          "score": 4.25,
+          "score": 4.14,
           "reasons": [
-            "HN分数336",
-            "讨论量388"
+            "HN分数278",
+            "讨论量326"
           ],
-          "published": "2026-10-11T13:16:45+00:00"
+          "published": "2026-10-12T12:09:09+00:00"
         },
         {
-          "title": "Google is illegaly cutting forest to build data centers",
-          "summary": "Order on two construction sites comes after Google failed to carry out environmental impact assessments",
-          "titleZh": "谷歌为建设数据中心非法砍伐森林",
-          "summaryZh": "谷歌未开展环境影响评估后，两处施工现场被下令停工。",
-          "url": "https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment",
+          "title": "Leaving Tech",
+          "summary": "Leaving Tech",
+          "titleZh": "离开科技行业",
+          "summaryZh": "离开科技行业",
+          "url": "https://ryanbigg.com/2026/10/leaving-tech",
           "source": "Hacker News",
-          "score": 3.98,
+          "score": 4.01,
           "reasons": [
-            "HN分数215",
-            "讨论量46"
+            "HN分数102",
+            "讨论量78"
           ],
-          "published": "2026-10-11T22:33:30+00:00"
+          "published": "2026-10-13T02:39:35+00:00"
         },
         {
-          "title": "Fingerprints are the new cookies",
-          "summary": "You're protected from the methods I use here. You disabled JavaScript, so this fingerprinting trick can't run at all. You're still vulnerable to network-based methods. Read on to see what it does to everyone else.",
-          "titleZh": "指纹识别成了新的 Cookie",
-          "summaryZh": "你不会受到我在此使用的方法影响。你禁用了 JavaScript，因此这个指纹识别技巧完全无法运行。不过，你仍容易受到基于网络的追踪方法影响。继续阅读，看看它会如何影响其他人。",
-          "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+          "title": "Blood cells from 80-year-old donor become stem cells with molecular age under 20",
+          "summary": "Comments",
+          "titleZh": "80 岁捐献者的血细胞变成干细胞，分子年龄不到 20 岁",
+          "summaryZh": "评论",
+          "url": "https://doi.org/10.1111/acel.70751",
           "source": "Hacker News",
-          "score": 3.91,
+          "score": 3.94,
           "reasons": [
-            "HN分数141",
-            "讨论量55"
+            "HN分数116",
+            "讨论量72"
           ],
-          "published": "2026-10-11T22:33:39+00:00"
+          "published": "2026-10-12T23:34:22+00:00"
         },
         {
-          "title": "So, You’d Like To Sell Your Print Issues Of The Onion?",
-          "summary": "So, You’d Like To Sell Your Print Issues Of The Onion. If you are here, you are either simply a curious person or you believe you might have something of interest to us. If you are the former, stay curious! If you are th…",
-          "titleZh": "想出售手头的《洋葱报》印刷版？请看这里",
-          "summaryZh": "想出售手头的《洋葱报》印刷版？如果你来到这里，要么只是出于好奇，要么觉得自己可能有我们感兴趣的东西。如果你只是好奇，那就继续保持好奇！如果你是……",
-          "url": "https://theonion.com/archivehunt/",
+          "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+          "summary": "Contribute to h0m3us3r/w1700k-sdr development by creating an account on GitHub.",
+          "titleZh": "将 WiFi 7 路由器改造成 320 Msps 软件无线电接收器",
+          "summaryZh": "在 GitHub 上创建账户，为 h0m3us3r/w1700k-sdr 项目贡献代码。",
+          "url": "https://github.com/h0m3us3r/w1700k-sdr",
           "source": "Hacker News",
-          "score": 3.9,
+          "score": 3.87,
           "reasons": [
-            "HN分数268",
-            "讨论量36"
+            "HN分数286",
+            "讨论量74"
           ],
-          "published": "2026-10-11T19:43:32+00:00"
+          "published": "2026-10-12T12:41:58+00:00"
         }
       ]
     },
@@ -126,106 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "Meta releases its first frontier model, Muse Wonder",
+          "summary": "Where Muse Spark aimed to be a lightweight model that could perform at low latency, the Wonder models are larger and said to be more capable, with higher benchmark scores and better results on complex tasks like coding.",
+          "titleZh": "Meta 发布首款前沿模型 Muse Wonder",
+          "summaryZh": "Muse Spark 旨在成为一款延迟低、运行轻量的模型；据称，规模更大的 Wonder 系列能力更强，在基准测试中得分更高，在编程等复杂任务上表现也更好。",
+          "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+          "source": "TechCrunch",
+          "score": 4.33,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-12T17:56:56+00:00"
+        },
+        {
+          "title": "WindBorne wins a hefty US Air Force contract for its balloon data",
+          "summary": "A Silicon Valley startup that uses weather balloons and AI to predict the weather won a U.S. military contract worth almost $50 million.",
+          "titleZh": "WindBorne 凭气球数据拿下美国空军一份金额可观的合同",
+          "summaryZh": "这家硅谷初创公司利用气象气球和人工智能预测天气，赢得了一份价值近 5000 万美元的美国军方合同。",
+          "url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+          "source": "TechCrunch",
+          "score": 4.32,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-12T17:19:14+00:00"
+        },
+        {
+          "title": "Honeyjar offers AI tools to improve PR and comms at every company",
+          "summary": "Journalists, entrepreneurs, and even some public relations professionals will tell you that the PR process is broken. But could AI actually make things better?",
+          "titleZh": "Honeyjar 推出 AI 工具，助力各家公司改进公关与传播",
+          "summaryZh": "记者、企业家，甚至一些公关从业者都会告诉你，公关流程存在问题。但人工智能真的能让情况变好吗？",
+          "url": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+          "source": "TechCrunch",
+          "score": 4.27,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-12T15:45:00+00:00"
+        },
+        {
+          "title": "Microsoft president says UK is best placed to drive AI regulation",
+          "summary": "Microsoft president Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
+          "titleZh": "微软总裁称英国最有条件推动 AI 监管",
+          "summaryZh": "微软总裁布拉德·史密斯呼吁尽快监管人工智能，并表示牛奶和洗衣机受到的监管都比 AI 公司更严格。",
+          "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+          "source": "TechCrunch",
+          "score": 4.27,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-12T15:31:19+00:00"
+        },
+        {
+          "title": "This AI startup says it can generate permit-ready blueprints in minutes",
+          "summary": "Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch.",
+          "titleZh": "这家 AI 初创公司称，几分钟内就能生成符合许可要求的蓝图",
+          "summaryZh": "总部位于圣莫尼卡、由创始人自筹资金的初创公司 Blueprints AI 开发了一款软件，可根据照片、PDF 或草图生成符合建筑规范的施工蓝图。",
+          "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+          "source": "TechCrunch",
+          "score": 4.26,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-12T15:27:59+00:00"
+        },
+        {
+          "title": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
+          "summary": "Tomorrow at 8 a.m. PT, it all begins z— 10,000+ founders, investors, and tech operators will gather at San Francisco’s Moscone West for TechCrunch Disrupt 2026 for three days of ideas, connections, and startups shaping w…",
+          "titleZh": "TechCrunch Disrupt 2026 明日开幕：购票最高省 100 美元的最后机会",
+          "summaryZh": "明天太平洋时间上午 8 点，活动即将开始——超过 1 万名创始人、投资者和科技行业从业者将齐聚旧金山 Moscone West，参加为期三天的 TechCrunch Disrupt 2026，交流创意、建立联系，探索塑造未来的初创公司……",
+          "url": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
+          "source": "TechCrunch",
+          "score": 4.22,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-12T14:00:00+00:00"
+        },
+        {
+          "title": "Former Plaud exec raises $26M for AI app that listens to you in the background",
+          "summary": "One of the core promises of AI is that the more it knows about a person, the better it will be able to assist them with tasks and make appropriate suggestions, which, if you'll believe the tech companies, requires apps a…",
+          "titleZh": "Plaud 前高管为一款可在后台持续聆听的 AI 应用融资 2600 万美元",
+          "summaryZh": "人工智能的一项核心承诺是：越了解一个人，就越能协助其完成任务并提出合适建议。若相信科技公司的说法，这就需要应用程序……",
+          "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+          "source": "TechCrunch",
+          "score": 4.19,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-12T12:47:59+00:00"
+        },
+        {
           "title": "The founder’s guide to TechCrunch Disrupt 2026: Everything you need to know",
           "summary": "TechCrunch Disrupt 2026 is built around one question: How do you build an enduring company in the AI era? Our programming and speaker lineup reflect that.",
           "titleZh": "创始人必读：TechCrunch Disrupt 2026 全面指南",
           "summaryZh": "TechCrunch Disrupt 2026 围绕一个问题展开：如何在 AI 时代打造一家经久不衰的公司？活动议程和演讲嘉宾阵容都体现了这一主题。",
           "url": "https://techcrunch.com/2026/10/11/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/",
           "source": "TechCrunch",
-          "score": 4.53,
+          "score": 3.86,
           "reasons": [
             "AI"
           ],
           "published": "2026-10-12T00:59:01+00:00"
-        },
-        {
-          "title": "Will the HomeView be Apple’s first smart home success?",
-          "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.",
-          "titleZh": "HomeView 会成为苹果首款成功的智能家居产品吗？",
-          "summaryZh": "过去几年里，多份报道都提到苹果正在开发一款新的智能家居产品；如今，这款产品似乎已有了名称和发布日期。",
-          "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-          "source": "TechCrunch",
-          "score": 4.43,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-11T21:14:40+00:00"
-        },
-        {
-          "title": "48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next",
-          "summary": "Less than 48 hours, TechCrunch Disrupt 2026 starts in San Francisco’s Moscone West. Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass. Or score other deals.",
-          "titleZh": "距离 TechCrunch Disrupt 2026 仅剩 48 小时：直面下一波创新的建设者",
-          "summaryZh": "不到 48 小时后，TechCrunch Disrupt 2026 就将在旧金山莫斯康西中心西馆开幕。趁现场票价上涨前购票，最高可省 100 美元；第二张票还可享五折优惠。另有其他优惠可选。",
-          "url": "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/",
-          "source": "TechCrunch",
-          "score": 4.36,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-11T19:00:00+00:00"
-        },
-        {
-          "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
-          "summary": "On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.",
-          "titleZh": "取消保密协议，能否说服反对数据中心的民众支持 AI 行业？",
-          "summaryZh": "在《Equity》节目中，我们讨论了数据中心暂停令的影响，以及 AI 行业是否存在沟通问题。",
-          "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
-          "source": "TechCrunch",
-          "score": 4.3,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-11T16:52:33+00:00"
-        },
-        {
-          "title": "TechCrunch Mobility: A roadblock clears for self-driving trucks",
-          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-          "titleZh": "TechCrunch Mobility：自动驾驶卡车扫清一道障碍",
-          "summaryZh": "欢迎回到 TechCrunch Mobility——这里聚焦交通运输的未来，而如今更关注 AI 在其中扮演的角色。",
-          "url": "https://techcrunch.com/2026/10/11/techcrunch-mobility-a-roadblock-clears-for-self-driving-trucks/",
-          "source": "TechCrunch",
-          "score": 4.28,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-11T16:02:00+00:00"
-        },
-        {
-          "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-          "summary": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
-          "titleZh": "这些高管认为，语音 AI 尚未迎来自己的 ChatGPT 时刻",
-          "summaryZh": "语音 AI 常常无法抓住上下文层的重要信息，导致整个处理流程中断。",
-          "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
-          "source": "TechCrunch",
-          "score": 4.22,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-11T14:00:00+00:00"
-        },
-        {
-          "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
-          "summary": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
-          "titleZh": "微软 CEO 萨提亚·纳德拉称 AI 模型需要“紧急制动”机制",
-          "summaryZh": "微软 CEO 在周六早上的一篇帖子中写道，现在是时候“退一步，评估信任架构”了。",
-          "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-          "source": "TechCrunch",
-          "score": 3.77,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-10T21:47:51+00:00"
-        },
-        {
-          "title": "Aaron Sorkin’s ‘Social Reckoning’ is off to a weak start",
-          "summary": "What does this mean for a fall full of movies starring villainous tech CEOs?",
-          "titleZh": "艾伦·索金的《社交网络之战》开局不利",
-          "summaryZh": "这对一系列以邪恶科技 CEO 为主角的秋季电影意味着什么？",
-          "url": "https://techcrunch.com/2026/10/11/aaron-sorkins-social-reckoning-is-off-to-a-weak-start/",
-          "source": "TechCrunch",
-          "score": 1.81,
-          "reasons": [],
-          "published": "2026-10-11T20:51:47+00:00"
         }
       ]
     }
@@ -233,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-12T11:01:32.634521+08:00"
+      "lastRunAt": "2026-10-13T11:01:50.620678+08:00"
     }
   }
 }
