@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T14:30:21+08:00",
-  "date": "2026-10-13",
+  "updatedAt": "2026-10-14T14:30:56+08:00",
+  "date": "2026-10-14",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,9 +11,9 @@
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 45327,
-      "totalStars": 172575,
-      "forks": 41300,
+      "starsToday": 54679,
+      "totalStars": 217623,
+      "forks": 53773,
       "url": "https://github.com/morluto/rea"
     },
     {
@@ -22,54 +22,54 @@
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 1895,
-      "totalStars": 54118,
-      "forks": 10655,
+      "starsToday": 1961,
+      "totalStars": 55818,
+      "forks": 10886,
       "url": "https://github.com/bilawalsidhu/gods-eye-view"
     },
     {
       "rank": 3,
+      "fullName": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 1748,
+      "totalStars": 64130,
+      "forks": 7129,
+      "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+      "rank": 4,
       "fullName": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 246,
-      "totalStars": 27532,
-      "forks": 1956,
+      "starsToday": 969,
+      "totalStars": 28473,
+      "forks": 2007,
       "url": "https://github.com/mksglu/context-mode"
     },
     {
-      "rank": 4,
-      "fullName": "storytold/artcraft",
-      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 4095,
-      "totalStars": 23003,
-      "forks": 3678,
-      "url": "https://github.com/storytold/artcraft"
-    },
-    {
       "rank": 5,
-      "fullName": "open-webui/open-webui",
-      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 157,
-      "totalStars": 155297,
-      "forks": 22662,
-      "url": "https://github.com/open-webui/open-webui"
-    },
-    {
-      "rank": 6,
       "fullName": "cathrynlavery/diagram-design",
       "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
       "languageColor": "#E34C26",
-      "starsToday": 2081,
-      "totalStars": 53030,
-      "forks": 3350,
+      "starsToday": 1815,
+      "totalStars": 54587,
+      "forks": 3453,
       "url": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+      "rank": 6,
+      "fullName": "vercel-labs/skills",
+      "description": "The open agent skills tool - npx skills",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 190,
+      "totalStars": 34704,
+      "forks": 2960,
+      "url": "https://github.com/vercel-labs/skills"
     },
     {
       "rank": 7,
@@ -77,52 +77,40 @@
       "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
       "language": "Jupyter Notebook",
       "languageColor": "#8B949E",
-      "starsToday": 879,
-      "totalStars": 37745,
-      "forks": 3889,
+      "starsToday": 1001,
+      "totalStars": 38480,
+      "forks": 3932,
       "url": "https://github.com/lyogavin/airllm"
     },
     {
       "rank": 8,
-      "fullName": "microsoft/BitNet",
-      "description": "Official inference framework for 1-bit LLMs",
-      "language": "C++",
-      "languageColor": "#F34B7D",
-      "starsToday": 97,
-      "totalStars": 41015,
-      "forks": 3817,
-      "url": "https://github.com/microsoft/BitNet"
+      "fullName": "storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 4081,
+      "totalStars": 26381,
+      "forks": 4125,
+      "url": "https://github.com/storytold/artcraft"
     },
     {
       "rank": 9,
-      "fullName": "Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 626,
-      "totalStars": 59480,
-      "forks": 9352,
-      "url": "https://github.com/Alishahryar1/free-claude-code"
+      "fullName": "xtool-org/xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "starsToday": 1198,
+      "totalStars": 9746,
+      "forks": 410,
+      "url": "https://github.com/xtool-org/xtool"
     }
   ],
   "languages": [
     {
-      "name": "Python",
-      "count": 2,
-      "share": 22,
-      "color": "#3572A5"
-    },
-    {
       "name": "TypeScript",
-      "count": 2,
-      "share": 22,
+      "count": 3,
+      "share": 33,
       "color": "#3178C6"
-    },
-    {
-      "name": "C++",
-      "count": 1,
-      "share": 11,
-      "color": "#F34B7D"
     },
     {
       "name": "HTML",
@@ -143,39 +131,49 @@
       "color": "#8B949E"
     },
     {
+      "name": "Python",
+      "count": 1,
+      "share": 11,
+      "color": "#3572A5"
+    },
+    {
       "name": "Rust",
       "count": 1,
       "share": 11,
       "color": "#DEA584"
+    },
+    {
+      "name": "Swift",
+      "count": 1,
+      "share": 11,
+      "color": "#F05138"
     }
   ],
   "themes": [
     {
-      "name": "AI infrastructure",
-      "count": 5,
-      "repositories": [
-        "mksglu/context-mode",
-        "open-webui/open-webui",
-        "lyogavin/airllm",
-        "microsoft/BitNet"
-      ]
-    },
-    {
       "name": "Agent systems",
-      "count": 3,
+      "count": 4,
       "repositories": [
         "morluto/rea",
         "mksglu/context-mode",
-        "cathrynlavery/diagram-design"
+        "cathrynlavery/diagram-design",
+        "vercel-labs/skills"
+      ]
+    },
+    {
+      "name": "AI infrastructure",
+      "count": 2,
+      "repositories": [
+        "mksglu/context-mode",
+        "lyogavin/airllm"
       ]
     },
     {
       "name": "Developer tools",
-      "count": 3,
+      "count": 2,
       "repositories": [
         "mksglu/context-mode",
-        "cathrynlavery/diagram-design",
-        "Alishahryar1/free-claude-code"
+        "cathrynlavery/diagram-design"
       ]
     }
   ]
