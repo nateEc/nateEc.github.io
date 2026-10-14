@@ -1,124 +1,126 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-13T11:31:54+08:00",
-  "date": "2026-10-13",
+  "updatedAt": "2026-10-14T11:31:04+08:00",
+  "date": "2026-10-14",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
-          "summary": "Comments",
-          "titleZh": "英特尔 D270 GPU AI 加速器——最高支持 480 GB LPDDR5X",
-          "summaryZh": "评论",
-          "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+          "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+          "summary": "For the past few years, I've been working on sprinklz.io , a customizable feed reader that can, among other things, deprioritize certain topics from your news feed.",
+          "titleZh": "我在 HN 发帖后，网站涌入了大量 AI 机器人流量",
+          "summaryZh": "过去几年，我一直在开发 sprinklz.io——一款可自定义的订阅源阅读器，其中一项功能是降低某些主题在新闻订阅源中的优先级。",
+          "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
           "source": "Hacker News",
-          "score": 6.35,
+          "score": 6.68,
           "reasons": [
             "AI",
-            "HN分数103",
-            "讨论量43"
+            "HN分数274",
+            "讨论量154"
           ],
-          "published": "2026-10-12T21:35:35+00:00"
+          "published": "2026-10-13T15:25:50+00:00"
         },
         {
-          "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
-          "summary": "France, Belgium, and the Netherlands are reportedly affected.",
-          "titleZh": "黑客启动自动除霜功能，欧洲各地超市冰柜受影响",
-          "summaryZh": "据报道，法国、比利时和荷兰均受到影响。",
-          "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+          "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+          "summary": "A budgeting app with AI on your own machine. Your ledger and your questions both stay on disk. The models download once, then nothing about you leaves.",
+          "titleZh": "Show HN：Pulse Local，一款 AI 模型在本机运行的 Mac 记账应用",
+          "summaryZh": "一款让 AI 在你自己的设备上运行的记账应用。账本和你的提问都保留在本地磁盘。模型只需下载一次，此后你的任何信息都不会离开设备。",
+          "url": "https://pulseos.finance",
           "source": "Hacker News",
-          "score": 4.43,
+          "score": 6.31,
           "reasons": [
-            "HN分数489",
-            "讨论量690"
+            "AI",
+            "HN分数78",
+            "讨论量38"
           ],
-          "published": "2026-10-12T12:16:42+00:00"
+          "published": "2026-10-13T23:13:23+00:00"
         },
         {
-          "title": "GLM-Legal",
-          "summary": "Comments",
-          "titleZh": "GLM-Legal",
-          "summaryZh": "评论",
-          "url": "https://z.ai/blog/glm-legal",
+          "title": "I built a tool to track what AI leaders say and how their views change on video",
+          "summary": "Interviews, podcasts and talks from Sam Altman, Dario Amodei, Jensen Huang and other AI leaders, found every day, with AI summaries of what they said and checked quotes.",
+          "titleZh": "我开发了一款工具，可追踪 AI 领袖在视频中的言论及其观点变化",
+          "summaryZh": "每天搜集 Sam Altman、Dario Amodei、Jensen Huang 等 AI 领袖的访谈、播客和演讲，并用 AI 总结其言论、核对引述内容。",
+          "url": "https://blumify.io/people",
           "source": "Hacker News",
-          "score": 4.34,
+          "score": 5.86,
           "reasons": [
-            "HN分数470",
-            "讨论量262"
+            "AI",
+            "HN分数22",
+            "讨论量14"
           ],
-          "published": "2026-10-12T16:11:45+00:00"
+          "published": "2026-10-14T01:09:13+00:00"
         },
         {
-          "title": "A Modern Web App in C",
-          "summary": "A modern web app written in c and served the old way: CGI, SQLite and a single binary. No frameworks, no containers and no regrets.",
-          "titleZh": "用 C 语言构建现代 Web 应用",
-          "summaryZh": "一个用 C 语言编写、以传统方式提供服务的现代 Web 应用：采用 CGI、SQLite 和单个二进制文件。不用框架、不用容器，也不留遗憾。",
-          "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+          "title": "Gemini 4 Argon",
+          "summary": "\b\u0000\u0000\u0000\u0000\u0000\u0002m{ƒ~?\u0005Fs\b\u0014\u0001>X 'Ή8qd4\u0010 \u0007\u0013dy ~_o?W\u0003$HQh) \u0004FwuuUuuuuӳq}}z$JN ׉ߝ\u000e~g럞ӿo$\u001av!QA 0q: qi \u0002&x=\u001aѴ&([B ,A]\u0017\u0011E>Ӯ\u0010s\u0006\u0018f\u000f4uʝV\\5o\u0016w$z,Ɲ*μ}I M?=;»N'{\u000f {\u0019 \u0014h\u0018%g\bOa\u0014+Z\u0014`]d\u001au\u0007Ѝ'k,gtv\u0014vjLd/O \u0003%df\u000fp f\\~x6l < \u0006Yz360s`\u0013 GqȆd\u00181H\u0019zTez…",
+          "titleZh": "Gemini 4 Argon 模型",
+          "summaryZh": "摘要原文为乱码，无法辨认。",
+          "url": "https://deepmind.google/models/gemini/",
           "source": "Hacker News",
-          "score": 4.24,
+          "score": 4.77,
           "reasons": [
-            "HN分数429",
-            "讨论量176"
+            "HN分数1086",
+            "讨论量798"
           ],
-          "published": "2026-10-12T16:13:10+00:00"
+          "published": "2026-10-13T16:03:16+00:00"
         },
         {
-          "title": "Citroen revives the 2CV for an electric age",
-          "summary": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals.",
-          "titleZh": "雪铁龙让 2CV 经典车型焕发电动时代新生",
-          "summaryZh": "随着车企面临来自中国竞争对手的压力，这家法国公司正重新打造这一经典车型。",
-          "url": "https://www.bbc.com/news/articles/c620r33plgppo",
+          "title": "PostEra (YC W20) Is Hiring AI Researchers for Drug Discovery",
+          "summary": "Role Overview In this role, you will develop the agentic research vertical at PostEra, using agentic systems to automate the development of mechanistic models for biochemical and physiological processes, and analyse biol…",
+          "titleZh": "PostEra（YC W20）招聘药物发现领域的 AI 研究员",
+          "summaryZh": "职位概述：你将负责在 PostEra 开发智能体研究方向，利用智能体系统自动构建生化和生理过程的机制模型，并分析生物……",
+          "url": "https://jobs.lever.co/postera/c7d50a36-db0a-4574-bfe4-8700b74a22c0",
           "source": "Hacker News",
-          "score": 4.14,
+          "score": 4.59,
           "reasons": [
-            "HN分数278",
-            "讨论量326"
+            "AI",
+            "HN分数1"
           ],
-          "published": "2026-10-12T12:09:09+00:00"
+          "published": "2026-10-13T21:01:12+00:00"
         },
         {
-          "title": "Leaving Tech",
-          "summary": "Leaving Tech",
-          "titleZh": "离开科技行业",
-          "summaryZh": "离开科技行业",
-          "url": "https://ryanbigg.com/2026/10/leaving-tech",
+          "title": "Apple HomeView",
+          "summary": "Apple HomeView is a smart display with Siri AI, Liquid Retina display, high-fidelity audio, FaceTime, smart home controls, built-in privacy, and more.",
+          "titleZh": "Apple HomeView 智能显示屏",
+          "summaryZh": "Apple HomeView 是一款智能显示屏，配备 Siri AI、Liquid Retina 显示屏、高保真音频、FaceTime、智能家居控制功能和内置隐私保护等。",
+          "url": "https://www.apple.com/apple-homeview/",
           "source": "Hacker News",
-          "score": 4.01,
+          "score": 4.57,
           "reasons": [
-            "HN分数102",
-            "讨论量78"
+            "HN分数693",
+            "讨论量805"
           ],
-          "published": "2026-10-13T02:39:35+00:00"
+          "published": "2026-10-13T13:02:12+00:00"
         },
         {
-          "title": "Blood cells from 80-year-old donor become stem cells with molecular age under 20",
-          "summary": "Comments",
-          "titleZh": "80 岁捐献者的血细胞变成干细胞，分子年龄不到 20 岁",
-          "summaryZh": "评论",
-          "url": "https://doi.org/10.1111/acel.70751",
+          "title": "Redesigning source control at Anthropic",
+          "summary": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
+          "titleZh": "Anthropic 如何重新设计源代码管理",
+          "summaryZh": "随着每日合并次数增长到原来的十倍以上，源代码管理成了我们最大的开发瓶颈。本文分享我们如何在五个月内迁移到自研版本控制系统。",
+          "url": "https://www.anthropic.com/engineering/redesigning-source-control",
           "source": "Hacker News",
-          "score": 3.94,
+          "score": 4.54,
           "reasons": [
-            "HN分数116",
-            "讨论量72"
+            "HN分数592",
+            "讨论量565"
           ],
-          "published": "2026-10-12T23:34:22+00:00"
+          "published": "2026-10-13T15:49:56+00:00"
         },
         {
-          "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
-          "summary": "Contribute to h0m3us3r/w1700k-sdr development by creating an account on GitHub.",
-          "titleZh": "将 WiFi 7 路由器改造成 320 Msps 软件无线电接收器",
-          "summaryZh": "在 GitHub 上创建账户，为 h0m3us3r/w1700k-sdr 项目贡献代码。",
-          "url": "https://github.com/h0m3us3r/w1700k-sdr",
+          "title": "New Apple TV 4K",
+          "summary": "Apple today announced the next generation of Apple TV 4K, delivering its most immersive home theater experience yet.",
+          "titleZh": "全新 Apple TV 4K",
+          "summaryZh": "Apple 今日发布新一代 Apple TV 4K，带来迄今沉浸感最强的家庭影院体验。",
+          "url": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
           "source": "Hacker News",
-          "score": 3.87,
+          "score": 4.31,
           "reasons": [
-            "HN分数286",
-            "讨论量74"
+            "HN分数309",
+            "讨论量566"
           ],
-          "published": "2026-10-12T12:41:58+00:00"
+          "published": "2026-10-13T13:21:35+00:00"
         }
       ]
     },
@@ -127,108 +129,102 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Meta releases its first frontier model, Muse Wonder",
-          "summary": "Where Muse Spark aimed to be a lightweight model that could perform at low latency, the Wonder models are larger and said to be more capable, with higher benchmark scores and better results on complex tasks like coding.",
-          "titleZh": "Meta 发布首款前沿模型 Muse Wonder",
-          "summaryZh": "Muse Spark 旨在成为一款延迟低、运行轻量的模型；据称，规模更大的 Wonder 系列能力更强，在基准测试中得分更高，在编程等复杂任务上表现也更好。",
-          "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+          "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
+          "summary": "Max Hodak, the former president and co-founder of Neuralink, detailed on stage at TechCrunch Disrupt how his company's work with PRIMA is part of its path toward a novel brain-computer interface (BCI).",
+          "titleZh": "Science Corporation 为首位 Stargardt 病患者植入视力恢复芯片",
+          "summaryZh": "Neuralink 前总裁兼联合创始人 Max Hodak 在 TechCrunch Disrupt 现场详述了其公司与 PRIMA 的合作，以及这项工作如何推动一种新型脑机接口（BCI）的研发。",
+          "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
           "source": "TechCrunch",
-          "score": 4.33,
+          "score": 4.48,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-12T17:56:56+00:00"
+          "published": "2026-10-13T23:13:31+00:00"
         },
         {
-          "title": "WindBorne wins a hefty US Air Force contract for its balloon data",
-          "summary": "A Silicon Valley startup that uses weather balloons and AI to predict the weather won a U.S. military contract worth almost $50 million.",
-          "titleZh": "WindBorne 凭气球数据拿下美国空军一份金额可观的合同",
-          "summaryZh": "这家硅谷初创公司利用气象气球和人工智能预测天气，赢得了一份价值近 5000 万美元的美国军方合同。",
-          "url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+          "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
+          "summary": "Cerebras CEO Andrew Feldman predicts a future where personal AI assistants become as commonplace as household appliances, running partly on local devices and partly in the cloud.",
+          "titleZh": "Cerebras 首席执行官称，人人都将在家拥有 AI 助手的时代即将到来",
+          "summaryZh": "Cerebras 首席执行官 Andrew Feldman 预测，个人 AI 助手将像家用电器一样普及，部分运行在本地设备上，部分运行在云端。",
+          "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
           "source": "TechCrunch",
-          "score": 4.32,
+          "score": 4.48,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-12T17:19:14+00:00"
+          "published": "2026-10-13T23:05:34+00:00"
         },
         {
-          "title": "Honeyjar offers AI tools to improve PR and comms at every company",
-          "summary": "Journalists, entrepreneurs, and even some public relations professionals will tell you that the PR process is broken. But could AI actually make things better?",
-          "titleZh": "Honeyjar 推出 AI 工具，助力各家公司改进公关与传播",
-          "summaryZh": "记者、企业家，甚至一些公关从业者都会告诉你，公关流程存在问题。但人工智能真的能让情况变好吗？",
-          "url": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+          "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
+          "summary": "Industrial Next helps manufacturers automate complex, delicate tasks that have traditionally required human labor.",
+          "titleZh": "Industrial Next 希望工厂机器人切换任务只需几分钟，而非几周",
+          "summaryZh": "Industrial Next 帮助制造商将复杂、精细且传统上需要人工完成的任务自动化。",
+          "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
           "source": "TechCrunch",
-          "score": 4.27,
+          "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-12T15:45:00+00:00"
+          "published": "2026-10-13T23:00:00+00:00"
         },
         {
-          "title": "Microsoft president says UK is best placed to drive AI regulation",
-          "summary": "Microsoft president Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
-          "titleZh": "微软总裁称英国最有条件推动 AI 监管",
-          "summaryZh": "微软总裁布拉德·史密斯呼吁尽快监管人工智能，并表示牛奶和洗衣机受到的监管都比 AI 公司更严格。",
-          "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+          "title": "Cerebras CEO pushes back on AI doomsday warnings",
+          "summary": "Cerebras CEO Andrew Feldman has a message for AI leaders spreading doomsday warnings: Maybe stop talking? At TechCrunch Disrupt, he argued that the industry's focus on AI's risks is drowning out its potential benefits.",
+          "titleZh": "Cerebras 首席执行官反驳 AI 末日警告",
+          "summaryZh": "Cerebras 首席执行官 Andrew Feldman 向散布 AI 末日警告的业界领袖喊话：或许该少谈一些？他在 TechCrunch Disrupt 上表示，业界过度聚焦 AI 风险，掩盖了其潜在益处。",
+          "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
           "source": "TechCrunch",
-          "score": 4.27,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-12T15:31:19+00:00"
+          "published": "2026-10-13T22:36:59+00:00"
         },
         {
-          "title": "This AI startup says it can generate permit-ready blueprints in minutes",
-          "summary": "Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch.",
-          "titleZh": "这家 AI 初创公司称，几分钟内就能生成符合许可要求的蓝图",
-          "summaryZh": "总部位于圣莫尼卡、由创始人自筹资金的初创公司 Blueprints AI 开发了一款软件，可根据照片、PDF 或草图生成符合建筑规范的施工蓝图。",
-          "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+          "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+          "summary": "A federal judge ruled that Apple can access OpenAI's interview materials involving former Apple employees, as well as private messages and testimony from key figures in the case.",
+          "titleZh": "法官下令 OpenAI 在 Apple 商业机密案中提交招聘记录",
+          "summaryZh": "联邦法官裁定，Apple 可以查阅 OpenAI 涉及前 Apple 员工的面试材料，以及案件关键人物的私人消息和证词。",
+          "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
           "source": "TechCrunch",
-          "score": 4.26,
+          "score": 4.41,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-12T15:27:59+00:00"
+          "published": "2026-10-13T20:36:44+00:00"
         },
         {
-          "title": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
-          "summary": "Tomorrow at 8 a.m. PT, it all begins z— 10,000+ founders, investors, and tech operators will gather at San Francisco’s Moscone West for TechCrunch Disrupt 2026 for three days of ideas, connections, and startups shaping w…",
-          "titleZh": "TechCrunch Disrupt 2026 明日开幕：购票最高省 100 美元的最后机会",
-          "summaryZh": "明天太平洋时间上午 8 点，活动即将开始——超过 1 万名创始人、投资者和科技行业从业者将齐聚旧金山 Moscone West，参加为期三天的 TechCrunch Disrupt 2026，交流创意、建立联系，探索塑造未来的初创公司……",
-          "url": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
+          "title": "Justice Department says North Koreans have infiltrated dozens of U.S. companies",
+          "summary": "U.S. authorities warn that sanctioned hackers are increasingly targeting Americans to act as facilitators between breached U.S. companies and Pyongyang.",
+          "titleZh": "美国司法部称朝鲜人已渗透数十家美国公司",
+          "summaryZh": "美国当局警告，受制裁的黑客正日益将美国人作为中间人，协助遭入侵的美国公司与平壤方面联络。",
+          "url": "https://techcrunch.com/2026/10/13/justice-department-says-north-koreans-have-infiltrated-dozens-of-u-s-companies/",
           "source": "TechCrunch",
-          "score": 4.22,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-12T14:00:00+00:00"
+          "score": 1.95,
+          "reasons": [],
+          "published": "2026-10-14T01:30:42+00:00"
         },
         {
-          "title": "Former Plaud exec raises $26M for AI app that listens to you in the background",
-          "summary": "One of the core promises of AI is that the more it knows about a person, the better it will be able to assist them with tasks and make appropriate suggestions, which, if you'll believe the tech companies, requires apps a…",
-          "titleZh": "Plaud 前高管为一款可在后台持续聆听的 AI 应用融资 2600 万美元",
-          "summaryZh": "人工智能的一项核心承诺是：越了解一个人，就越能协助其完成任务并提出合适建议。若相信科技公司的说法，这就需要应用程序……",
-          "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+          "title": "Helix Carbon says it can make iron cheaper by recycling blast furnace pollution",
+          "summary": "The steel industry is a big polluter, but Helix Carbon can upcycle pollution from blast furnaces to drive down emissions and improve margins.",
+          "titleZh": "Helix Carbon 称可通过回收高炉污染物降低炼铁成本",
+          "summaryZh": "钢铁行业是主要污染源，但 Helix Carbon 可将高炉污染物升级再利用，从而减少排放并提高利润率。",
+          "url": "https://techcrunch.com/2026/10/13/helix-carbon-makes-iron-cheaper-by-upcycling-blast-furnace-pollution-see-how-at-techcrunch-disrupt/",
           "source": "TechCrunch",
-          "score": 4.19,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-12T12:47:59+00:00"
+          "score": 1.83,
+          "reasons": [],
+          "published": "2026-10-13T21:15:00+00:00"
         },
         {
-          "title": "The founder’s guide to TechCrunch Disrupt 2026: Everything you need to know",
-          "summary": "TechCrunch Disrupt 2026 is built around one question: How do you build an enduring company in the AI era? Our programming and speaker lineup reflect that.",
-          "titleZh": "创始人必读：TechCrunch Disrupt 2026 全面指南",
-          "summaryZh": "TechCrunch Disrupt 2026 围绕一个问题展开：如何在 AI 时代打造一家经久不衰的公司？活动议程和演讲嘉宾阵容都体现了这一主题。",
-          "url": "https://techcrunch.com/2026/10/11/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/",
+          "title": "FBI arrests OpenAI employee accused of planting hidden recording device in conference room",
+          "summary": "It's not clear exactly for what purpose the recording device was used, but FBI director Kash Patel said the scheme was to \"capture sensitive communications about the company’s super intelligence technology.\"",
+          "titleZh": "FBI 逮捕一名被指在会议室放置隐藏录音设备的 OpenAI 员工",
+          "summaryZh": "目前尚不清楚该录音设备的具体用途，但 FBI 局长 Kash Patel 表示，此举意在“窃取有关该公司超级智能技术的敏感通信内容”。",
+          "url": "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/",
           "source": "TechCrunch",
-          "score": 3.86,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-12T00:59:01+00:00"
+          "score": 1.82,
+          "reasons": [],
+          "published": "2026-10-13T20:59:11+00:00"
         }
       ]
     }
@@ -236,7 +232,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-13T11:01:50.620678+08:00"
+      "lastRunAt": "2026-10-14T11:01:22.368033+08:00"
     }
   }
 }
