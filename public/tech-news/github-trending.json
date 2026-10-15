@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T14:30:56+08:00",
-  "date": "2026-10-14",
+  "updatedAt": "2026-10-15T14:30:20+08:00",
+  "date": "2026-10-15",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,169 +11,177 @@
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 54679,
-      "totalStars": 217623,
-      "forks": 53773,
+      "starsToday": 41034,
+      "totalStars": 250577,
+      "forks": 62935,
       "url": "https://github.com/morluto/rea"
     },
     {
       "rank": 2,
-      "fullName": "bilawalsidhu/gods-eye-view",
-      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 1961,
-      "totalStars": 55818,
-      "forks": 10886,
-      "url": "https://github.com/bilawalsidhu/gods-eye-view"
-    },
-    {
-      "rank": 3,
       "fullName": "debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 1748,
-      "totalStars": 64130,
-      "forks": 7129,
+      "starsToday": 3538,
+      "totalStars": 67131,
+      "forks": 7379,
       "url": "https://github.com/debpalash/VoiceStudio"
     },
     {
-      "rank": 4,
+      "rank": 3,
       "fullName": "mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 969,
-      "totalStars": 28473,
-      "forks": 2007,
+      "starsToday": 947,
+      "totalStars": 29354,
+      "forks": 2056,
       "url": "https://github.com/mksglu/context-mode"
     },
     {
+      "rank": 4,
+      "fullName": "nvm-sh/nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 52,
+      "totalStars": 95497,
+      "forks": 10523,
+      "url": "https://github.com/nvm-sh/nvm"
+    },
+    {
       "rank": 5,
-      "fullName": "cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "languageColor": "#E34C26",
-      "starsToday": 1815,
-      "totalStars": 54587,
-      "forks": 3453,
-      "url": "https://github.com/cathrynlavery/diagram-design"
+      "fullName": "K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code,",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 163,
+      "totalStars": 49633,
+      "forks": 4440,
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
     },
     {
       "rank": 6,
-      "fullName": "vercel-labs/skills",
-      "description": "The open agent skills tool - npx skills",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 190,
-      "totalStars": 34704,
-      "forks": 2960,
-      "url": "https://github.com/vercel-labs/skills"
+      "fullName": "HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 103,
+      "totalStars": 52720,
+      "forks": 4784,
+      "url": "https://github.com/HKUDS/CLI-Anything"
     },
     {
       "rank": 7,
-      "fullName": "lyogavin/airllm",
-      "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
-      "language": "Jupyter Notebook",
-      "languageColor": "#8B949E",
-      "starsToday": 1001,
-      "totalStars": 38480,
-      "forks": 3932,
-      "url": "https://github.com/lyogavin/airllm"
+      "fullName": "ifixai-ai/iFixAi",
+      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 2109,
+      "totalStars": 27820,
+      "forks": 1518,
+      "url": "https://github.com/ifixai-ai/iFixAi"
     },
     {
       "rank": 8,
-      "fullName": "storytold/artcraft",
-      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 4081,
-      "totalStars": 26381,
-      "forks": 4125,
-      "url": "https://github.com/storytold/artcraft"
+      "fullName": "vxcontrol/pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 1025,
+      "totalStars": 29903,
+      "forks": 4484,
+      "url": "https://github.com/vxcontrol/pentagi"
     },
     {
       "rank": 9,
+      "fullName": "rust-lang/rust",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 207,
+      "totalStars": 120162,
+      "forks": 18708,
+      "url": "https://github.com/rust-lang/rust"
+    },
+    {
+      "rank": 10,
       "fullName": "xtool-org/xtool",
       "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
       "language": "Swift",
       "languageColor": "#F05138",
-      "starsToday": 1198,
-      "totalStars": 9746,
-      "forks": 410,
+      "starsToday": 1502,
+      "totalStars": 11151,
+      "forks": 511,
       "url": "https://github.com/xtool-org/xtool"
     }
   ],
   "languages": [
     {
+      "name": "Python",
+      "count": 4,
+      "share": 40,
+      "color": "#3572A5"
+    },
+    {
       "name": "TypeScript",
-      "count": 3,
-      "share": 33,
+      "count": 2,
+      "share": 20,
       "color": "#3178C6"
     },
     {
-      "name": "HTML",
+      "name": "Go",
       "count": 1,
-      "share": 11,
-      "color": "#E34C26"
-    },
-    {
-      "name": "JavaScript",
-      "count": 1,
-      "share": 11,
-      "color": "#F1E05A"
-    },
-    {
-      "name": "Jupyter Notebook",
-      "count": 1,
-      "share": 11,
-      "color": "#8B949E"
-    },
-    {
-      "name": "Python",
-      "count": 1,
-      "share": 11,
-      "color": "#3572A5"
+      "share": 10,
+      "color": "#00ADD8"
     },
     {
       "name": "Rust",
       "count": 1,
-      "share": 11,
+      "share": 10,
       "color": "#DEA584"
+    },
+    {
+      "name": "Shell",
+      "count": 1,
+      "share": 10,
+      "color": "#89E051"
     },
     {
       "name": "Swift",
       "count": 1,
-      "share": 11,
+      "share": 10,
       "color": "#F05138"
     }
   ],
   "themes": [
     {
       "name": "Agent systems",
-      "count": 4,
+      "count": 6,
       "repositories": [
         "morluto/rea",
         "mksglu/context-mode",
-        "cathrynlavery/diagram-design",
-        "vercel-labs/skills"
+        "K-Dense-AI/scientific-agent-skills",
+        "HKUDS/CLI-Anything"
       ]
     },
     {
       "name": "AI infrastructure",
-      "count": 2,
+      "count": 4,
       "repositories": [
         "mksglu/context-mode",
-        "lyogavin/airllm"
+        "K-Dense-AI/scientific-agent-skills",
+        "ifixai-ai/iFixAi",
+        "vxcontrol/pentagi"
       ]
     },
     {
       "name": "Developer tools",
-      "count": 2,
+      "count": 3,
       "repositories": [
         "mksglu/context-mode",
-        "cathrynlavery/diagram-design"
+        "K-Dense-AI/scientific-agent-skills",
+        "HKUDS/CLI-Anything"
       ]
     }
   ]
