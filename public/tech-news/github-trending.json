@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T14:30:20+08:00",
-  "date": "2026-10-15",
+  "updatedAt": "2026-10-16T14:30:55+08:00",
+  "date": "2026-10-16",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,122 +11,122 @@
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 41034,
-      "totalStars": 250577,
-      "forks": 62935,
+      "starsToday": 32314,
+      "totalStars": 276950,
+      "forks": 69788,
       "url": "https://github.com/morluto/rea"
     },
     {
       "rank": 2,
-      "fullName": "debpalash/VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "fullName": "anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 3538,
-      "totalStars": 67131,
-      "forks": 7379,
-      "url": "https://github.com/debpalash/VoiceStudio"
+      "starsToday": 307,
+      "totalStars": 39440,
+      "forks": 4348,
+      "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "rank": 3,
-      "fullName": "mksglu/context-mode",
-      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 947,
-      "totalStars": 29354,
-      "forks": 2056,
-      "url": "https://github.com/mksglu/context-mode"
-    },
-    {
-      "rank": 4,
-      "fullName": "nvm-sh/nvm",
-      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-      "language": "Shell",
-      "languageColor": "#89E051",
-      "starsToday": 52,
-      "totalStars": 95497,
-      "forks": 10523,
-      "url": "https://github.com/nvm-sh/nvm"
-    },
-    {
-      "rank": 5,
       "fullName": "K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code,",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 163,
-      "totalStars": 49633,
-      "forks": 4440,
+      "starsToday": 1091,
+      "totalStars": 50777,
+      "forks": 4510,
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
     },
     {
-      "rank": 6,
-      "fullName": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "rank": 4,
+      "fullName": "JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 433,
+      "totalStars": 112769,
+      "forks": 6530,
+      "url": "https://github.com/JuliusBrussee/caveman"
+    },
+    {
+      "rank": 5,
+      "fullName": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 103,
-      "totalStars": 52720,
-      "forks": 4784,
-      "url": "https://github.com/HKUDS/CLI-Anything"
+      "starsToday": 3024,
+      "totalStars": 69592,
+      "forks": 7614,
+      "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+      "rank": 6,
+      "fullName": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 582,
+      "totalStars": 300135,
+      "forks": 26802,
+      "url": "https://github.com/obra/superpowers"
     },
     {
       "rank": 7,
-      "fullName": "ifixai-ai/iFixAi",
-      "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 2109,
-      "totalStars": 27820,
-      "forks": 1518,
-      "url": "https://github.com/ifixai-ai/iFixAi"
+      "fullName": "ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many m",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 147,
+      "totalStars": 75278,
+      "forks": 8943,
+      "url": "https://github.com/ruvnet/ruflo"
     },
     {
       "rank": 8,
-      "fullName": "vxcontrol/pentagi",
-      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 1025,
-      "totalStars": 29903,
-      "forks": 4484,
-      "url": "https://github.com/vxcontrol/pentagi"
+      "fullName": "mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 904,
+      "totalStars": 29902,
+      "forks": 2090,
+      "url": "https://github.com/mksglu/context-mode"
     },
     {
       "rank": 9,
-      "fullName": "rust-lang/rust",
-      "description": "Empowering everyone to build reliable and efficient software.",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 207,
-      "totalStars": 120162,
-      "forks": 18708,
-      "url": "https://github.com/rust-lang/rust"
+      "fullName": "NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "languageColor": "#B07219",
+      "starsToday": 1369,
+      "totalStars": 89031,
+      "forks": 9944,
+      "url": "https://github.com/NationalSecurityAgency/ghidra"
     },
     {
       "rank": 10,
-      "fullName": "xtool-org/xtool",
-      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "starsToday": 1502,
-      "totalStars": 11151,
-      "forks": 511,
-      "url": "https://github.com/xtool-org/xtool"
+      "fullName": "affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 1013,
+      "totalStars": 280628,
+      "forks": 41730,
+      "url": "https://github.com/affaan-m/ECC"
     }
   ],
   "languages": [
     {
       "name": "Python",
-      "count": 4,
-      "share": 40,
+      "count": 3,
+      "share": 30,
       "color": "#3572A5"
     },
     {
       "name": "TypeScript",
-      "count": 2,
-      "share": 20,
+      "count": 3,
+      "share": 30,
       "color": "#3178C6"
     },
     {
@@ -136,22 +136,22 @@
       "color": "#00ADD8"
     },
     {
-      "name": "Rust",
+      "name": "Java",
       "count": 1,
       "share": 10,
-      "color": "#DEA584"
+      "color": "#B07219"
+    },
+    {
+      "name": "JavaScript",
+      "count": 1,
+      "share": 10,
+      "color": "#F1E05A"
     },
     {
       "name": "Shell",
       "count": 1,
       "share": 10,
       "color": "#89E051"
-    },
-    {
-      "name": "Swift",
-      "count": 1,
-      "share": 10,
-      "color": "#F05138"
     }
   ],
   "themes": [
@@ -160,28 +160,28 @@
       "count": 6,
       "repositories": [
         "morluto/rea",
-        "mksglu/context-mode",
         "K-Dense-AI/scientific-agent-skills",
-        "HKUDS/CLI-Anything"
-      ]
-    },
-    {
-      "name": "AI infrastructure",
-      "count": 4,
-      "repositories": [
-        "mksglu/context-mode",
-        "K-Dense-AI/scientific-agent-skills",
-        "ifixai-ai/iFixAi",
-        "vxcontrol/pentagi"
+        "JuliusBrussee/caveman",
+        "ruvnet/ruflo"
       ]
     },
     {
       "name": "Developer tools",
+      "count": 6,
+      "repositories": [
+        "anthropics/claude-plugins-official",
+        "K-Dense-AI/scientific-agent-skills",
+        "JuliusBrussee/caveman",
+        "ruvnet/ruflo"
+      ]
+    },
+    {
+      "name": "AI infrastructure",
       "count": 3,
       "repositories": [
-        "mksglu/context-mode",
         "K-Dense-AI/scientific-agent-skills",
-        "HKUDS/CLI-Anything"
+        "ruvnet/ruflo",
+        "mksglu/context-mode"
       ]
     }
   ]
