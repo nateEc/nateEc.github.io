@@ -1,123 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-16T11:31:07+08:00",
-  "date": "2026-10-16",
+  "updatedAt": "2026-10-18T11:31:05+08:00",
+  "date": "2026-10-18",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Muse Spark Open",
-          "summary": "Muse Spark Open is the most capable US open-weight model to date, and brings leading agentic capabilities to your desktop on Apple M5 Ultra Mac Studios.",
-          "titleZh": "Muse Spark 开放权重版",
-          "summaryZh": "Muse Spark 开放权重版是迄今能力最强的美国开放权重模型，可在 Apple M5 Ultra Mac Studio 上为桌面带来领先的智能体能力。",
-          "url": "https://research.meta.ai/blog/muse-spark-open",
+          "title": "DeepSeek-v4.1-Flash-1017",
+          "summary": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+          "titleZh": "DeepSeek-v4.1-Flash-1017",
+          "summaryZh": "我们致力于通过开源和开放科学推动人工智能发展，并让更多人受益。",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
           "source": "Hacker News",
-          "score": 4.54,
+          "score": 4.4,
           "reasons": [
-            "HN分数663",
-            "讨论量364"
+            "HN分数739",
+            "讨论量606"
           ],
-          "published": "2026-10-15T17:47:39+00:00"
+          "published": "2026-10-17T08:21:25+00:00"
         },
         {
-          "title": "Neural networks are clean",
-          "summary": "A working hypothesis about neurons, generalization, and the ecology of circuits.",
-          "titleZh": "神经网络是干净的",
-          "summaryZh": "关于神经元、泛化能力与电路生态的一项工作假设。",
-          "url": "https://already-clean.goodfire.com/",
+          "title": "Solar surpasses nuclear power globally for first time",
+          "summary": "Solar and wind are increasingly outpacing nuclear power globally, with solar generation surpassing nuclear for the first time in 2025, according to WNISR 2026. The report highlights nuclear’s slow growth, lengthy constru…",
+          "titleZh": "全球太阳能发电量首次超过核能",
+          "summaryZh": "据《2026年世界核工业现状报告》，太阳能和风能发电量在全球持续增长，太阳能发电量于2025年首次超过核能。报告指出，核能增长缓慢，建设周期漫长……",
+          "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
           "source": "Hacker News",
-          "score": 4.32,
+          "score": 4.33,
           "reasons": [
-            "HN分数547",
-            "讨论量205"
+            "HN分数505",
+            "讨论量319"
           ],
-          "published": "2026-10-15T16:04:01+00:00"
+          "published": "2026-10-17T14:01:01+00:00"
         },
         {
-          "title": "What I self-host",
-          "summary": "I’ve always had a foot in the self-hosting world, long before it was called that. My freshman year of university, I ran a website from a Linux box underneath my bed. There was some downtime when my roommate got tired of…",
-          "titleZh": "我自行托管的那些服务",
-          "summaryZh": "我很早就涉足自行托管领域，早在它有这个称呼之前。大学一年级时，我就在床底下的一台 Linux 主机上运行网站。室友受不了之后，网站有时会停机……",
-          "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
-          "source": "Hacker News",
-          "score": 4.31,
-          "reasons": [
-            "HN分数316",
-            "讨论量203"
-          ],
-          "published": "2026-10-15T20:23:25+00:00"
-        },
-        {
-          "title": "AdFection: Targeted ads turned into a pipeline for zero-click mercenary spyware",
-          "summary": "This is the first-ever public confirmation of zero-click mercenary spyware delivered via targeted ads. We call the technique AdFection, and show how it was used to infect devices at Al Jazeera with Candiru’s spyware. We…",
-          "titleZh": "AdFection：定向广告变成零点击商业间谍软件的传播渠道",
-          "summaryZh": "这是首次公开证实通过定向广告投放零点击商业间谍软件。我们将这种技术称为 AdFection，并展示它如何被用于向半岛电视台设备植入 Candiru 间谍软件。我们……",
-          "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
-          "source": "Hacker News",
-          "score": 4.31,
-          "reasons": [
-            "HN分数405",
-            "讨论量574"
-          ],
-          "published": "2026-10-15T10:43:36+00:00"
-        },
-        {
-          "title": "Wayland desktop for Linux with skeuomorphic design",
-          "summary": "Contribute to fyzugx/DEsk development by creating an account on GitHub.",
-          "titleZh": "采用拟物化设计的 Linux Wayland 桌面",
-          "summaryZh": "在 GitHub 上创建账号，为 fyzugx/DEsk 项目的开发作出贡献。",
-          "url": "https://github.com/fyzugx/DEsk",
-          "source": "Hacker News",
-          "score": 4.25,
-          "reasons": [
-            "HN分数538",
-            "讨论量209"
-          ],
-          "published": "2026-10-15T13:23:44+00:00"
-        },
-        {
-          "title": "Jev meets the Trolley Problem",
-          "summary": "I asked Jev and 13 other decision models the Trolley Problem.",
-          "titleZh": "Jev 遭遇电车难题",
-          "summaryZh": "我向 Jev 和另外 13 个决策模型提出了电车难题。",
-          "url": "https://zachlandes.com/trolley-problem/",
-          "source": "Hacker News",
-          "score": 4.17,
-          "reasons": [
-            "HN分数342",
-            "讨论量159"
-          ],
-          "published": "2026-10-15T16:24:52+00:00"
-        },
-        {
-          "title": "Someone on Torrent Sites Kept Fucking with My Sonarr",
-          "summary": "PLEASE stop putting skid malware on torrent sites as South Park episodes",
-          "titleZh": "有人在种子网站上不断捣乱我的 Sonarr 设置",
-          "summaryZh": "求你们别再把低级恶意软件伪装成《南方公园》剧集放到种子网站上了。",
-          "url": "https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup",
-          "source": "Hacker News",
-          "score": 4.13,
-          "reasons": [
-            "HN分数264",
-            "讨论量124"
-          ],
-          "published": "2026-10-15T19:21:38+00:00"
-        },
-        {
-          "title": "New Withings Users Must Pay $99/Year for Apple Health Syncing",
-          "summary": "Comments",
-          "titleZh": "Withings 新用户每年须付 99 美元才能同步 Apple Health",
-          "summaryZh": "评论",
-          "url": "https://support.withings.com/hc/en-us/community/posts/51887047154577-Unacceptable-Apple-Health-Sync-is-now-behind-a-99-year-paywall-for-new-accounts",
+          "title": "Gold is now the top U.S. export",
+          "summary": "Surging U.S. gold exports have overtaken traditional top exports, fueling speculation that rising global demand—particularly from foreign powers seeking alternatives to dollar-based reserves—is reshaping precious metals…",
+          "titleZh": "黄金如今成为美国最大出口商品",
+          "summaryZh": "美国黄金出口激增，超过了传统主要出口商品。此事引发猜测：全球需求不断上升，尤其是外国势力寻求美元储备替代品，是否正在重塑贵金属市场……",
+          "url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
           "source": "Hacker News",
           "score": 4.09,
           "reasons": [
-            "HN分数186",
-            "讨论量144"
+            "HN分数264",
+            "讨论量135"
           ],
-          "published": "2026-10-15T19:55:49+00:00"
+          "published": "2026-10-17T17:06:07+00:00"
+        },
+        {
+          "title": "I Became a Citizen of Japan",
+          "summary": "I became a citizen of Japan. Let me share about it. Some is my anecdotal experience, some my opinion, and some facts. Parsing which of these is what in each sentence is not going to happen. EDIT: I have seen some online…",
+          "titleZh": "我成为了日本公民",
+          "summaryZh": "我成为了日本公民，想和大家分享这段经历。内容有些是个人经历，有些是我的看法，也有些是事实。我不会逐句说明哪些属于哪一类。补充：我看到网上有些……",
+          "url": "https://www.derekwessman.com/blog-1/natural",
+          "source": "Hacker News",
+          "score": 3.88,
+          "reasons": [
+            "HN分数167",
+            "讨论量78"
+          ],
+          "published": "2026-10-17T17:36:17+00:00"
+        },
+        {
+          "title": "Making chicken transparent using Dorito dust",
+          "summary": "Modifying the optical properties of biological tissues with tartrazine",
+          "titleZh": "用多力多滋碎屑让鸡肉变透明",
+          "summaryZh": "利用柠檬黄改变生物组织的光学特性",
+          "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
+          "source": "Hacker News",
+          "score": 3.87,
+          "reasons": [
+            "HN分数267",
+            "讨论量68"
+          ],
+          "published": "2026-10-17T13:55:28+00:00"
+        },
+        {
+          "title": "Pele – Mermaid diagrams as themeable SVG",
+          "summary": "Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.",
+          "titleZh": "Pele——可换主题的 Mermaid 图表 SVG 渲染工具",
+          "summaryZh": "Pele 是一个轻量级开源库，可将 Mermaid 图表渲染为 SVG，并通过 CSS 变量设置主题。",
+          "url": "https://pele.run/",
+          "source": "Hacker News",
+          "score": 3.76,
+          "reasons": [
+            "HN分数288",
+            "讨论量27"
+          ],
+          "published": "2026-10-17T15:55:09+00:00"
+        },
+        {
+          "title": "NY announces game ownership bill requiring ownership rather than licensing",
+          "summary": "New York joins Pennsylvania in protecting gamers.",
+          "titleZh": "纽约州提出游戏所有权法案，要求消费者拥有游戏而非仅获许可",
+          "summaryZh": "纽约州加入宾夕法尼亚州的行列，保护游戏玩家。",
+          "url": "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends",
+          "source": "Hacker News",
+          "score": 3.74,
+          "reasons": [
+            "HN分数113",
+            "讨论量24"
+          ],
+          "published": "2026-10-18T00:14:22+00:00"
+        },
+        {
+          "title": "Source code of the Estonian online voting system",
+          "summary": "IVXV online voting system. Contribute to valimised/ivxv development by creating an account on GitHub.",
+          "titleZh": "爱沙尼亚在线投票系统源代码",
+          "summaryZh": "IVXV 在线投票系统。注册 GitHub 账号，为 valimised/ivxv 项目贡献代码。",
+          "url": "https://github.com/valimised/ivxv",
+          "source": "Hacker News",
+          "score": 3.62,
+          "reasons": [
+            "HN分数177",
+            "讨论量146"
+          ],
+          "published": "2026-10-17T03:18:39+00:00"
         }
       ]
     },
@@ -126,104 +126,104 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-          "summary": "The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March.",
-          "titleZh": "Cal AI 爆红背后，是一支小规模网红队伍发挥了作用",
-          "summaryZh": "该公司两年内创造了超过 3000 万美元营收，并于 3 月被 MyFitnessPal 收购，交易金额未公开。",
-          "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+          "title": "Meta removes language that raised scraping and AI training concerns",
+          "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+          "titleZh": "Meta 删除引发网页抓取和 AI 训练担忧的条款",
+          "summaryZh": "Meta 发言人坚称，更新后的条款并不意味着 Meta 抓取网络内容的方式发生变化。",
+          "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
           "source": "TechCrunch",
-          "score": 4.5,
+          "score": 4.43,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-15T23:44:56+00:00"
+          "published": "2026-10-17T21:31:32+00:00"
         },
         {
-          "title": "Meta launches an open-weight AI model that runs on Macs",
-          "summary": "Meta and Apple have teamed up for the launch of the social media giant's newest model, Muse Spark Open, which will run locally on Apple silicon.",
-          "titleZh": "Meta 发布可在 Mac 上运行的开放权重 AI 模型",
-          "summaryZh": "Meta 与 Apple 携手推出这家社交媒体巨头的最新模型 Muse Spark Open，该模型可在 Apple 芯片上本地运行。",
-          "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+          "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+          "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+          "titleZh": "Anthropic 称员工队伍中资深员工占比上升，开会时间也增加",
+          "summaryZh": "过去一年，Anthropic 的员工构成和所开展工作的类型都发生了显著变化。",
+          "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.4,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-15T20:04:53+00:00"
+          "published": "2026-10-17T20:21:19+00:00"
         },
         {
-          "title": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
-          "summary": "Speaking at TechCrunch Disrupt, Amazon devices chief Panos Panay described a future where ambient AI devices work in the background, anticipating users' needs instead of waiting for commands.",
-          "titleZh": "亚马逊设备部门负责人 Panos Panay 展望 AI 设备取代应用的未来",
-          "summaryZh": "在 TechCrunch Disrupt 活动上，亚马逊设备部门负责人 Panos Panay 描绘了这样一种未来：环境式 AI 设备在后台运行，主动预判用户需求，而不是等待用户发出指令。",
-          "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
-          "source": "TechCrunch",
-          "score": 4.39,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-15T19:55:25+00:00"
-        },
-        {
-          "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
-          "summary": "METR will publish its own assessments of Anthropic’s risks, incidents, and practices, and the frontier AI model maker has given up the right to block them.",
-          "titleZh": "Anthropic 允许 METR 研究人员以员工级权限深入查看内部情况",
-          "summaryZh": "METR 将发布对 Anthropic 风险、事件和实践的独立评估；这家前沿 AI 模型开发商已放弃阻止其发布的权利。",
-          "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-          "source": "TechCrunch",
-          "score": 4.37,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-15T19:14:26+00:00"
-        },
-        {
-          "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-          "summary": "Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's audience.",
-          "titleZh": "Bluesky 扩展 AI 驱动的 Attie 应用，让所有人都能创建网站、游戏等",
-          "summaryZh": "Bluesky 正将“社交氛围编程”引入其实验性平台 Attie，允许用户创建游戏、测验和网站等互动体验，并借助该社交网络的受众传播。",
-          "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
+          "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+          "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+          "titleZh": "Replit 将 OpenAI 设为默认模型提供商，CEO 称其取代了 Anthropic",
+          "summaryZh": "周末期间，Masad 澄清，OpenAI 将取代 Anthropic 成为 Replit 的默认模型提供商。平台用户仍可使用 Claude。",
+          "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
           "source": "TechCrunch",
           "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-15T18:56:46+00:00"
+          "published": "2026-10-17T18:48:08+00:00"
         },
         {
-          "title": "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
-          "summary": "Savings of up to $200 end October 16 for TechCrunch Founder Summit. These savings for Founder and Investor Passes vanish after Friday. Join 1,000 founders and investors on November 4 at Boston’s SoWa Power Station. Bring…",
-          "titleZh": "TechCrunch 创始人峰会通行证最高可省 200 美元：早鸟优惠 10 月 16 日截止",
-          "summaryZh": "TechCrunch 创始人峰会最高 200 美元的优惠将于 10 月 16 日结束。创始人和投资人通行证的优惠周五后失效。11 月 4 日，相约波士顿 SoWa Power Station，与 1000 位创始人和投资人共聚。带上……",
-          "url": "https://techcrunch.com/2026/10/15/last-chance-to-save-up-to-200-on-techcrunch-founder-summit-early-booking-ends-oct-16/",
+          "title": "India becomes the latest country to report rogue AI agent activity",
+          "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+          "titleZh": "印度成为最新报告失控 AI 智能体活动的国家",
+          "summaryZh": "这些智能体利用应用配置、公开代码仓库中暴露的凭据和连接设置，以及权限过宽的云端角色入侵。",
+          "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
           "source": "TechCrunch",
-          "score": 4.34,
+          "score": 3.67,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-15T18:00:00+00:00"
+          "published": "2026-10-16T17:52:24+00:00"
         },
         {
-          "title": "Tesla reveals SpaceX-powered Roadster that flies and falls with style",
-          "summary": "The new car used thrusters to leap over a Cybercab, Cybertruck, Tesla Semi, Model Y, and Model 3 at a demo in Texas.",
-          "titleZh": "特斯拉发布由 SpaceX 技术驱动、能飞跃也能潇洒落地的 Roadster",
-          "summaryZh": "在得州的一场演示中，这辆新车使用推进器跃过了 Cybercab、Cybertruck、Tesla Semi、Model Y 和 Model 3。",
-          "url": "https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/",
+          "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+          "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, an…",
+          "titleZh": "一位从 Nvidia 内部人士转型的风投谈机器人为何尚未迎来 ChatGPT 时刻",
+          "summaryZh": "曾负责 NVIDIA 机器人平台产品营销七年的 Amulya Vishwanath 表示，机器人行业目前正处于“乐高时代”，基础组件包括执行器、机械手、软件等……",
+          "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
           "source": "TechCrunch",
-          "score": 1.94,
-          "reasons": [],
-          "published": "2026-10-16T01:17:43+00:00"
+          "score": 3.63,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-16T16:30:00+00:00"
         },
         {
-          "title": "And the winner of Startup Battlefield at Disrupt 2026 is: Intero Biosystems",
-          "summary": "Intero Biosystems beat out 199 other Startup Battlefield companies to take home the $100,000 grand prize at TechCrunch Disrupt 2026.",
-          "titleZh": "Disrupt 2026 创业战场冠军是：Intero Biosystems",
-          "summaryZh": "Intero Biosystems 击败其他 199 家创业战场参赛公司，在 TechCrunch Disrupt 2026 赢得 10 万美元大奖。",
-          "url": "https://techcrunch.com/2026/10/15/and-the-winner-of-startup-battlefield-at-disrupt-2026-is-intero-biosystems/",
+          "title": "Elorian’s first AI model wants to reason with images, not just about them",
+          "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+          "titleZh": "Elorian 首款 AI 模型旨在直接借助图像进行推理",
+          "summaryZh": "据 Elorian 的评测，Glimpse 在科学图表推理和短视频字幕生成方面优于 GPT-6 Astra，在其他视觉推理任务中也表现出竞争力。",
+          "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
           "source": "TechCrunch",
-          "score": 1.89,
+          "score": 3.61,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-16T16:01:37+00:00"
+        },
+        {
+          "title": "TikTok permanently bans ‘Musk’ documentary advertising account",
+          "summary": "A four-hour documentary about Elon Musk continues to meet resistance from social media platforms.",
+          "titleZh": "TikTok 永久封禁《马斯克》纪录片广告账号",
+          "summaryZh": "一部时长四小时、讲述埃隆·马斯克的纪录片持续遭到社交媒体平台阻挠。",
+          "url": "https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/",
+          "source": "TechCrunch",
+          "score": 1.82,
           "reasons": [],
-          "published": "2026-10-15T23:33:45+00:00"
+          "published": "2026-10-17T20:55:52+00:00"
+        },
+        {
+          "title": "Ember’s new temperature-controlled mug makes my nightly tea ritual even better",
+          "summary": "The biggest change about Ember's new mug is that you no longer have to open the app to adjust your drink’s temperature.",
+          "titleZh": "Ember 新款恒温杯让我的每晚饮茶时光更惬意",
+          "summaryZh": "Ember 新款杯子最大的变化是，调整饮品温度不再需要打开应用。",
+          "url": "https://techcrunch.com/2026/10/17/embers-new-temperature-controlled-mug-makes-my-nightly-tea-ritual-even-better/",
+          "source": "TechCrunch",
+          "score": 1.67,
+          "reasons": [],
+          "published": "2026-10-17T15:30:00+00:00"
         }
       ]
     }
@@ -231,7 +231,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-16T11:01:20.560660+08:00"
+      "lastRunAt": "2026-10-18T11:01:17.301227+08:00"
     }
   }
 }
