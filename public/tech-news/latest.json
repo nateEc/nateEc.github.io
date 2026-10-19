@@ -1,123 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-18T11:31:05+08:00",
-  "date": "2026-10-18",
+  "updatedAt": "2026-10-19T11:31:21+08:00",
+  "date": "2026-10-19",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "DeepSeek-v4.1-Flash-1017",
-          "summary": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
-          "titleZh": "DeepSeek-v4.1-Flash-1017",
-          "summaryZh": "我们致力于通过开源和开放科学推动人工智能发展，并让更多人受益。",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+          "summary": "Abstract page for arXiv paper 2610.18861: Hybrid Reasoning Agents",
+          "titleZh": "混合推理智能体：在潜在空间中思考、通过文本行动的大语言模型智能体",
+          "summaryZh": "arXiv 论文 2610.18861《混合推理智能体》的摘要页面。",
+          "url": "https://arxiv.org/abs/2610.18861",
           "source": "Hacker News",
-          "score": 4.4,
+          "score": 4.21,
           "reasons": [
-            "HN分数739",
-            "讨论量606"
+            "HN分数257",
+            "讨论量152"
           ],
-          "published": "2026-10-17T08:21:25+00:00"
+          "published": "2026-10-18T20:48:14+00:00"
         },
         {
-          "title": "Solar surpasses nuclear power globally for first time",
-          "summary": "Solar and wind are increasingly outpacing nuclear power globally, with solar generation surpassing nuclear for the first time in 2025, according to WNISR 2026. The report highlights nuclear’s slow growth, lengthy constru…",
-          "titleZh": "全球太阳能发电量首次超过核能",
-          "summaryZh": "据《2026年世界核工业现状报告》，太阳能和风能发电量在全球持续增长，太阳能发电量于2025年首次超过核能。报告指出，核能增长缓慢，建设周期漫长……",
-          "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
+          "title": "Someone behind the software",
+          "summary": "I think good products carry something of the people who make them. Their experience, what they care about, and how they think things should work.",
+          "titleZh": "软件背后的那个人",
+          "summaryZh": "我认为，优秀的产品总能体现出创造者的某些特质：他们的经历、在意的事，以及他们认为事物应当如何运作。",
+          "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
           "source": "Hacker News",
-          "score": 4.33,
+          "score": 4.15,
           "reasons": [
-            "HN分数505",
-            "讨论量319"
+            "HN分数347",
+            "讨论量141"
           ],
-          "published": "2026-10-17T14:01:01+00:00"
+          "published": "2026-10-18T16:32:00+00:00"
         },
         {
-          "title": "Gold is now the top U.S. export",
-          "summary": "Surging U.S. gold exports have overtaken traditional top exports, fueling speculation that rising global demand—particularly from foreign powers seeking alternatives to dollar-based reserves—is reshaping precious metals…",
-          "titleZh": "黄金如今成为美国最大出口商品",
-          "summaryZh": "美国黄金出口激增，超过了传统主要出口商品。此事引发猜测：全球需求不断上升，尤其是外国势力寻求美元储备替代品，是否正在重塑贵金属市场……",
-          "url": "https://www.numismaticnews.net/gold-now-top-u-s-export",
+          "title": "RepRapMicron",
+          "summary": "μRepRap - A 3D printer project designed to work at the micron scale - Home · VikOlliver/RepRapMicron Wiki",
+          "titleZh": "RepRapMicron",
+          "summaryZh": "μRepRap——一个面向微米尺度设计的 3D 打印机项目——VikOlliver/RepRapMicron Wiki 首页。",
+          "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
           "source": "Hacker News",
-          "score": 4.09,
+          "score": 3.89,
           "reasons": [
-            "HN分数264",
-            "讨论量135"
+            "HN分数345",
+            "讨论量55"
           ],
-          "published": "2026-10-17T17:06:07+00:00"
+          "published": "2026-10-18T13:48:48+00:00"
         },
         {
-          "title": "I Became a Citizen of Japan",
-          "summary": "I became a citizen of Japan. Let me share about it. Some is my anecdotal experience, some my opinion, and some facts. Parsing which of these is what in each sentence is not going to happen. EDIT: I have seen some online…",
-          "titleZh": "我成为了日本公民",
-          "summaryZh": "我成为了日本公民，想和大家分享这段经历。内容有些是个人经历，有些是我的看法，也有些是事实。我不会逐句说明哪些属于哪一类。补充：我看到网上有些……",
-          "url": "https://www.derekwessman.com/blog-1/natural",
+          "title": "Java sealed classes and exhaustive pattern matching",
+          "summary": "Java 17 introduced sealed classes, which allow you to explicitly list the allowed sub-types of an interface or base class. For example, here’s a toy example using a sealed interface and records (inner classes are implici…",
+          "titleZh": "Java 密封类与穷尽式模式匹配",
+          "summaryZh": "Java 17 引入了密封类，允许你明确列出接口或基类允许的子类型。例如，下面是一个使用密封接口和记录类的简单示例（内部类会隐式……）。",
+          "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
           "source": "Hacker News",
-          "score": 3.88,
+          "score": 3.83,
           "reasons": [
-            "HN分数167",
-            "讨论量78"
+            "HN分数147",
+            "讨论量106"
           ],
-          "published": "2026-10-17T17:36:17+00:00"
+          "published": "2026-10-18T14:47:37+00:00"
         },
         {
-          "title": "Making chicken transparent using Dorito dust",
-          "summary": "Modifying the optical properties of biological tissues with tartrazine",
-          "titleZh": "用多力多滋碎屑让鸡肉变透明",
-          "summaryZh": "利用柠檬黄改变生物组织的光学特性",
-          "url": "https://chillphysicsenjoyer.substack.com/p/making-chicken-transparent-using",
+          "title": "There's never been a better time to go into math (by: 3blue1brown) [video]",
+          "summary": "Sharing a few thoughts on the future of mathThese videos are funded directly by viewers: https://3b1b.co/supportAn equally valuable form of support is to sim...",
+          "titleZh": "现在正是投身数学领域的好时机（3blue1brown 制作）[视频]",
+          "summaryZh": "分享一些关于数学未来的想法。这些视频由观众直接资助：https://3b1b.co/support。另一种同样有价值的支持方式是……",
+          "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
           "source": "Hacker News",
-          "score": 3.87,
+          "score": 3.65,
           "reasons": [
-            "HN分数267",
-            "讨论量68"
+            "HN分数221",
+            "讨论量221"
           ],
-          "published": "2026-10-17T13:55:28+00:00"
+          "published": "2026-10-17T23:26:35+00:00"
         },
         {
-          "title": "Pele – Mermaid diagrams as themeable SVG",
-          "summary": "Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.",
-          "titleZh": "Pele——可换主题的 Mermaid 图表 SVG 渲染工具",
-          "summaryZh": "Pele 是一个轻量级开源库，可将 Mermaid 图表渲染为 SVG，并通过 CSS 变量设置主题。",
-          "url": "https://pele.run/",
+          "title": "If you don't run your own LLM proxy, how do you know whats going on?",
+          "summary": "I think the title captures the idea fully but I'll dig into it because this ain't Twitter. You're working an idea, a piece of code, or a multibillion a year SaaS app which is probably saving the world. Maybe you're autom…",
+          "titleZh": "如果你不自己运行大语言模型代理，怎么搞清楚到底发生了什么？",
+          "summaryZh": "我觉得标题已经把意思说得很清楚了，不过我还是会展开讲讲，毕竟这里不是 Twitter。你正在推进一个想法、编写一段代码，或运营一个每年营收数十亿美元、可能正在拯救世界的 SaaS 应用。也许你正在……",
+          "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
           "source": "Hacker News",
-          "score": 3.76,
+          "score": 3.64,
           "reasons": [
-            "HN分数288",
-            "讨论量27"
+            "HN分数66",
+            "讨论量46"
           ],
-          "published": "2026-10-17T15:55:09+00:00"
+          "published": "2026-10-18T21:09:12+00:00"
         },
         {
-          "title": "NY announces game ownership bill requiring ownership rather than licensing",
-          "summary": "New York joins Pennsylvania in protecting gamers.",
-          "titleZh": "纽约州提出游戏所有权法案，要求消费者拥有游戏而非仅获许可",
-          "summaryZh": "纽约州加入宾夕法尼亚州的行列，保护游戏玩家。",
-          "url": "https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends",
+          "title": "Free Pascal compiler now supports dynamic packages",
+          "summary": "Home Dynamic Packages Download Now Sign In Save your edits of this page as a pending edit? Save Cancel History Visual You are viewing the original copy of this page You are viewing the pending edit of this page Delete th…",
+          "titleZh": "Free Pascal 编译器现已支持动态软件包",
+          "summaryZh": "首页｜动态软件包｜立即下载｜登录。是否将此页面的编辑保存为待处理编辑？保存｜取消｜历史记录｜可视化。你正在查看原始页面副本／待处理编辑。删除此……",
+          "url": "https://www.getlazarus.org/dynamic/",
           "source": "Hacker News",
-          "score": 3.74,
+          "score": 3.6,
           "reasons": [
-            "HN分数113",
+            "HN分数120",
             "讨论量24"
           ],
-          "published": "2026-10-18T00:14:22+00:00"
+          "published": "2026-10-18T18:48:04+00:00"
         },
         {
-          "title": "Source code of the Estonian online voting system",
-          "summary": "IVXV online voting system. Contribute to valimised/ivxv development by creating an account on GitHub.",
-          "titleZh": "爱沙尼亚在线投票系统源代码",
-          "summaryZh": "IVXV 在线投票系统。注册 GitHub 账号，为 valimised/ivxv 项目贡献代码。",
-          "url": "https://github.com/valimised/ivxv",
+          "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+          "summary": "A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Runs on Cloudflare Workers. - finereli/whatsapp-mcp",
+          "titleZh": "Show HN：在 Cloudflare 上免费运行的 WhatsApp MCP",
+          "summaryZh": "一个只读 MCP 服务器，可让你的 AI 智能体搜索并阅读你自己的 WhatsApp 消息。运行于 Cloudflare Workers。- finereli/whatsapp-mcp",
+          "url": "https://github.com/finereli/whatsapp-mcp",
           "source": "Hacker News",
-          "score": 3.62,
+          "score": 3.55,
           "reasons": [
-            "HN分数177",
-            "讨论量146"
+            "HN分数53",
+            "讨论量35"
           ],
-          "published": "2026-10-17T03:18:39+00:00"
+          "published": "2026-10-18T21:36:10+00:00"
         }
       ]
     },
@@ -126,13 +126,52 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+          "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
+          "titleZh": "Anthropic 称将把其 5% 的股份捐给“公益基金”",
+          "summaryZh": "Anthropic 表示，将把其 5% 的股份投入该基金。",
+          "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+          "source": "TechCrunch",
+          "score": 4.41,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-18T20:37:40+00:00"
+        },
+        {
+          "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+          "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
+          "titleZh": "迪士尼同意聘用 Character.AI 的大部分员工",
+          "summaryZh": "文件还称，获邀加入迪士尼的 Character.AI 员工中，“绝大多数”已接受聘用。不过，这只是一项意向收购报价，其他公司仍可能提出更高报价。",
+          "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+          "source": "TechCrunch",
+          "score": 4.29,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-18T16:30:00+00:00"
+        },
+        {
+          "title": "TechCrunch Mobility: Rivian’s next act",
+          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+          "titleZh": "TechCrunch Mobility：Rivian 的下一步",
+          "summaryZh": "欢迎回到 TechCrunch Mobility——这里聚焦交通运输的未来，以及如今愈发重要的人工智能在其中扮演的角色。",
+          "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
+          "source": "TechCrunch",
+          "score": 4.28,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-18T16:05:00+00:00"
+        },
+        {
           "title": "Meta removes language that raised scraping and AI training concerns",
           "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
           "titleZh": "Meta 删除引发网页抓取和 AI 训练担忧的条款",
           "summaryZh": "Meta 发言人坚称，更新后的条款并不意味着 Meta 抓取网络内容的方式发生变化。",
           "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 3.77,
           "reasons": [
             "AI"
           ],
@@ -145,7 +184,7 @@
           "summaryZh": "过去一年，Anthropic 的员工构成和所开展工作的类型都发生了显著变化。",
           "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 3.73,
           "reasons": [
             "AI"
           ],
@@ -158,72 +197,33 @@
           "summaryZh": "周末期间，Masad 澄清，OpenAI 将取代 Anthropic 成为 Replit 的默认模型提供商。平台用户仍可使用 Claude。",
           "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 3.69,
           "reasons": [
             "AI"
           ],
           "published": "2026-10-17T18:48:08+00:00"
         },
         {
-          "title": "India becomes the latest country to report rogue AI agent activity",
-          "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-          "titleZh": "印度成为最新报告失控 AI 智能体活动的国家",
-          "summaryZh": "这些智能体利用应用配置、公开代码仓库中暴露的凭据和连接设置，以及权限过宽的云端角色入侵。",
-          "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-          "source": "TechCrunch",
-          "score": 3.67,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-16T17:52:24+00:00"
-        },
-        {
-          "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-          "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, an…",
-          "titleZh": "一位从 Nvidia 内部人士转型的风投谈机器人为何尚未迎来 ChatGPT 时刻",
-          "summaryZh": "曾负责 NVIDIA 机器人平台产品营销七年的 Amulya Vishwanath 表示，机器人行业目前正处于“乐高时代”，基础组件包括执行器、机械手、软件等……",
-          "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-          "source": "TechCrunch",
-          "score": 3.63,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-16T16:30:00+00:00"
-        },
-        {
-          "title": "Elorian’s first AI model wants to reason with images, not just about them",
-          "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
-          "titleZh": "Elorian 首款 AI 模型旨在直接借助图像进行推理",
-          "summaryZh": "据 Elorian 的评测，Glimpse 在科学图表推理和短视频字幕生成方面优于 GPT-6 Astra，在其他视觉推理任务中也表现出竞争力。",
-          "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-          "source": "TechCrunch",
-          "score": 3.61,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-16T16:01:37+00:00"
-        },
-        {
-          "title": "TikTok permanently bans ‘Musk’ documentary advertising account",
-          "summary": "A four-hour documentary about Elon Musk continues to meet resistance from social media platforms.",
-          "titleZh": "TikTok 永久封禁《马斯克》纪录片广告账号",
-          "summaryZh": "一部时长四小时、讲述埃隆·马斯克的纪录片持续遭到社交媒体平台阻挠。",
-          "url": "https://techcrunch.com/2026/10/17/tiktok-permanently-bans-musk-documentary-advertising-account/",
+          "title": "No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market",
+          "summary": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
+          "titleZh": "不设议程、不赶时间、不离开旧金山：Benchmark 合伙人谈狂热市场中的投资",
+          "summaryZh": "Benchmark 可能扩大了基金规模，也更换了几位合伙人，但台上留下的五位听起来就像一群朋友，只是恰好共同经营着硅谷历史最悠久、声望最高的公司之一。",
+          "url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
           "source": "TechCrunch",
           "score": 1.82,
           "reasons": [],
-          "published": "2026-10-17T20:55:52+00:00"
+          "published": "2026-10-18T21:00:00+00:00"
         },
         {
-          "title": "Ember’s new temperature-controlled mug makes my nightly tea ritual even better",
-          "summary": "The biggest change about Ember's new mug is that you no longer have to open the app to adjust your drink’s temperature.",
-          "titleZh": "Ember 新款恒温杯让我的每晚饮茶时光更惬意",
-          "summaryZh": "Ember 新款杯子最大的变化是，调整饮品温度不再需要打开应用。",
-          "url": "https://techcrunch.com/2026/10/17/embers-new-temperature-controlled-mug-makes-my-nightly-tea-ritual-even-better/",
+          "title": "Everyone’s watching the Elizabeth Holmes documentary ‘You Can See Everything’",
+          "summary": "\"You Can See Everything\" is having the second biggest opening weekend ever for a documentary film.",
+          "titleZh": "所有人都在看伊丽莎白·霍姆斯纪录片《你可以看见一切》",
+          "summaryZh": "《你可以看见一切》创下纪录片史上第二高的首映周末票房。",
+          "url": "https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/",
           "source": "TechCrunch",
-          "score": 1.67,
+          "score": 1.76,
           "reasons": [],
-          "published": "2026-10-17T15:30:00+00:00"
+          "published": "2026-10-18T19:03:38+00:00"
         }
       ]
     }
@@ -231,7 +231,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-18T11:01:17.301227+08:00"
+      "lastRunAt": "2026-10-19T11:01:40.958250+08:00"
     }
   }
 }
