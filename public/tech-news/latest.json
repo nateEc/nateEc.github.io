@@ -1,123 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-19T11:31:21+08:00",
-  "date": "2026-10-19",
+  "updatedAt": "2026-10-20T11:31:19+08:00",
+  "date": "2026-10-20",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-          "summary": "Abstract page for arXiv paper 2610.18861: Hybrid Reasoning Agents",
-          "titleZh": "混合推理智能体：在潜在空间中思考、通过文本行动的大语言模型智能体",
-          "summaryZh": "arXiv 论文 2610.18861《混合推理智能体》的摘要页面。",
-          "url": "https://arxiv.org/abs/2610.18861",
+          "title": "MiniMax M3.1 Flash",
+          "summary": "Today, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly t…",
+          "titleZh": "MiniMax M3.1 Flash 闪速模型",
+          "summaryZh": "今天，我们正式推出 MiniMax M3.1 Flash。作为新一代闪速模型，M3.1 Flash 在智能体任务、编程、计算机操作和网络安全方面实现了代际飞跃，同时让在线推理几乎……",
+          "url": "https://www.minimax.io/blog/minimax-m31f",
+          "source": "Hacker News",
+          "score": 4.23,
+          "reasons": [
+            "HN分数403",
+            "讨论量173"
+          ],
+          "published": "2026-10-19T16:39:09+00:00"
+        },
+        {
+          "title": "Wine ported to OpenBSD",
+          "summary": "[ prev in list ] [ next in list ] [ prev in thread ] [ next in thread ] List: openbsd-ports Subject: emulators/wine From: Thomas Frohwein Date: 2026-10-18 22:08:43 Message-ID: 20261018150843.271e0c06 () babcom6 ! home !…",
+          "titleZh": "Wine 移植至 OpenBSD",
+          "summaryZh": "列表：openbsd-ports；主题：emulators/wine；发件人：Thomas Frohwein；日期：2026-10-18 22:08:43；消息 ID：20261018150843.271e0c06 () babcom6 ! home !…",
+          "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
           "source": "Hacker News",
           "score": 4.21,
           "reasons": [
-            "HN分数257",
-            "讨论量152"
+            "HN分数518",
+            "讨论量174"
           ],
-          "published": "2026-10-18T20:48:14+00:00"
+          "published": "2026-10-19T13:35:34+00:00"
         },
         {
-          "title": "Someone behind the software",
-          "summary": "I think good products carry something of the people who make them. Their experience, what they care about, and how they think things should work.",
-          "titleZh": "软件背后的那个人",
-          "summaryZh": "我认为，优秀的产品总能体现出创造者的某些特质：他们的经历、在意的事，以及他们认为事物应当如何运作。",
-          "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+          "title": "Lula supporters protest against Meta to denounce its 'electoral interference'",
+          "summary": "Comments",
+          "titleZh": "卢拉支持者抗议 Meta，谴责其“干预选举”",
+          "summaryZh": "评论",
+          "url": "https://efe.com/english/latest-news/2026-10-20/lula-supporters-protest-against-meta-to-denounce-its-electoral-interference/",
           "source": "Hacker News",
-          "score": 4.15,
+          "score": 4.19,
           "reasons": [
-            "HN分数347",
-            "讨论量141"
+            "HN分数210",
+            "讨论量99"
           ],
-          "published": "2026-10-18T16:32:00+00:00"
+          "published": "2026-10-20T00:53:52+00:00"
         },
         {
-          "title": "RepRapMicron",
-          "summary": "μRepRap - A 3D printer project designed to work at the micron scale - Home · VikOlliver/RepRapMicron Wiki",
-          "titleZh": "RepRapMicron",
-          "summaryZh": "μRepRap——一个面向微米尺度设计的 3D 打印机项目——VikOlliver/RepRapMicron Wiki 首页。",
-          "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+          "title": "Android apps running native on macOS",
+          "summary": "Mac.apk: Run Android apps natively on Apple Silicon Macs - kksimp/Mac.apk",
+          "titleZh": "在 macOS 上原生运行 Android 应用",
+          "summaryZh": "Mac.apk：在 Apple Silicon Mac 上原生运行 Android 应用——kksimp/Mac.apk",
+          "url": "https://github.com/kksimp/Mac.apk",
           "source": "Hacker News",
-          "score": 3.89,
+          "score": 4.1,
           "reasons": [
-            "HN分数345",
-            "讨论量55"
+            "HN分数275",
+            "讨论量146"
           ],
-          "published": "2026-10-18T13:48:48+00:00"
+          "published": "2026-10-19T16:45:30+00:00"
         },
         {
-          "title": "Java sealed classes and exhaustive pattern matching",
-          "summary": "Java 17 introduced sealed classes, which allow you to explicitly list the allowed sub-types of an interface or base class. For example, here’s a toy example using a sealed interface and records (inner classes are implici…",
-          "titleZh": "Java 密封类与穷尽式模式匹配",
-          "summaryZh": "Java 17 引入了密封类，允许你明确列出接口或基类允许的子类型。例如，下面是一个使用密封接口和记录类的简单示例（内部类会隐式……）。",
-          "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching/",
+          "title": "Putting Linux on my RTX Spark laptop because I don't have a Microsoft account",
+          "summary": "Arch Linux ARM on the ASUS ProArt P16, with a bootable installer, published Windows comparisons, and local Qwen inference.",
+          "titleZh": "因为没有 Microsoft 账户，我在 RTX Spark 笔记本上安装了 Linux",
+          "summaryZh": "在 ASUS ProArt P16 上运行 Arch Linux ARM，配有可启动安装程序、已发布的 Windows 对比结果，以及本地 Qwen 推理。",
+          "url": "https://josie.lol/blog/linux-rtx-spark",
           "source": "Hacker News",
-          "score": 3.83,
+          "score": 4.05,
           "reasons": [
-            "HN分数147",
-            "讨论量106"
+            "HN分数196",
+            "讨论量91"
           ],
-          "published": "2026-10-18T14:47:37+00:00"
+          "published": "2026-10-19T21:08:18+00:00"
         },
         {
-          "title": "There's never been a better time to go into math (by: 3blue1brown) [video]",
-          "summary": "Sharing a few thoughts on the future of mathThese videos are funded directly by viewers: https://3b1b.co/supportAn equally valuable form of support is to sim...",
-          "titleZh": "现在正是投身数学领域的好时机（3blue1brown 制作）[视频]",
-          "summaryZh": "分享一些关于数学未来的想法。这些视频由观众直接资助：https://3b1b.co/support。另一种同样有价值的支持方式是……",
-          "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+          "title": "I built a drone with only one motor [video]",
+          "summary": "Open Source Code & CAD Files: https://github.com/jyjblrd/single-propeller-drone00:00 Intro00:36 How it steers01:29 Switching to moteus02:04 Fixing timing02:3...",
+          "titleZh": "我用一个电机造了一架无人机 [视频]",
+          "summaryZh": "开源代码和 CAD 文件：https://github.com/jyjblrd/single-propeller-drone00:00 介绍00:36 转向原理01:29 切换到 moteus02:04 修正时序02:3...",
+          "url": "https://www.youtube.com/watch?v=Ndftcft6XhU",
           "source": "Hacker News",
-          "score": 3.65,
+          "score": 3.92,
           "reasons": [
-            "HN分数221",
-            "讨论量221"
+            "HN分数436",
+            "讨论量96"
           ],
-          "published": "2026-10-17T23:26:35+00:00"
+          "published": "2026-10-19T09:05:07+00:00"
         },
         {
-          "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-          "summary": "I think the title captures the idea fully but I'll dig into it because this ain't Twitter. You're working an idea, a piece of code, or a multibillion a year SaaS app which is probably saving the world. Maybe you're autom…",
-          "titleZh": "如果你不自己运行大语言模型代理，怎么搞清楚到底发生了什么？",
-          "summaryZh": "我觉得标题已经把意思说得很清楚了，不过我还是会展开讲讲，毕竟这里不是 Twitter。你正在推进一个想法、编写一段代码，或运营一个每年营收数十亿美元、可能正在拯救世界的 SaaS 应用。也许你正在……",
-          "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+          "title": "Ukraine claims first drone evacuation of wounded soldier",
+          "summary": "The “historic” mission comes as Kyiv faces a dire turn in its relationship with Washington over the withdrawal of support in its fight against Russia.",
+          "titleZh": "乌克兰称首次使用无人机撤离伤兵",
+          "summaryZh": "这次“具有历史意义”的任务发生之际，基辅与华盛顿的关系因美国撤回对乌克兰抗俄行动的支持而急剧恶化。",
+          "url": "https://www.nbcnews.com/world/ukraine/ukraine-first-drone-evacuation-wounded-soldier-frontlines-hexacopter-rcna604310",
           "source": "Hacker News",
-          "score": 3.64,
+          "score": 3.88,
           "reasons": [
-            "HN分数66",
-            "讨论量46"
+            "HN分数153",
+            "讨论量118"
           ],
-          "published": "2026-10-18T21:09:12+00:00"
+          "published": "2026-10-19T15:31:34+00:00"
         },
         {
-          "title": "Free Pascal compiler now supports dynamic packages",
-          "summary": "Home Dynamic Packages Download Now Sign In Save your edits of this page as a pending edit? Save Cancel History Visual You are viewing the original copy of this page You are viewing the pending edit of this page Delete th…",
-          "titleZh": "Free Pascal 编译器现已支持动态软件包",
-          "summaryZh": "首页｜动态软件包｜立即下载｜登录。是否将此页面的编辑保存为待处理编辑？保存｜取消｜历史记录｜可视化。你正在查看原始页面副本／待处理编辑。删除此……",
-          "url": "https://www.getlazarus.org/dynamic/",
+          "title": "Starcraft: Ashfall",
+          "summary": "A fan-made StarCraft game. Completely free, on web and mobile. Command Terran and Protoss forces, hold the bridge, and see how deep the swarm really goes.",
+          "titleZh": "星际争霸：Ashfall",
+          "summaryZh": "一款粉丝自制的《星际争霸》游戏，完全免费，可在网页和移动设备上游玩。指挥人族和星灵部队，守住桥梁，看看虫群究竟有多强大。",
+          "url": "https://starcraft-shooter-2026.pages.dev/",
           "source": "Hacker News",
-          "score": 3.6,
+          "score": 3.69,
           "reasons": [
-            "HN分数120",
-            "讨论量24"
+            "HN分数354",
+            "讨论量113"
           ],
-          "published": "2026-10-18T18:48:04+00:00"
-        },
-        {
-          "title": "Show HN: WhatsApp MCP running free on Cloudflare",
-          "summary": "A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Runs on Cloudflare Workers. - finereli/whatsapp-mcp",
-          "titleZh": "Show HN：在 Cloudflare 上免费运行的 WhatsApp MCP",
-          "summaryZh": "一个只读 MCP 服务器，可让你的 AI 智能体搜索并阅读你自己的 WhatsApp 消息。运行于 Cloudflare Workers。- finereli/whatsapp-mcp",
-          "url": "https://github.com/finereli/whatsapp-mcp",
-          "source": "Hacker News",
-          "score": 3.55,
-          "reasons": [
-            "HN分数53",
-            "讨论量35"
-          ],
-          "published": "2026-10-18T21:36:10+00:00"
+          "published": "2026-10-19T01:18:02+00:00"
         }
       ]
     },
@@ -126,104 +126,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
-          "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
-          "titleZh": "Anthropic 称将把其 5% 的股份捐给“公益基金”",
-          "summaryZh": "Anthropic 表示，将把其 5% 的股份投入该基金。",
-          "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+          "title": "Mamdani says feds have abdicated on AI, urges New Yorkers to push back",
+          "summary": "Mayor Zohran Mamdani said Monday night that New Yorkers must resist the narrative that an AI takeover is inevitable and demand regulations that protect the public and put power back in their hands.",
+          "titleZh": "Mamdani 称联邦政府在 AI 问题上失职，敦促纽约人挺身反对",
+          "summaryZh": "纽约市长 Zohran Mamdani 周一晚表示，纽约人必须抵制“AI 接管不可避免”的说法，并要求制定保护公众、将权力交还给民众的监管措施。",
+          "url": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.54,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-18T20:37:40+00:00"
+          "published": "2026-10-20T01:27:03+00:00"
         },
         {
-          "title": "Disney agrees to hire the majority of Character.AI’s workforce",
-          "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
-          "titleZh": "迪士尼同意聘用 Character.AI 的大部分员工",
-          "summaryZh": "文件还称，获邀加入迪士尼的 Character.AI 员工中，“绝大多数”已接受聘用。不过，这只是一项意向收购报价，其他公司仍可能提出更高报价。",
-          "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+          "title": "Nscale and Anthropic are reportedly in talks for yet another $45B compute deal",
+          "summary": "If the deal goes through, it would be the latest in a long string of giant compute deals Anthropic has struck over the past year.",
+          "titleZh": "据报道，Nscale 与 Anthropic 正洽谈又一笔 450 亿美元算力交易",
+          "summaryZh": "如果交易达成，这将是 Anthropic 过去一年签下的一系列巨额算力交易中的最新一笔。",
+          "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-18T16:30:00+00:00"
+          "published": "2026-10-19T23:39:38+00:00"
         },
         {
-          "title": "TechCrunch Mobility: Rivian’s next act",
-          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-          "titleZh": "TechCrunch Mobility：Rivian 的下一步",
-          "summaryZh": "欢迎回到 TechCrunch Mobility——这里聚焦交通运输的未来，以及如今愈发重要的人工智能在其中扮演的角色。",
-          "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
+          "title": "Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says",
+          "summary": "The idea of embedded evaluators — in which supposedly \"neutral\" third-party observers are placed inside AI organizations — has been popularized over the last several months, as AI labs grapple with a rash of safety incid…",
+          "titleZh": "Hugging Face 政策负责人称，嵌入式 AI 评估员并非轻松的解决方案",
+          "summaryZh": "嵌入式评估员的设想——在 AI 机构内部安排所谓“中立”的第三方观察员——近几个月来逐渐流行，因为 AI 实验室正应对一连串安全事件……",
+          "url": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
           "source": "TechCrunch",
-          "score": 4.28,
+          "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-18T16:05:00+00:00"
+          "published": "2026-10-19T22:49:27+00:00"
         },
         {
-          "title": "Meta removes language that raised scraping and AI training concerns",
-          "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-          "titleZh": "Meta 删除引发网页抓取和 AI 训练担忧的条款",
-          "summaryZh": "Meta 发言人坚称，更新后的条款并不意味着 Meta 抓取网络内容的方式发生变化。",
-          "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+          "title": "Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’",
+          "summary": "Microsoft wants enterprises to closely watch the agents that employees use with systems not controlled by AI labs like OpenAI and Anthropic.",
+          "titleZh": "Microsoft 称 AI 智能体如同内部威胁，“前沿模型不可信”",
+          "summaryZh": "Microsoft 希望企业密切监控员工使用的智能体，尤其是那些连接到 OpenAI、Anthropic 等 AI 实验室未控制系统的智能体。",
+          "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
           "source": "TechCrunch",
-          "score": 3.77,
+          "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-17T21:31:32+00:00"
+          "published": "2026-10-19T22:04:28+00:00"
         },
         {
-          "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-          "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
-          "titleZh": "Anthropic 称员工队伍中资深员工占比上升，开会时间也增加",
-          "summaryZh": "过去一年，Anthropic 的员工构成和所开展工作的类型都发生了显著变化。",
-          "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+          "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+          "summary": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
+          "titleZh": "Amazon 推出新的 TorchNeuron 开发工具，向 Nvidia 发起迄今最大挑战",
+          "summaryZh": "Amazon 希望打破 Nvidia 对 PyTorch 的掌控。PyTorch 是用于构建大多数 AI 应用的免费工具包；Amazon 希望开发者转而在其自研等替代芯片上运行应用。",
+          "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
           "source": "TechCrunch",
-          "score": 3.73,
+          "score": 4.4,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-17T20:21:19+00:00"
+          "published": "2026-10-19T20:09:24+00:00"
         },
         {
-          "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-          "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-          "titleZh": "Replit 将 OpenAI 设为默认模型提供商，CEO 称其取代了 Anthropic",
-          "summaryZh": "周末期间，Masad 澄清，OpenAI 将取代 Anthropic 成为 Replit 的默认模型提供商。平台用户仍可使用 Claude。",
-          "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+          "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+          "summary": "OpenCode is an open source AI coding agent that's become a popular alternative to Claude Code and Cursor. But hackers got into part of its online platform and stole some users’ API keys, and the AI tools it turned to for…",
+          "titleZh": "黑客攻击 AI 编程工具 OpenCode，导致用户 AI 账户费用激增",
+          "summaryZh": "开源 AI 编程智能体 OpenCode 已成为 Claude Code 和 Cursor 的热门替代品。但黑客侵入其在线平台的部分系统，窃取了一些用户的 API 密钥，而该工具调用的 AI 工具……",
+          "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
           "source": "TechCrunch",
-          "score": 3.69,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-17T18:48:08+00:00"
+          "published": "2026-10-19T19:28:34+00:00"
         },
         {
-          "title": "No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market",
-          "summary": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
-          "titleZh": "不设议程、不赶时间、不离开旧金山：Benchmark 合伙人谈狂热市场中的投资",
-          "summaryZh": "Benchmark 可能扩大了基金规模，也更换了几位合伙人，但台上留下的五位听起来就像一群朋友，只是恰好共同经营着硅谷历史最悠久、声望最高的公司之一。",
-          "url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
+          "title": "Tolan snags $30M for its AI companion that helps users navigate life",
+          "summary": "AI companion app Tolan has raised another $30 million after attracting more than 250,000 active users.",
+          "titleZh": "Tolan 为帮助用户应对生活的 AI 伴侣融资 3000 万美元",
+          "summaryZh": "AI 伴侣应用 Tolan 在吸引超过 25 万名活跃用户后，再次融资 3000 万美元。",
+          "url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
           "source": "TechCrunch",
-          "score": 1.82,
-          "reasons": [],
-          "published": "2026-10-18T21:00:00+00:00"
+          "score": 4.36,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-19T19:00:12+00:00"
         },
         {
-          "title": "Everyone’s watching the Elizabeth Holmes documentary ‘You Can See Everything’",
-          "summary": "\"You Can See Everything\" is having the second biggest opening weekend ever for a documentary film.",
-          "titleZh": "所有人都在看伊丽莎白·霍姆斯纪录片《你可以看见一切》",
-          "summaryZh": "《你可以看见一切》创下纪录片史上第二高的首映周末票房。",
-          "url": "https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/",
+          "title": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
+          "summary": "Eugenia Kuyda's newest startup Wabi is positioned to take advantage of an idea she had more than a decade ago. Wabi offers a personal AI assistant with a twist, free and downloadable to anyone today.",
+          "titleZh": "Replika 创始人打造了她 12 年前在 Disrupt 上推介的 AI 助手",
+          "summaryZh": "Eugenia Kuyda 最新创办的初创公司 Wabi，旨在将她十多年前的构想付诸实践。Wabi 提供一款别具特色的个人 AI 助手，今天起任何人都可免费下载。",
+          "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
           "source": "TechCrunch",
-          "score": 1.76,
-          "reasons": [],
-          "published": "2026-10-18T19:03:38+00:00"
+          "score": 4.36,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-19T18:49:04+00:00"
         }
       ]
     }
@@ -231,7 +235,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-19T11:01:40.958250+08:00"
+      "lastRunAt": "2026-10-20T11:01:30.460560+08:00"
     }
   }
 }
