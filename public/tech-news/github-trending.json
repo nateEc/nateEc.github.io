@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T14:30:23+08:00",
-  "date": "2026-10-19",
+  "updatedAt": "2026-10-21T14:30:33+08:00",
+  "date": "2026-10-21",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,109 +11,109 @@
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 2232,
-      "totalStars": 54197,
-      "forks": 17554,
+      "starsToday": 3861,
+      "totalStars": 61345,
+      "forks": 19046,
       "url": "https://github.com/MadsLorentzen/ai-job-search"
     },
     {
       "rank": 2,
-      "fullName": "anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 1175,
-      "totalStars": 42878,
-      "forks": 4543,
-      "url": "https://github.com/anthropics/claude-plugins-official"
+      "fullName": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 1712,
+      "totalStars": 34684,
+      "forks": 2181,
+      "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
       "rank": 3,
-      "fullName": "anomalyco/opencode",
-      "description": "The open source coding agent.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 1414,
-      "totalStars": 216883,
-      "forks": 29026,
-      "url": "https://github.com/anomalyco/opencode"
-    },
-    {
-      "rank": 4,
-      "fullName": "cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 350,
-      "totalStars": 12855,
-      "forks": 1265,
-      "url": "https://github.com/cursor/plugins"
-    },
-    {
-      "rank": 5,
-      "fullName": "ruvnet/ruflo",
-      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many m",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 513,
-      "totalStars": 76699,
-      "forks": 9066,
-      "url": "https://github.com/ruvnet/ruflo"
-    },
-    {
-      "rank": 6,
-      "fullName": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 512,
-      "totalStars": 10696,
-      "forks": 756,
-      "url": "https://github.com/akitaonrails/ai-memory"
-    },
-    {
-      "rank": 7,
       "fullName": "stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 1146,
-      "totalStars": 97103,
-      "forks": 6198,
+      "starsToday": 1565,
+      "totalStars": 100120,
+      "forks": 6347,
       "url": "https://github.com/stablyai/orca"
     },
     {
-      "rank": 8,
-      "fullName": "HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "rank": 4,
+      "fullName": "DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 1208,
+      "totalStars": 170220,
+      "forks": 9261,
+      "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
+      "rank": 5,
+      "fullName": "Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 589,
-      "totalStars": 54781,
-      "forks": 4955,
-      "url": "https://github.com/HKUDS/CLI-Anything"
+      "starsToday": 1206,
+      "totalStars": 140998,
+      "forks": 16682,
+      "url": "https://github.com/Comfy-Org/ComfyUI"
+    },
+    {
+      "rank": 6,
+      "fullName": "ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many m",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 684,
+      "totalStars": 77972,
+      "forks": 9172,
+      "url": "https://github.com/ruvnet/ruflo"
+    },
+    {
+      "rank": 7,
+      "fullName": "Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 802,
+      "totalStars": 130593,
+      "forks": 12560,
+      "url": "https://github.com/Graphify-Labs/graphify"
+    },
+    {
+      "rank": 8,
+      "fullName": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 1240,
+      "totalStars": 219181,
+      "forks": 29239,
+      "url": "https://github.com/anomalyco/opencode"
     },
     {
       "rank": 9,
-      "fullName": "debpalash/VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 2082,
-      "totalStars": 76073,
-      "forks": 8325,
-      "url": "https://github.com/debpalash/VoiceStudio"
+      "fullName": "msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 562,
+      "totalStars": 162557,
+      "forks": 26246,
+      "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
       "rank": 10,
-      "fullName": "android/skills",
-      "description": "",
-      "language": "Kotlin",
-      "languageColor": "#A97BFF",
-      "starsToday": 375,
-      "totalStars": 8894,
-      "forks": 571,
-      "url": "https://github.com/android/skills"
+      "fullName": "headroomlabs-ai/headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 549,
+      "totalStars": 76873,
+      "forks": 5968,
+      "url": "https://github.com/headroomlabs-ai/headroom"
     }
   ],
   "languages": [
@@ -125,51 +125,52 @@
     },
     {
       "name": "TypeScript",
-      "count": 4,
-      "share": 40,
+      "count": 3,
+      "share": 30,
       "color": "#3178C6"
     },
     {
-      "name": "Kotlin",
-      "count": 1,
-      "share": 10,
-      "color": "#A97BFF"
+      "name": "JavaScript",
+      "count": 2,
+      "share": 20,
+      "color": "#F1E05A"
     },
     {
-      "name": "Rust",
+      "name": "Shell",
       "count": 1,
       "share": 10,
-      "color": "#DEA584"
+      "color": "#89E051"
     }
   ],
   "themes": [
     {
       "name": "Developer tools",
-      "count": 7,
+      "count": 8,
       "repositories": [
         "MadsLorentzen/ai-job-search",
-        "anthropics/claude-plugins-official",
-        "anomalyco/opencode",
-        "ruvnet/ruflo"
+        "cloudflare/security-audit-skill",
+        "stablyai/orca",
+        "DietrichGebert/ponytail"
       ]
     },
     {
       "name": "Agent systems",
-      "count": 5,
+      "count": 7,
       "repositories": [
-        "anomalyco/opencode",
-        "ruvnet/ruflo",
-        "akitaonrails/ai-memory",
-        "stablyai/orca"
+        "cloudflare/security-audit-skill",
+        "stablyai/orca",
+        "DietrichGebert/ponytail",
+        "ruvnet/ruflo"
       ]
     },
     {
       "name": "AI infrastructure",
-      "count": 3,
+      "count": 6,
       "repositories": [
         "MadsLorentzen/ai-job-search",
-        "ruvnet/ruflo",
-        "akitaonrails/ai-memory"
+        "DietrichGebert/ponytail",
+        "Comfy-Org/ComfyUI",
+        "ruvnet/ruflo"
       ]
     }
   ]
