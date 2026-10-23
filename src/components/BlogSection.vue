@@ -8,6 +8,21 @@ type LocalizedText = { en: string; zh: string }
 
 const posts = [
   {
+    number: '05',
+    date: '2026.10.23',
+    category: { en: 'Collected reading · Chinese', zh: '精选阅读 · 中文' },
+    title: {
+      en: 'Vercel’s CEO on an Internet Rebuilt for AI Agents',
+      zh: 'Vercel CEO：60% 的部署已来自 Agent，互联网正在为 AI 重做一遍',
+    },
+    summary: {
+      en: 'A Chinese interview commentary credited to 深思圈, exploring agent-driven deployments, software and data, security boundaries, model routing, and the changing role of engineers. Collected on October 23, 2026.',
+      zh: '收录「深思圈」对 Guillermo Rauch 访谈的解读：从 Agent 部署和软件形态，到安全边界、模型路由，以及工程师如何理解系统、设定边界并承担责任。',
+    },
+    tags: ['Agent Engineering', 'Vercel', 'Industry Reading'],
+    href: '/blog/vercel-agent-internet.html',
+  },
+  {
     number: '01',
     date: '2026.06.24',
     category: { en: 'Agent architecture', zh: 'Agent 架构' },
@@ -65,14 +80,14 @@ const copy = computed(() => currentLanguage.value === 'zh'
   ? {
       kicker: '技术笔记',
       title: '把思考留成可复用的系统图。',
-      subtitle: '关于 Agent 架构、Harness 评估、Skill 学习策略与协议演进的长文。站内文章使用与主站一致的阅读外壳。',
+      subtitle: '关于 Agent 架构、Harness 评估、Skill 学习与协议演进的技术笔记，以及精选行业阅读。',
       read: '阅读笔记',
       readExternal: '在掘金阅读',
     }
   : {
       kicker: 'Technical notes',
       title: 'Leave the thinking as a reusable system map.',
-      subtitle: 'Long-form notes on agent architecture, harness evaluation, skill learning, and protocol evolution. On-site essays share the portfolio’s reading shell.',
+      subtitle: 'Technical notes on agent architecture, harness evaluation, skill learning, and protocol evolution, alongside selected industry reading.',
       read: 'Read note',
       readExternal: 'Read on Juejin',
     })
