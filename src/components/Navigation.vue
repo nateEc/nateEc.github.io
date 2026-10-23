@@ -68,7 +68,7 @@ onBeforeUnmount(() => {
     <div class="shell nav-shell">
       <RouterLink class="wordmark" to="/" aria-label="Nathan Shan — home">
         <span class="wordmark__mark" aria-hidden="true">
-          <img src="/apple-touch-icon.png?v=20260907" alt="" width="34" height="34">
+          <img src="/images/nav-portrait-20261023.webp" alt="" width="34" height="34">
         </span>
         <span class="wordmark__name">Nathan Shan</span>
       </RouterLink>
