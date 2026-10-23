@@ -1,176 +1,168 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T14:30:20+08:00",
-  "date": "2026-10-22",
+  "updatedAt": "2026-10-23T14:30:25+08:00",
+  "date": "2026-10-23",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 2012,
-      "totalStars": 37309,
-      "forks": 2330,
-      "url": "https://github.com/cloudflare/security-audit-skill"
+      "fullName": "php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "languageColor": "#555555",
+      "starsToday": 287,
+      "totalStars": 41311,
+      "forks": 8330,
+      "url": "https://github.com/php/php-src"
     },
     {
       "rank": 2,
-      "fullName": "vllm-project/vllm",
-      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "fullName": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 441,
-      "totalStars": 94998,
-      "forks": 23772,
-      "url": "https://github.com/vllm-project/vllm"
+      "starsToday": 303,
+      "totalStars": 31771,
+      "forks": 3543,
+      "url": "https://github.com/anthropics/knowledge-work-plugins"
     },
     {
       "rank": 3,
-      "fullName": "stablyai/orca",
-      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 1541,
-      "totalStars": 101726,
-      "forks": 6433,
-      "url": "https://github.com/stablyai/orca"
-    },
-    {
-      "rank": 4,
-      "fullName": "headroomlabs-ai/headroom",
-      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 474,
-      "totalStars": 77385,
-      "forks": 6009,
-      "url": "https://github.com/headroomlabs-ai/headroom"
-    },
-    {
-      "rank": 5,
       "fullName": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 2079,
-      "totalStars": 172100,
-      "forks": 9367,
+      "starsToday": 1948,
+      "totalStars": 173901,
+      "forks": 9470,
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
-      "rank": 6,
-      "fullName": "Comfy-Org/ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 939,
-      "totalStars": 141709,
-      "forks": 16746,
-      "url": "https://github.com/Comfy-Org/ComfyUI"
+      "rank": 4,
+      "fullName": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 2979,
+      "totalStars": 40091,
+      "forks": 2501,
+      "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
-      "rank": 7,
+      "rank": 5,
+      "fullName": "Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 1408,
+      "totalStars": 133267,
+      "forks": 12739,
+      "url": "https://github.com/Graphify-Labs/graphify"
+    },
+    {
+      "rank": 6,
       "fullName": "supabase/supabase",
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 504,
-      "totalStars": 113157,
-      "forks": 16979,
+      "starsToday": 693,
+      "totalStars": 113590,
+      "forks": 17016,
       "url": "https://github.com/supabase/supabase"
     },
     {
+      "rank": 7,
+      "fullName": "fastapi/fastapi",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 101,
+      "totalStars": 103919,
+      "forks": 10100,
+      "url": "https://github.com/fastapi/fastapi"
+    },
+    {
       "rank": 8,
-      "fullName": "twentyhq/twenty",
-      "description": "The open alternative to Salesforce, designed for AI.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 112,
-      "totalStars": 59361,
-      "forks": 9674,
-      "url": "https://github.com/twentyhq/twenty"
+      "fullName": "luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 177,
+      "totalStars": 43495,
+      "forks": 5410,
+      "url": "https://github.com/luongnv89/claude-howto"
     },
     {
       "rank": 9,
-      "fullName": "shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 575,
-      "totalStars": 42963,
-      "forks": 7084,
-      "url": "https://github.com/shiyu-coder/Kronos"
-    },
-    {
-      "rank": 10,
-      "fullName": "akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 286,
-      "totalStars": 12510,
-      "forks": 882,
-      "url": "https://github.com/akitaonrails/ai-memory"
+      "fullName": "Meloong-Git/PCL",
+      "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+      "language": "Visual Basic .NET",
+      "languageColor": "#8B949E",
+      "starsToday": 119,
+      "totalStars": 8787,
+      "forks": 1224,
+      "url": "https://github.com/Meloong-Git/PCL"
     }
   ],
   "languages": [
     {
       "name": "Python",
       "count": 4,
-      "share": 40,
+      "share": 44,
       "color": "#3572A5"
-    },
-    {
-      "name": "TypeScript",
-      "count": 3,
-      "share": 30,
-      "color": "#3178C6"
     },
     {
       "name": "JavaScript",
       "count": 2,
-      "share": 20,
+      "share": 22,
       "color": "#F1E05A"
     },
     {
-      "name": "Rust",
+      "name": "C",
       "count": 1,
-      "share": 10,
-      "color": "#DEA584"
+      "share": 11,
+      "color": "#555555"
+    },
+    {
+      "name": "TypeScript",
+      "count": 1,
+      "share": 11,
+      "color": "#3178C6"
+    },
+    {
+      "name": "Visual Basic .NET",
+      "count": 1,
+      "share": 11,
+      "color": "#8B949E"
     }
   ],
   "themes": [
     {
-      "name": "AI infrastructure",
-      "count": 8,
+      "name": "Developer tools",
+      "count": 6,
       "repositories": [
-        "vllm-project/vllm",
-        "headroomlabs-ai/headroom",
         "DietrichGebert/ponytail",
-        "Comfy-Org/ComfyUI"
+        "cloudflare/security-audit-skill",
+        "Graphify-Labs/graphify",
+        "fastapi/fastapi"
       ]
     },
     {
       "name": "Agent systems",
-      "count": 5,
+      "count": 3,
       "repositories": [
+        "DietrichGebert/ponytail",
         "cloudflare/security-audit-skill",
-        "stablyai/orca",
-        "headroomlabs-ai/headroom",
-        "DietrichGebert/ponytail"
+        "luongnv89/claude-howto"
       ]
     },
     {
-      "name": "Developer tools",
-      "count": 5,
+      "name": "AI infrastructure",
+      "count": 2,
       "repositories": [
-        "cloudflare/security-audit-skill",
-        "stablyai/orca",
-        "headroomlabs-ai/headroom",
-        "DietrichGebert/ponytail"
+        "DietrichGebert/ponytail",
+        "supabase/supabase"
       ]
     }
   ]
