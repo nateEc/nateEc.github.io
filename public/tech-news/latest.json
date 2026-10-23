@@ -1,123 +1,126 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-22T11:31:31+08:00",
-  "date": "2026-10-22",
+  "updatedAt": "2026-10-23T11:31:34+08:00",
+  "date": "2026-10-23",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Today's PHP security release, and how we're strengthening security",
-          "summary": "Describing the story behind how critical security vulnerabilities were found and fixed.",
-          "titleZh": "今日发布 PHP 安全更新，以及我们如何加强 PHP 安全",
-          "summaryZh": "讲述关键安全漏洞被发现并修复的幕后经过。",
-          "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+          "title": "Every AI model has the same \"controversial\" take on humans",
+          "summary": "We asked 12 AI models for their most controversial opinion of humans, three times each. 29 of 35 answers were the same one: we care more about belonging than about the truth.",
+          "titleZh": "每个 AI 模型对人类都有同一个“争议性”看法",
+          "summaryZh": "我们让 12 个 AI 模型各自给出三次它们对人类最具争议性的看法。35 个回答中有 29 个都指向同一点：相比真相，我们更在乎归属感。",
+          "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
           "source": "Hacker News",
-          "score": 4.48,
+          "score": 6.84,
           "reasons": [
-            "HN分数694",
-            "讨论量343"
+            "AI",
+            "HN分数272",
+            "讨论量328"
           ],
-          "published": "2026-10-21T15:48:56+00:00"
+          "published": "2026-10-22T16:08:00+00:00"
         },
         {
-          "title": "Security Disclosure",
-          "summary": "Railway detected anomalous activity involving systems that store customer environment variables and recommends your immediate attention",
-          "titleZh": "安全事件披露",
-          "summaryZh": "Railway 检测到涉及存储客户环境变量的系统出现异常活动，并建议你立即关注。",
-          "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+          "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+          "summary": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell",
+          "titleZh": "OpenShell：为自主 AI 智能体集群打造的安全、私密运行时",
+          "summaryZh": "OpenShell 是专为自主 AI 智能体打造的安全、私密运行时。",
+          "url": "https://github.com/NVIDIA/OpenShell",
           "source": "Hacker News",
-          "score": 4.37,
+          "score": 6.8,
           "reasons": [
-            "HN分数351",
-            "讨论量196"
+            "AI",
+            "HN分数322",
+            "讨论量166"
           ],
-          "published": "2026-10-21T21:58:03+00:00"
+          "published": "2026-10-22T17:44:06+00:00"
         },
         {
-          "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
-          "summary": "Meta to pay $25 billion in penalties related to Cambridge Analytica scandal in New Mexico.",
-          "titleZh": "新墨西哥州 Cambridge Analytica 案中，Meta 被勒令支付 250 亿美元罚款",
-          "summaryZh": "Meta 将因 Cambridge Analytica 丑闻相关事项，在新墨西哥州支付 250 亿美元罚款。",
-          "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+          "title": "AI compute is the new oil–and needs a new market",
+          "summary": "Comments",
+          "titleZh": "AI 算力是新的石油，需要一个新的市场",
+          "summaryZh": "评论",
+          "url": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
           "source": "Hacker News",
-          "score": 4.36,
+          "score": 5.93,
           "reasons": [
-            "HN分数418",
-            "讨论量272"
+            "AI",
+            "HN分数29",
+            "讨论量18"
           ],
-          "published": "2026-10-21T17:45:13+00:00"
+          "published": "2026-10-22T23:45:16+00:00"
         },
         {
-          "title": "There isn't an easy exploit for this PHP vulnerability",
-          "summary": "Mass hysteria, or something.",
-          "titleZh": "这个 PHP 漏洞并没有简单的利用方法",
-          "summaryZh": "大规模恐慌，或诸如此类。",
-          "url": "https://eliastaylor.com/noexploit/",
+          "title": "eMudhra to exit global SSL/TLS certificate business",
+          "summary": "eMudhra Limited (BSE: 543533 | NSE: EMUDHRA), a global digital trust company, today announced that its Board has decided to voluntarily withdraw from the global SSL/TLS certificate business.",
+          "titleZh": "eMudhra 将退出全球 SSL/TLS 证书业务",
+          "summaryZh": "全球数字信任公司 eMudhra Limited（BSE：543533 | NSE：EMUDHRA）今日宣布，其董事会已决定自愿退出全球 SSL/TLS 证书业务。",
+          "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
           "source": "Hacker News",
-          "score": 4.22,
+          "score": 4.63,
           "reasons": [
-            "HN分数243",
-            "讨论量121"
+            "HN分数970",
+            "讨论量645"
           ],
-          "published": "2026-10-21T23:13:27+00:00"
+          "published": "2026-10-22T13:33:39+00:00"
         },
         {
-          "title": "mitmproxy adds --emudhra option",
-          "summary": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers. - Add `--emudhra` option (#8500) · mitmproxy/mitmproxy@1692344",
-          "titleZh": "mitmproxy 新增 --emudhra 选项",
-          "summaryZh": "一款支持 TLS 的交互式 HTTP 拦截代理，面向渗透测试人员和软件开发者。新增 `--emudhra` 选项（#8500）· mitmproxy/mitmproxy@1692344",
-          "url": "https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b",
+          "title": "Quad9 (DNS Resolver) to Exit France",
+          "summary": "A public and free DNS service for a better security and privacy",
+          "titleZh": "Quad9（DNS 解析器）将退出法国",
+          "summaryZh": "一项公共免费 DNS 服务，旨在提供更好的安全性和隐私保护。",
+          "url": "https://quad9.net/news/blog/au-revoir-france/",
           "source": "Hacker News",
-          "score": 4.19,
+          "score": 4.56,
           "reasons": [
-            "HN分数294",
-            "讨论量76"
+            "HN分数1036",
+            "讨论量372"
           ],
-          "published": "2026-10-21T23:51:37+00:00"
+          "published": "2026-10-22T14:32:38+00:00"
         },
         {
-          "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-          "summary": "LiteLLM 1.107.0 on PyPI ships a .pth credential stealer and a sitecustomize.py backdoor that run on every Python start. How the implant got in, what it steals, and indicators of compromise.",
-          "titleZh": "PyPI 上遭入侵的 LiteLLM 1.107.0 会安装凭据窃取程序和后门",
-          "summaryZh": "PyPI 上的 LiteLLM 1.107.0 携带 .pth 凭据窃取程序和 sitecustomize.py 后门，每次启动 Python 时都会运行。了解植入程序如何混入、会窃取什么，以及入侵指标。",
-          "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+          "title": "Woman faces six years in prison over Cash App account she never opened",
+          "summary": "In April, Amanda Smith was shocked to discover officers at her upstate Pennsylvania home with a warrant for her arrest, writes 404 Media. The alleged crime took...",
+          "titleZh": "女子因从未开通过的 Cash App 账户面临六年监禁",
+          "summaryZh": "4 月，阿曼达·史密斯震惊地发现，宾夕法尼亚州北部家中有警员持逮捕令上门。404 Media 报道称，她被指控犯下的罪行……",
+          "url": "https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html",
           "source": "Hacker News",
-          "score": 4.16,
+          "score": 4.45,
           "reasons": [
-            "HN分数455",
-            "讨论量154"
+            "HN分数552",
+            "讨论量571"
           ],
-          "published": "2026-10-21T14:00:26+00:00"
+          "published": "2026-10-22T13:11:00+00:00"
         },
         {
-          "title": "Rust Style Guide",
-          "summary": "Style guides for Google-originated open-source projects",
-          "titleZh": "Rust 风格指南",
-          "summaryZh": "Google 发起的开源项目风格指南。",
-          "url": "https://google.github.io/styleguide/rustguide.html",
+          "title": "Docker is weird",
+          "summary": "I decided to make my own container runtime for fun, and even though I’m still early on, I’ve learned that Docker is weird . Here’s some weird things I learned about Docker.",
+          "titleZh": "Docker 很奇怪",
+          "summaryZh": "我决定出于兴趣自己开发一个容器运行时。虽然还处于早期阶段，但我已经发现 Docker 很奇怪。以下是我了解到的一些 Docker 怪事。",
+          "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+          "source": "Hacker News",
+          "score": 4.14,
+          "reasons": [
+            "HN分数198",
+            "讨论量100"
+          ],
+          "published": "2026-10-22T23:45:56+00:00"
+        },
+        {
+          "title": "Run full iOS 16.5 firmware on Android Devices",
+          "summary": "Contribute to oosexgang/hackios-xnu-kernel development by creating an account on GitHub.",
+          "titleZh": "在安卓设备上运行完整的 iOS 16.5 固件",
+          "summaryZh": "在 GitHub 上创建账户，为 oosexgang/hackios-xnu-kernel 项目贡献代码。",
+          "url": "https://github.com/oosexgang/hackios-xnu-kernel",
           "source": "Hacker News",
           "score": 4.1,
           "reasons": [
-            "HN分数235",
-            "讨论量125"
+            "HN分数346",
+            "讨论量131"
           ],
-          "published": "2026-10-21T19:11:57+00:00"
-        },
-        {
-          "title": "GitLab Critical Patch Release",
-          "summary": "On October 21, 2026, we released versions 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, 18.11.13 for GitLab Community Edition (CE) and Enterprise Edition (EE).",
-          "titleZh": "GitLab 重要安全补丁版本发布",
-          "summaryZh": "2026 年 10 月 21 日，我们为 GitLab 社区版（CE）和企业版（EE）发布了 19.5.1、19.4.3、19.3.6、19.2.9、19.1.9、19.0.10 和 18.11.13 版本。",
-          "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-          "source": "Hacker News",
-          "score": 4.0,
-          "reasons": [
-            "HN分数264",
-            "讨论量65"
-          ],
-          "published": "2026-10-21T19:01:12+00:00"
+          "published": "2026-10-22T15:26:22+00:00"
         }
       ]
     },
@@ -126,108 +129,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
-          "summary": "Blackstone’s AI head on why the PE giant isn't panicked by market jitters.",
-          "titleZh": "Blackstone 的 Jas Khaira 称，对 AI 建设债务的担忧被夸大了",
-          "summaryZh": "这家私募股权巨头的 AI 负责人谈及公司为何没有因市场不安而恐慌。",
-          "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+          "title": "Left alone with nothing to do, AI agents started playing",
+          "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
+          "titleZh": "被独自留在一旁无事可做后，AI 智能体开始玩游戏",
+          "summaryZh": "MIT 研究人员将 13 个 AI 模型困在一座虚拟岛屿上。它们随后发明游戏、为丢失的戒指哀悼，最终还提升了工作表现。",
+          "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
           "source": "TechCrunch",
-          "score": 4.47,
+          "score": 4.52,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-21T22:51:22+00:00"
+          "published": "2026-10-23T00:45:37+00:00"
         },
         {
-          "title": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
-          "summary": "The social media giant is planning a new stock strategy to help power its broad investments in AI models and services.",
-          "titleZh": "Meta 希望通过新设股票类别为大规模 AI 建设融资",
-          "summaryZh": "这家社交媒体巨头正筹划新的股票策略，为其在 AI 模型和服务领域的大规模投资提供支持。",
-          "url": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
+          "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+          "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
+          "titleZh": "OpenAI 正筹备新一轮 300 亿美元融资，IPO 前估值达 1.25 万亿美元",
+          "summaryZh": "如果 OpenAI 此轮融资的估值超过 1 万亿美元，将创下有史以来私营公司最高估值纪录。",
+          "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
           "source": "TechCrunch",
-          "score": 4.47,
+          "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-21T22:45:34+00:00"
+          "published": "2026-10-22T22:08:24+00:00"
         },
         {
-          "title": "TechCrunch Founder Summit 2026: Everything you need to know",
-          "summary": "TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and scaling their compan…",
-          "titleZh": "TechCrunch 创始人峰会 2026：你需要了解的一切",
-          "summaryZh": "TechCrunch 创始人峰会将于 11 月 4 日在波士顿举行，为期一天。各阶段的创始人将与顶尖风险投资人和资深创业者交流，获取打造和扩大公司规模的实用见解……",
-          "url": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
-          "source": "TechCrunch",
-          "score": 4.43,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-21T21:16:20+00:00"
-        },
-        {
-          "title": "Meta says Muse has over 10M users, with shopping a top activity",
-          "summary": "Meta Muse users are adopting the app for shopping and personal productivity, the company said during Q3 earnings. The AI app now has over 10M users.",
-          "titleZh": "Meta 称 Muse 用户已超 1000 万，购物是热门活动之一",
-          "summaryZh": "Meta 在第三季度财报会上表示，Muse 用户正使用这款应用购物和提升个人效率。这款 AI 应用目前用户已超过 1000 万。",
-          "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
-          "source": "TechCrunch",
-          "score": 4.43,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-21T21:14:19+00:00"
-        },
-        {
-          "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-          "summary": "Just 9 months after raising a $180 million seed round, Flapping Airplanes has landed a $1 billion Series A for its mission to build AI models \"without ingesting half the internet.\"",
-          "titleZh": "成立仅一年的 AI 实验室 Flapping Airplanes 融资 10 亿美元，估值达 60 亿美元",
-          "summaryZh": "在完成 1.8 亿美元种子轮融资仅 9 个月后，Flapping Airplanes 又获得 10 亿美元 A 轮融资，致力于打造“无需摄取半个互联网数据”的 AI 模型。",
-          "url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+          "title": "Rivian buys world model startup to accelerate self-driving ambitions",
+          "summary": "Third Dimension's technology uses AI to match the physical world, which when combined with Rivian's reams of data could turn into a valuable simulator.",
+          "titleZh": "Rivian 收购世界模型初创公司，以加速自动驾驶布局",
+          "summaryZh": "Third Dimension 的技术利用 AI 匹配物理世界；若与 Rivian 海量数据结合，有望打造出有价值的模拟器。",
+          "url": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
           "source": "TechCrunch",
           "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-21T20:57:40+00:00"
+          "published": "2026-10-22T21:05:05+00:00"
         },
         {
-          "title": "Tesla starts Optimus robot production in California as profit falls 43%",
-          "summary": "Tesla's revenue was flat and its expenses skyrocketed as it pressed the accelerator on its Optimus robots, AI, and autonomous driving.",
-          "titleZh": "特斯拉在加州启动 Optimus 机器人生产，利润下滑 43%",
-          "summaryZh": "特斯拉营收持平、支出大幅飙升，同时加速推进 Optimus 机器人、AI 和自动驾驶业务。",
-          "url": "https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/",
+          "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+          "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
+          "titleZh": "1Password 推出新方式，让 AI 智能体代你登录而无需查看密码",
+          "summaryZh": "这项新功能允许智能体登录客户的个人账户，同时保护用于保障账户安全的私密凭据。",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.37,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-21T20:33:09+00:00"
+          "published": "2026-10-22T19:07:09+00:00"
         },
         {
-          "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
-          "summary": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself.",
-          "titleZh": "Recursive 推出 Flint 笔记本级编程模型，称其主要由 AI 打造",
-          "summaryZh": "初创公司 Recursive 发布了 Flint：一款免费的笔记本级编程模型，主要由其自身的 AI 研究系统构建，是对能够自我改进的 AI 的早期测试。",
-          "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+          "title": "Canva releases its first image generation model",
+          "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
+          "titleZh": "Canva 发布首款图像生成模型",
+          "summaryZh": "Canva 将向所有用户开放其全新图像模型，并承诺以更低成本提供更出色、可定制性更强的性能。",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-21T20:27:41+00:00"
+          "published": "2026-10-22T19:00:00+00:00"
         },
         {
-          "title": "GM is betting compute and AI will help it compete with Chinese automakers",
-          "summary": "To compete with Tesla, Rivian, and a host of Chinese automakers, GM’s fourth-gen EV platform will roll out a new central computer and electrical architecture that will debut in 2028 in the Cadillac Escalade IQ.",
-          "titleZh": "通用汽车押注算力与 AI，助力其与中国车企竞争",
-          "summaryZh": "为与特斯拉、Rivian 及众多中国车企竞争，通用汽车第四代电动汽车平台将采用新的中央计算机和电气架构，并于 2028 年率先搭载于凯迪拉克 Escalade IQ。",
-          "url": "https://techcrunch.com/2026/10/21/gm-is-betting-compute-and-ai-will-help-it-compete-with-chinese-automakers/",
+          "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
+          "summary": "OpenAI is launching its decision model to the world. Can it compete with the original Jev?",
+          "titleZh": "决策模型竞争升温之际，OpenAI 面向广泛用户推出 Jev 竞品",
+          "summaryZh": "OpenAI 正将其决策模型推向全球用户。它能与 Jev 原版竞争吗？",
+          "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-21T19:52:20+00:00"
+          "published": "2026-10-22T19:00:00+00:00"
+        },
+        {
+          "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical sup…",
+          "summary": "Microsoft’s new AI diagnostic system beat generalist doctors on hard cases, according to a study in Science. But most of the improvement seems to come from the AI models underneath, not from Microsoft’s system itself.",
+          "titleZh": "微软的 Mustafa Suleyman 称，其 AI 在疑难病例上胜过医生，并追求医疗超级智能",
+          "summaryZh": "据《科学》杂志的一项研究，微软的新型 AI 诊断系统在疑难病例上胜过全科医生。但大部分提升似乎来自底层 AI 模型，而非微软系统本身。",
+          "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+          "source": "TechCrunch",
+          "score": 4.36,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-22T18:43:53+00:00"
+        },
+        {
+          "title": "Mark Zuckerberg’s creative plan to pay California’s proposed billionaire tax without losing control…",
+          "summary": "A newly launched stock class being offered was partially engineered to help Meta founder and CEO Mark Zuckerberg pay the \"billionaire's tax,\" should the measure be voted into law.",
+          "titleZh": "马克·扎克伯格巧妙筹划缴纳加州拟议的亿万富豪税，同时保住对 Meta 的控制权",
+          "summaryZh": "Meta 创始人兼首席执行官马克·扎克伯格推出了一类新股，部分设计目的在于帮助他缴纳“亿万富豪税”（若该法案获投票通过并成为法律）。",
+          "url": "https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/",
+          "source": "TechCrunch",
+          "score": 1.9,
+          "reasons": [],
+          "published": "2026-10-22T23:50:41+00:00"
         }
       ]
     }
@@ -235,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-22T11:01:48.374177+08:00"
+      "lastRunAt": "2026-10-23T11:01:47.585228+08:00"
     }
   }
 }
