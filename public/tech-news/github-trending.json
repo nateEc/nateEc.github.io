@@ -1,168 +1,154 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T14:30:25+08:00",
-  "date": "2026-10-23",
+  "updatedAt": "2026-10-24T14:30:22+08:00",
+  "date": "2026-10-24",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "php/php-src",
-      "description": "The PHP Interpreter",
-      "language": "C",
-      "languageColor": "#555555",
-      "starsToday": 287,
-      "totalStars": 41311,
-      "forks": 8330,
-      "url": "https://github.com/php/php-src"
-    },
-    {
-      "rank": 2,
-      "fullName": "anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 303,
-      "totalStars": 31771,
-      "forks": 3543,
-      "url": "https://github.com/anthropics/knowledge-work-plugins"
-    },
-    {
-      "rank": 3,
-      "fullName": "DietrichGebert/ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 1948,
-      "totalStars": 173901,
-      "forks": 9470,
-      "url": "https://github.com/DietrichGebert/ponytail"
-    },
-    {
-      "rank": 4,
       "fullName": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 2979,
-      "totalStars": 40091,
-      "forks": 2501,
+      "starsToday": 2716,
+      "totalStars": 42575,
+      "forks": 2658,
       "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
-      "rank": 5,
-      "fullName": "Graphify-Labs/graphify",
-      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "rank": 2,
+      "fullName": "php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "languageColor": "#555555",
+      "starsToday": 716,
+      "totalStars": 41602,
+      "forks": 8363,
+      "url": "https://github.com/php/php-src"
+    },
+    {
+      "rank": 3,
+      "fullName": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 1408,
-      "totalStars": 133267,
-      "forks": 12739,
-      "url": "https://github.com/Graphify-Labs/graphify"
+      "starsToday": 635,
+      "totalStars": 32357,
+      "forks": 3578,
+      "url": "https://github.com/anthropics/knowledge-work-plugins"
+    },
+    {
+      "rank": 4,
+      "fullName": "NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 1119,
+      "totalStars": 18949,
+      "forks": 1896,
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "rank": 5,
+      "fullName": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 546,
+      "totalStars": 7037,
+      "forks": 1432,
+      "url": "https://github.com/Renhuai123/ziwei-doushu"
     },
     {
       "rank": 6,
-      "fullName": "supabase/supabase",
-      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 693,
-      "totalStars": 113590,
-      "forks": 17016,
-      "url": "https://github.com/supabase/supabase"
+      "fullName": "SnailSploit/Claude-Red",
+      "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 226,
+      "totalStars": 8634,
+      "forks": 1108,
+      "url": "https://github.com/SnailSploit/Claude-Red"
     },
     {
       "rank": 7,
-      "fullName": "fastapi/fastapi",
-      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "fullName": "OpenBMB/VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 101,
-      "totalStars": 103919,
-      "forks": 10100,
-      "url": "https://github.com/fastapi/fastapi"
+      "starsToday": 150,
+      "totalStars": 40373,
+      "forks": 4588,
+      "url": "https://github.com/OpenBMB/VoxCPM"
     },
     {
       "rank": 8,
-      "fullName": "luongnv89/claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 177,
-      "totalStars": 43495,
-      "forks": 5410,
-      "url": "https://github.com/luongnv89/claude-howto"
-    },
-    {
-      "rank": 9,
-      "fullName": "Meloong-Git/PCL",
-      "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
-      "language": "Visual Basic .NET",
-      "languageColor": "#8B949E",
-      "starsToday": 119,
-      "totalStars": 8787,
-      "forks": 1224,
-      "url": "https://github.com/Meloong-Git/PCL"
+      "fullName": "nodejs/node",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 66,
+      "totalStars": 122964,
+      "forks": 39839,
+      "url": "https://github.com/nodejs/node"
     }
   ],
   "languages": [
     {
       "name": "Python",
-      "count": 4,
-      "share": 44,
+      "count": 3,
+      "share": 38,
       "color": "#3572A5"
     },
     {
       "name": "JavaScript",
       "count": 2,
-      "share": 22,
+      "share": 25,
       "color": "#F1E05A"
     },
     {
       "name": "C",
       "count": 1,
-      "share": 11,
+      "share": 12,
       "color": "#555555"
+    },
+    {
+      "name": "Rust",
+      "count": 1,
+      "share": 12,
+      "color": "#DEA584"
     },
     {
       "name": "TypeScript",
       "count": 1,
-      "share": 11,
+      "share": 12,
       "color": "#3178C6"
-    },
-    {
-      "name": "Visual Basic .NET",
-      "count": 1,
-      "share": 11,
-      "color": "#8B949E"
     }
   ],
   "themes": [
     {
-      "name": "Developer tools",
-      "count": 6,
-      "repositories": [
-        "DietrichGebert/ponytail",
-        "cloudflare/security-audit-skill",
-        "Graphify-Labs/graphify",
-        "fastapi/fastapi"
-      ]
-    },
-    {
       "name": "Agent systems",
-      "count": 3,
-      "repositories": [
-        "DietrichGebert/ponytail",
-        "cloudflare/security-audit-skill",
-        "luongnv89/claude-howto"
-      ]
-    },
-    {
-      "name": "AI infrastructure",
       "count": 2,
       "repositories": [
-        "DietrichGebert/ponytail",
-        "supabase/supabase"
+        "cloudflare/security-audit-skill",
+        "NVIDIA/OpenShell"
+      ]
+    },
+    {
+      "name": "Data & systems",
+      "count": 2,
+      "repositories": [
+        "NVIDIA/OpenShell",
+        "nodejs/node"
+      ]
+    },
+    {
+      "name": "Security",
+      "count": 2,
+      "repositories": [
+        "cloudflare/security-audit-skill",
+        "SnailSploit/Claude-Red"
       ]
     }
   ]
