@@ -1,126 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-23T11:31:34+08:00",
-  "date": "2026-10-23",
+  "updatedAt": "2026-10-24T11:31:47+08:00",
+  "date": "2026-10-24",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Every AI model has the same \"controversial\" take on humans",
-          "summary": "We asked 12 AI models for their most controversial opinion of humans, three times each. 29 of 35 answers were the same one: we care more about belonging than about the truth.",
-          "titleZh": "每个 AI 模型对人类都有同一个“争议性”看法",
-          "summaryZh": "我们让 12 个 AI 模型各自给出三次它们对人类最具争议性的看法。35 个回答中有 29 个都指向同一点：相比真相，我们更在乎归属感。",
-          "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+          "title": "Today, we hacked what we'd set out to hack: the iPhone",
+          "summary": "Today, we hacked what we'd set out to hack: the iPhone.",
+          "titleZh": "今天，我们成功攻破了原本计划攻破的目标：iPhone",
+          "summaryZh": "今天，我们成功攻破了原本计划攻破的目标：iPhone。",
+          "url": "https://blog.calif.io/p/iphone",
           "source": "Hacker News",
-          "score": 6.84,
+          "score": 4.61,
           "reasons": [
-            "AI",
-            "HN分数272",
-            "讨论量328"
+            "HN分数772",
+            "讨论量522"
           ],
-          "published": "2026-10-22T16:08:00+00:00"
+          "published": "2026-10-23T16:21:50+00:00"
         },
         {
-          "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-          "summary": "OpenShell is the safe, private runtime for autonomous AI agents. - NVIDIA/OpenShell",
-          "titleZh": "OpenShell：为自主 AI 智能体集群打造的安全、私密运行时",
-          "summaryZh": "OpenShell 是专为自主 AI 智能体打造的安全、私密运行时。",
-          "url": "https://github.com/NVIDIA/OpenShell",
+          "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+          "summary": "Introducing Kimi K3.1 Pro, our most capable 3T-class open-weight model with 1M-token context and major advances in coding, 3D modeling, and financial research.",
+          "titleZh": "Kimi K3.1 Pro 与 K3.1 Pro 高速版",
+          "summaryZh": "推出 Kimi K3.1 Pro：我们能力最强的 3T 级开放权重模型，支持 100 万 token 上下文，并在编程、3D 建模和金融研究方面取得重大进展。",
+          "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
           "source": "Hacker News",
-          "score": 6.8,
+          "score": 4.6,
           "reasons": [
-            "AI",
-            "HN分数322",
-            "讨论量166"
+            "HN分数771",
+            "讨论量473"
           ],
-          "published": "2026-10-22T17:44:06+00:00"
+          "published": "2026-10-23T16:59:08+00:00"
         },
         {
-          "title": "AI compute is the new oil–and needs a new market",
-          "summary": "Comments",
-          "titleZh": "AI 算力是新的石油，需要一个新的市场",
-          "summaryZh": "评论",
-          "url": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
+          "title": "Apple Music 404 Not Found",
+          "summary": "畅听数百万首歌曲，观看音乐视频，体验现场表演，一切尽在 Apple Music。订阅后即可在网页、App 或 Android 设备上播放。",
+          "titleZh": "Apple Music 404：未找到页面",
+          "summaryZh": "畅听数百万首歌曲，观看音乐视频，体验现场表演，一切尽在 Apple Music。订阅后即可在网页、App 或 Android 设备上播放。",
+          "url": "https://music.apple.com/this-url-doesnt-exist",
           "source": "Hacker News",
-          "score": 5.93,
+          "score": 4.26,
           "reasons": [
-            "AI",
-            "HN分数29",
-            "讨论量18"
+            "HN分数631",
+            "讨论量206"
           ],
-          "published": "2026-10-22T23:45:16+00:00"
+          "published": "2026-10-23T12:28:47+00:00"
         },
         {
-          "title": "eMudhra to exit global SSL/TLS certificate business",
-          "summary": "eMudhra Limited (BSE: 543533 | NSE: EMUDHRA), a global digital trust company, today announced that its Board has decided to voluntarily withdraw from the global SSL/TLS certificate business.",
-          "titleZh": "eMudhra 将退出全球 SSL/TLS 证书业务",
-          "summaryZh": "全球数字信任公司 eMudhra Limited（BSE：543533 | NSE：EMUDHRA）今日宣布，其董事会已决定自愿退出全球 SSL/TLS 证书业务。",
-          "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+          "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+          "summary": "Google’s updated privacy policy could mean you’ll start seeing targeted ads based on your personal data if you’re using personalized AI features",
+          "titleZh": "Google 现在称，可能会利用你的 Gmail 和 Google Photos 数据投放定向广告",
+          "summaryZh": "Google 更新后的隐私政策意味着，如果你使用个性化 AI 功能，可能会开始看到根据个人数据投放的定向广告。",
+          "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
           "source": "Hacker News",
-          "score": 4.63,
+          "score": 4.23,
           "reasons": [
-            "HN分数970",
-            "讨论量645"
+            "HN分数311",
+            "讨论量162"
           ],
-          "published": "2026-10-22T13:33:39+00:00"
+          "published": "2026-10-23T19:34:15+00:00"
         },
         {
-          "title": "Quad9 (DNS Resolver) to Exit France",
-          "summary": "A public and free DNS service for a better security and privacy",
-          "titleZh": "Quad9（DNS 解析器）将退出法国",
-          "summaryZh": "一项公共免费 DNS 服务，旨在提供更好的安全性和隐私保护。",
-          "url": "https://quad9.net/news/blog/au-revoir-france/",
+          "title": "Dessa: the most authentic full-duplex speech model ever built",
+          "summary": "You learned to talk by listening. So did Dessa. A research preview of a full-duplex speech model.",
+          "titleZh": "Dessa：迄今最逼真的全双工语音模型",
+          "summaryZh": "你通过聆听学会说话，Dessa 也是如此。这是全双工语音模型的研究预览版。",
+          "url": "https://block.xyz/dessa",
           "source": "Hacker News",
-          "score": 4.56,
+          "score": 4.12,
           "reasons": [
-            "HN分数1036",
-            "讨论量372"
+            "HN分数277",
+            "讨论量113"
           ],
-          "published": "2026-10-22T14:32:38+00:00"
+          "published": "2026-10-23T19:09:54+00:00"
         },
         {
-          "title": "Woman faces six years in prison over Cash App account she never opened",
-          "summary": "In April, Amanda Smith was shocked to discover officers at her upstate Pennsylvania home with a warrant for her arrest, writes 404 Media. The alleged crime took...",
-          "titleZh": "女子因从未开通过的 Cash App 账户面临六年监禁",
-          "summaryZh": "4 月，阿曼达·史密斯震惊地发现，宾夕法尼亚州北部家中有警员持逮捕令上门。404 Media 报道称，她被指控犯下的罪行……",
-          "url": "https://www.techspot.com/news/114296-woman-spends-three-nights-jail-faces-six-years.html",
+          "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
+          "summary": "Wikipedia, but only for things a half hour walk from you.",
+          "titleZh": "本地维基百科：只收录步行半小时范围内事物的维基百科",
+          "summaryZh": "维基百科，不过只收录步行半小时范围内的事物。",
+          "url": "https://edjefferson.com/localwiki/",
           "source": "Hacker News",
-          "score": 4.45,
+          "score": 4.08,
           "reasons": [
-            "HN分数552",
-            "讨论量571"
+            "HN分数1285",
+            "讨论量226"
           ],
-          "published": "2026-10-22T13:11:00+00:00"
+          "published": "2026-10-22T23:01:18+00:00"
         },
         {
-          "title": "Docker is weird",
-          "summary": "I decided to make my own container runtime for fun, and even though I’m still early on, I’ve learned that Docker is weird . Here’s some weird things I learned about Docker.",
-          "titleZh": "Docker 很奇怪",
-          "summaryZh": "我决定出于兴趣自己开发一个容器运行时。虽然还处于早期阶段，但我已经发现 Docker 很奇怪。以下是我了解到的一些 Docker 怪事。",
-          "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+          "title": "Evolving Threat: http2shell is an RCE in node, Python, and more",
+          "summary": "how much are you paying for this bandwidth? how much are you paying for this bandwidth? how much are you paying for this bandwidth? how much are you paying for this bandwidth? how much are you paying for this bandwidth?…",
+          "titleZh": "威胁演变：http2shell 是影响 Node.js、Python 等的远程代码执行漏洞",
+          "summaryZh": "你为这些带宽付了多少钱？你为这些带宽付了多少钱？你为这些带宽付了多少钱？你为这些带宽付了多少钱？你为这些带宽付了多少钱？……",
+          "url": "https://nitter.click/AikidoSecurity/status/2113759110625906950?__galadriel=lPmlGl9id4oAd5UeBwMhlYKArHyr6lR2IDGujPwB5HV2kQ1aLoPWFd5A9sGuzNcmrp8fUso8qygmHcKTDZ8MNHWqQ3bDJcycV87xp_0VypzQLYj6O_RRHlZuQqj33oASGY2YLSoAiMjeOZN40h7Stf8AG7DPrGZbAPVKUXy36HoMudRbvwF3_r2uYNmfJMhpKzywQDM6Ab8",
           "source": "Hacker News",
-          "score": 4.14,
+          "score": 3.9,
           "reasons": [
-            "HN分数198",
-            "讨论量100"
+            "HN分数114",
+            "讨论量60"
           ],
-          "published": "2026-10-22T23:45:56+00:00"
+          "published": "2026-10-23T23:30:17+00:00"
         },
         {
-          "title": "Run full iOS 16.5 firmware on Android Devices",
-          "summary": "Contribute to oosexgang/hackios-xnu-kernel development by creating an account on GitHub.",
-          "titleZh": "在安卓设备上运行完整的 iOS 16.5 固件",
-          "summaryZh": "在 GitHub 上创建账户，为 oosexgang/hackios-xnu-kernel 项目贡献代码。",
-          "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+          "title": "CVE Tracker",
+          "summary": "Daily count of published CVE records since 1999, rebuilt every day from the official CVE list.",
+          "titleZh": "CVE 漏洞追踪器",
+          "summaryZh": "按日统计自 1999 年以来发布的 CVE 记录数量，每天根据官方 CVE 列表重新生成。",
+          "url": "https://cve.0xosprey.com/",
           "source": "Hacker News",
-          "score": 4.1,
+          "score": 3.82,
           "reasons": [
-            "HN分数346",
-            "讨论量131"
+            "HN分数121",
+            "讨论量52"
           ],
-          "published": "2026-10-22T15:26:22+00:00"
+          "published": "2026-10-23T21:21:47+00:00"
         }
       ]
     },
@@ -129,106 +126,100 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Left alone with nothing to do, AI agents started playing",
-          "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
-          "titleZh": "被独自留在一旁无事可做后，AI 智能体开始玩游戏",
-          "summaryZh": "MIT 研究人员将 13 个 AI 模型困在一座虚拟岛屿上。它们随后发明游戏、为丢失的戒指哀悼，最终还提升了工作表现。",
-          "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+          "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+          "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+          "titleZh": "OpenAI 称将不再使用实时互联网训练 AI 模型，理由是“存在重大风险”",
+          "summaryZh": "在一名工程师称该方案行不通数周后，OpenAI 将切断前沿模型与互联网的连接。",
+          "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
           "source": "TechCrunch",
-          "score": 4.52,
+          "score": 4.48,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-23T00:45:37+00:00"
+          "published": "2026-10-23T23:05:49+00:00"
         },
         {
-          "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-          "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
-          "titleZh": "OpenAI 正筹备新一轮 300 亿美元融资，IPO 前估值达 1.25 万亿美元",
-          "summaryZh": "如果 OpenAI 此轮融资的估值超过 1 万亿美元，将创下有史以来私营公司最高估值纪录。",
-          "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+          "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+          "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
+          "titleZh": "圣诞节最热门玩具？英伟达 CEO 把玩可爱的 Microduck 机器人，已售出 2 万台",
+          "summaryZh": "这些机器人迈着小步、发出细微的 R2-D2 声响，还会坐下、倒地“打盹”，并能按语音指令翻跟头。",
+          "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
           "source": "TechCrunch",
           "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-22T22:08:24+00:00"
+          "published": "2026-10-23T21:59:19+00:00"
         },
         {
-          "title": "Rivian buys world model startup to accelerate self-driving ambitions",
-          "summary": "Third Dimension's technology uses AI to match the physical world, which when combined with Rivian's reams of data could turn into a valuable simulator.",
-          "titleZh": "Rivian 收购世界模型初创公司，以加速自动驾驶布局",
-          "summaryZh": "Third Dimension 的技术利用 AI 匹配物理世界；若与 Rivian 海量数据结合，有望打造出有价值的模拟器。",
-          "url": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
-          "source": "TechCrunch",
-          "score": 4.42,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-22T21:05:05+00:00"
-        },
-        {
-          "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
-          "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
-          "titleZh": "1Password 推出新方式，让 AI 智能体代你登录而无需查看密码",
-          "summaryZh": "这项新功能允许智能体登录客户的个人账户，同时保护用于保障账户安全的私密凭据。",
-          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+          "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+          "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder le…",
+          "titleZh": "从 Toast 到 Bessemer：创业者将在 TechCrunch 创始人峰会 2026 听谁分享",
+          "summaryZh": "这场全天活动由 TechCrunch 与 Fidelity Private Shares 合办，不只探讨融资和 AI，也将深入谈论如何寻找客户、组建团队、打磨路演，以及创业者面临的现实挑战。",
+          "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
           "source": "TechCrunch",
           "score": 4.37,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-22T19:07:09+00:00"
+          "published": "2026-10-23T19:06:23+00:00"
         },
         {
-          "title": "Canva releases its first image generation model",
-          "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
-          "titleZh": "Canva 发布首款图像生成模型",
-          "summaryZh": "Canva 将向所有用户开放其全新图像模型，并承诺以更低成本提供更出色、可定制性更强的性能。",
-          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "title": "What some of Anthropic’s backers are worth before its IPO",
+          "summary": "Early-stage and follow-on investors in the AI lab are already sitting on major paper returns.",
+          "titleZh": "Anthropic 部分投资者在其 IPO 前据称身家几何",
+          "summaryZh": "这家 AI 实验室的早期投资者和后续轮投资者，账面回报已相当可观。",
+          "url": "https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.28,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-22T19:00:00+00:00"
+          "published": "2026-10-23T16:02:43+00:00"
         },
         {
-          "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
-          "summary": "OpenAI is launching its decision model to the world. Can it compete with the original Jev?",
-          "titleZh": "决策模型竞争升温之际，OpenAI 面向广泛用户推出 Jev 竞品",
-          "summaryZh": "OpenAI 正将其决策模型推向全球用户。它能与 Jev 原版竞争吗？",
-          "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+          "title": "Startups don’t need to go viral to win customers",
+          "summary": "At TechCrunch Disrupt last week, two founders and a VC discussed how to not just gain an early following but keep one.",
+          "titleZh": "初创公司不必靠爆红才能赢得客户",
+          "summaryZh": "上周在 TechCrunch Disrupt 上，两位创始人和一位风投人士讨论了如何不仅获得早期用户群，还能留住他们。",
+          "url": "https://techcrunch.com/2026/10/23/startups-dont-need-to-go-viral-to-win-customers/",
           "source": "TechCrunch",
-          "score": 4.36,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-22T19:00:00+00:00"
-        },
-        {
-          "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical sup…",
-          "summary": "Microsoft’s new AI diagnostic system beat generalist doctors on hard cases, according to a study in Science. But most of the improvement seems to come from the AI models underneath, not from Microsoft’s system itself.",
-          "titleZh": "微软的 Mustafa Suleyman 称，其 AI 在疑难病例上胜过医生，并追求医疗超级智能",
-          "summaryZh": "据《科学》杂志的一项研究，微软的新型 AI 诊断系统在疑难病例上胜过全科医生。但大部分提升似乎来自底层 AI 模型，而非微软系统本身。",
-          "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
-          "source": "TechCrunch",
-          "score": 4.36,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-22T18:43:53+00:00"
-        },
-        {
-          "title": "Mark Zuckerberg’s creative plan to pay California’s proposed billionaire tax without losing control…",
-          "summary": "A newly launched stock class being offered was partially engineered to help Meta founder and CEO Mark Zuckerberg pay the \"billionaire's tax,\" should the measure be voted into law.",
-          "titleZh": "马克·扎克伯格巧妙筹划缴纳加州拟议的亿万富豪税，同时保住对 Meta 的控制权",
-          "summaryZh": "Meta 创始人兼首席执行官马克·扎克伯格推出了一类新股，部分设计目的在于帮助他缴纳“亿万富豪税”（若该法案获投票通过并成为法律）。",
-          "url": "https://techcrunch.com/2026/10/22/mark-zuckerbergs-creative-plan-to-pay-californias-proposed-billionaire-tax-without-losing-control-of-meta/",
-          "source": "TechCrunch",
-          "score": 1.9,
+          "score": 1.88,
           "reasons": [],
-          "published": "2026-10-22T23:50:41+00:00"
+          "published": "2026-10-23T23:07:45+00:00"
+        },
+        {
+          "title": "VCs, Superhuman Mail founder share red flags about product-market fit",
+          "summary": "Top investors from Iconiq and Sapphire Ventures, along with Rahul Vohra, the founder of Superhuman Mail, share the do's and don'ts for building hit products.",
+          "titleZh": "风投人士与 Superhuman Mail 创始人分享产品市场契合度的危险信号",
+          "summaryZh": "Iconiq 和 Sapphire Ventures 的顶级投资人，以及 Superhuman Mail 创始人 Rahul Vohra，分享了打造畅销产品的注意事项。",
+          "url": "https://techcrunch.com/2026/10/23/vcs-superhuman-mail-founder-share-red-flags-about-product-market-fit/",
+          "source": "TechCrunch",
+          "score": 1.82,
+          "reasons": [],
+          "published": "2026-10-23T20:57:13+00:00"
+        },
+        {
+          "title": "TechCrunch Founder Summit 2026 roundtables: Go deeper on the challenges founders are solving right n…",
+          "summary": "TechCrunch Founder Summit 2026 is coming to SoWa Power Station in Boston on November 4, bringing founders, investors, and operators together for a full day of candid conversations, practical sessions, live pitching, netw…",
+          "titleZh": "TechCrunch 创始人峰会 2026 圆桌论坛：深入探讨创业者当下正在解决的挑战",
+          "summaryZh": "TechCrunch 创始人峰会 2026 将于 11 月 4 日在波士顿 SoWa Power Station 举行，汇聚创业者、投资人和企业运营者，展开全天坦诚交流、实用专题讨论、现场路演与交流活动。",
+          "url": "https://techcrunch.com/2026/10/23/techcrunch-founder-summit-2026-roundtables-go-deeper-on-the-challenges-founders-are-solving-right-now/",
+          "source": "TechCrunch",
+          "score": 1.79,
+          "reasons": [],
+          "published": "2026-10-23T20:03:14+00:00"
+        },
+        {
+          "title": "Carta and NewView partner, hoping to entice more startups to let employees sell shares early",
+          "summary": "A new program wants to encourage more startups to allow workers to cash out early by making it easier to transact tender offers.",
+          "titleZh": "Carta 与 NewView 携手，希望吸引更多初创公司允许员工提前出售股份",
+          "summaryZh": "一项新计划希望通过简化要约收购交易，鼓励更多初创公司允许员工提前套现。",
+          "url": "https://techcrunch.com/2026/10/23/carta-and-newview-partner-hoping-to-entice-more-startups-to-let-employees-sell-shares-early/",
+          "source": "TechCrunch",
+          "score": 1.77,
+          "reasons": [],
+          "published": "2026-10-23T19:25:13+00:00"
         }
       ]
     }
@@ -236,7 +227,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-23T11:01:47.585228+08:00"
+      "lastRunAt": "2026-10-24T11:02:01.550320+08:00"
     }
   }
 }
