@@ -1,123 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-24T11:31:47+08:00",
-  "date": "2026-10-24",
+  "updatedAt": "2026-10-25T11:31:03+08:00",
+  "date": "2026-10-25",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Today, we hacked what we'd set out to hack: the iPhone",
-          "summary": "Today, we hacked what we'd set out to hack: the iPhone.",
-          "titleZh": "今天，我们成功攻破了原本计划攻破的目标：iPhone",
-          "summaryZh": "今天，我们成功攻破了原本计划攻破的目标：iPhone。",
-          "url": "https://blog.calif.io/p/iphone",
+          "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+          "summary": "America is Losing Hundreds of Thousands of Jobs in Media, Film & the Arts. How Much is AI to Blame?",
+          "titleZh": "美国媒体、电影和艺术行业已失去20万个工作岗位。AI占了多大因素？",
+          "summaryZh": "美国媒体、电影和艺术行业正失去数十万个工作岗位。AI该为此承担多大责任？",
+          "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
           "source": "Hacker News",
-          "score": 4.61,
+          "score": 6.89,
           "reasons": [
-            "HN分数772",
-            "讨论量522"
+            "AI",
+            "HN分数217",
+            "讨论量203"
           ],
-          "published": "2026-10-23T16:21:50+00:00"
+          "published": "2026-10-24T23:11:54+00:00"
         },
         {
-          "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-          "summary": "Introducing Kimi K3.1 Pro, our most capable 3T-class open-weight model with 1M-token context and major advances in coding, 3D modeling, and financial research.",
-          "titleZh": "Kimi K3.1 Pro 与 K3.1 Pro 高速版",
-          "summaryZh": "推出 Kimi K3.1 Pro：我们能力最强的 3T 级开放权重模型，支持 100 万 token 上下文，并在编程、3D 建模和金融研究方面取得重大进展。",
-          "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+          "title": "Cerebras Deploys Trillion-Parameter AI Models",
+          "summary": "Learn how Cerebras maps trillion-parameter frontier models across WSE-3T wafers to deliver scalable inference at 1,000–2,000+ tokens per second.",
+          "titleZh": "Cerebras 部署万亿参数 AI 模型",
+          "summaryZh": "了解 Cerebras 如何将万亿参数前沿模型映射到 WSE-3T 晶圆上，实现每秒 1,000–2,000 多个 token 的可扩展推理。",
+          "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
           "source": "Hacker News",
-          "score": 4.6,
+          "score": 5.54,
           "reasons": [
-            "HN分数771",
-            "讨论量473"
+            "AI",
+            "HN分数14",
+            "讨论量4"
           ],
-          "published": "2026-10-23T16:59:08+00:00"
+          "published": "2026-10-25T01:33:49+00:00"
         },
         {
-          "title": "Apple Music 404 Not Found",
-          "summary": "畅听数百万首歌曲，观看音乐视频，体验现场表演，一切尽在 Apple Music。订阅后即可在网页、App 或 Android 设备上播放。",
-          "titleZh": "Apple Music 404：未找到页面",
-          "summaryZh": "畅听数百万首歌曲，观看音乐视频，体验现场表演，一切尽在 Apple Music。订阅后即可在网页、App 或 Android 设备上播放。",
-          "url": "https://music.apple.com/this-url-doesnt-exist",
+          "title": "Show HN: Steal My Bitcoin",
+          "summary": "Comments",
+          "titleZh": "Show HN：偷走我的比特币",
+          "summaryZh": "评论",
+          "url": "https://stealmybitcoin.com/",
           "source": "Hacker News",
-          "score": 4.26,
+          "score": 4.43,
           "reasons": [
-            "HN分数631",
+            "HN分数428",
+            "讨论量260"
+          ],
+          "published": "2026-10-24T20:30:31+00:00"
+        },
+        {
+          "title": "We should be more ambitious with the software we build",
+          "summary": "Since early this year, Michael Malis (of pgrust ) has been showing me interesting things he's done and saying",
+          "titleZh": "我们应该让自己构建的软件更有雄心",
+          "summaryZh": "今年年初以来，pgrust 的 Michael Malis 一直在向我展示他做出的有趣成果，并讲述……",
+          "url": "https://danluu.com/ambitious/",
+          "source": "Hacker News",
+          "score": 4.28,
+          "reasons": [
+            "HN分数244",
             "讨论量206"
           ],
-          "published": "2026-10-23T12:28:47+00:00"
+          "published": "2026-10-24T21:47:31+00:00"
         },
         {
-          "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-          "summary": "Google’s updated privacy policy could mean you’ll start seeing targeted ads based on your personal data if you’re using personalized AI features",
-          "titleZh": "Google 现在称，可能会利用你的 Gmail 和 Google Photos 数据投放定向广告",
-          "summaryZh": "Google 更新后的隐私政策意味着，如果你使用个性化 AI 功能，可能会开始看到根据个人数据投放的定向广告。",
-          "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+          "title": "The Goose Programming Language",
+          "summary": "A memory-safe systems language with no heap allocator, garbage collector, or lifetime annotations. In this repository's benchmarks, Goose runs faster than C++ and Rust while using less memory.",
+          "titleZh": "Goose 编程语言",
+          "summaryZh": "一种内存安全的系统语言，不使用堆分配器和垃圾回收器，也无需生命周期注解。根据该仓库中的基准测试，Goose 的运行速度快于 C++ 和 Rust，同时占用更少内存。",
+          "url": "https://aardappel.github.io/goose/",
           "source": "Hacker News",
-          "score": 4.23,
+          "score": 4.21,
           "reasons": [
-            "HN分数311",
-            "讨论量162"
+            "HN分数275",
+            "讨论量179"
           ],
-          "published": "2026-10-23T19:34:15+00:00"
+          "published": "2026-10-24T19:06:55+00:00"
         },
         {
-          "title": "Dessa: the most authentic full-duplex speech model ever built",
-          "summary": "You learned to talk by listening. So did Dessa. A research preview of a full-duplex speech model.",
-          "titleZh": "Dessa：迄今最逼真的全双工语音模型",
-          "summaryZh": "你通过聆听学会说话，Dessa 也是如此。这是全双工语音模型的研究预览版。",
-          "url": "https://block.xyz/dessa",
+          "title": "I don't understand quantum physics (2018)",
+          "summary": "\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003UM0\u0010+,.=T-j+eM X\u0007rB 1jHcJ$\u001b/KC$\u0000yof\u001b;\u0016c'I6v2 1\u000eE ,\u0005.G\u000fgԾ6p*;tJ \u000f2r\b?diuU\u001aTn\u0010ui I~\u00067D\u0017\u0004C0.p\u0014P3J\u0000 5'EO/q\"YH\"\u0010*7oF닐\u0003g\u0015wt^%F}\u0001B-A}RvˏZ w\u001aQ0 \b3A]@\u0004n \u0005źPŢ1D \u001b;-!SQ\u0013\u0011ȣ5O&[O4呐Na\b VL;\\2iQ#!zČf2o&5l(o i{6& \u0004{InJUoEX OyS\u0007;\u0005…",
+          "titleZh": "我不懂量子物理（2018）",
+          "summaryZh": "摘要内容无法辨读。",
+          "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
           "source": "Hacker News",
-          "score": 4.12,
+          "score": 4.01,
           "reasons": [
-            "HN分数277",
-            "讨论量113"
+            "HN分数289",
+            "讨论量222"
           ],
-          "published": "2026-10-23T19:09:54+00:00"
+          "published": "2026-10-24T09:53:26+00:00"
         },
         {
-          "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-          "summary": "Wikipedia, but only for things a half hour walk from you.",
-          "titleZh": "本地维基百科：只收录步行半小时范围内事物的维基百科",
-          "summaryZh": "维基百科，不过只收录步行半小时范围内的事物。",
-          "url": "https://edjefferson.com/localwiki/",
+          "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
+          "summary": "Emergency Action Messages heard on the HF Global Communications System, copied off air.",
+          "titleZh": "收听并阅读美国核力量紧急行动消息：11175 千赫上的信号",
+          "summaryZh": "从高频全球通信系统的无线电广播中抄录的紧急行动消息。",
+          "url": "https://missileer.watch",
           "source": "Hacker News",
-          "score": 4.08,
+          "score": 3.92,
           "reasons": [
-            "HN分数1285",
-            "讨论量226"
+            "HN分数139",
+            "讨论量87"
           ],
-          "published": "2026-10-22T23:01:18+00:00"
+          "published": "2026-10-24T19:43:27+00:00"
         },
         {
-          "title": "Evolving Threat: http2shell is an RCE in node, Python, and more",
-          "summary": "how much are you paying for this bandwidth? how much are you paying for this bandwidth? how much are you paying for this bandwidth? how much are you paying for this bandwidth? how much are you paying for this bandwidth?…",
-          "titleZh": "威胁演变：http2shell 是影响 Node.js、Python 等的远程代码执行漏洞",
-          "summaryZh": "你为这些带宽付了多少钱？你为这些带宽付了多少钱？你为这些带宽付了多少钱？你为这些带宽付了多少钱？你为这些带宽付了多少钱？……",
-          "url": "https://nitter.click/AikidoSecurity/status/2113759110625906950?__galadriel=lPmlGl9id4oAd5UeBwMhlYKArHyr6lR2IDGujPwB5HV2kQ1aLoPWFd5A9sGuzNcmrp8fUso8qygmHcKTDZ8MNHWqQ3bDJcycV87xp_0VypzQLYj6O_RRHlZuQqj33oASGY2YLSoAiMjeOZN40h7Stf8AG7DPrGZbAPVKUXy36HoMudRbvwF3_r2uYNmfJMhpKzywQDM6Ab8",
+          "title": "FreeDNS",
+          "summary": "Comments",
+          "titleZh": "FreeDNS",
+          "summaryZh": "评论",
+          "url": "https://freedns.afraid.org/",
           "source": "Hacker News",
-          "score": 3.9,
+          "score": 3.89,
           "reasons": [
-            "HN分数114",
-            "讨论量60"
+            "HN分数262",
+            "讨论量65"
           ],
-          "published": "2026-10-23T23:30:17+00:00"
-        },
-        {
-          "title": "CVE Tracker",
-          "summary": "Daily count of published CVE records since 1999, rebuilt every day from the official CVE list.",
-          "titleZh": "CVE 漏洞追踪器",
-          "summaryZh": "按日统计自 1999 年以来发布的 CVE 记录数量，每天根据官方 CVE 列表重新生成。",
-          "url": "https://cve.0xosprey.com/",
-          "source": "Hacker News",
-          "score": 3.82,
-          "reasons": [
-            "HN分数121",
-            "讨论量52"
-          ],
-          "published": "2026-10-23T21:21:47+00:00"
+          "published": "2026-10-24T15:20:01+00:00"
         }
       ]
     },
@@ -126,100 +128,104 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "Will AI expose the rickety infrastructure of the internet?",
+          "summary": "The moment you realize the internet is \"held together by glue and dreams.\"",
+          "titleZh": "AI 会揭露互联网摇摇欲坠的基础设施吗？",
+          "summaryZh": "直到你意识到，互联网是“靠胶水和梦想勉强撑起来的”。",
+          "url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+          "source": "TechCrunch",
+          "score": 4.4,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-24T20:15:33+00:00"
+        },
+        {
+          "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+          "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+          "titleZh": "AI 墓地：持续更新的失败项目与初创公司名单",
+          "summaryZh": "从苹果一再延期推出的 Siri AI，到 OpenAI 混乱的“超级应用”发布，本文盘点已关闭或未达预期的 AI 项目。",
+          "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+          "source": "TechCrunch",
+          "score": 4.36,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-24T19:00:00+00:00"
+        },
+        {
+          "title": "Block’s new voice model sounds eerily human",
+          "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
+          "titleZh": "Block 新语音模型听起来像真人，令人惊讶",
+          "summaryZh": "Block 表示，该语音模型可在 MacBook M4 Max 上本地运行。",
+          "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+          "source": "TechCrunch",
+          "score": 4.28,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-24T16:00:00+00:00"
+        },
+        {
+          "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+          "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+          "titleZh": "被迫二选一时，Grok 的 AI 模型选择共和党人，OpenAI 的模型则选择民主党人",
+          "summaryZh": "一项新研究发现，Grok 的 AI 强烈倾向推荐共和党候选人，而 OpenAI 的 GPT 更偏向民主党候选人；在近 500 场选举中，两种 AI 模型的选择有超过 90% 不一致。",
+          "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+          "source": "TechCrunch",
+          "score": 4.25,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-24T15:00:00+00:00"
+        },
+        {
+          "title": "Here are the top AI agents that can live in your text messages",
+          "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+          "titleZh": "适用于短信的热门 AI 智能体",
+          "summaryZh": "我们整理了可在短信中使用的知名 AI 智能体，涵盖通用助手，以及为家庭、旅行和工作设计的智能体。",
+          "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+          "source": "TechCrunch",
+          "score": 4.22,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-24T14:00:00+00:00"
+        },
+        {
           "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
           "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
           "titleZh": "OpenAI 称将不再使用实时互联网训练 AI 模型，理由是“存在重大风险”",
           "summaryZh": "在一名工程师称该方案行不通数周后，OpenAI 将切断前沿模型与互联网的连接。",
           "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
           "source": "TechCrunch",
-          "score": 4.48,
+          "score": 3.81,
           "reasons": [
             "AI"
           ],
           "published": "2026-10-23T23:05:49+00:00"
         },
         {
-          "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-          "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-          "titleZh": "圣诞节最热门玩具？英伟达 CEO 把玩可爱的 Microduck 机器人，已售出 2 万台",
-          "summaryZh": "这些机器人迈着小步、发出细微的 R2-D2 声响，还会坐下、倒地“打盹”，并能按语音指令翻跟头。",
-          "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+          "title": "Starlink seems to be working normally again in Ukraine",
+          "summary": "Elon Musk reportedly ordered SpaceX to throttle Ukraine's Starlink access.",
+          "titleZh": "Starlink 在乌克兰似乎已恢复正常运行",
+          "summaryZh": "据报道，埃隆·马斯克曾命令 SpaceX 限制乌克兰的 Starlink 接入。",
+          "url": "https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/",
           "source": "TechCrunch",
-          "score": 4.45,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-23T21:59:19+00:00"
-        },
-        {
-          "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
-          "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder le…",
-          "titleZh": "从 Toast 到 Bessemer：创业者将在 TechCrunch 创始人峰会 2026 听谁分享",
-          "summaryZh": "这场全天活动由 TechCrunch 与 Fidelity Private Shares 合办，不只探讨融资和 AI，也将深入谈论如何寻找客户、组建团队、打磨路演，以及创业者面临的现实挑战。",
-          "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
-          "source": "TechCrunch",
-          "score": 4.37,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-23T19:06:23+00:00"
-        },
-        {
-          "title": "What some of Anthropic’s backers are worth before its IPO",
-          "summary": "Early-stage and follow-on investors in the AI lab are already sitting on major paper returns.",
-          "titleZh": "Anthropic 部分投资者在其 IPO 前据称身家几何",
-          "summaryZh": "这家 AI 实验室的早期投资者和后续轮投资者，账面回报已相当可观。",
-          "url": "https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/",
-          "source": "TechCrunch",
-          "score": 4.28,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-23T16:02:43+00:00"
-        },
-        {
-          "title": "Startups don’t need to go viral to win customers",
-          "summary": "At TechCrunch Disrupt last week, two founders and a VC discussed how to not just gain an early following but keep one.",
-          "titleZh": "初创公司不必靠爆红才能赢得客户",
-          "summaryZh": "上周在 TechCrunch Disrupt 上，两位创始人和一位风投人士讨论了如何不仅获得早期用户群，还能留住他们。",
-          "url": "https://techcrunch.com/2026/10/23/startups-dont-need-to-go-viral-to-win-customers/",
-          "source": "TechCrunch",
-          "score": 1.88,
+          "score": 1.81,
           "reasons": [],
-          "published": "2026-10-23T23:07:45+00:00"
+          "published": "2026-10-24T20:46:34+00:00"
         },
         {
-          "title": "VCs, Superhuman Mail founder share red flags about product-market fit",
-          "summary": "Top investors from Iconiq and Sapphire Ventures, along with Rahul Vohra, the founder of Superhuman Mail, share the do's and don'ts for building hit products.",
-          "titleZh": "风投人士与 Superhuman Mail 创始人分享产品市场契合度的危险信号",
-          "summaryZh": "Iconiq 和 Sapphire Ventures 的顶级投资人，以及 Superhuman Mail 创始人 Rahul Vohra，分享了打造畅销产品的注意事项。",
-          "url": "https://techcrunch.com/2026/10/23/vcs-superhuman-mail-founder-share-red-flags-about-product-market-fit/",
+          "title": "Instacart reportedly discussed selling itself with DoorDash and Uber",
+          "summary": "Instacart might sell itself to a larger competitor.",
+          "titleZh": "据称 Instacart 曾与 DoorDash 和 Uber 讨论出售事宜",
+          "summaryZh": "Instacart 可能会将自己出售给规模更大的竞争对手。",
+          "url": "https://techcrunch.com/2026/10/24/instacart-reportedly-discussed-selling-itself-with-doordash-and-uber/",
           "source": "TechCrunch",
-          "score": 1.82,
+          "score": 1.69,
           "reasons": [],
-          "published": "2026-10-23T20:57:13+00:00"
-        },
-        {
-          "title": "TechCrunch Founder Summit 2026 roundtables: Go deeper on the challenges founders are solving right n…",
-          "summary": "TechCrunch Founder Summit 2026 is coming to SoWa Power Station in Boston on November 4, bringing founders, investors, and operators together for a full day of candid conversations, practical sessions, live pitching, netw…",
-          "titleZh": "TechCrunch 创始人峰会 2026 圆桌论坛：深入探讨创业者当下正在解决的挑战",
-          "summaryZh": "TechCrunch 创始人峰会 2026 将于 11 月 4 日在波士顿 SoWa Power Station 举行，汇聚创业者、投资人和企业运营者，展开全天坦诚交流、实用专题讨论、现场路演与交流活动。",
-          "url": "https://techcrunch.com/2026/10/23/techcrunch-founder-summit-2026-roundtables-go-deeper-on-the-challenges-founders-are-solving-right-now/",
-          "source": "TechCrunch",
-          "score": 1.79,
-          "reasons": [],
-          "published": "2026-10-23T20:03:14+00:00"
-        },
-        {
-          "title": "Carta and NewView partner, hoping to entice more startups to let employees sell shares early",
-          "summary": "A new program wants to encourage more startups to allow workers to cash out early by making it easier to transact tender offers.",
-          "titleZh": "Carta 与 NewView 携手，希望吸引更多初创公司允许员工提前出售股份",
-          "summaryZh": "一项新计划希望通过简化要约收购交易，鼓励更多初创公司允许员工提前套现。",
-          "url": "https://techcrunch.com/2026/10/23/carta-and-newview-partner-hoping-to-entice-more-startups-to-let-employees-sell-shares-early/",
-          "source": "TechCrunch",
-          "score": 1.77,
-          "reasons": [],
-          "published": "2026-10-23T19:25:13+00:00"
+          "published": "2026-10-24T16:30:00+00:00"
         }
       ]
     }
@@ -227,7 +233,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-24T11:02:01.550320+08:00"
+      "lastRunAt": "2026-10-25T11:01:22.453001+08:00"
     }
   }
 }
