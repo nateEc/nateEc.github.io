@@ -1,139 +1,139 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T14:30:47+08:00",
-  "date": "2026-10-25",
+  "updatedAt": "2026-10-26T14:30:12+08:00",
+  "date": "2026-10-26",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 2264,
-      "totalStars": 45155,
-      "forks": 2805,
-      "url": "https://github.com/cloudflare/security-audit-skill"
-    },
-    {
-      "rank": 2,
-      "fullName": "NVIDIA/OpenShell",
-      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 896,
-      "totalStars": 19616,
-      "forks": 1940,
-      "url": "https://github.com/NVIDIA/OpenShell"
-    },
-    {
-      "rank": 3,
-      "fullName": "aws/agent-toolkit-for-aws",
-      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 13,
-      "totalStars": 3205,
-      "forks": 403,
-      "url": "https://github.com/aws/agent-toolkit-for-aws"
-    },
-    {
-      "rank": 4,
-      "fullName": "Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "language": "CSS",
-      "languageColor": "#8B949E",
-      "starsToday": 455,
-      "totalStars": 32467,
-      "forks": 1676,
-      "url": "https://github.com/Nutlope/hallmark"
-    },
-    {
-      "rank": 5,
-      "fullName": "luongnv89/claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 392,
-      "totalStars": 44721,
-      "forks": 5501,
-      "url": "https://github.com/luongnv89/claude-howto"
-    },
-    {
-      "rank": 6,
-      "fullName": "pbakaus/impeccable",
-      "description": "The design language that makes your AI harness better at design.",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 619,
-      "totalStars": 86637,
-      "forks": 5173,
-      "url": "https://github.com/pbakaus/impeccable"
-    },
-    {
-      "rank": 7,
-      "fullName": "pollen-robotics/microduck",
-      "description": "A Tiny biped duck robot 🦆",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 319,
-      "totalStars": 11139,
-      "forks": 1426,
-      "url": "https://github.com/pollen-robotics/microduck"
-    },
-    {
-      "rank": 8,
-      "fullName": "google-gemini/gemini-cli",
-      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 44,
-      "totalStars": 108226,
-      "forks": 14820,
-      "url": "https://github.com/google-gemini/gemini-cli"
-    },
-    {
-      "rank": 9,
-      "fullName": "jbiaojerry/ebook-treasure-chest",
-      "description": "欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 227,
-      "totalStars": 22836,
-      "forks": 3202,
-      "url": "https://github.com/jbiaojerry/ebook-treasure-chest"
-    },
-    {
-      "rank": 10,
       "fullName": "makecindy/cindy",
       "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 477,
-      "totalStars": 4252,
-      "forks": 608,
+      "starsToday": 675,
+      "totalStars": 5262,
+      "forks": 696,
       "url": "https://github.com/makecindy/cindy"
+    },
+    {
+      "rank": 2,
+      "fullName": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "languageColor": "#8B949E",
+      "starsToday": 1317,
+      "totalStars": 34421,
+      "forks": 1792,
+      "url": "https://github.com/Nutlope/hallmark"
+    },
+    {
+      "rank": 3,
+      "fullName": "debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 1592,
+      "totalStars": 87358,
+      "forks": 9655,
+      "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+      "rank": 4,
+      "fullName": "pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 1092,
+      "totalStars": 88062,
+      "forks": 5262,
+      "url": "https://github.com/pbakaus/impeccable"
+    },
+    {
+      "rank": 5,
+      "fullName": "pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 647,
+      "totalStars": 11895,
+      "forks": 1502,
+      "url": "https://github.com/pollen-robotics/microduck"
+    },
+    {
+      "rank": 6,
+      "fullName": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 381,
+      "totalStars": 114920,
+      "forks": 22158,
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    },
+    {
+      "rank": 7,
+      "fullName": "Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 199,
+      "totalStars": 7921,
+      "forks": 1602,
+      "url": "https://github.com/Renhuai123/ziwei-doushu"
+    },
+    {
+      "rank": 8,
+      "fullName": "JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 51,
+      "totalStars": 2049,
+      "forks": 117,
+      "url": "https://github.com/JetBrains/thinkrail"
+    },
+    {
+      "rank": 9,
+      "fullName": "coollabsio/coolify",
+      "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
+      "language": "PHP",
+      "languageColor": "#4F5D95",
+      "starsToday": 152,
+      "totalStars": 64654,
+      "forks": 5807,
+      "url": "https://github.com/coollabsio/coolify"
+    },
+    {
+      "rank": 10,
+      "fullName": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 2878,
+      "totalStars": 47350,
+      "forks": 2938,
+      "url": "https://github.com/cloudflare/security-audit-skill"
     }
   ],
   "languages": [
     {
-      "name": "Python",
+      "name": "TypeScript",
       "count": 3,
       "share": 30,
+      "color": "#3178C6"
+    },
+    {
+      "name": "Python",
+      "count": 2,
+      "share": 20,
       "color": "#3572A5"
     },
     {
       "name": "Rust",
-      "count": 3,
-      "share": 30,
-      "color": "#DEA584"
-    },
-    {
-      "name": "TypeScript",
       "count": 2,
       "share": 20,
-      "color": "#3178C6"
+      "color": "#DEA584"
     },
     {
       "name": "CSS",
@@ -146,37 +146,41 @@
       "count": 1,
       "share": 10,
       "color": "#F1E05A"
+    },
+    {
+      "name": "PHP",
+      "count": 1,
+      "share": 10,
+      "color": "#4F5D95"
     }
   ],
   "themes": [
     {
       "name": "AI infrastructure",
-      "count": 6,
+      "count": 4,
       "repositories": [
-        "NVIDIA/OpenShell",
-        "aws/agent-toolkit-for-aws",
+        "makecindy/cindy",
         "Nutlope/hallmark",
-        "pbakaus/impeccable"
+        "pbakaus/impeccable",
+        "TauricResearch/TradingAgents"
       ]
     },
     {
       "name": "Agent systems",
-      "count": 6,
+      "count": 3,
       "repositories": [
-        "cloudflare/security-audit-skill",
-        "NVIDIA/OpenShell",
-        "aws/agent-toolkit-for-aws",
-        "luongnv89/claude-howto"
+        "makecindy/cindy",
+        "TauricResearch/TradingAgents",
+        "cloudflare/security-audit-skill"
       ]
     },
     {
       "name": "Developer tools",
-      "count": 4,
+      "count": 3,
       "repositories": [
-        "cloudflare/security-audit-skill",
         "Nutlope/hallmark",
-        "luongnv89/claude-howto",
-        "google-gemini/gemini-cli"
+        "JetBrains/thinkrail",
+        "cloudflare/security-audit-skill"
       ]
     }
   ]
