@@ -1,55 +1,81 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-25T11:31:03+08:00",
-  "date": "2026-10-25",
+  "updatedAt": "2026-10-26T11:31:08+08:00",
+  "date": "2026-10-26",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
-          "summary": "America is Losing Hundreds of Thousands of Jobs in Media, Film & the Arts. How Much is AI to Blame?",
-          "titleZh": "美国媒体、电影和艺术行业已失去20万个工作岗位。AI占了多大因素？",
-          "summaryZh": "美国媒体、电影和艺术行业正失去数十万个工作岗位。AI该为此承担多大责任？",
-          "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+          "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+          "summary": "I am a dermatologist. I tested the ability of GPT-6 Astra and Claude Fable 5.1 to diagnosis skin cancer and found that they were less accurate than I expected. I compared to a 10-year old CNN and to my surprise found tha…",
+          "titleZh": "一款问世10年的 CNN 在皮肤癌诊断上胜过前沿大语言模型",
+          "summaryZh": "我是一名皮肤科医生。我测试了 GPT-6 Astra 和 Claude Fable 5.1 诊断皮肤癌的能力，发现它们的准确度低于预期。我将它们与一款问世10年的 CNN 进行了比较，结果令我意外……",
+          "url": "https://lynchlab.net/llm-skin-cancer",
           "source": "Hacker News",
-          "score": 6.89,
+          "score": 4.33,
           "reasons": [
-            "AI",
-            "HN分数217",
-            "讨论量203"
+            "HN分数476",
+            "讨论量216"
           ],
-          "published": "2026-10-24T23:11:54+00:00"
+          "published": "2026-10-25T17:15:38+00:00"
         },
         {
-          "title": "Cerebras Deploys Trillion-Parameter AI Models",
-          "summary": "Learn how Cerebras maps trillion-parameter frontier models across WSE-3T wafers to deliver scalable inference at 1,000–2,000+ tokens per second.",
-          "titleZh": "Cerebras 部署万亿参数 AI 模型",
-          "summaryZh": "了解 Cerebras 如何将万亿参数前沿模型映射到 WSE-3T 晶圆上，实现每秒 1,000–2,000 多个 token 的可扩展推理。",
-          "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+          "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+          "summary": "Menu Menu Home Who’s Bogo Public Talks ++ Blog Flavors Mozilla Lean-Agile Privacy Security Open Technologies I refuse to accept a censored Internet. Join Me at FOSDEM 27 October 25, 2026 by Bogomil Shopov As one of the m…",
+          "titleZh": "我拒绝接受受审查的互联网：与我相约 FOSDEM 27",
+          "summaryZh": "我拒绝接受受审查的互联网：与我相约 FOSDEM 27。文章由 Bogomil Shopov 于2026年10月25日发布。",
+          "url": "https://talkweb.eu/openweb/4558/",
           "source": "Hacker News",
-          "score": 5.54,
+          "score": 4.3,
           "reasons": [
-            "AI",
-            "HN分数14",
-            "讨论量4"
+            "HN分数419",
+            "讨论量207"
           ],
-          "published": "2026-10-25T01:33:49+00:00"
+          "published": "2026-10-25T17:30:55+00:00"
         },
         {
-          "title": "Show HN: Steal My Bitcoin",
-          "summary": "Comments",
-          "titleZh": "Show HN：偷走我的比特币",
-          "summaryZh": "评论",
-          "url": "https://stealmybitcoin.com/",
+          "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+          "summary": "What is “the true cost of a token”?",
+          "titleZh": "OpenAI 和 Anthropic 在短短几个月内将大语言模型价格最多下调了80%。为什么？",
+          "summaryZh": "“一个 token 的真实成本”是多少？",
+          "url": "https://minimaxir.com/2026/10/cheap-llms/",
           "source": "Hacker News",
-          "score": 4.43,
+          "score": 4.22,
           "reasons": [
-            "HN分数428",
-            "讨论量260"
+            "HN分数194",
+            "讨论量217"
           ],
-          "published": "2026-10-24T20:30:31+00:00"
+          "published": "2026-10-25T21:11:31+00:00"
+        },
+        {
+          "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+          "summary": "Eugene-based Double Sided Media requested police officer Justin Peckels’s records. The city slapped the publication with an exorbitant fee.",
+          "titleZh": "俄勒冈警方向一家地方新闻媒体索要250万美元，以提供一名警员的相关记录",
+          "summaryZh": "总部位于尤金的 Double Sided Media 申请获取警员 Justin Peckels 的记录。市政府却向这家媒体开出高得离谱的费用。",
+          "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+          "source": "Hacker News",
+          "score": 4.2,
+          "reasons": [
+            "HN分数424",
+            "讨论量112"
+          ],
+          "published": "2026-10-25T18:04:11+00:00"
+        },
+        {
+          "title": "Dolly Parton's Imagination Library",
+          "summary": "Dolly Parton’s Imagination Library is a book gifting program that mails free books to children from birth until they begin school in participating areas.",
+          "titleZh": "多莉·帕顿想象图书馆",
+          "summaryZh": "多莉·帕顿想象图书馆是一项赠书计划，在参与地区向儿童邮寄免费图书，从出生一直持续到入学。",
+          "url": "https://imaginationlibrary.com/",
+          "source": "Hacker News",
+          "score": 4.15,
+          "reasons": [
+            "HN分数437",
+            "讨论量83"
+          ],
+          "published": "2026-10-25T18:23:54+00:00"
         },
         {
           "title": "We should be more ambitious with the software we build",
@@ -58,68 +84,40 @@
           "summaryZh": "今年年初以来，pgrust 的 Michael Malis 一直在向我展示他做出的有趣成果，并讲述……",
           "url": "https://danluu.com/ambitious/",
           "source": "Hacker News",
-          "score": 4.28,
+          "score": 4.14,
           "reasons": [
-            "HN分数244",
-            "讨论量206"
+            "HN分数753",
+            "讨论量697"
           ],
           "published": "2026-10-24T21:47:31+00:00"
         },
         {
-          "title": "The Goose Programming Language",
-          "summary": "A memory-safe systems language with no heap allocator, garbage collector, or lifetime annotations. In this repository's benchmarks, Goose runs faster than C++ and Rust while using less memory.",
-          "titleZh": "Goose 编程语言",
-          "summaryZh": "一种内存安全的系统语言，不使用堆分配器和垃圾回收器，也无需生命周期注解。根据该仓库中的基准测试，Goose 的运行速度快于 C++ 和 Rust，同时占用更少内存。",
-          "url": "https://aardappel.github.io/goose/",
+          "title": "Why I Am a Programmer",
+          "summary": "There they sit, the preschooler class encircling their mentor, the substitute teacher.",
+          "titleZh": "我为什么成为程序员",
+          "summaryZh": "学前班的孩子们围坐在代课老师——他们的导师——周围。",
+          "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
           "source": "Hacker News",
-          "score": 4.21,
+          "score": 3.84,
           "reasons": [
-            "HN分数275",
-            "讨论量179"
+            "HN分数153",
+            "讨论量56"
           ],
-          "published": "2026-10-24T19:06:55+00:00"
+          "published": "2026-10-25T19:11:31+00:00"
         },
         {
-          "title": "I don't understand quantum physics (2018)",
-          "summary": "\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003UM0\u0010+,.=T-j+eM X\u0007rB 1jHcJ$\u001b/KC$\u0000yof\u001b;\u0016c'I6v2 1\u000eE ,\u0005.G\u000fgԾ6p*;tJ \u000f2r\b?diuU\u001aTn\u0010ui I~\u00067D\u0017\u0004C0.p\u0014P3J\u0000 5'EO/q\"YH\"\u0010*7oF닐\u0003g\u0015wt^%F}\u0001B-A}RvˏZ w\u001aQ0 \b3A]@\u0004n \u0005źPŢ1D \u001b;-!SQ\u0013\u0011ȣ5O&[O4呐Na\b VL;\\2iQ#!zČf2o&5l(o i{6& \u0004{InJUoEX OyS\u0007;\u0005…",
-          "titleZh": "我不懂量子物理（2018）",
-          "summaryZh": "摘要内容无法辨读。",
-          "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+          "title": "What goes into making an animated film?",
+          "summary": "From sequence to shot to frame, explore our studio pipeline.",
+          "titleZh": "一部动画电影是如何制作出来的？",
+          "summaryZh": "从段落到镜头再到画格，探索我们的工作室制作流程。",
+          "url": "https://www.disneyanimation.com/process/",
           "source": "Hacker News",
-          "score": 4.01,
+          "score": 3.74,
           "reasons": [
-            "HN分数289",
-            "讨论量222"
+            "HN分数110",
+            "讨论量43"
           ],
-          "published": "2026-10-24T09:53:26+00:00"
-        },
-        {
-          "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-          "summary": "Emergency Action Messages heard on the HF Global Communications System, copied off air.",
-          "titleZh": "收听并阅读美国核力量紧急行动消息：11175 千赫上的信号",
-          "summaryZh": "从高频全球通信系统的无线电广播中抄录的紧急行动消息。",
-          "url": "https://missileer.watch",
-          "source": "Hacker News",
-          "score": 3.92,
-          "reasons": [
-            "HN分数139",
-            "讨论量87"
-          ],
-          "published": "2026-10-24T19:43:27+00:00"
-        },
-        {
-          "title": "FreeDNS",
-          "summary": "Comments",
-          "titleZh": "FreeDNS",
-          "summaryZh": "评论",
-          "url": "https://freedns.afraid.org/",
-          "source": "Hacker News",
-          "score": 3.89,
-          "reasons": [
-            "HN分数262",
-            "讨论量65"
-          ],
-          "published": "2026-10-24T15:20:01+00:00"
+          "published": "2026-10-25T20:27:09+00:00"
         }
       ]
     },
@@ -128,13 +126,65 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+          "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+          "titleZh": "Grok 发布 AI 生成的《Odyssey》前七分钟内容",
+          "summaryZh": "这段影像看起来还不错，前提是你不追求艺术性、启发性或人情味。",
+          "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+          "source": "TechCrunch",
+          "score": 4.43,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-25T21:31:16+00:00"
+        },
+        {
+          "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+          "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
+          "titleZh": "Apollo 经济学家称，AI 对大多数企业“毫无财务回报”",
+          "summaryZh": "“尽管人工智能投入巨大、炒作甚广，但除了科技行业之外，这项技术尚未给美国企业带来任何财务回报。”",
+          "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+          "source": "TechCrunch",
+          "score": 4.31,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-25T16:57:32+00:00"
+        },
+        {
+          "title": "TechCrunch Mobility: Blue-green is the color of autonomy",
+          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+          "titleZh": "TechCrunch Mobility：蓝绿色是自动驾驶的代表色",
+          "summaryZh": "欢迎回到 TechCrunch Mobility——这里聚焦交通运输的未来，而如今更关注 AI 在其中扮演的角色。",
+          "url": "https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/",
+          "source": "TechCrunch",
+          "score": 4.28,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-25T16:05:00+00:00"
+        },
+        {
+          "title": "The hottest AI wearables and gadgets you should know about",
+          "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+          "titleZh": "值得关注的热门 AI 穿戴设备和小工具",
+          "summaryZh": "我们整理了一份热门 AI 穿戴设备清单，包括 Muse Charm、Bee、Friend、Plaud 等产品。",
+          "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+          "source": "TechCrunch",
+          "score": 4.23,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-25T14:10:00+00:00"
+        },
+        {
           "title": "Will AI expose the rickety infrastructure of the internet?",
           "summary": "The moment you realize the internet is \"held together by glue and dreams.\"",
           "titleZh": "AI 会揭露互联网摇摇欲坠的基础设施吗？",
           "summaryZh": "直到你意识到，互联网是“靠胶水和梦想勉强撑起来的”。",
           "url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 3.73,
           "reasons": [
             "AI"
           ],
@@ -147,7 +197,7 @@
           "summaryZh": "从苹果一再延期推出的 Siri AI，到 OpenAI 混乱的“超级应用”发布，本文盘点已关闭或未达预期的 AI 项目。",
           "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 3.7,
           "reasons": [
             "AI"
           ],
@@ -160,72 +210,22 @@
           "summaryZh": "Block 表示，该语音模型可在 MacBook M4 Max 上本地运行。",
           "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
           "source": "TechCrunch",
-          "score": 4.28,
+          "score": 3.61,
           "reasons": [
             "AI"
           ],
           "published": "2026-10-24T16:00:00+00:00"
         },
         {
-          "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
-          "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
-          "titleZh": "被迫二选一时，Grok 的 AI 模型选择共和党人，OpenAI 的模型则选择民主党人",
-          "summaryZh": "一项新研究发现，Grok 的 AI 强烈倾向推荐共和党候选人，而 OpenAI 的 GPT 更偏向民主党候选人；在近 500 场选举中，两种 AI 模型的选择有超过 90% 不一致。",
-          "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+          "title": "The best apps for tracking your reading and discovering new books",
+          "summary": "There are numerous apps on the market that promise to do just that, so we’ve compiled a list of some of the best ones to help you pick the right one for you.",
+          "titleZh": "记录阅读进度、发现新书的最佳应用",
+          "summaryZh": "市面上有许多应用都声称能帮你做到这些，因此我们整理了一份精选清单，助你找到适合自己的应用。",
+          "url": "https://techcrunch.com/2026/10/25/5-best-apps-track-reading-discover-new-books/",
           "source": "TechCrunch",
-          "score": 4.25,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-24T15:00:00+00:00"
-        },
-        {
-          "title": "Here are the top AI agents that can live in your text messages",
-          "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-          "titleZh": "适用于短信的热门 AI 智能体",
-          "summaryZh": "我们整理了可在短信中使用的知名 AI 智能体，涵盖通用助手，以及为家庭、旅行和工作设计的智能体。",
-          "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-          "source": "TechCrunch",
-          "score": 4.22,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-24T14:00:00+00:00"
-        },
-        {
-          "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-          "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-          "titleZh": "OpenAI 称将不再使用实时互联网训练 AI 模型，理由是“存在重大风险”",
-          "summaryZh": "在一名工程师称该方案行不通数周后，OpenAI 将切断前沿模型与互联网的连接。",
-          "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-          "source": "TechCrunch",
-          "score": 3.81,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-23T23:05:49+00:00"
-        },
-        {
-          "title": "Starlink seems to be working normally again in Ukraine",
-          "summary": "Elon Musk reportedly ordered SpaceX to throttle Ukraine's Starlink access.",
-          "titleZh": "Starlink 在乌克兰似乎已恢复正常运行",
-          "summaryZh": "据报道，埃隆·马斯克曾命令 SpaceX 限制乌克兰的 Starlink 接入。",
-          "url": "https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/",
-          "source": "TechCrunch",
-          "score": 1.81,
+          "score": 1.94,
           "reasons": [],
-          "published": "2026-10-24T20:46:34+00:00"
-        },
-        {
-          "title": "Instacart reportedly discussed selling itself with DoorDash and Uber",
-          "summary": "Instacart might sell itself to a larger competitor.",
-          "titleZh": "据称 Instacart 曾与 DoorDash 和 Uber 讨论出售事宜",
-          "summaryZh": "Instacart 可能会将自己出售给规模更大的竞争对手。",
-          "url": "https://techcrunch.com/2026/10/24/instacart-reportedly-discussed-selling-itself-with-doordash-and-uber/",
-          "source": "TechCrunch",
-          "score": 1.69,
-          "reasons": [],
-          "published": "2026-10-24T16:30:00+00:00"
+          "published": "2026-10-26T01:10:00+00:00"
         }
       ]
     }
@@ -233,7 +233,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-25T11:01:22.453001+08:00"
+      "lastRunAt": "2026-10-26T11:01:26.618018+08:00"
     }
   }
 }
