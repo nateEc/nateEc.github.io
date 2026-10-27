@@ -109,8 +109,20 @@ assert(techNewsPayload.schemaVersion === 2, 'Tech Signal payload declares its bi
 const localizedNews = techNewsPayload.sections
   .filter((section) => ['Hacker News', 'TechCrunch'].includes(section.name))
   .flatMap((section) => section.items)
-const isLocalizedNewsText = (original, translated) => typeof translated === 'string' &&
-  (/[\u3400-\u9fff]/u.test(translated) || (translated === original && /^[A-Za-z0-9][A-Za-z0-9._+\-]*$/u.test(original)))
+const preservedProductNames = new Set(JSON.parse(read('scripts/news-localization.json')).preservedProductNames)
+const isLocalizedNewsText = (original, translated) => {
+  if (typeof original !== 'string' || typeof translated !== 'string') return false
+  const source = original.trim()
+  const target = translated.trim()
+  return Boolean(target && (/[\u3400-\u9fff]/u.test(target) || (target === source &&
+    (/^[A-Za-z0-9][A-Za-z0-9._+\-]*$/u.test(source) || preservedProductNames.has(source)))))
+}
+assert(isLocalizedNewsText('GPT-6.1 Terra', 'GPT-6.1 Terra'), 'localization accepts the exact product name')
+assert(isLocalizedNewsText('OpenJEV', 'OpenJEV'), 'localization preserves single-token brand names')
+assert(['Cloudflare Quick Tunnels', 'Xiaomi MiMo v2.6', 'Introducing GPT-6.1 Terra',
+  'GPT-6.1 Terra release notes', 'Delivering fast and capable computer use at scale']
+  .every((text) => !isLocalizedNewsText(text, text)), 'localization rejects untranslated English phrases and summaries')
+assert(!isLocalizedNewsText('Another model', 'GPT-6.1 Terra'), 'product exception requires an unchanged exact match')
 assert(localizedNews.length > 0 && localizedNews.every((item) => isLocalizedNewsText(item.title, item.titleZh)),
   'Hacker News and TechCrunch include Chinese titles')
 assert(localizedNews.every((item) => !item.summary || isLocalizedNewsText(item.summary, item.summaryZh)),

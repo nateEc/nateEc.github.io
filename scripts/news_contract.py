@@ -12,7 +12,9 @@ ITEMS_PER_SOURCE = 8
 CJK_RE = re.compile(r'[\u3400-\u9fff]')
 BRAND_ONLY_RE = re.compile(r'[A-Za-z0-9][A-Za-z0-9._+\-]*')
 # Exact product names only: do not exempt arbitrary multiword English titles.
-PRESERVED_PRODUCT_NAMES = frozenset({'GPT-6.1 Terra'})
+PRESERVED_PRODUCT_NAMES = frozenset(json.loads(
+    Path(__file__).with_name('news-localization.json').read_text(encoding='utf-8')
+)['preservedProductNames'])
 
 def is_localized(original, translated):
     if not isinstance(original, str) or not isinstance(translated, str):
