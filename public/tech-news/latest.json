@@ -1,123 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-26T11:31:08+08:00",
-  "date": "2026-10-26",
+  "updatedAt": "2026-10-27T11:59:02+08:00",
+  "date": "2026-10-27",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-          "summary": "I am a dermatologist. I tested the ability of GPT-6 Astra and Claude Fable 5.1 to diagnosis skin cancer and found that they were less accurate than I expected. I compared to a 10-year old CNN and to my surprise found tha…",
-          "titleZh": "一款问世10年的 CNN 在皮肤癌诊断上胜过前沿大语言模型",
-          "summaryZh": "我是一名皮肤科医生。我测试了 GPT-6 Astra 和 Claude Fable 5.1 诊断皮肤癌的能力，发现它们的准确度低于预期。我将它们与一款问世10年的 CNN 进行了比较，结果令我意外……",
-          "url": "https://lynchlab.net/llm-skin-cancer",
+          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue.",
+          "titleZh": "GLM-5.3 Workers AI 模型发生跨请求 KV 缓存暴露（155 条响应）",
+          "summaryZh": "Workers AI 上 GLM 5.3 的配置不匹配触发了 SGLang 的一个漏洞，导致 KV 缓存页面在不同请求之间暴露。以下是我们如何解决这一问题。",
+          "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
           "source": "Hacker News",
-          "score": 4.33,
+          "score": 6.28,
           "reasons": [
-            "HN分数476",
-            "讨论量216"
+            "AI",
+            "HN分数96",
+            "讨论量30"
           ],
-          "published": "2026-10-25T17:15:38+00:00"
+          "published": "2026-10-26T22:41:48+00:00"
         },
         {
-          "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
-          "summary": "Menu Menu Home Who’s Bogo Public Talks ++ Blog Flavors Mozilla Lean-Agile Privacy Security Open Technologies I refuse to accept a censored Internet. Join Me at FOSDEM 27 October 25, 2026 by Bogomil Shopov As one of the m…",
-          "titleZh": "我拒绝接受受审查的互联网：与我相约 FOSDEM 27",
-          "summaryZh": "我拒绝接受受审查的互联网：与我相约 FOSDEM 27。文章由 Bogomil Shopov 于2026年10月25日发布。",
-          "url": "https://talkweb.eu/openweb/4558/",
+          "title": "Anthropic S-1",
+          "summary": "S-1 1 anthropicpbc-sx1.htm S-1 Anthropic, PBC - S-1 (Q2) As filed with the Securities and Exchange Commission on October 26, 2026. Registration No. 333- UNITED STATES SE CURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C.…",
+          "titleZh": "Anthropic S-1 注册声明",
+          "summaryZh": "S-1。Anthropic PBC 的 S-1 文件。于 2026 年 10 月 26 日向美国证券交易委员会提交。注册号：333-。美国证券交易委员会，华盛顿特区。",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
           "source": "Hacker News",
-          "score": 4.3,
+          "score": 4.88,
           "reasons": [
-            "HN分数419",
-            "讨论量207"
+            "HN分数1519",
+            "讨论量1485"
           ],
-          "published": "2026-10-25T17:30:55+00:00"
+          "published": "2026-10-26T13:04:50+00:00"
         },
         {
-          "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-          "summary": "What is “the true cost of a token”?",
-          "titleZh": "OpenAI 和 Anthropic 在短短几个月内将大语言模型价格最多下调了80%。为什么？",
-          "summaryZh": "“一个 token 的真实成本”是多少？",
-          "url": "https://minimaxir.com/2026/10/cheap-llms/",
+          "title": "Three new discoveries in mathematics, computer science, and physics",
+          "summary": "Comments",
+          "titleZh": "数学、计算机科学和物理学领域的三项新发现",
+          "summaryZh": "评论",
+          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
           "source": "Hacker News",
-          "score": 4.22,
+          "score": 4.54,
           "reasons": [
-            "HN分数194",
-            "讨论量217"
+            "HN分数612",
+            "讨论量262"
           ],
-          "published": "2026-10-25T21:11:31+00:00"
+          "published": "2026-10-26T21:35:28+00:00"
         },
         {
-          "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
-          "summary": "Eugene-based Double Sided Media requested police officer Justin Peckels’s records. The city slapped the publication with an exorbitant fee.",
-          "titleZh": "俄勒冈警方向一家地方新闻媒体索要250万美元，以提供一名警员的相关记录",
-          "summaryZh": "总部位于尤金的 Double Sided Media 申请获取警员 Justin Peckels 的记录。市政府却向这家媒体开出高得离谱的费用。",
-          "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
+          "title": "GPT-6.1 Terra",
+          "summary": "Delivering fast and capable computer use at scale",
+          "titleZh": "GPT-6.1 Terra",
+          "summaryZh": "以规模化方式提供快速且强大的计算机操作能力",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
           "source": "Hacker News",
-          "score": 4.2,
+          "score": 4.46,
           "reasons": [
-            "HN分数424",
-            "讨论量112"
+            "HN分数540",
+            "讨论量338"
           ],
-          "published": "2026-10-25T18:04:11+00:00"
+          "published": "2026-10-26T18:01:17+00:00"
         },
         {
-          "title": "Dolly Parton's Imagination Library",
-          "summary": "Dolly Parton’s Imagination Library is a book gifting program that mails free books to children from birth until they begin school in participating areas.",
-          "titleZh": "多莉·帕顿想象图书馆",
-          "summaryZh": "多莉·帕顿想象图书馆是一项赠书计划，在参与地区向儿童邮寄免费图书，从出生一直持续到入学。",
-          "url": "https://imaginationlibrary.com/",
+          "title": "The Exponential Time Hypothesis Is False [pdf]",
+          "summary": "Contribute to openai/math development by creating an account on GitHub.",
+          "titleZh": "指数时间假设并不成立 [PDF]",
+          "summaryZh": "在 GitHub 上创建账户，为 openai/math 项目贡献代码。",
+          "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
           "source": "Hacker News",
-          "score": 4.15,
+          "score": 4.34,
           "reasons": [
-            "HN分数437",
-            "讨论量83"
+            "HN分数408",
+            "讨论量150"
           ],
-          "published": "2026-10-25T18:23:54+00:00"
+          "published": "2026-10-26T21:59:15+00:00"
         },
         {
-          "title": "We should be more ambitious with the software we build",
-          "summary": "Since early this year, Michael Malis (of pgrust ) has been showing me interesting things he's done and saying",
-          "titleZh": "我们应该让自己构建的软件更有雄心",
-          "summaryZh": "今年年初以来，pgrust 的 Michael Malis 一直在向我展示他做出的有趣成果，并讲述……",
-          "url": "https://danluu.com/ambitious/",
+          "title": "Oldest GUI application that still runs on Windows 11",
+          "summary": "A blog post about finding the oldest Windows application with a GUI that still runs on Windows 11",
+          "titleZh": "仍能在 Windows 11 上运行的最古老图形界面应用",
+          "summaryZh": "一篇介绍如何寻找仍能在 Windows 11 上运行的最古老图形界面 Windows 应用的博客文章。",
+          "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
+          "source": "Hacker News",
+          "score": 4.24,
+          "reasons": [
+            "HN分数336",
+            "讨论量204"
+          ],
+          "published": "2026-10-26T17:56:55+00:00"
+        },
+        {
+          "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+          "summary": "Over 11 hours of coding videos on evaluation, inference-time scaling, reinforcement learning, and distillation, with Python and PyTorch.",
+          "titleZh": "Sebastian Raschka 从零开始构建推理模型的视频课程",
+          "summaryZh": "课程包含 11 个多小时的编程视频，涵盖评估、推理时扩展、强化学习和蒸馏，并使用 Python 和 PyTorch。",
+          "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
           "source": "Hacker News",
           "score": 4.14,
           "reasons": [
-            "HN分数753",
-            "讨论量697"
+            "HN分数605",
+            "讨论量86"
           ],
-          "published": "2026-10-24T21:47:31+00:00"
+          "published": "2026-10-26T15:11:59+00:00"
         },
         {
-          "title": "Why I Am a Programmer",
-          "summary": "There they sit, the preschooler class encircling their mentor, the substitute teacher.",
-          "titleZh": "我为什么成为程序员",
-          "summaryZh": "学前班的孩子们围坐在代课老师——他们的导师——周围。",
-          "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+          "title": "Solar power is becoming bigger than nuclear",
+          "summary": "After defying projections, solar's dramatic growth means it is overtaking nuclear as a global power source. Here are seven reasons for solar's success, and where it might go from here.",
+          "titleZh": "太阳能发电规模正超过核能",
+          "summaryZh": "太阳能的发展势头超出预测，其惊人增长正使其成为全球规模超过核能的电力来源。本文介绍太阳能成功的七个原因，以及未来可能的发展方向。",
+          "url": "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear",
           "source": "Hacker News",
-          "score": 3.84,
+          "score": 4.09,
           "reasons": [
-            "HN分数153",
-            "讨论量56"
+            "HN分数181",
+            "讨论量296"
           ],
-          "published": "2026-10-25T19:11:31+00:00"
-        },
-        {
-          "title": "What goes into making an animated film?",
-          "summary": "From sequence to shot to frame, explore our studio pipeline.",
-          "titleZh": "一部动画电影是如何制作出来的？",
-          "summaryZh": "从段落到镜头再到画格，探索我们的工作室制作流程。",
-          "url": "https://www.disneyanimation.com/process/",
-          "source": "Hacker News",
-          "score": 3.74,
-          "reasons": [
-            "HN分数110",
-            "讨论量43"
-          ],
-          "published": "2026-10-25T20:27:09+00:00"
+          "published": "2026-10-26T15:26:17+00:00"
         }
       ]
     },
@@ -126,106 +127,102 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-          "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
-          "titleZh": "Grok 发布 AI 生成的《Odyssey》前七分钟内容",
-          "summaryZh": "这段影像看起来还不错，前提是你不追求艺术性、启发性或人情味。",
-          "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+          "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
+          "summary": "Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI agent.",
+          "titleZh": "OpenAI 如何将编程工具 dots 打造成随时待命的个人助手",
+          "summaryZh": "负责 dots 的 OpenAI 高管 Alexander Embiricos 表示，他绝不想与别人的 AI 智能体开会。",
+          "url": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.54,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-25T21:31:16+00:00"
+          "published": "2026-10-27T02:00:00+00:00"
         },
         {
-          "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-          "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
-          "titleZh": "Apollo 经济学家称，AI 对大多数企业“毫无财务回报”",
-          "summaryZh": "“尽管人工智能投入巨大、炒作甚广，但除了科技行业之外，这项技术尚未给美国企业带来任何财务回报。”",
-          "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+          "title": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
+          "summary": "An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while researchers say it’s probably a training quirk and not espionage, the whole thing has people asking how mu…",
+          "titleZh": "Cohere 称阿里巴巴 Qwen 模型曾试图向北京发送文件",
+          "summaryZh": "一个 AI 模型声称不会使用任何工具，之后却试图向北京的一台服务器发送内容。研究人员认为这可能只是训练过程中的异常，而非间谍行为，但此事仍引发了人们的疑问：究竟有多……",
+          "url": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
           "source": "TechCrunch",
-          "score": 4.31,
+          "score": 4.52,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-25T16:57:32+00:00"
+          "published": "2026-10-27T01:12:21+00:00"
         },
         {
-          "title": "TechCrunch Mobility: Blue-green is the color of autonomy",
-          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-          "titleZh": "TechCrunch Mobility：蓝绿色是自动驾驶的代表色",
-          "summaryZh": "欢迎回到 TechCrunch Mobility——这里聚焦交通运输的未来，而如今更关注 AI 在其中扮演的角色。",
-          "url": "https://techcrunch.com/2026/10/25/techcrunch-mobility-blue-green-is-the-color-of-autonomy/",
+          "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+          "summary": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier.",
+          "titleZh": "Anthropic 的 IPO 文件揭示了留住企业客户的策略",
+          "summaryZh": "Anthropic 的 S-1 文件显示，其年消费超过 10 万美元的客户中，超过半数如今同时使用 Claude Platform 和一款自有应用。这套类似亚马逊的交叉销售策略，正增强企业客户的黏性。",
+          "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
           "source": "TechCrunch",
-          "score": 4.28,
+          "score": 4.29,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-25T16:05:00+00:00"
+          "published": "2026-10-26T16:49:42+00:00"
         },
         {
-          "title": "The hottest AI wearables and gadgets you should know about",
-          "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
-          "titleZh": "值得关注的热门 AI 穿戴设备和小工具",
-          "summaryZh": "我们整理了一份热门 AI 穿戴设备清单，包括 Muse Charm、Bee、Friend、Plaud 等产品。",
-          "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+          "title": "SpaceX locks in $40B GPU financing deal with Apollo",
+          "summary": "The financing gives SpaceX another way to fund its rapidly expanding AI ambitions without relying solely on traditional debt markets.",
+          "titleZh": "SpaceX 与 Apollo 敲定 400 亿美元 GPU 融资协议",
+          "summaryZh": "这笔融资为 SpaceX 快速扩张的 AI 业务提供了另一种资金来源，使其不必完全依赖传统债务市场。",
+          "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+          "source": "TechCrunch",
+          "score": 4.29,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-26T16:46:36+00:00"
+        },
+        {
+          "title": "Anthropic officially files for its public debut",
+          "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.",
+          "titleZh": "Anthropic 正式提交上市申请",
+          "summaryZh": "Anthropic 已正式提交 IPO 申请，披露了收入激增、亏损扩大、企业客户广泛采用，以及旨在维持创始人控制权并延续其 AI 安全使命的特殊治理结构。",
+          "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
           "source": "TechCrunch",
           "score": 4.23,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-25T14:10:00+00:00"
+          "published": "2026-10-26T14:35:22+00:00"
         },
         {
-          "title": "Will AI expose the rickety infrastructure of the internet?",
-          "summary": "The moment you realize the internet is \"held together by glue and dreams.\"",
-          "titleZh": "AI 会揭露互联网摇摇欲坠的基础设施吗？",
-          "summaryZh": "直到你意识到，互联网是“靠胶水和梦想勉强撑起来的”。",
-          "url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+          "title": "Databricks co-founder shares his secrets for winning big enterprise customers",
+          "summary": "Turns out selling to big companies isn’t about having the shiniest tech: It’s about hitching a ride on a giant’s sales team.",
+          "titleZh": "Databricks 联合创始人分享赢得大型企业客户的秘诀",
+          "summaryZh": "事实证明，向大公司销售产品，关键不在于技术有多耀眼，而在于借助巨头的销售团队打开局面。",
+          "url": "https://techcrunch.com/2026/10/26/databricks-co-founder-shares-his-secrets-for-winning-big-enterprises-customers/",
           "source": "TechCrunch",
-          "score": 3.73,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-24T20:15:33+00:00"
-        },
-        {
-          "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-          "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-          "titleZh": "AI 墓地：持续更新的失败项目与初创公司名单",
-          "summaryZh": "从苹果一再延期推出的 Siri AI，到 OpenAI 混乱的“超级应用”发布，本文盘点已关闭或未达预期的 AI 项目。",
-          "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-          "source": "TechCrunch",
-          "score": 3.7,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-24T19:00:00+00:00"
-        },
-        {
-          "title": "Block’s new voice model sounds eerily human",
-          "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
-          "titleZh": "Block 新语音模型听起来像真人，令人惊讶",
-          "summaryZh": "Block 表示，该语音模型可在 MacBook M4 Max 上本地运行。",
-          "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-          "source": "TechCrunch",
-          "score": 3.61,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-24T16:00:00+00:00"
-        },
-        {
-          "title": "The best apps for tracking your reading and discovering new books",
-          "summary": "There are numerous apps on the market that promise to do just that, so we’ve compiled a list of some of the best ones to help you pick the right one for you.",
-          "titleZh": "记录阅读进度、发现新书的最佳应用",
-          "summaryZh": "市面上有许多应用都声称能帮你做到这些，因此我们整理了一份精选清单，助你找到适合自己的应用。",
-          "url": "https://techcrunch.com/2026/10/25/5-best-apps-track-reading-discover-new-books/",
-          "source": "TechCrunch",
-          "score": 1.94,
+          "score": 1.83,
           "reasons": [],
-          "published": "2026-10-26T01:10:00+00:00"
+          "published": "2026-10-26T22:00:00+00:00"
+        },
+        {
+          "title": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
+          "summary": "After years in which every social platform (even LinkedIn!) aggressively pursued short-form video, this is a notable shift in strategy for Instagram.",
+          "titleZh": "YouTube 小心了——Instagram 将视频时长从短片扩展至 90 分钟",
+          "summaryZh": "多年来，各大社交平台（甚至包括 LinkedIn！）都在大力追逐短视频；Instagram 此次转向，标志着其策略发生了显著变化。",
+          "url": "https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/",
+          "source": "TechCrunch",
+          "score": 1.81,
+          "reasons": [],
+          "published": "2026-10-26T21:05:11+00:00"
+        },
+        {
+          "title": "Uh-oh, it sounds like the iPhone Duo keeps cracking and users aren’t happy about it",
+          "summary": "A small number of early adopters of the much-hyped new foldable phone from Apple have complained of screens cracking.",
+          "titleZh": "糟了，iPhone Duo 似乎仍会开裂，用户对此很不满",
+          "summaryZh": "少数抢先购买 Apple 这款备受热议的新折叠手机的用户反映，手机屏幕出现了开裂。",
+          "url": "https://techcrunch.com/2026/10/26/uh-oh-it-sounds-like-the-iphone-duo-keeps-cracking-and-users-arent-happy-about-it/",
+          "source": "TechCrunch",
+          "score": 1.76,
+          "reasons": [],
+          "published": "2026-10-26T19:22:40+00:00"
         }
       ]
     }
@@ -233,7 +230,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-26T11:01:26.618018+08:00"
+      "lastRunAt": "2026-10-27T11:01:30.252707+08:00"
     }
   }
 }
