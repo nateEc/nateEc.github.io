@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 import sqlite3
 from urllib.parse import urlparse
-from news_contract import ITEMS_PER_SOURCE, is_localized, validate_digest, write_snapshot
+from news_contract import ITEMS_PER_SOURCE, PRESERVED_PRODUCT_NAMES, is_localized, validate_digest, write_snapshot
 
 
 PROJECT_ROOT = Path(os.environ.get(
@@ -249,8 +249,11 @@ def _translate_hn_items(data: dict[str, Any]) -> dict[str, dict[str, str]]:
             prompt = (
                 '你是科技新闻本地化编辑。将 JSON 中每条英文 title 和 summary 准确、自然、简洁地翻译为简体中文。'
                 '保留品牌和产品专名，但必须翻译其中的通用词，例如 Cloudflare Quick Tunnels → Cloudflare 快速隧道。'
-                '只有完全由单个品牌名构成的字段（如 OpenJEV）才允许原样保留。不要添加事实、评论或解释。'
-                '多词标题必须含中文；品牌有常用中文名时使用中文，例如 Xiaomi MiMo v2.6 → 小米 MiMo v2.6。'
+                '完全由单个品牌名构成的字段（如 OpenJEV）允许原样保留。'
+                '以下明确列出的完整产品专名也允许原样保留：'
+                + '、'.join(sorted(PRESERVED_PRODUCT_NAMES)) + '。'
+                '仅当整个字段完全等于该专名时适用，不适用于包含该专名的句子或摘要。不要添加事实、评论或解释。'
+                '除此之外多词标题必须含中文；品牌有常用中文名时使用中文，例如 Xiaomi MiMo v2.6 → 小米 MiMo v2.6。'
                 'invalidFields 列出尚未通过校验的字段，请修正 previousTranslation 中这些字段；摘要不得留空。'
                 '必须覆盖每个 URL，只返回 JSON 对象：'
                 '{"translations":[{"url":"原 URL","titleZh":"中文标题","summaryZh":"中文摘要"}]}。输入：'

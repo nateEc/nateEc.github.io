@@ -23,7 +23,7 @@ sync = load('sync_news', 'sync-tech-news.py')
 publisher = load('publisher', 'publish-tech-news.py')
 hn = load('hn', 'hacker_news_digest.py')
 ai = load('ai', 'ai_digest_zh.py')
-from news_contract import validate_payload, validate_digest, write_snapshot
+from news_contract import is_localized, validate_payload, validate_digest, write_snapshot
 import news_http
 
 class DigestDepthTests(unittest.TestCase):
@@ -42,6 +42,24 @@ def payload():
             ] * 8} for name in ['Hacker News', 'TechCrunch']]}
 
 class SyncTests(unittest.TestCase):
+    def test_named_product_title_succeeds_without_repairing_valid_translation(self):
+        url = 'https://openai.com/index/introducing-gpt-6-1-terra/'
+        digest = {'sources': [{'name': 'Hacker News', 'items': [{
+            'title': 'GPT-6.1 Terra',
+            'summary': 'Delivering fast and capable computer use at scale', 'link': url,
+        }]}]}
+        row = {'url': url, 'titleZh': 'GPT-6.1 Terra',
+               'summaryZh': '大规模提供快速且强大的计算机操作能力。'}
+        reply = subprocess.CompletedProcess([], 0, json.dumps({'translations': [row]}), '')
+        with patch.object(sync, '_cached_translations', return_value={}), \
+                patch.object(sync, 'HERMES_BIN', Path(__file__)), \
+                patch.object(sync.subprocess, 'run', return_value=reply) as run:
+            translations = sync._translate_hn_items(digest)
+        self.assertEqual(translations[url]['titleZh'], 'GPT-6.1 Terra')
+        self.assertEqual(run.call_count, 1)
+        self.assertIn('GPT-6.1 Terra', run.call_args.args[0][-1].split('输入：')[0])
+        self.assertEqual(sync._build_hn_sections(digest, translations)[0]['items'][0]['summaryZh'], row['summaryZh'])
+
     def test_brand_only_title_can_remain_untranslated(self):
         digest = {'sources': [{'name': 'Hacker News', 'source_page': 'https://news.ycombinator.com/', 'items': [{
             'title': 'OpenJEV', 'summary': 'OpenJEV', 'link': 'https://openjev.com/',
@@ -161,6 +179,37 @@ class SyncTests(unittest.TestCase):
             validate_payload(json.loads(target.read_text()))
 
 class ContractTests(unittest.TestCase):
+    def test_named_product_is_accepted_by_snapshot_and_translation_cache(self):
+        data = payload()
+        item = data['sections'][0]['items'][0]
+        item.update(url='https://openai.com/index/introducing-gpt-6-1-terra/',
+                    title='GPT-6.1 Terra', titleZh='GPT-6.1 Terra',
+                    summary='Delivering fast and capable computer use at scale',
+                    summaryZh='大规模提供快速且强大的计算机操作能力。')
+        validate_payload(data)
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder) / 'latest.json'
+            write_snapshot(target, data)
+            with patch.object(sync, 'OUTPUT_JSON', target):
+                cached = sync._cached_translations()
+        self.assertEqual(cached[item['url']]['titleZh'], 'GPT-6.1 Terra')
+
+    def test_product_exception_does_not_accept_untranslated_news_or_summary(self):
+        for text in ['Cloudflare Quick Tunnels', 'Xiaomi MiMo v2.6',
+                     'Introducing GPT-6.1 Terra', 'GPT-6.1 Terra is now available',
+                     'GPT-6.1 Terra release notes', 'GPT-6.1 Unknown',
+                     'Delivering fast and capable computer use at scale']:
+            with self.subTest(text=text):
+                self.assertFalse(is_localized(text, text))
+        self.assertFalse(is_localized('A different model', 'GPT-6.1 Terra'))
+        data = payload()
+        data['sections'][0]['items'][0].update(
+            title='GPT-6.1 Terra', titleZh='GPT-6.1 Terra',
+            summary='Delivering fast and capable computer use at scale',
+            summaryZh='Delivering fast and capable computer use at scale')
+        with self.assertRaisesRegex(ValueError, 'localization'):
+            validate_payload(data)
+
     def test_brand_only_localization_is_valid_but_untranslated_phrase_is_not(self):
         data = payload()
         item = data['sections'][1]['items'][0]

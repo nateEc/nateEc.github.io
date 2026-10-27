@@ -11,12 +11,16 @@ REQUIRED_SOURCES = {'Hacker News', 'TechCrunch'}
 ITEMS_PER_SOURCE = 8
 CJK_RE = re.compile(r'[\u3400-\u9fff]')
 BRAND_ONLY_RE = re.compile(r'[A-Za-z0-9][A-Za-z0-9._+\-]*')
+# Exact product names only: do not exempt arbitrary multiword English titles.
+PRESERVED_PRODUCT_NAMES = frozenset({'GPT-6.1 Terra'})
 
 def is_localized(original, translated):
     if not isinstance(original, str) or not isinstance(translated, str):
         return False
     source, target = original.strip(), translated.strip()
-    return bool(target and (CJK_RE.search(target) or (target == source and BRAND_ONLY_RE.fullmatch(source))))
+    return bool(target and (CJK_RE.search(target) or (target == source and (
+        BRAND_ONLY_RE.fullmatch(source) or source in PRESERVED_PRODUCT_NAMES
+    ))))
 
 def validate_digest(data):
     if not isinstance(data, dict):
