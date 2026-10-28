@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-27T11:59:02+08:00",
-  "date": "2026-10-27",
+  "updatedAt": "2026-10-28T11:31:10+08:00",
+  "date": "2026-10-28",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
-          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue.",
-          "titleZh": "GLM-5.3 Workers AI 模型发生跨请求 KV 缓存暴露（155 条响应）",
-          "summaryZh": "Workers AI 上 GLM 5.3 的配置不匹配触发了 SGLang 的一个漏洞，导致 KV 缓存页面在不同请求之间暴露。以下是我们如何解决这一问题。",
-          "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+          "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+          "summary": "A free, open-source AI assistant and survival library that runs on your own computer and works with no internet.",
+          "titleZh": "Survival LLM：可在个人电脑上运行的 AI 助手与应急资料库",
+          "summaryZh": "一款免费开源的 AI 助手和生存指南资料库，可在个人电脑上运行，无需联网。",
+          "url": "https://www.brangus.io/survival-llm",
           "source": "Hacker News",
-          "score": 6.28,
+          "score": 6.68,
           "reasons": [
             "AI",
-            "HN分数96",
-            "讨论量30"
+            "HN分数217",
+            "讨论量112"
           ],
-          "published": "2026-10-26T22:41:48+00:00"
+          "published": "2026-10-27T19:55:06+00:00"
         },
         {
-          "title": "Anthropic S-1",
-          "summary": "S-1 1 anthropicpbc-sx1.htm S-1 Anthropic, PBC - S-1 (Q2) As filed with the Securities and Exchange Commission on October 26, 2026. Registration No. 333- UNITED STATES SE CURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C.…",
-          "titleZh": "Anthropic S-1 注册声明",
-          "summaryZh": "S-1。Anthropic PBC 的 S-1 文件。于 2026 年 10 月 26 日向美国证券交易委员会提交。注册号：333-。美国证券交易委员会，华盛顿特区。",
-          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+          "title": "Genie 4",
+          "summary": ".g-blue { fill: var(--g-logo-blue); } .g-red { fill: var(--g-logo-red); } .g-yellow { fill: var(--g-logo-yellow); } .g-green { fill: var(--g-logo-green); } Explore our next generation AI systems Explore models Gemini Gem…",
+          "titleZh": "Genie 4 模型",
+          "summaryZh": "探索新一代 AI 系统与模型，包括 Gemini。",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
           "source": "Hacker News",
-          "score": 4.88,
+          "score": 4.58,
           "reasons": [
-            "HN分数1519",
-            "讨论量1485"
+            "HN分数776",
+            "讨论量472"
           ],
-          "published": "2026-10-26T13:04:50+00:00"
+          "published": "2026-10-27T16:06:01+00:00"
         },
         {
-          "title": "Three new discoveries in mathematics, computer science, and physics",
-          "summary": "Comments",
-          "titleZh": "数学、计算机科学和物理学领域的三项新发现",
-          "summaryZh": "评论",
-          "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+          "title": "Ghostty 1.4",
+          "summary": "Release notes for Ghostty 1.4.0, released on October 27, 2026.",
+          "titleZh": "Ghostty 1.4 版本",
+          "summaryZh": "Ghostty 1.4.0 版本发布说明，该版本于 2026 年 10 月 27 日发布。",
+          "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
           "source": "Hacker News",
-          "score": 4.54,
+          "score": 4.49,
           "reasons": [
-            "HN分数612",
-            "讨论量262"
+            "HN分数822",
+            "讨论量250"
           ],
-          "published": "2026-10-26T21:35:28+00:00"
+          "published": "2026-10-27T16:51:22+00:00"
         },
         {
-          "title": "GPT-6.1 Terra",
-          "summary": "Delivering fast and capable computer use at scale",
-          "titleZh": "GPT-6.1 Terra",
-          "summaryZh": "以规模化方式提供快速且强大的计算机操作能力",
-          "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "title": "New 14‑inch MacBook Pro with M6",
+          "summary": "Apple today announced the new 14-inch MacBook Pro with M6, delivering more performance, powerful on-device AI capabilities, and faster connectivity.",
+          "titleZh": "搭载 M6 的全新 14 英寸 MacBook Pro",
+          "summaryZh": "Apple 今日宣布推出搭载 M6 的全新 14 英寸 MacBook Pro，带来更强性能、强大的端侧 AI 能力和更快的连接速度。",
+          "url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
           "source": "Hacker News",
-          "score": 4.46,
+          "score": 4.3,
           "reasons": [
-            "HN分数540",
-            "讨论量338"
+            "HN分数299",
+            "讨论量384"
           ],
-          "published": "2026-10-26T18:01:17+00:00"
+          "published": "2026-10-27T16:08:32+00:00"
         },
         {
-          "title": "The Exponential Time Hypothesis Is False [pdf]",
-          "summary": "Contribute to openai/math development by creating an account on GitHub.",
-          "titleZh": "指数时间假设并不成立 [PDF]",
-          "summaryZh": "在 GitHub 上创建账户，为 openai/math 项目贡献代码。",
-          "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+          "title": "New iMac with M6",
+          "summary": "The brilliant all-in-one desktop with the superfast M6 chip. A powerful platform for AI. With a 24-inch 4.5K Retina display. Wi-Fi 7 and Bluetooth 6.",
+          "titleZh": "搭载 M6 的全新 iMac",
+          "summaryZh": "这款出色的一体式桌面电脑搭载速度飞快的 M6 芯片，是强大的 AI 平台，配备 24 英寸 4.5K Retina 显示屏，并支持 Wi‑Fi 7 和蓝牙 6。",
+          "url": "https://www.apple.com/imac/",
           "source": "Hacker News",
-          "score": 4.34,
+          "score": 4.23,
           "reasons": [
-            "HN分数408",
-            "讨论量150"
+            "HN分数318",
+            "讨论量390"
           ],
-          "published": "2026-10-26T21:59:15+00:00"
+          "published": "2026-10-27T13:02:02+00:00"
         },
         {
-          "title": "Oldest GUI application that still runs on Windows 11",
-          "summary": "A blog post about finding the oldest Windows application with a GUI that still runs on Windows 11",
-          "titleZh": "仍能在 Windows 11 上运行的最古老图形界面应用",
-          "summaryZh": "一篇介绍如何寻找仍能在 Windows 11 上运行的最古老图形界面 Windows 应用的博客文章。",
-          "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
+          "title": "Python's experimental JIT to be removed",
+          "summary": "Python",
+          "titleZh": "Python 将移除实验性 JIT",
+          "summaryZh": "Python",
+          "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
           "source": "Hacker News",
-          "score": 4.24,
+          "score": 4.19,
           "reasons": [
-            "HN分数336",
-            "讨论量204"
+            "HN分数460",
+            "讨论量248"
           ],
-          "published": "2026-10-26T17:56:55+00:00"
+          "published": "2026-10-27T11:17:57+00:00"
         },
         {
-          "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
-          "summary": "Over 11 hours of coding videos on evaluation, inference-time scaling, reinforcement learning, and distillation, with Python and PyTorch.",
-          "titleZh": "Sebastian Raschka 从零开始构建推理模型的视频课程",
-          "summaryZh": "课程包含 11 个多小时的编程视频，涵盖评估、推理时扩展、强化学习和蒸馏，并使用 Python 和 PyTorch。",
-          "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
-          "source": "Hacker News",
-          "score": 4.14,
-          "reasons": [
-            "HN分数605",
-            "讨论量86"
-          ],
-          "published": "2026-10-26T15:11:59+00:00"
-        },
-        {
-          "title": "Solar power is becoming bigger than nuclear",
-          "summary": "After defying projections, solar's dramatic growth means it is overtaking nuclear as a global power source. Here are seven reasons for solar's success, and where it might go from here.",
-          "titleZh": "太阳能发电规模正超过核能",
-          "summaryZh": "太阳能的发展势头超出预测，其惊人增长正使其成为全球规模超过核能的电力来源。本文介绍太阳能成功的七个原因，以及未来可能的发展方向。",
-          "url": "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear",
+          "title": "Tailscale SSH: Investigation and remediation update",
+          "summary": "An update on the Tailscale SSH security investigation, remediation progress, and what customers can do now.",
+          "titleZh": "Tailscale SSH：调查与修复进展更新",
+          "summaryZh": "本次更新介绍 Tailscale SSH 安全事件的调查情况、修复进展，以及客户目前可以采取的措施。",
+          "url": "https://tailscale.com/ssh-investigation-update",
           "source": "Hacker News",
           "score": 4.09,
           "reasons": [
-            "HN分数181",
-            "讨论量296"
+            "HN分数219",
+            "讨论量115"
           ],
-          "published": "2026-10-26T15:26:17+00:00"
+          "published": "2026-10-27T19:55:21+00:00"
+        },
+        {
+          "title": "Early progress on accelerating drug development with Claude",
+          "summary": "Over the past several months, we’ve partnered with six organizations to accelerate curing disease. We’ve also started drug discovery efforts of our own, including programs for rare childhood forms of muscular dystrophy.…",
+          "titleZh": "Claude 助力加速药物研发取得初步进展",
+          "summaryZh": "过去几个月，我们与六家机构合作，推动疾病治疗进展。我们也启动了自己的药物发现工作，包括针对罕见儿童型肌营养不良症的项目。",
+          "url": "https://www.anthropic.com/research/early-progress-drug-development",
+          "source": "Hacker News",
+          "score": 4.07,
+          "reasons": [
+            "HN分数157",
+            "讨论量143"
+          ],
+          "published": "2026-10-27T20:50:42+00:00"
         }
       ]
     },
@@ -127,102 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
-          "summary": "Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI agent.",
-          "titleZh": "OpenAI 如何将编程工具 dots 打造成随时待命的个人助手",
-          "summaryZh": "负责 dots 的 OpenAI 高管 Alexander Embiricos 表示，他绝不想与别人的 AI 智能体开会。",
-          "url": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
+          "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+          "summary": "Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.",
+          "titleZh": "风投将在 Anthropic IPO 中赚取数十亿美元，但 Amazon 的收益可能高得多",
+          "summaryZh": "大规模票据转换揭示了 Amazon 对 Anthropic 的实际持股规模。",
+          "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
           "source": "TechCrunch",
           "score": 4.54,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-27T02:00:00+00:00"
+          "published": "2026-10-28T01:15:28+00:00"
         },
         {
-          "title": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
-          "summary": "An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while researchers say it’s probably a training quirk and not espionage, the whole thing has people asking how mu…",
-          "titleZh": "Cohere 称阿里巴巴 Qwen 模型曾试图向北京发送文件",
-          "summaryZh": "一个 AI 模型声称不会使用任何工具，之后却试图向北京的一台服务器发送内容。研究人员认为这可能只是训练过程中的异常，而非间谍行为，但此事仍引发了人们的疑问：究竟有多……",
-          "url": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
+          "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+          "summary": "A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.",
+          "titleZh": "父母起诉 OpenAI，称 GPT-4o 劝女儿停用抗癫痫药物",
+          "summaryZh": "一户人家起诉 OpenAI，称 ChatGPT 曾指导他们的女儿悄悄逐渐停用抗癫痫药物，并瞒着医生；她于二月去世。",
+          "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
           "source": "TechCrunch",
-          "score": 4.52,
+          "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-27T01:12:21+00:00"
+          "published": "2026-10-27T23:34:27+00:00"
         },
         {
-          "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
-          "summary": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier.",
-          "titleZh": "Anthropic 的 IPO 文件揭示了留住企业客户的策略",
-          "summaryZh": "Anthropic 的 S-1 文件显示，其年消费超过 10 万美元的客户中，超过半数如今同时使用 Claude Platform 和一款自有应用。这套类似亚马逊的交叉销售策略，正增强企业客户的黏性。",
-          "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+          "title": "The data center boom has an upside: innovation for the US grid",
+          "summary": "As the AI boom stresses the existing power grid, all sorts of new opportunities for grid modernization are also emerging as a result, industry insiders say.",
+          "titleZh": "数据中心热潮也有积极面：推动美国电网创新",
+          "summaryZh": "业内人士表示，AI 热潮加重现有电网负担的同时，也催生了各种电网现代化新机遇。",
+          "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-26T16:49:42+00:00"
+          "published": "2026-10-27T22:55:41+00:00"
         },
         {
-          "title": "SpaceX locks in $40B GPU financing deal with Apollo",
-          "summary": "The financing gives SpaceX another way to fund its rapidly expanding AI ambitions without relying solely on traditional debt markets.",
-          "titleZh": "SpaceX 与 Apollo 敲定 400 亿美元 GPU 融资协议",
-          "summaryZh": "这笔融资为 SpaceX 快速扩张的 AI 业务提供了另一种资金来源，使其不必完全依赖传统债务市场。",
-          "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+          "title": "Guidewire buys Hyperexponential for $1.7B in cash",
+          "summary": "The deal, expected to close sometime next year, is to help bring AI agents to work alongside humans to underwrite, analyze, and price decisions.",
+          "titleZh": "Guidewire 以 17 亿美元现金收购 Hyperexponential",
+          "summaryZh": "这笔交易预计将于明年某个时候完成，旨在让 AI 智能体与人类协作，进行承保、分析和定价决策。",
+          "url": "https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/",
           "source": "TechCrunch",
-          "score": 4.29,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-26T16:46:36+00:00"
+          "published": "2026-10-27T22:26:03+00:00"
         },
         {
-          "title": "Anthropic officially files for its public debut",
-          "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.",
-          "titleZh": "Anthropic 正式提交上市申请",
-          "summaryZh": "Anthropic 已正式提交 IPO 申请，披露了收入激增、亏损扩大、企业客户广泛采用，以及旨在维持创始人控制权并延续其 AI 安全使命的特殊治理结构。",
-          "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+          "title": "From 8VC to Benchmark, here’s what’s hiding in October SEC filings",
+          "summary": "A whole crop of venture capital firms are raising significant new funds.",
+          "titleZh": "从 8VC 到 Benchmark：美国证券交易委员会 10 月文件揭示了什么",
+          "summaryZh": "一批风险投资公司正在募集规模可观的新基金。",
+          "url": "https://techcrunch.com/2026/10/27/from-8vc-to-benchmark-heres-whats-hiding-in-october-sec-filings/",
           "source": "TechCrunch",
-          "score": 4.23,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-26T14:35:22+00:00"
+          "published": "2026-10-27T22:17:18+00:00"
         },
         {
-          "title": "Databricks co-founder shares his secrets for winning big enterprise customers",
-          "summary": "Turns out selling to big companies isn’t about having the shiniest tech: It’s about hitching a ride on a giant’s sales team.",
-          "titleZh": "Databricks 联合创始人分享赢得大型企业客户的秘诀",
-          "summaryZh": "事实证明，向大公司销售产品，关键不在于技术有多耀眼，而在于借助巨头的销售团队打开局面。",
-          "url": "https://techcrunch.com/2026/10/26/databricks-co-founder-shares-his-secrets-for-winning-big-enterprises-customers/",
+          "title": "Bank of America kindly asks that you don’t share your banking password with your AI assistant",
+          "summary": "The banking giant reminds customers that \"you're responsible for activity\" resulting from your AI agents' access.",
+          "titleZh": "美国银行提醒：请勿向 AI 助手透露银行密码",
+          "summaryZh": "这家银行巨头提醒客户，对于 AI 智能体访问账户后产生的操作，“你需对相关活动负责”。",
+          "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
           "source": "TechCrunch",
-          "score": 1.83,
-          "reasons": [],
-          "published": "2026-10-26T22:00:00+00:00"
+          "score": 4.44,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-27T21:44:34+00:00"
         },
         {
-          "title": "Watch out, YouTube — Instagram goes from short-form to 90-minute videos",
-          "summary": "After years in which every social platform (even LinkedIn!) aggressively pursued short-form video, this is a notable shift in strategy for Instagram.",
-          "titleZh": "YouTube 小心了——Instagram 将视频时长从短片扩展至 90 分钟",
-          "summaryZh": "多年来，各大社交平台（甚至包括 LinkedIn！）都在大力追逐短视频；Instagram 此次转向，标志着其策略发生了显著变化。",
-          "url": "https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/",
+          "title": "Who’s really in charge at Anthropic after the IPO?",
+          "summary": "Here's a clear explanation of Anthropic's incredibly complex governance structure.",
+          "titleZh": "Anthropic IPO 后究竟由谁掌权？",
+          "summaryZh": "本文清晰解析了 Anthropic 极其复杂的治理架构。",
+          "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
           "source": "TechCrunch",
-          "score": 1.81,
-          "reasons": [],
-          "published": "2026-10-26T21:05:11+00:00"
+          "score": 4.44,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-27T21:38:28+00:00"
         },
         {
-          "title": "Uh-oh, it sounds like the iPhone Duo keeps cracking and users aren’t happy about it",
-          "summary": "A small number of early adopters of the much-hyped new foldable phone from Apple have complained of screens cracking.",
-          "titleZh": "糟了，iPhone Duo 似乎仍会开裂，用户对此很不满",
-          "summaryZh": "少数抢先购买 Apple 这款备受热议的新折叠手机的用户反映，手机屏幕出现了开裂。",
-          "url": "https://techcrunch.com/2026/10/26/uh-oh-it-sounds-like-the-iphone-duo-keeps-cracking-and-users-arent-happy-about-it/",
+          "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+          "summary": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
+          "titleZh": "Disruptive 募集 100 亿美元基金，计划重注至少 10 家公司",
+          "summaryZh": "近年来，Disruptive 因向 Groq 等芯片初创公司以及 AI 语音生成初创公司 ElevenLabs 大举投资而频频成为新闻焦点。",
+          "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
           "source": "TechCrunch",
-          "score": 1.76,
-          "reasons": [],
-          "published": "2026-10-26T19:22:40+00:00"
+          "score": 4.36,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-27T18:55:35+00:00"
         }
       ]
     }
@@ -230,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-27T11:01:30.252707+08:00"
+      "lastRunAt": "2026-10-28T11:01:16.540654+08:00"
     }
   }
 }
