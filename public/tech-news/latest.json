@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-28T11:31:10+08:00",
-  "date": "2026-10-28",
+  "updatedAt": "2026-10-29T11:31:02+08:00",
+  "date": "2026-10-29",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-          "summary": "A free, open-source AI assistant and survival library that runs on your own computer and works with no internet.",
-          "titleZh": "Survival LLM：可在个人电脑上运行的 AI 助手与应急资料库",
-          "summaryZh": "一款免费开源的 AI 助手和生存指南资料库，可在个人电脑上运行，无需联网。",
-          "url": "https://www.brangus.io/survival-llm",
+          "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+          "summary": "DAYJOB: Tax evaluates AI agents across 50 realistic tax environments, testing their ability to navigate messy records, exercise professional judgment, and deliver reliable tax work.",
+          "titleZh": "Dayjob：Tax——评估 AI 智能体处理 50 项专业税务任务的能力",
+          "summaryZh": "DAYJOB：Tax 在 50 个真实感税务环境中评估 AI 智能体，测试其处理杂乱记录、运用专业判断并可靠完成税务工作的能力。",
+          "url": "https://surgehq.ai/blog/dayjob-tax",
           "source": "Hacker News",
-          "score": 6.68,
+          "score": 6.6,
           "reasons": [
             "AI",
-            "HN分数217",
-            "讨论量112"
+            "HN分数213",
+            "讨论量137"
           ],
-          "published": "2026-10-27T19:55:06+00:00"
+          "published": "2026-10-28T15:46:30+00:00"
         },
         {
-          "title": "Genie 4",
-          "summary": ".g-blue { fill: var(--g-logo-blue); } .g-red { fill: var(--g-logo-red); } .g-yellow { fill: var(--g-logo-yellow); } .g-green { fill: var(--g-logo-green); } Explore our next generation AI systems Explore models Gemini Gem…",
-          "titleZh": "Genie 4 模型",
-          "summaryZh": "探索新一代 AI 系统与模型，包括 Gemini。",
-          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "title": "Gemini 4 Carbon",
+          "summary": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.",
+          "titleZh": "Gemini 4 Carbon 模型",
+          "summaryZh": "Gemini 4 Carbon 是我们能力最强的模型，在网络安全和长周期任务能力方面达到业界领先水平。",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
           "source": "Hacker News",
-          "score": 4.58,
+          "score": 4.7,
           "reasons": [
-            "HN分数776",
-            "讨论量472"
+            "HN分数836",
+            "讨论量695"
           ],
-          "published": "2026-10-27T16:06:01+00:00"
+          "published": "2026-10-28T17:01:23+00:00"
         },
         {
-          "title": "Ghostty 1.4",
-          "summary": "Release notes for Ghostty 1.4.0, released on October 27, 2026.",
-          "titleZh": "Ghostty 1.4 版本",
-          "summaryZh": "Ghostty 1.4.0 版本发布说明，该版本于 2026 年 10 月 27 日发布。",
-          "url": "https://ghostty.org/docs/install/release-notes/1-4-0",
+          "title": "MacBook Pro with PROLED XDR Display and Touch",
+          "summary": "MacBook Pro with PROLED XDR Display has the world’s best laptop display. Featuring the M5 Pro or M5 Max chip, it’s a powerful platform for AI.",
+          "titleZh": "配备 PROLED XDR 显示屏和触控功能的 MacBook Pro",
+          "summaryZh": "配备 PROLED XDR 显示屏的 MacBook Pro 拥有全球最出色的笔记本电脑显示屏。搭载 M5 Pro 或 M5 Max 芯片，是强大的 AI 平台。",
+          "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
           "source": "Hacker News",
-          "score": 4.49,
+          "score": 4.63,
           "reasons": [
-            "HN分数822",
-            "讨论量250"
+            "HN分数518",
+            "讨论量893"
           ],
-          "published": "2026-10-27T16:51:22+00:00"
+          "published": "2026-10-28T17:10:37+00:00"
         },
         {
-          "title": "New 14‑inch MacBook Pro with M6",
-          "summary": "Apple today announced the new 14-inch MacBook Pro with M6, delivering more performance, powerful on-device AI capabilities, and faster connectivity.",
-          "titleZh": "搭载 M6 的全新 14 英寸 MacBook Pro",
-          "summaryZh": "Apple 今日宣布推出搭载 M6 的全新 14 英寸 MacBook Pro，带来更强性能、强大的端侧 AI 能力和更快的连接速度。",
-          "url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+          "title": "Why is this fingerprinting script creating bioweapons?",
+          "summary": "I've always had a fascination with reverse-engineering browser fingerprinting scripts. Most of my time has been spent looking at the usual suspects (popular fingerprinting libraries like FingerprintJS and more sophistica…",
+          "titleZh": "为什么这段指纹识别脚本会制造生物武器？",
+          "summaryZh": "我一直对逆向分析浏览器指纹识别脚本很感兴趣。我大部分时间都在研究常见对象（例如 FingerprintJS 等流行指纹识别库，以及更复杂的……",
+          "url": "https://nullpt.rs/fingerprinting-bioweapons",
           "source": "Hacker News",
-          "score": 4.3,
+          "score": 4.48,
           "reasons": [
-            "HN分数299",
-            "讨论量384"
+            "HN分数925",
+            "讨论量194"
           ],
-          "published": "2026-10-27T16:08:32+00:00"
+          "published": "2026-10-28T17:13:29+00:00"
         },
         {
-          "title": "New iMac with M6",
-          "summary": "The brilliant all-in-one desktop with the superfast M6 chip. A powerful platform for AI. With a 24-inch 4.5K Retina display. Wi-Fi 7 and Bluetooth 6.",
-          "titleZh": "搭载 M6 的全新 iMac",
-          "summaryZh": "这款出色的一体式桌面电脑搭载速度飞快的 M6 芯片，是强大的 AI 平台，配备 24 英寸 4.5K Retina 显示屏，并支持 Wi‑Fi 7 和蓝牙 6。",
-          "url": "https://www.apple.com/imac/",
+          "title": "Apple's git still trusts the compromised eMudhra certificates",
+          "summary": "Eleven days after Apple was notified of the eMudhra CA compromise, the git, curl and python3 that Apple ships with macOS still trust the compromised certificates.",
+          "titleZh": "Apple 的 Git 仍信任已遭入侵的 eMudhra 证书",
+          "summaryZh": "Apple 收到 eMudhra 证书颁发机构遭入侵的通知 11 天后，Apple 随 macOS 提供的 Git、curl 和 python3 仍然信任这些已遭入侵的证书。",
+          "url": "https://emudhra.we-have-a-problem.com/apple.html",
           "source": "Hacker News",
-          "score": 4.23,
+          "score": 4.47,
           "reasons": [
-            "HN分数318",
-            "讨论量390"
+            "HN分数1063",
+            "讨论量381"
           ],
-          "published": "2026-10-27T13:02:02+00:00"
+          "published": "2026-10-28T11:03:40+00:00"
         },
         {
-          "title": "Python's experimental JIT to be removed",
-          "summary": "Python",
-          "titleZh": "Python 将移除实验性 JIT",
-          "summaryZh": "Python",
-          "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+          "title": "StackOverflow now gets fewer than 1000 questions a month",
+          "summary": "Comments",
+          "titleZh": "StackOverflow 每月新增问题已不足 1000 个",
+          "summaryZh": "评论",
+          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
           "source": "Hacker News",
-          "score": 4.19,
+          "score": 4.17,
           "reasons": [
-            "HN分数460",
-            "讨论量248"
+            "HN分数154",
+            "讨论量166"
           ],
-          "published": "2026-10-27T11:17:57+00:00"
+          "published": "2026-10-28T23:35:02+00:00"
         },
         {
-          "title": "Tailscale SSH: Investigation and remediation update",
-          "summary": "An update on the Tailscale SSH security investigation, remediation progress, and what customers can do now.",
-          "titleZh": "Tailscale SSH：调查与修复进展更新",
-          "summaryZh": "本次更新介绍 Tailscale SSH 安全事件的调查情况、修复进展，以及客户目前可以采取的措施。",
-          "url": "https://tailscale.com/ssh-investigation-update",
+          "title": "CNC Stone Carving",
+          "summary": "CNC Stone Carving In a form of architecture so ancient, CNC machines may seem a little out of place. However, when one considers that the medieval builders were always on the forefront of the technology of their day, it…",
+          "titleZh": "数控石雕",
+          "summaryZh": "在一种极其古老的建筑形式中，数控机床或许显得有些格格不入。然而，若想到中世纪的建造者总走在当时技术的前沿，这……",
+          "url": "https://carmelitegothic.com/cnc-stone-carving/",
           "source": "Hacker News",
-          "score": 4.09,
+          "score": 4.12,
           "reasons": [
-            "HN分数219",
-            "讨论量115"
+            "HN分数423",
+            "讨论量122"
           ],
-          "published": "2026-10-27T19:55:21+00:00"
+          "published": "2026-10-28T14:38:22+00:00"
         },
         {
-          "title": "Early progress on accelerating drug development with Claude",
-          "summary": "Over the past several months, we’ve partnered with six organizations to accelerate curing disease. We’ve also started drug discovery efforts of our own, including programs for rare childhood forms of muscular dystrophy.…",
-          "titleZh": "Claude 助力加速药物研发取得初步进展",
-          "summaryZh": "过去几个月，我们与六家机构合作，推动疾病治疗进展。我们也启动了自己的药物发现工作，包括针对罕见儿童型肌营养不良症的项目。",
-          "url": "https://www.anthropic.com/research/early-progress-drug-development",
+          "title": "AlpineBSD",
+          "summary": "AlpineBSD is an operating system based on the NetBSD kernel with a userspace inspired by Alpine Linux and the objective of making it possible to use as little AI-generated software as possible . There is no LLM output in…",
+          "titleZh": "AlpineBSD",
+          "summaryZh": "AlpineBSD 是一种基于 NetBSD 内核的操作系统，其用户空间设计受到 Alpine Linux 启发，目标是尽可能少用 AI 生成的软件。没有任何 LLM 输出……",
+          "url": "https://wiki.alpinebsd.org",
           "source": "Hacker News",
-          "score": 4.07,
+          "score": 3.98,
           "reasons": [
-            "HN分数157",
-            "讨论量143"
+            "HN分数184",
+            "讨论量175"
           ],
-          "published": "2026-10-27T20:50:42+00:00"
+          "published": "2026-10-28T14:30:26+00:00"
         }
       ]
     },
@@ -127,108 +127,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
-          "summary": "Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.",
-          "titleZh": "风投将在 Anthropic IPO 中赚取数十亿美元，但 Amazon 的收益可能高得多",
-          "summaryZh": "大规模票据转换揭示了 Amazon 对 Anthropic 的实际持股规模。",
-          "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+          "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
+          "summary": "Microsoft has never disclosed Azure's quarterly revenue in dollars. But for the first time, we can see just how close it is getting to besting the biggest competitor in the market, AWS.",
+          "titleZh": "微软首次公布 Azure 实际营收：332 亿美元",
+          "summaryZh": "微软从未披露过 Azure 的季度营收金额。但这次我们首次得以看到，它距离超越市场最大竞争对手 AWS 究竟还有多远。",
+          "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
           "source": "TechCrunch",
-          "score": 4.54,
+          "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-28T01:15:28+00:00"
+          "published": "2026-10-28T21:58:32+00:00"
         },
         {
-          "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
-          "summary": "A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.",
-          "titleZh": "父母起诉 OpenAI，称 GPT-4o 劝女儿停用抗癫痫药物",
-          "summaryZh": "一户人家起诉 OpenAI，称 ChatGPT 曾指导他们的女儿悄悄逐渐停用抗癫痫药物，并瞒着医生；她于二月去世。",
-          "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
-          "source": "TechCrunch",
-          "score": 4.49,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-27T23:34:27+00:00"
-        },
-        {
-          "title": "The data center boom has an upside: innovation for the US grid",
-          "summary": "As the AI boom stresses the existing power grid, all sorts of new opportunities for grid modernization are also emerging as a result, industry insiders say.",
-          "titleZh": "数据中心热潮也有积极面：推动美国电网创新",
-          "summaryZh": "业内人士表示，AI 热潮加重现有电网负担的同时，也催生了各种电网现代化新机遇。",
-          "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
-          "source": "TechCrunch",
-          "score": 4.47,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-27T22:55:41+00:00"
-        },
-        {
-          "title": "Guidewire buys Hyperexponential for $1.7B in cash",
-          "summary": "The deal, expected to close sometime next year, is to help bring AI agents to work alongside humans to underwrite, analyze, and price decisions.",
-          "titleZh": "Guidewire 以 17 亿美元现金收购 Hyperexponential",
-          "summaryZh": "这笔交易预计将于明年某个时候完成，旨在让 AI 智能体与人类协作，进行承保、分析和定价决策。",
-          "url": "https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/",
-          "source": "TechCrunch",
-          "score": 4.46,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-27T22:26:03+00:00"
-        },
-        {
-          "title": "From 8VC to Benchmark, here’s what’s hiding in October SEC filings",
-          "summary": "A whole crop of venture capital firms are raising significant new funds.",
-          "titleZh": "从 8VC 到 Benchmark：美国证券交易委员会 10 月文件揭示了什么",
-          "summaryZh": "一批风险投资公司正在募集规模可观的新基金。",
-          "url": "https://techcrunch.com/2026/10/27/from-8vc-to-benchmark-heres-whats-hiding-in-october-sec-filings/",
-          "source": "TechCrunch",
-          "score": 4.46,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-27T22:17:18+00:00"
-        },
-        {
-          "title": "Bank of America kindly asks that you don’t share your banking password with your AI assistant",
-          "summary": "The banking giant reminds customers that \"you're responsible for activity\" resulting from your AI agents' access.",
-          "titleZh": "美国银行提醒：请勿向 AI 助手透露银行密码",
-          "summaryZh": "这家银行巨头提醒客户，对于 AI 智能体访问账户后产生的操作，“你需对相关活动负责”。",
-          "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+          "title": "Google expands AI Search ads globally as core ad growth slows",
+          "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
+          "titleZh": "核心广告业务增长放缓之际，Google 将 AI 搜索广告扩展至全球",
+          "summaryZh": "这项公告与母公司 Alphabet 的第三季度财报同时发布。财报显示，其营收同比增长 25%，达到 1276 亿美元。",
+          "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
           "source": "TechCrunch",
           "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-27T21:44:34+00:00"
+          "published": "2026-10-28T21:48:37+00:00"
         },
         {
-          "title": "Who’s really in charge at Anthropic after the IPO?",
-          "summary": "Here's a clear explanation of Anthropic's incredibly complex governance structure.",
-          "titleZh": "Anthropic IPO 后究竟由谁掌权？",
-          "summaryZh": "本文清晰解析了 Anthropic 极其复杂的治理架构。",
-          "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+          "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+          "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of th…",
+          "titleZh": "微软从 OpenAI 获得 100 亿美元营收",
+          "summaryZh": "微软表示，在截至 9 月 30 日的季度中，它通过与 OpenAI 的商业合作（包括收入分成款项）获得了 100 亿美元营收。这凸显了微软对 OpenAI 仍然巨大的财务依赖……",
+          "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.43,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-27T21:38:28+00:00"
+          "published": "2026-10-28T21:34:30+00:00"
         },
         {
-          "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
-          "summary": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
-          "titleZh": "Disruptive 募集 100 亿美元基金，计划重注至少 10 家公司",
-          "summaryZh": "近年来，Disruptive 因向 Groq 等芯片初创公司以及 AI 语音生成初创公司 ElevenLabs 大举投资而频频成为新闻焦点。",
-          "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+          "title": "Microsoft hits 10 quarters of record-breaking revenue in a row",
+          "summary": "Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago q…",
+          "titleZh": "微软连续 10 个季度刷新营收纪录",
+          "summaryZh": "无论 AI 的未来如何，眼下的局面对微软仍然十分有利。这家科技巨头周三公布了又一个季度营收纪录：923 亿美元，较去年同期增长 19%……",
+          "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 4.43,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-27T18:55:35+00:00"
+          "published": "2026-10-28T21:25:30+00:00"
+        },
+        {
+          "title": "Anthropic just launched tools to show companies what their AI spending is buying",
+          "summary": "The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.",
+          "titleZh": "Anthropic 推出工具，帮助企业了解 AI 支出换来了什么",
+          "summaryZh": "这家前沿 AI 实验室开始揭示用户在其模型上的支出情况，此举正值公司计划 IPO 之前。",
+          "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+          "source": "TechCrunch",
+          "score": 4.37,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-28T19:19:58+00:00"
+        },
+        {
+          "title": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
+          "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, w…",
+          "titleZh": "Wiz 首席技术官谈 PHP2Shell 与即将到来的“漏洞末日”",
+          "summaryZh": "PHP 安全风波或许已从你的信息流中淡去，但善后工作远未结束。上周，这门支撑约 70% 网站的开源语言曝出两个严重漏洞，令各组织忙于修补系统……",
+          "url": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+          "source": "TechCrunch",
+          "score": 4.37,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-28T19:05:46+00:00"
+        },
+        {
+          "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
+          "summary": "A new developer platform will let businesses bring their services to Google's AI experiences, potentially changing how consumers discover and use apps.",
+          "titleZh": "AI 智能体重塑网络之际，Google 向更多应用开放 Gemini 和搜索",
+          "summaryZh": "新的开发者平台将允许企业把自家服务接入 Google 的 AI 体验，或将改变消费者发现和使用应用的方式。",
+          "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+          "source": "TechCrunch",
+          "score": 4.31,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-28T17:00:00+00:00"
+        },
+        {
+          "title": "Upwind raises $400M after walking away from Datadog acquisition offer",
+          "summary": "The cloud security startup raised a Series C at a $3.8B valuation, instead of selling itself for the same price.",
+          "titleZh": "Upwind 拒绝 Datadog 收购要约后融资 4 亿美元",
+          "summaryZh": "这家云安全初创公司完成 C 轮融资，估值达 38 亿美元，而不是以同样的价格出售公司。",
+          "url": "https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/",
+          "source": "TechCrunch",
+          "score": 1.88,
+          "reasons": [],
+          "published": "2026-10-28T23:15:00+00:00"
         }
       ]
     }
@@ -236,7 +234,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-28T11:01:16.540654+08:00"
+      "lastRunAt": "2026-10-29T11:01:00.555614+08:00"
     }
   }
 }
