@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-29T11:31:02+08:00",
-  "date": "2026-10-29",
+  "updatedAt": "2026-10-30T11:30:58+08:00",
+  "date": "2026-10-30",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
-          "summary": "DAYJOB: Tax evaluates AI agents across 50 realistic tax environments, testing their ability to navigate messy records, exercise professional judgment, and deliver reliable tax work.",
-          "titleZh": "Dayjob：Tax——评估 AI 智能体处理 50 项专业税务任务的能力",
-          "summaryZh": "DAYJOB：Tax 在 50 个真实感税务环境中评估 AI 智能体，测试其处理杂乱记录、运用专业判断并可靠完成税务工作的能力。",
-          "url": "https://surgehq.ai/blog/dayjob-tax",
+          "title": "We ran AI agent swarms in Minecraft and Mindustry",
+          "summary": "\b\u0000\u0000\u0000\u0000\u0000\u0002\u0003 }7_\u0012V:|zL\u0010Gˋ6OZ\b=^\u0011?51V8H~SkFg\bE{\u001b]\u0012y\u001byq\b\u0006\u0002?_]d\u001bxb_:( No\u0005Zu\u0010MO$q;\u0019\u0016~g8ʬB\"\u0010,&(#2m6R\u00120(ZNP \u0014Y\u0007d\u0019̃0玲/=ǷV\u0016|fq \u0013,4E@8 8ZbU\u0010?Dy J0Oїdb&\u0019\u00005L`\u0015 \\|1N\u0000wC:VڬibSy\u0014\u0006u~~g\u001a qt\u0002&\u0011; \u0012Dh\u0019D\u0013\u0004\u0014[\u0007Jϵa\u0014\"\u000fv@/n\u0016Ģʜ\u0000FZ~%!\u0006\"/B\u0002pO\u000fRQ \u0000gu4m…",
+          "titleZh": "我们在《我的世界》和《Mindustry》中运行了 AI 智能体群",
+          "summaryZh": "摘要原文是乱码，无法准确翻译。",
+          "url": "https://labs.ycombinator.com/projects/games/index.html",
           "source": "Hacker News",
-          "score": 6.6,
+          "score": 6.62,
           "reasons": [
             "AI",
-            "HN分数213",
-            "讨论量137"
+            "HN分数207",
+            "讨论量68"
           ],
-          "published": "2026-10-28T15:46:30+00:00"
+          "published": "2026-10-29T21:40:28+00:00"
         },
         {
-          "title": "Gemini 4 Carbon",
-          "summary": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.",
-          "titleZh": "Gemini 4 Carbon 模型",
-          "summaryZh": "Gemini 4 Carbon 是我们能力最强的模型，在网络安全和长周期任务能力方面达到业界领先水平。",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-          "source": "Hacker News",
-          "score": 4.7,
-          "reasons": [
-            "HN分数836",
-            "讨论量695"
-          ],
-          "published": "2026-10-28T17:01:23+00:00"
-        },
-        {
-          "title": "MacBook Pro with PROLED XDR Display and Touch",
-          "summary": "MacBook Pro with PROLED XDR Display has the world’s best laptop display. Featuring the M5 Pro or M5 Max chip, it’s a powerful platform for AI.",
-          "titleZh": "配备 PROLED XDR 显示屏和触控功能的 MacBook Pro",
-          "summaryZh": "配备 PROLED XDR 显示屏的 MacBook Pro 拥有全球最出色的笔记本电脑显示屏。搭载 M5 Pro 或 M5 Max 芯片，是强大的 AI 平台。",
-          "url": "https://www.apple.com/macbook-pro/proled-xdr-display/",
-          "source": "Hacker News",
-          "score": 4.63,
-          "reasons": [
-            "HN分数518",
-            "讨论量893"
-          ],
-          "published": "2026-10-28T17:10:37+00:00"
-        },
-        {
-          "title": "Why is this fingerprinting script creating bioweapons?",
-          "summary": "I've always had a fascination with reverse-engineering browser fingerprinting scripts. Most of my time has been spent looking at the usual suspects (popular fingerprinting libraries like FingerprintJS and more sophistica…",
-          "titleZh": "为什么这段指纹识别脚本会制造生物武器？",
-          "summaryZh": "我一直对逆向分析浏览器指纹识别脚本很感兴趣。我大部分时间都在研究常见对象（例如 FingerprintJS 等流行指纹识别库，以及更复杂的……",
-          "url": "https://nullpt.rs/fingerprinting-bioweapons",
-          "source": "Hacker News",
-          "score": 4.48,
-          "reasons": [
-            "HN分数925",
-            "讨论量194"
-          ],
-          "published": "2026-10-28T17:13:29+00:00"
-        },
-        {
-          "title": "Apple's git still trusts the compromised eMudhra certificates",
-          "summary": "Eleven days after Apple was notified of the eMudhra CA compromise, the git, curl and python3 that Apple ships with macOS still trust the compromised certificates.",
-          "titleZh": "Apple 的 Git 仍信任已遭入侵的 eMudhra 证书",
-          "summaryZh": "Apple 收到 eMudhra 证书颁发机构遭入侵的通知 11 天后，Apple 随 macOS 提供的 Git、curl 和 python3 仍然信任这些已遭入侵的证书。",
-          "url": "https://emudhra.we-have-a-problem.com/apple.html",
-          "source": "Hacker News",
-          "score": 4.47,
-          "reasons": [
-            "HN分数1063",
-            "讨论量381"
-          ],
-          "published": "2026-10-28T11:03:40+00:00"
-        },
-        {
-          "title": "StackOverflow now gets fewer than 1000 questions a month",
+          "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
           "summary": "Comments",
-          "titleZh": "StackOverflow 每月新增问题已不足 1000 个",
+          "titleZh": "Binance 黑客 1029——从 Binance 窃取了 56 亿美元",
           "summaryZh": "评论",
-          "url": "https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1",
+          "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
           "source": "Hacker News",
-          "score": 4.17,
+          "score": 4.77,
           "reasons": [
-            "HN分数154",
-            "讨论量166"
+            "HN分数858",
+            "讨论量506"
           ],
-          "published": "2026-10-28T23:35:02+00:00"
+          "published": "2026-10-29T21:38:59+00:00"
         },
         {
-          "title": "CNC Stone Carving",
-          "summary": "CNC Stone Carving In a form of architecture so ancient, CNC machines may seem a little out of place. However, when one considers that the medieval builders were always on the forefront of the technology of their day, it…",
-          "titleZh": "数控石雕",
-          "summaryZh": "在一种极其古老的建筑形式中，数控机床或许显得有些格格不入。然而，若想到中世纪的建造者总走在当时技术的前沿，这……",
-          "url": "https://carmelitegothic.com/cnc-stone-carving/",
+          "title": "We're releasing the weights of Mistral Large 4",
+          "summary": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.",
+          "titleZh": "我们将开放 Mistral Large 4 的模型权重",
+          "summaryZh": "Mistral Large 4（Le Chonk）的模型权重现已开放。这是一款拥有 1 万亿参数的多模态模型，也是最出色的开放权重编程模型，在欧洲训练。",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/",
+          "source": "Hacker News",
+          "score": 4.59,
+          "reasons": [
+            "HN分数1250",
+            "讨论量350"
+          ],
+          "published": "2026-10-29T14:13:21+00:00"
+        },
+        {
+          "title": "DoorDash to acquire Instacart",
+          "summary": "Together, DoorDash and Instacart would help stores of every size reach more customers with the kinds of innovative technology that the biggest online retailers and grocers build for themselves.",
+          "titleZh": "DoorDash 将收购 Instacart",
+          "summaryZh": "DoorDash 与 Instacart 联手后，将帮助各种规模的商家触达更多顾客，并提供大型线上零售商和杂货商自行开发的那类创新技术。",
+          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+          "source": "Hacker News",
+          "score": 4.39,
+          "reasons": [
+            "HN分数444",
+            "讨论量614"
+          ],
+          "published": "2026-10-29T12:33:05+00:00"
+        },
+        {
+          "title": "LLM Voice",
+          "summary": "Sometimes when I read a post, I get the growing feeling that I'm reading the output of an LLM. I can't necessarily define why, although there are the common tells (it's not the em-dashes, it's the load-bearing tapestries…",
+          "titleZh": "大语言模型的写作腔",
+          "summaryZh": "有时读一篇文章时，我会越来越觉得自己读到的是大语言模型的输出。我未必能说清原因，尽管确实有一些常见迹象（问题不在破折号，而在那些承重的挂毯……）。",
+          "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+          "source": "Hacker News",
+          "score": 4.19,
+          "reasons": [
+            "HN分数370",
+            "讨论量199"
+          ],
+          "published": "2026-10-29T14:57:55+00:00"
+        },
+        {
+          "title": "H.264 Is Magic (2016)",
+          "summary": "A high level walkthrough of the basics of video compression techniques used in MPEG, AVC/H.264, codecs.",
+          "titleZh": "H.264 的魔力（2016）",
+          "summaryZh": "通俗介绍 MPEG、AVC/H.264 编解码器所用视频压缩技术的基础知识。",
+          "url": "https://sidbala.com/h-264-is-magic/",
           "source": "Hacker News",
           "score": 4.12,
           "reasons": [
-            "HN分数423",
-            "讨论量122"
+            "HN分数354",
+            "讨论量130"
           ],
-          "published": "2026-10-28T14:38:22+00:00"
+          "published": "2026-10-29T15:53:03+00:00"
         },
         {
-          "title": "AlpineBSD",
-          "summary": "AlpineBSD is an operating system based on the NetBSD kernel with a userspace inspired by Alpine Linux and the objective of making it possible to use as little AI-generated software as possible . There is no LLM output in…",
-          "titleZh": "AlpineBSD",
-          "summaryZh": "AlpineBSD 是一种基于 NetBSD 内核的操作系统，其用户空间设计受到 Alpine Linux 启发，目标是尽可能少用 AI 生成的软件。没有任何 LLM 输出……",
-          "url": "https://wiki.alpinebsd.org",
+          "title": "Herdr has released native app",
+          "summary": "herdr desktop app. Contribute to herdrdev/herdr-app development by creating an account on GitHub.",
+          "titleZh": "Herdr 发布原生应用",
+          "summaryZh": "herdr 桌面应用。创建 GitHub 账户，为 herdrdev/herdr-app 项目贡献代码。",
+          "url": "https://github.com/herdrdev/herdr-app",
           "source": "Hacker News",
-          "score": 3.98,
+          "score": 3.6,
           "reasons": [
-            "HN分数184",
-            "讨论量175"
+            "HN分数45",
+            "讨论量35"
           ],
-          "published": "2026-10-28T14:30:26+00:00"
+          "published": "2026-10-30T00:42:41+00:00"
+        },
+        {
+          "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+          "summary": "Tiny world model generates games and stream ac plays them all on Pico 2W - SheepSeb/tinyworldformer",
+          "titleZh": "在 Raspberry Pi Pico 2 W 上运行游戏的微型世界模型",
+          "summaryZh": "微型世界模型生成游戏，stream ac 在 Pico 2W 上运行这些游戏——SheepSeb/tinyworldformer。",
+          "url": "https://github.com/SheepSeb/tinyworldformer",
+          "source": "Hacker News",
+          "score": 3.51,
+          "reasons": [
+            "HN分数158",
+            "讨论量8"
+          ],
+          "published": "2026-10-29T20:32:28+00:00"
         }
       ]
     },
@@ -127,106 +127,102 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
-          "summary": "Microsoft has never disclosed Azure's quarterly revenue in dollars. But for the first time, we can see just how close it is getting to besting the biggest competitor in the market, AWS.",
-          "titleZh": "微软首次公布 Azure 实际营收：332 亿美元",
-          "summaryZh": "微软从未披露过 Azure 的季度营收金额。但这次我们首次得以看到，它距离超越市场最大竞争对手 AWS 究竟还有多远。",
-          "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+          "title": "You don’t need to believe in a god to get a religious exemption from using AI at work",
+          "summary": "David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.",
+          "titleZh": "申请工作中不使用 AI 的宗教豁免，不必信仰上帝",
+          "summaryZh": "肯塔基大学行政人员 David Durman 最近获得了在工作场所不使用 AI 的宗教豁免。",
+          "url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
           "source": "TechCrunch",
-          "score": 4.45,
+          "score": 4.54,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-28T21:58:32+00:00"
+          "published": "2026-10-30T01:20:48+00:00"
         },
         {
-          "title": "Google expands AI Search ads globally as core ad growth slows",
-          "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
-          "titleZh": "核心广告业务增长放缓之际，Google 将 AI 搜索广告扩展至全球",
-          "summaryZh": "这项公告与母公司 Alphabet 的第三季度财报同时发布。财报显示，其营收同比增长 25%，达到 1276 亿美元。",
-          "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+          "title": "AWS will be a $1T business, Jassy says. But first, it will spend big.",
+          "summary": "Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.",
+          "titleZh": "Jassy 称 AWS 将成为万亿美元级业务，但首先要大举投入",
+          "summaryZh": "亚马逊希望成为 AI 云计算领域的领头羊，并成为首家营收达 1 万亿美元的企业。但亚马逊首席执行官周四表示，要实现这一目标，公司还得继续大举增加资本支出。",
+          "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-28T21:48:37+00:00"
+          "published": "2026-10-29T23:42:22+00:00"
         },
         {
-          "title": "Microsoft recorded $10 billion in revenue from OpenAI",
-          "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of th…",
-          "titleZh": "微软从 OpenAI 获得 100 亿美元营收",
-          "summaryZh": "微软表示，在截至 9 月 30 日的季度中，它通过与 OpenAI 的商业合作（包括收入分成款项）获得了 100 亿美元营收。这凸显了微软对 OpenAI 仍然巨大的财务依赖……",
-          "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+          "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
+          "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
+          "titleZh": "随着搜索流量减少，Reddit 宣布转向登录后使用模式",
+          "summaryZh": "随着 AI 改变人们在线查找信息的方式，Reddit 正重新审视其开放网络起源，以保护用户群体和业务。",
+          "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-28T21:34:30+00:00"
+          "published": "2026-10-29T20:08:31+00:00"
         },
         {
-          "title": "Microsoft hits 10 quarters of record-breaking revenue in a row",
-          "summary": "Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase over the year-ago q…",
-          "titleZh": "微软连续 10 个季度刷新营收纪录",
-          "summaryZh": "无论 AI 的未来如何，眼下的局面对微软仍然十分有利。这家科技巨头周三公布了又一个季度营收纪录：923 亿美元，较去年同期增长 19%……",
-          "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+          "title": "Rivian expands joint venture with VW to include AI assistant",
+          "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
+          "titleZh": "Rivian 扩大与大众汽车的合资项目，加入 AI 助手",
+          "summaryZh": "Rivian 未透露其价值 58 亿美元的合资项目是否会因此扩大规模。",
+          "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-28T21:25:30+00:00"
+          "published": "2026-10-29T20:05:47+00:00"
         },
         {
-          "title": "Anthropic just launched tools to show companies what their AI spending is buying",
-          "summary": "The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.",
-          "titleZh": "Anthropic 推出工具，帮助企业了解 AI 支出换来了什么",
-          "summaryZh": "这家前沿 AI 实验室开始揭示用户在其模型上的支出情况，此举正值公司计划 IPO 之前。",
-          "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+          "title": "OpenAI-backed Thrive Holdings acquires ADT",
+          "summary": "OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.",
+          "titleZh": "获 OpenAI 支持的 Thrive Holdings 收购 ADT",
+          "summaryZh": "获 OpenAI 支持的 Thrive Holdings 将以 153 亿美元收购 ADT，并计划将 AI 引入家庭安防业务。",
+          "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
           "source": "TechCrunch",
-          "score": 4.37,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-28T19:19:58+00:00"
+          "published": "2026-10-29T19:56:19+00:00"
         },
         {
-          "title": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
-          "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, w…",
-          "titleZh": "Wiz 首席技术官谈 PHP2Shell 与即将到来的“漏洞末日”",
-          "summaryZh": "PHP 安全风波或许已从你的信息流中淡去，但善后工作远未结束。上周，这门支撑约 70% 网站的开源语言曝出两个严重漏洞，令各组织忙于修补系统……",
-          "url": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+          "title": "Andy Jassy says Prime Video is on track to earn ‘tens of billions of dollars’",
+          "summary": "The success of blockbuster hits like Project Hail Mary and Verity is only part of the story, Amazon's CEO says.",
+          "titleZh": "Andy Jassy 称 Prime Video 有望创造“数百亿美元”收入",
+          "summaryZh": "亚马逊首席执行官表示，《挽救计划》和《Verity》等大片的成功只是故事的一部分。",
+          "url": "https://techcrunch.com/2026/10/29/andy-jassy-says-prime-video-is-on-track-to-earn-tens-of-billions-of-dollars/",
           "source": "TechCrunch",
-          "score": 4.37,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-28T19:05:46+00:00"
-        },
-        {
-          "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
-          "summary": "A new developer platform will let businesses bring their services to Google's AI experiences, potentially changing how consumers discover and use apps.",
-          "titleZh": "AI 智能体重塑网络之际，Google 向更多应用开放 Gemini 和搜索",
-          "summaryZh": "新的开发者平台将允许企业把自家服务接入 Google 的 AI 体验，或将改变消费者发现和使用应用的方式。",
-          "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
-          "source": "TechCrunch",
-          "score": 4.31,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-28T17:00:00+00:00"
-        },
-        {
-          "title": "Upwind raises $400M after walking away from Datadog acquisition offer",
-          "summary": "The cloud security startup raised a Series C at a $3.8B valuation, instead of selling itself for the same price.",
-          "titleZh": "Upwind 拒绝 Datadog 收购要约后融资 4 亿美元",
-          "summaryZh": "这家云安全初创公司完成 C 轮融资，估值达 38 亿美元，而不是以同样的价格出售公司。",
-          "url": "https://techcrunch.com/2026/10/28/upwind-raises-400m-after-walking-away-from-datadog-acquisition-offer/",
-          "source": "TechCrunch",
-          "score": 1.88,
+          "score": 1.9,
           "reasons": [],
-          "published": "2026-10-28T23:15:00+00:00"
+          "published": "2026-10-29T23:44:56+00:00"
+        },
+        {
+          "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
+          "summary": "Some estimates say hackers stole billions in crypto from Binance, the world's largest cryptocurrency exchange, during a cyberattack on Thursday.",
+          "titleZh": "黑客疑似窃取数十亿美元加密货币，Binance 暂停提现",
+          "summaryZh": "据部分估算，黑客在周四的一次网络攻击中从全球最大的加密货币交易所 Binance 窃取了数十亿美元的加密货币。",
+          "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/",
+          "source": "TechCrunch",
+          "score": 1.86,
+          "reasons": [],
+          "published": "2026-10-29T22:27:23+00:00"
+        },
+        {
+          "title": "Elon Musk is ‘truly a genius,’ says Vladimir Putin",
+          "summary": "Putin said that he and Musk are in \"close contact\" about Rassvet, Russia's Starlink-like satellite connectivity project.",
+          "titleZh": "普京称埃隆·马斯克“确实是天才”",
+          "summaryZh": "普京称，他与马斯克就俄罗斯类似 Starlink 的卫星连接项目 Rassvet 保持“密切联系”。",
+          "url": "https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/",
+          "source": "TechCrunch",
+          "score": 1.84,
+          "reasons": [],
+          "published": "2026-10-29T21:51:29+00:00"
         }
       ]
     }
@@ -234,7 +230,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-29T11:01:00.555614+08:00"
+      "lastRunAt": "2026-10-30T11:01:20.240358+08:00"
     }
   }
 }
