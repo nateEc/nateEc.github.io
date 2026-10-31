@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-30T11:30:58+08:00",
-  "date": "2026-10-30",
+  "updatedAt": "2026-10-31T11:30:58+08:00",
+  "date": "2026-10-31",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "We ran AI agent swarms in Minecraft and Mindustry",
-          "summary": "\b\u0000\u0000\u0000\u0000\u0000\u0002\u0003 }7_\u0012V:|zL\u0010Gˋ6OZ\b=^\u0011?51V8H~SkFg\bE{\u001b]\u0012y\u001byq\b\u0006\u0002?_]d\u001bxb_:( No\u0005Zu\u0010MO$q;\u0019\u0016~g8ʬB\"\u0010,&(#2m6R\u00120(ZNP \u0014Y\u0007d\u0019̃0玲/=ǷV\u0016|fq \u0013,4E@8 8ZbU\u0010?Dy J0Oїdb&\u0019\u00005L`\u0015 \\|1N\u0000wC:VڬibSy\u0014\u0006u~~g\u001a qt\u0002&\u0011; \u0012Dh\u0019D\u0013\u0004\u0014[\u0007Jϵa\u0014\"\u000fv@/n\u0016Ģʜ\u0000FZ~%!\u0006\"/B\u0002pO\u000fRQ \u0000gu4m…",
-          "titleZh": "我们在《我的世界》和《Mindustry》中运行了 AI 智能体群",
-          "summaryZh": "摘要原文是乱码，无法准确翻译。",
-          "url": "https://labs.ycombinator.com/projects/games/index.html",
+          "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+          "summary": "Meet Paddy, the 27-year-old Cisco’s president calls an “energizer bunny.” He’s been given unlimited AI tokens and told to “go nuts.”",
+          "titleZh": "思科向工程师提供无限量 AI 令牌，让其重写遗留代码",
+          "summaryZh": "认识一下帕迪，这位 27 岁的年轻人被思科总裁称为“精力充沛的小马达”。他获准无限使用 AI 令牌，并被告知“放手去做”。",
+          "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
           "source": "Hacker News",
-          "score": 6.62,
+          "score": 6.44,
           "reasons": [
             "AI",
-            "HN分数207",
-            "讨论量68"
+            "HN分数125",
+            "讨论量151"
           ],
-          "published": "2026-10-29T21:40:28+00:00"
+          "published": "2026-10-30T14:08:20+00:00"
         },
         {
-          "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
-          "summary": "Comments",
-          "titleZh": "Binance 黑客 1029——从 Binance 窃取了 56 亿美元",
-          "summaryZh": "评论",
-          "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+          "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+          "summary": "Phorion has detected a backdoor in the official Claude Code for VS Code extension bundle on the Cursor Marketplace that drops a persistent SSH backdoor across macOS, Linux, and Windows. This write-up …",
+          "titleZh": "Cursor Marketplace 上的 VS Code 扩展 Claude Code 遭植入后门",
+          "summaryZh": "Phorion 发现，Cursor Marketplace 上官方 Claude Code for VS Code 扩展的安装包遭植入后门，可在 macOS、Linux 和 Windows 系统上植入持久化 SSH 后门。这篇文章……",
+          "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
           "source": "Hacker News",
-          "score": 4.77,
+          "score": 4.35,
           "reasons": [
-            "HN分数858",
-            "讨论量506"
+            "HN分数806",
+            "讨论量502"
           ],
-          "published": "2026-10-29T21:38:59+00:00"
+          "published": "2026-10-30T07:09:12+00:00"
         },
         {
-          "title": "We're releasing the weights of Mistral Large 4",
-          "summary": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.",
-          "titleZh": "我们将开放 Mistral Large 4 的模型权重",
-          "summaryZh": "Mistral Large 4（Le Chonk）的模型权重现已开放。这是一款拥有 1 万亿参数的多模态模型，也是最出色的开放权重编程模型，在欧洲训练。",
-          "url": "https://mistral.ai/news/mistral-large-4-oss/",
+          "title": "Northflank Breached",
+          "summary": "Northflank Status",
+          "titleZh": "Northflank 遭到入侵",
+          "summaryZh": "Northflank 状态",
+          "url": "https://status.northflank.com",
           "source": "Hacker News",
-          "score": 4.59,
+          "score": 4.27,
           "reasons": [
-            "HN分数1250",
-            "讨论量350"
+            "HN分数377",
+            "讨论量285"
           ],
-          "published": "2026-10-29T14:13:21+00:00"
+          "published": "2026-10-30T15:10:31+00:00"
         },
         {
-          "title": "DoorDash to acquire Instacart",
-          "summary": "Together, DoorDash and Instacart would help stores of every size reach more customers with the kinds of innovative technology that the biggest online retailers and grocers build for themselves.",
-          "titleZh": "DoorDash 将收购 Instacart",
-          "summaryZh": "DoorDash 与 Instacart 联手后，将帮助各种规模的商家触达更多顾客，并提供大型线上零售商和杂货商自行开发的那类创新技术。",
-          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+          "title": "The $6.3B Binance hack was pulled off in just 20 minutes",
+          "summary": "Multiple crypto-tracing firms say notorious North Korean hackers TraderTraitor may be behind the largest digital heist in history—with billions of crypto likely gone for good.",
+          "titleZh": "价值 63 亿美元的 Binance 黑客攻击仅用 20 分钟便得手",
+          "summaryZh": "多家加密货币追踪公司表示，臭名昭著的朝鲜黑客组织 TraderTraitor 可能是史上最大数字资产劫案的幕后黑手，数十亿美元的加密货币恐怕已永久损失。",
+          "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
           "source": "Hacker News",
-          "score": 4.39,
+          "score": 4.16,
           "reasons": [
-            "HN分数444",
-            "讨论量614"
+            "HN分数355",
+            "讨论量245"
           ],
-          "published": "2026-10-29T12:33:05+00:00"
+          "published": "2026-10-30T12:50:01+00:00"
         },
         {
-          "title": "LLM Voice",
-          "summary": "Sometimes when I read a post, I get the growing feeling that I'm reading the output of an LLM. I can't necessarily define why, although there are the common tells (it's not the em-dashes, it's the load-bearing tapestries…",
-          "titleZh": "大语言模型的写作腔",
-          "summaryZh": "有时读一篇文章时，我会越来越觉得自己读到的是大语言模型的输出。我未必能说清原因，尽管确实有一些常见迹象（问题不在破折号，而在那些承重的挂毯……）。",
-          "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+          "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+          "summary": "Patrick Stewart's most famous character showed a generation of youth a complex character who strived to do what was right.",
+          "titleZh": "通过让·吕克·皮卡德舰长，帕特里克·斯图尔特教会我们何谓真正的人",
+          "summaryZh": "帕特里克·斯图尔特最著名的角色向一代年轻人展现了一个复杂的人物：他努力做正确的事。",
+          "url": "https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/",
           "source": "Hacker News",
-          "score": 4.19,
+          "score": 4.16,
           "reasons": [
-            "HN分数370",
-            "讨论量199"
+            "HN分数243",
+            "讨论量137"
           ],
-          "published": "2026-10-29T14:57:55+00:00"
+          "published": "2026-10-30T20:23:30+00:00"
         },
         {
-          "title": "H.264 Is Magic (2016)",
-          "summary": "A high level walkthrough of the basics of video compression techniques used in MPEG, AVC/H.264, codecs.",
-          "titleZh": "H.264 的魔力（2016）",
-          "summaryZh": "通俗介绍 MPEG、AVC/H.264 编解码器所用视频压缩技术的基础知识。",
-          "url": "https://sidbala.com/h-264-is-magic/",
+          "title": "My favourite PowerMac is a Nintendo Wii",
+          "summary": "So today I reached a nice milestone in one of my projects: my work porting classic Mac OS to PowerPC systems with what I affectionately call ArtX chipsets (Nintendo GameCube, Wii, eventually Wii U; the GameCube’s Flipper…",
+          "titleZh": "我最喜欢的 PowerMac 是任天堂 Wii",
+          "summaryZh": "今天，我的一个项目达成了一个值得庆祝的里程碑：我将经典 Mac OS 移植到 PowerPC 系统上，这些系统采用我亲切称为 ArtX 芯片组的硬件（任天堂 GameCube、Wii，最终还有 Wii U；GameCube 的 Flipper……）",
+          "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
           "source": "Hacker News",
-          "score": 4.12,
+          "score": 3.98,
           "reasons": [
-            "HN分数354",
-            "讨论量130"
+            "HN分数262",
+            "讨论量77"
           ],
-          "published": "2026-10-29T15:53:03+00:00"
+          "published": "2026-10-30T17:25:15+00:00"
         },
         {
-          "title": "Herdr has released native app",
-          "summary": "herdr desktop app. Contribute to herdrdev/herdr-app development by creating an account on GitHub.",
-          "titleZh": "Herdr 发布原生应用",
-          "summaryZh": "herdr 桌面应用。创建 GitHub 账户，为 herdrdev/herdr-app 项目贡献代码。",
-          "url": "https://github.com/herdrdev/herdr-app",
+          "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+          "summary": "An NES CPU compiled into the weights of a stock Qwen3.5 model - dbreunig/nesformer",
+          "titleZh": "Show HN：用约 1GB 的 Qwen 权重实现一台可运行的任天堂主机",
+          "summaryZh": "将 NES CPU 编译进原版 Qwen3.5 模型的权重中——dbreunig/nesformer",
+          "url": "https://github.com/dbreunig/nesformer",
           "source": "Hacker News",
-          "score": 3.6,
+          "score": 3.98,
           "reasons": [
-            "HN分数45",
-            "讨论量35"
+            "HN分数205",
+            "讨论量114"
           ],
-          "published": "2026-10-30T00:42:41+00:00"
+          "published": "2026-10-30T16:40:22+00:00"
         },
         {
-          "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
-          "summary": "Tiny world model generates games and stream ac plays them all on Pico 2W - SheepSeb/tinyworldformer",
-          "titleZh": "在 Raspberry Pi Pico 2 W 上运行游戏的微型世界模型",
-          "summaryZh": "微型世界模型生成游戏，stream ac 在 Pico 2W 上运行这些游戏——SheepSeb/tinyworldformer。",
-          "url": "https://github.com/SheepSeb/tinyworldformer",
+          "title": "The federated code forge",
+          "summary": "For most of the past two decades, the code forge has been where projects live: where code is hosted, where changes are reviewed, and where contributors find each other. Forges offered convenience in exchange for centrali…",
+          "titleZh": "去中心化代码托管平台",
+          "summaryZh": "过去二十多年里，代码托管平台一直是项目的家园：代码在这里托管，改动在这里审查，贡献者在这里相识。平台以便利换取中心化……",
+          "url": "https://tangled.org/blog/forge/",
           "source": "Hacker News",
-          "score": 3.51,
+          "score": 3.93,
           "reasons": [
-            "HN分数158",
-            "讨论量8"
+            "HN分数244",
+            "讨论量81"
           ],
-          "published": "2026-10-29T20:32:28+00:00"
+          "published": "2026-10-30T15:44:29+00:00"
         }
       ]
     },
@@ -127,102 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "You don’t need to believe in a god to get a religious exemption from using AI at work",
-          "summary": "David Durman, a University of Kentucky administrator, recently earned a religious exemption from using AI in the workplace.",
-          "titleZh": "申请工作中不使用 AI 的宗教豁免，不必信仰上帝",
-          "summaryZh": "肯塔基大学行政人员 David Durman 最近获得了在工作场所不使用 AI 的宗教豁免。",
-          "url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
+          "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+          "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+          "titleZh": "英伟达考虑为 Nscale 在西弗吉尼亚州的 AI 数据中心贷款担任共同签署人",
+          "summaryZh": "投资者对 AI 开支感到不安时，如果卖芯片的芯片制造商愿意为贷款共同签署，就能起到帮助。",
+          "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
           "source": "TechCrunch",
           "score": 4.54,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-30T01:20:48+00:00"
+          "published": "2026-10-31T01:20:05+00:00"
         },
         {
-          "title": "AWS will be a $1T business, Jassy says. But first, it will spend big.",
-          "summary": "Amazon wants to be the king of AI cloud computing and become the first $1 trillion revenue business. But to do that it will have to continue on its capex spending spree, its CEO said Thursday.",
-          "titleZh": "Jassy 称 AWS 将成为万亿美元级业务，但首先要大举投入",
-          "summaryZh": "亚马逊希望成为 AI 云计算领域的领头羊，并成为首家营收达 1 万亿美元的企业。但亚马逊首席执行官周四表示，要实现这一目标，公司还得继续大举增加资本支出。",
-          "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+          "title": "Salesforce’s M&A spree continues with a reported $375M deal for defense tech startup Rune",
+          "summary": "The AI logistics startup will bolster the CRM giant's Missionforce defense platform.",
+          "titleZh": "Salesforce 并购热潮继续，据报以 3.75 亿美元收购国防科技初创公司 Rune",
+          "summaryZh": "这家 AI 物流初创公司将助力这家 CRM 巨头强化其 Missionforce 国防平台。",
+          "url": "https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/",
           "source": "TechCrunch",
           "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-29T23:42:22+00:00"
+          "published": "2026-10-30T23:21:23+00:00"
         },
         {
-          "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-          "summary": "As AI transforms how people find information online, Reddit is rethinking its open-web roots to protect its audience and business.",
-          "titleZh": "随着搜索流量减少，Reddit 宣布转向登录后使用模式",
-          "summaryZh": "随着 AI 改变人们在线查找信息的方式，Reddit 正重新审视其开放网络起源，以保护用户群体和业务。",
-          "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+          "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+          "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.",
+          "titleZh": "注重隐私的 AI 助手 Ollie 即将停止运营",
+          "summaryZh": "随着越来越多 AI 助手涌入市场，Ollie 的创始人表示，这款尊重用户隐私的助手将在一周后停止运营。",
+          "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+          "source": "TechCrunch",
+          "score": 4.47,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-30T22:56:13+00:00"
+        },
+        {
+          "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+          "summary": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+          "titleZh": "英特尔股价暴跌，政府持股价值缩水 120 亿美元",
+          "summaryZh": "AI 行业大量消耗内存及其他零部件，推高了电脑价格；电脑销售疲软也令英特尔受挫。",
+          "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+          "source": "TechCrunch",
+          "score": 4.44,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-30T21:54:34+00:00"
+        },
+        {
+          "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+          "summary": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its busin…",
+          "titleZh": "《金融时报》报道称，Anthropic IPO 后预计将获信用评级机构较低的“垃圾级”评级",
+          "summaryZh": "贝莱德的预测终究只是预测，但如果 Anthropic 获得较低的垃圾级评级，筹集资金将更加困难、成本也会更高，而这些资金对维持其支撑业务发展的巨额支出至关重要。",
+          "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+          "source": "TechCrunch",
+          "score": 4.44,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-30T21:52:03+00:00"
+        },
+        {
+          "title": "Last-minute Halloween costumes for tech nerds",
+          "summary": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
+          "titleZh": "科技迷的万圣节最后一刻装扮点子",
+          "summaryZh": "还没准备万圣节装扮？不妨扮成看似可爱的 AI 智能体图标、一个 PHP 漏洞，或睡眼惺忪的布莱恩·约翰逊。",
+          "url": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
+          "source": "TechCrunch",
+          "score": 4.43,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-30T21:26:59+00:00"
+        },
+        {
+          "title": "Cracks are emerging in the AI spending boom",
+          "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
+          "titleZh": "AI 支出热潮开始出现裂痕",
+          "summaryZh": "大型科技公司正向 AI 基础设施投入数十亿美元，但债务增加、现金流为负以及投资者日益增长的怀疑，正让人们开始质疑这波 AI 支出热潮能否持续。",
+          "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+          "source": "TechCrunch",
+          "score": 4.43,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-10-30T21:17:40+00:00"
+        },
+        {
+          "title": "AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal",
+          "summary": "Like a real-life episode of \"Suits,\" the demise of famed white-shoe Wall Street law firm Weil, Gotshal & Manges has been the talk of the legal industry. And now an AI firm has entered the picture.",
+          "titleZh": "AI 律所 Crosby 出价竞购濒临瓦解的知名律所 Weil Gotshal",
+          "summaryZh": "就像现实版《金装律师》一样，华尔街知名顶级律所 Weil, Gotshal & Manges 的衰落已成为法律界热议的话题。如今，一家 AI 公司也加入了这场风波。",
+          "url": "https://techcrunch.com/2026/10/30/ai-law-firm-crosby-bids-on-disintegrating-famed-firm-weil-gotshal/",
           "source": "TechCrunch",
           "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-10-29T20:08:31+00:00"
-        },
-        {
-          "title": "Rivian expands joint venture with VW to include AI assistant",
-          "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
-          "titleZh": "Rivian 扩大与大众汽车的合资项目，加入 AI 助手",
-          "summaryZh": "Rivian 未透露其价值 58 亿美元的合资项目是否会因此扩大规模。",
-          "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-          "source": "TechCrunch",
-          "score": 4.39,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-29T20:05:47+00:00"
-        },
-        {
-          "title": "OpenAI-backed Thrive Holdings acquires ADT",
-          "summary": "OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.",
-          "titleZh": "获 OpenAI 支持的 Thrive Holdings 收购 ADT",
-          "summaryZh": "获 OpenAI 支持的 Thrive Holdings 将以 153 亿美元收购 ADT，并计划将 AI 引入家庭安防业务。",
-          "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
-          "source": "TechCrunch",
-          "score": 4.39,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-29T19:56:19+00:00"
-        },
-        {
-          "title": "Andy Jassy says Prime Video is on track to earn ‘tens of billions of dollars’",
-          "summary": "The success of blockbuster hits like Project Hail Mary and Verity is only part of the story, Amazon's CEO says.",
-          "titleZh": "Andy Jassy 称 Prime Video 有望创造“数百亿美元”收入",
-          "summaryZh": "亚马逊首席执行官表示，《挽救计划》和《Verity》等大片的成功只是故事的一部分。",
-          "url": "https://techcrunch.com/2026/10/29/andy-jassy-says-prime-video-is-on-track-to-earn-tens-of-billions-of-dollars/",
-          "source": "TechCrunch",
-          "score": 1.9,
-          "reasons": [],
-          "published": "2026-10-29T23:44:56+00:00"
-        },
-        {
-          "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
-          "summary": "Some estimates say hackers stole billions in crypto from Binance, the world's largest cryptocurrency exchange, during a cyberattack on Thursday.",
-          "titleZh": "黑客疑似窃取数十亿美元加密货币，Binance 暂停提现",
-          "summaryZh": "据部分估算，黑客在周四的一次网络攻击中从全球最大的加密货币交易所 Binance 窃取了数十亿美元的加密货币。",
-          "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/",
-          "source": "TechCrunch",
-          "score": 1.86,
-          "reasons": [],
-          "published": "2026-10-29T22:27:23+00:00"
-        },
-        {
-          "title": "Elon Musk is ‘truly a genius,’ says Vladimir Putin",
-          "summary": "Putin said that he and Musk are in \"close contact\" about Rassvet, Russia's Starlink-like satellite connectivity project.",
-          "titleZh": "普京称埃隆·马斯克“确实是天才”",
-          "summaryZh": "普京称，他与马斯克就俄罗斯类似 Starlink 的卫星连接项目 Rassvet 保持“密切联系”。",
-          "url": "https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/",
-          "source": "TechCrunch",
-          "score": 1.84,
-          "reasons": [],
-          "published": "2026-10-29T21:51:29+00:00"
+          "published": "2026-10-30T19:55:13+00:00"
         }
       ]
     }
@@ -230,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-10-30T11:01:20.240358+08:00"
+      "lastRunAt": "2026-10-31T11:01:11.447694+08:00"
     }
   }
 }
