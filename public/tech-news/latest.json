@@ -1,125 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-02T11:30:29+08:00",
-  "date": "2026-11-02",
+  "updatedAt": "2026-11-03T11:31:04+08:00",
+  "date": "2026-11-03",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "The AI cost of JavaScript frameworks",
-          "summary": "One of my pet peeves with the web development community is that so many of the decisions we make are vibes-based. Frameworks are “blazing fast,” tools will…",
-          "titleZh": "JavaScript 框架的 AI 成本",
-          "summaryZh": "我对 Web 开发社区颇有微词的一点是，我们做出的许多决策都凭感觉。框架号称“快如闪电”，工具也会……",
-          "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+          "title": "Egoless Mathematics in the AI Era",
+          "summary": "[This is a guest post by Karthik C. S., Amit Sahai, and Jie Xue. This blog post was initially written in a different file format and converted using AI. — T.] This is a good time for mathemat…",
+          "titleZh": "人工智能时代的无我数学",
+          "summaryZh": "[本文由 Karthik C. S.、Amit Sahai 和 Jie Xue 客座撰写。博文最初以另一种文件格式写成，后由 AI 转换。——T.] 现在正是探讨数学如何……的好时机。",
+          "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
           "source": "Hacker News",
-          "score": 6.54,
+          "score": 6.46,
           "reasons": [
             "AI",
-            "HN分数316",
-            "讨论量233"
+            "HN分数126",
+            "讨论量86"
           ],
-          "published": "2026-11-01T06:06:19+00:00"
+          "published": "2026-11-02T18:54:44+00:00"
         },
         {
-          "title": "AI fan wikis riddled with errors are muddying the waters of games culture",
-          "summary": "LLM-powered wikis, often full of inaccurate or irrelevant information, are starting to take over, leaving fans sidelined and publishers playing whack-a-mole.",
-          "titleZh": "错误百出的 AI 粉丝维基正在搅乱游戏文化",
-          "summaryZh": "由大语言模型驱动的维基往往充斥着不准确或无关的信息，如今正逐渐占据主流，让粉丝被边缘化，发行商则疲于应对、四处补漏。",
-          "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
+          "title": "Astra can read and write weights to improve Qwen",
+          "summary": "We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we’d expect from humans or conventional algorithms.",
+          "titleZh": "Astra 能读写权重，助力改进 Qwen",
+          "summaryZh": "我们发现，前沿大语言模型在原生读取和写入神经网络权重方面表现出人意料地出色，能力远超我们对人类或传统算法的预期。",
+          "url": "https://rikiyat.github.io/blog/weight-space-programming/",
           "source": "Hacker News",
-          "score": 5.76,
+          "score": 4.96,
           "reasons": [
-            "AI",
-            "HN分数23",
-            "讨论量7"
+            "HN分数2096",
+            "讨论量681"
           ],
-          "published": "2026-11-02T01:47:07+00:00"
+          "published": "2026-11-02T18:21:28+00:00"
         },
         {
-          "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
-          "summary": "Browse thousands of books mentioned in Hacker News comments, 2007–2026. Ranked by how many different people mention them.",
-          "titleZh": "Show HN：HackerBooks——为 HN 中提到的书籍打造的 HackerTube",
-          "summaryZh": "浏览 2007 至 2026 年间 Hacker News 评论中提到的数千本书，并按提及者人数排序。",
-          "url": "https://hackerbooks.org",
+          "title": "WTF Ubuntu?",
+          "summary": "In case you missed it: CVE-2026-98432 is a critical (CVSS 9.8) bug in the Linux kernel's TCP code. It's been there since 2016, so virtually every Linux server on the planet has it, and it can be hit remotely. Anthropic s…",
+          "titleZh": "Ubuntu 到底怎么回事？",
+          "summaryZh": "如果你还没注意到：CVE-2026-98432 是 Linux 内核 TCP 代码中的一个严重漏洞（CVSS 9.8）。它自 2016 年起便存在，因此几乎全球所有 Linux 服务器都受到影响，而且可被远程利用。Anthropic……",
+          "url": "https://chalmovsky.com/posts/wtf-ubuntu",
+          "source": "Hacker News",
+          "score": 4.73,
+          "reasons": [
+            "HN分数1362",
+            "讨论量591"
+          ],
+          "published": "2026-11-02T14:52:00+00:00"
+        },
+        {
+          "title": "Show HN: Subvocal – Talk to your computer without making noise",
+          "summary": "Hacker News new | past | comments | ask | show | jobs | submit login Show HN: Subvocal – Talk to your computer without making noise 585 points by aarushyadav 10 hours ago | hide | past | favorite | 313 comments Hi HN, we…",
+          "titleZh": "Show HN：Subvocal——无需出声就能与电脑交谈",
+          "summaryZh": "Hacker News：最新｜过去｜评论｜提问｜展示｜招聘｜提交｜登录。Show HN：Subvocal——无需出声就能与电脑交谈。585 分，aarushyadav 发布于 10 小时前｜隐藏｜过去｜收藏｜313 条评论。嗨，HN，……",
+          "url": "https://news.ycombinator.com/item?id=50340088",
           "source": "Hacker News",
           "score": 4.46,
           "reasons": [
-            "HN分数1013",
-            "讨论量192"
+            "HN分数585",
+            "讨论量313"
           ],
-          "published": "2026-11-01T15:58:28+00:00"
+          "published": "2026-11-02T17:16:17+00:00"
         },
         {
-          "title": "HackerTube: YouTube built from videos recommended by HN",
-          "summary": "Instead of YouTube, watch HackerTube!",
-          "titleZh": "HackerTube：用 HN 推荐的视频打造的 YouTube",
-          "summaryZh": "别看 YouTube，来看看 HackerTube！",
-          "url": "https://karpathy.bearblog.dev/hacker-tube/",
-          "source": "Hacker News",
-          "score": 4.32,
-          "reasons": [
-            "HN分数2343",
-            "讨论量544"
-          ],
-          "published": "2026-10-31T19:56:53+00:00"
-        },
-        {
-          "title": "Ask HN: Which TV do you recommend for privacy?",
-          "summary": "Hacker News new | past | comments | ask | show | jobs | submit login Ask HN: Which TV do you recommend for privacy? 180 points by LecroJS 7 hours ago | hide | past | favorite | 341 comments I haven’t owned a TV in years…",
-          "titleZh": "Ask HN：你推荐哪款注重隐私的电视？",
-          "summaryZh": "Hacker News：最新｜过往｜评论｜提问｜展示｜招聘｜提交｜登录。Ask HN：你推荐哪款注重隐私的电视？LecroJS 于 7 小时前发布，获 180 分｜隐藏｜过往｜收藏｜341 条评论。我已经好多年没买过电视了……",
-          "url": "https://news.ycombinator.com/item?id=50328896",
-          "source": "Hacker News",
-          "score": 4.25,
-          "reasons": [
-            "HN分数180",
-            "讨论量342"
-          ],
-          "published": "2026-11-01T19:35:27+00:00"
-        },
-        {
-          "title": "Mathematics has changed. Let's act like it",
-          "summary": "[This is a guest post by Frank Calegari. This blog post was initially written in a different file format and converted using AI. — T.] Why we should not be sad The release by OpenAI on Octobe…",
-          "titleZh": "数学已经变了，我们也该顺应变化",
-          "summaryZh": "[本文为 Frank Calegari 的客座文章。博文最初以另一种文件格式撰写，后经 AI 转换。——T.] 为什么我们不该悲观 OpenAI 于 10 月……的发布",
-          "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
-          "source": "Hacker News",
-          "score": 4.24,
-          "reasons": [
-            "HN分数242",
-            "讨论量267"
-          ],
-          "published": "2026-11-01T18:28:42+00:00"
-        },
-        {
-          "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+          "title": "US boy names that became girl names and vice versa",
           "summary": "Comments",
-          "titleZh": "联想这款“加密”指纹 USB 盘，其实只是装在外壳里的未加密 SD 卡",
+          "titleZh": "美国男名如何变成女名，反之亦然",
           "summaryZh": "评论",
-          "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
+          "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
+          "source": "Hacker News",
+          "score": 4.29,
+          "reasons": [
+            "HN分数311",
+            "讨论量322"
+          ],
+          "published": "2026-11-02T16:34:36+00:00"
+        },
+        {
+          "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+          "summary": "If Anthropic goes public, workers, retail investors, and retirees will be left holding the bag when its bills come due, writes Matt Scherer.",
+          "titleZh": "SEC 应阻止 Anthropic 上市，以保护公众",
+          "summaryZh": "Matt Scherer 写道，如果 Anthropic 上市，那么当公司债务到期时，员工、散户投资者和退休人员将承担损失。",
+          "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+          "source": "Hacker News",
+          "score": 4.26,
+          "reasons": [
+            "HN分数236",
+            "讨论量173"
+          ],
+          "published": "2026-11-02T22:30:47+00:00"
+        },
+        {
+          "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+          "summary": "No patched kernels are available yet for 22.04, 24.04, or 26.04 despite a CVSS 9.8 rating.",
+          "titleZh": "Ubuntu 近三周仍未发布 Linux 零日远程代码执行漏洞补丁",
+          "summaryZh": "尽管该漏洞的 CVSS 评分高达 9.8，22.04、24.04 和 26.04 版本仍没有可用的修补版内核。",
+          "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
           "source": "Hacker News",
           "score": 4.15,
           "reasons": [
-            "HN分数414",
-            "讨论量149"
+            "HN分数369",
+            "讨论量97"
           ],
-          "published": "2026-11-01T14:34:43+00:00"
+          "published": "2026-11-02T18:39:38+00:00"
         },
         {
-          "title": "OccupySaaS",
-          "summary": "OccupySaaS is a protest movement in code: laid-off developers building clean-room, open-source, drop-in replacements for the SaaS giants. First up: ZeroAuthy (Auth0) and SalesCompel (Salesforce).",
-          "titleZh": "OccupySaaS",
-          "summaryZh": "OccupySaaS 是一场以代码发起的抗议运动：被裁员的开发者正在构建洁净室式开源替代品，可直接替换 SaaS 巨头的产品。首批项目包括 ZeroAuthy（替代 Auth0）和 SalesCompel（替代 Salesforce）。",
-          "url": "https://occupysaas.com/",
+          "title": "If you love a website, back it up",
+          "summary": "This story starts with a little tragedy. See, I’ve got these old webpages I love to go back and look on every now and then. There’s websites that h...",
+          "titleZh": "如果你珍爱一个网站，就备份它",
+          "summaryZh": "这个故事始于一场小小的遗憾。我有一些旧网页，时不时就喜欢回去看看。有些网站……",
+          "url": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
           "source": "Hacker News",
-          "score": 3.89,
+          "score": 4.05,
           "reasons": [
-            "HN分数97",
-            "讨论量63"
+            "HN分数432",
+            "讨论量100"
           ],
-          "published": "2026-11-02T00:17:27+00:00"
+          "published": "2026-11-02T13:25:35+00:00"
         }
       ]
     },
@@ -128,108 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-          "summary": "Data centers are deeply unpopular. But what if we called them something else?",
-          "titleZh": "OpenAI 或将把数据中心改称为“AI 算力园区”",
-          "summaryZh": "数据中心非常不受欢迎。但如果我们给它们换个名字呢？",
-          "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+          "title": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
+          "summary": "Google's Dreambeans, its latest AI experiment, now supports 13 Indian languages.",
+          "titleZh": "Google 将 Dreambeans 推向印度，让大众体验 AI 生成的个人故事",
+          "summaryZh": "Google 的最新 AI 实验 Dreambeans 现已支持 13 种印度语言。",
+          "url": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+          "source": "TechCrunch",
+          "score": 4.6,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-03T03:30:00+00:00"
+        },
+        {
+          "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
+          "summary": "Apple hinted at ways that it could spur revenue through third-party \"opportunities\" during its Monday night earnings call.",
+          "titleZh": "Apple 或将通过第三方 AI 应用寻求增收",
+          "summaryZh": "Apple 在周一晚间的财报电话会上暗示，可能通过第三方“机会”来推动营收增长。",
+          "url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+          "source": "TechCrunch",
+          "score": 4.55,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-03T01:49:52+00:00"
+        },
+        {
+          "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
+          "summary": "A Kyiv startup’s pocket-sized, 10-ounce receiver lets Ukrainian troops watch the video feeds of Russian drones, though Russian moves toward digital video and AI-guided drones that emit no signals could make the victory s…",
+          "titleZh": "乌克兰新推出的口袋设备将俄罗斯无人机的摄像头反过来对付它们",
+          "summaryZh": "基辅一家初创公司的口袋大小接收器重约 10 盎司，可让乌克兰士兵观看俄罗斯无人机的视频信号。不过，俄罗斯正转向数字视频和不发射信号的 AI 制导无人机，这可能会让这场胜利……",
+          "url": "https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/",
+          "source": "TechCrunch",
+          "score": 4.54,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-03T01:12:55+00:00"
+        },
+        {
+          "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+          "summary": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast,…",
+          "titleZh": "Y Combinator 的 Garry Tan 如此频繁地使用 AI 智能体，每年花在令牌上的费用高达 20 万美元",
+          "summaryZh": "Y Combinator 的 Garry Tan 曾开玩笑说，自己患上了“网络精神病”，有时几乎不睡觉，因为他太兴奋于使用 AI 智能体。Walter Isaacson 的播客新一期中，……",
+          "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+          "source": "TechCrunch",
+          "score": 4.52,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-03T00:35:52+00:00"
+        },
+        {
+          "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+          "summary": "The one-year-old startup is now valued at $300 million.",
+          "titleZh": "Trajectory 融资 4500 万美元，让非技术专家也能训练 AI 模型",
+          "summaryZh": "这家成立仅一年的初创公司估值已达 3 亿美元。",
+          "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "source": "TechCrunch",
+          "score": 4.48,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-02T23:13:53+00:00"
+        },
+        {
+          "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+          "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
+          "titleZh": "Anthropic 警告称，距离实现 RSI 能力（即 AI 自我构建）已非常接近",
+          "summaryZh": "RSI 指的是 AI 在自我训练方面变得足够强大，进而引发 AI 能力急剧加速发展的阶段。在 AI 悲观派看来，RSI 意味着一场无法挽回的灾难。",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
           "source": "TechCrunch",
           "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-01T21:55:23+00:00"
+          "published": "2026-11-02T22:14:50+00:00"
         },
         {
-          "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
-          "summary": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
-          "titleZh": "AI 能让科技公司 CEO 的生活更轻松。那其他人呢？",
-          "summaryZh": "在《Equity》节目中，我们讨论了为什么科技公司 CEO 的言论听起来有时如此不近人情。",
-          "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
+          "title": "Web host Squarespace lays off 19% of its employees",
+          "summary": "The website builder said that the job losses are part of a broader restructuring of its organization.",
+          "titleZh": "网站托管商 Squarespace 裁员 19%",
+          "summaryZh": "这家网站搭建平台表示，此次裁员是公司整体重组的一部分。",
+          "url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-01T20:57:58+00:00"
+          "published": "2026-11-02T19:25:59+00:00"
         },
         {
-          "title": "TechCrunch Mobility: A new, bigger AV boom is here",
-          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-          "titleZh": "TechCrunch Mobility：新一轮规模更大的自动驾驶热潮来了",
-          "summaryZh": "欢迎回到 TechCrunch Mobility——这里是了解交通运输未来的中心，如今我们也将更加关注 AI 在其中扮演的角色。",
-          "url": "https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/",
+          "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+          "summary": "The New York Times is suing privacy-focused web browser company Brave for allegedly scraping the outlet’s copyrighted content and unlawfully distributing it to its own customers, like Anthropic and Perplexity.",
+          "titleZh": "《纽约时报》等媒体起诉浏览器 Brave，指其涉嫌抓取内容",
+          "summaryZh": "《纽约时报》起诉注重隐私的浏览器公司 Brave，指控其抓取该报受版权保护的内容，并将内容非法分发给 Anthropic 和 Perplexity 等客户。",
+          "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
           "source": "TechCrunch",
-          "score": 4.31,
+          "score": 4.37,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-01T17:04:00+00:00"
-        },
-        {
-          "title": "Data centers are now a midterm issue, even in Brooklyn",
-          "summary": "At a Brooklyn midterm party five days before Election Day, every conversation, from a council member’s fireside chat to a debate about the Democratic Party, kept circling back to AI and data centers.",
-          "titleZh": "数据中心如今成了中期选举议题，连布鲁克林也不例外",
-          "summaryZh": "选举日前五天，在布鲁克林的一场中期选举派对上，从市议员的炉边谈话到关于民主党的辩论，每场对话最终都会绕回 AI 和数据中心。",
-          "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
-          "source": "TechCrunch",
-          "score": 3.9,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-01T02:22:10+00:00"
-        },
-        {
-          "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
-          "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
-          "titleZh": "苹果 CEO 表示，公司“不想为了 AI 而推出 AI”",
-          "summaryZh": "苹果新任 CEO 为公司目前在 AI 领域的立场进行了辩护。",
-          "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
-          "source": "TechCrunch",
-          "score": 3.77,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-31T21:41:00+00:00"
-        },
-        {
-          "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
-          "summary": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Regi…",
-          "titleZh": "还剩 4 天：TechCrunch 创始人峰会如何助你建立更有价值的联系、实现扩张",
-          "summaryZh": "11 月 4 日，波士顿 SoWa Power Station 将迎来一整天的活动，内容包括有意义的人脉交流、可付诸实践的见解，以及可能改变你的创意和初创公司发展轨迹的人脉资源。报名……",
-          "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
-          "source": "TechCrunch",
-          "score": 3.77,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-31T21:36:07+00:00"
-        },
-        {
-          "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-          "summary": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
-          "titleZh": "法官允许 NAACP 就 xAI 数据中心污染提起的诉讼继续推进",
-          "summaryZh": "NAACP 的诉讼指控这家归 SpaceX 所有的 AI 公司违反《清洁空气法》。",
-          "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-          "source": "TechCrunch",
-          "score": 3.76,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-31T21:17:03+00:00"
-        },
-        {
-          "title": "OpenAI reportedly lowers funding target for new round",
-          "summary": "OpenAI’s latest funding round doesn't seem to be living up to expectations.",
-          "titleZh": "据报道，OpenAI 下调新一轮融资目标",
-          "summaryZh": "OpenAI 最新一轮融资似乎未能达到预期。",
-          "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
-          "source": "TechCrunch",
-          "score": 3.62,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-10-31T16:12:55+00:00"
+          "published": "2026-11-02T19:19:17+00:00"
         }
       ]
     }
@@ -237,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-02T11:01:51.653889+08:00"
+      "lastRunAt": "2026-11-03T11:01:16.828614+08:00"
     }
   }
 }
