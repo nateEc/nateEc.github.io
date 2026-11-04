@@ -1,126 +1,132 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T14:30:59+08:00",
-  "date": "2026-11-03",
+  "updatedAt": "2026-11-04T14:30:33+08:00",
+  "date": "2026-11-04",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "vercel-labs/agent-desktop",
-      "description": "Computer use CLI for AI agents",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 2275,
-      "totalStars": 10727,
-      "forks": 717,
-      "url": "https://github.com/vercel-labs/agent-desktop"
-    },
-    {
-      "rank": 2,
       "fullName": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 1803,
-      "totalStars": 111033,
-      "forks": 9680,
+      "starsToday": 1139,
+      "totalStars": 112175,
+      "forks": 9757,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
+      "rank": 2,
+      "fullName": "vercel-labs/agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 3791,
+      "totalStars": 13355,
+      "forks": 922,
+      "url": "https://github.com/vercel-labs/agent-desktop"
+    },
+    {
       "rank": 3,
-      "fullName": "D4Vinci/Scrapling",
-      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 706,
-      "totalStars": 93318,
-      "forks": 9812,
-      "url": "https://github.com/D4Vinci/Scrapling"
+      "fullName": "max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 438,
+      "totalStars": 10639,
+      "forks": 388,
+      "url": "https://github.com/max-sixty/worktrunk"
     },
     {
       "rank": 4,
-      "fullName": "hyprwm/Hyprland",
-      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
-      "language": "C++",
-      "languageColor": "#F34B7D",
-      "starsToday": 509,
-      "totalStars": 40072,
-      "forks": 2159,
-      "url": "https://github.com/hyprwm/Hyprland"
+      "fullName": "JustVugg/colibri",
+      "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
+      "language": "C",
+      "languageColor": "#555555",
+      "starsToday": 802,
+      "totalStars": 47399,
+      "forks": 5475,
+      "url": "https://github.com/JustVugg/colibri"
     },
     {
       "rank": 5,
-      "fullName": "Donchitos/Claude-Code-Game-Studios",
-      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "fullName": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
       "languageColor": "#89E051",
-      "starsToday": 1379,
-      "totalStars": 33871,
-      "forks": 4540,
-      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios"
+      "starsToday": 1164,
+      "totalStars": 311759,
+      "forks": 26199,
+      "url": "https://github.com/mattpocock/skills"
     },
     {
       "rank": 6,
-      "fullName": "FlashML-org/FreeToken",
-      "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+      "fullName": "p-e-w/heretic",
+      "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 653,
-      "totalStars": 16262,
-      "forks": 1599,
-      "url": "https://github.com/FlashML-org/FreeToken"
+      "starsToday": 701,
+      "totalStars": 38984,
+      "forks": 4401,
+      "url": "https://github.com/p-e-w/heretic"
     },
     {
       "rank": 7,
-      "fullName": "pingdotgg/t3code",
+      "fullName": "spotify/portal-ai-plugins",
       "description": "",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 3229,
-      "totalStars": 42483,
-      "forks": 9133,
-      "url": "https://github.com/pingdotgg/t3code"
+      "starsToday": 91,
+      "totalStars": 3095,
+      "forks": 240,
+      "url": "https://github.com/spotify/portal-ai-plugins"
     },
     {
       "rank": 8,
-      "fullName": "shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 857,
-      "totalStars": 46105,
-      "forks": 7598,
-      "url": "https://github.com/shiyu-coder/Kronos"
+      "fullName": "floci-io/floci",
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "language": "Java",
+      "languageColor": "#B07219",
+      "starsToday": 482,
+      "totalStars": 29026,
+      "forks": 3229,
+      "url": "https://github.com/floci-io/floci"
     },
     {
       "rank": 9,
-      "fullName": "kornia/kornia",
-      "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+      "fullName": "Usagi-org/ai-goofish-monitor",
+      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 412,
-      "totalStars": 12219,
-      "forks": 1500,
-      "url": "https://github.com/kornia/kornia"
+      "starsToday": 228,
+      "totalStars": 16762,
+      "forks": 2873,
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor"
     },
     {
       "rank": 10,
-      "fullName": "JustVugg/colibri",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-      "language": "C",
-      "languageColor": "#555555",
-      "starsToday": 675,
-      "totalStars": 46749,
-      "forks": 5399,
-      "url": "https://github.com/JustVugg/colibri"
+      "fullName": "anomalyco/hex",
+      "description": "Local voice dictation for mac, windows and linux",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 410,
+      "totalStars": 4742,
+      "forks": 264,
+      "url": "https://github.com/anomalyco/hex"
     }
   ],
   "languages": [
     {
+      "name": "Rust",
+      "count": 3,
+      "share": 30,
+      "color": "#DEA584"
+    },
+    {
       "name": "Python",
-      "count": 4,
-      "share": 40,
+      "count": 2,
+      "share": 20,
       "color": "#3572A5"
     },
     {
@@ -136,16 +142,10 @@
       "color": "#555555"
     },
     {
-      "name": "C++",
+      "name": "Java",
       "count": 1,
       "share": 10,
-      "color": "#F34B7D"
-    },
-    {
-      "name": "Rust",
-      "count": 1,
-      "share": 10,
-      "color": "#DEA584"
+      "color": "#B07219"
     },
     {
       "name": "Shell",
@@ -159,28 +159,29 @@
       "name": "AI infrastructure",
       "count": 7,
       "repositories": [
-        "vercel-labs/agent-desktop",
         "thedotmack/claude-mem",
-        "Donchitos/Claude-Code-Game-Studios",
-        "FlashML-org/FreeToken"
+        "vercel-labs/agent-desktop",
+        "max-sixty/worktrunk",
+        "JustVugg/colibri"
       ]
     },
     {
       "name": "Agent systems",
-      "count": 3,
+      "count": 4,
       "repositories": [
-        "vercel-labs/agent-desktop",
         "thedotmack/claude-mem",
-        "Donchitos/Claude-Code-Game-Studios"
+        "vercel-labs/agent-desktop",
+        "max-sixty/worktrunk",
+        "mattpocock/skills"
       ]
     },
     {
       "name": "Developer tools",
       "count": 3,
       "repositories": [
-        "vercel-labs/agent-desktop",
         "thedotmack/claude-mem",
-        "Donchitos/Claude-Code-Game-Studios"
+        "vercel-labs/agent-desktop",
+        "max-sixty/worktrunk"
       ]
     }
   ]
