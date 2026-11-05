@@ -1,127 +1,127 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-04T11:30:50+08:00",
-  "date": "2026-11-04",
+  "updatedAt": "2026-11-05T11:31:35+08:00",
+  "date": "2026-11-05",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
-          "summary": "Is there an existing issue for this? I have searched the tracker for existing similar issues and I know that duplicates will be closed Describe the Issue Opening Postman on my Mac was followed by unexpected changes to my…",
-          "titleZh": "Postman 悄悄自动安装 AI 插件，并试图共享所有 API 数据",
-          "summaryZh": "有关于此事的现有问题吗？我已在问题追踪器中搜索过类似问题，也知道重复问题会被关闭。问题描述：在我的 Mac 上打开 Postman 后，出现了意料之外的更改……",
-          "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+          "title": "AI is forcing us to pay off 40 years of technical debt",
+          "summary": "AI in cybersecurity accelerates both attackers and defenders, revealing painful technical debt in fragile legacy systems.",
+          "titleZh": "AI 迫使我们偿还 40 年的技术债",
+          "summaryZh": "AI 在网络安全领域加速了攻击者和防御者的行动，也暴露出脆弱遗留系统中棘手的技术债。",
+          "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
           "source": "Hacker News",
-          "score": 7.24,
+          "score": 7.21,
           "reasons": [
             "AI",
-            "HN分数1084",
-            "讨论量359"
+            "HN分数1111",
+            "讨论量643"
           ],
-          "published": "2026-11-03T17:22:37+00:00"
+          "published": "2026-11-04T11:52:17+00:00"
         },
         {
-          "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-          "summary": "Abstract page for arXiv paper 2605.29713: The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-          "titleZh": "生成式 AI 基础小书：直观的数学入门",
-          "summaryZh": "arXiv 论文 2605.29713 摘要页面：生成式 AI 基础小书：直观的数学入门",
-          "url": "https://arxiv.org/abs/2605.29713",
+          "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+          "summary": "Qualcomm Cloud AI 100 Ultra accelerates generative AI. Discover cost-optimized solutions and explore our products. Contact us today.",
+          "titleZh": "高通 Cloud AI 100 Ultra：150W AI 加速卡，配备 128GB 内存，带宽达 548GB/s",
+          "summaryZh": "高通 Cloud AI 100 Ultra 可加速生成式 AI。了解注重成本效益的解决方案，探索我们的产品。欢迎立即联系我们。",
+          "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
           "source": "Hacker News",
-          "score": 6.6,
+          "score": 6.34,
           "reasons": [
             "AI",
-            "HN分数260",
+            "HN分数113",
             "讨论量46"
           ],
-          "published": "2026-11-03T21:40:53+00:00"
+          "published": "2026-11-04T19:55:14+00:00"
         },
         {
-          "title": "How I use AI (Oct 2026)",
-          "summary": "I document how I use AI, one year after my first writeup. Everything",
-          "titleZh": "我如何使用 AI（2026 年 10 月）",
-          "summaryZh": "距离我第一次写下相关记录已经一年，我记录了自己使用 AI 的方式。全文……",
-          "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+          "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+          "summary": "Hacker News new | past | comments | ask | show | jobs | submit login Launch HN: Kino AI (YC S23) – AI media manager and video editor 74 points by lukeigel 9 hours ago | hide | past | favorite | 29 comments Hi HN! I'm Luk…",
+          "titleZh": "Launch HN：Kino AI（YC S23）——AI 媒体管理器与视频编辑器",
+          "summaryZh": "Hacker News 新帖｜过往｜评论｜提问｜展示｜招聘｜提交｜登录。Launch HN：Kino AI（YC S23）——AI 媒体管理器与视频编辑器。Lukeigel 发布于 9 小时前，获 74 分；隐藏｜过往｜收藏｜29 条评论。大家好！我是 Luk…",
+          "url": "https://news.ycombinator.com/item?id=50368804",
           "source": "Hacker News",
-          "score": 6.4,
+          "score": 6.08,
           "reasons": [
             "AI",
-            "HN分数101",
-            "讨论量89"
+            "HN分数74",
+            "讨论量29"
           ],
-          "published": "2026-11-03T18:11:11+00:00"
+          "published": "2026-11-04T17:31:53+00:00"
         },
         {
-          "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-          "summary": "Low costs and offline security mean magnetic tape still has a job.",
-          "titleZh": "AI 推动归档需求增长，富士胶片将把磁带产量提高 5 倍",
-          "summaryZh": "成本低且可离线保障安全，磁带因此仍有用武之地。",
-          "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+          "title": "Basically no one is using AI agents for their DoorDash orders",
+          "summary": "But it's still early days for the relatively new e-commerce use case.",
+          "titleZh": "几乎没人用 AI 智能体在 DoorDash 下单",
+          "summaryZh": "不过，作为一种相对较新的电商应用场景，目前仍处于早期阶段。",
+          "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
           "source": "Hacker News",
-          "score": 6.09,
+          "score": 5.06,
           "reasons": [
             "AI",
-            "HN分数402",
-            "讨论量174"
+            "HN分数84",
+            "讨论量154"
           ],
-          "published": "2026-11-02T14:02:42+00:00"
+          "published": "2026-11-02T15:48:45+00:00"
         },
         {
-          "title": "Safari introduces Adaptive Dark Mode in 27.3",
-          "summary": "We’re excited to announce Adaptive Dark Mode in Safari 27.3 beta.",
-          "titleZh": "Safari 在 27.3 版中推出自适应深色模式",
-          "summaryZh": "我们很高兴宣布，Safari 27.3 测试版推出了自适应深色模式。",
-          "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+          "title": "Residential proxies detected on White House network",
+          "summary": "Comments",
+          "titleZh": "白宫网络中发现住宅代理",
+          "summaryZh": "评论",
+          "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
           "source": "Hacker News",
-          "score": 4.34,
+          "score": 4.56,
           "reasons": [
-            "HN分数327",
-            "讨论量190"
+            "HN分数744",
+            "讨论量234"
           ],
-          "published": "2026-11-03T21:39:05+00:00"
+          "published": "2026-11-04T20:45:18+00:00"
         },
         {
-          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-          "summary": "Yesterday’s hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, …",
-          "titleZh": "我的笔记本上的 Qwen 3.8 27B 也能解读模型权重",
-          "summaryZh": "昨天备受关注的论文是 Rikiya Takehi、Jayden Teoh、Alex Zhang 和 Omar Khattab 撰写的《权重空间编程的火花：大语言模型能够原生读写神经网络权重》。这篇论文（好吧，……）",
-          "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+          "title": "A thousand fewer paths to root",
+          "summary": "Comments",
+          "titleZh": "通往 root 权限的路径减少了一千条",
+          "summaryZh": "评论",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
           "source": "Hacker News",
-          "score": 4.31,
+          "score": 4.12,
           "reasons": [
-            "HN分数512",
-            "讨论量165"
+            "HN分数179",
+            "讨论量107"
           ],
-          "published": "2026-11-03T17:40:00+00:00"
+          "published": "2026-11-04T23:33:14+00:00"
         },
         {
-          "title": "Stringman, an $800 open-source room scale gripper robot",
-          "summary": "In robotics, price is basically actuator count. Stringman reaches an entire room with four motors, hanging its gripper from lines anchored in the ceiling corners. Working from above, it reaches floors too cluttered for a…",
-          "titleZh": "售价 800 美元的开源房间级抓取机器人 Stringman",
-          "summaryZh": "在机器人领域，价格基本取决于执行器数量。Stringman 仅用四个电机，就能覆盖整个房间：它的抓手由固定在天花板角落的绳索悬吊。它从上方作业，也能触及杂物堆积的地面……",
-          "url": "https://neufangled.com/",
+          "title": "Kimi K3.1 Pro model weights are out",
+          "summary": "Image-Text-to-Text model with 2.8T parameters. Download, explore files and run it on Hugging Face.",
+          "titleZh": "Kimi K3.1 Pro 模型权重已发布",
+          "summaryZh": "这是一个拥有 2.8 万亿参数的图文模型。可在 Hugging Face 下载、浏览文件并运行。",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
           "source": "Hacker News",
-          "score": 4.23,
+          "score": 4.12,
           "reasons": [
-            "HN分数430",
-            "讨论量158"
+            "HN分数413",
+            "讨论量114"
           ],
-          "published": "2026-11-03T16:47:29+00:00"
+          "published": "2026-11-04T15:30:30+00:00"
         },
         {
-          "title": "Jailbreaking my car's navigation system just so I can change the time",
-          "summary": "The car that I drive is a 2014 Renault Latitude. It's not a fancy car by any means and is starting to show its age, but it gets me from point A to point B and does everything else reasonably well so I've never really had…",
-          "titleZh": "破解汽车导航系统，只为修改时间",
-          "summaryZh": "我开的车是 2014 款 Renault Latitude。它算不上什么豪车，也开始显出老态，但能带我从 A 点到 B 点，其他方面表现也还不错，所以我一直没怎么……",
-          "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+          "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+          "summary": "When two cyclists were tragically killed in hit-and-run collisions this past summer, a group of anonymous urban activists known as the San Francisco Transformation Agency erected a set of protected bike lanes using traff…",
+          "titleZh": "游击式自行车道：旧金山将未经许可的设施永久化（2016）",
+          "summaryZh": "当年夏天，两名骑行者不幸在肇事逃逸事故中丧生后，一群名为“旧金山转型机构”的匿名城市活动人士修建了一组受保护的自行车道，使用了临时…",
+          "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
           "source": "Hacker News",
-          "score": 3.77,
+          "score": 4.11,
           "reasons": [
-            "HN分数648",
-            "讨论量272"
+            "HN分数275",
+            "讨论量195"
           ],
-          "published": "2026-11-02T16:29:19+00:00"
+          "published": "2026-11-04T15:01:44+00:00"
         }
       ]
     },
@@ -130,108 +130,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Anthropic is working on a system to prove AI models’ identity",
-          "summary": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.",
-          "titleZh": "Anthropic 正开发用于验证 AI 模型身份的系统",
-          "summaryZh": "该系统名为 FlashProve，可让任何人核实 AI 的回答是否确实来自其声称的模型。",
-          "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+          "title": "Apple is reportedly cutting budgets for its internal AI usage",
+          "summary": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
+          "titleZh": "据报道，苹果正在削减内部使用 AI 的预算",
+          "summaryZh": "据称，该公司正大幅减少工程团队在 AI 上的支出。",
+          "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+          "source": "TechCrunch",
+          "score": 4.54,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-05T01:26:22+00:00"
+        },
+        {
+          "title": "After the midterms, a bigger clash over data centers could be coming",
+          "summary": "Data center opposition crossed party lines in Tuesday’s midterms.",
+          "titleZh": "中期选举过后，数据中心引发的更大冲突可能即将到来",
+          "summaryZh": "在周二的中期选举中，反对数据中心的声音跨越了党派界限。",
+          "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+          "source": "TechCrunch",
+          "score": 4.53,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-05T01:02:14+00:00"
+        },
+        {
+          "title": "AI PACs spent millions trying to shape Congress — here’s how they fared",
+          "summary": "AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.",
+          "titleZh": "AI 政治行动委员会斥资数百万美元试图影响国会——结果如何",
+          "summaryZh": "AI 行业的政治行动委员会斥资数百万美元影响 2026 年中期选举，成效参差不齐。各政治团体已开始着眼于下一轮选举。",
+          "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
           "source": "TechCrunch",
           "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-03T22:41:03+00:00"
+          "published": "2026-11-04T22:45:09+00:00"
         },
         {
-          "title": "Data centers are turning to old jet engines as the wait for power grows",
-          "summary": "The years-long wait for access to the grid and new turbines is causing data center builders to turn to an unusual, less-efficient and less environmentally friendly solution: once-discarded jet engines.",
-          "titleZh": "电力接入等待时间不断延长，数据中心转而采用旧喷气发动机",
-          "summaryZh": "接入电网和新涡轮机要等待数年，促使数据中心建设者转向一种不寻常、效率较低且更不环保的方案：曾被淘汰的喷气发动机。",
-          "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+          "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
+          "summary": "While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.",
+          "titleZh": "Nothing 首席执行官称，公司神秘的 AI 优先设备将于下月发布",
+          "summaryZh": "目前尚不清楚这家智能手机初创公司正在开发哪类产品，但 Nothing 首席执行官表示，该产品旨在借助 AI 提升生产力。",
+          "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
           "source": "TechCrunch",
-          "score": 4.46,
+          "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-03T22:19:53+00:00"
+          "published": "2026-11-04T22:13:16+00:00"
         },
         {
-          "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
-          "summary": "Cybersecurity-focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
-          "titleZh": "AI 带动网络安全热潮之际，Ted Schlein 的 Ballistic Ventures 为新基金寻求筹资 4.9 亿美元",
-          "summaryZh": "专注网络安全的 Ballistic Ventures 正寻求为一只新的旗舰基金筹集 3.6 亿美元，并为另一只独立投资工具筹集 1.3 亿美元。",
-          "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+          "title": "Almost no one uses AI agents to book their Uber, company says",
+          "summary": "During its busiest week last quarter, Uber said only four people booked a ride using an AI agent.",
+          "titleZh": "公司称，几乎没人用 AI 智能体叫 Uber",
+          "summaryZh": "Uber 表示，在上季度最繁忙的一周里，只有四人使用 AI 智能体叫车。",
+          "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-03T21:43:08+00:00"
+          "published": "2026-11-04T21:56:01+00:00"
         },
         {
-          "title": "Hiding inside Palantir’s skyrocketing quarter is a foreboding signal",
-          "summary": "Palantir's U.S. commercial revenue surpassed U.S. government revenue for the first time ever.",
-          "titleZh": "Palantir 营收飙升的季度背后，藏着一个不祥信号",
-          "summaryZh": "Palantir 的美国商业营收有史以来首次超过美国政府营收。",
-          "url": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
+          "title": "OpenAI is already trying to shape the 2028 election",
+          "summary": "OpenAI’s Chris Lehane wants AI to define the 2028 election, proposing a new social contract that could benefit Americans while also advancing the AI giant’s own business interests.",
+          "titleZh": "OpenAI 已开始试图影响 2028 年大选",
+          "summaryZh": "OpenAI 的 Chris Lehane 希望 AI 成为 2028 年大选的核心议题，并提出一份新的社会契约。这项契约或能让美国人受益，同时也推动这家 AI 巨头自身的商业利益。",
+          "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+          "source": "TechCrunch",
+          "score": 4.43,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-04T21:25:44+00:00"
+        },
+        {
+          "title": "Meta acquires AI coding startup Conductor",
+          "summary": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
+          "titleZh": "Meta 收购 AI 编程初创公司 Conductor",
+          "summaryZh": "这家初创公司让软件工程师能够部署多个智能体团队，同时处理项目的不同部分。",
+          "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
           "source": "TechCrunch",
           "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-03T21:05:55+00:00"
+          "published": "2026-11-04T21:10:56+00:00"
         },
         {
-          "title": "AI inference startup Fal doubles its valuation to $16B as demand surges",
-          "summary": "The five-year-old startup raised a $1.3 billion round led by Bessemer.",
-          "titleZh": "需求激增，AI 推理初创公司 Fal 估值翻倍至 160 亿美元",
-          "summaryZh": "这家成立五年的初创公司完成了 13 亿美元融资，由 Bessemer 领投。",
-          "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+          "title": "Open source AI is booming. Hugging Face explains who profits.",
+          "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely…",
+          "titleZh": "开源 AI 正蓬勃发展，Hugging Face 解读谁能从中获利",
+          "summaryZh": "随着企业、政府和初创公司都寄望于更低成本、更强控制力和更高灵活性，开源模型正日益走向主流。但随着模型能力不断增强、并更加自由地…",
+          "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
           "source": "TechCrunch",
           "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-03T19:34:43+00:00"
-        },
-        {
-          "title": "Reddit tests ads in search results as traffic declines and growth concerns mount",
-          "summary": "The new ad placements could help Reddit squeeze more revenue from existing users as Google's AI search changes how people discover its content.",
-          "titleZh": "流量下滑、增长忧虑加剧之际，Reddit 测试在搜索结果中投放广告",
-          "summaryZh": "随着 Google 的 AI 搜索改变人们发现 Reddit 内容的方式，这些新广告位或能帮助 Reddit 从现有用户身上获得更多收入。",
-          "url": "https://techcrunch.com/2026/11/03/reddit-tests-ads-in-search-results-as-traffic-declines-and-growth-concerns-mount/",
-          "source": "TechCrunch",
-          "score": 4.38,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-03T19:24:37+00:00"
-        },
-        {
-          "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
-          "summary": "The first experimental feature under the tab will allow users to get recommendations based on what they're currently in the mood for.",
-          "titleZh": "Netflix 全新的 AI Discover 标签页根据你的心情推荐观看内容",
-          "summaryZh": "该标签页下的首项实验功能将根据用户当下的心情提供推荐。",
-          "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
-          "source": "TechCrunch",
-          "score": 4.36,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-03T18:42:16+00:00"
-        },
-        {
-          "title": "CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents t…",
-          "summary": "CrowdStrike said it will buy Fiddler AI, which makes AI agent observability software, and Dreadnode, which helps companies automate AI security testing.",
-          "titleZh": "智能体安全市场兴起，CrowdStrike 将斥资近 5 亿美元收购两家 AI 安全初创公司",
-          "summaryZh": "CrowdStrike 表示将收购 Fiddler AI 和 Dreadnode：前者开发 AI 智能体可观测性软件，后者帮助企业自动化 AI 安全测试。",
-          "url": "https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/",
-          "source": "TechCrunch",
-          "score": 4.33,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-03T17:56:52+00:00"
+          "published": "2026-11-04T19:30:04+00:00"
         }
       ]
     }
@@ -239,7 +239,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-04T11:01:42.513134+08:00"
+      "lastRunAt": "2026-11-05T11:02:36.915103+08:00"
     }
   }
 }
