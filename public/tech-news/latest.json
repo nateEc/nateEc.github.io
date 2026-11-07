@@ -1,127 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-05T11:31:35+08:00",
-  "date": "2026-11-05",
+  "updatedAt": "2026-11-07T11:31:32+08:00",
+  "date": "2026-11-07",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI is forcing us to pay off 40 years of technical debt",
-          "summary": "AI in cybersecurity accelerates both attackers and defenders, revealing painful technical debt in fragile legacy systems.",
-          "titleZh": "AI 迫使我们偿还 40 年的技术债",
-          "summaryZh": "AI 在网络安全领域加速了攻击者和防御者的行动，也暴露出脆弱遗留系统中棘手的技术债。",
-          "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+          "title": "AI is dramatically accelerating AI research",
+          "summary": "If acceleration compounds, the naive extrapolation implies superintelligence within a year",
+          "titleZh": "AI 正在大幅加速 AI 研究",
+          "summaryZh": "如果加速效应不断累积，按简单推算，超级智能可能会在一年内出现",
+          "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
           "source": "Hacker News",
-          "score": 7.21,
+          "score": 6.78,
           "reasons": [
             "AI",
-            "HN分数1111",
-            "讨论量643"
+            "HN分数223",
+            "讨论量167"
           ],
-          "published": "2026-11-04T11:52:17+00:00"
+          "published": "2026-11-06T20:27:23+00:00"
         },
         {
-          "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
-          "summary": "Qualcomm Cloud AI 100 Ultra accelerates generative AI. Discover cost-optimized solutions and explore our products. Contact us today.",
-          "titleZh": "高通 Cloud AI 100 Ultra：150W AI 加速卡，配备 128GB 内存，带宽达 548GB/s",
-          "summaryZh": "高通 Cloud AI 100 Ultra 可加速生成式 AI。了解注重成本效益的解决方案，探索我们的产品。欢迎立即联系我们。",
-          "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+          "title": "Tesla to wind down Cybertruck production",
+          "summary": "Tesla will wind down Cybertruck production at its Texas gigafactory around mid-2027, CEO Elon Musk said on Friday, after years of persistently weak sales for a futuristic model once touted as a rival to legacy pickup tru…",
+          "titleZh": "特斯拉将逐步停止 Cybertruck 生产",
+          "summaryZh": "特斯拉首席执行官埃隆·马斯克周五表示，公司将在 2027 年年中左右逐步停止得州超级工厂的 Cybertruck 生产。此前，这款曾被宣传为传统皮卡竞争对手的未来感车型，多年来销量持续低迷。",
+          "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
           "source": "Hacker News",
-          "score": 6.34,
+          "score": 4.77,
           "reasons": [
-            "AI",
-            "HN分数113",
-            "讨论量46"
+            "HN分数888",
+            "讨论量1745"
           ],
-          "published": "2026-11-04T19:55:14+00:00"
+          "published": "2026-11-06T12:13:51+00:00"
         },
         {
-          "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-          "summary": "Hacker News new | past | comments | ask | show | jobs | submit login Launch HN: Kino AI (YC S23) – AI media manager and video editor 74 points by lukeigel 9 hours ago | hide | past | favorite | 29 comments Hi HN! I'm Luk…",
-          "titleZh": "Launch HN：Kino AI（YC S23）——AI 媒体管理器与视频编辑器",
-          "summaryZh": "Hacker News 新帖｜过往｜评论｜提问｜展示｜招聘｜提交｜登录。Launch HN：Kino AI（YC S23）——AI 媒体管理器与视频编辑器。Lukeigel 发布于 9 小时前，获 74 分；隐藏｜过往｜收藏｜29 条评论。大家好！我是 Luk…",
-          "url": "https://news.ycombinator.com/item?id=50368804",
+          "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+          "summary": "We tested Jev and GPT-6 Luna as judges for identity resolution. A hybrid of Jev and Claude Opus matched frontier accuracy at over 4x lower cost.",
+          "titleZh": "能向 Opus 求助的 Jev，准确率相当于 Opus，成本低 4 倍",
+          "summaryZh": "我们测试了 Jev 和 GPT-6 Luna 在身份解析任务中担任评审的表现。Jev 与 Claude Opus 的混合方案以低逾 4 倍的成本，达到了前沿模型的准确率。",
+          "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
           "source": "Hacker News",
-          "score": 6.08,
+          "score": 4.15,
           "reasons": [
-            "AI",
-            "HN分数74",
-            "讨论量29"
+            "HN分数365",
+            "讨论量84"
           ],
-          "published": "2026-11-04T17:31:53+00:00"
+          "published": "2026-11-06T19:48:51+00:00"
         },
         {
-          "title": "Basically no one is using AI agents for their DoorDash orders",
-          "summary": "But it's still early days for the relatively new e-commerce use case.",
-          "titleZh": "几乎没人用 AI 智能体在 DoorDash 下单",
-          "summaryZh": "不过，作为一种相对较新的电商应用场景，目前仍处于早期阶段。",
-          "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
-          "source": "Hacker News",
-          "score": 5.06,
-          "reasons": [
-            "AI",
-            "HN分数84",
-            "讨论量154"
-          ],
-          "published": "2026-11-02T15:48:45+00:00"
-        },
-        {
-          "title": "Residential proxies detected on White House network",
-          "summary": "Comments",
-          "titleZh": "白宫网络中发现住宅代理",
-          "summaryZh": "评论",
-          "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-          "source": "Hacker News",
-          "score": 4.56,
-          "reasons": [
-            "HN分数744",
-            "讨论量234"
-          ],
-          "published": "2026-11-04T20:45:18+00:00"
-        },
-        {
-          "title": "A thousand fewer paths to root",
-          "summary": "Comments",
-          "titleZh": "通往 root 权限的路径减少了一千条",
-          "summaryZh": "评论",
-          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+          "title": "Gemini Omni 1.2 Flash",
+          "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+          "titleZh": "Gemini Omni 1.2 Flash 版本",
+          "summaryZh": "Gemini Omni 1.2 Flash 支持原生生成和编辑最长 15 秒的视频，提升了内容一致性，价格也降低了 30%。",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
           "source": "Hacker News",
           "score": 4.12,
           "reasons": [
-            "HN分数179",
-            "讨论量107"
+            "HN分数303",
+            "讨论量220"
           ],
-          "published": "2026-11-04T23:33:14+00:00"
+          "published": "2026-11-06T13:35:27+00:00"
         },
         {
-          "title": "Kimi K3.1 Pro model weights are out",
-          "summary": "Image-Text-to-Text model with 2.8T parameters. Download, explore files and run it on Hugging Face.",
-          "titleZh": "Kimi K3.1 Pro 模型权重已发布",
-          "summaryZh": "这是一个拥有 2.8 万亿参数的图文模型。可在 Hugging Face 下载、浏览文件并运行。",
-          "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+          "title": "Libghostty 1.0",
+          "summary": "Mitchell Hashimoto About Writing Misc Mitchell Hashimoto { \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\": \"https://mitchellh.com/writing/libghostty-1-0\" }, \"headlin…",
+          "titleZh": "Libghostty 1.0 版本",
+          "summaryZh": "米切尔·哈希莫托介绍 Libghostty 1.0。",
+          "url": "https://mitchellh.com/writing/libghostty-1-0",
           "source": "Hacker News",
-          "score": 4.12,
+          "score": 4.09,
           "reasons": [
-            "HN分数413",
-            "讨论量114"
+            "HN分数296",
+            "讨论量47"
           ],
-          "published": "2026-11-04T15:30:30+00:00"
+          "published": "2026-11-06T23:30:52+00:00"
         },
         {
-          "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
-          "summary": "When two cyclists were tragically killed in hit-and-run collisions this past summer, a group of anonymous urban activists known as the San Francisco Transformation Agency erected a set of protected bike lanes using traff…",
-          "titleZh": "游击式自行车道：旧金山将未经许可的设施永久化（2016）",
-          "summaryZh": "当年夏天，两名骑行者不幸在肇事逃逸事故中丧生后，一群名为“旧金山转型机构”的匿名城市活动人士修建了一组受保护的自行车道，使用了临时…",
-          "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+          "title": "Firecracker VM Escape: PwnEscape Part 2",
+          "summary": "A malicious guest crossed Firecracker's microVM boundary, resolved the live VMM from inside the VM, and took control of a root-run host process—turning a Linux networking flaw into a guest-to-host code-execution primitiv…",
+          "titleZh": "Firecracker 虚拟机逃逸：PwnEscape 第二部分",
+          "summaryZh": "恶意来宾系统突破了 Firecracker 微型虚拟机的边界，在虚拟机内部定位到正在运行的虚拟机监控器，并控制了一个以 root 权限运行的宿主机进程——将 Linux 网络漏洞转化为从来宾到宿主机的代码执行漏洞。",
+          "url": "https://pwn.ai/blog/firecracker-escape",
           "source": "Hacker News",
-          "score": 4.11,
+          "score": 3.97,
           "reasons": [
-            "HN分数275",
-            "讨论量195"
+            "HN分数185",
+            "讨论量83"
           ],
-          "published": "2026-11-04T15:01:44+00:00"
+          "published": "2026-11-06T19:33:38+00:00"
+        },
+        {
+          "title": "Sodium-ion batteries approach cost parity with LFP",
+          "summary": "Sodium-ion batteries are approaching cell-level cost parity with LFP technology, with supply agreements exceeding 70 GWh worldwide. Despite higher upfront costs, they could offer a 21% lower total cost of ownership over…",
+          "titleZh": "钠离子电池成本接近与磷酸铁锂电池持平",
+          "summaryZh": "钠离子电池的电芯成本正接近磷酸铁锂（LFP）技术，全球供应协议总量已超过 70 GWh。尽管前期成本较高，但其总拥有成本可能低 21%。",
+          "url": "https://www.pv-magazine.com/2026/11/06/sodium-ion-batteries-approach-cost-parity-with-lfp-with-70-gwh-covered-by-supply-agreements/",
+          "source": "Hacker News",
+          "score": 3.96,
+          "reasons": [
+            "HN分数143",
+            "讨论量65"
+          ],
+          "published": "2026-11-06T23:00:46+00:00"
+        },
+        {
+          "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+          "summary": "Comments",
+          "titleZh": "美国联邦航空管理局称，将在 2028 年前逐步淘汰空中交通管制系统中的软盘",
+          "summaryZh": "评论",
+          "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+          "source": "Hacker News",
+          "score": 3.86,
+          "reasons": [
+            "HN分数291",
+            "讨论量235"
+          ],
+          "published": "2026-11-06T04:00:28+00:00"
         }
       ]
     },
@@ -130,108 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Apple is reportedly cutting budgets for its internal AI usage",
-          "summary": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
-          "titleZh": "据报道，苹果正在削减内部使用 AI 的预算",
-          "summaryZh": "据称，该公司正大幅减少工程团队在 AI 上的支出。",
-          "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+          "title": "Crusoe sells troubled Wyoming data center project to Google",
+          "summary": "The deal highlights the challenges of developing massive AI data centers.",
+          "titleZh": "Crusoe 将陷入困境的怀俄明州数据中心项目出售给 Google",
+          "summaryZh": "这笔交易凸显了建设大型 AI 数据中心面临的挑战。",
+          "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
           "source": "TechCrunch",
-          "score": 4.54,
+          "score": 4.55,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-05T01:26:22+00:00"
+          "published": "2026-11-07T01:40:28+00:00"
         },
         {
-          "title": "After the midterms, a bigger clash over data centers could be coming",
-          "summary": "Data center opposition crossed party lines in Tuesday’s midterms.",
-          "titleZh": "中期选举过后，数据中心引发的更大冲突可能即将到来",
-          "summaryZh": "在周二的中期选举中，反对数据中心的声音跨越了党派界限。",
-          "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
-          "source": "TechCrunch",
-          "score": 4.53,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-05T01:02:14+00:00"
-        },
-        {
-          "title": "AI PACs spent millions trying to shape Congress — here’s how they fared",
-          "summary": "AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.",
-          "titleZh": "AI 政治行动委员会斥资数百万美元试图影响国会——结果如何",
-          "summaryZh": "AI 行业的政治行动委员会斥资数百万美元影响 2026 年中期选举，成效参差不齐。各政治团体已开始着眼于下一轮选举。",
-          "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+          "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+          "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+          "titleZh": "据报道，OpenAI 以 1.25 万亿美元估值再融资 110 亿美元",
+          "summaryZh": "据报道，OpenAI 在一轮尚未完成、预计将在未来几周内结束的融资中再筹集了 110 亿美元。",
+          "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
           "source": "TechCrunch",
           "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-04T22:45:09+00:00"
+          "published": "2026-11-06T22:53:46+00:00"
         },
         {
-          "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
-          "summary": "While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.",
-          "titleZh": "Nothing 首席执行官称，公司神秘的 AI 优先设备将于下月发布",
-          "summaryZh": "目前尚不清楚这家智能手机初创公司正在开发哪类产品，但 Nothing 首席执行官表示，该产品旨在借助 AI 提升生产力。",
-          "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+          "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+          "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+          "titleZh": "数百个 Artex AI 黑客工具被发现暴露在公网上",
+          "summaryZh": "安全研究人员发现，数百台托管渗透测试工具 Artex 的服务器暴露在互联网上，任何人都能访问该黑客工具。",
+          "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
           "source": "TechCrunch",
-          "score": 4.45,
+          "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-04T22:13:16+00:00"
+          "published": "2026-11-06T18:44:38+00:00"
         },
         {
-          "title": "Almost no one uses AI agents to book their Uber, company says",
-          "summary": "During its busiest week last quarter, Uber said only four people booked a ride using an AI agent.",
-          "titleZh": "公司称，几乎没人用 AI 智能体叫 Uber",
-          "summaryZh": "Uber 表示，在上季度最繁忙的一周里，只有四人使用 AI 智能体叫车。",
-          "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+          "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+          "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+          "titleZh": "Meta 推出 Spaces，为用户提供与 Muse 智能体协作的新方式",
+          "summaryZh": "Meta 的 Muse 智能体不断获得新功能和集成。Spaces 将提供一种与这些 AI 助手互动的新方式。",
+          "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
           "source": "TechCrunch",
-          "score": 4.45,
+          "score": 4.36,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-04T21:56:01+00:00"
+          "published": "2026-11-06T18:44:20+00:00"
         },
         {
-          "title": "OpenAI is already trying to shape the 2028 election",
-          "summary": "OpenAI’s Chris Lehane wants AI to define the 2028 election, proposing a new social contract that could benefit Americans while also advancing the AI giant’s own business interests.",
-          "titleZh": "OpenAI 已开始试图影响 2028 年大选",
-          "summaryZh": "OpenAI 的 Chris Lehane 希望 AI 成为 2028 年大选的核心议题，并提出一份新的社会契约。这项契约或能让美国人受益，同时也推动这家 AI 巨头自身的商业利益。",
-          "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+          "title": "After the midterms, is the AI industry in for a rough two years?",
+          "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to im…",
+          "titleZh": "美国中期选举后，AI 行业是否将迎来艰难的两年？",
+          "summaryZh": "民主党在本周美国中期选举中取得历史性胜利，也可能改变科技行业。周二，公众就 41 项与数据中心相关的投票议案作出表决，其中除一项外，其余议案均获多数支持……",
+          "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.32,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-04T21:25:44+00:00"
+          "published": "2026-11-06T17:23:52+00:00"
         },
         {
-          "title": "Meta acquires AI coding startup Conductor",
-          "summary": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
-          "titleZh": "Meta 收购 AI 编程初创公司 Conductor",
-          "summaryZh": "这家初创公司让软件工程师能够部署多个智能体团队，同时处理项目的不同部分。",
-          "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+          "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+          "summary": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
+          "titleZh": "Ramp 数据显示 AI 支出停滞，Anthropic 即将 IPO",
+          "summaryZh": "AI 使用量持续攀升，但支出已经停滞。最大用户削减价格并加强成本控制，可能会挑战投资者对 AI 高速增长的预期。",
+          "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.28,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-04T21:10:56+00:00"
+          "published": "2026-11-06T15:54:47+00:00"
         },
         {
-          "title": "Open source AI is booming. Hugging Face explains who profits.",
-          "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely…",
-          "titleZh": "开源 AI 正蓬勃发展，Hugging Face 解读谁能从中获利",
-          "summaryZh": "随着企业、政府和初创公司都寄望于更低成本、更强控制力和更高灵活性，开源模型正日益走向主流。但随着模型能力不断增强、并更加自由地…",
-          "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
+          "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+          "summary": "Amazon said that the feature will roll out to millions of users in coming weeks.",
+          "titleZh": "封锁 Muse 后，亚马逊如今允许用户通过短信向 Alexa 求助购物",
+          "summaryZh": "亚马逊表示，这项功能将在未来几周内向数百万用户推出。",
+          "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 4.23,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-04T19:30:04+00:00"
+          "published": "2026-11-06T14:10:00+00:00"
+        },
+        {
+          "title": "Underdog shows off a 32MB speech model in new demo",
+          "summary": "Despite its small size, Underdog's new model can generate both speech and music.",
+          "titleZh": "Underdog 在最新演示中展示 32 MB 语音模型",
+          "summaryZh": "尽管体积小巧，Underdog 的新模型既能生成语音，也能生成音乐。",
+          "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+          "source": "TechCrunch",
+          "score": 4.2,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-06T13:02:16+00:00"
         }
       ]
     }
@@ -239,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-05T11:02:36.915103+08:00"
+      "lastRunAt": "2026-11-07T11:01:56.034802+08:00"
     }
   }
 }
