@@ -1,126 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T14:30:04+08:00",
-  "date": "2026-11-07",
+  "updatedAt": "2026-11-08T14:30:47+08:00",
+  "date": "2026-11-08",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "zed-industries/zed",
-      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "fullName": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
       "language": "Rust",
       "languageColor": "#DEA584",
-      "starsToday": 306,
-      "totalStars": 93821,
-      "forks": 11512,
-      "url": "https://github.com/zed-industries/zed"
+      "starsToday": 190,
+      "totalStars": 47013,
+      "forks": 3222,
+      "url": "https://github.com/vercel-labs/agent-browser"
     },
     {
       "rank": 2,
-      "fullName": "NVIDIA/auto-ontology",
-      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 2015,
-      "totalStars": 9322,
-      "forks": 739,
-      "url": "https://github.com/NVIDIA/auto-ontology"
+      "fullName": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 2085,
+      "totalStars": 66036,
+      "forks": 4296,
+      "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
       "rank": 3,
-      "fullName": "rails/rails",
-      "description": "Ruby on Rails",
-      "language": "Ruby",
-      "languageColor": "#701516",
-      "starsToday": 142,
-      "totalStars": 59056,
-      "forks": 23833,
-      "url": "https://github.com/rails/rails"
-    },
-    {
-      "rank": 4,
-      "fullName": "mpv-player/mpv",
-      "description": "🎥 Command line media player",
-      "language": "C",
-      "languageColor": "#555555",
-      "starsToday": 37,
-      "totalStars": 37931,
-      "forks": 3635,
-      "url": "https://github.com/mpv-player/mpv"
-    },
-    {
-      "rank": 5,
-      "fullName": "rust-lang/rust",
-      "description": "Empowering everyone to build reliable and efficient software.",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 192,
-      "totalStars": 121517,
-      "forks": 17369,
-      "url": "https://github.com/rust-lang/rust"
-    },
-    {
-      "rank": 6,
-      "fullName": "react/react",
-      "description": "The library for web and native user interfaces.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 248,
-      "totalStars": 252306,
-      "forks": 51830,
-      "url": "https://github.com/react/react"
-    },
-    {
-      "rank": 7,
-      "fullName": "angular/angular",
-      "description": "Deliver web apps with confidence 🚀",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 135,
-      "totalStars": 101419,
-      "forks": 28914,
-      "url": "https://github.com/angular/angular"
-    },
-    {
-      "rank": 8,
-      "fullName": "symfony/symfony",
-      "description": "The Symfony PHP framework",
-      "language": "PHP",
-      "languageColor": "#4F5D95",
-      "starsToday": 128,
-      "totalStars": 31474,
-      "forks": 9949,
-      "url": "https://github.com/symfony/symfony"
-    },
-    {
-      "rank": 9,
-      "fullName": "prometheus/prometheus",
-      "description": "The Prometheus monitoring system and time series database.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 148,
-      "totalStars": 67237,
-      "forks": 10989,
-      "url": "https://github.com/prometheus/prometheus"
-    },
-    {
-      "rank": 10,
       "fullName": "google/skills",
       "description": "Agent Skills for Google products and technologies",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 534,
-      "totalStars": 22948,
-      "forks": 1929,
+      "starsToday": 443,
+      "totalStars": 23524,
+      "forks": 1967,
       "url": "https://github.com/google/skills"
+    },
+    {
+      "rank": 4,
+      "fullName": "mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 1100,
+      "totalStars": 317927,
+      "forks": 26602,
+      "url": "https://github.com/mattpocock/skills"
+    },
+    {
+      "rank": 5,
+      "fullName": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 390,
+      "totalStars": 188935,
+      "forks": 22270,
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "rank": 6,
+      "fullName": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 96,
+      "totalStars": 14754,
+      "forks": 1210,
+      "url": "https://github.com/meta/astryx"
+    },
+    {
+      "rank": 7,
+      "fullName": "prometheus/prometheus",
+      "description": "The Prometheus monitoring system and time series database.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 322,
+      "totalStars": 67487,
+      "forks": 11011,
+      "url": "https://github.com/prometheus/prometheus"
+    },
+    {
+      "rank": 8,
+      "fullName": "sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 1766,
+      "totalStars": 101078,
+      "forks": 11947,
+      "url": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+      "rank": 9,
+      "fullName": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 1955,
+      "totalStars": 17293,
+      "forks": 2439,
+      "url": "https://github.com/milind-soni/OpenMausBot"
+    },
+    {
+      "rank": 10,
+      "fullName": "astral-sh/ruff",
+      "description": "An extremely fast Python linter and code formatter, written in Rust.",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 350,
+      "totalStars": 51027,
+      "forks": 2633,
+      "url": "https://github.com/astral-sh/ruff"
     }
   ],
   "languages": [
     {
       "name": "Python",
-      "count": 2,
-      "share": 20,
+      "count": 3,
+      "share": 30,
       "color": "#3572A5"
     },
     {
@@ -130,10 +130,10 @@
       "color": "#DEA584"
     },
     {
-      "name": "C",
-      "count": 1,
-      "share": 10,
-      "color": "#555555"
+      "name": "TypeScript",
+      "count": 2,
+      "share": 20,
+      "color": "#3178C6"
     },
     {
       "name": "Go",
@@ -148,46 +148,37 @@
       "color": "#F1E05A"
     },
     {
-      "name": "PHP",
+      "name": "Shell",
       "count": 1,
       "share": 10,
-      "color": "#4F5D95"
-    },
-    {
-      "name": "Ruby",
-      "count": 1,
-      "share": 10,
-      "color": "#701516"
-    },
-    {
-      "name": "TypeScript",
-      "count": 1,
-      "share": 10,
-      "color": "#3178C6"
+      "color": "#89E051"
     }
   ],
   "themes": [
     {
       "name": "Agent systems",
-      "count": 2,
+      "count": 6,
       "repositories": [
-        "NVIDIA/auto-ontology",
-        "google/skills"
+        "vercel-labs/agent-browser",
+        "cloudflare/security-audit-skill",
+        "google/skills",
+        "mattpocock/skills"
       ]
     },
     {
-      "name": "Data & systems",
-      "count": 2,
+      "name": "Developer tools",
+      "count": 3,
       "repositories": [
-        "NVIDIA/auto-ontology",
-        "prometheus/prometheus"
+        "vercel-labs/agent-browser",
+        "cloudflare/security-audit-skill",
+        "astral-sh/ruff"
       ]
     },
     {
       "name": "AI infrastructure",
       "count": 1,
       "repositories": [
-        "NVIDIA/auto-ontology"
+        "vercel-labs/agent-browser"
       ]
     }
   ]
