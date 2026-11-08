@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-07T11:31:32+08:00",
-  "date": "2026-11-07",
+  "updatedAt": "2026-11-08T11:30:49+08:00",
+  "date": "2026-11-08",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI is dramatically accelerating AI research",
-          "summary": "If acceleration compounds, the naive extrapolation implies superintelligence within a year",
-          "titleZh": "AI 正在大幅加速 AI 研究",
-          "summaryZh": "如果加速效应不断累积，按简单推算，超级智能可能会在一年内出现",
-          "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+          "title": "The end of Microsoft Research's AI Frontiers group",
+          "summary": "In 2023 after the ChatGPT release, it was clear to me that research needed to be more organized to succeed than was typical within Microsoft Research . The amount of support and focus which other research groups were app…",
+          "titleZh": "微软研究院 AI Frontiers 团队的终结",
+          "summaryZh": "2023 年 ChatGPT 发布后，我意识到，要想成功，研究工作必须比微软研究院通常的做法更有组织。其他研究团队获得的支持和关注……",
+          "url": "https://hunch.net/?p=13764006",
           "source": "Hacker News",
-          "score": 6.78,
+          "score": 6.95,
           "reasons": [
             "AI",
-            "HN分数223",
-            "讨论量167"
+            "HN分数417",
+            "讨论量244"
           ],
-          "published": "2026-11-06T20:27:23+00:00"
+          "published": "2026-11-07T18:02:17+00:00"
         },
         {
-          "title": "Tesla to wind down Cybertruck production",
-          "summary": "Tesla will wind down Cybertruck production at its Texas gigafactory around mid-2027, CEO Elon Musk said on Friday, after years of persistently weak sales for a futuristic model once touted as a rival to legacy pickup tru…",
-          "titleZh": "特斯拉将逐步停止 Cybertruck 生产",
-          "summaryZh": "特斯拉首席执行官埃隆·马斯克周五表示，公司将在 2027 年年中左右逐步停止得州超级工厂的 Cybertruck 生产。此前，这款曾被宣传为传统皮卡竞争对手的未来感车型，多年来销量持续低迷。",
-          "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
+          "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+          "summary": "There are more than 100,000 words and phrases that the tech giant has restricted its predictive text from completing, research shows",
+          "titleZh": "苹果的灰名单：iPhone 不会帮你拼写的词语和短语",
+          "summaryZh": "研究显示，这家科技巨头限制了预测文本功能自动补全的词语和短语，数量超过 10 万个。",
+          "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
           "source": "Hacker News",
-          "score": 4.77,
+          "score": 4.32,
           "reasons": [
-            "HN分数888",
-            "讨论量1745"
+            "HN分数391",
+            "讨论量258"
           ],
-          "published": "2026-11-06T12:13:51+00:00"
+          "published": "2026-11-07T17:06:36+00:00"
         },
         {
-          "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-          "summary": "We tested Jev and GPT-6 Luna as judges for identity resolution. A hybrid of Jev and Claude Opus matched frontier accuracy at over 4x lower cost.",
-          "titleZh": "能向 Opus 求助的 Jev，准确率相当于 Opus，成本低 4 倍",
-          "summaryZh": "我们测试了 Jev 和 GPT-6 Luna 在身份解析任务中担任评审的表现。Jev 与 Claude Opus 的混合方案以低逾 4 倍的成本，达到了前沿模型的准确率。",
-          "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+          "title": "Every Mac comes with an (undocumented) family member classifier",
+          "summary": "Every Mac since macOS 13 (2022) ships a pair of daemons whose only purpose in life is to build a graph about who you are, who you know, how those people are related to you and to each other, how you communicate with them…",
+          "titleZh": "每台 Mac 都自带一位（未公开的）家庭成员分类器",
+          "summaryZh": "从 macOS 13（2022 年）起，每台 Mac 都配有一对守护进程，唯一用途就是构建一张关于你的关系图：你是谁、认识谁、这些人彼此之间有何关系，以及你如何与他们交流……",
+          "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
           "source": "Hacker News",
-          "score": 4.15,
+          "score": 4.29,
           "reasons": [
-            "HN分数365",
-            "讨论量84"
+            "HN分数627",
+            "讨论量351"
           ],
-          "published": "2026-11-06T19:48:51+00:00"
+          "published": "2026-11-07T09:46:03+00:00"
         },
         {
-          "title": "Gemini Omni 1.2 Flash",
-          "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
-          "titleZh": "Gemini Omni 1.2 Flash 版本",
-          "summaryZh": "Gemini Omni 1.2 Flash 支持原生生成和编辑最长 15 秒的视频，提升了内容一致性，价格也降低了 30%。",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+          "title": "Need for Speed Underground 2 online in the browser",
+          "summary": "Play Need for Speed: Underground 2 (2004) in Chrome and Firefox with WebGPU graphics, Web Audio, up to 120 fps widescreen, controller support, free roam and Online races with friends. Fan project, not affiliated with Ele…",
+          "titleZh": "在浏览器中在线玩《极品飞车：地下狂飙 2》",
+          "summaryZh": "在 Chrome 和 Firefox 中游玩 2004 年推出的《极品飞车：地下狂飙 2》，支持 WebGPU 图形、Web Audio、最高 120 帧宽屏显示、手柄、自由漫游，以及与好友在线比赛。这是粉丝项目，与 Ele……无关。",
+          "url": "https://nfsu2.xyz/",
           "source": "Hacker News",
-          "score": 4.12,
+          "score": 4.28,
           "reasons": [
-            "HN分数303",
-            "讨论量220"
+            "HN分数843",
+            "讨论量231"
           ],
-          "published": "2026-11-06T13:35:27+00:00"
+          "published": "2026-11-07T09:36:36+00:00"
         },
         {
-          "title": "Libghostty 1.0",
-          "summary": "Mitchell Hashimoto About Writing Misc Mitchell Hashimoto { \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\": \"https://mitchellh.com/writing/libghostty-1-0\" }, \"headlin…",
-          "titleZh": "Libghostty 1.0 版本",
-          "summaryZh": "米切尔·哈希莫托介绍 Libghostty 1.0。",
-          "url": "https://mitchellh.com/writing/libghostty-1-0",
+          "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+          "summary": "Secure everything coding agents build, use, and ship - prevent risk before code exists, AutoFix the backlog, and protect the coding agents and supply chain.",
+          "titleZh": "Claude Code 的“不要再询问”功能导致密码出现在 1,122 个公开 GitHub 文件中",
+          "summaryZh": "保护编码代理构建、使用和发布的一切——在代码诞生前防范风险、自动修复积压问题，并保护编码代理及软件供应链。",
+          "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
           "source": "Hacker News",
-          "score": 4.09,
+          "score": 4.16,
           "reasons": [
-            "HN分数296",
-            "讨论量47"
+            "HN分数218",
+            "讨论量146"
           ],
-          "published": "2026-11-06T23:30:52+00:00"
+          "published": "2026-11-07T20:45:32+00:00"
         },
         {
-          "title": "Firecracker VM Escape: PwnEscape Part 2",
-          "summary": "A malicious guest crossed Firecracker's microVM boundary, resolved the live VMM from inside the VM, and took control of a root-run host process—turning a Linux networking flaw into a guest-to-host code-execution primitiv…",
-          "titleZh": "Firecracker 虚拟机逃逸：PwnEscape 第二部分",
-          "summaryZh": "恶意来宾系统突破了 Firecracker 微型虚拟机的边界，在虚拟机内部定位到正在运行的虚拟机监控器，并控制了一个以 root 权限运行的宿主机进程——将 Linux 网络漏洞转化为从来宾到宿主机的代码执行漏洞。",
-          "url": "https://pwn.ai/blog/firecracker-escape",
+          "title": "What I run on my $10 USD OpenStick homelab",
+          "summary": "What I run on my $10 USD OpenStick homelab",
+          "titleZh": "我的 10 美元 OpenStick 家庭实验室上运行着什么",
+          "summaryZh": "介绍我在 10 美元的 OpenStick 家庭实验室上运行的内容。",
+          "url": "https://blog.bosscher.ch/posts/openstick/",
           "source": "Hacker News",
-          "score": 3.97,
+          "score": 4.13,
           "reasons": [
-            "HN分数185",
-            "讨论量83"
+            "HN分数389",
+            "讨论量89"
           ],
-          "published": "2026-11-06T19:33:38+00:00"
+          "published": "2026-11-07T18:12:12+00:00"
         },
         {
-          "title": "Sodium-ion batteries approach cost parity with LFP",
-          "summary": "Sodium-ion batteries are approaching cell-level cost parity with LFP technology, with supply agreements exceeding 70 GWh worldwide. Despite higher upfront costs, they could offer a 21% lower total cost of ownership over…",
-          "titleZh": "钠离子电池成本接近与磷酸铁锂电池持平",
-          "summaryZh": "钠离子电池的电芯成本正接近磷酸铁锂（LFP）技术，全球供应协议总量已超过 70 GWh。尽管前期成本较高，但其总拥有成本可能低 21%。",
-          "url": "https://www.pv-magazine.com/2026/11/06/sodium-ion-batteries-approach-cost-parity-with-lfp-with-70-gwh-covered-by-supply-agreements/",
+          "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+          "summary": "Discord’s Rust client opens before the Electron app finishes loading, skips the Starting screen and uses 290MB of RAM with two accounts.",
+          "titleZh": "所有 Windows 11 应用都该淘汰 Electron，Discord 刚刚说明了原因",
+          "summaryZh": "Discord 的 Rust 客户端会在 Electron 应用加载完成前启动，跳过启动画面，并在登录两个账户时仅占用 290 MB 内存。",
+          "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
           "source": "Hacker News",
-          "score": 3.96,
+          "score": 4.0,
           "reasons": [
-            "HN分数143",
-            "讨论量65"
+            "HN分数239",
+            "讨论量226"
           ],
-          "published": "2026-11-06T23:00:46+00:00"
+          "published": "2026-11-07T11:11:15+00:00"
         },
         {
-          "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
-          "summary": "Comments",
-          "titleZh": "美国联邦航空管理局称，将在 2028 年前逐步淘汰空中交通管制系统中的软盘",
-          "summaryZh": "评论",
-          "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+          "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+          "summary": "How coding models respond when familiar engineering tasks ask for something different.",
+          "titleZh": "MaxxBench——“DeepSWE 得分不错，但它是真的吗？”",
+          "summaryZh": "当熟悉的工程任务要求做出不同尝试时，编程模型会如何应对。",
+          "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
           "source": "Hacker News",
-          "score": 3.86,
+          "score": 3.9,
           "reasons": [
-            "HN分数291",
-            "讨论量235"
+            "HN分数219",
+            "讨论量64"
           ],
-          "published": "2026-11-06T04:00:28+00:00"
+          "published": "2026-11-07T17:19:00+00:00"
         }
       ]
     },
@@ -127,13 +127,52 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+          "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+          "titleZh": "中期选举过后，埃隆·马斯克和数据中心的处境愈发艰难",
+          "summaryZh": "在《Equity》节目中，我们剖析了中期选举对科技行业的影响。",
+          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+          "source": "TechCrunch",
+          "score": 4.45,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-07T22:07:22+00:00"
+        },
+        {
+          "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+          "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+          "titleZh": "据美国情报备忘录，Megaspeed 高管受招募监视英伟达 CEO",
+          "summaryZh": "据称，今年早些时候流传的一份备忘录声称，中国国家安全部招募了一名女性科技高管，监视英伟达首席执行官。",
+          "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+          "source": "TechCrunch",
+          "score": 4.43,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-07T21:17:08+00:00"
+        },
+        {
+          "title": "From the front row to the hot seat — what the midterms mean for Big Tech",
+          "summary": "After spending two years getting cozy with the White House, Big Tech is suddenly trying to make friends with Democrats, and the open question is whether that image makeover can hold up against what states, local communit…",
+          "titleZh": "从贵宾席到风口浪尖——中期选举对大型科技公司意味着什么",
+          "summaryZh": "过去两年，大型科技公司一直与白宫关系密切，如今却突然试图与民主党交好。问题在于，这种形象转变能否经受住各州、地方社区……的考验。",
+          "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/",
+          "source": "TechCrunch",
+          "score": 3.96,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-07T04:16:43+00:00"
+        },
+        {
           "title": "Crusoe sells troubled Wyoming data center project to Google",
           "summary": "The deal highlights the challenges of developing massive AI data centers.",
           "titleZh": "Crusoe 将陷入困境的怀俄明州数据中心项目出售给 Google",
           "summaryZh": "这笔交易凸显了建设大型 AI 数据中心面临的挑战。",
           "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
           "source": "TechCrunch",
-          "score": 4.55,
+          "score": 3.88,
           "reasons": [
             "AI"
           ],
@@ -146,7 +185,7 @@
           "summaryZh": "据报道，OpenAI 在一轮尚未完成、预计将在未来几周内结束的融资中再筹集了 110 亿美元。",
           "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
           "source": "TechCrunch",
-          "score": 4.47,
+          "score": 3.81,
           "reasons": [
             "AI"
           ],
@@ -159,7 +198,7 @@
           "summaryZh": "安全研究人员发现，数百台托管渗透测试工具 Artex 的服务器暴露在互联网上，任何人都能访问该黑客工具。",
           "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 3.69,
           "reasons": [
             "AI"
           ],
@@ -172,63 +211,22 @@
           "summaryZh": "Meta 的 Muse 智能体不断获得新功能和集成。Spaces 将提供一种与这些 AI 助手互动的新方式。",
           "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
           "source": "TechCrunch",
-          "score": 4.36,
+          "score": 3.69,
           "reasons": [
             "AI"
           ],
           "published": "2026-11-06T18:44:20+00:00"
         },
         {
-          "title": "After the midterms, is the AI industry in for a rough two years?",
-          "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to im…",
-          "titleZh": "美国中期选举后，AI 行业是否将迎来艰难的两年？",
-          "summaryZh": "民主党在本周美国中期选举中取得历史性胜利，也可能改变科技行业。周二，公众就 41 项与数据中心相关的投票议案作出表决，其中除一项外，其余议案均获多数支持……",
-          "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+          "title": "Parents want safer phones for kids. These companies are answering the call.",
+          "summary": "As parents look for alternatives to unrestricted smartphones, a growing number of companies are building phones designed specifically for kids, from feature-limited mobile devices to minimalist home phones.",
+          "titleZh": "家长希望孩子使用更安全的手机，这些公司正在回应需求",
+          "summaryZh": "随着家长寻找不受限制智能手机的替代品，越来越多公司开始打造专为儿童设计的手机，产品从功能受限的移动设备到极简家用电话不等。",
+          "url": "https://techcrunch.com/2026/11/07/parents-want-safer-phones-for-kids-these-companies-are-answering-the-call/",
           "source": "TechCrunch",
-          "score": 4.32,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-06T17:23:52+00:00"
-        },
-        {
-          "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
-          "summary": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
-          "titleZh": "Ramp 数据显示 AI 支出停滞，Anthropic 即将 IPO",
-          "summaryZh": "AI 使用量持续攀升，但支出已经停滞。最大用户削减价格并加强成本控制，可能会挑战投资者对 AI 高速增长的预期。",
-          "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-          "source": "TechCrunch",
-          "score": 4.28,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-06T15:54:47+00:00"
-        },
-        {
-          "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
-          "summary": "Amazon said that the feature will roll out to millions of users in coming weeks.",
-          "titleZh": "封锁 Muse 后，亚马逊如今允许用户通过短信向 Alexa 求助购物",
-          "summaryZh": "亚马逊表示，这项功能将在未来几周内向数百万用户推出。",
-          "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-          "source": "TechCrunch",
-          "score": 4.23,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-06T14:10:00+00:00"
-        },
-        {
-          "title": "Underdog shows off a 32MB speech model in new demo",
-          "summary": "Despite its small size, Underdog's new model can generate both speech and music.",
-          "titleZh": "Underdog 在最新演示中展示 32 MB 语音模型",
-          "summaryZh": "尽管体积小巧，Underdog 的新模型既能生成语音，也能生成音乐。",
-          "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-          "source": "TechCrunch",
-          "score": 4.2,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-06T13:02:16+00:00"
+          "score": 1.76,
+          "reasons": [],
+          "published": "2026-11-07T19:00:00+00:00"
         }
       ]
     }
@@ -236,7 +234,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-07T11:01:56.034802+08:00"
+      "lastRunAt": "2026-11-08T11:01:31.154877+08:00"
     }
   }
 }
