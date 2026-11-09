@@ -1,64 +1,64 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-08T14:30:47+08:00",
-  "date": "2026-11-08",
+  "updatedAt": "2026-11-09T14:30:54+08:00",
+  "date": "2026-11-09",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
+      "fullName": "sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 2373,
+      "totalStars": 104721,
+      "forks": 12209,
+      "url": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+      "rank": 2,
+      "fullName": "dsx-ai-factory/nvke",
+      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 345,
+      "totalStars": 936,
+      "forks": 113,
+      "url": "https://github.com/dsx-ai-factory/nvke"
+    },
+    {
+      "rank": 3,
+      "fullName": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 1439,
+      "totalStars": 18738,
+      "forks": 2583,
+      "url": "https://github.com/milind-soni/OpenMausBot"
+    },
+    {
+      "rank": 4,
+      "fullName": "anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 32,
+      "totalStars": 19593,
+      "forks": 3286,
+      "url": "https://github.com/anthropics/claude-quickstarts"
+    },
+    {
+      "rank": 5,
       "fullName": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
       "languageColor": "#DEA584",
-      "starsToday": 190,
-      "totalStars": 47013,
-      "forks": 3222,
+      "starsToday": 815,
+      "totalStars": 47881,
+      "forks": 3271,
       "url": "https://github.com/vercel-labs/agent-browser"
-    },
-    {
-      "rank": 2,
-      "fullName": "cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 2085,
-      "totalStars": 66036,
-      "forks": 4296,
-      "url": "https://github.com/cloudflare/security-audit-skill"
-    },
-    {
-      "rank": 3,
-      "fullName": "google/skills",
-      "description": "Agent Skills for Google products and technologies",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 443,
-      "totalStars": 23524,
-      "forks": 1967,
-      "url": "https://github.com/google/skills"
-    },
-    {
-      "rank": 4,
-      "fullName": "mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "language": "Shell",
-      "languageColor": "#89E051",
-      "starsToday": 1100,
-      "totalStars": 317927,
-      "forks": 26602,
-      "url": "https://github.com/mattpocock/skills"
-    },
-    {
-      "rank": 5,
-      "fullName": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 390,
-      "totalStars": 188935,
-      "forks": 22270,
-      "url": "https://github.com/anthropics/skills"
     },
     {
       "rank": 6,
@@ -66,116 +66,97 @@
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 96,
-      "totalStars": 14754,
-      "forks": 1210,
+      "starsToday": 875,
+      "totalStars": 17614,
+      "forks": 1383,
       "url": "https://github.com/meta/astryx"
     },
     {
       "rank": 7,
-      "fullName": "prometheus/prometheus",
-      "description": "The Prometheus monitoring system and time series database.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 322,
-      "totalStars": 67487,
-      "forks": 11011,
-      "url": "https://github.com/prometheus/prometheus"
+      "fullName": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 792,
+      "totalStars": 189917,
+      "forks": 22374,
+      "url": "https://github.com/anthropics/skills"
     },
     {
       "rank": 8,
-      "fullName": "sherlock-project/sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 1766,
-      "totalStars": 101078,
-      "forks": 11947,
-      "url": "https://github.com/sherlock-project/sherlock"
+      "fullName": "google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "languageColor": "#F34B7D",
+      "starsToday": 41,
+      "totalStars": 16567,
+      "forks": 1960,
+      "url": "https://github.com/google-deepmind/mujoco"
     },
     {
       "rank": 9,
-      "fullName": "milind-soni/OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "fullName": "ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 1955,
-      "totalStars": 17293,
-      "forks": 2439,
-      "url": "https://github.com/milind-soni/OpenMausBot"
-    },
-    {
-      "rank": 10,
-      "fullName": "astral-sh/ruff",
-      "description": "An extremely fast Python linter and code formatter, written in Rust.",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 350,
-      "totalStars": 51027,
-      "forks": 2633,
-      "url": "https://github.com/astral-sh/ruff"
+      "starsToday": 460,
+      "totalStars": 5384,
+      "forks": 416,
+      "url": "https://github.com/ranxianglei/billion-context"
     }
   ],
   "languages": [
     {
       "name": "Python",
       "count": 3,
-      "share": 30,
+      "share": 33,
       "color": "#3572A5"
     },
     {
-      "name": "Rust",
-      "count": 2,
-      "share": 20,
-      "color": "#DEA584"
+      "name": "TypeScript",
+      "count": 3,
+      "share": 33,
+      "color": "#3178C6"
     },
     {
-      "name": "TypeScript",
-      "count": 2,
-      "share": 20,
-      "color": "#3178C6"
+      "name": "C++",
+      "count": 1,
+      "share": 11,
+      "color": "#F34B7D"
     },
     {
       "name": "Go",
       "count": 1,
-      "share": 10,
+      "share": 11,
       "color": "#00ADD8"
     },
     {
-      "name": "JavaScript",
+      "name": "Rust",
       "count": 1,
-      "share": 10,
-      "color": "#F1E05A"
-    },
-    {
-      "name": "Shell",
-      "count": 1,
-      "share": 10,
-      "color": "#89E051"
+      "share": 11,
+      "color": "#DEA584"
     }
   ],
   "themes": [
     {
       "name": "Agent systems",
-      "count": 6,
-      "repositories": [
-        "vercel-labs/agent-browser",
-        "cloudflare/security-audit-skill",
-        "google/skills",
-        "mattpocock/skills"
-      ]
-    },
-    {
-      "name": "Developer tools",
       "count": 3,
       "repositories": [
         "vercel-labs/agent-browser",
-        "cloudflare/security-audit-skill",
-        "astral-sh/ruff"
+        "meta/astryx",
+        "anthropics/skills"
       ]
     },
     {
       "name": "AI infrastructure",
+      "count": 2,
+      "repositories": [
+        "dsx-ai-factory/nvke",
+        "vercel-labs/agent-browser"
+      ]
+    },
+    {
+      "name": "Developer tools",
       "count": 1,
       "repositories": [
         "vercel-labs/agent-browser"
