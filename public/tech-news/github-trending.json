@@ -1,165 +1,172 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-09T14:30:54+08:00",
-  "date": "2026-11-09",
+  "updatedAt": "2026-11-10T14:30:20+08:00",
+  "date": "2026-11-10",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "sherlock-project/sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 2373,
-      "totalStars": 104721,
-      "forks": 12209,
-      "url": "https://github.com/sherlock-project/sherlock"
-    },
-    {
-      "rank": 2,
-      "fullName": "dsx-ai-factory/nvke",
-      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 345,
-      "totalStars": 936,
-      "forks": 113,
-      "url": "https://github.com/dsx-ai-factory/nvke"
-    },
-    {
-      "rank": 3,
-      "fullName": "milind-soni/OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 1439,
-      "totalStars": 18738,
-      "forks": 2583,
-      "url": "https://github.com/milind-soni/OpenMausBot"
-    },
-    {
-      "rank": 4,
-      "fullName": "anthropics/claude-quickstarts",
-      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 32,
-      "totalStars": 19593,
-      "forks": 3286,
-      "url": "https://github.com/anthropics/claude-quickstarts"
-    },
-    {
-      "rank": 5,
-      "fullName": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 815,
-      "totalStars": 47881,
-      "forks": 3271,
-      "url": "https://github.com/vercel-labs/agent-browser"
-    },
-    {
-      "rank": 6,
-      "fullName": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 875,
-      "totalStars": 17614,
-      "forks": 1383,
-      "url": "https://github.com/meta/astryx"
-    },
-    {
-      "rank": 7,
       "fullName": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 792,
-      "totalStars": 189917,
-      "forks": 22374,
+      "starsToday": 1038,
+      "totalStars": 191365,
+      "forks": 22469,
       "url": "https://github.com/anthropics/skills"
     },
     {
-      "rank": 8,
+      "rank": 2,
+      "fullName": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 3278,
+      "totalStars": 20793,
+      "forks": 1581,
+      "url": "https://github.com/meta/astryx"
+    },
+    {
+      "rank": 3,
+      "fullName": "sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 4267,
+      "totalStars": 107686,
+      "forks": 12450,
+      "url": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+      "rank": 4,
       "fullName": "google-deepmind/mujoco",
       "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "language": "C++",
       "languageColor": "#F34B7D",
-      "starsToday": 41,
-      "totalStars": 16567,
-      "forks": 1960,
+      "starsToday": 574,
+      "totalStars": 17045,
+      "forks": 2010,
       "url": "https://github.com/google-deepmind/mujoco"
     },
     {
-      "rank": 9,
-      "fullName": "ranxianglei/billion-context",
-      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "rank": 5,
+      "fullName": "anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 551,
+      "totalStars": 20149,
+      "forks": 3326,
+      "url": "https://github.com/anthropics/claude-quickstarts"
+    },
+    {
+      "rank": 6,
+      "fullName": "garrytan/gbrain",
+      "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 460,
-      "totalStars": 5384,
-      "forks": 416,
-      "url": "https://github.com/ranxianglei/billion-context"
+      "starsToday": 216,
+      "totalStars": 32294,
+      "forks": 4779,
+      "url": "https://github.com/garrytan/gbrain"
+    },
+    {
+      "rank": 7,
+      "fullName": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 916,
+      "totalStars": 48695,
+      "forks": 3319,
+      "url": "https://github.com/vercel-labs/agent-browser"
+    },
+    {
+      "rank": 8,
+      "fullName": "ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 172,
+      "totalStars": 103646,
+      "forks": 13425,
+      "url": "https://github.com/ruvnet/RuView"
+    },
+    {
+      "rank": 9,
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 506,
+      "totalStars": 69196,
+      "forks": 56467,
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+    },
+    {
+      "rank": 10,
+      "fullName": "homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 31,
+      "totalStars": 6150,
+      "forks": 300,
+      "url": "https://github.com/homeassistant-ai/ha-mcp"
     }
   ],
   "languages": [
     {
       "name": "Python",
-      "count": 3,
-      "share": 33,
+      "count": 5,
+      "share": 50,
       "color": "#3572A5"
     },
     {
+      "name": "Rust",
+      "count": 2,
+      "share": 20,
+      "color": "#DEA584"
+    },
+    {
       "name": "TypeScript",
-      "count": 3,
-      "share": 33,
+      "count": 2,
+      "share": 20,
       "color": "#3178C6"
     },
     {
       "name": "C++",
       "count": 1,
-      "share": 11,
+      "share": 10,
       "color": "#F34B7D"
-    },
-    {
-      "name": "Go",
-      "count": 1,
-      "share": 11,
-      "color": "#00ADD8"
-    },
-    {
-      "name": "Rust",
-      "count": 1,
-      "share": 11,
-      "color": "#DEA584"
     }
   ],
   "themes": [
     {
       "name": "Agent systems",
-      "count": 3,
+      "count": 5,
       "repositories": [
-        "vercel-labs/agent-browser",
+        "anthropics/skills",
         "meta/astryx",
-        "anthropics/skills"
+        "garrytan/gbrain",
+        "vercel-labs/agent-browser"
       ]
     },
     {
       "name": "AI infrastructure",
-      "count": 2,
+      "count": 3,
       "repositories": [
-        "dsx-ai-factory/nvke",
-        "vercel-labs/agent-browser"
+        "vercel-labs/agent-browser",
+        "ZhuLinsen/daily_stock_analysis",
+        "homeassistant-ai/ha-mcp"
       ]
     },
     {
-      "name": "Developer tools",
+      "name": "Data & systems",
       "count": 1,
       "repositories": [
-        "vercel-labs/agent-browser"
+        "ZhuLinsen/daily_stock_analysis"
       ]
     }
   ]
