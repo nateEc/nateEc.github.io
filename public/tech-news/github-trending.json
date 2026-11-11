@@ -1,126 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T14:30:20+08:00",
-  "date": "2026-11-10",
+  "updatedAt": "2026-11-11T14:30:13+08:00",
+  "date": "2026-11-11",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 1038,
-      "totalStars": 191365,
-      "forks": 22469,
-      "url": "https://github.com/anthropics/skills"
-    },
-    {
-      "rank": 2,
       "fullName": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 3278,
-      "totalStars": 20793,
-      "forks": 1581,
+      "starsToday": 3108,
+      "totalStars": 23553,
+      "forks": 1852,
       "url": "https://github.com/meta/astryx"
     },
     {
-      "rank": 3,
-      "fullName": "sherlock-project/sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
+      "rank": 2,
+      "fullName": "anthropics/skills",
+      "description": "Public repository for Agent Skills",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 4267,
-      "totalStars": 107686,
-      "forks": 12450,
-      "url": "https://github.com/sherlock-project/sherlock"
+      "starsToday": 1679,
+      "totalStars": 192584,
+      "forks": 22670,
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "rank": 3,
+      "fullName": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 465,
+      "totalStars": 115355,
+      "forks": 12110,
+      "url": "https://github.com/addyosmani/agent-skills"
     },
     {
       "rank": 4,
-      "fullName": "google-deepmind/mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "language": "C++",
-      "languageColor": "#F34B7D",
-      "starsToday": 574,
-      "totalStars": 17045,
-      "forks": 2010,
-      "url": "https://github.com/google-deepmind/mujoco"
-    },
-    {
-      "rank": 5,
       "fullName": "anthropics/claude-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 551,
-      "totalStars": 20149,
-      "forks": 3326,
+      "starsToday": 531,
+      "totalStars": 20624,
+      "forks": 3477,
       "url": "https://github.com/anthropics/claude-quickstarts"
     },
     {
+      "rank": 5,
+      "fullName": "google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "languageColor": "#F34B7D",
+      "starsToday": 456,
+      "totalStars": 17480,
+      "forks": 2157,
+      "url": "https://github.com/google-deepmind/mujoco"
+    },
+    {
       "rank": 6,
-      "fullName": "garrytan/gbrain",
-      "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 216,
-      "totalStars": 32294,
-      "forks": 4779,
-      "url": "https://github.com/garrytan/gbrain"
+      "fullName": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "languageColor": "#701516",
+      "starsToday": 159,
+      "totalStars": 12212,
+      "forks": 905,
+      "url": "https://github.com/we-promise/sure"
     },
     {
       "rank": 7,
-      "fullName": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 916,
-      "totalStars": 48695,
-      "forks": 3319,
-      "url": "https://github.com/vercel-labs/agent-browser"
-    },
-    {
-      "rank": 8,
-      "fullName": "ruvnet/RuView",
-      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 172,
-      "totalStars": 103646,
-      "forks": 13425,
-      "url": "https://github.com/ruvnet/RuView"
-    },
-    {
-      "rank": 9,
-      "fullName": "ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 506,
-      "totalStars": 69196,
-      "forks": 56467,
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
-    },
-    {
-      "rank": 10,
       "fullName": "homeassistant-ai/ha-mcp",
       "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 31,
-      "totalStars": 6150,
-      "forks": 300,
+      "starsToday": 790,
+      "totalStars": 6807,
+      "forks": 438,
       "url": "https://github.com/homeassistant-ai/ha-mcp"
+    },
+    {
+      "rank": 8,
+      "fullName": "vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 780,
+      "totalStars": 49425,
+      "forks": 3461,
+      "url": "https://github.com/vercel-labs/agent-browser"
+    },
+    {
+      "rank": 9,
+      "fullName": "sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "starsToday": 2393,
+      "totalStars": 109380,
+      "forks": 12691,
+      "url": "https://github.com/sherlock-project/sherlock"
+    },
+    {
+      "rank": 10,
+      "fullName": "tokio-rs/topcoat",
+      "description": "A batteries-included framework for building web apps",
+      "language": "Rust",
+      "languageColor": "#DEA584",
+      "starsToday": 192,
+      "totalStars": 6942,
+      "forks": 308,
+      "url": "https://github.com/tokio-rs/topcoat"
     }
   ],
   "languages": [
     {
       "name": "Python",
-      "count": 5,
-      "share": 50,
+      "count": 4,
+      "share": 40,
       "color": "#3572A5"
     },
     {
@@ -130,16 +130,28 @@
       "color": "#DEA584"
     },
     {
-      "name": "TypeScript",
-      "count": 2,
-      "share": 20,
-      "color": "#3178C6"
-    },
-    {
       "name": "C++",
       "count": 1,
       "share": 10,
       "color": "#F34B7D"
+    },
+    {
+      "name": "JavaScript",
+      "count": 1,
+      "share": 10,
+      "color": "#F1E05A"
+    },
+    {
+      "name": "Ruby",
+      "count": 1,
+      "share": 10,
+      "color": "#701516"
+    },
+    {
+      "name": "TypeScript",
+      "count": 1,
+      "share": 10,
+      "color": "#3178C6"
     }
   ],
   "themes": [
@@ -147,26 +159,27 @@
       "name": "Agent systems",
       "count": 5,
       "repositories": [
-        "anthropics/skills",
         "meta/astryx",
-        "garrytan/gbrain",
-        "vercel-labs/agent-browser"
+        "anthropics/skills",
+        "addyosmani/agent-skills",
+        "homeassistant-ai/ha-mcp"
       ]
     },
     {
       "name": "AI infrastructure",
       "count": 3,
       "repositories": [
-        "vercel-labs/agent-browser",
-        "ZhuLinsen/daily_stock_analysis",
-        "homeassistant-ai/ha-mcp"
+        "addyosmani/agent-skills",
+        "homeassistant-ai/ha-mcp",
+        "vercel-labs/agent-browser"
       ]
     },
     {
-      "name": "Data & systems",
-      "count": 1,
+      "name": "Developer tools",
+      "count": 2,
       "repositories": [
-        "ZhuLinsen/daily_stock_analysis"
+        "addyosmani/agent-skills",
+        "vercel-labs/agent-browser"
       ]
     }
   ]
