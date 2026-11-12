@@ -1,124 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-11T11:31:45+08:00",
-  "date": "2026-11-11",
+  "updatedAt": "2026-11-12T11:31:45+08:00",
+  "date": "2026-11-12",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI is an information gateway. Audiences still don't want it making their news",
-          "summary": "An average of 24% of respondents across nine countries said they'd seen a label noting that content was made with AI in the last week, and 20% had seen a…",
-          "titleZh": "AI 正成为信息入口，但受众仍不希望新闻由它制作",
-          "summaryZh": "在九个国家的受访者中，平均有 24% 表示过去一周看到过内容由 AI 制作的标注，20% 则看到过……",
-          "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+          "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+          "summary": "Using an artificial intelligence agent to make flight reservations poses security risks and could violate federal rules, according to United.",
+          "titleZh": "联合航空禁止 AI 代理代旅客预订航班",
+          "summaryZh": "联合航空称，使用人工智能代理预订航班存在安全风险，也可能违反联邦规定。",
+          "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
           "source": "Hacker News",
-          "score": 5.69,
+          "score": 7.15,
           "reasons": [
             "AI",
-            "HN分数17",
-            "讨论量9"
+            "HN分数432",
+            "讨论量415"
           ],
-          "published": "2026-11-11T00:15:33+00:00"
+          "published": "2026-11-11T21:24:35+00:00"
         },
         {
-          "title": "Smart home devices should work without the internet",
-          "summary": "Rule one is that nothing in my house needs a vendor",
-          "titleZh": "智能家居设备不该依赖互联网运行",
-          "summaryZh": "第一条原则是：我家里的任何东西都不需要依赖供应商。",
-          "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+          "title": "My AI agents found an unmapped Maya site?",
+          "summary": "AI agents analyzed public lidar data overnight and found a Maya site under the jungle. It turned out archaeologists had mapped it already, but it wasn't in Mexico's official register yet.",
+          "titleZh": "我的 AI 代理发现了一处未标注的玛雅遗址？",
+          "summaryZh": "AI 代理夜间分析公开的激光雷达数据，在丛林下发现一处玛雅遗址。后来发现，考古学家早已绘制了该遗址的地图，但它尚未列入墨西哥官方名录。",
+          "url": "https://pietromiotti.com/latest/maya-site",
           "source": "Hacker News",
-          "score": 4.44,
+          "score": 7.05,
           "reasons": [
-            "HN分数756",
-            "讨论量272"
+            "AI",
+            "HN分数941",
+            "讨论量339"
           ],
-          "published": "2026-11-10T15:25:20+00:00"
+          "published": "2026-11-11T12:05:22+00:00"
         },
         {
-          "title": "Scion is back and is going to sell a kei truck in America",
-          "summary": "Toyota's Scion is back and this time it's weird. The new Scion is going to sell a Kei truck in America, plus a bike and a hybrid side-by-side",
-          "titleZh": "Scion 回归，将在美国销售一款超迷你的轻型卡车",
-          "summaryZh": "丰田旗下 Scion 回来了，这次的产品相当特别：它将在美国销售一款轻型卡车，还会推出一辆自行车和一款混合动力并排座越野车。",
-          "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+          "title": "Nvidia is preparing to oust Jensen Huang",
+          "summary": "Comments",
+          "titleZh": "英伟达正准备罢免黄仁勋",
+          "summaryZh": "评论",
+          "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
           "source": "Hacker News",
-          "score": 4.38,
+          "score": 4.83,
           "reasons": [
-            "HN分数361",
-            "讨论量265"
+            "HN分数626",
+            "讨论量877"
           ],
-          "published": "2026-11-10T19:50:46+00:00"
+          "published": "2026-11-11T22:31:06+00:00"
         },
         {
-          "title": ".name Grandfathered",
-          "summary": "After a long and expensive battle, news just dropped that Verisign is retracting its plan to terminate 22,000 domain names and email redirects. Although they will be closing new registrations for 3rd-level .name domains,…",
-          "titleZh": ".name 域名获准保留",
-          "summaryZh": "经过漫长且代价高昂的争议，最新消息称 Verisign 撤回了终止 22,000 个域名及邮件转发服务的计划。不过，.name 三级域名将停止接受新注册……",
-          "url": "https://neil.fraser.name/news/2026/11/10/",
+          "title": "AWS emulator",
+          "summary": "AWS Emulator is a local emulator of the AWS APIs. Contribute to aws/aws-emulator development by creating an account on GitHub.",
+          "titleZh": "AWS 模拟器",
+          "summaryZh": "AWS 模拟器是一个用于模拟 AWS API 的本地工具。你可以在 GitHub 上创建账户，为 aws/aws-emulator 项目贡献代码。",
+          "url": "https://github.com/aws/aws-emulator",
           "source": "Hacker News",
-          "score": 4.37,
+          "score": 4.47,
           "reasons": [
-            "HN分数715",
-            "讨论量168"
+            "HN分数724",
+            "讨论量222"
           ],
-          "published": "2026-11-10T16:37:44+00:00"
+          "published": "2026-11-11T18:21:38+00:00"
         },
         {
-          "title": "Starlink Mini 2",
-          "summary": "Starlink delivers fast, reliable internet at home and on the go. Seamlessly stream, video call, game and more with high-speed connectivity even in the most rural and remote places.",
-          "titleZh": "Starlink 迷你版 2",
-          "summaryZh": "Starlink 为家庭和外出场景提供快速、可靠的互联网服务。即使身处偏远乡村，也能通过高速连接顺畅观看流媒体、视频通话、玩游戏等。",
-          "url": "https://starlink.com/mini-2",
+          "title": "Jensen Huang said to have had relationship with executive who reports to him",
+          "summary": "Comments",
+          "titleZh": "据称黄仁勋曾与向他汇报的高管有过一段关系",
+          "summaryZh": "评论",
+          "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
           "source": "Hacker News",
-          "score": 4.31,
+          "score": 4.4,
           "reasons": [
-            "HN分数294",
-            "讨论量297"
+            "HN分数279",
+            "讨论量303"
           ],
-          "published": "2026-11-10T18:22:32+00:00"
+          "published": "2026-11-11T22:03:58+00:00"
         },
         {
-          "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
-          "summary": "Seven months into Project Glasswing, VulnCheck has tracked 442 CVEs attributable to Anthropic, roughly 0.5% of all CVEs published this year, with only two identified as exploited in the wild. Of Anthropic’s 37,966 report…",
-          "titleZh": "历时 7 个月，Glasswing 给维护者带来的发现却不尽如人意",
-          "summaryZh": "Project Glasswing 启动七个月以来，VulnCheck 追踪到 442 个可归因于 Anthropic 的 CVE，约占今年公布的全部 CVE 的 0.5%；其中只有两个被确认已在现实环境中遭利用。Anthropic 收到的 37,966 份报告中……",
-          "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+          "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+          "summary": "A war story from Jane Street’s systems team: a false smoke alarm, a datacenter with no cooling, and a sprint to pull every power cord before the sprinklers went off",
+          "titleZh": "误报烟雾警报险些淹没 Jane Street 在纽约市唯一的数据中心",
+          "summaryZh": "Jane Street 系统团队的一段惊险经历：烟雾警报误报、数据中心失去制冷，以及在洒水系统启动前拔掉所有电源线的紧急行动。",
+          "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
           "source": "Hacker News",
-          "score": 4.28,
+          "score": 4.3,
           "reasons": [
-            "HN分数307",
-            "讨论量138"
+            "HN分数432",
+            "讨论量221"
           ],
-          "published": "2026-11-10T22:17:56+00:00"
+          "published": "2026-11-11T16:38:44+00:00"
         },
         {
-          "title": "Synaptics patent claims stop work on DisplayLink drivers",
-          "summary": "Mike Lothian owns a docking station (or dock) that uses a DisplayLink chipset that had, at leas [...]",
-          "titleZh": "Synaptics 专利主张导致 DisplayLink 驱动开发停摆",
-          "summaryZh": "Mike Lothian 有一个使用 DisplayLink 芯片组的扩展坞（或底座），该芯片组至少曾……",
-          "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+          "title": "Gemini Decisions API",
+          "summary": "The Gemini Decisions API provides fast, calibrated multimodal decisions for Google apps. Evaluate 1,000 questions in one pass. Get the details.",
+          "titleZh": "Gemini 决策 API",
+          "summaryZh": "Gemini Decisions API 可为 Google 应用快速提供经过校准的多模态决策。一次即可评估 1,000 个问题。了解详情。",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
           "source": "Hacker News",
-          "score": 4.22,
+          "score": 4.1,
           "reasons": [
-            "HN分数322",
-            "讨论量182"
+            "HN分数303",
+            "讨论量98"
           ],
-          "published": "2026-11-10T18:02:02+00:00"
+          "published": "2026-11-11T18:32:42+00:00"
         },
         {
-          "title": "AlphaProof Code",
-          "summary": "\b\u0000\u0000\u0000\u0000\u0000\u0002v\u001bǒ}=mO@/ޢvK&eٔe[z@\"\u0016.B\u0001~/֜G8Oqd?#\u0002\bR(7,\u0013(TeeFFFDFFDFְ99 ^wҏӧ׌8n(y`\u0012Iﵶ_ٯ=ދAg; N\u0018뇓kvq N_O \u0007p0a\u0013nd尿4(\u000ep^k\u0005^3foЛȏA\u0014n\u0017r o\u0010^x2\u001a'Mz\u0013jz2 { {^\u0003o{A\u0010o\u0015{/ɰ9ޤ= To{: v{\u0004\u0002zֽ-W㽨78㰽 nm Gu앭h &ak :~\u0010h k\u000e|OGag O¦P\u0014%#5 Fr \u0006o^\u0007϶O |V…",
-          "titleZh": "AlphaProof 代码",
-          "summaryZh": "Google DeepMind 推出 AlphaProof 代码。",
-          "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+          "title": "Tim Peters has died",
+          "summary": "I am immensely sad to announce that Tim Peters has died earlier this year on July 15. It’s hard to overestimate Tim’s influence on Python. He’s probably best known for writing the Zen of Python (PEP 20), but to me he wa…",
+          "titleZh": "Tim Peters 逝世",
+          "summaryZh": "我无比悲痛地宣布，Tim Peters 于今年 7 月 15 日去世。Tim 对 Python 的影响怎么评价都不为过。他最为人熟知的贡献或许是撰写了《Python 之禅》（PEP 20），但对我来说，他……",
+          "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
           "source": "Hacker News",
-          "score": 4.21,
+          "score": 4.07,
           "reasons": [
-            "HN分数586",
-            "讨论量178"
+            "HN分数928",
+            "讨论量101"
           ],
-          "published": "2026-11-10T12:11:12+00:00"
+          "published": "2026-11-11T07:03:17+00:00"
         }
       ]
     },
@@ -127,108 +128,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
-          "summary": "OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.",
-          "titleZh": "OpenAI 收购由 Sonder 创始人创办的旅游初创公司 Odessia",
-          "summaryZh": "OpenAI 尚未透露其未来在旅游领域的计划。不过，Sonder 创始人 Francis Davidson 是旅游行业的知名人士。",
-          "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+          "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+          "summary": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
+          "titleZh": "谁能接替黄仁勋？一份极不科学的潜在继任者名单",
+          "summaryZh": "英伟达没有继任计划，首席执行官也正陷入风波，因此我们拟出了一份候选人短名单。",
+          "url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.59,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-10T21:08:52+00:00"
+          "published": "2026-11-12T03:13:10+00:00"
         },
         {
-          "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
-          "summary": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
-          "titleZh": "纽约 AI 安全法生效，OpenAI 和 Anthropic 将面临新的监管",
-          "summaryZh": "纽约正准备执行全面的 AI 安全法，要求 OpenAI 和 Anthropic 等大型开发商登记、披露安全措施并报告重大事故，否则将面临罚款。",
-          "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+          "title": "The unfolding Jensen Huang scandal: a timeline",
+          "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+          "titleZh": "黄仁勋风波持续发酵：事件时间线",
+          "summaryZh": "这段关系可能影响国家安全；美国和中国正竞相开发最先进的 AI 基础设施。",
+          "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.5,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-10T20:52:13+00:00"
+          "published": "2026-11-11T23:50:00+00:00"
         },
         {
-          "title": "Proximal Ventures raises debut fund to back startups bringing AI to drug development",
-          "summary": "Former SignalFire investor Sahir Raoof raises $27.5 million for new fund targeting AI in pharma.",
-          "titleZh": "Proximal Ventures 募集首支基金，投资将 AI 引入药物研发的初创公司",
-          "summaryZh": "前 SignalFire 投资人 Sahir Raoof 为新基金募集了 2,750 万美元，重点投资将 AI 应用于制药领域的项目。",
-          "url": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
+          "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+          "summary": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
+          "titleZh": "据报道，英伟达董事会准备罢免黄仁勋，公司股价下跌",
+          "summaryZh": "最快到周三晚间，英伟达董事会就可能决定解除这位创始人兼任职 33 年的首席执行官的职务。",
+          "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
           "source": "TechCrunch",
-          "score": 4.41,
+          "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-10T20:47:05+00:00"
+          "published": "2026-11-11T23:28:45+00:00"
         },
         {
-          "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
-          "summary": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of…",
-          "titleZh": "Anthropic 七位创始人将在 IPO 中各自套现约 2.5 亿美元",
-          "summaryZh": "七位联合创始人计划在 IPO 中出售完全相同数量的股份。按发行价区间中位数计算，每人将获得约 2.5 亿美元现金，同时创始团队仍将保持控制权……",
-          "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+          "title": "Jensen Huang accused of having another affair — with an Nvidia exec",
+          "summary": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
+          "titleZh": "黄仁勋被指另有一段关系，对象是英伟达高管",
+          "summaryZh": "黄仁勋此前承认与一名被指为中国情报人员的女性有染，因而受到抨击；如今他又被指与另一名英伟达下属有染。",
+          "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
+          "source": "TechCrunch",
+          "score": 4.48,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-11T23:17:05+00:00"
+        },
+        {
+          "title": "Why the data center you dread might never even be built",
+          "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more…",
+          "titleZh": "你担心的数据中心或许根本建不起来",
+          "summaryZh": "数据中心热潮正遭遇严峻的现实阻碍，包括当地普遍反对、审批延误以及电力争夺。不过，在这些挑战真正显现之前，还有一个更……",
+          "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
+          "source": "TechCrunch",
+          "score": 4.4,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-11T20:15:15+00:00"
+        },
+        {
+          "title": "Meta is losing its longtime head of infrastructure",
+          "summary": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role.",
+          "titleZh": "Meta 将失去长期担任基础设施主管的高管",
+          "summaryZh": "Santosh Janardhan 于 2009 年加入公司，现将卸任其职务。",
+          "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
+          "source": "TechCrunch",
+          "score": 4.4,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-11T20:12:01+00:00"
+        },
+        {
+          "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
+          "summary": "CoreWeave is increasingly asking customers to pay up front, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
+          "titleZh": "CoreWeave 转向客户预付款和短期合同，为 AI 增长融资",
+          "summaryZh": "根据公司第三季度财报，CoreWeave 越来越多地要求客户预付款，以特定合同为担保借款，甚至考虑可能推高价格的短期交易。",
+          "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
           "source": "TechCrunch",
           "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-10T19:57:52+00:00"
+          "published": "2026-11-11T19:54:00+00:00"
         },
         {
-          "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
-          "summary": "The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”",
-          "titleZh": "Oura 将以 6.25 亿美元收购 AI 原生初级医疗保健初创公司 Counsel Health",
-          "summaryZh": "几周前，Oura 以 IPO 市场存在“不确定性”为由，无限期推迟了最高达 22 亿美元的 IPO 计划。",
-          "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+          "title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
+          "summary": "Fractile has now become one of the top-funded players in the race for purpose-built AI chips.",
+          "titleZh": "获 7.2 亿美元融资，英国 Fractile 在 AI 芯片竞赛中取得优势",
+          "summaryZh": "Fractile 已成为专用 AI 芯片竞赛中融资额最高的参与者之一。",
+          "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
           "source": "TechCrunch",
-          "score": 4.37,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-10T19:23:34+00:00"
-        },
-        {
-          "title": "PSI is trying to make a business out of AI-driven scientific discovery",
-          "summary": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.",
-          "titleZh": "PSI 正试图将 AI 驱动的科学发现转化为商业模式",
-          "summaryZh": "PSI 使用 Anthropic 尚未发布的模型，回答了一个关于量子计算的基础问题。科学家们为此已探索近二十年。",
-          "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
-          "source": "TechCrunch",
-          "score": 4.37,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-10T19:03:52+00:00"
-        },
-        {
-          "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
-          "summary": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.",
-          "titleZh": "OpenAI 推出企业资料页，让 ChatGPT 更像 Google",
-          "summaryZh": "OpenAI 希望将 ChatGPT 打造成更强大的消费信息发现引擎，而一系列新功能旨在帮助企业推动这一目标。",
-          "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
-          "source": "TechCrunch",
-          "score": 4.36,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-10T18:49:52+00:00"
-        },
-        {
-          "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
-          "summary": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figur…",
-          "titleZh": "Anthropic 推出 Claude Meetings，将职场讨论转化为计划和任务",
-          "summaryZh": "与会者交谈时，Claude 可以起草讨论中的计划、在白板上梳理时间线、在会议聊天中回答问题，并访问已连接的工作应用获取信息，例如去年的某项内容……",
-          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-          "source": "TechCrunch",
-          "score": 4.32,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-10T17:30:00+00:00"
+          "published": "2026-11-11T19:34:55+00:00"
         }
       ]
     }
@@ -236,7 +237,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-11T11:02:20.298898+08:00"
+      "lastRunAt": "2026-11-12T11:02:54.410349+08:00"
     }
   }
 }
