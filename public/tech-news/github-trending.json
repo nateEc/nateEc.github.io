@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-11T14:30:13+08:00",
-  "date": "2026-11-11",
+  "updatedAt": "2026-11-12T14:30:26+08:00",
+  "date": "2026-11-12",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
@@ -11,129 +11,129 @@
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 3108,
-      "totalStars": 23553,
-      "forks": 1852,
+      "starsToday": 2776,
+      "totalStars": 25458,
+      "forks": 1984,
       "url": "https://github.com/meta/astryx"
     },
     {
       "rank": 2,
-      "fullName": "anthropics/skills",
-      "description": "Public repository for Agent Skills",
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 1679,
-      "totalStars": 192584,
-      "forks": 22670,
-      "url": "https://github.com/anthropics/skills"
+      "starsToday": 278,
+      "totalStars": 70639,
+      "forks": 56982,
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
     },
     {
       "rank": 3,
+      "fullName": "GoogleChrome/modern-web-guidance-src",
+      "description": "",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 159,
+      "totalStars": 1978,
+      "forks": 149,
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+    },
+    {
+      "rank": 4,
+      "fullName": "shadcn/improve",
+      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+      "language": "Unknown",
+      "languageColor": "#8B949E",
+      "starsToday": 361,
+      "totalStars": 11137,
+      "forks": 452,
+      "url": "https://github.com/shadcn/improve"
+    },
+    {
+      "rank": 5,
       "fullName": "addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "languageColor": "#F1E05A",
-      "starsToday": 465,
-      "totalStars": 115355,
-      "forks": 12110,
+      "starsToday": 787,
+      "totalStars": 116130,
+      "forks": 12171,
       "url": "https://github.com/addyosmani/agent-skills"
     },
     {
-      "rank": 4,
-      "fullName": "anthropics/claude-quickstarts",
-      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 531,
-      "totalStars": 20624,
-      "forks": 3477,
-      "url": "https://github.com/anthropics/claude-quickstarts"
-    },
-    {
-      "rank": 5,
-      "fullName": "google-deepmind/mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "language": "C++",
-      "languageColor": "#F34B7D",
-      "starsToday": 456,
-      "totalStars": 17480,
-      "forks": 2157,
-      "url": "https://github.com/google-deepmind/mujoco"
-    },
-    {
       "rank": 6,
-      "fullName": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "languageColor": "#701516",
-      "starsToday": 159,
-      "totalStars": 12212,
-      "forks": 905,
-      "url": "https://github.com/we-promise/sure"
-    },
-    {
-      "rank": 7,
-      "fullName": "homeassistant-ai/ha-mcp",
-      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 790,
-      "totalStars": 6807,
-      "forks": 438,
-      "url": "https://github.com/homeassistant-ai/ha-mcp"
-    },
-    {
-      "rank": 8,
       "fullName": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
       "languageColor": "#DEA584",
-      "starsToday": 780,
-      "totalStars": 49425,
-      "forks": 3461,
+      "starsToday": 708,
+      "totalStars": 50036,
+      "forks": 3492,
       "url": "https://github.com/vercel-labs/agent-browser"
     },
     {
-      "rank": 9,
-      "fullName": "sherlock-project/sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
+      "rank": 7,
+      "fullName": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "languageColor": "#701516",
+      "starsToday": 1078,
+      "totalStars": 13178,
+      "forks": 971,
+      "url": "https://github.com/we-promise/sure"
+    },
+    {
+      "rank": 8,
+      "fullName": "homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 2393,
-      "totalStars": 109380,
-      "forks": 12691,
-      "url": "https://github.com/sherlock-project/sherlock"
+      "starsToday": 645,
+      "totalStars": 7519,
+      "forks": 457,
+      "url": "https://github.com/homeassistant-ai/ha-mcp"
+    },
+    {
+      "rank": 9,
+      "fullName": "openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 52,
+      "totalStars": 11924,
+      "forks": 948,
+      "url": "https://github.com/openai/codex-security"
     },
     {
       "rank": 10,
-      "fullName": "tokio-rs/topcoat",
-      "description": "A batteries-included framework for building web apps",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 192,
-      "totalStars": 6942,
-      "forks": 308,
-      "url": "https://github.com/tokio-rs/topcoat"
+      "fullName": "TheAlgorithms/Java",
+      "description": "All Algorithms implemented in Java",
+      "language": "Java",
+      "languageColor": "#B07219",
+      "starsToday": 51,
+      "totalStars": 67138,
+      "forks": 21518,
+      "url": "https://github.com/TheAlgorithms/Java"
     }
   ],
   "languages": [
     {
+      "name": "TypeScript",
+      "count": 3,
+      "share": 30,
+      "color": "#3178C6"
+    },
+    {
       "name": "Python",
-      "count": 4,
-      "share": 40,
+      "count": 2,
+      "share": 20,
       "color": "#3572A5"
     },
     {
-      "name": "Rust",
-      "count": 2,
-      "share": 20,
-      "color": "#DEA584"
-    },
-    {
-      "name": "C++",
+      "name": "Java",
       "count": 1,
       "share": 10,
-      "color": "#F34B7D"
+      "color": "#B07219"
     },
     {
       "name": "JavaScript",
@@ -148,38 +148,46 @@
       "color": "#701516"
     },
     {
-      "name": "TypeScript",
+      "name": "Rust",
       "count": 1,
       "share": 10,
-      "color": "#3178C6"
+      "color": "#DEA584"
+    },
+    {
+      "name": "Unknown",
+      "count": 1,
+      "share": 10,
+      "color": "#8B949E"
     }
   ],
   "themes": [
     {
-      "name": "Agent systems",
+      "name": "AI infrastructure",
       "count": 5,
       "repositories": [
-        "meta/astryx",
-        "anthropics/skills",
+        "ZhuLinsen/daily_stock_analysis",
+        "shadcn/improve",
         "addyosmani/agent-skills",
+        "vercel-labs/agent-browser"
+      ]
+    },
+    {
+      "name": "Agent systems",
+      "count": 4,
+      "repositories": [
+        "meta/astryx",
+        "addyosmani/agent-skills",
+        "vercel-labs/agent-browser",
         "homeassistant-ai/ha-mcp"
       ]
     },
     {
-      "name": "AI infrastructure",
+      "name": "Developer tools",
       "count": 3,
       "repositories": [
         "addyosmani/agent-skills",
-        "homeassistant-ai/ha-mcp",
-        "vercel-labs/agent-browser"
-      ]
-    },
-    {
-      "name": "Developer tools",
-      "count": 2,
-      "repositories": [
-        "addyosmani/agent-skills",
-        "vercel-labs/agent-browser"
+        "vercel-labs/agent-browser",
+        "openai/codex-security"
       ]
     }
   ]
