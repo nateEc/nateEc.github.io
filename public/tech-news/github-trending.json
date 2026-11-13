@@ -1,145 +1,139 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T14:30:26+08:00",
-  "date": "2026-11-12",
+  "updatedAt": "2026-11-13T14:30:44+08:00",
+  "date": "2026-11-13",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 2776,
-      "totalStars": 25458,
-      "forks": 1984,
-      "url": "https://github.com/meta/astryx"
-    },
-    {
-      "rank": 2,
-      "fullName": "ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 278,
-      "totalStars": 70639,
-      "forks": 56982,
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
-    },
-    {
-      "rank": 3,
       "fullName": "GoogleChrome/modern-web-guidance-src",
-      "description": "",
+      "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 159,
-      "totalStars": 1978,
-      "forks": 149,
+      "starsToday": 739,
+      "totalStars": 3566,
+      "forks": 222,
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
     },
     {
-      "rank": 4,
-      "fullName": "shadcn/improve",
-      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
-      "language": "Unknown",
-      "languageColor": "#8B949E",
-      "starsToday": 361,
-      "totalStars": 11137,
-      "forks": 452,
-      "url": "https://github.com/shadcn/improve"
-    },
-    {
-      "rank": 5,
-      "fullName": "addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 787,
-      "totalStars": 116130,
-      "forks": 12171,
-      "url": "https://github.com/addyosmani/agent-skills"
-    },
-    {
-      "rank": 6,
-      "fullName": "vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 708,
-      "totalStars": 50036,
-      "forks": 3492,
-      "url": "https://github.com/vercel-labs/agent-browser"
-    },
-    {
-      "rank": 7,
-      "fullName": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "languageColor": "#701516",
-      "starsToday": 1078,
-      "totalStars": 13178,
-      "forks": 971,
-      "url": "https://github.com/we-promise/sure"
-    },
-    {
-      "rank": 8,
-      "fullName": "homeassistant-ai/ha-mcp",
-      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 645,
-      "totalStars": 7519,
-      "forks": 457,
-      "url": "https://github.com/homeassistant-ai/ha-mcp"
-    },
-    {
-      "rank": 9,
+      "rank": 2,
       "fullName": "openai/codex-security",
       "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 52,
-      "totalStars": 11924,
-      "forks": 948,
+      "starsToday": 643,
+      "totalStars": 12635,
+      "forks": 986,
       "url": "https://github.com/openai/codex-security"
     },
     {
+      "rank": 3,
+      "fullName": "nvm-sh/nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "language": "Shell",
+      "languageColor": "#89E051",
+      "starsToday": 63,
+      "totalStars": 96055,
+      "forks": 10761,
+      "url": "https://github.com/nvm-sh/nvm"
+    },
+    {
+      "rank": 4,
+      "fullName": "pookjw/HermesEnabler",
+      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "language": "Objective-C",
+      "languageColor": "#8B949E",
+      "starsToday": 218,
+      "totalStars": 1639,
+      "forks": 145,
+      "url": "https://github.com/pookjw/HermesEnabler"
+    },
+    {
+      "rank": 5,
+      "fullName": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "languageColor": "#701516",
+      "starsToday": 967,
+      "totalStars": 14150,
+      "forks": 1066,
+      "url": "https://github.com/we-promise/sure"
+    },
+    {
+      "rank": 6,
+      "fullName": "QwenLM/qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 151,
+      "totalStars": 29969,
+      "forks": 3409,
+      "url": "https://github.com/QwenLM/qwen-code"
+    },
+    {
+      "rank": 7,
+      "fullName": "ashhart/TensorFold",
+      "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "language": "Zig",
+      "languageColor": "#8B949E",
+      "starsToday": 54,
+      "totalStars": 2011,
+      "forks": 397,
+      "url": "https://github.com/ashhart/TensorFold"
+    },
+    {
+      "rank": 8,
+      "fullName": "nodejs/node",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 62,
+      "totalStars": 123645,
+      "forks": 38060,
+      "url": "https://github.com/nodejs/node"
+    },
+    {
+      "rank": 9,
+      "fullName": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "languageColor": "#F1E05A",
+      "starsToday": 816,
+      "totalStars": 116831,
+      "forks": 12218,
+      "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
       "rank": 10,
-      "fullName": "TheAlgorithms/Java",
-      "description": "All Algorithms implemented in Java",
-      "language": "Java",
-      "languageColor": "#B07219",
-      "starsToday": 51,
-      "totalStars": 67138,
-      "forks": 21518,
-      "url": "https://github.com/TheAlgorithms/Java"
+      "fullName": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 1830,
+      "totalStars": 26854,
+      "forks": 2084,
+      "url": "https://github.com/meta/astryx"
     }
   ],
   "languages": [
     {
       "name": "TypeScript",
-      "count": 3,
-      "share": 30,
+      "count": 4,
+      "share": 40,
       "color": "#3178C6"
     },
     {
-      "name": "Python",
+      "name": "JavaScript",
       "count": 2,
       "share": 20,
-      "color": "#3572A5"
-    },
-    {
-      "name": "Java",
-      "count": 1,
-      "share": 10,
-      "color": "#B07219"
-    },
-    {
-      "name": "JavaScript",
-      "count": 1,
-      "share": 10,
       "color": "#F1E05A"
+    },
+    {
+      "name": "Objective-C",
+      "count": 1,
+      "share": 10,
+      "color": "#8B949E"
     },
     {
       "name": "Ruby",
@@ -148,13 +142,13 @@
       "color": "#701516"
     },
     {
-      "name": "Rust",
+      "name": "Shell",
       "count": 1,
       "share": 10,
-      "color": "#DEA584"
+      "color": "#89E051"
     },
     {
-      "name": "Unknown",
+      "name": "Zig",
       "count": 1,
       "share": 10,
       "color": "#8B949E"
@@ -162,32 +156,32 @@
   ],
   "themes": [
     {
-      "name": "AI infrastructure",
-      "count": 5,
-      "repositories": [
-        "ZhuLinsen/daily_stock_analysis",
-        "shadcn/improve",
-        "addyosmani/agent-skills",
-        "vercel-labs/agent-browser"
-      ]
-    },
-    {
       "name": "Agent systems",
       "count": 4,
       "repositories": [
-        "meta/astryx",
+        "GoogleChrome/modern-web-guidance-src",
+        "QwenLM/qwen-code",
         "addyosmani/agent-skills",
-        "vercel-labs/agent-browser",
-        "homeassistant-ai/ha-mcp"
+        "meta/astryx"
       ]
     },
     {
       "name": "Developer tools",
+      "count": 4,
+      "repositories": [
+        "GoogleChrome/modern-web-guidance-src",
+        "openai/codex-security",
+        "QwenLM/qwen-code",
+        "addyosmani/agent-skills"
+      ]
+    },
+    {
+      "name": "AI infrastructure",
       "count": 3,
       "repositories": [
-        "addyosmani/agent-skills",
-        "vercel-labs/agent-browser",
-        "openai/codex-security"
+        "QwenLM/qwen-code",
+        "ashhart/TensorFold",
+        "addyosmani/agent-skills"
       ]
     }
   ]
