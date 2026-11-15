@@ -1,125 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-13T11:31:02+08:00",
-  "date": "2026-11-13",
+  "updatedAt": "2026-11-15T11:31:01+08:00",
+  "date": "2026-11-15",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI is turning Apple's app review process into a nightmare for synth developers",
-          "summary": "The surge of AI and AI-generated apps is overwhelming Apple’s app review process, leaving developers caught in the crossfire – two examples!",
-          "titleZh": "AI 正让苹果的应用审核流程成为合成器开发者的噩梦",
-          "summaryZh": "AI 和 AI 生成应用激增，令苹果的应用审核流程不堪重负，开发者也因此受到波及——这里有两个例子！",
-          "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+          "title": "Generative AI uses more energy on non-English text",
+          "summary": "Comments",
+          "titleZh": "生成式 AI 处理非英语文本时能耗更高",
+          "summaryZh": "评论",
+          "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
           "source": "Hacker News",
-          "score": 6.56,
+          "score": 4.83,
           "reasons": [
             "AI",
-            "HN分数116",
-            "讨论量114"
+            "HN分数188",
+            "讨论量100"
           ],
-          "published": "2026-11-12T21:09:49+00:00"
+          "published": "2026-11-10T15:07:28+00:00"
         },
         {
-          "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
-          "summary": "Meet Edge0-145B, an open-source 145B model for local coding, reasoning, and agent tasks, with no cloud-model token fees for local inference.",
-          "titleZh": "Edge0-145B：在自己的电脑上体验前沿 AI 能力",
-          "summaryZh": "Edge0-145B 是一款开源的 145B 模型，可在本地执行编程、推理和智能体任务，使用本地推理无需支付云端模型的 token 费用。",
-          "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+          "title": "SpaceX catches the Starship to end Flight 15",
+          "summary": "SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.",
+          "titleZh": "SpaceX 接住星舰，结束第 15 次飞行",
+          "summaryZh": "SpaceX 设计、制造并发射先进的火箭和航天器。公司成立于 2002 年，旨在革新航天技术，最终目标是让人类能够在其他星球生活。",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
           "source": "Hacker News",
-          "score": 6.2,
+          "score": 4.79,
           "reasons": [
-            "AI",
-            "HN分数87",
-            "讨论量19"
+            "HN分数848",
+            "讨论量572"
           ],
-          "published": "2026-11-12T23:06:17+00:00"
+          "published": "2026-11-14T21:22:24+00:00"
         },
         {
-          "title": "Jensen Huang resigns",
-          "summary": "Comments",
-          "titleZh": "黄仁勋辞职",
-          "summaryZh": "评论",
-          "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+          "title": "Lovable apps expose passport details and more than 200K private messages",
+          "summary": "Our analysis of 159,041 Lovable projects reveals many cases where sensitive data was accessible without logging in.",
+          "titleZh": "Lovable 应用泄露护照信息和超过 20 万条私人消息",
+          "summaryZh": "我们对 159,041 个 Lovable 项目的分析发现，许多案例中的敏感数据无需登录即可访问。",
+          "url": "https://www.crissyfield.de/research/lovable-en/",
           "source": "Hacker News",
-          "score": 5.22,
+          "score": 4.49,
           "reasons": [
-            "HN分数3088",
-            "讨论量2896"
+            "HN分数690",
+            "讨论量283"
           ],
-          "published": "2026-11-12T13:52:29+00:00"
+          "published": "2026-11-14T17:43:10+00:00"
         },
         {
-          "title": "Service degradation on Microsoft 365",
-          "summary": "Comments",
-          "titleZh": "Microsoft 365 服务降级",
-          "summaryZh": "评论",
-          "url": "https://status.cloud.microsoft/",
+          "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+          "summary": "A recent Wall Street Journal profile of Nvidia interim CEO Colette Kress has shed more light on how Nvidia controversially financed its own customers to drive the...",
+          "titleZh": "Nvidia 通过循环融资交易蓄意维持 GPU 高价",
+          "summaryZh": "《华尔街日报》近期对 Nvidia 临时首席执行官 Colette Kress 的专题报道，进一步揭示了 Nvidia 如何颇具争议地为自己的客户提供融资，以推动……",
+          "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
           "source": "Hacker News",
-          "score": 4.6,
+          "score": 4.26,
           "reasons": [
-            "HN分数583",
-            "讨论量537"
-          ],
-          "published": "2026-11-12T18:20:48+00:00"
-        },
-        {
-          "title": "Gemini 4 Hydrogen",
-          "summary": "Google introduces Gemini 4 Hydrogen, a fast, cost-efficient model built for reliable agentic workflows and everyday tasks. Get the details.",
-          "titleZh": "Gemini 4 Hydrogen 模型",
-          "summaryZh": "Google 推出 Gemini 4 Hydrogen。这款模型速度快、成本效益高，专为可靠的智能体工作流和日常任务打造。了解详情。",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-          "source": "Hacker News",
-          "score": 4.42,
-          "reasons": [
-            "HN分数480",
-            "讨论量302"
-          ],
-          "published": "2026-11-12T18:01:48+00:00"
-        },
-        {
-          "title": "Rust 1.100",
-          "summary": "Empowering everyone to build reliable and efficient software.",
-          "titleZh": "Rust 1.100 版本",
-          "summaryZh": "助力每个人构建可靠、高效的软件。",
-          "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-          "source": "Hacker News",
-          "score": 4.37,
-          "reasons": [
-            "HN分数481",
-            "讨论量206"
-          ],
-          "published": "2026-11-12T18:39:05+00:00"
-        },
-        {
-          "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
-          "summary": "Free, open-source embroidery software for Mac and Windows. Turn SVG artwork into machine embroidery, edit stitches visually, and create designs with AI agents via MCP. - simpsoka/zigzag",
-          "titleZh": "Show HN：我的 300 美元刺绣机需要订阅，我于是自己开发了应用",
-          "summaryZh": "适用于 Mac 和 Windows 的免费开源刺绣软件。将 SVG 图稿转换为机器刺绣图案、直观地编辑针迹，还可通过 MCP 使用 AI 智能体创建设计。- simpsoka/zigzag",
-          "url": "https://github.com/simpsoka/zigzag",
-          "source": "Hacker News",
-          "score": 4.19,
-          "reasons": [
-            "HN分数375",
+            "HN分数269",
             "讨论量147"
           ],
-          "published": "2026-11-12T17:02:42+00:00"
+          "published": "2026-11-14T22:26:30+00:00"
         },
         {
-          "title": "Gemini 4 Hydrogen and Orchestrator",
-          "summary": "Today, we",
-          "titleZh": "Gemini 4 Hydrogen 与 Orchestrator",
-          "summaryZh": "今天，我们",
-          "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+          "title": "A family tree of software job titles",
+          "summary": "For a few years I was ‘Head of DevOps’. Before I got that job title I’d done much the same work under other names, and since then I’ve watched the same work get called SRE, and then it seemed to morph towards platform en…",
+          "titleZh": "软件职位名称的演变谱系",
+          "summaryZh": "有几年我担任“DevOps 负责人”。在得到这个职位名称之前，我做的基本是同样的工作，只是叫法不同；此后我又看到同样的工作被称为 SRE，后来似乎又逐渐演变成平台工程……",
+          "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
           "source": "Hacker News",
-          "score": 4.1,
+          "score": 4.04,
           "reasons": [
-            "HN分数333",
-            "讨论量83"
+            "HN分数232",
+            "讨论量113"
           ],
-          "published": "2026-11-12T18:52:01+00:00"
+          "published": "2026-11-14T17:45:19+00:00"
+        },
+        {
+          "title": "KDE: The documentary [video]",
+          "summary": "KDE: The Documentary tells the story of the pioneering open source community that gave computer users a free and open alternative to proprietary desktops like Windows. The story starts in 1996, whe...",
+          "titleZh": "KDE：这部纪录片 [视频]",
+          "summaryZh": "《KDE：这部纪录片》讲述了这个开创性的开源社区的故事。它为计算机用户提供了免费的开放式桌面环境，作为 Windows 等专有桌面系统的替代选择。故事始于 1996 年，当时……",
+          "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+          "source": "Hacker News",
+          "score": 4.01,
+          "reasons": [
+            "HN分数402",
+            "讨论量87"
+          ],
+          "published": "2026-11-14T13:43:28+00:00"
+        },
+        {
+          "title": "PyPI's redesigned project pages with clearer security signals are now live",
+          "summary": "PyPI now makes it simple to check where release files come from, with a dedicated security tab, a rebuilt release files tab, and refreshed documentation.",
+          "titleZh": "PyPI 改版后的项目页面现已上线，安全信息更加清晰",
+          "summaryZh": "PyPI 现在让用户可以轻松查看发行文件的来源，并新增专门的安全标签页、重建发行文件标签页，还更新了文档。",
+          "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+          "source": "Hacker News",
+          "score": 3.93,
+          "reasons": [
+            "HN分数215",
+            "讨论量94"
+          ],
+          "published": "2026-11-14T15:40:52+00:00"
+        },
+        {
+          "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+          "summary": "Comments",
+          "titleZh": "Woz 在造出电脑之前是如何编写 Apple 1 BASIC 的？",
+          "summaryZh": "评论",
+          "url": "https://retrocomputing.stackexchange.com/questions/17957",
+          "source": "Hacker News",
+          "score": 3.84,
+          "reasons": [
+            "HN分数132",
+            "讨论量44"
+          ],
+          "published": "2026-11-14T22:22:49+00:00"
         }
       ]
     },
@@ -128,108 +127,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-          "summary": "This Congressional investigation into Nvidia's China sales and its dealings with Trump is the second one, so far, since news of the alleged spy affair broke.",
-          "titleZh": "民主党人启动对 Nvidia 的调查，致信严厉谴责黄仁勋与特朗普的“勾结”",
-          "summaryZh": "这是针对 Nvidia 对华销售及其与特朗普往来的国会调查；自所谓间谍丑闻曝光以来，这已是迄今为止的第二项调查。",
-          "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+          "title": "Where was Nvidia’s security team?",
+          "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intellig…",
+          "titleZh": "Nvidia 的安全团队当时在哪里？",
+          "summaryZh": "Nvidia 的安全主管于 8 月悄然离职；如今，首席执行官 Jensen Huang 因其关系——其中包括与一家涉嫌向中国输送芯片的公司高管的关系——而卸任。一位前情报……",
+          "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
           "source": "TechCrunch",
-          "score": 4.47,
+          "score": 4.51,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-12T22:42:51+00:00"
+          "published": "2026-11-15T00:08:07+00:00"
         },
         {
-          "title": "Muse can now place calls to US businesses — if you pay",
-          "summary": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free.",
-          "titleZh": "Muse 现在可以拨打电话给美国企业——但需要付费",
-          "summaryZh": "Muse 的 AI 现在可以主动致电美国企业，但这项服务并非免费。",
-          "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+          "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+          "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+          "titleZh": "Elon Musk 等科技高管签署请愿书，呼吁 Nvidia 恢复 Jensen Huang 的职务",
+          "summaryZh": "截至周六下午，这份请愿书已获得超过 11.5 万个签名。",
+          "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
           "source": "TechCrunch",
-          "score": 4.46,
+          "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-12T22:22:28+00:00"
+          "published": "2026-11-14T21:41:22+00:00"
         },
         {
-          "title": "The unfolding Jensen Huang scandal: a timeline",
-          "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-          "titleZh": "黄仁勋风波持续发酵：事件时间线",
-          "summaryZh": "黄仁勋在发生婚外情后已辞去 Nvidia 职务。随着美国和中国竞相开发最先进的 AI 基础设施，此事可能对国家安全产生影响。",
-          "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+          "title": "Transportation secretary blames ‘routine’ equipment upgrade for grounding flights nationwide",
+          "summary": "FAA administrator Bryan Bedford also said there's \"zero evidence of anything AI-related.\"",
+          "titleZh": "交通部长称“常规”设备升级导致全国航班停飞",
+          "summaryZh": "美国联邦航空管理局局长 Bryan Bedford 还表示，“没有任何证据表明这与人工智能有关。”",
+          "url": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.33,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-12T21:35:00+00:00"
+          "published": "2026-11-14T17:45:04+00:00"
         },
         {
-          "title": "Nebius tests the neocloud playbook with $40 billion in planned spending",
-          "summary": "Nebius plans to fund its $40 billion AI infrastructure expansion through customer prepayments and loans, even as delays at a Microsoft data center raise questions about its financing model.",
-          "titleZh": "Nebius 计划投入 400 亿美元，试水新云计算发展模式",
-          "summaryZh": "Nebius 计划通过客户预付款和贷款，为其 400 亿美元的 AI 基础设施扩张筹资；与此同时，微软数据中心项目的延期也让其融资模式受到质疑。",
-          "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+          "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+          "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+          "titleZh": "AI 墓地：持续更新的失败项目与创业公司名单",
+          "summaryZh": "从苹果一再延期的 Siri AI，到 OpenAI 混乱推出的“超级应用”，本文盘点了已经关闭或未达预期的 AI 项目。",
+          "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.32,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-12T21:27:10+00:00"
+          "published": "2026-11-14T17:30:00+00:00"
         },
         {
-          "title": "Jensen Huang was having a third affair, Reuters reports",
-          "summary": "Reuters is withholding the name of the new employee linked to Huang, but says she is an employee of Nvidia.",
-          "titleZh": "路透社报道：黄仁勋曾有第三段婚外情",
-          "summaryZh": "路透社未披露与黄仁勋有关联的新员工姓名，但称她是 Nvidia 员工。",
-          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
+          "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+          "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+          "titleZh": "亚洲各国政府回应 Nvidia 首席执行官 Jensen Huang 离任",
+          "summaryZh": "一些政府采取行动确认芯片供应承诺，另一些则在监测其对本地项目的影响，或处理正在进行的调查。",
+          "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 4.3,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-12T20:26:47+00:00"
+          "published": "2026-11-14T16:34:15+00:00"
         },
         {
-          "title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
-          "summary": "Powered by Gemini 4 Hydrogen, Google's AI Mode is getting better at understanding complex queries, surfacing relevant links, and delivering richer visual responses.",
-          "titleZh": "Google 最新搜索升级，承诺更好地回答最复杂的问题",
-          "summaryZh": "在 Gemini 4 Hydrogen 的驱动下，Google 的 AI 模式将更善于理解复杂查询、呈现相关链接，并提供更丰富的视觉化回答。",
-          "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+          "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+          "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+          "titleZh": "风投人士和创始人称，Jensen Huang 离任给 AI 创业公司融资造成巨大缺口",
+          "summaryZh": "在 Huang 的领导下，Nvidia 向 AI 创业公司投入了数百亿美元。没有他掌舵，创始人和风投人士正准备应对更小额的投资和更低的估值。",
+          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 3.8,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-12T19:27:45+00:00"
+          "published": "2026-11-13T22:43:00+00:00"
         },
         {
-          "title": "Nectar launches an AI agent to automate creator discovery and outreach for brands",
-          "summary": "Nectar's new AI agent automates influencer marketing, helping brands discover creators, manage outreach and partnerships, and track campaign results.",
-          "titleZh": "Nectar 推出 AI 智能体，帮助品牌自动发现创作者并开展联络",
-          "summaryZh": "Nectar 的新 AI 智能体可自动处理网红营销，帮助品牌发现创作者、管理联络与合作，并追踪营销活动成效。",
-          "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/",
+          "title": "AI agent startup LangChain hits $3B valuation",
+          "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+          "titleZh": "AI 智能体创业公司 LangChain 估值达到 30 亿美元",
+          "summaryZh": "LangChain 目前称，其模型和平台无关的智能体管理工具 LangSmith 已拥有 7,000 家客户。",
+          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
           "source": "TechCrunch",
-          "score": 4.37,
+          "score": 3.71,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-12T19:11:00+00:00"
+          "published": "2026-11-13T19:37:57+00:00"
         },
         {
-          "title": "Jensen Huang’s exit puts Nvidia’s support for open source in question",
-          "summary": "Jensen Huang’s resignation raises questions about Nvidia’s commitment to open source AI, including its Hugging Face acquisition, open-weight models, and advocacy against restrictions, as the company navigates a leadershi…",
-          "titleZh": "黄仁勋离职令 Nvidia 对开源的支持受到质疑",
-          "summaryZh": "黄仁勋辞职引发外界对 Nvidia 是否仍致力于开源 AI 的疑问，相关议题包括收购 Hugging Face、开放权重模型以及反对限制措施的立场；与此同时，公司正面临领导层……",
-          "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+          "title": "Tesla opens Cybercab pre-orders ‘for personal use,’ with geo restrictions and a $299 monthly fee",
+          "summary": "Even Elon Musk said the monthly fee is \"too high.\"",
+          "titleZh": "Tesla 开放 Cybercab 个人用途预订，但设有地理限制且月费为 299 美元",
+          "summaryZh": "连 Elon Musk 也表示，这个月费“太高了”。",
+          "url": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
           "source": "TechCrunch",
-          "score": 4.35,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-12T18:39:23+00:00"
+          "score": 1.79,
+          "reasons": [],
+          "published": "2026-11-14T20:04:44+00:00"
         }
       ]
     }
@@ -237,7 +234,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-13T11:02:20.882283+08:00"
+      "lastRunAt": "2026-11-15T11:01:33.908404+08:00"
     }
   }
 }
