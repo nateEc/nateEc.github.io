@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-14T14:31:06+08:00",
-  "date": "2026-11-14",
+  "updatedAt": "2026-11-15T14:30:49+08:00",
+  "date": "2026-11-15",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
-      "fullName": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "starsToday": 215,
-      "totalStars": 50829,
-      "forks": 3785,
-      "url": "https://github.com/alibaba/open-code-review"
+      "fullName": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 408,
+      "totalStars": 11342,
+      "forks": 967,
+      "url": "https://github.com/backnotprop/plannotator"
     },
     {
       "rank": 2,
@@ -22,105 +22,105 @@
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 1925,
-      "totalStars": 5068,
-      "forks": 278,
+      "starsToday": 1231,
+      "totalStars": 6280,
+      "forks": 465,
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
     },
     {
       "rank": 3,
-      "fullName": "openai/codex-security",
-      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 751,
-      "totalStars": 13257,
-      "forks": 1027,
-      "url": "https://github.com/openai/codex-security"
-    },
-    {
-      "rank": 4,
-      "fullName": "ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "languageColor": "#3572A5",
-      "starsToday": 256,
-      "totalStars": 71854,
-      "forks": 57362,
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
-    },
-    {
-      "rank": 5,
-      "fullName": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "languageColor": "#701516",
-      "starsToday": 925,
-      "totalStars": 14880,
-      "forks": 1132,
-      "url": "https://github.com/we-promise/sure"
-    },
-    {
-      "rank": 6,
-      "fullName": "backnotprop/plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "language": "TypeScript",
-      "languageColor": "#3178C6",
-      "starsToday": 108,
-      "totalStars": 10559,
-      "forks": 791,
-      "url": "https://github.com/backnotprop/plannotator"
-    },
-    {
-      "rank": 7,
-      "fullName": "louislam/uptime-kuma",
-      "description": "A fancy self-hosted monitoring tool",
-      "language": "JavaScript",
-      "languageColor": "#F1E05A",
-      "starsToday": 71,
-      "totalStars": 93958,
-      "forks": 8728,
-      "url": "https://github.com/louislam/uptime-kuma"
-    },
-    {
-      "rank": 8,
-      "fullName": "block/buzz",
-      "description": "A hive mind communication platform",
-      "language": "Rust",
-      "languageColor": "#DEA584",
-      "starsToday": 97,
-      "totalStars": 37355,
-      "forks": 4944,
-      "url": "https://github.com/block/buzz"
-    },
-    {
-      "rank": 9,
       "fullName": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 69,
-      "totalStars": 4298,
-      "forks": 880,
+      "starsToday": 553,
+      "totalStars": 4983,
+      "forks": 1041,
       "url": "https://github.com/tradermonty/claude-trading-skills"
     },
     {
-      "rank": 10,
-      "fullName": "tailscale/tailcat",
-      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "rank": 4,
+      "fullName": "ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 664,
+      "totalStars": 56456,
+      "forks": 4780,
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+      "rank": 5,
+      "fullName": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "starsToday": 256,
-      "totalStars": 9569,
-      "forks": 435,
-      "url": "https://github.com/tailscale/tailcat"
+      "starsToday": 893,
+      "totalStars": 51566,
+      "forks": 3973,
+      "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+      "rank": 6,
+      "fullName": "QwenLM/qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 64,
+      "totalStars": 30416,
+      "forks": 3523,
+      "url": "https://github.com/QwenLM/qwen-code"
+    },
+    {
+      "rank": 7,
+      "fullName": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 495,
+      "totalStars": 25083,
+      "forks": 2294,
+      "url": "https://github.com/dream-num/univer"
+    },
+    {
+      "rank": 8,
+      "fullName": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "languageColor": "#3178C6",
+      "starsToday": 9,
+      "totalStars": 17455,
+      "forks": 1716,
+      "url": "https://github.com/ag-ui-protocol/ag-ui"
+    },
+    {
+      "rank": 9,
+      "fullName": "ashhart/TensorFold",
+      "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "language": "Zig",
+      "languageColor": "#8B949E",
+      "starsToday": 37,
+      "totalStars": 2200,
+      "forks": 517,
+      "url": "https://github.com/ashhart/TensorFold"
+    },
+    {
+      "rank": 10,
+      "fullName": "JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "starsToday": 227,
+      "totalStars": 120173,
+      "forks": 7006,
+      "url": "https://github.com/JuliusBrussee/caveman"
     }
   ],
   "languages": [
     {
       "name": "TypeScript",
-      "count": 3,
-      "share": 30,
+      "count": 6,
+      "share": 60,
       "color": "#3178C6"
     },
     {
@@ -131,55 +131,46 @@
     },
     {
       "name": "Python",
-      "count": 2,
-      "share": 20,
+      "count": 1,
+      "share": 10,
       "color": "#3572A5"
     },
     {
-      "name": "JavaScript",
+      "name": "Zig",
       "count": 1,
       "share": 10,
-      "color": "#F1E05A"
-    },
-    {
-      "name": "Ruby",
-      "count": 1,
-      "share": 10,
-      "color": "#701516"
-    },
-    {
-      "name": "Rust",
-      "count": 1,
-      "share": 10,
-      "color": "#DEA584"
+      "color": "#8B949E"
     }
   ],
   "themes": [
     {
-      "name": "Developer tools",
-      "count": 5,
+      "name": "Agent systems",
+      "count": 8,
       "repositories": [
-        "alibaba/open-code-review",
+        "backnotprop/plannotator",
         "GoogleChrome/modern-web-guidance-src",
-        "openai/codex-security",
-        "backnotprop/plannotator"
+        "ChromeDevTools/chrome-devtools-mcp",
+        "alibaba/open-code-review"
       ]
     },
     {
-      "name": "Agent systems",
-      "count": 3,
+      "name": "Developer tools",
+      "count": 7,
       "repositories": [
-        "alibaba/open-code-review",
+        "backnotprop/plannotator",
         "GoogleChrome/modern-web-guidance-src",
-        "backnotprop/plannotator"
+        "tradermonty/claude-trading-skills",
+        "ChromeDevTools/chrome-devtools-mcp"
       ]
     },
     {
       "name": "AI infrastructure",
-      "count": 2,
+      "count": 4,
       "repositories": [
         "alibaba/open-code-review",
-        "ZhuLinsen/daily_stock_analysis"
+        "QwenLM/qwen-code",
+        "dream-num/univer",
+        "ashhart/TensorFold"
       ]
     }
   ]
