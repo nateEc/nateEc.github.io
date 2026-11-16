@@ -1,124 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-15T11:31:01+08:00",
-  "date": "2026-11-15",
+  "updatedAt": "2026-11-16T11:31:22+08:00",
+  "date": "2026-11-16",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Generative AI uses more energy on non-English text",
+          "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+          "summary": "Wegen der Outlook-Störung am Freitag bekam das Phantasialand nicht mit, dass zu viel Chlor im Pool war. 15 Gäste wurden verletzt.",
+          "titleZh": "Microsoft 365 故障导致 15 名酒店住客氯气中毒",
+          "summaryZh": "由于周五 Outlook 故障，梦幻乐园未能及时得知泳池氯含量过高，导致 15 名游客受伤。",
+          "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+          "source": "Hacker News",
+          "score": 4.32,
+          "reasons": [
+            "HN分数430",
+            "讨论量190"
+          ],
+          "published": "2026-11-15T18:36:10+00:00"
+        },
+        {
+          "title": "The MacBook Pro's OLED PWM problem",
+          "summary": "Apple has made a spectacular display. But spectacular isn’t the same as comfortable, and the people discovering that distinction deserve to be heard.",
+          "titleZh": "MacBook Pro 的 OLED 屏幕 PWM 问题",
+          "summaryZh": "Apple 打造了一块出色的显示屏。但显示效果出色不等于使用舒适，发现这一差别的人值得被倾听。",
+          "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+          "source": "Hacker News",
+          "score": 4.22,
+          "reasons": [
+            "HN分数430",
+            "讨论量242"
+          ],
+          "published": "2026-11-15T13:15:22+00:00"
+        },
+        {
+          "title": "Old Bitly links are being hijacked",
+          "summary": "Burger King and McDonald's were not hacked. Someone re-registered the Bitly links in their 2011 tweets, and 57 of 97 links in old Trump tweets have been replaced too.",
+          "titleZh": "旧 Bitly 链接正遭到劫持",
+          "summaryZh": "Burger King 和 McDonald's 并未遭到黑客攻击。有人重新注册了它们在 2011 年推文中使用的 Bitly 链接；特朗普旧推文中的 97 个链接也有 57 个被替换。",
+          "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+          "source": "Hacker News",
+          "score": 4.12,
+          "reasons": [
+            "HN分数202",
+            "讨论量106"
+          ],
+          "published": "2026-11-15T22:11:43+00:00"
+        },
+        {
+          "title": "Crows make decisions faster than we can",
           "summary": "Comments",
-          "titleZh": "生成式 AI 处理非英语文本时能耗更高",
+          "titleZh": "乌鸦做决定的速度比人类还快",
           "summaryZh": "评论",
-          "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+          "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
           "source": "Hacker News",
-          "score": 4.83,
+          "score": 4.02,
           "reasons": [
-            "AI",
-            "HN分数188",
-            "讨论量100"
+            "HN分数184",
+            "讨论量137"
           ],
-          "published": "2026-11-10T15:07:28+00:00"
+          "published": "2026-11-15T17:53:31+00:00"
         },
         {
-          "title": "SpaceX catches the Starship to end Flight 15",
-          "summary": "SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.",
-          "titleZh": "SpaceX 接住星舰，结束第 15 次飞行",
-          "summaryZh": "SpaceX 设计、制造并发射先进的火箭和航天器。公司成立于 2002 年，旨在革新航天技术，最终目标是让人类能够在其他星球生活。",
-          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "title": "What's Next for Nvidia?",
+          "summary": "Nvidia’s board announced that Jensen Huang had resigned 33 years after he co-founded the company. What happens to a company when a visionary CEO is gone? Most often innovation dies and the company coasts for years on mom…",
+          "titleZh": "Nvidia 的下一步是什么？",
+          "summaryZh": "Nvidia 董事会宣布，联合创办公司 33 年后，Jensen Huang 已辞职。失去一位富有远见的 CEO 后，公司会怎样？多数情况下，创新会停滞，公司则依靠过去的成果维持多年……",
+          "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
           "source": "Hacker News",
-          "score": 4.79,
+          "score": 3.99,
           "reasons": [
-            "HN分数848",
-            "讨论量572"
+            "HN分数97",
+            "讨论量109"
           ],
-          "published": "2026-11-14T21:22:24+00:00"
+          "published": "2026-11-15T23:55:55+00:00"
         },
         {
-          "title": "Lovable apps expose passport details and more than 200K private messages",
-          "summary": "Our analysis of 159,041 Lovable projects reveals many cases where sensitive data was accessible without logging in.",
-          "titleZh": "Lovable 应用泄露护照信息和超过 20 万条私人消息",
-          "summaryZh": "我们对 159,041 个 Lovable 项目的分析发现，许多案例中的敏感数据无需登录即可访问。",
-          "url": "https://www.crissyfield.de/research/lovable-en/",
+          "title": "A short explainer on how El Niño works [video]",
+          "summary": "What does this winter’s El Niño mean for your flying? We break down the 2026–27 winter outlook by region and explain what the changing weather pattern could ...",
+          "titleZh": "简短解读：厄尔尼诺如何形成 [视频]",
+          "summaryZh": "今年冬季的厄尔尼诺会如何影响你的飞行？我们按地区解析 2026—27 年冬季展望，并说明这一变化中的天气模式可能带来的影响……",
+          "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
           "source": "Hacker News",
-          "score": 4.49,
+          "score": 3.95,
           "reasons": [
-            "HN分数690",
-            "讨论量283"
+            "HN分数191",
+            "讨论量85"
           ],
-          "published": "2026-11-14T17:43:10+00:00"
+          "published": "2026-11-15T18:23:21+00:00"
         },
         {
-          "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
-          "summary": "A recent Wall Street Journal profile of Nvidia interim CEO Colette Kress has shed more light on how Nvidia controversially financed its own customers to drive the...",
-          "titleZh": "Nvidia 通过循环融资交易蓄意维持 GPU 高价",
-          "summaryZh": "《华尔街日报》近期对 Nvidia 临时首席执行官 Colette Kress 的专题报道，进一步揭示了 Nvidia 如何颇具争议地为自己的客户提供融资，以推动……",
-          "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+          "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+          "summary": "It's not about technology for its own sake. It's about being able to implement your ideas.",
+          "titleZh": "Turbo Pascal 比这些东西还小（2011）",
+          "summaryZh": "重点不在于为了技术而追求技术，而在于能够实现自己的想法。",
+          "url": "https://prog21.dadgum.com/116.html",
           "source": "Hacker News",
-          "score": 4.26,
+          "score": 3.9,
           "reasons": [
-            "HN分数269",
-            "讨论量147"
+            "HN分数211",
+            "讨论量112"
           ],
-          "published": "2026-11-14T22:26:30+00:00"
+          "published": "2026-11-15T13:44:16+00:00"
         },
         {
-          "title": "A family tree of software job titles",
-          "summary": "For a few years I was ‘Head of DevOps’. Before I got that job title I’d done much the same work under other names, and since then I’ve watched the same work get called SRE, and then it seemed to morph towards platform en…",
-          "titleZh": "软件职位名称的演变谱系",
-          "summaryZh": "有几年我担任“DevOps 负责人”。在得到这个职位名称之前，我做的基本是同样的工作，只是叫法不同；此后我又看到同样的工作被称为 SRE，后来似乎又逐渐演变成平台工程……",
-          "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+          "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+          "summary": "PMTiles is a tile format which works via HTTP Range requests and can be deployed as a single file to a storage bucket.",
+          "titleZh": "Protomaps：自托管地图瓦片已变得便宜又简单",
+          "summaryZh": "PMTiles 是一种瓦片格式，支持通过 HTTP Range 请求访问，也可以作为单个文件部署到存储桶中。",
+          "url": "https://bruceroettgers.eu/blog/protomaps/",
           "source": "Hacker News",
-          "score": 4.04,
+          "score": 3.88,
           "reasons": [
-            "HN分数232",
-            "讨论量113"
+            "HN分数204",
+            "讨论量46"
           ],
-          "published": "2026-11-14T17:45:19+00:00"
-        },
-        {
-          "title": "KDE: The documentary [video]",
-          "summary": "KDE: The Documentary tells the story of the pioneering open source community that gave computer users a free and open alternative to proprietary desktops like Windows. The story starts in 1996, whe...",
-          "titleZh": "KDE：这部纪录片 [视频]",
-          "summaryZh": "《KDE：这部纪录片》讲述了这个开创性的开源社区的故事。它为计算机用户提供了免费的开放式桌面环境，作为 Windows 等专有桌面系统的替代选择。故事始于 1996 年，当时……",
-          "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-          "source": "Hacker News",
-          "score": 4.01,
-          "reasons": [
-            "HN分数402",
-            "讨论量87"
-          ],
-          "published": "2026-11-14T13:43:28+00:00"
-        },
-        {
-          "title": "PyPI's redesigned project pages with clearer security signals are now live",
-          "summary": "PyPI now makes it simple to check where release files come from, with a dedicated security tab, a rebuilt release files tab, and refreshed documentation.",
-          "titleZh": "PyPI 改版后的项目页面现已上线，安全信息更加清晰",
-          "summaryZh": "PyPI 现在让用户可以轻松查看发行文件的来源，并新增专门的安全标签页、重建发行文件标签页，还更新了文档。",
-          "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-          "source": "Hacker News",
-          "score": 3.93,
-          "reasons": [
-            "HN分数215",
-            "讨论量94"
-          ],
-          "published": "2026-11-14T15:40:52+00:00"
-        },
-        {
-          "title": "How did Woz write the Apple 1 BASIC before building the computer?",
-          "summary": "Comments",
-          "titleZh": "Woz 在造出电脑之前是如何编写 Apple 1 BASIC 的？",
-          "summaryZh": "评论",
-          "url": "https://retrocomputing.stackexchange.com/questions/17957",
-          "source": "Hacker News",
-          "score": 3.84,
-          "reasons": [
-            "HN分数132",
-            "讨论量44"
-          ],
-          "published": "2026-11-14T22:22:49+00:00"
+          "published": "2026-11-15T19:26:22+00:00"
         }
       ]
     },
@@ -127,13 +126,78 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "Apple launches new app to study how people use AI for health",
+          "summary": "Apple's new app for a study will answer everyday medical questions",
+          "titleZh": "Apple 推出新应用，研究人们如何将 AI 用于健康",
+          "summaryZh": "Apple 为一项研究推出的新应用将回答日常医疗问题。",
+          "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+          "source": "TechCrunch",
+          "score": 4.54,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-16T01:30:00+00:00"
+        },
+        {
+          "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+          "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+          "titleZh": "印度芯片初创公司 Bharat Semi 获 2400 万美元种子轮融资，瞄准全球 AI 传感器市场",
+          "summaryZh": "Bharat Semi 表示，其 AI 传感器技术已获得包括 General Atomics 在内的公司的设计订单。",
+          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+          "source": "TechCrunch",
+          "score": 4.49,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-15T23:30:00+00:00"
+        },
+        {
+          "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+          "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+          "titleZh": "Jensen Huang 的坏消息，对 AI 行业来说也是坏消息吗？",
+          "summaryZh": "“Jensen 就是 Nvidia，对吧？而这整个经济有很大一部分都押在 Nvidia 身上。”",
+          "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+          "source": "TechCrunch",
+          "score": 4.45,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-15T21:56:35+00:00"
+        },
+        {
+          "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
+          "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
+          "titleZh": "《周六夜现场》集结科技巨头，带来约会与间谍技巧课",
+          "summaryZh": "尴尬、令人不适的科技高管已成为《周六夜现场》的常见主题；本周节目则让演员有机会一次展示所有模仿绝活。",
+          "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+          "source": "TechCrunch",
+          "score": 4.4,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-15T20:20:57+00:00"
+        },
+        {
+          "title": "TechCrunch Mobility: The Nvidia backup plan for China’s self-driving industry",
+          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+          "titleZh": "TechCrunch Mobility：中国自动驾驶行业的 Nvidia 备用方案",
+          "summaryZh": "欢迎回到 TechCrunch Mobility——这里是了解交通运输未来的中心，如今我们也将更多关注 AI 在其中扮演的角色。",
+          "url": "https://techcrunch.com/2026/11/15/techcrunch-mobility-the-nvidia-backup-plan-for-chinas-self-driving-industry/",
+          "source": "TechCrunch",
+          "score": 4.31,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-15T17:05:00+00:00"
+        },
+        {
           "title": "Where was Nvidia’s security team?",
           "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intellig…",
           "titleZh": "Nvidia 的安全团队当时在哪里？",
           "summaryZh": "Nvidia 的安全主管于 8 月悄然离职；如今，首席执行官 Jensen Huang 因其关系——其中包括与一家涉嫌向中国输送芯片的公司高管的关系——而卸任。一位前情报……",
           "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
           "source": "TechCrunch",
-          "score": 4.51,
+          "score": 3.84,
           "reasons": [
             "AI"
           ],
@@ -146,7 +210,7 @@
           "summaryZh": "截至周六下午，这份请愿书已获得超过 11.5 万个签名。",
           "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 3.77,
           "reasons": [
             "AI"
           ],
@@ -159,74 +223,11 @@
           "summaryZh": "美国联邦航空管理局局长 Bryan Bedford 还表示，“没有任何证据表明这与人工智能有关。”",
           "url": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
           "source": "TechCrunch",
-          "score": 4.33,
+          "score": 3.66,
           "reasons": [
             "AI"
           ],
           "published": "2026-11-14T17:45:04+00:00"
-        },
-        {
-          "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-          "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-          "titleZh": "AI 墓地：持续更新的失败项目与创业公司名单",
-          "summaryZh": "从苹果一再延期的 Siri AI，到 OpenAI 混乱推出的“超级应用”，本文盘点了已经关闭或未达预期的 AI 项目。",
-          "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-          "source": "TechCrunch",
-          "score": 4.32,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-14T17:30:00+00:00"
-        },
-        {
-          "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-          "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-          "titleZh": "亚洲各国政府回应 Nvidia 首席执行官 Jensen Huang 离任",
-          "summaryZh": "一些政府采取行动确认芯片供应承诺，另一些则在监测其对本地项目的影响，或处理正在进行的调查。",
-          "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-          "source": "TechCrunch",
-          "score": 4.3,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-14T16:34:15+00:00"
-        },
-        {
-          "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-          "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-          "titleZh": "风投人士和创始人称，Jensen Huang 离任给 AI 创业公司融资造成巨大缺口",
-          "summaryZh": "在 Huang 的领导下，Nvidia 向 AI 创业公司投入了数百亿美元。没有他掌舵，创始人和风投人士正准备应对更小额的投资和更低的估值。",
-          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-          "source": "TechCrunch",
-          "score": 3.8,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-13T22:43:00+00:00"
-        },
-        {
-          "title": "AI agent startup LangChain hits $3B valuation",
-          "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
-          "titleZh": "AI 智能体创业公司 LangChain 估值达到 30 亿美元",
-          "summaryZh": "LangChain 目前称，其模型和平台无关的智能体管理工具 LangSmith 已拥有 7,000 家客户。",
-          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-          "source": "TechCrunch",
-          "score": 3.71,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-13T19:37:57+00:00"
-        },
-        {
-          "title": "Tesla opens Cybercab pre-orders ‘for personal use,’ with geo restrictions and a $299 monthly fee",
-          "summary": "Even Elon Musk said the monthly fee is \"too high.\"",
-          "titleZh": "Tesla 开放 Cybercab 个人用途预订，但设有地理限制且月费为 299 美元",
-          "summaryZh": "连 Elon Musk 也表示，这个月费“太高了”。",
-          "url": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
-          "source": "TechCrunch",
-          "score": 1.79,
-          "reasons": [],
-          "published": "2026-11-14T20:04:44+00:00"
         }
       ]
     }
@@ -234,7 +235,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-15T11:01:33.908404+08:00"
+      "lastRunAt": "2026-11-16T11:02:07.283918+08:00"
     }
   }
 }
