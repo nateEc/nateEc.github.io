@@ -1,123 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-17T11:31:28+08:00",
-  "date": "2026-11-17",
+  "updatedAt": "2026-11-18T11:31:25+08:00",
+  "date": "2026-11-18",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
-          "summary": "Comments",
-          "titleZh": "摩根大通技术故障导致美国多家银行网上银行服务延迟",
-          "summaryZh": "评论",
-          "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+          "title": "Google's AI answers reducing search traffic by 40%",
+          "summary": "Google",
+          "titleZh": "Google 的 AI 答案使搜索流量减少 40%",
+          "summaryZh": "Google",
+          "url": "https://revscope.co/blog/search-seo-geo-2026/",
           "source": "Hacker News",
-          "score": 4.68,
+          "score": 6.67,
           "reasons": [
-            "HN分数731",
-            "讨论量606"
+            "AI",
+            "HN分数145",
+            "讨论量95"
           ],
-          "published": "2026-11-16T18:31:30+00:00"
+          "published": "2026-11-18T00:17:58+00:00"
         },
         {
-          "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-          "summary": "Free lectures from Carnegie Mellon",
-          "titleZh": "卡内基梅隆大学将免费在 YouTube 上发布计算机科学课程",
-          "summaryZh": "卡内基梅隆大学免费课程讲座",
-          "url": "https://www.cs.cmu.edu/learn/",
+          "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+          "summary": "Harvard study: AI coding agents raised code output 30 percent; finished work did not measurably rise, and getting code through review took 49 percent longer.",
+          "titleZh": "哈佛研究人员发现，AI 编程代理将瓶颈转移到了代码审查",
+          "summaryZh": "哈佛研究显示：AI 编程代理使代码产出提高了 30%，但已完成工作量并未显著增加；代码通过审查所需的时间延长了 49%。",
+          "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+          "source": "Hacker News",
+          "score": 6.47,
+          "reasons": [
+            "AI",
+            "HN分数76",
+            "讨论量120"
+          ],
+          "published": "2026-11-17T21:16:12+00:00"
+        },
+        {
+          "title": "GPT‑6.2 Astra and Sol",
+          "summary": "Comments",
+          "titleZh": "GPT‑6.2 Astra 和 Sol",
+          "summaryZh": "评论",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "source": "Hacker News",
+          "score": 4.8,
+          "reasons": [
+            "HN分数1133",
+            "讨论量713"
+          ],
+          "published": "2026-11-17T17:46:43+00:00"
+        },
+        {
+          "title": "Highly classified US national security communications network goes down",
+          "summary": "The National Security Agency closed its campus to most employees on Tuesday night, reverting to essential personnel only as it works to bring its classified internal communications network back online, according to a voi…",
+          "titleZh": "高度机密的美国国家安全通信网络发生故障",
+          "summaryZh": "据一位发言人称，美国国家安全局周二晚间关闭园区，不允许大多数员工进入，仅保留必要人员，同时设法恢复其机密内部通信网络的运行。",
+          "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
           "source": "Hacker News",
           "score": 4.5,
           "reasons": [
-            "HN分数871",
-            "讨论量141"
+            "HN分数501",
+            "讨论量571"
           ],
-          "published": "2026-11-16T20:43:36+00:00"
+          "published": "2026-11-17T15:38:28+00:00"
         },
         {
-          "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
-          "summary": "Reverse engineering Windows 11's MissionControlAggregator reveals coding-agent and developer-tool usage bits in a diagnostic ETW report.",
-          "titleZh": "Windows 11 正在收集你使用哪些编程智能体和开发者工具的数据",
-          "summaryZh": "对 Windows 11 的 MissionControlAggregator 进行逆向工程后发现，诊断 ETW 报告中包含编程智能体和开发者工具的使用情况数据。",
-          "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+          "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+          "summary": "Java4Shell (CVE-2026-114938): a memory-corruption vulnerability in OpenJDK",
+          "titleZh": "Java4Shell：OpenJDK 处理 Base64 时存在远程代码执行漏洞",
+          "summaryZh": "Java4Shell（CVE-2026-114938）：OpenJDK 中存在内存损坏漏洞。",
+          "url": "https://calif.io/java4shell/",
           "source": "Hacker News",
-          "score": 4.36,
+          "score": 4.44,
           "reasons": [
-            "HN分数315",
-            "讨论量183"
+            "HN分数604",
+            "讨论量160"
           ],
-          "published": "2026-11-16T22:58:20+00:00"
+          "published": "2026-11-17T21:11:28+00:00"
         },
         {
-          "title": "BugMeNot has closed",
-          "summary": "BugMeNot has closed. Thanks to everyone who envisioned a better internet. DXXR KAKD QMDZ QJPV UQSG DWRM HXCO TGVL TLWE RHIP NJPA ZKNZ SCVP RJWD XRFT YRMH YUJI PEBD YOOS YNVE SLGB OEJM HYIV AMMW TMWE CYFI DLGD JWBT DWCJ O…",
-          "titleZh": "BugMeNot 已关闭",
-          "summaryZh": "BugMeNot 已关闭。感谢所有曾构想更美好互联网的人。DXXR KAKD QMDZ QJPV UQSG DWRM HXCO TGVL TLWE RHIP NJPA ZKNZ SCVP RJWD XRFT YRMH YUJI PEBD YOOS YNVE SLGB OEJM HYIV AMMW TMWE CYFI DLGD JWBT DWCJ O…",
-          "url": "https://www.bugmenot.com/",
+          "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+          "summary": "Comments",
+          "titleZh": "英伟达停止披露新加坡销售额，营收达到 1040 亿美元",
+          "summaryZh": "评论",
+          "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
           "source": "Hacker News",
-          "score": 4.36,
+          "score": 4.29,
           "reasons": [
-            "HN分数370",
-            "讨论量183"
+            "HN分数421",
+            "讨论量206"
           ],
-          "published": "2026-11-16T21:32:17+00:00"
+          "published": "2026-11-17T17:12:06+00:00"
         },
         {
-          "title": "Frame – 31.5\" color ePaper display",
-          "summary": "Hand made wooden body, full color 31.5\" display.",
-          "titleZh": "Frame——31.5 英寸彩色电子纸显示屏",
-          "summaryZh": "手工制作的木质机身，配备 31.5 英寸全彩显示屏。",
-          "url": "https://trmnl.com/blog/introducing-frame",
+          "title": "Quad9's withdrawal from France: A canary in the coal mine",
+          "summary": "Quad9's forced withdrawal from France highlights the dangers of mandating DNS-level blocking.",
+          "titleZh": "Quad9 退出法国：煤矿里的金丝雀",
+          "summaryZh": "Quad9 被迫退出法国，凸显强制实施 DNS 层级封锁的风险。",
+          "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
           "source": "Hacker News",
-          "score": 4.23,
+          "score": 4.24,
           "reasons": [
-            "HN分数328",
-            "讨论量236"
+            "HN分数346",
+            "讨论量103"
           ],
-          "published": "2026-11-16T16:23:22+00:00"
+          "published": "2026-11-17T22:13:34+00:00"
         },
         {
-          "title": "Grazing sheep in fields with solar arrays",
-          "summary": "As solar grazing expands across the country, new research helps sheep farmers increase profitability and sheds light on the how the number of sheep in solar array fields interacts with beneficial insects.",
-          "titleZh": "在太阳能阵列农田放牧绵羊",
-          "summaryZh": "随着太阳能农场放牧在全国各地不断推广，新的研究帮助养羊户提高盈利能力，并揭示太阳能阵列农田中的绵羊数量如何影响益虫。",
-          "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+          "title": "jQuery 4.1.0",
+          "summary": "jQuery JavaScript Library. Contribute to jquery/jquery development by creating an account on GitHub.",
+          "titleZh": "jQuery 4.1.0 版本发布",
+          "summaryZh": "jQuery JavaScript 库。你可以在 GitHub 上创建账户，为 jquery/jquery 项目贡献代码。",
+          "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
           "source": "Hacker News",
-          "score": 4.17,
+          "score": 4.18,
           "reasons": [
-            "HN分数232",
-            "讨论量233"
+            "HN分数267",
+            "讨论量147"
           ],
-          "published": "2026-11-16T17:27:46+00:00"
-        },
-        {
-          "title": "Jiff 1.0: A datetime library for Rust",
-          "summary": "Jiff is a datetime library for Rust that encourages you to jump into the pit of success . Jiff automatically handles many common problems related to daylight saving time by putting time zone handling front and center int…",
-          "titleZh": "Jiff 1.0：Rust 日期时间库",
-          "summaryZh": "Jiff 是一个 Rust 日期时间库，旨在帮助你轻松获得理想结果。它将时区处理置于核心位置，自动处理许多与夏令时相关的常见问题……",
-          "url": "https://burntsushi.net/jiff/",
-          "source": "Hacker News",
-          "score": 4.03,
-          "reasons": [
-            "HN分数329",
-            "讨论量77"
-          ],
-          "published": "2026-11-16T16:53:39+00:00"
-        },
-        {
-          "title": "Optimizely Compromised, Served Malware on Zoom, GitLab",
-          "summary": "On 16 November 2026, malicious JavaScript was served to visitors of 178 organisations through the Optimizely Web experimentation platform. The list includes some of the most visited sites in the world: Zoom, the BBC, CNN…",
-          "titleZh": "Optimizely 遭入侵，Zoom、GitLab 网站被植入恶意软件",
-          "summaryZh": "2026 年 11 月 16 日，恶意 JavaScript 通过 Optimizely Web 实验平台发送给 178 家机构的网站访客。名单中包括全球访问量最高的一些网站：Zoom、BBC、CNN……",
-          "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
-          "source": "Hacker News",
-          "score": 4.0,
-          "reasons": [
-            "HN分数149",
-            "讨论量77"
-          ],
-          "published": "2026-11-16T23:00:34+00:00"
+          "published": "2026-11-17T19:50:40+00:00"
         }
       ]
     },
@@ -126,108 +128,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
-          "summary": "Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.",
-          "titleZh": "网络安全 AI 初创公司 Corma 约三个月估值达 10 亿美元",
-          "summaryZh": "推出产品三个月后，AI 网络安全初创公司 Corba 完成 1.25 亿美元 A 轮融资，估值达 10 亿美元，由 NEA 领投。",
-          "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+          "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+          "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+          "titleZh": "英伟达持有的初创公司股份价值飙升至 650 亿美元，但黄仁勋离任令未来交易蒙上阴影",
+          "summaryZh": "过去九个月，英伟达的私人投资价值接近增长两倍，这得益于黄仁勋积极促成交易，以及其现有投资组合公司的估值上升。",
+          "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+          "source": "TechCrunch",
+          "score": 4.55,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-18T01:44:21+00:00"
+        },
+        {
+          "title": "Nvidia promises that revenue will keep soaring — for now",
+          "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+          "titleZh": "英伟达称营收将继续飙升——至少目前如此",
+          "summaryZh": "尽管创始人兼首席执行官黄仁勋离任后英伟达陷入动荡，公司仍预计其创纪录营收势头不会就此止步。",
+          "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+          "source": "TechCrunch",
+          "score": 4.51,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-18T00:16:50+00:00"
+        },
+        {
+          "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
+          "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
+          "titleZh": "黄仁勋下台后，英伟达将放弃中国市场",
+          "summaryZh": "英伟达临时首席执行官称，公司将停止向中国销售芯片。这会带来多大损失？",
+          "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
           "source": "TechCrunch",
           "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-16T23:32:32+00:00"
+          "published": "2026-11-17T23:37:48+00:00"
         },
         {
-          "title": "All the questions Nvidia should answer on Tuesday — but probably won’t",
-          "summary": "Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number o…",
-          "titleZh": "英伟达周二应该回答的所有问题——但可能不会回答",
-          "summaryZh": "英伟达临时 CEO、长期担任首席财务官的 Colette Kress 即将在周二迎来职业生涯中最重要的日子之一，届时公司将公布第三季度业绩。鉴于英伟达目前面临的动荡，还有不少问题……",
-          "url": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
+          "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
+          "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
+          "titleZh": "英伟达称黄仁勋离任后其开源 AI 战略仍将保持不变",
+          "summaryZh": "尽管黄仁勋突然离任，英伟达临时首席执行官仍重申了公司的开源 AI 战略和收购 Hugging Face 的计划。",
+          "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
           "source": "TechCrunch",
-          "score": 4.45,
+          "score": 4.48,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-16T22:03:02+00:00"
+          "published": "2026-11-17T23:04:35+00:00"
         },
         {
-          "title": "Apple reveals new Mac security controls as AI agents raise privacy risks",
-          "summary": "Following an October announcement, Apple has detailed new permission controls, warnings, and transparency features coming to macOS 27.3 to address risks posed by AI agents and other apps.",
-          "titleZh": "AI 智能体引发隐私风险之际，苹果公布 Mac 新安全控制措施",
-          "summaryZh": "继 10 月宣布相关计划后，苹果详细介绍了即将随 macOS 27.3 推出的新权限控制、警告和透明度功能，以应对 AI 智能体及其他应用带来的风险。",
-          "url": "https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/",
+          "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
+          "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
+          "titleZh": "英伟达称无意重新任命黄仁勋为首席执行官",
+          "summaryZh": "这位前首席执行官上周辞职后，曾提出重返公司最高职位。",
+          "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-16T21:01:02+00:00"
+          "published": "2026-11-17T22:42:27+00:00"
         },
         {
-          "title": "California state AG sues OpenAI over rogue agent incidents",
-          "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
-          "titleZh": "加州州检察长因失控智能体事件起诉 OpenAI",
-          "summaryZh": "加州的这起诉讼是首批尝试追究 AI 实验室对失控智能体事件法律责任的案件之一。",
-          "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+          "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+          "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
+          "titleZh": "Anthropic 上市后，亚马逊和 Google 合计持股将接近 30%",
+          "summaryZh": "Anthropic 上市后，亚马逊将持有略低于 15% 的股份，并有权大幅增持。Google 紧随其后，持股接近 14%。",
+          "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-16T20:07:13+00:00"
+          "published": "2026-11-17T22:29:05+00:00"
         },
         {
-          "title": "Uber says hackers stole information on close to 150,000 driver’s licenses during data breach",
-          "summary": "The ride-sharing giant said driver's license information stored by AI cloud company Fireworks AI was stolen during a security incident.",
-          "titleZh": "Uber 称黑客在数据泄露事件中窃取近 15 万份驾照信息",
-          "summaryZh": "这家网约车巨头表示，存储在 AI 云服务公司 Fireworks AI 处的驾照信息在一次安全事件中被盗。",
-          "url": "https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
+          "title": "SEC reportedly investigating Nvidia amid Huang exit",
+          "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
+          "titleZh": "据报道，黄仁勋离任之际，美国证券交易委员会正调查英伟达",
+          "summaryZh": "《华尔街日报》报道称，美国证券交易委员会正因首席执行官黄仁勋离任而对英伟达展开调查。黄仁勋曾承认与一名据称是中国间谍的人有染。",
+          "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-16T19:53:00+00:00"
+          "published": "2026-11-17T21:48:07+00:00"
         },
         {
-          "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national…",
-          "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
-          "titleZh": "特朗普称英伟达前 CEO 黄仁勋与一名疑似中国间谍的绯闻未威胁国家安全",
-          "summaryZh": "特朗普的说法与其本国情报官员相矛盾；据报道，官员认定 Alice Huang 是中国间谍。",
-          "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
+          "title": "Google joins the tech outage trend by announcing it’s not having one",
+          "summary": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
+          "titleZh": "Google 跟风科技故障潮，宣布自家服务没有故障",
+          "summaryZh": "科技服务似乎处处发生故障之际，Google 采取了不同寻常的做法，宣布 Gmail 运行一切正常。",
+          "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/",
           "source": "TechCrunch",
-          "score": 4.37,
+          "score": 4.43,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-16T19:12:02+00:00"
-        },
-        {
-          "title": "Sam Altman on Nvidia without Jensen Huang: The industry will be ‘fine’",
-          "summary": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.",
-          "titleZh": "萨姆·奥特曼谈英伟达若没有黄仁勋：行业会“没问题”",
-          "summaryZh": "OpenAI CEO 萨姆·奥特曼承认，英伟达 CEO 黄仁勋在 AI 热潮中发挥了特殊作用，但他最终认为，即使没有黄仁勋掌舵，行业也会“没问题”。",
-          "url": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/",
-          "source": "TechCrunch",
-          "score": 4.34,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-16T18:11:10+00:00"
-        },
-        {
-          "title": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’",
-          "summary": "The FBI says that the open source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
-          "titleZh": "FBI 称 Artex AI 开源黑客工具在“三小时内”攻破网络",
-          "summaryZh": "FBI 表示，这款开源黑客工具被用于针对一家美国 IT 巨头和韩国金融业的网络攻击。",
-          "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-          "source": "TechCrunch",
-          "score": 4.33,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-16T17:36:43+00:00"
+          "published": "2026-11-17T21:34:50+00:00"
         }
       ]
     }
@@ -235,7 +237,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-17T11:02:08.216912+08:00"
+      "lastRunAt": "2026-11-18T11:02:05.168862+08:00"
     }
   }
 }
