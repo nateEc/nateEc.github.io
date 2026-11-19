@@ -1,125 +1,125 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-18T11:31:25+08:00",
-  "date": "2026-11-18",
+  "updatedAt": "2026-11-19T11:31:07+08:00",
+  "date": "2026-11-19",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Google's AI answers reducing search traffic by 40%",
-          "summary": "Google",
-          "titleZh": "Google 的 AI 答案使搜索流量减少 40%",
-          "summaryZh": "Google",
-          "url": "https://revscope.co/blog/search-seo-geo-2026/",
+          "title": "AI agents ask better questions than KPMG accountants in audit trial",
+          "summary": "LONDON, November 18, 2026 — Artificial intelligence has taken another significant step into the world of professional services after KPMG revealed that AI",
+          "titleZh": "审计试验中，AI 智能体提出的问题比毕马威会计师更好",
+          "summaryZh": "伦敦，2026年11月18日——毕马威透露，人工智能在专业服务领域又迈出了重要一步。",
+          "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
           "source": "Hacker News",
-          "score": 6.67,
+          "score": 6.79,
           "reasons": [
             "AI",
-            "HN分数145",
-            "讨论量95"
+            "HN分数384",
+            "讨论量169"
           ],
-          "published": "2026-11-18T00:17:58+00:00"
+          "published": "2026-11-18T15:49:34+00:00"
         },
         {
-          "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
-          "summary": "Harvard study: AI coding agents raised code output 30 percent; finished work did not measurably rise, and getting code through review took 49 percent longer.",
-          "titleZh": "哈佛研究人员发现，AI 编程代理将瓶颈转移到了代码审查",
-          "summaryZh": "哈佛研究显示：AI 编程代理使代码产出提高了 30%，但已完成工作量并未显著增加；代码通过审查所需的时间延长了 49%。",
-          "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+          "title": "AI will not make you rich (2025)",
+          "summary": "The disruption is real. It's also predictable.",
+          "titleZh": "AI 不会让你变富（2025）",
+          "summaryZh": "颠覆确实存在，而且可以预见。",
+          "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
           "source": "Hacker News",
-          "score": 6.47,
+          "score": 6.32,
           "reasons": [
             "AI",
-            "HN分数76",
-            "讨论量120"
+            "HN分数63",
+            "讨论量36"
           ],
-          "published": "2026-11-17T21:16:12+00:00"
+          "published": "2026-11-19T01:51:28+00:00"
         },
         {
-          "title": "GPT‑6.2 Astra and Sol",
-          "summary": "Comments",
-          "titleZh": "GPT‑6.2 Astra 和 Sol",
-          "summaryZh": "评论",
-          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "title": "Unauthenticated remote code execution in Nginx",
+          "summary": "Two critical HTTP/2 flaws can allow attackers to compromise NGINX servers, putting the websites, APIs, and sensitive data they handle at risk.",
+          "titleZh": "Nginx 存在无需身份验证即可远程执行代码的漏洞",
+          "summaryZh": "两个严重的 HTTP/2 漏洞可能让攻击者攻陷 NGINX 服务器，危及其托管的网站、API 和敏感数据。",
+          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
           "source": "Hacker News",
-          "score": 4.8,
+          "score": 4.69,
           "reasons": [
-            "HN分数1133",
-            "讨论量713"
+            "HN分数1186",
+            "讨论量530"
           ],
-          "published": "2026-11-17T17:46:43+00:00"
+          "published": "2026-11-18T15:19:55+00:00"
         },
         {
-          "title": "Highly classified US national security communications network goes down",
-          "summary": "The National Security Agency closed its campus to most employees on Tuesday night, reverting to essential personnel only as it works to bring its classified internal communications network back online, according to a voi…",
-          "titleZh": "高度机密的美国国家安全通信网络发生故障",
-          "summaryZh": "据一位发言人称，美国国家安全局周二晚间关闭园区，不允许大多数员工进入，仅保留必要人员，同时设法恢复其机密内部通信网络的运行。",
-          "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+          "title": "Gemini 4 Neon",
+          "summary": "Google introduces Gemini 4 Neon, delivering frontier-level intelligence for complex coding and analysis at a lower cost. See what's new.",
+          "titleZh": "Gemini 4 Neon 模型",
+          "summaryZh": "Google 推出 Gemini 4 Neon，以更低成本为复杂编程和分析任务提供前沿水平的智能。了解新功能。",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
           "source": "Hacker News",
-          "score": 4.5,
+          "score": 4.65,
           "reasons": [
-            "HN分数501",
-            "讨论量571"
+            "HN分数536",
+            "讨论量490"
           ],
-          "published": "2026-11-17T15:38:28+00:00"
+          "published": "2026-11-18T21:34:07+00:00"
         },
         {
-          "title": "Java4Shell: RCE in OpenJDK when processing Base64",
-          "summary": "Java4Shell (CVE-2026-114938): a memory-corruption vulnerability in OpenJDK",
-          "titleZh": "Java4Shell：OpenJDK 处理 Base64 时存在远程代码执行漏洞",
-          "summaryZh": "Java4Shell（CVE-2026-114938）：OpenJDK 中存在内存损坏漏洞。",
-          "url": "https://calif.io/java4shell/",
+          "title": "Seven new models at scalable price-performance",
+          "summary": "Models Transcribe Turn audio into precise transcripts Voice Generate custom voice from text Realtime Natural speech-to-speech conversations Image Generate images from text Code Fast, lightweight agentic coding Cyber Agen…",
+          "titleZh": "七款兼具可扩展性、价格与性能优势的新模型",
+          "summaryZh": "模型：转录——将音频转换为精准文本；语音生成——根据文本定制语音；实时——自然的语音到语音对话；图像——根据文本生成图像；代码——快速、轻量的智能体编程；网络安全……",
+          "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
           "source": "Hacker News",
-          "score": 4.44,
+          "score": 4.38,
           "reasons": [
-            "HN分数604",
-            "讨论量160"
+            "HN分数469",
+            "讨论量325"
           ],
-          "published": "2026-11-17T21:11:28+00:00"
+          "published": "2026-11-18T16:08:24+00:00"
         },
         {
-          "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
-          "summary": "Comments",
-          "titleZh": "英伟达停止披露新加坡销售额，营收达到 1040 亿美元",
-          "summaryZh": "评论",
-          "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+          "title": "We need smart people who give a shit",
+          "summary": "Something I learned a long time ago, something that's been proven to me time and again, is that the world is held together by smart people who give a shit. This truth always comes into stark focus when I learn how a comp…",
+          "titleZh": "我们需要真正上心的聪明人",
+          "summaryZh": "很久以前我就明白一件事，而它一次又一次得到印证：这个世界是由那些真正上心的聪明人支撑起来的。每当我了解到某件事是如何……，这个事实总会格外清晰。",
+          "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
           "source": "Hacker News",
-          "score": 4.29,
+          "score": 4.32,
           "reasons": [
-            "HN分数421",
-            "讨论量206"
+            "HN分数286",
+            "讨论量149"
           ],
-          "published": "2026-11-17T17:12:06+00:00"
+          "published": "2026-11-18T23:53:49+00:00"
         },
         {
-          "title": "Quad9's withdrawal from France: A canary in the coal mine",
-          "summary": "Quad9's forced withdrawal from France highlights the dangers of mandating DNS-level blocking.",
-          "titleZh": "Quad9 退出法国：煤矿里的金丝雀",
-          "summaryZh": "Quad9 被迫退出法国，凸显强制实施 DNS 层级封锁的风险。",
-          "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+          "title": "Inside Deutsche Bank",
+          "summary": "A major global investigation revealing the inner workings of the financial giant, Deutsche Bank.",
+          "titleZh": "德意志银行内幕",
+          "summaryZh": "一项重大调查揭示了金融巨头德意志银行的内部运作。",
+          "url": "https://www.inside-db.com/",
           "source": "Hacker News",
-          "score": 4.24,
+          "score": 4.31,
           "reasons": [
-            "HN分数346",
-            "讨论量103"
+            "HN分数576",
+            "讨论量193"
           ],
-          "published": "2026-11-17T22:13:34+00:00"
+          "published": "2026-11-18T15:38:33+00:00"
         },
         {
-          "title": "jQuery 4.1.0",
-          "summary": "jQuery JavaScript Library. Contribute to jquery/jquery development by creating an account on GitHub.",
-          "titleZh": "jQuery 4.1.0 版本发布",
-          "summaryZh": "jQuery JavaScript 库。你可以在 GitHub 上创建账户，为 jquery/jquery 项目贡献代码。",
-          "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+          "title": "DNS resolvers are the wrong place to fight piracy",
+          "summary": "On November 24, 2026, the non-profit DNS resolver Quad9 stops serving users in France rather than obey a beIN Sports blocking order. Here's what Quad9 is, how the French law got here, and why forcing public resolvers to…",
+          "titleZh": "DNS 解析器不是打击盗版的正确工具",
+          "summaryZh": "2026年11月24日，非营利 DNS 解析服务 Quad9 宁愿停止向法国用户提供服务，也不愿遵守 beIN Sports 的屏蔽令。本文介绍 Quad9、法国相关法律的来龙去脉，以及为何强迫公共解析器……",
+          "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
           "source": "Hacker News",
-          "score": 4.18,
+          "score": 4.3,
           "reasons": [
-            "HN分数267",
-            "讨论量147"
+            "HN分数615",
+            "讨论量232"
           ],
-          "published": "2026-11-17T19:50:40+00:00"
+          "published": "2026-11-18T13:18:02+00:00"
         }
       ]
     },
@@ -128,108 +128,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
-          "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
-          "titleZh": "英伟达持有的初创公司股份价值飙升至 650 亿美元，但黄仁勋离任令未来交易蒙上阴影",
-          "summaryZh": "过去九个月，英伟达的私人投资价值接近增长两倍，这得益于黄仁勋积极促成交易，以及其现有投资组合公司的估值上升。",
-          "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+          "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+          "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short an…",
+          "titleZh": "微软 CEO 萨提亚·纳德拉解释为何要求6万名员工离职",
+          "summaryZh": "微软 CEO 萨提亚·纳德拉解释了为何在10月向6万名员工提供买断方案，实质上鼓励他们自愿离职，而不是再通过大规模裁员缩减员工人数。简而言之……",
+          "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
           "source": "TechCrunch",
-          "score": 4.55,
+          "score": 4.52,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-18T01:44:21+00:00"
+          "published": "2026-11-19T00:42:56+00:00"
         },
         {
-          "title": "Nvidia promises that revenue will keep soaring — for now",
-          "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
-          "titleZh": "英伟达称营收将继续飙升——至少目前如此",
-          "summaryZh": "尽管创始人兼首席执行官黄仁勋离任后英伟达陷入动荡，公司仍预计其创纪录营收势头不会就此止步。",
-          "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+          "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
+          "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
+          "titleZh": "AI 网络攻击引发担忧之际，萨提亚·纳德拉称许多关键基础设施“无法修补”",
+          "summaryZh": "这位微软 CEO 淡化了近期 Outlook 服务中断的影响，同时指出 AI 既带来机遇，也给保护互联世界的大部分系统带来了新挑战。",
+          "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
           "source": "TechCrunch",
-          "score": 4.51,
+          "score": 4.5,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-18T00:16:50+00:00"
+          "published": "2026-11-18T23:45:00+00:00"
         },
         {
-          "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
-          "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
-          "titleZh": "黄仁勋下台后，英伟达将放弃中国市场",
-          "summaryZh": "英伟达临时首席执行官称，公司将停止向中国销售芯片。这会带来多大损失？",
-          "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
+          "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
+          "summary": "“I don’t think disloyal to the United States,\" Musk said.",
+          "titleZh": "埃隆·马斯克称，赶走黄仁勋就像把迈克尔·乔丹踢出球队",
+          "summaryZh": "马斯克说：“我不认为这是对美国不忠。”",
+          "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
           "source": "TechCrunch",
           "score": 4.49,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-17T23:37:48+00:00"
+          "published": "2026-11-18T23:25:17+00:00"
         },
         {
-          "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
-          "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
-          "titleZh": "英伟达称黄仁勋离任后其开源 AI 战略仍将保持不变",
-          "summaryZh": "尽管黄仁勋突然离任，英伟达临时首席执行官仍重申了公司的开源 AI 战略和收购 Hugging Face 的计划。",
-          "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
+          "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
+          "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
+          "titleZh": "黄仁勋离任后，微软 CEO 萨提亚·纳德拉仍看好英伟达",
+          "summaryZh": "微软 CEO 萨提亚·纳德拉对黄仁勋的继任者、英伟达临时 CEO 科莱特·克雷斯表示信心。",
+          "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
           "source": "TechCrunch",
           "score": 4.48,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-17T23:04:35+00:00"
+          "published": "2026-11-18T23:17:28+00:00"
         },
         {
-          "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
-          "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
-          "titleZh": "英伟达称无意重新任命黄仁勋为首席执行官",
-          "summaryZh": "这位前首席执行官上周辞职后，曾提出重返公司最高职位。",
-          "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
+          "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+          "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
+          "titleZh": "萨提亚·纳德拉预测，AI 智能体将重塑网络经济格局",
+          "summaryZh": "微软 CEO 表示，AI 智能体可能颠覆以广告为驱动的商业模式，迫使亚马逊等公司重新思考如何争取客户。",
+          "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
           "source": "TechCrunch",
           "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-17T22:42:27+00:00"
+          "published": "2026-11-18T22:58:11+00:00"
         },
         {
-          "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
-          "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
-          "titleZh": "Anthropic 上市后，亚马逊和 Google 合计持股将接近 30%",
-          "summaryZh": "Anthropic 上市后，亚马逊将持有略低于 15% 的股份，并有权大幅增持。Google 紧随其后，持股接近 14%。",
-          "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+          "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
+          "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
+          "titleZh": "据报道，Anthropic 将 IPO 发行价定为每股83美元，高于预期区间",
+          "summaryZh": "据报道，这场期待已久的 IPO 按完全稀释口径计算，将公司估值推至1.5万亿美元。",
+          "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
           "source": "TechCrunch",
-          "score": 4.46,
+          "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-17T22:29:05+00:00"
+          "published": "2026-11-18T22:11:15+00:00"
         },
         {
-          "title": "SEC reportedly investigating Nvidia amid Huang exit",
-          "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
-          "titleZh": "据报道，黄仁勋离任之际，美国证券交易委员会正调查英伟达",
-          "summaryZh": "《华尔街日报》报道称，美国证券交易委员会正因首席执行官黄仁勋离任而对英伟达展开调查。黄仁勋曾承认与一名据称是中国间谍的人有染。",
-          "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
+          "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+          "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
+          "titleZh": "英伟达未提交常规 SEC 报告，引发一场离奇悬念",
+          "summaryZh": "一位华尔街分析师查明了英伟达为何意外宣布，数周内不会提交正式季度业绩文件 10-Q。",
+          "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-17T21:48:07+00:00"
+          "published": "2026-11-18T21:57:40+00:00"
         },
         {
-          "title": "Google joins the tech outage trend by announcing it’s not having one",
-          "summary": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
-          "titleZh": "Google 跟风科技故障潮，宣布自家服务没有故障",
-          "summaryZh": "科技服务似乎处处发生故障之际，Google 采取了不同寻常的做法，宣布 Gmail 运行一切正常。",
-          "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/",
+          "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’",
+          "summary": "The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks.",
+          "titleZh": "Palmer Luckey 警告，AI 网络攻击正超过防御能力：“是时候开始逃跑了”",
+          "summaryZh": "Anduril 联合创始人表示，过时的技术正让系统容易受到新一波 AI 攻击的侵害。",
+          "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
           "source": "TechCrunch",
           "score": 4.43,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-17T21:34:50+00:00"
+          "published": "2026-11-18T21:34:13+00:00"
         }
       ]
     }
@@ -237,7 +237,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-18T11:02:05.168862+08:00"
+      "lastRunAt": "2026-11-19T11:01:24.749540+08:00"
     }
   }
 }
