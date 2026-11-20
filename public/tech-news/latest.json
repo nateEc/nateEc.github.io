@@ -1,125 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-19T11:31:07+08:00",
-  "date": "2026-11-19",
+  "updatedAt": "2026-11-20T11:31:21+08:00",
+  "date": "2026-11-20",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI agents ask better questions than KPMG accountants in audit trial",
-          "summary": "LONDON, November 18, 2026 — Artificial intelligence has taken another significant step into the world of professional services after KPMG revealed that AI",
-          "titleZh": "审计试验中，AI 智能体提出的问题比毕马威会计师更好",
-          "summaryZh": "伦敦，2026年11月18日——毕马威透露，人工智能在专业服务领域又迈出了重要一步。",
-          "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+          "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+          "summary": "Should governments intervene to substantially slow the progress of frontier AI? In the inaugural YC debate, Jacob Coxon, an ex-Anthropic and OpenAI researche...",
+          "titleZh": "政府是否应放缓前沿 AI？Jacob Coxon 与 Robin Hanson 辩论 [视频]",
+          "summaryZh": "政府是否应介入，大幅放缓前沿 AI 的发展？在首场 YC 辩论中，前 Anthropic 和 OpenAI 研究员 Jacob Coxon……",
+          "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
           "source": "Hacker News",
-          "score": 6.79,
+          "score": 6.48,
           "reasons": [
             "AI",
-            "HN分数384",
-            "讨论量169"
+            "HN分数86",
+            "讨论量153"
           ],
-          "published": "2026-11-18T15:49:34+00:00"
+          "published": "2026-11-19T18:47:16+00:00"
         },
         {
-          "title": "AI will not make you rich (2025)",
-          "summary": "The disruption is real. It's also predictable.",
-          "titleZh": "AI 不会让你变富（2025）",
-          "summaryZh": "颠覆确实存在，而且可以预见。",
-          "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
+          "title": "Anthropic’s Nasdaq debut",
+          "summary": "Comments",
+          "titleZh": "Anthropic 纳斯达克上市",
+          "summaryZh": "评论",
+          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
           "source": "Hacker News",
-          "score": 6.32,
+          "score": 4.94,
           "reasons": [
-            "AI",
-            "HN分数63",
-            "讨论量36"
+            "HN分数978",
+            "讨论量1904"
           ],
-          "published": "2026-11-19T01:51:28+00:00"
+          "published": "2026-11-19T17:02:40+00:00"
         },
         {
-          "title": "Unauthenticated remote code execution in Nginx",
-          "summary": "Two critical HTTP/2 flaws can allow attackers to compromise NGINX servers, putting the websites, APIs, and sensitive data they handle at risk.",
-          "titleZh": "Nginx 存在无需身份验证即可远程执行代码的漏洞",
-          "summaryZh": "两个严重的 HTTP/2 漏洞可能让攻击者攻陷 NGINX 服务器，危及其托管的网站、API 和敏感数据。",
-          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+          "title": "UK government forced to admit it issued Apple a secret encryption order",
+          "summary": "The Investigatory Powers Tribunal has rejected the UK government’s attempt to keep its order secret, marking a significant victory for transparency.",
+          "titleZh": "英国政府被迫承认曾向 Apple 秘密发布加密令",
+          "summaryZh": "调查权力法庭驳回英国政府保密该命令的企图，成为透明度方面的一项重大胜利。",
+          "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
           "source": "Hacker News",
-          "score": 4.69,
+          "score": 4.37,
           "reasons": [
-            "HN分数1186",
-            "讨论量530"
+            "HN分数545",
+            "讨论量246"
           ],
-          "published": "2026-11-18T15:19:55+00:00"
+          "published": "2026-11-19T16:21:03+00:00"
         },
         {
-          "title": "Gemini 4 Neon",
-          "summary": "Google introduces Gemini 4 Neon, delivering frontier-level intelligence for complex coding and analysis at a lower cost. See what's new.",
-          "titleZh": "Gemini 4 Neon 模型",
-          "summaryZh": "Google 推出 Gemini 4 Neon，以更低成本为复杂编程和分析任务提供前沿水平的智能。了解新功能。",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "title": "Claude solves two open problems in the physics of black holes",
+          "summary": "Claude Fable 5.2 has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity.",
+          "titleZh": "Claude 解开黑洞物理学中的两个未解难题",
+          "summaryZh": "Claude Fable 5.2 解开了理论物理学中的两个未解难题，两者都涉及黑洞以及寻找量子引力理论。",
+          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
           "source": "Hacker News",
-          "score": 4.65,
+          "score": 4.28,
           "reasons": [
-            "HN分数536",
-            "讨论量490"
+            "HN分数418",
+            "讨论量188"
           ],
-          "published": "2026-11-18T21:34:07+00:00"
+          "published": "2026-11-19T17:30:44+00:00"
         },
         {
-          "title": "Seven new models at scalable price-performance",
-          "summary": "Models Transcribe Turn audio into precise transcripts Voice Generate custom voice from text Realtime Natural speech-to-speech conversations Image Generate images from text Code Fast, lightweight agentic coding Cyber Agen…",
-          "titleZh": "七款兼具可扩展性、价格与性能优势的新模型",
-          "summaryZh": "模型：转录——将音频转换为精准文本；语音生成——根据文本定制语音；实时——自然的语音到语音对话；图像——根据文本生成图像；代码——快速、轻量的智能体编程；网络安全……",
-          "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+          "title": "Pancreatic cancer halted by virus injection in three patients",
+          "summary": "A cancer-killing virus has stopped pancreatic tumours from growing and spreading in three people in an initial safety trial, raising hopes that it may help to beat the deadly condition",
+          "titleZh": "三名患者注射病毒后胰腺癌停止进展",
+          "summaryZh": "一种杀癌病毒在一项初步安全性试验中阻止了三名患者的胰腺肿瘤生长和扩散，让人们对战胜这一致命疾病抱有希望。",
+          "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
           "source": "Hacker News",
-          "score": 4.38,
+          "score": 4.26,
           "reasons": [
-            "HN分数469",
-            "讨论量325"
+            "HN分数637",
+            "讨论量101"
           ],
-          "published": "2026-11-18T16:08:24+00:00"
+          "published": "2026-11-19T17:25:33+00:00"
         },
         {
-          "title": "We need smart people who give a shit",
-          "summary": "Something I learned a long time ago, something that's been proven to me time and again, is that the world is held together by smart people who give a shit. This truth always comes into stark focus when I learn how a comp…",
-          "titleZh": "我们需要真正上心的聪明人",
-          "summaryZh": "很久以前我就明白一件事，而它一次又一次得到印证：这个世界是由那些真正上心的聪明人支撑起来的。每当我了解到某件事是如何……，这个事实总会格外清晰。",
-          "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+          "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+          "summary": "Language model performance on engineering tasks, compared by cost and token use.",
+          "titleZh": "Gemini 4 Neon 登上模型工程指数榜首",
+          "summaryZh": "按成本和 token 用量比较语言模型在工程任务上的表现。",
+          "url": "https://git-aarvin.github.io/mei/",
           "source": "Hacker News",
-          "score": 4.32,
+          "score": 4.19,
           "reasons": [
-            "HN分数286",
-            "讨论量149"
+            "HN分数206",
+            "讨论量124"
           ],
-          "published": "2026-11-18T23:53:49+00:00"
+          "published": "2026-11-19T23:35:35+00:00"
         },
         {
-          "title": "Inside Deutsche Bank",
-          "summary": "A major global investigation revealing the inner workings of the financial giant, Deutsche Bank.",
-          "titleZh": "德意志银行内幕",
-          "summaryZh": "一项重大调查揭示了金融巨头德意志银行的内部运作。",
-          "url": "https://www.inside-db.com/",
+          "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+          "summary": "Ad auctions are calibrated to pay out just enough to keep you playing. The winners of the auction don",
+          "titleZh": "98%老虎机：付费广告如何变成攫取式税负",
+          "summaryZh": "广告竞价经过精密设计，只支付刚好足以让你继续参与的回报。竞拍赢家……",
+          "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
           "source": "Hacker News",
-          "score": 4.31,
+          "score": 4.06,
           "reasons": [
-            "HN分数576",
-            "讨论量193"
+            "HN分数222",
+            "讨论量120"
           ],
-          "published": "2026-11-18T15:38:33+00:00"
+          "published": "2026-11-19T18:35:17+00:00"
         },
         {
-          "title": "DNS resolvers are the wrong place to fight piracy",
-          "summary": "On November 24, 2026, the non-profit DNS resolver Quad9 stops serving users in France rather than obey a beIN Sports blocking order. Here's what Quad9 is, how the French law got here, and why forcing public resolvers to…",
-          "titleZh": "DNS 解析器不是打击盗版的正确工具",
-          "summaryZh": "2026年11月24日，非营利 DNS 解析服务 Quad9 宁愿停止向法国用户提供服务，也不愿遵守 beIN Sports 的屏蔽令。本文介绍 Quad9、法国相关法律的来龙去脉，以及为何强迫公共解析器……",
-          "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+          "title": "Someone reported java4shell bug in September 2026",
+          "summary": "JDK main-line development https://openjdk.org/projects/jdk - 8392044: AVX-512 Base64 decoder overwrites output buffer on short padded tail by albertnetymk · Pull Request #32781 · openjdk/jdk",
+          "titleZh": "有人在 2026 年 9 月报告了 java4shell 漏洞",
+          "summaryZh": "JDK 主线开发：https://openjdk.org/projects/jdk — 8392044：AVX-512 Base64 解码器在短填充尾部覆盖输出缓冲区。albertnetymk 提交 · openjdk/jdk 拉取请求 #32781",
+          "url": "https://github.com/openjdk/jdk/pull/32781",
           "source": "Hacker News",
-          "score": 4.3,
+          "score": 3.98,
           "reasons": [
-            "HN分数615",
-            "讨论量232"
+            "HN分数387",
+            "讨论量103"
           ],
-          "published": "2026-11-18T13:18:02+00:00"
+          "published": "2026-11-19T11:47:03+00:00"
         }
       ]
     },
@@ -128,108 +127,108 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-          "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short an…",
-          "titleZh": "微软 CEO 萨提亚·纳德拉解释为何要求6万名员工离职",
-          "summaryZh": "微软 CEO 萨提亚·纳德拉解释了为何在10月向6万名员工提供买断方案，实质上鼓励他们自愿离职，而不是再通过大规模裁员缩减员工人数。简而言之……",
-          "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+          "title": "Apple may be developing its own AI agent that runs your Mac",
+          "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+          "titleZh": "Apple 可能正在开发可在 Mac 上运行的自有 AI 智能体",
+          "summaryZh": "这家 iPhone 制造商似乎正在开发智能体，力图与 Meta Muse、Instinct、Claude 和 OpenAI Dots 等产品竞争。",
+          "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+          "source": "TechCrunch",
+          "score": 4.53,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-20T00:56:01+00:00"
+        },
+        {
+          "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+          "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+          "titleZh": "Anthropic 七位创始人在创纪录的 IPO 中套现近 20 亿美元",
+          "summaryZh": "IPO 发行价上调至每股 83 美元后，Anthropic 七位创始人各自获利 2.8 亿美元，公司则筹得近 1050 亿美元。",
+          "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
           "source": "TechCrunch",
           "score": 4.52,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-19T00:42:56+00:00"
+          "published": "2026-11-20T00:43:50+00:00"
         },
         {
-          "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-          "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-          "titleZh": "AI 网络攻击引发担忧之际，萨提亚·纳德拉称许多关键基础设施“无法修补”",
-          "summaryZh": "这位微软 CEO 淡化了近期 Outlook 服务中断的影响，同时指出 AI 既带来机遇，也给保护互联世界的大部分系统带来了新挑战。",
-          "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+          "title": "Anthropic rival says companies can (mostly) skip the pricey models",
+          "summary": "On the day Anthropic went public, Fireworks AI’s co-founder made the case for open source models as a cheaper alternative, and addressed the breaches that have cost the company some customers’ trust.",
+          "titleZh": "Anthropic 的竞争对手称，企业大多可以不选昂贵模型",
+          "summaryZh": "Anthropic 上市当天，Fireworks AI 联合创始人阐述了开源模型作为更低成本替代方案的理由，并回应了那些导致部分客户失去信任的安全漏洞。",
+          "url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
           "source": "TechCrunch",
-          "score": 4.5,
+          "score": 4.51,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-18T23:45:00+00:00"
+          "published": "2026-11-20T00:26:03+00:00"
         },
         {
-          "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
-          "summary": "“I don’t think disloyal to the United States,\" Musk said.",
-          "titleZh": "埃隆·马斯克称，赶走黄仁勋就像把迈克尔·乔丹踢出球队",
-          "summaryZh": "马斯克说：“我不认为这是对美国不忠。”",
-          "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
+          "title": "Want to see your live AI usage on your Mac’s icons? This clever new app lets you",
+          "summary": "IconSwapper brings your Mac's app icons to life with real-time data, animations, and playful customizations that make your desktop more fun.",
+          "titleZh": "想在 Mac 图标上查看 AI 实时使用情况？这款巧妙的新应用可以做到",
+          "summaryZh": "IconSwapper 通过实时数据、动画和有趣的自定义效果让 Mac 应用图标动起来，为桌面增添乐趣。",
+          "url": "https://techcrunch.com/2026/11/19/want-to-see-your-live-ai-usage-on-your-macs-icons-this-clever-new-app-lets-you/",
           "source": "TechCrunch",
-          "score": 4.49,
+          "score": 4.46,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-18T23:25:17+00:00"
+          "published": "2026-11-19T22:33:26+00:00"
         },
         {
-          "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-          "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-          "titleZh": "黄仁勋离任后，微软 CEO 萨提亚·纳德拉仍看好英伟达",
-          "summaryZh": "微软 CEO 萨提亚·纳德拉对黄仁勋的继任者、英伟达临时 CEO 科莱特·克雷斯表示信心。",
-          "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
-          "source": "TechCrunch",
-          "score": 4.48,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-18T23:17:28+00:00"
-        },
-        {
-          "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-          "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
-          "titleZh": "萨提亚·纳德拉预测，AI 智能体将重塑网络经济格局",
-          "summaryZh": "微软 CEO 表示，AI 智能体可能颠覆以广告为驱动的商业模式，迫使亚马逊等公司重新思考如何争取客户。",
-          "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-          "source": "TechCrunch",
-          "score": 4.47,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-18T22:58:11+00:00"
-        },
-        {
-          "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
-          "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
-          "titleZh": "据报道，Anthropic 将 IPO 发行价定为每股83美元，高于预期区间",
-          "summaryZh": "据报道，这场期待已久的 IPO 按完全稀释口径计算，将公司估值推至1.5万亿美元。",
-          "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+          "title": "Meta’s new Muse Charm device may cost $300",
+          "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
+          "titleZh": "Meta 新款 Muse Charm 设备售价或为 300 美元",
+          "summaryZh": "Meta 没有否认《The Information》的报道，只表示很快会公布更多有关这款即将推出的 AI 穿戴设备的信息。",
+          "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
           "source": "TechCrunch",
           "score": 4.45,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-18T22:11:15+00:00"
+          "published": "2026-11-19T21:58:06+00:00"
         },
         {
-          "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
-          "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
-          "titleZh": "英伟达未提交常规 SEC 报告，引发一场离奇悬念",
-          "summaryZh": "一位华尔街分析师查明了英伟达为何意外宣布，数周内不会提交正式季度业绩文件 10-Q。",
-          "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+          "title": "These tech outages are giving Y2K, AI agent style",
+          "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
+          "titleZh": "这些科技服务中断，带有 Y2K 风格的 AI 智能体意味",
+          "summaryZh": "航空订票系统、银行平台和生产力平台近期接连中断，真的只是巧合吗？网络安全专家表示，背后很可能另有更深层的原因。",
+          "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
           "source": "TechCrunch",
-          "score": 4.45,
+          "score": 4.44,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-18T21:57:40+00:00"
+          "published": "2026-11-19T21:42:31+00:00"
         },
         {
-          "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’",
-          "summary": "The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks.",
-          "titleZh": "Palmer Luckey 警告，AI 网络攻击正超过防御能力：“是时候开始逃跑了”",
-          "summaryZh": "Anduril 联合创始人表示，过时的技术正让系统容易受到新一波 AI 攻击的侵害。",
-          "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+          "title": "The unfolding Jensen Huang scandal: a timeline",
+          "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+          "titleZh": "Jensen Huang 风波持续发酵：事件时间线",
+          "summaryZh": "Jensen Huang 在一段婚外情曝光后辞去 Nvidia 职务。随着美国和中国竞相开发最先进的 AI 基础设施，此事可能对国家安全产生影响。",
+          "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
           "source": "TechCrunch",
-          "score": 4.43,
+          "score": 4.4,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-18T21:34:13+00:00"
+          "published": "2026-11-19T20:18:49+00:00"
+        },
+        {
+          "title": "Anthropic’s IPO could deliver $156B to charity",
+          "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
+          "titleZh": "Anthropic IPO 或可向慈善事业捐出 1560 亿美元",
+          "summaryZh": "按每股 95 美元计算，这家前沿实验室的公益基金会、员工捐赠及公司配捐总额可达 1560 亿美元。",
+          "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+          "source": "TechCrunch",
+          "score": 4.37,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-19T19:10:45+00:00"
         }
       ]
     }
@@ -237,7 +236,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-19T11:01:24.749540+08:00"
+      "lastRunAt": "2026-11-20T11:01:59.428757+08:00"
     }
   }
 }
