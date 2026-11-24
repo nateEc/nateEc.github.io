@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21T14:30:54+08:00",
-  "date": "2026-11-21",
+  "updatedAt": "2026-11-24T14:34:39+08:00",
+  "date": "2026-11-24",
   "period": "daily",
   "source": "https://github.com/trending?since=daily",
   "repositories": [
     {
       "rank": 1,
       "fullName": "elementalsouls/Claude-BugHunter",
-      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 1622,
-      "totalStars": 14667,
-      "forks": 1724,
+      "starsToday": 2029,
+      "totalStars": 20169,
+      "forks": 2124,
       "url": "https://github.com/elementalsouls/Claude-BugHunter"
     },
     {
@@ -22,9 +22,9 @@
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
       "languageColor": "#89E051",
-      "starsToday": 890,
-      "totalStars": 322984,
-      "forks": 28677,
+      "starsToday": 840,
+      "totalStars": 325302,
+      "forks": 28852,
       "url": "https://github.com/obra/superpowers"
     },
     {
@@ -33,9 +33,9 @@
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 773,
-      "totalStars": 61552,
-      "forks": 5582,
+      "starsToday": 790,
+      "totalStars": 63965,
+      "forks": 5815,
       "url": "https://github.com/HKUDS/CLI-Anything"
     },
     {
@@ -44,9 +44,9 @@
       "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 847,
-      "totalStars": 67810,
-      "forks": 8864,
+      "starsToday": 828,
+      "totalStars": 69688,
+      "forks": 9095,
       "url": "https://github.com/jingyaogong/minimind"
     },
     {
@@ -55,9 +55,9 @@
       "description": "Cursor plugin specification and official plugins",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 299,
-      "totalStars": 17908,
-      "forks": 1962,
+      "starsToday": 397,
+      "totalStars": 18904,
+      "forks": 2049,
       "url": "https://github.com/cursor/plugins"
     },
     {
@@ -66,9 +66,9 @@
       "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
       "language": "TypeScript",
       "languageColor": "#3178C6",
-      "starsToday": 1241,
-      "totalStars": 205498,
-      "forks": 10745,
+      "starsToday": 924,
+      "totalStars": 208148,
+      "forks": 10875,
       "url": "https://github.com/firecrawl/firecrawl"
     },
     {
@@ -77,9 +77,9 @@
       "description": "The official NGINX Open Source repository.",
       "language": "C",
       "languageColor": "#555555",
-      "starsToday": 246,
-      "totalStars": 32613,
-      "forks": 8368,
+      "starsToday": 174,
+      "totalStars": 33093,
+      "forks": 8395,
       "url": "https://github.com/nginx/nginx"
     },
     {
@@ -88,20 +88,20 @@
       "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "language": "C++",
       "languageColor": "#F34B7D",
-      "starsToday": 217,
-      "totalStars": 11829,
-      "forks": 3640,
+      "starsToday": 184,
+      "totalStars": 12334,
+      "forks": 3681,
       "url": "https://github.com/openvinotoolkit/openvino"
     },
     {
       "rank": 9,
       "fullName": "cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
       "languageColor": "#E34C26",
-      "starsToday": 636,
-      "totalStars": 69421,
-      "forks": 4659,
+      "starsToday": 620,
+      "totalStars": 71187,
+      "forks": 4758,
       "url": "https://github.com/cathrynlavery/diagram-design"
     },
     {
@@ -110,9 +110,9 @@
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
       "languageColor": "#3572A5",
-      "starsToday": 681,
-      "totalStars": 71570,
-      "forks": 6342,
+      "starsToday": 797,
+      "totalStars": 73634,
+      "forks": 6495,
       "url": "https://github.com/mvanhorn/last30days-skill"
     }
   ],
