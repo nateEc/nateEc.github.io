@@ -1,124 +1,124 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-20T11:31:21+08:00",
-  "date": "2026-11-20",
+  "updatedAt": "2026-11-26T11:31:16+08:00",
+  "date": "2026-11-26",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-          "summary": "Should governments intervene to substantially slow the progress of frontier AI? In the inaugural YC debate, Jacob Coxon, an ex-Anthropic and OpenAI researche...",
-          "titleZh": "政府是否应放缓前沿 AI？Jacob Coxon 与 Robin Hanson 辩论 [视频]",
-          "summaryZh": "政府是否应介入，大幅放缓前沿 AI 的发展？在首场 YC 辩论中，前 Anthropic 和 OpenAI 研究员 Jacob Coxon……",
-          "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+          "title": "The New York Times warns photographers not to update Photoshop over AI features",
+          "summary": "The New York Times is warning freelance photographers against using the latest version of Adobe Photoshop, saying it uses AI “in ways that may not be apparent to users.”",
+          "titleZh": "《纽约时报》警告摄影师不要更新 Photoshop，原因是其中的 AI 功能",
+          "summaryZh": "《纽约时报》提醒自由摄影师不要使用最新版 Adobe Photoshop，称其中使用 AI 的方式“可能不会被用户察觉”。",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
           "source": "Hacker News",
-          "score": 6.48,
+          "score": 6.85,
           "reasons": [
             "AI",
-            "HN分数86",
-            "讨论量153"
+            "HN分数241",
+            "讨论量193"
           ],
-          "published": "2026-11-19T18:47:16+00:00"
+          "published": "2026-11-25T21:18:02+00:00"
         },
         {
-          "title": "Anthropic’s Nasdaq debut",
-          "summary": "Comments",
-          "titleZh": "Anthropic 纳斯达克上市",
-          "summaryZh": "评论",
-          "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+          "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+          "summary": "I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what's now happening, so I'm trying again. Last night, we had friends and colleagues over for d…",
+          "titleZh": "天啊，天啊，天啊，天啊：眼下正在发生之事的规模",
+          "summaryZh": "我觉得我之前的文章（以及标题）、播客和演讲，都没能充分说明眼下正在发生之事的规模，所以我想再试一次。昨晚，我们邀请了一些朋友和同事来家里……",
+          "url": "https://scottaaronson.blog/?p=10379",
           "source": "Hacker News",
-          "score": 4.94,
+          "score": 4.85,
           "reasons": [
-            "HN分数978",
-            "讨论量1904"
+            "HN分数1009",
+            "讨论量859"
           ],
-          "published": "2026-11-19T17:02:40+00:00"
+          "published": "2026-11-25T19:11:27+00:00"
         },
         {
-          "title": "UK government forced to admit it issued Apple a secret encryption order",
-          "summary": "The Investigatory Powers Tribunal has rejected the UK government’s attempt to keep its order secret, marking a significant victory for transparency.",
-          "titleZh": "英国政府被迫承认曾向 Apple 秘密发布加密令",
-          "summaryZh": "调查权力法庭驳回英国政府保密该命令的企图，成为透明度方面的一项重大胜利。",
-          "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+          "title": "1Password Security Incident",
+          "summary": "1Password identified a security incident involving some of our backend systems. Customer vaults were not accessed and remain secure.",
+          "titleZh": "1Password 安全事件",
+          "summaryZh": "1Password 发现其部分后端系统发生安全事件。客户保险库未遭访问，仍然安全。",
+          "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
           "source": "Hacker News",
-          "score": 4.37,
+          "score": 4.75,
           "reasons": [
-            "HN分数545",
-            "讨论量246"
+            "HN分数1231",
+            "讨论量519"
           ],
-          "published": "2026-11-19T16:21:03+00:00"
+          "published": "2026-11-25T17:18:26+00:00"
         },
         {
-          "title": "Claude solves two open problems in the physics of black holes",
-          "summary": "Claude Fable 5.2 has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity.",
-          "titleZh": "Claude 解开黑洞物理学中的两个未解难题",
-          "summaryZh": "Claude Fable 5.2 解开了理论物理学中的两个未解难题，两者都涉及黑洞以及寻找量子引力理论。",
-          "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+          "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+          "summary": "Google Research. Contribute to google-research/google-research development by creating an account on GitHub.",
+          "titleZh": "Google 发布关于整数分解、离散对数等主题的 Cogentic 论文",
+          "summaryZh": "Google Research。你可以在 GitHub 上创建账户，为 google-research/google-research 项目贡献代码。",
+          "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
           "source": "Hacker News",
-          "score": 4.28,
+          "score": 4.31,
           "reasons": [
-            "HN分数418",
-            "讨论量188"
+            "HN分数455",
+            "讨论量340"
           ],
-          "published": "2026-11-19T17:30:44+00:00"
+          "published": "2026-11-25T13:33:07+00:00"
         },
         {
-          "title": "Pancreatic cancer halted by virus injection in three patients",
-          "summary": "A cancer-killing virus has stopped pancreatic tumours from growing and spreading in three people in an initial safety trial, raising hopes that it may help to beat the deadly condition",
-          "titleZh": "三名患者注射病毒后胰腺癌停止进展",
-          "summaryZh": "一种杀癌病毒在一项初步安全性试验中阻止了三名患者的胰腺肿瘤生长和扩散，让人们对战胜这一致命疾病抱有希望。",
-          "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
+          "title": "Much shorter version of GRH Lean verification from Anthropic",
+          "summary": "A short Lean 4 proof of the Generalized Riemann Hypothesis - lsernau/grh-lean",
+          "titleZh": "Anthropic 的 GRH Lean 验证精简版",
+          "summaryZh": "广义黎曼猜想的简短 Lean 4 证明——lsernau/grh-lean。",
+          "url": "https://github.com/lsernau/grh-lean",
           "source": "Hacker News",
-          "score": 4.26,
+          "score": 4.29,
           "reasons": [
-            "HN分数637",
-            "讨论量101"
+            "HN分数320",
+            "讨论量151"
           ],
-          "published": "2026-11-19T17:25:33+00:00"
+          "published": "2026-11-25T21:48:10+00:00"
         },
         {
-          "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
-          "summary": "Language model performance on engineering tasks, compared by cost and token use.",
-          "titleZh": "Gemini 4 Neon 登上模型工程指数榜首",
-          "summaryZh": "按成本和 token 用量比较语言模型在工程任务上的表现。",
-          "url": "https://git-aarvin.github.io/mei/",
+          "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
+          "summary": "He found it teeming with life and beauty.",
+          "titleZh": "关于那位在 Home Depot 蓄水池里浮潜的人，有几个问题想问",
+          "summaryZh": "他发现池中充满生机与美景。",
+          "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
           "source": "Hacker News",
-          "score": 4.19,
+          "score": 4.13,
           "reasons": [
-            "HN分数206",
-            "讨论量124"
+            "HN分数448",
+            "讨论量111"
           ],
-          "published": "2026-11-19T23:35:35+00:00"
+          "published": "2026-11-25T15:14:32+00:00"
         },
         {
-          "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
-          "summary": "Ad auctions are calibrated to pay out just enough to keep you playing. The winners of the auction don",
-          "titleZh": "98%老虎机：付费广告如何变成攫取式税负",
-          "summaryZh": "广告竞价经过精密设计，只支付刚好足以让你继续参与的回报。竞拍赢家……",
-          "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+          "title": "Jev is probably Qwen3.5-35B-A3B",
+          "summary": "TypeSafe doesn't disclose Jev's backbone. Self-identification, tokenizer, and throughput tests all point to Qwen3.5-35B-A3B.",
+          "titleZh": "Jev 很可能基于 Qwen3.5-35B-A3B",
+          "summaryZh": "TypeSafe 没有透露 Jev 的底层模型。自我识别、分词器和吞吐量测试的结果都指向 Qwen3.5-35B-A3B。",
+          "url": "https://modaic.dev/blog/latency-doesnt-lie",
           "source": "Hacker News",
-          "score": 4.06,
+          "score": 4.11,
           "reasons": [
-            "HN分数222",
-            "讨论量120"
+            "HN分数251",
+            "讨论量71"
           ],
-          "published": "2026-11-19T18:35:17+00:00"
+          "published": "2026-11-25T22:57:04+00:00"
         },
         {
-          "title": "Someone reported java4shell bug in September 2026",
-          "summary": "JDK main-line development https://openjdk.org/projects/jdk - 8392044: AVX-512 Base64 decoder overwrites output buffer on short padded tail by albertnetymk · Pull Request #32781 · openjdk/jdk",
-          "titleZh": "有人在 2026 年 9 月报告了 java4shell 漏洞",
-          "summaryZh": "JDK 主线开发：https://openjdk.org/projects/jdk — 8392044：AVX-512 Base64 解码器在短填充尾部覆盖输出缓冲区。albertnetymk 提交 · openjdk/jdk 拉取请求 #32781",
-          "url": "https://github.com/openjdk/jdk/pull/32781",
+          "title": "Slow Ubuntu security response times",
+          "summary": "Products Openwall GNU/*/Linux server OS Linux Kernel Runtime Guard John the Ripper password cracker Free & Open Source for any platform in the cloud Pro for Linux Pro for macOS Wordlists for password cracking passwdqc po…",
+          "titleZh": "Ubuntu 安全响应速度缓慢",
+          "summaryZh": "产品：Openwall GNU/*/Linux 服务器操作系统、Linux Kernel Runtime Guard、John the Ripper 密码破解工具；适用于任何云平台的免费开源版本；Linux 专业版、macOS 专业版、密码破解词表、passwdqc 等。",
+          "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
           "source": "Hacker News",
-          "score": 3.98,
+          "score": 3.97,
           "reasons": [
-            "HN分数387",
-            "讨论量103"
+            "HN分数169",
+            "讨论量81"
           ],
-          "published": "2026-11-19T11:47:03+00:00"
+          "published": "2026-11-25T20:38:00+00:00"
         }
       ]
     },
@@ -127,108 +127,106 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
-          "title": "Apple may be developing its own AI agent that runs your Mac",
-          "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-          "titleZh": "Apple 可能正在开发可在 Mac 上运行的自有 AI 智能体",
-          "summaryZh": "这家 iPhone 制造商似乎正在开发智能体，力图与 Meta Muse、Instinct、Claude 和 OpenAI Dots 等产品竞争。",
-          "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+          "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+          "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+          "titleZh": "标普考虑因治理和“关键人物”风险下调 Nvidia 信用评级",
+          "summaryZh": "这家信用评级机构可能将 Nvidia 的信用评级下调至 AA-，这是第四高的评级。",
+          "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
           "source": "TechCrunch",
-          "score": 4.53,
+          "score": 4.47,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-20T00:56:01+00:00"
+          "published": "2026-11-25T22:44:32+00:00"
         },
         {
-          "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-          "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
-          "titleZh": "Anthropic 七位创始人在创纪录的 IPO 中套现近 20 亿美元",
-          "summaryZh": "IPO 发行价上调至每股 83 美元后，Anthropic 七位创始人各自获利 2.8 亿美元，公司则筹得近 1050 亿美元。",
-          "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+          "title": "FCC approves SpaceX plan to put AI data centers in space",
+          "summary": "The FCC dismissed some of the key concerns raised by opponents, including potential threats to scientific research, because the agency determined they fell outside its regulatory authority.",
+          "titleZh": "美国联邦通信委员会批准 SpaceX 将 AI 数据中心送入太空的计划",
+          "summaryZh": "美国联邦通信委员会驳回了反对者提出的部分主要担忧，包括对科学研究的潜在威胁，理由是该机构认定这些问题不属于其监管权限。",
+          "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
           "source": "TechCrunch",
-          "score": 4.52,
+          "score": 4.42,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-20T00:43:50+00:00"
+          "published": "2026-11-25T20:56:44+00:00"
         },
         {
-          "title": "Anthropic rival says companies can (mostly) skip the pricey models",
-          "summary": "On the day Anthropic went public, Fireworks AI’s co-founder made the case for open source models as a cheaper alternative, and addressed the breaches that have cost the company some customers’ trust.",
-          "titleZh": "Anthropic 的竞争对手称，企业大多可以不选昂贵模型",
-          "summaryZh": "Anthropic 上市当天，Fireworks AI 联合创始人阐述了开源模型作为更低成本替代方案的理由，并回应了那些导致部分客户失去信任的安全漏洞。",
-          "url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+          "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+          "summary": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.",
+          "titleZh": "OpenAI 称，随着 Chat 与 Work 合并，ChatGPT 重度用户可能更早触及使用上限",
+          "summaryZh": "OpenAI 将在整合 ChatGPT 的 Chat 和 Work 体验时，推出统一的用量计量机制。",
+          "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
           "source": "TechCrunch",
-          "score": 4.51,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-20T00:26:03+00:00"
+          "published": "2026-11-25T20:03:27+00:00"
         },
         {
-          "title": "Want to see your live AI usage on your Mac’s icons? This clever new app lets you",
-          "summary": "IconSwapper brings your Mac's app icons to life with real-time data, animations, and playful customizations that make your desktop more fun.",
-          "titleZh": "想在 Mac 图标上查看 AI 实时使用情况？这款巧妙的新应用可以做到",
-          "summaryZh": "IconSwapper 通过实时数据、动画和有趣的自定义效果让 Mac 应用图标动起来，为桌面增添乐趣。",
-          "url": "https://techcrunch.com/2026/11/19/want-to-see-your-live-ai-usage-on-your-macs-icons-this-clever-new-app-lets-you/",
+          "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+          "summary": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+          "titleZh": "黄仁勋违反 Nvidia 行为准则，员工或许不会忘记",
+          "summaryZh": "大多数行为准则都体现了企业文化。对 Nvidia 来说，这可能带来后果。",
+          "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
           "source": "TechCrunch",
-          "score": 4.46,
+          "score": 4.39,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-19T22:33:26+00:00"
+          "published": "2026-11-25T19:54:57+00:00"
         },
         {
-          "title": "Meta’s new Muse Charm device may cost $300",
-          "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
-          "titleZh": "Meta 新款 Muse Charm 设备售价或为 300 美元",
-          "summaryZh": "Meta 没有否认《The Information》的报道，只表示很快会公布更多有关这款即将推出的 AI 穿戴设备的信息。",
-          "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+          "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+          "summary": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development.",
+          "titleZh": "Anthropic 的 Dario Amodei 称“将人类控制权交给 AI”的指控荒谬",
+          "summaryZh": "Anthropic 首席执行官 Dario Amodei 反驳了竞争对手关于他主张将人类自主权交给 AI 的指控；与此同时，领先的 AI 公司正越来越多地将自身研究和模型开发自动化。",
+          "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
           "source": "TechCrunch",
-          "score": 4.45,
+          "score": 4.38,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-19T21:58:06+00:00"
+          "published": "2026-11-25T19:44:24+00:00"
         },
         {
-          "title": "These tech outages are giving Y2K, AI agent style",
-          "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
-          "titleZh": "这些科技服务中断，带有 Y2K 风格的 AI 智能体意味",
-          "summaryZh": "航空订票系统、银行平台和生产力平台近期接连中断，真的只是巧合吗？网络安全专家表示，背后很可能另有更深层的原因。",
-          "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+          "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+          "summary": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
+          "titleZh": "今年圣诞节想给孩子买 AI 玩具？纽约不行",
+          "summaryZh": "纽约州已禁止 AI 聊天机器人玩具五年。Common Sense Media 的新研究则揭示了令人担忧的安全问题，包括接触不当内容以及情感发展面临的风险。",
+          "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
           "source": "TechCrunch",
-          "score": 4.44,
+          "score": 4.34,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-19T21:42:31+00:00"
+          "published": "2026-11-25T18:11:46+00:00"
         },
         {
-          "title": "The unfolding Jensen Huang scandal: a timeline",
-          "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-          "titleZh": "Jensen Huang 风波持续发酵：事件时间线",
-          "summaryZh": "Jensen Huang 在一段婚外情曝光后辞去 Nvidia 职务。随着美国和中国竞相开发最先进的 AI 基础设施，此事可能对国家安全产生影响。",
-          "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+          "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+          "summary": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
+          "titleZh": "Character.AI 拍卖用户私人聊天记录的计划遭州检察长反对",
+          "summaryZh": "州检察长表示，Character.AI 拟议中的破产资产出售包含超过 2100 万个美国账户的敏感个人数据，其中有 210 万个账户注册用户为未成年人。",
+          "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
           "source": "TechCrunch",
-          "score": 4.4,
+          "score": 4.33,
           "reasons": [
             "AI"
           ],
-          "published": "2026-11-19T20:18:49+00:00"
+          "published": "2026-11-25T17:35:58+00:00"
         },
         {
-          "title": "Anthropic’s IPO could deliver $156B to charity",
-          "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
-          "titleZh": "Anthropic IPO 或可向慈善事业捐出 1560 亿美元",
-          "summaryZh": "按每股 95 美元计算，这家前沿实验室的公益基金会、员工捐赠及公司配捐总额可达 1560 亿美元。",
-          "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
+          "title": "The canceled Tesla Cybertruck is the fastest-selling used truck in America",
+          "summary": "The Tesla Cybertruck was the fastest-selling used truck last month, averaging just 39.1 days on the market compared to 65.5 days for trucks overall.",
+          "titleZh": "停产的 Tesla Cybertruck 成为美国售出速度最快的二手皮卡",
+          "summaryZh": "上个月，Tesla Cybertruck 是售出速度最快的二手皮卡，平均仅在市场上挂牌 39.1 天，而所有皮卡的平均时间为 65.5 天。",
+          "url": "https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/",
           "source": "TechCrunch",
-          "score": 4.37,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-19T19:10:45+00:00"
+          "score": 1.79,
+          "reasons": [],
+          "published": "2026-11-25T19:54:32+00:00"
         }
       ]
     }
@@ -236,7 +234,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-20T11:01:59.428757+08:00"
+      "lastRunAt": "2026-11-26T11:01:37.032712+08:00"
     }
   }
 }
