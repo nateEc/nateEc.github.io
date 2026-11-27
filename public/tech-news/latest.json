@@ -1,26 +1,41 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-26T11:31:16+08:00",
-  "date": "2026-11-26",
+  "updatedAt": "2026-11-27T11:31:32+08:00",
+  "date": "2026-11-27",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "The New York Times warns photographers not to update Photoshop over AI features",
-          "summary": "The New York Times is warning freelance photographers against using the latest version of Adobe Photoshop, saying it uses AI “in ways that may not be apparent to users.”",
-          "titleZh": "《纽约时报》警告摄影师不要更新 Photoshop，原因是其中的 AI 功能",
-          "summaryZh": "《纽约时报》提醒自由摄影师不要使用最新版 Adobe Photoshop，称其中使用 AI 的方式“可能不会被用户察觉”。",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+          "title": "AI made self-hosting fun again",
+          "summary": "I’ve been self-hosting things for many years. There were times when I was quite enthusiastic about it, constantly trying out new software and tinkering with my infrastructure. But at some point, that enthusiasm faded a b…",
+          "titleZh": "AI 让自托管再次变得有趣",
+          "summaryZh": "我自托管各种服务已经很多年了。曾有一段时间，我对此相当热衷，不断尝试新软件、折腾自己的基础设施。但后来，这份热情逐渐消退了……",
+          "url": "https://janlukas.blog/posts/ai-self-hosting",
           "source": "Hacker News",
-          "score": 6.85,
+          "score": 7.0,
           "reasons": [
             "AI",
-            "HN分数241",
-            "讨论量193"
+            "HN分数390",
+            "讨论量211"
           ],
-          "published": "2026-11-25T21:18:02+00:00"
+          "published": "2026-11-26T21:47:45+00:00"
+        },
+        {
+          "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+          "summary": "From February 2027, Google's terms require AI agents to reach Gmail, Drive and the rest of Workspace through Google's own MCP servers. What the rule says, what the servers can and can't do, and what to change before the…",
+          "titleZh": "Google 将要求 AI 智能体使用其 MCP 服务器；Gmail 服务器无法发送邮件",
+          "summaryZh": "从 2027 年 2 月起，Google 的条款要求 AI 智能体通过 Google 自家的 MCP 服务器访问 Gmail、Drive 及其他 Workspace 服务。本文介绍这项规定的内容、这些服务器能做什么和不能做什么，以及在此之前需要做哪些调整……",
+          "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+          "source": "Hacker News",
+          "score": 6.58,
+          "reasons": [
+            "AI",
+            "HN分数265",
+            "讨论量223"
+          ],
+          "published": "2026-11-26T09:44:23+00:00"
         },
         {
           "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
@@ -29,96 +44,82 @@
           "summaryZh": "我觉得我之前的文章（以及标题）、播客和演讲，都没能充分说明眼下正在发生之事的规模，所以我想再试一次。昨晚，我们邀请了一些朋友和同事来家里……",
           "url": "https://scottaaronson.blog/?p=10379",
           "source": "Hacker News",
-          "score": 4.85,
+          "score": 4.5,
           "reasons": [
-            "HN分数1009",
-            "讨论量859"
+            "HN分数2001",
+            "讨论量1822"
           ],
           "published": "2026-11-25T19:11:27+00:00"
         },
         {
-          "title": "1Password Security Incident",
-          "summary": "1Password identified a security incident involving some of our backend systems. Customer vaults were not accessed and remain secure.",
-          "titleZh": "1Password 安全事件",
-          "summaryZh": "1Password 发现其部分后端系统发生安全事件。客户保险库未遭访问，仍然安全。",
-          "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+          "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+          "summary": "YouTube Ad Blocker - Chrome / Browser Extension. Contribute to antonpictures/youtube-punisher development by creating an account on GitHub.",
+          "titleZh": "YouTube 广告惩罚器——广告播放时自动重新加载 YouTube 页面",
+          "summaryZh": "YouTube 广告拦截器——适用于 Chrome 和其他浏览器的扩展程序。注册 GitHub 账号，为 antonpictures/youtube-punisher 项目贡献代码。",
+          "url": "https://github.com/antonpictures/youtube-punisher",
           "source": "Hacker News",
-          "score": 4.75,
+          "score": 4.33,
           "reasons": [
-            "HN分数1231",
-            "讨论量519"
+            "HN分数290",
+            "讨论量374"
           ],
-          "published": "2026-11-25T17:18:26+00:00"
+          "published": "2026-11-26T17:36:47+00:00"
         },
         {
-          "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-          "summary": "Google Research. Contribute to google-research/google-research development by creating an account on GitHub.",
-          "titleZh": "Google 发布关于整数分解、离散对数等主题的 Cogentic 论文",
-          "summaryZh": "Google Research。你可以在 GitHub 上创建账户，为 google-research/google-research 项目贡献代码。",
-          "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+          "title": "Intel One Mono font (2023)",
+          "summary": "Intel One Mono font repository. Contribute to intel/intel-one-mono development by creating an account on GitHub.",
+          "titleZh": "Intel One Mono 字体（2023）",
+          "summaryZh": "Intel One Mono 字体仓库。注册 GitHub 账号，为 intel/intel-one-mono 项目贡献代码。",
+          "url": "https://github.com/intel/intel-one-mono",
           "source": "Hacker News",
-          "score": 4.31,
+          "score": 4.16,
           "reasons": [
-            "HN分数455",
-            "讨论量340"
+            "HN分数480",
+            "讨论量243"
           ],
-          "published": "2026-11-25T13:33:07+00:00"
+          "published": "2026-11-26T10:11:01+00:00"
         },
         {
-          "title": "Much shorter version of GRH Lean verification from Anthropic",
-          "summary": "A short Lean 4 proof of the Generalized Riemann Hypothesis - lsernau/grh-lean",
-          "titleZh": "Anthropic 的 GRH Lean 验证精简版",
-          "summaryZh": "广义黎曼猜想的简短 Lean 4 证明——lsernau/grh-lean。",
-          "url": "https://github.com/lsernau/grh-lean",
+          "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+          "summary": "Traditional architecture is alive and well in Lahore. A photo essay of Kamil Khan Mumtaz’s greatest works.",
+          "titleZh": "卡米尔·汗·穆姆塔兹：在巴基斯坦备受推崇、在国外却鲜为人知的建筑师",
+          "summaryZh": "传统建筑在拉合尔依然蓬勃发展。本文以摄影文章的形式，展示卡米尔·汗·穆姆塔兹最杰出的作品。",
+          "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
           "source": "Hacker News",
-          "score": 4.29,
+          "score": 4.02,
           "reasons": [
-            "HN分数320",
-            "讨论量151"
+            "HN分数274",
+            "讨论量52"
           ],
-          "published": "2026-11-25T21:48:10+00:00"
+          "published": "2026-11-26T21:08:05+00:00"
         },
         {
-          "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-          "summary": "He found it teeming with life and beauty.",
-          "titleZh": "关于那位在 Home Depot 蓄水池里浮潜的人，有几个问题想问",
-          "summaryZh": "他发现池中充满生机与美景。",
-          "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
+          "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+          "summary": "The chief technology officer and co-founder of ransomwarehelp.com , a six year old Florida business that claimed to use “advanced cryptographic tools” to restore data locked by ransomware, has been charged with wire frau…",
+          "titleZh": "“RansomwareHelp”首席技术官被控电信诈骗",
+          "summaryZh": "ransomwarehelp.com 的首席技术官兼联合创始人被控电信诈骗。这家佛罗里达州企业成立六年，声称使用“先进的密码学工具”恢复被勒索软件锁定的数据。",
+          "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
           "source": "Hacker News",
-          "score": 4.13,
+          "score": 4.01,
           "reasons": [
-            "HN分数448",
-            "讨论量111"
+            "HN分数226",
+            "讨论量99"
           ],
-          "published": "2026-11-25T15:14:32+00:00"
+          "published": "2026-11-26T17:47:45+00:00"
         },
         {
-          "title": "Jev is probably Qwen3.5-35B-A3B",
-          "summary": "TypeSafe doesn't disclose Jev's backbone. Self-identification, tokenizer, and throughput tests all point to Qwen3.5-35B-A3B.",
-          "titleZh": "Jev 很可能基于 Qwen3.5-35B-A3B",
-          "summaryZh": "TypeSafe 没有透露 Jev 的底层模型。自我识别、分词器和吞吐量测试的结果都指向 Qwen3.5-35B-A3B。",
-          "url": "https://modaic.dev/blog/latency-doesnt-lie",
+          "title": "AMD-specific fork of llama.cpp",
+          "summary": "Miscellaneous bits and bobs from the tech world",
+          "titleZh": "AMD 专用的 llama.cpp 分支",
+          "summaryZh": "科技领域的杂项见闻。",
+          "url": "https://devnull.land/amd-specific-llama-cpp",
           "source": "Hacker News",
-          "score": 4.11,
+          "score": 4.0,
           "reasons": [
-            "HN分数251",
-            "讨论量71"
+            "HN分数300",
+            "讨论量73"
           ],
-          "published": "2026-11-25T22:57:04+00:00"
-        },
-        {
-          "title": "Slow Ubuntu security response times",
-          "summary": "Products Openwall GNU/*/Linux server OS Linux Kernel Runtime Guard John the Ripper password cracker Free & Open Source for any platform in the cloud Pro for Linux Pro for macOS Wordlists for password cracking passwdqc po…",
-          "titleZh": "Ubuntu 安全响应速度缓慢",
-          "summaryZh": "产品：Openwall GNU/*/Linux 服务器操作系统、Linux Kernel Runtime Guard、John the Ripper 密码破解工具；适用于任何云平台的免费开源版本；Linux 专业版、macOS 专业版、密码破解词表、passwdqc 等。",
-          "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
-          "source": "Hacker News",
-          "score": 3.97,
-          "reasons": [
-            "HN分数169",
-            "讨论量81"
-          ],
-          "published": "2026-11-25T20:38:00+00:00"
+          "published": "2026-11-26T17:11:29+00:00"
         }
       ]
     },
@@ -127,13 +128,39 @@
       "source": "https://techcrunch.com/",
       "items": [
         {
+          "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+          "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+          "titleZh": "Nvidia 暂停向东南亚发运芯片",
+          "summaryZh": "随着美国加大力度阻止 AI 芯片流入中国，Nvidia 已通知制造合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运服务器。",
+          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+          "source": "TechCrunch",
+          "score": 4.39,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-26T20:03:54+00:00"
+        },
+        {
+          "title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+          "summary": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+          "titleZh": "《侠盗猎车手 VI》证明效率并非美德",
+          "summaryZh": "Anthropic 上市的同一天，一款倾注大量心血、由人类打造的电子游戏成为史上最成功的娱乐产品首发之一。",
+          "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+          "source": "TechCrunch",
+          "score": 4.28,
+          "reasons": [
+            "AI"
+          ],
+          "published": "2026-11-26T16:00:00+00:00"
+        },
+        {
           "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
           "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
           "titleZh": "标普考虑因治理和“关键人物”风险下调 Nvidia 信用评级",
           "summaryZh": "这家信用评级机构可能将 Nvidia 的信用评级下调至 AA-，这是第四高的评级。",
           "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
           "source": "TechCrunch",
-          "score": 4.47,
+          "score": 3.8,
           "reasons": [
             "AI"
           ],
@@ -146,7 +173,7 @@
           "summaryZh": "美国联邦通信委员会驳回了反对者提出的部分主要担忧，包括对科学研究的潜在威胁，理由是该机构认定这些问题不属于其监管权限。",
           "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
           "source": "TechCrunch",
-          "score": 4.42,
+          "score": 3.75,
           "reasons": [
             "AI"
           ],
@@ -159,7 +186,7 @@
           "summaryZh": "OpenAI 将在整合 ChatGPT 的 Chat 和 Work 体验时，推出统一的用量计量机制。",
           "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 3.73,
           "reasons": [
             "AI"
           ],
@@ -172,7 +199,7 @@
           "summaryZh": "大多数行为准则都体现了企业文化。对 Nvidia 来说，这可能带来后果。",
           "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 3.72,
           "reasons": [
             "AI"
           ],
@@ -185,48 +212,22 @@
           "summaryZh": "Anthropic 首席执行官 Dario Amodei 反驳了竞争对手关于他主张将人类自主权交给 AI 的指控；与此同时，领先的 AI 公司正越来越多地将自身研究和模型开发自动化。",
           "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
           "source": "TechCrunch",
-          "score": 4.38,
+          "score": 3.72,
           "reasons": [
             "AI"
           ],
           "published": "2026-11-25T19:44:24+00:00"
         },
         {
-          "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
-          "summary": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
-          "titleZh": "今年圣诞节想给孩子买 AI 玩具？纽约不行",
-          "summaryZh": "纽约州已禁止 AI 聊天机器人玩具五年。Common Sense Media 的新研究则揭示了令人担忧的安全问题，包括接触不当内容以及情感发展面临的风险。",
-          "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
-          "source": "TechCrunch",
-          "score": 4.34,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-25T18:11:46+00:00"
-        },
-        {
-          "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
-          "summary": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
-          "titleZh": "Character.AI 拍卖用户私人聊天记录的计划遭州检察长反对",
-          "summaryZh": "州检察长表示，Character.AI 拟议中的破产资产出售包含超过 2100 万个美国账户的敏感个人数据，其中有 210 万个账户注册用户为未成年人。",
-          "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
-          "source": "TechCrunch",
-          "score": 4.33,
-          "reasons": [
-            "AI"
-          ],
-          "published": "2026-11-25T17:35:58+00:00"
-        },
-        {
-          "title": "The canceled Tesla Cybertruck is the fastest-selling used truck in America",
-          "summary": "The Tesla Cybertruck was the fastest-selling used truck last month, averaging just 39.1 days on the market compared to 65.5 days for trucks overall.",
-          "titleZh": "停产的 Tesla Cybertruck 成为美国售出速度最快的二手皮卡",
-          "summaryZh": "上个月，Tesla Cybertruck 是售出速度最快的二手皮卡，平均仅在市场上挂牌 39.1 天，而所有皮卡的平均时间为 65.5 天。",
-          "url": "https://techcrunch.com/2026/11/25/the-canceled-tesla-cybertruck-is-the-fastest-selling-used-truck-in-america/",
+          "title": "Is Alice Huang a spy or not?",
+          "summary": "The central, still-unproven claim in the Nvidia scandal is that Alice Huang, the former Megaspeed exec with whom Nvidia CEO Jensen Huang had an extramarital affair, is a Chinese spy.",
+          "titleZh": "黄爱丽到底是不是间谍？",
+          "summaryZh": "Nvidia 丑闻的核心指控至今仍未得到证实：Nvidia 首席执行官黄仁勋曾与前 Megaspeed 高管黄爱丽婚外情，而她是一名中国间谍。",
+          "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
           "source": "TechCrunch",
           "score": 1.79,
           "reasons": [],
-          "published": "2026-11-25T19:54:32+00:00"
+          "published": "2026-11-26T20:00:00+00:00"
         }
       ]
     }
@@ -234,7 +235,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-26T11:01:37.032712+08:00"
+      "lastRunAt": "2026-11-27T11:02:14.013724+08:00"
     }
   }
 }
