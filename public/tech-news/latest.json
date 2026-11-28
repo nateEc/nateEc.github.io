@@ -1,125 +1,123 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-27T11:31:32+08:00",
-  "date": "2026-11-27",
+  "updatedAt": "2026-11-28T11:30:43+08:00",
+  "date": "2026-11-28",
   "sections": [
     {
       "name": "Hacker News",
       "source": "https://news.ycombinator.com/news",
       "items": [
         {
-          "title": "AI made self-hosting fun again",
-          "summary": "I’ve been self-hosting things for many years. There were times when I was quite enthusiastic about it, constantly trying out new software and tinkering with my infrastructure. But at some point, that enthusiasm faded a b…",
-          "titleZh": "AI 让自托管再次变得有趣",
-          "summaryZh": "我自托管各种服务已经很多年了。曾有一段时间，我对此相当热衷，不断尝试新软件、折腾自己的基础设施。但后来，这份热情逐渐消退了……",
-          "url": "https://janlukas.blog/posts/ai-self-hosting",
+          "title": "Michael Nielsen took down his book on neural nets",
+          "summary": "I wrote this book between 2011 and 2015. At the time, I expected AGI systems based on neural networks to be many decades away, but to bring remarkable benefits for humanity. I also expected significant challenges, but be…",
+          "titleZh": "Michael Nielsen 下架了他的神经网络著作",
+          "summaryZh": "我在 2011 年至 2015 年间写了这本书。当时，我预计基于神经网络的通用人工智能系统还要几十年才会出现，但它们将为人类带来显著益处。我也预料到会面临重大挑战，但……",
+          "url": "https://neuralnetworksanddeeplearning.com/",
           "source": "Hacker News",
-          "score": 7.0,
+          "score": 4.41,
           "reasons": [
-            "AI",
-            "HN分数390",
-            "讨论量211"
+            "HN分数419",
+            "讨论量268"
           ],
-          "published": "2026-11-26T21:47:45+00:00"
+          "published": "2026-11-27T19:31:01+00:00"
         },
         {
-          "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-          "summary": "From February 2027, Google's terms require AI agents to reach Gmail, Drive and the rest of Workspace through Google's own MCP servers. What the rule says, what the servers can and can't do, and what to change before the…",
-          "titleZh": "Google 将要求 AI 智能体使用其 MCP 服务器；Gmail 服务器无法发送邮件",
-          "summaryZh": "从 2027 年 2 月起，Google 的条款要求 AI 智能体通过 Google 自家的 MCP 服务器访问 Gmail、Drive 及其他 Workspace 服务。本文介绍这项规定的内容、这些服务器能做什么和不能做什么，以及在此之前需要做哪些调整……",
-          "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+          "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+          "summary": "A card-skimming script was planted on the online stores of Lascana, Samsonite, American Tourister, Revolve and FWRD in the week before Black Friday. After our reports to affected companies, all have had the script remove…",
+          "titleZh": "热门购物网站发现利用 WebRTC 窃取信用卡信息的脚本",
+          "summaryZh": "黑色星期五前一周，一段信用卡盗刷脚本被植入 Lascana、Samsonite、American Tourister、Revolve 和 FWRD 的网店。我们向受影响的公司报告后，这些网站均已移除该脚本……",
+          "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
           "source": "Hacker News",
-          "score": 6.58,
+          "score": 4.29,
           "reasons": [
-            "AI",
-            "HN分数265",
-            "讨论量223"
+            "HN分数453",
+            "讨论量235"
           ],
-          "published": "2026-11-26T09:44:23+00:00"
+          "published": "2026-11-27T15:40:31+00:00"
         },
         {
-          "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-          "summary": "I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what's now happening, so I'm trying again. Last night, we had friends and colleagues over for d…",
-          "titleZh": "天啊，天啊，天啊，天啊：眼下正在发生之事的规模",
-          "summaryZh": "我觉得我之前的文章（以及标题）、播客和演讲，都没能充分说明眼下正在发生之事的规模，所以我想再试一次。昨晚，我们邀请了一些朋友和同事来家里……",
-          "url": "https://scottaaronson.blog/?p=10379",
+          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+          "summary": "This lawsuit is about seeking justice for the millions of Virginians who maintain accounts on X and were misled by the company’s false reassurances that their data and images would be safe on the platform",
+          "titleZh": "多州起诉 SpaceX，要求阻止 Grok 生成儿童色情图像和报复性色情内容",
+          "summaryZh": "这起诉讼旨在为数百万在 X 上拥有账户的弗吉尼亚州居民寻求公正。他们曾被该公司虚假的保证误导，以为自己的数据和图像在平台上会得到安全保护。",
+          "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
           "source": "Hacker News",
-          "score": 4.5,
+          "score": 4.22,
           "reasons": [
-            "HN分数2001",
-            "讨论量1822"
+            "HN分数294",
+            "讨论量158"
           ],
-          "published": "2026-11-25T19:11:27+00:00"
+          "published": "2026-11-27T19:42:25+00:00"
         },
         {
-          "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
-          "summary": "YouTube Ad Blocker - Chrome / Browser Extension. Contribute to antonpictures/youtube-punisher development by creating an account on GitHub.",
-          "titleZh": "YouTube 广告惩罚器——广告播放时自动重新加载 YouTube 页面",
-          "summaryZh": "YouTube 广告拦截器——适用于 Chrome 和其他浏览器的扩展程序。注册 GitHub 账号，为 antonpictures/youtube-punisher 项目贡献代码。",
-          "url": "https://github.com/antonpictures/youtube-punisher",
+          "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+          "summary": "a ball will fall. trade on where it lands.",
+          "titleZh": "Show HN：bouncemarket——弹跳球实时预测市场游戏",
+          "summaryZh": "球会落下，押注它最终会落在哪里。",
+          "url": "https://bouncemarket.minhanhday.com/",
           "source": "Hacker News",
-          "score": 4.33,
+          "score": 4.06,
           "reasons": [
-            "HN分数290",
-            "讨论量374"
+            "HN分数334",
+            "讨论量115"
           ],
-          "published": "2026-11-26T17:36:47+00:00"
+          "published": "2026-11-27T15:01:50+00:00"
         },
         {
-          "title": "Intel One Mono font (2023)",
-          "summary": "Intel One Mono font repository. Contribute to intel/intel-one-mono development by creating an account on GitHub.",
-          "titleZh": "Intel One Mono 字体（2023）",
-          "summaryZh": "Intel One Mono 字体仓库。注册 GitHub 账号，为 intel/intel-one-mono 项目贡献代码。",
-          "url": "https://github.com/intel/intel-one-mono",
+          "title": "Convex skills send the user's app idea to a remote server without telling them",
+          "summary": "Three skills in this plugin (listed in Anthropic's claude-plugins-official marketplace) raised the same concern for me: skills/quickstart/SKILL.md lines 48 to 56 POST the user's one-sentence project idea to basic-anteate…",
+          "titleZh": "Convex 技能会在未告知用户的情况下，将其应用创意发送到远程服务器",
+          "summaryZh": "Anthropic 的 claude-plugins-official 插件市场中列出的这个插件包含三项技能，它们都让我产生了同样的担忧：skills/quickstart/SKILL.md 第 48 至 56 行会将用户用一句话描述的项目创意通过 POST 请求发送到 basic-anteate……",
+          "url": "https://github.com/convex/convex-backend-skill/issues/64",
           "source": "Hacker News",
-          "score": 4.16,
+          "score": 3.99,
           "reasons": [
-            "HN分数480",
-            "讨论量243"
+            "HN分数247",
+            "讨论量77"
           ],
-          "published": "2026-11-26T10:11:01+00:00"
+          "published": "2026-11-27T18:02:45+00:00"
         },
         {
-          "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
-          "summary": "Traditional architecture is alive and well in Lahore. A photo essay of Kamil Khan Mumtaz’s greatest works.",
-          "titleZh": "卡米尔·汗·穆姆塔兹：在巴基斯坦备受推崇、在国外却鲜为人知的建筑师",
-          "summaryZh": "传统建筑在拉合尔依然蓬勃发展。本文以摄影文章的形式，展示卡米尔·汗·穆姆塔兹最杰出的作品。",
-          "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+          "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+          "summary": "Explore our many areas of focus Explore all research areas Applied AI & sciences Earth AI Health AI Science AI Sustainability & crisis resilience Foundational ML & algorithms Algorithms & theory Information retrieval Mac…",
+          "titleZh": "Google 的 DeepCrossAttention 在实现相当模型质量的同时，速度最高提升 3 倍",
+          "summaryZh": "探索我们的多个重点领域：应用人工智能与科学、地球人工智能、健康人工智能、科学人工智能、可持续发展与危机应对、基础机器学习与算法、算法与理论、信息检索、机器学习……",
+          "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
           "source": "Hacker News",
-          "score": 4.02,
+          "score": 3.97,
           "reasons": [
-            "HN分数274",
+            "HN分数169",
+            "讨论量57"
+          ],
+          "published": "2026-11-27T23:06:29+00:00"
+        },
+        {
+          "title": "Atari Homebrew Awards Cancelled",
+          "summary": "Comments",
+          "titleZh": "Atari 自制游戏奖项取消",
+          "summaryZh": "评论",
+          "url": "https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/",
+          "source": "Hacker News",
+          "score": 3.88,
+          "reasons": [
+            "HN分数83",
+            "讨论量58"
+          ],
+          "published": "2026-11-28T02:03:25+00:00"
+        },
+        {
+          "title": "Source Control from Hell",
+          "summary": "My first office job was at an enterprise that built software for a big telecom: a massive Delphi help desk application on Windows.",
+          "titleZh": "来自地狱的源代码管理",
+          "summaryZh": "我的第一份办公室工作是在一家为大型电信企业开发软件的公司，负责一款运行于 Windows 上的大型 Delphi 帮助台应用程序。",
+          "url": "https://frantic.im/git/",
+          "source": "Hacker News",
+          "score": 3.71,
+          "reasons": [
+            "HN分数70",
             "讨论量52"
           ],
-          "published": "2026-11-26T21:08:05+00:00"
-        },
-        {
-          "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
-          "summary": "The chief technology officer and co-founder of ransomwarehelp.com , a six year old Florida business that claimed to use “advanced cryptographic tools” to restore data locked by ransomware, has been charged with wire frau…",
-          "titleZh": "“RansomwareHelp”首席技术官被控电信诈骗",
-          "summaryZh": "ransomwarehelp.com 的首席技术官兼联合创始人被控电信诈骗。这家佛罗里达州企业成立六年，声称使用“先进的密码学工具”恢复被勒索软件锁定的数据。",
-          "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-          "source": "Hacker News",
-          "score": 4.01,
-          "reasons": [
-            "HN分数226",
-            "讨论量99"
-          ],
-          "published": "2026-11-26T17:47:45+00:00"
-        },
-        {
-          "title": "AMD-specific fork of llama.cpp",
-          "summary": "Miscellaneous bits and bobs from the tech world",
-          "titleZh": "AMD 专用的 llama.cpp 分支",
-          "summaryZh": "科技领域的杂项见闻。",
-          "url": "https://devnull.land/amd-specific-llama-cpp",
-          "source": "Hacker News",
-          "score": 4.0,
-          "reasons": [
-            "HN分数300",
-            "讨论量73"
-          ],
-          "published": "2026-11-26T17:11:29+00:00"
+          "published": "2026-11-27T22:06:44+00:00"
         }
       ]
     },
@@ -134,7 +132,7 @@
           "summaryZh": "随着美国加大力度阻止 AI 芯片流入中国，Nvidia 已通知制造合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运服务器。",
           "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
           "source": "TechCrunch",
-          "score": 4.39,
+          "score": 3.73,
           "reasons": [
             "AI"
           ],
@@ -147,7 +145,7 @@
           "summaryZh": "Anthropic 上市的同一天，一款倾注大量心血、由人类打造的电子游戏成为史上最成功的娱乐产品首发之一。",
           "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
           "source": "TechCrunch",
-          "score": 4.28,
+          "score": 3.61,
           "reasons": [
             "AI"
           ],
@@ -160,7 +158,7 @@
           "summaryZh": "这家信用评级机构可能将 Nvidia 的信用评级下调至 AA-，这是第四高的评级。",
           "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
           "source": "TechCrunch",
-          "score": 3.8,
+          "score": 3.13,
           "reasons": [
             "AI"
           ],
@@ -173,7 +171,7 @@
           "summaryZh": "美国联邦通信委员会驳回了反对者提出的部分主要担忧，包括对科学研究的潜在威胁，理由是该机构认定这些问题不属于其监管权限。",
           "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/",
           "source": "TechCrunch",
-          "score": 3.75,
+          "score": 3.08,
           "reasons": [
             "AI"
           ],
@@ -186,7 +184,7 @@
           "summaryZh": "OpenAI 将在整合 ChatGPT 的 Chat 和 Work 体验时，推出统一的用量计量机制。",
           "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
           "source": "TechCrunch",
-          "score": 3.73,
+          "score": 3.06,
           "reasons": [
             "AI"
           ],
@@ -199,7 +197,7 @@
           "summaryZh": "大多数行为准则都体现了企业文化。对 Nvidia 来说，这可能带来后果。",
           "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
           "source": "TechCrunch",
-          "score": 3.72,
+          "score": 3.06,
           "reasons": [
             "AI"
           ],
@@ -212,7 +210,7 @@
           "summaryZh": "Anthropic 首席执行官 Dario Amodei 反驳了竞争对手关于他主张将人类自主权交给 AI 的指控；与此同时，领先的 AI 公司正越来越多地将自身研究和模型开发自动化。",
           "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
           "source": "TechCrunch",
-          "score": 3.72,
+          "score": 3.05,
           "reasons": [
             "AI"
           ],
@@ -225,7 +223,7 @@
           "summaryZh": "Nvidia 丑闻的核心指控至今仍未得到证实：Nvidia 首席执行官黄仁勋曾与前 Megaspeed 高管黄爱丽婚外情，而她是一名中国间谍。",
           "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
           "source": "TechCrunch",
-          "score": 1.79,
+          "score": 1.12,
           "reasons": [],
           "published": "2026-11-26T20:00:00+00:00"
         }
@@ -235,7 +233,7 @@
   "jobs": {
     "hn": {
       "id": "0d56c417b34c",
-      "lastRunAt": "2026-11-27T11:02:14.013724+08:00"
+      "lastRunAt": "2026-11-28T11:01:28.752516+08:00"
     }
   }
 }
